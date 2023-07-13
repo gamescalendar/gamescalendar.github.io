@@ -364,7 +364,7 @@
         }
 
         async function fetchEvents() {
-            let cached = await fetch("https://lingsamuel.github.io/calendar/events.json")
+            let cached = await fetch("https://gamescalendar.github.io/events.json")
             cached = await cached.json()
 
             events.push(...cached)

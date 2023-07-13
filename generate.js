@@ -51,6 +51,7 @@ function gen_calendar_data(data) {
         title: data.name,
         start: start,
         app_data: {
+            platform: "Steam",
             appid: data.steam_appid,
             title: data.name,
             description: data.short_description,
@@ -91,6 +92,32 @@ function transform_data(data) {
     return result
 }
 
+function get_steam_appid(target) {
+    if (typeof target == "number") {
+        return target;
+    }
+    if (typeof target != "string") return null;
+
+    target = target.trim()
+    target = target.replace("http://", "")
+    target = target.replace("https://", "")
+    target = target.replace("store.steampowered.com/")
+    target = target.replace("steamcommunity.com/")
+    if (target.startsWith("app/")) {
+        target = target.replace("app/", "")
+        let elements = target.split("/")
+        if (elements.length >= 1) {
+            let appid = parseFloat(elements[1])
+            if (appid && !isNaN(appid)) {
+                return appid
+            }
+        }
+    }
+
+    console.log(`${target} is not a valid steam appid or URL`)
+    return null
+}
+
 async function main() {
     let targets = [
         1086940, // baldur
@@ -99,10 +126,20 @@ async function main() {
         949230, // skylines 2
         2254740, // Persona_5_Tactica
     ]
+
+    targets = targets.map(get_steam_appid).filter(x => x && !isNaN(x))
+
+    let tracked = {}
     let data = []
 
+    let track_date = (new Date()).toISOString().slice(0, 10)
     for (let target of targets) {
         data.push(await get_appdata(target))
+        tracked[target] = {
+            platform: "Steam",
+            identifier: target,
+            last_track_date: track_date,
+        }
     }
 
     let calendar_data = transform_data(data)
