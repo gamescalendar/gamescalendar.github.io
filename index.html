@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'/>
+    <!--    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/index.global.min.js'></script>-->
+    <!--    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.8/index.global.min.js'></script>-->
+
+    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.1.0/fullcalendar.min.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.css">
+    <link rel="stylesheet" href="./float.css">
+    <!--    <script src='https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js'></script>-->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <!--    <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js'></script>-->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+    <!--    <script src='https://unpkg.com/popper.js/dist/umd/popper.min.js'></script>-->
+    <!--    <script src='https://unpkg.com/tooltip.js/dist/umd/tooltip.min.js'></script>-->
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        .ui.container {
+            /*1920px * 0.7*/
+            width: 1344px !important;
+            /*margin-left: 2rem !important;*/
+            /*margin-right: 2rem !important;*/
+        }
+
+        #calendar {
+            /*max-width: 1100px;*/
+            margin: 40px auto;
+        }
+
+        /*
+        i wish this required CSS was better documented :(
+        https://github.com/FezVrasta/popper.js/issues/674
+        derived from this CSS on this page: https://popper.js.org/tooltip-examples.html
+        */
+
+        .popper,
+        .tooltip {
+            position: absolute;
+            z-index: 9999;
+            background: #FFC107;
+            color: black;
+            width: 150px;
+            border-radius: 3px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .style5 .tooltip {
+            background: #1E252B;
+            color: #FFFFFF;
+            max-width: 200px;
+            width: auto;
+            font-size: .8rem;
+            padding: .5em 1em;
+        }
+
+        .popper .popper__arrow,
+        .tooltip .tooltip-arrow {
+            width: 0;
+            height: 0;
+            border-style: solid;
+            position: absolute;
+            margin: 5px;
+        }
+
+        .tooltip .tooltip-arrow,
+        .popper .popper__arrow {
+            border-color: #FFC107;
+        }
+
+        .style5 .tooltip .tooltip-arrow {
+            border-color: #1E252B;
+        }
+
+        .popper[x-placement^="top"],
+        .tooltip[x-placement^="top"] {
+            margin-bottom: 5px;
+        }
+
+        .popper[x-placement^="top"] .popper__arrow,
+        .tooltip[x-placement^="top"] .tooltip-arrow {
+            border-width: 5px 5px 0 5px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            bottom: -5px;
+            left: calc(50% - 5px);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .popper[x-placement^="bottom"],
+        .tooltip[x-placement^="bottom"] {
+            margin-top: 5px;
+        }
+
+        .tooltip[x-placement^="bottom"] .tooltip-arrow,
+        .popper[x-placement^="bottom"] .popper__arrow {
+            border-width: 0 5px 5px 5px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-top-color: transparent;
+            top: -5px;
+            left: calc(50% - 5px);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .tooltip[x-placement^="right"],
+        .popper[x-placement^="right"] {
+            margin-left: 5px;
+        }
+
+        .popper[x-placement^="right"] .popper__arrow,
+        .tooltip[x-placement^="right"] .tooltip-arrow {
+            border-width: 5px 5px 5px 0;
+            border-left-color: transparent;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            left: -5px;
+            top: calc(50% - 5px);
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .popper[x-placement^="left"],
+        .tooltip[x-placement^="left"] {
+            margin-right: 5px;
+        }
+
+        .popper[x-placement^="left"] .popper__arrow,
+        .tooltip[x-placement^="left"] .tooltip-arrow {
+            border-width: 5px 0 5px 5px;
+            border-top-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: transparent;
+            right: -5px;
+            top: calc(50% - 5px);
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .tippy-box[data-theme~='gameview'] {
+        }
+
+        .tippy-box[data-theme~='gameview'] .tippy-content {
+            padding: 0;
+        }
+
+        .long {
+            -webkit-box-orient: horizontal;
+            box-orient: horizontal;
+        }
+
+        div.glance_tag {
+            overflow: auto;
+            white-space: normal;
+        }
+
+        .day_event {
+            white-space: pre-wrap;
+        }
+    </style>
+
+    <script>
+        const test_events = [
+            {
+                title: 'All Day',
+                description: 'description for All Day Event',
+                start: '2023-07-01',
+                className: "day_event"
+            },
+            {
+                title: 'All Day \nMULTIPLE LINE \nEvent',
+                description: 'description for All Day Event',
+                start: '2023-07-02',
+                className: "day_event"
+            },
+            {
+                title: 'All Day',
+                description: 'description for All Day Event',
+                start: '2023-07-03',
+                className: "day_event"
+            },
+            {
+                title: 'All Day LOOOOOONG Event',
+                description: 'description for All Day Event',
+                start: '2023-07-03',
+                className: "day_event"
+            },
+            {
+                title: 'Long Event',
+                description: 'description for Long Event',
+                start: '2023-07-07',
+                end: '2023-07-10'
+            },
+            {
+                groupId: '999',
+                title: 'Repeating Event',
+                description: 'description for Repeating Event',
+                start: '2023-07-09T16:00:00'
+            },
+            {
+                groupId: '999',
+                title: 'Repeating Event',
+                description: 'description for Repeating Event',
+                start: '2023-07-16T16:00:00'
+            },
+            {
+                title: 'Conference',
+                description: 'description for Conference',
+                start: '2023-07-11',
+                end: '2023-07-13'
+            },
+            {
+                title: 'Meeting',
+                description: 'description for Meeting',
+                start: '2023-07-12T10:30:00',
+                end: '2023-07-12T12:30:00'
+            },
+            {
+                title: 'Lunch',
+                description: 'description for Lunch',
+                start: '2023-07-12T12:00:00'
+            },
+            {
+                title: 'Meeting',
+                description: 'description for Meeting',
+                start: '2023-07-12T14:30:00'
+            },
+            {
+                title: 'Birthday Party',
+                description: 'description for Birthday Party',
+                start: '2023-07-13'
+            },
+            {
+                title: 'Birthday Party 2',
+                description: 'description for Birthday Party',
+                start: '2023-07-13'
+            },
+            {
+                title: 'Click for Google',
+                description: 'description for Click for Google',
+                url: 'https://google.com/',
+                start: '2023-07-28'
+            }
+        ];
+
+        const events = [
+            {
+                title: "Baldur's Gate 3",
+                start: '2023-08-03',
+                app_data: {
+                    appid: 1086940,
+                    title: "Baldur's Gate 3",
+                    description: "召集你的团队，回到被遗忘的国度，开启一段记载着友谊与背叛、牺牲与生存、以及至上力量诱惑的传奇故事。",
+                    tags: ["抢先体验", "角色扮演", "选择取向", "角色自定义", "奇幻", "剧情丰富"],
+                    release_date: "2020 年 10 月 6 日",
+                    language: {
+                        zh: {
+                            gui: true,
+                            audio: false,
+                            subtitle: true,
+                        }
+                    },
+                    owned: true,
+                },
+            },
+            // {
+            //     title: 'Starfield',
+            //     start: '2023-09-06',
+            //     app_data: {
+            //         appid: 1716740,
+            //         title: "Starfield",
+            //         description: "《Starfield》是由载誉无数、曾为大家带来《The Elder Scrolls V: Skyrim》和《Fallout 4》的Bethesda Game Studios睽违25年所打造的第一个全新宇宙。",
+            //         tags: ["开放世界", "太空", "角色扮演", "单人", "科幻"],
+            //         release_date: "2023 年 9 月 6 日",
+            //         language: {
+            //             zh: {
+            //                 gui: true,
+            //                 audio: false,
+            //                 subtitle: true,
+            //             }
+            //         },
+            //         owned: false,
+            //     },
+            // },
+            {
+                title: '迷宫饭',
+                start: '2024-01-01',
+                color: '#FF6699'
+            },
+            {
+                title: '药屋少女的呢喃',
+                start: '2023-10-01',
+                color: '#FF6699'
+            },
+        ]
+
+        function buildTemplate(data) {
+            if (!data) {
+                return null;
+            }
+            // the template and CSS are come from https://steamdb.keylol.com/customize and https://store.steampowered.com/app/${appid}
+            const template = `
+    <div class="v6">
+        <div id="wrapper">
+            <div class="rightcol">
+                <div class="block game_details ${data.owned ? "own" : ""} ">
+                    <div class="block_header"><h4 title="${data.title}">${data.title}</h4></div>
+
+                    <div class="block_header_image block_header_gallery load">
+                        <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/">
+                            <img class="game_header_image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/${data.appid}/header.jpg">
+                        </a>
+                    </div>
+
+                    <div style="padding: 8px 16px" class="block_content block_content_inner">
+                        <div class="game_description_snippet long">
+                            ${data.description}
+                        </div>
+                        <div class="inner_rule"></div>
+
+                        <div class="details_block">
+                            <b>标签: </b>
+                            <div class="glance_tag">
+                            ${data.tags.map(tag => `<a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/${tag}/">${tag}</a>`).join("")}
+                            </div>
+                            <div>
+                                <b>发行日期: </b>${data.release_date.date ?? data.release_date}
+                            </div>
+                        </div>
+                        <div class="inner_rule"></div>
+
+                        <table class="game_language_options">
+                            <tbody>
+                            <tr>
+                                <td>语言支持</td>
+                                <td class="language_${data.language.zh.gui ? "yes" : "no"}">简体中文</td>
+                                <td class="language_${data.language.zh.audio ? "yes" : "no"}">完全音频</td>
+                                <!-- <td class="language_${data.language.zh.subtitle ? "yes" : "no"}">字幕</td> -->
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+`
+            return template;
+        }
+
+        async function main() {
+
+            const cached = [
+                {
+                    "title": "Baldur's Gate 3",
+                    "start": "2023-08-03",
+                    "app_data": {
+                        "appid": 1086940,
+                        "title": "Baldur's Gate 3",
+                        "description": "Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons &amp; Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.",
+                        "tags": [
+                            "Adventure",
+                            "RPG",
+                            "Strategy",
+                            "Early Access"
+                        ],
+                        "release_date": {
+                            "coming_soon": false,
+                            "date": "Oct 6, 2020"
+                        },
+                        "language": {
+                            "zh": {
+                                "gui": true,
+                                "audio": false,
+                                "subtitle": true
+                            }
+                        },
+                        "owned": false,
+                        "developers": [
+                            "Larian Studios"
+                        ],
+                        "publishers": [
+                            "Larian Studios"
+                        ],
+                        "categories": [
+                            {
+                                "id": 2,
+                                "description": "Single-player"
+                            },
+                            {
+                                "id": 1,
+                                "description": "Multi-player"
+                            },
+                            {
+                                "id": 9,
+                                "description": "Co-op"
+                            },
+                            {
+                                "id": 38,
+                                "description": "Online Co-op"
+                            },
+                            {
+                                "id": 48,
+                                "description": "LAN Co-op"
+                            },
+                            {
+                                "id": 23,
+                                "description": "Steam Cloud"
+                            }
+                        ],
+                        "genres": [
+                            {
+                                "id": "25",
+                                "description": "Adventure"
+                            },
+                            {
+                                "id": "3",
+                                "description": "RPG"
+                            },
+                            {
+                                "id": "2",
+                                "description": "Strategy"
+                            },
+                            {
+                                "id": "70",
+                                "description": "Early Access"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "Sea of Stars",
+                    "start": "2023-08-03",
+                    "app_data": {
+                        "appid": 1244090,
+                        "title": "Sea of Stars",
+                        "description": "Sea of Stars is a turn-based RPG inspired by the classics. It tells the story of two Children of the Solstice who will combine the powers of the sun and moon to perform Eclipse Magic, the only force capable of fending off the monstrous creations of the evil alchemist known as The Fleshmancer.",
+                        "tags": [
+                            "Adventure",
+                            "Indie",
+                            "RPG"
+                        ],
+                        "release_date": {
+                            "coming_soon": true,
+                            "date": "Aug 29, 2023"
+                        },
+                        "language": {
+                            "zh": {
+                                "gui": true,
+                                "audio": false,
+                                "subtitle": true
+                            }
+                        },
+                        "owned": false,
+                        "developers": [
+                            "Sabotage Studio"
+                        ],
+                        "publishers": [
+                            "Sabotage Studio"
+                        ],
+                        "categories": [
+                            {
+                                "id": 2,
+                                "description": "Single-player"
+                            },
+                            {
+                                "id": 28,
+                                "description": "Full controller support"
+                            }
+                        ],
+                        "genres": [
+                            {
+                                "id": "25",
+                                "description": "Adventure"
+                            },
+                            {
+                                "id": "23",
+                                "description": "Indie"
+                            },
+                            {
+                                "id": "3",
+                                "description": "RPG"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "STARFIELD",
+                    "start": "2023-08-03",
+                    "app_data": {
+                        "appid": 1716740,
+                        "title": "STARFIELD",
+                        "description": "Starfield is the first new universe in 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
+                        "tags": [
+                            "RPG"
+                        ],
+                        "release_date": {
+                            "coming_soon": true,
+                            "date": "Sep 6, 2023"
+                        },
+                        "language": {
+                            "zh": {
+                                "gui": true,
+                                "audio": false,
+                                "subtitle": true
+                            }
+                        },
+                        "owned": false,
+                        "developers": [
+                            "Bethesda Game Studios"
+                        ],
+                        "publishers": [
+                            "Bethesda Softworks"
+                        ],
+                        "categories": [
+                            {
+                                "id": 2,
+                                "description": "Single-player"
+                            },
+                            {
+                                "id": 22,
+                                "description": "Steam Achievements"
+                            },
+                            {
+                                "id": 28,
+                                "description": "Full controller support"
+                            },
+                            {
+                                "id": 23,
+                                "description": "Steam Cloud"
+                            }
+                        ],
+                        "genres": [
+                            {
+                                "id": "3",
+                                "description": "RPG"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "Cities: Skylines II",
+                    "start": "2023-08-03",
+                    "app_data": {
+                        "appid": 949230,
+                        "title": "Cities: Skylines II",
+                        "description": "Raise a city from the ground up and transform it into a thriving metropolis with the most realistic city builder ever. Push your creativity and problem-solving to build on a scale you've never experienced. With deep simulation and a living economy, this is world-building without limits.",
+                        "tags": [
+                            "Simulation"
+                        ],
+                        "release_date": {
+                            "coming_soon": true,
+                            "date": "Oct 24, 2023"
+                        },
+                        "language": {
+                            "zh": {
+                                "gui": true,
+                                "audio": false,
+                                "subtitle": true
+                            }
+                        },
+                        "owned": false,
+                        "developers": [
+                            "Colossal Order Ltd."
+                        ],
+                        "publishers": [
+                            "Paradox Interactive"
+                        ],
+                        "categories": [
+                            {
+                                "id": 2,
+                                "description": "Single-player"
+                            },
+                            {
+                                "id": 22,
+                                "description": "Steam Achievements"
+                            }
+                        ],
+                        "genres": [
+                            {
+                                "id": "28",
+                                "description": "Simulation"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "title": "Persona 5 Tactica",
+                    "start": "2023-08-03",
+                    "app_data": {
+                        "appid": 2254740,
+                        "title": "Persona 5 Tactica",
+                        "description": "Join the Phantom Thieves as they lead an uprising of the heart! Assemble an all-star team of heroes in a brand-new story in this thrilling combat adventure set in Persona’s iconic universe.",
+                        "tags": [
+                            "RPG",
+                            "Strategy"
+                        ],
+                        "release_date": {
+                            "coming_soon": true,
+                            "date": "Nov 16, 2023"
+                        },
+                        "language": {
+                            "zh": {
+                                "gui": true,
+                                "audio": false,
+                                "subtitle": true
+                            }
+                        },
+                        "owned": false,
+                        "developers": [
+                            "ATLUS"
+                        ],
+                        "publishers": [
+                            "SEGA"
+                        ],
+                        "categories": [
+                            {
+                                "id": 2,
+                                "description": "Single-player"
+                            },
+                            {
+                                "id": 22,
+                                "description": "Steam Achievements"
+                            },
+                            {
+                                "id": 28,
+                                "description": "Full controller support"
+                            },
+                            {
+                                "id": 23,
+                                "description": "Steam Cloud"
+                            }
+                        ],
+                        "genres": [
+                            {
+                                "id": "3",
+                                "description": "RPG"
+                            },
+                            {
+                                "id": "2",
+                                "description": "Strategy"
+                            }
+                        ]
+                    }
+                }
+            ]
+            // const cached = await fetch("./events.json")
+            // console.log(cached)
+
+            cached.forEach(ev=>{
+                let date = ev.app_data.release_date.date ?? ev.app_data.release_date
+                date += " GMT"
+                let start = (new Date(date)).toISOString().slice(0, 10)
+                console.log(start)
+                ev.start = start
+            })
+
+            events.push(...cached)
+
+            document.addEventListener('DOMContentLoaded', function () {
+                let calendarEl = document.getElementById('calendar');
+
+                let calendar = new FullCalendar.Calendar(calendarEl, {
+                    headerToolbar: {
+                        left: 'today prevYear,prev,next,nextYear',
+                        center: 'title',
+                        right: 'listYear,dayGridMonth,multiMonthYear,dayGridYear,scrollMonthYear',
+                    },
+                    initialView: 'multiMonthYear',
+                    // multiMonthMaxColumns: 2,
+
+                    views: {
+                        scrollMonthYear: {
+                            buttonText: "scroll",
+                            type: "multiMonthYear",
+                            multiMonthMaxColumns: 1,
+                        },
+                        dayGridYear: {
+                            buttonText: "continuous",
+                        }
+                    },
+
+                    initialDate: new Date().toISOString().slice(0, 10),
+
+                    eventDisplay: "auto",
+
+                    eventDidMount: function (info) {
+                        // let tooltip = new Tooltip(info.el, {
+                        //     title: info.event.extendedProps.description,
+                        //     placement: 'top',
+                        //     trigger: 'hover',
+                        //     container: 'body'
+                        // });
+                        // console.log(calendar)
+                        let placement = 'right-start'
+                        if (calendar.view.type == "listYear") {
+                            placement = "bottom"
+                        }
+
+                        let allowHTML = false;
+                        let arrow = true;
+                        let theme = undefined;
+                        let template = buildTemplate(info.event.extendedProps.app_data);
+                        if (template) {
+                            allowHTML = true;
+                            arrow = false;
+                            theme = "gameview";
+                        } else if (info.event.extendedProps.description) {
+                            template = info.event.extendedProps.description
+                        } else {
+                            template = info.event.title
+                        }
+
+                        let tippyInstance = tippy(info.el, {
+                            content: template,
+                            // content: "<strong>text aaaaaaaaaa</strong>",
+                            allowHTML: allowHTML,
+                            placement: placement,
+                            arrow: arrow,
+                            theme: theme,
+                            interactive: true,
+                            animateFill: false,
+                            // popperOptions: { strategy: 'fixed' },
+                            appendTo: document.body,
+                            flip: true,
+
+                            onTrigger(instance, event) {
+                                mouseIsBottom = event.pageY > $(window).height() * 0.45
+                                let placement = mouseIsBottom ? 'right-end' : 'right-start'
+                                if (calendar.view.type == "listYear") {
+                                    placement = mouseIsBottom ? "start" : "bottom"
+                                }
+                                instance.setProps({
+                                    placement: placement,
+                                })
+                            },
+                        });
+
+                        // console.log(tippyInstance)
+                    },
+
+                    events: events,
+                });
+
+                calendar.render();
+            });
+
+        }
+
+        (async () => {
+            try {
+                await main()
+            } catch (e) {
+            }
+        })();
+    </script>
+</head>
+<body>
+
+<div class="ui container">
+    <div class="ui menu">
+        <div class="header item">《XGS 严选》日历</div>
+        <!--        <a class="active item">Link</a>-->
+        <!--        <a class="item">Link</a>-->
+        <!--        <div class="ui dropdown item">-->
+        <!--            Dropdown-->
+        <!--            <i class="dropdown icon"></i>-->
+        <!--            <div class="menu">-->
+        <!--                <div class="item">Action</div>-->
+        <!--                <div class="item">Another Action</div>-->
+        <!--                <div class="item">Something else here</div>-->
+        <!--                <div class="divider"></div>-->
+        <!--                <div class="item">Separated Link</div>-->
+        <!--                <div class="divider"></div>-->
+        <!--                <div class="item">One more separated link</div>-->
+        <!--            </div>-->
+        <!--        </div>-->
+        <!--        <div class="right menu">-->
+        <!--            <div class="item">-->
+        <!--                <div class="ui action left icon input">-->
+        <!--                    <i class="search icon"></i>-->
+        <!--                    <input type="text" placeholder="Search">-->
+        <!--                    <button class="ui button">Submit</button>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--            <a class="item">Link</a>-->
+        <!--        </div>-->
+    </div>
+</div>
+
+<br/>
+<div class="ui container">
+    <div class="ui grid">
+        <div class="ui sixteen column">
+            <div id="calendar"></div>
+        </div>
+    </div>
+</div>
+
+<div id="template" style="display: none">
+    <div class="v6 " style="width: 324px">
+        <div id="wrapper">
+            <div class="rightcol">
+                <div class="block game_details own">
+                    <div class="block_header"><h4 title="Baldur's Gate 3">Baldur's Gate 3</h4></div>
+
+                    <div class="block_header_image block_header_gallery load">
+                        <a target="_blank" href="https://store.steampowered.com/app/105600/">
+                            <img class="game_header_image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg">
+                        </a>
+                    </div>
+
+                    <div class="block_content block_content_inner">
+                        <div class="game_description_snippet long">
+                            召集你的团队，回到被遗忘的国度，开启一段记载着友谊与背叛、牺牲与生存、以及至上力量诱惑的传奇故事。
+                        </div>
+                        <div class="inner_rule"></div>
+
+                        <div class="details_block">
+                            <b>标签: </b>
+                            <div class="glance_tag">
+                                <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/抢先体验/">抢先体验</a>
+                                <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/角色扮演/">角色扮演</a>
+                                <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/选择取向/">选择取向</a>
+                                <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/角色自定义/">角色自定义</a>
+                                <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/剧情丰富/">剧情丰富</a>
+                            </div>
+                            <div>
+                                <b>发行日期: </b>2020 年 10 月 6 日
+                            </div>
+                        </div>
+                        <div class="inner_rule"></div>
+
+                        <div id="game_score">
+                            <b>评分: </b>
+                            <a target="_blank" href="https://store.steampowered.com/app/1086940/#app_reviews_hash"
+                               title="Wilson Score: 基于 56104 好评 vs 7414 差评"
+                               class="score score-ur score-good">88.1%</a>
+                            <a target="_blank" href="https://opencritic.com/game/9136/baldurs-gate-3" title="OpenCritic 评分"
+                               class="score score-oc score-poor">无</a></div>
+                        <!--                        <div id="game_score">-->
+                        <!--                            <b>评分: </b>-->
+                        <!--                            <a target="_blank" href="https://store.steampowered.com/app/105600/#app_reviews_hash"-->
+                        <!--                               title="Wilson Score: 基于 1128722 好评 vs 26164 差评" class="score score-ur score-good">97.7%</a>-->
+                        <!--                            <a target="_blank" href="https://opencritic.com/game/148/terraria"-->
+                        <!--                               title="OpenCritic 评分" class="score score-oc score-average">79</a>-->
+                        <!--                            <a target="_blank" href="https://www.metacritic.com/game/pc/terraria"-->
+                        <!--                               title="Metacritic 评分" class="score score-m score-good">83</a>-->
+                        <!--                            <a target="_blank" href="https://www.metacritic.com/game/pc/terraria"-->
+                        <!--                               title="Metacritic 用户评分" class="score score-mu score-good">8.6</a>-->
+                        <!--                        </div>-->
+                        <div class="inner_rule"></div>
+
+                        <table class="game_language_options">
+                            <tbody>
+                            <tr>
+                                <td>简体中文</td>
+                                <td class="language_yes">界面</td>
+                                <td class="language_no">音频</td>
+                                <td class="language_yes">字幕</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <div class="inner_rule"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

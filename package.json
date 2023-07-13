@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "https-proxy-agent": "^7.0.1",
+    "node-fetch": "^2.6.12"
+  }
+}
