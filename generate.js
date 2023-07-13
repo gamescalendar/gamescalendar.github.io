@@ -43,9 +43,13 @@ async function get_appdata(appid) {
 }
 
 function gen_calendar_data(data) {
+    let date = data.release_date.date ?? data.release_date
+    date += " GMT"
+    let start = (new Date(date)).toISOString().slice(0, 10)
+
     return {
         title: data.name,
-        start: (new Date(data.release_date.date)).toISOString().slice(0, 10),
+        start: start,
         app_data: {
             appid: data.steam_appid,
             title: data.name,
@@ -107,12 +111,7 @@ async function main() {
 }
 
 (async () => {
-    try {
-        await main()
-    } catch (e) {
-        // Deal with the fact the chain failed
-    }
-    // `text` is not available here
+    await main()
 })();
 // https.get('https://httpbin.org/get', res => {
 //     let data = [];

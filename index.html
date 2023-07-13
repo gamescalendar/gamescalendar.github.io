@@ -363,410 +363,110 @@
             return template;
         }
 
-        async function main() {
-
-            const cached = [
-                {
-                    "title": "Baldur's Gate 3",
-                    "start": "2023-08-03",
-                    "app_data": {
-                        "appid": 1086940,
-                        "title": "Baldur's Gate 3",
-                        "description": "Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons &amp; Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.",
-                        "tags": [
-                            "Adventure",
-                            "RPG",
-                            "Strategy",
-                            "Early Access"
-                        ],
-                        "release_date": {
-                            "coming_soon": false,
-                            "date": "Oct 6, 2020"
-                        },
-                        "language": {
-                            "zh": {
-                                "gui": true,
-                                "audio": false,
-                                "subtitle": true
-                            }
-                        },
-                        "owned": false,
-                        "developers": [
-                            "Larian Studios"
-                        ],
-                        "publishers": [
-                            "Larian Studios"
-                        ],
-                        "categories": [
-                            {
-                                "id": 2,
-                                "description": "Single-player"
-                            },
-                            {
-                                "id": 1,
-                                "description": "Multi-player"
-                            },
-                            {
-                                "id": 9,
-                                "description": "Co-op"
-                            },
-                            {
-                                "id": 38,
-                                "description": "Online Co-op"
-                            },
-                            {
-                                "id": 48,
-                                "description": "LAN Co-op"
-                            },
-                            {
-                                "id": 23,
-                                "description": "Steam Cloud"
-                            }
-                        ],
-                        "genres": [
-                            {
-                                "id": "25",
-                                "description": "Adventure"
-                            },
-                            {
-                                "id": "3",
-                                "description": "RPG"
-                            },
-                            {
-                                "id": "2",
-                                "description": "Strategy"
-                            },
-                            {
-                                "id": "70",
-                                "description": "Early Access"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "title": "Sea of Stars",
-                    "start": "2023-08-03",
-                    "app_data": {
-                        "appid": 1244090,
-                        "title": "Sea of Stars",
-                        "description": "Sea of Stars is a turn-based RPG inspired by the classics. It tells the story of two Children of the Solstice who will combine the powers of the sun and moon to perform Eclipse Magic, the only force capable of fending off the monstrous creations of the evil alchemist known as The Fleshmancer.",
-                        "tags": [
-                            "Adventure",
-                            "Indie",
-                            "RPG"
-                        ],
-                        "release_date": {
-                            "coming_soon": true,
-                            "date": "Aug 29, 2023"
-                        },
-                        "language": {
-                            "zh": {
-                                "gui": true,
-                                "audio": false,
-                                "subtitle": true
-                            }
-                        },
-                        "owned": false,
-                        "developers": [
-                            "Sabotage Studio"
-                        ],
-                        "publishers": [
-                            "Sabotage Studio"
-                        ],
-                        "categories": [
-                            {
-                                "id": 2,
-                                "description": "Single-player"
-                            },
-                            {
-                                "id": 28,
-                                "description": "Full controller support"
-                            }
-                        ],
-                        "genres": [
-                            {
-                                "id": "25",
-                                "description": "Adventure"
-                            },
-                            {
-                                "id": "23",
-                                "description": "Indie"
-                            },
-                            {
-                                "id": "3",
-                                "description": "RPG"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "title": "STARFIELD",
-                    "start": "2023-08-03",
-                    "app_data": {
-                        "appid": 1716740,
-                        "title": "STARFIELD",
-                        "description": "Starfield is the first new universe in 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
-                        "tags": [
-                            "RPG"
-                        ],
-                        "release_date": {
-                            "coming_soon": true,
-                            "date": "Sep 6, 2023"
-                        },
-                        "language": {
-                            "zh": {
-                                "gui": true,
-                                "audio": false,
-                                "subtitle": true
-                            }
-                        },
-                        "owned": false,
-                        "developers": [
-                            "Bethesda Game Studios"
-                        ],
-                        "publishers": [
-                            "Bethesda Softworks"
-                        ],
-                        "categories": [
-                            {
-                                "id": 2,
-                                "description": "Single-player"
-                            },
-                            {
-                                "id": 22,
-                                "description": "Steam Achievements"
-                            },
-                            {
-                                "id": 28,
-                                "description": "Full controller support"
-                            },
-                            {
-                                "id": 23,
-                                "description": "Steam Cloud"
-                            }
-                        ],
-                        "genres": [
-                            {
-                                "id": "3",
-                                "description": "RPG"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "title": "Cities: Skylines II",
-                    "start": "2023-08-03",
-                    "app_data": {
-                        "appid": 949230,
-                        "title": "Cities: Skylines II",
-                        "description": "Raise a city from the ground up and transform it into a thriving metropolis with the most realistic city builder ever. Push your creativity and problem-solving to build on a scale you've never experienced. With deep simulation and a living economy, this is world-building without limits.",
-                        "tags": [
-                            "Simulation"
-                        ],
-                        "release_date": {
-                            "coming_soon": true,
-                            "date": "Oct 24, 2023"
-                        },
-                        "language": {
-                            "zh": {
-                                "gui": true,
-                                "audio": false,
-                                "subtitle": true
-                            }
-                        },
-                        "owned": false,
-                        "developers": [
-                            "Colossal Order Ltd."
-                        ],
-                        "publishers": [
-                            "Paradox Interactive"
-                        ],
-                        "categories": [
-                            {
-                                "id": 2,
-                                "description": "Single-player"
-                            },
-                            {
-                                "id": 22,
-                                "description": "Steam Achievements"
-                            }
-                        ],
-                        "genres": [
-                            {
-                                "id": "28",
-                                "description": "Simulation"
-                            }
-                        ]
-                    }
-                },
-                {
-                    "title": "Persona 5 Tactica",
-                    "start": "2023-08-03",
-                    "app_data": {
-                        "appid": 2254740,
-                        "title": "Persona 5 Tactica",
-                        "description": "Join the Phantom Thieves as they lead an uprising of the heart! Assemble an all-star team of heroes in a brand-new story in this thrilling combat adventure set in Persona’s iconic universe.",
-                        "tags": [
-                            "RPG",
-                            "Strategy"
-                        ],
-                        "release_date": {
-                            "coming_soon": true,
-                            "date": "Nov 16, 2023"
-                        },
-                        "language": {
-                            "zh": {
-                                "gui": true,
-                                "audio": false,
-                                "subtitle": true
-                            }
-                        },
-                        "owned": false,
-                        "developers": [
-                            "ATLUS"
-                        ],
-                        "publishers": [
-                            "SEGA"
-                        ],
-                        "categories": [
-                            {
-                                "id": 2,
-                                "description": "Single-player"
-                            },
-                            {
-                                "id": 22,
-                                "description": "Steam Achievements"
-                            },
-                            {
-                                "id": 28,
-                                "description": "Full controller support"
-                            },
-                            {
-                                "id": 23,
-                                "description": "Steam Cloud"
-                            }
-                        ],
-                        "genres": [
-                            {
-                                "id": "3",
-                                "description": "RPG"
-                            },
-                            {
-                                "id": "2",
-                                "description": "Strategy"
-                            }
-                        ]
-                    }
-                }
-            ]
-            // const cached = await fetch("./events.json")
-            // console.log(cached)
-
-            cached.forEach(ev=>{
-                let date = ev.app_data.release_date.date ?? ev.app_data.release_date
-                date += " GMT"
-                let start = (new Date(date)).toISOString().slice(0, 10)
-                console.log(start)
-                ev.start = start
-            })
+        async function fetchEvents() {
+            let cached = await fetch("https://lingsamuel.github.io/calendar/events.json")
+            cached = await cached.json()
 
             events.push(...cached)
 
-            document.addEventListener('DOMContentLoaded', function () {
-                let calendarEl = document.getElementById('calendar');
+            return events
+        }
 
-                let calendar = new FullCalendar.Calendar(calendarEl, {
-                    headerToolbar: {
-                        left: 'today prevYear,prev,next,nextYear',
-                        center: 'title',
-                        right: 'listYear,dayGridMonth,multiMonthYear,dayGridYear,scrollMonthYear',
+        function renderCalendar(events) {
+            let calendarEl = document.getElementById('calendar');
+
+            let calendar = new FullCalendar.Calendar(calendarEl, {
+                headerToolbar: {
+                    left: 'today prevYear,prev,next,nextYear',
+                    center: 'title',
+                    right: 'listYear,dayGridMonth,multiMonthYear,dayGridYear,scrollMonthYear',
+                },
+                initialView: 'multiMonthYear',
+                // multiMonthMaxColumns: 2,
+
+                views: {
+                    scrollMonthYear: {
+                        buttonText: "scroll",
+                        type: "multiMonthYear",
+                        multiMonthMaxColumns: 1,
                     },
-                    initialView: 'multiMonthYear',
-                    // multiMonthMaxColumns: 2,
+                    dayGridYear: {
+                        buttonText: "continuous",
+                    }
+                },
 
-                    views: {
-                        scrollMonthYear: {
-                            buttonText: "scroll",
-                            type: "multiMonthYear",
-                            multiMonthMaxColumns: 1,
+                initialDate: new Date().toISOString().slice(0, 10),
+
+                eventDisplay: "auto",
+
+                eventDidMount: function (info) {
+                    // let tooltip = new Tooltip(info.el, {
+                    //     title: info.event.extendedProps.description,
+                    //     placement: 'top',
+                    //     trigger: 'hover',
+                    //     container: 'body'
+                    // });
+                    // console.log(calendar)
+                    let placement = 'right-start'
+                    if (calendar.view.type == "listYear") {
+                        placement = "bottom"
+                    }
+
+                    let allowHTML = false;
+                    let arrow = true;
+                    let theme = undefined;
+                    let template = buildTemplate(info.event.extendedProps.app_data);
+                    if (template) {
+                        allowHTML = true;
+                        arrow = false;
+                        theme = "gameview";
+                    } else if (info.event.extendedProps.description) {
+                        template = info.event.extendedProps.description
+                    } else {
+                        template = info.event.title
+                    }
+
+                    let tippyInstance = tippy(info.el, {
+                        content: template,
+                        // content: "<strong>text aaaaaaaaaa</strong>",
+                        allowHTML: allowHTML,
+                        placement: placement,
+                        arrow: arrow,
+                        theme: theme,
+                        interactive: true,
+                        animateFill: false,
+                        // popperOptions: { strategy: 'fixed' },
+                        appendTo: document.body,
+                        flip: true,
+
+                        onTrigger(instance, event) {
+                            mouseIsBottom = event.pageY > $(window).height() * 0.45
+                            let placement = mouseIsBottom ? 'right-end' : 'right-start'
+                            if (calendar.view.type == "listYear") {
+                                placement = mouseIsBottom ? "start" : "bottom"
+                            }
+                            instance.setProps({
+                                placement: placement,
+                            })
                         },
-                        dayGridYear: {
-                            buttonText: "continuous",
-                        }
-                    },
+                    });
 
-                    initialDate: new Date().toISOString().slice(0, 10),
+                    // console.log(tippyInstance)
+                },
 
-                    eventDisplay: "auto",
-
-                    eventDidMount: function (info) {
-                        // let tooltip = new Tooltip(info.el, {
-                        //     title: info.event.extendedProps.description,
-                        //     placement: 'top',
-                        //     trigger: 'hover',
-                        //     container: 'body'
-                        // });
-                        // console.log(calendar)
-                        let placement = 'right-start'
-                        if (calendar.view.type == "listYear") {
-                            placement = "bottom"
-                        }
-
-                        let allowHTML = false;
-                        let arrow = true;
-                        let theme = undefined;
-                        let template = buildTemplate(info.event.extendedProps.app_data);
-                        if (template) {
-                            allowHTML = true;
-                            arrow = false;
-                            theme = "gameview";
-                        } else if (info.event.extendedProps.description) {
-                            template = info.event.extendedProps.description
-                        } else {
-                            template = info.event.title
-                        }
-
-                        let tippyInstance = tippy(info.el, {
-                            content: template,
-                            // content: "<strong>text aaaaaaaaaa</strong>",
-                            allowHTML: allowHTML,
-                            placement: placement,
-                            arrow: arrow,
-                            theme: theme,
-                            interactive: true,
-                            animateFill: false,
-                            // popperOptions: { strategy: 'fixed' },
-                            appendTo: document.body,
-                            flip: true,
-
-                            onTrigger(instance, event) {
-                                mouseIsBottom = event.pageY > $(window).height() * 0.45
-                                let placement = mouseIsBottom ? 'right-end' : 'right-start'
-                                if (calendar.view.type == "listYear") {
-                                    placement = mouseIsBottom ? "start" : "bottom"
-                                }
-                                instance.setProps({
-                                    placement: placement,
-                                })
-                            },
-                        });
-
-                        // console.log(tippyInstance)
-                    },
-
-                    events: events,
-                });
-
-                calendar.render();
+                events: events,
             });
 
+            calendar.render();
         }
 
         (async () => {
-            try {
-                await main()
-            } catch (e) {
-            }
+            let events = await fetchEvents()
+
+            renderCalendar(events)
+
+            // document.addEventListener('DOMContentLoaded', function () {
+            // });
         })();
     </script>
 </head>
