@@ -300,12 +300,14 @@
             {
                 title: '迷宫饭',
                 start: '2024-01-01',
-                color: '#FF6699'
+                color: '#FF6699',
+                type: "Anime",
             },
             {
                 title: '药屋少女的呢喃',
                 start: '2023-10-01',
-                color: '#FF6699'
+                color: '#FF6699',
+                type: "Anime",
             },
         ]
 
@@ -367,9 +369,16 @@
             let cached = await fetch("https://gamescalendar.github.io/events.json")
             cached = await cached.json()
 
-            events.push(...cached)
+            // sanitize
+            if (!Array.isArray(cached) && cached.data) {
+                cached = Object.values(cached.data)
+            }
 
-            return events
+            // build events
+            events.push(...cached)
+            let result = events.filter(x => !x.isTBA);
+
+            return result
         }
 
         function renderCalendar(events) {
