@@ -322,7 +322,7 @@
                             mouseIsBottom = event.pageY > $(window).height() * 0.45
                             let placement = mouseIsBottom ? 'right-end' : 'right-start'
                             if (calendar.view.type == "listYear") {
-                                placement = mouseIsBottom ? "start" : "bottom"
+                                placement = mouseIsBottom ? "top" : "bottom"
                             }
                             instance.setProps({
                                 placement: placement,
