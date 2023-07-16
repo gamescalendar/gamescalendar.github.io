@@ -41,7 +41,7 @@ jobs:
           git config --local user.email "actions@github.com"
           if ! git diff --exit-code; then
             git fetch
-            git add *
+            git add .
             git commit -am "Updating events at $(date)"
             git push origin master
           fi
