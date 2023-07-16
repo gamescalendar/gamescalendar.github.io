@@ -35,9 +35,5 @@ jobs:
           CI_ENV: ci
         run: node ./generate.js
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          publish_branch: master
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+      - name: commit changed files
+        run: git remote set-url origin ${{ secrets.ssh }} && git add . && git commit -m "Updating events at $(date)" && git fetch origin master && git push origin master
