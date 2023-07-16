@@ -1,5 +1,5 @@
 {
-    "index": 7,
+    "index": 6,
     "data": {
         "949230": {
             "meta": {
@@ -307,74 +307,6 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
-                    },
-                    {
-                        "id": 23,
-                        "description": "Steam Cloud"
-                    }
-                ],
-                "genres": [
-                    {
-                        "id": "3",
-                        "description": "RPG"
-                    }
-                ]
-            }
-        },
-        "1971650": {
-            "meta": {
-                "index": 6,
-                "platform": "Steam",
-                "identifier": 1971650,
-                "last_track_date": "2023-07-16"
-            },
-            "type": "Game",
-            "title": "OCTOPATH TRAVELER II",
-            "isTBA": false,
-            "start": "2023-02-24",
-            "app_data": {
-                "platform": "Steam",
-                "appid": 1971650,
-                "title": "OCTOPATH TRAVELER II",
-                "description": "This game is a brand-new entry in the OCTOPATH TRAVELER series, the first installment of which was initially released in 2018 and sold over 3 million copies worldwide.",
-                "tags": [
-                    "RPG"
-                ],
-                "release_date": {
-                    "coming_soon": false,
-                    "date": "Feb 24, 2023"
-                },
-                "language": {
-                    "zh": {
-                        "gui": true,
-                        "audio": false,
-                        "subtitle": true
-                    }
-                },
-                "owned": false,
-                "developers": [
-                    "Square Enix",
-                    "ACQUIRE Corp."
-                ],
-                "publishers": [
-                    "Square Enix"
-                ],
-                "categories": [
-                    {
-                        "id": 2,
-                        "description": "Single-player"
-                    },
-                    {
-                        "id": 22,
-                        "description": "Steam Achievements"
-                    },
-                    {
-                        "id": 28,
-                        "description": "Full controller support"
-                    },
-                    {
-                        "id": 29,
-                        "description": "Steam Trading Cards"
                     },
                     {
                         "id": 23,
