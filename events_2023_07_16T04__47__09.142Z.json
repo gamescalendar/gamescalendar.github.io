@@ -1,5 +1,5 @@
 {
-    "index": 8,
+    "index": 7,
     "data": {
         "949230": {
             "meta": {
@@ -317,78 +317,6 @@
                     {
                         "id": "3",
                         "description": "RPG"
-                    }
-                ]
-            }
-        },
-        "1888160": {
-            "meta": {
-                "index": 7,
-                "platform": "Steam",
-                "identifier": 1888160,
-                "last_track_date": "2023-07-16"
-            },
-            "type": "Game",
-            "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
-            "isTBA": false,
-            "start": "2023-08-24",
-            "app_data": {
-                "platform": "Steam",
-                "appid": 1888160,
-                "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
-                "description": "A new action game based on the concept of the ARMORED CORE series that uses the knowledge gained from FromSoftware's recent action game development.",
-                "tags": [
-                    "Action"
-                ],
-                "release_date": {
-                    "coming_soon": true,
-                    "date": "Aug 24, 2023"
-                },
-                "language": {
-                    "zh": {
-                        "gui": true,
-                        "audio": false,
-                        "subtitle": true
-                    }
-                },
-                "owned": false,
-                "developers": [
-                    "FromSoftware Inc."
-                ],
-                "publishers": [
-                    "FromSoftware Inc.",
-                    "Bandai Namco Entertainment Inc."
-                ],
-                "categories": [
-                    {
-                        "id": 2,
-                        "description": "Single-player"
-                    },
-                    {
-                        "id": 1,
-                        "description": "Multi-player"
-                    },
-                    {
-                        "id": 49,
-                        "description": "PvP"
-                    },
-                    {
-                        "id": 36,
-                        "description": "Online PvP"
-                    },
-                    {
-                        "id": 22,
-                        "description": "Steam Achievements"
-                    },
-                    {
-                        "id": 23,
-                        "description": "Steam Cloud"
-                    }
-                ],
-                "genres": [
-                    {
-                        "id": "1",
-                        "description": "Action"
                     }
                 ]
             }
