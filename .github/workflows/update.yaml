@@ -36,4 +36,4 @@ jobs:
         run: node ./generate.js
 
       - name: commit changed files
-        run: git remote set-url origin ${{ secrets.ssh }} && git add . && git commit -m "Updating events at $(date)" && git fetch origin master && git push origin master
+        run: git add . && git commit -m "Updating events at $(date)" && git fetch origin master && git push origin master
