@@ -66,7 +66,7 @@
             "type": "Game",
             "title": "Baldur's Gate 3",
             "isTBA": false,
-            "start": "2020-10-06",
+            "start": "2023-08-03",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1086940,
@@ -80,7 +80,7 @@
                 ],
                 "release_date": {
                     "coming_soon": false,
-                    "date": "Oct 6, 2020"
+                    "date": "6 Oct, 2020"
                 },
                 "language": {
                     "zh": {
@@ -89,7 +89,7 @@
                         "subtitle": true
                     }
                 },
-                "owned": false,
+                "owned": true,
                 "developers": [
                     "Larian Studios"
                 ],

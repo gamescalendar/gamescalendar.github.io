@@ -151,13 +151,36 @@ function getTrackedEvents() {
         tracked.data = obj.data;
     }
 
-    let maxIndex = Math.max(...(Object.values(obj.data).filter(x => (typeof x.meta.index) == "number").map(x => x.meta.index)))
+    let maxIndex = Math.max(...(Object.values(obj.data).filter(x => (typeof x.meta?.index) == "number").map(x => x.meta.index)))
     if (tracked.index <= maxIndex) {
         console.log(`wrong tracked log, fix index from ${tracked.index} to ${maxIndex + 1}`)
         tracked.index = maxIndex + 1
     }
     // console.log(`read tracked log ${JSON.stringify(tracked)}`)
     return tracked
+}
+
+function doPatch(events) {
+    let data = fs.readFileSync('override.json', 'utf8');
+    let override = JSON.parse(data);
+
+    Object.keys(override).forEach(key => {
+        let obj = override[key]
+        if (events.data[key]) {
+            // we should only patch specific fields
+            console.log(`Patching ${key}`)
+            if (obj.start) {
+                console.log(`Patching ${key}.start from ${events.data[key].start} to ${obj.start}`)
+                events.data[key].start = obj.start
+            }
+            if (obj.app_data.owned !== events.data[key].app_data.owned) {
+                console.log(`Patching ${key}.app_data.owned from ${events.data[key].app_data.owned} to ${obj.app_data.owned}`)
+                events.data[key].app_data.owned = obj.app_data.owned
+            }
+        } else {
+            console.log(`Patch for ${key} isn't tracked yet`)
+        }
+    })
 }
 
 function doWrite(events) {
@@ -203,7 +226,7 @@ function getNeedRefreshTargets(newTargets, tracked) {
         if (!tracked[target]) {
             console.log(`${target} not tracked yet, add to refresh list`)
             needRefreshTargets.push({
-                target,
+                target: target,
                 outdated_days: 9999,
             })
         }
@@ -213,16 +236,16 @@ function getNeedRefreshTargets(newTargets, tracked) {
         if (!obj.meta) {
             console.log(`${target} tracked but no metadata, add to refresh list`)
             needRefreshTargets.push({
-                target,
+                target: target,
                 outdated_days: 9999,
             })
             return
         }
         let lastTrackDate = obj.meta?.last_track_date
         if (!lastTrackDate) {
-            console.log(`${obj.meta} tracked but no last_track_date, add to refresh list`)
+            console.log(`${target} tracked but no last_track_date, add to refresh list`)
             needRefreshTargets.push({
-                target,
+                target: target,
                 outdated_days: 9999,
             })
             return
@@ -233,7 +256,7 @@ function getNeedRefreshTargets(newTargets, tracked) {
             let days = difference / (1000 * 3600 * 24);
             console.log(`${obj.meta} outdated for ${days} days, add to refresh list`)
             needRefreshTargets.push({
-                target,
+                target: target,
                 outdated_days: days,
             })
             return
@@ -242,8 +265,10 @@ function getNeedRefreshTargets(newTargets, tracked) {
     })
 
     const MAX_COUNT_PER_DAY = 10
-
-    return needRefreshTargets.sort((a, b) => {
+    needRefreshTargets.forEach(x => {
+        x.target = parseFloat(x.target)
+    })
+    return needRefreshTargets.filter(x => !isNaN(x.target)).sort((a, b) => {
         return b.outdated_days - a.outdated_days
     }).slice(0, MAX_COUNT_PER_DAY).map(x => x.target)
 }
@@ -265,18 +290,23 @@ async function main(newTargets) {
             let apiData = await getAppDataFromAPI(target);
             let calendarData = transformAPIDataToCalendarData(apiData);
             calendarData.forEach(x => {
-                x.meta = {
-                    index: trackedEvents.index,
-                    platform: "Steam",
-                    identifier: target,
-                    last_track_date: today,
-                };
+                if (!x.meta) {
+                    x.meta = {
+                        index: trackedEvents.index,
+                        platform: "Steam",
+                        identifier: target,
+                        last_track_date: today,
+                    };
 
-                trackedEvents.data[target] = x;
-                trackedEvents.index += 1;
+                    trackedEvents.data[target] = x;
+                    trackedEvents.index += 1;
+                } else {
+                    x.meta.last_track_date = today
+                }
             })
         }
 
+        doPatch(trackedEvents)
         doWrite(trackedEvents)
     }
 
