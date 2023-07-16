@@ -175,142 +175,6 @@
     </style>
 
     <script>
-        const test_events = [
-            {
-                title: 'All Day',
-                description: 'description for All Day Event',
-                start: '2023-07-01',
-                className: "day_event"
-            },
-            {
-                title: 'All Day \nMULTIPLE LINE \nEvent',
-                description: 'description for All Day Event',
-                start: '2023-07-02',
-                className: "day_event"
-            },
-            {
-                title: 'All Day',
-                description: 'description for All Day Event',
-                start: '2023-07-03',
-                className: "day_event"
-            },
-            {
-                title: 'All Day LOOOOOONG Event',
-                description: 'description for All Day Event',
-                start: '2023-07-03',
-                className: "day_event"
-            },
-            {
-                title: 'Long Event',
-                description: 'description for Long Event',
-                start: '2023-07-07',
-                end: '2023-07-10'
-            },
-            {
-                groupId: '999',
-                title: 'Repeating Event',
-                description: 'description for Repeating Event',
-                start: '2023-07-09T16:00:00'
-            },
-            {
-                groupId: '999',
-                title: 'Repeating Event',
-                description: 'description for Repeating Event',
-                start: '2023-07-16T16:00:00'
-            },
-            {
-                title: 'Conference',
-                description: 'description for Conference',
-                start: '2023-07-11',
-                end: '2023-07-13'
-            },
-            {
-                title: 'Meeting',
-                description: 'description for Meeting',
-                start: '2023-07-12T10:30:00',
-                end: '2023-07-12T12:30:00'
-            },
-            {
-                title: 'Lunch',
-                description: 'description for Lunch',
-                start: '2023-07-12T12:00:00'
-            },
-            {
-                title: 'Meeting',
-                description: 'description for Meeting',
-                start: '2023-07-12T14:30:00'
-            },
-            {
-                title: 'Birthday Party',
-                description: 'description for Birthday Party',
-                start: '2023-07-13'
-            },
-            {
-                title: 'Birthday Party 2',
-                description: 'description for Birthday Party',
-                start: '2023-07-13'
-            },
-            {
-                title: 'Click for Google',
-                description: 'description for Click for Google',
-                url: 'https://google.com/',
-                start: '2023-07-28'
-            }
-        ];
-
-        const events = [
-            {
-                title: "Baldur's Gate 3",
-                start: '2023-08-03',
-                app_data: {
-                    appid: 1086940,
-                    title: "Baldur's Gate 3",
-                    description: "召集你的团队，回到被遗忘的国度，开启一段记载着友谊与背叛、牺牲与生存、以及至上力量诱惑的传奇故事。",
-                    tags: ["抢先体验", "角色扮演", "选择取向", "角色自定义", "奇幻", "剧情丰富"],
-                    release_date: "2020 年 10 月 6 日",
-                    language: {
-                        zh: {
-                            gui: true,
-                            audio: false,
-                            subtitle: true,
-                        }
-                    },
-                    owned: true,
-                },
-            },
-            // {
-            //     title: 'Starfield',
-            //     start: '2023-09-06',
-            //     app_data: {
-            //         appid: 1716740,
-            //         title: "Starfield",
-            //         description: "《Starfield》是由载誉无数、曾为大家带来《The Elder Scrolls V: Skyrim》和《Fallout 4》的Bethesda Game Studios睽违25年所打造的第一个全新宇宙。",
-            //         tags: ["开放世界", "太空", "角色扮演", "单人", "科幻"],
-            //         release_date: "2023 年 9 月 6 日",
-            //         language: {
-            //             zh: {
-            //                 gui: true,
-            //                 audio: false,
-            //                 subtitle: true,
-            //             }
-            //         },
-            //         owned: false,
-            //     },
-            // },
-            {
-                title: '迷宫饭',
-                start: '2024-01-01',
-                color: '#FF6699',
-                type: "Anime",
-            },
-            {
-                title: '药屋少女的呢喃',
-                start: '2023-10-01',
-                color: '#FF6699',
-                type: "Anime",
-            },
-        ]
-
         function buildTemplate(data) {
             if (!data) {
                 return null;
@@ -365,20 +229,26 @@
             return template;
         }
 
-        async function fetchEvents() {
-            let cached = await fetch("https://gamescalendar.github.io/events.json")
-            cached = await cached.json()
+        async function fetchEvents(url) {
+            let events = await fetch(url)
+            events = await events.json()
 
             // sanitize
-            if (!Array.isArray(cached) && cached.data) {
-                cached = Object.values(cached.data)
+            if (!Array.isArray(events) && events.data) {
+                events = Object.values(events.data)
             }
 
             // build events
-            events.push(...cached)
             let result = events.filter(x => !x.isTBA);
 
             return result
+        }
+
+        async function buildEvents() {
+            let staticEvents = await fetchEvents("https://gamescalendar.github.io/static.json")
+            let dynamicEvents = await fetchEvents("https://gamescalendar.github.io/events.json")
+
+            return staticEvents.concat(dynamicEvents)
         }
 
         function renderCalendar(events) {
@@ -470,7 +340,7 @@
         }
 
         (async () => {
-            let events = await fetchEvents()
+            let events = await buildEvents()
 
             renderCalendar(events)
 
