@@ -185,10 +185,10 @@ function doPatch(events) {
 
 function doWrite(events) {
     // backup file
-    let nowFilename = (new Date().toISOString()).replaceAll("-", "_").replaceAll(":", "__")
-    let backupFilename = `events_${nowFilename}.json`
-    console.log(`backup previous data to ${backupFilename}`)
-    fs.renameSync("events.json", backupFilename)
+    // let nowFilename = (new Date().toISOString()).replaceAll("-", "_").replaceAll(":", "__")
+    // let backupFilename = `events_${nowFilename}.json`
+    // console.log(`backup previous data to ${backupFilename}`)
+    // fs.renameSync("events.json", backupFilename)
 
     // write new file
     let eventsJSON = JSON.stringify(events, null, 4);
@@ -310,7 +310,7 @@ async function main(newTargets) {
         doWrite(trackedEvents)
     }
 
-    cleanupBackups()
+    // cleanupBackups()
 }
 
 (async () => {

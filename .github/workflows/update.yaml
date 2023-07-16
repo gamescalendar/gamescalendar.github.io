@@ -33,15 +33,18 @@ jobs:
       - name: Update Data
         env:
           CI_ENV: ci
-        run: node ./generate.js
+        run: |
+          git checkout release -- events.json
+          node ./generate.js
 
       - name: commit changed files
         run: |
           git config --local user.name actions-user
           git config --local user.email "actions@github.com"
           if ! git diff --exit-code; then
-            git fetch
-            git add .
+            git stash save
+            git checkout release
+            git stash pop
             git commit -am "Updating events at $(date)"
-            git push origin master
+            git push origin release
           fi
