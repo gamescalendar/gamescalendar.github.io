@@ -170,7 +170,7 @@
             max-width: 650px !important;
             background-color: white;
 
-            box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
+            box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
         }
 
         .tippy-box[data-theme~='gameview-metacritic'] .tippy-content {
@@ -477,8 +477,17 @@
 
         function patchColorForEvents(events) {
             events.forEach(event => {
-                if (event.meta?.platform === "switch") {
-                    event.color = "#DC0011"
+                if (event.meta?.platform) {
+                    let platform = event.meta.platform.toLowerCase()
+                    if (platform === "switch") {
+                        event.color = "#DC0011"
+                    } else if (platform.includes("playstation")) {
+                        event.color = "#006FCD"
+                    } else if (platform.includes("xbox")) {
+                        event.color = "#107c10"
+                    } else {
+                        event.color = "#1a9fff"
+                    }
                 }
             })
         }
