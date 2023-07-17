@@ -8823,10 +8823,18 @@
                     "platformString": "Switch",
                     "releaseDate": "May 12, 2023",
                     "summary": "An epic adventure across the land and skies of Hyrule awaits in The Legend of Zelda™: Tears of the Kingdom for Nintendo Switch™. The adventure is yours to create in a world fueled by your imagination. In this sequel to The Legend of Zelda: Breath of the Wild, you’ll decide your own path through the sprawling landscapes of Hyrule and the mysterious islands floating in the vast skies above. Can you harness the power of Link’s new abilities to fight back against the malevolent forces that threaten the kingdom?",
-                    "publisher": "Nintendo",
-                    "publisherURL": "/company/nintendo",
-                    "developer": "Nintendo",
-                    "developerURL": "/company/nintendo",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        }
+                    ],
                     "genres": [
                         "Action Adventure",
                         "Open-World"
@@ -8856,10 +8864,18 @@
                     "platformString": "Switch",
                     "releaseDate": "Mar  3, 2017",
                     "summary": "Forget everything you know about The Legend of Zelda games. Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild, a boundary-breaking new game in the acclaimed series. Travel across fields, through forests and to mountain peaks as you discover what has become of the ruined kingdom of Hyrule in this open-air adventure. Explore the wilds of Hyrule any way you like - Climb up towers and mountain peaks in search of new destinations, then set your own path to get there and plunge into the wilderness. Along the way, you'll battle towering enemies, hunt wild beasts and gather ingredients for the food and elixirs you'll need to sustain you on your journey. More than 100 Shrines of Trials to discover and explore - Shrines dot the landscape, waiting to be discovered in any order you want. Search for them in various ways, and solve a variety of puzzles inside. Work your way through the traps and devices inside to earn special items and other rewards that will help you on your adventure.\n*    Be prepared and properly equipped - With an entire world waiting to be explored, you'll need a variety of outfits and gear to reach every corner. You may need to bundle up with warmer clothes or change into something better suited to the desert heat. Some clothing even has special effects that, for example, can make you faster and stealthier.\n*    Battling enemies requires strategy - The world is inhabited with enemies of all shapes and sizes. Each one has its own attack method and weaponry, so you must think quickly and develop the right strategies to defeat them.\n*    amiibo compatibility - Tap the Wolf Link amiibo (sold separately) to make Wolf Link appear in game. Wolf Link will attack enemies on his own and help you find items you're searching for.",
-                    "publisher": "Nintendo",
-                    "publisherURL": "/company/nintendo",
-                    "developer": "Nintendo",
-                    "developerURL": "/company/nintendo",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        }
+                    ],
                     "genres": [
                         "Action Adventure",
                         "Open-World"
@@ -8867,7 +8883,7 @@
                     "metaScore": 97,
                     "metaReviewsCount": 109,
                     "userScore": 8.7,
-                    "userReviewsCount": 20701
+                    "userReviewsCount": 20700
                 }
             },
             "super-mario-odyssey": {
@@ -8889,10 +8905,18 @@
                     "platformString": "Switch",
                     "releaseDate": "Oct 27, 2017",
                     "summary": "New Evolution of Mario Sandbox-Style Gameplay. Mario embarks on a new journey through unknown worlds, running and jumping through huge 3D worlds in the first sandbox-style Mario game since Super Mario 64 and Super Mario Sunshine. Set sail between expansive worlds aboard an airship, and perform all-new actions, such as throwing Mario's cap.",
-                    "publisher": "Nintendo",
-                    "publisherURL": "/company/nintendo",
-                    "developer": "Nintendo",
-                    "developerURL": "/company/nintendo",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        }
+                    ],
                     "genres": [
                         "Action",
                         "Platformer",
@@ -8923,10 +8947,22 @@
                     "platformString": "Switch",
                     "releaseDate": "Oct 20, 2022",
                     "summary": "Team up with Mario, Luigi, Princess Peach, Rabbid Peach, Rabbid Luigi, and their friends on a galactic journey to defeat a malevolent entity and save your Spark companions. Explore planets throughout the galaxy as you uncover mysterious secrets and compelling quests! * Build your dream team with three heroes from an eclectic roster of nine. * Take down all new bosses, along with some familiar enemies throughout the galaxy. \n* Rescue the adorable Sparks throughout the galaxy, who provide distinct powers that will help you in battle. \n* Unleash your heroes' skills but be strategic as you dash your enemies, team jump on your allies, and hide behind covers.",
-                    "publisher": "Ubisoft",
-                    "publisherURL": "/company/ubisoft",
-                    "developer": "Ubisoft ParisUbisoft Milan",
-                    "developerURL": "/company/ubisoft-paris",
+                    "publisher": [
+                        {
+                            "name": "Ubisoft",
+                            "url": "/company/ubisoft"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Ubisoft Paris",
+                            "url": "/company/ubisoft-paris"
+                        },
+                        {
+                            "name": "Ubisoft Milan",
+                            "url": "/company/ubisoft-milan"
+                        }
+                    ],
                     "genres": [
                         "Strategy",
                         "Turn-Based",
@@ -8957,10 +8993,26 @@
                     "platformString": "Switch",
                     "releaseDate": "Aug 29, 2017",
                     "summary": "Welcome to the story of an unexpected encounter between Mario and the irreverent Rabbids. To bring order back to a splintered Mushroom Kingdom, Mario, Luigi, Princess Peach, and Yoshi team up with Rabbids heroes in a journey through four different worlds. Outwit unpredictable enemies in dynamic turn-based combat and co-op challenges, and solve puzzles along the way. Discover a feel-good and modern combat adventure designed exclusively for the Nintendo Switch system, playable anywhere, anytime, with anyone. [Ubisoft]",
-                    "publisher": "Ubisoft",
-                    "publisherURL": "/company/ubisoft",
-                    "developer": "UbisoftUbisoft ParisUbisoft Milan",
-                    "developerURL": "/company/ubisoft",
+                    "publisher": [
+                        {
+                            "name": "Ubisoft",
+                            "url": "/company/ubisoft"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Ubisoft",
+                            "url": "/company/ubisoft"
+                        },
+                        {
+                            "name": "Ubisoft Paris",
+                            "url": "/company/ubisoft-paris"
+                        },
+                        {
+                            "name": "Ubisoft Milan",
+                            "url": "/company/ubisoft-milan"
+                        }
+                    ],
                     "genres": [
                         "Action",
                         "General",
@@ -8993,10 +9045,22 @@
                     "platformString": "Switch",
                     "releaseDate": "Mar 17, 2023",
                     "summary": "Turn back the pages of the Umbra Witch’s story to learn where it all began. Take control of Cereza and her first demon Cheshire to fend off faeries and solve puzzles.",
-                    "publisher": "Sega\n                                                    \n                                                        Nintendo",
-                    "publisherURL": "/company/sega",
-                    "developer": "PlatinumGames",
-                    "developerURL": "/company/platinumgames",
+                    "publisher": [
+                        {
+                            "name": "Sega",
+                            "url": "/company/sega"
+                        },
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "PlatinumGames",
+                            "url": "/company/platinumgames"
+                        }
+                    ],
                     "genres": [
                         "Action Adventure",
                         "Linear"
@@ -9026,10 +9090,18 @@
                     "platformString": "Switch",
                     "releaseDate": "Oct 20, 2023",
                     "summary": "Find wonder in the next evolution of Mario fun. Classic Mario side-scrolling gameplay is turned on its head with the addition of Wonder Flowers. These game-changing items trigger spectacular moments you have to see to believe...Witness pipes coming alive, wreak havoc as a giant spiky ball, and see even more unexpected events called Wonder Effects. Pick from heroic Super Mario™ characters and Power-Ups. Choose from familiar characters including Mario, Luigi, Peach, Daisy, Yoshi and Toad. Transform into Elephant Mario to use your trunk to trounce enemies with a surprising new Power-Up! Share the wonder with friends and Mario fans. Team up with up to three friends locally* and gather around one Nintendo Switch™ system to experience the game-bending Wonder Effects together as you tackle courses as a team and help each other on your way to the goal.",
-                    "publisher": "Nintendo",
-                    "publisherURL": "/company/nintendo",
-                    "developer": "Nintendo",
-                    "developerURL": "/company/nintendo",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        }
+                    ],
                     "genres": [
                         "Action",
                         "Platformer",
@@ -9059,10 +9131,18 @@
                     "platformString": "PC",
                     "releaseDate": "Oct 17, 2023",
                     "summary": "Shed some light on what has long been obscured by darkness. After 11 long years, the writer's return is a reality and the dangers lurking in the dark are even more sinister than the Taken roaming Bright Falls.  Alan Wake 2 turns up the level of dread as our very first dive into the survival horror genre, so expect a chilling experience with familiar psychological horror elements.  Be careful out there. Monsters wear many faces.",
-                    "publisher": "Epic Games",
-                    "publisherURL": "/company/epic-games",
-                    "developer": "Remedy Entertainment",
-                    "developerURL": "/company/remedy-entertainment",
+                    "publisher": [
+                        {
+                            "name": "Epic Games",
+                            "url": "/company/epic-games"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Remedy Entertainment",
+                            "url": "/company/remedy-entertainment"
+                        }
+                    ],
                     "genres": [
                         "Action Adventure",
                         "Survival"
@@ -9091,10 +9171,22 @@
                     "platformString": "PlayStation 5",
                     "releaseDate": "Oct 20, 2023",
                     "summary": "Marvel's Spider-Man 2 is the next game in PlayStation's critically acclaimed Marvel's Spider-Man franchise.\n\nDeveloped for the PlayStation 5 console in collaboration with PlayStation and Marvel Games.",
-                    "publisher": "Sony Interactive Entertainment\n                                                    \n                                                        PlayStation Studios",
-                    "publisherURL": "/company/sony-interactive-entertainment",
-                    "developer": "Insomniac Games",
-                    "developerURL": "/company/insomniac-games",
+                    "publisher": [
+                        {
+                            "name": "Sony Interactive Entertainment",
+                            "url": "/company/sony-interactive-entertainment"
+                        },
+                        {
+                            "name": "PlayStation Studios",
+                            "url": "/company/playstation-studios"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Insomniac Games",
+                            "url": "/company/insomniac-games"
+                        }
+                    ],
                     "genres": [
                         "Action Adventure",
                         "Open-World"
