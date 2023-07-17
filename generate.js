@@ -514,6 +514,9 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
             let imageAlt = img.attr("alt")
 
             let summary = $(".summary_detail.product_summary .data .blurb_expanded").text().trim()
+            if (!summary) {
+                summary = $(".summary_detail.product_summary .data").text().trim()
+            }
             let $publisher = $(".summary_detail.publisher .data a")
             let publisher = $publisher.text().trim()
             let publisherURL = $publisher.attr("href")
@@ -539,7 +542,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
                     name: game,
                     title: title,
                     platformString: platformString,
-                    releaseDate: releaseDate,
+                    releaseDate: startStr,
 
                     summary: summary,
                     publisher: publisher,

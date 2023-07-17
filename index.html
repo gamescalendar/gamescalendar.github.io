@@ -158,10 +158,20 @@
             margin-right: 0;
         }
 
-        .tippy-box[data-theme~='gameview'] {
+        .tippy-box[data-theme~='gameview-steam'] {
         }
 
-        .tippy-box[data-theme~='gameview'] .tippy-content {
+        .tippy-box[data-theme~='gameview-steam'] .tippy-content {
+            padding: 0;
+        }
+
+        .tippy-box[data-theme~='gameview-metacritic'] {
+            width: 640px;
+            max-width: 640px !important;
+            background-color: white;
+        }
+
+        .tippy-box[data-theme~='gameview-metacritic'] .tippy-content {
             padding: 0;
         }
 
@@ -182,7 +192,74 @@
 
     <script>
         function buildMetacritic(data, meta) {
-            console.log(data)
+            function buildScore(data) {
+                if (!data.metaScore && !data.userScore) {
+                    return "";
+                }
+
+                let metaScore = ""
+                let userScore = ""
+
+                if (data.metaScore) {
+                    metaScore = `
+                    <div class="metascore_w positive">
+                        <a class="metascore_anchor" href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
+                            <span itemprop="ratingValue">${data.metaScore}</span>
+                        </a>
+                    </div>
+                    <div class="score_detail">
+                        <div class="label">Metascore</div>
+                        <div class="summary">
+                            <p>
+                            <span class="count">
+                                <span class="based">based on</span>
+                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
+                                    <span>${data.metaReviewsCount}</span> Critic Reviews
+                                </a>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    `
+                }
+                if (data.userScore) {
+                    userScore = `
+                    <div class="userscore_w positive">
+                        <a class="metascore_anchor"
+                           href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
+                            ${data.userScore}
+                        </a>
+                    </div>
+
+                    <div class="score_detail">
+                        <div class="label">User Score</div>
+                        <div class="summary">
+                            <p>
+                            <span class="count">
+                                <span class="based">based on</span>
+                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
+                                    <span>${data.userReviewsCount}</span> Ratings
+                                </a>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                    `
+                }
+
+                const template = `
+            <div class="product_scores">
+                <div class="main_details score_summary metascore_summary">
+                    ${metaScore}
+                </div>
+                <div class="side_details score_summary userscore_summary">
+                    ${userScore}
+                </div>
+            </div>
+                `
+                return template
+            }
+
             const template = `
 <div class="metacritic">
     <div class="content_head">
@@ -220,50 +297,7 @@
                  alt="${data.imageAlt}">
         </div>
         <div class="summary_wrap">
-            <div class="product_scores">
-                <div class="main_details score_summary metascore_summary">
-                    <div class="metascore_w positive">
-                        <a class="metascore_anchor" href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
-                            <span itemprop="ratingValue">${data.metaScore}</span>
-                        </a>
-                    </div>
-                    <div class="score_detail">
-                        <div class="label">Metascore</div>
-                        <div class="summary">
-                            <p>
-                            <span class="count">
-                                <span class="based">based on</span>
-                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
-                                    <span>${data.metaReviewsCount}</span> Critic Reviews
-                                </a>
-                            </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="side_details score_summary userscore_summary">
-                    <div class="userscore_w positive">
-                        <a class="metascore_anchor"
-                           href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
-                            ${data.userScore}
-                        </a>
-                    </div>
-
-                    <div class="score_detail">
-                        <div class="label">User Score</div>
-                        <div class="summary">
-                            <p>
-                            <span class="count">
-                                <span class="based">based on</span>
-                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
-                                    <span>${data.userReviewsCount}</span> Ratings
-                                </a>
-                            </span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            ${buildScore(data)}
             <div class="product_details">
                 <div class="details main_details">
                     <span class="label">Summary:</span>
@@ -501,7 +535,7 @@
                     if (template) {
                         allowHTML = true;
                         arrow = false;
-                        theme = "gameview";
+                        theme = `gameview-${info.event.extendedProps.source}`;
                     } else if (info.event.extendedProps.description) {
                         template = info.event.extendedProps.description
                     } else {
