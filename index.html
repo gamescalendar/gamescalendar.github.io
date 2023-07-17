@@ -280,9 +280,12 @@
                 <li class="summary_detail publisher">
                     <span class="label">Publisher:</span>
                     <span class="data">
-                        <a href="https://www.metacritic.com${data.publisherURL}">
-                            ${data.publisher}
-                        </a>
+                    ${data.publisher.map(obj => {
+                        return `
+                                <a href="https://www.metacritic.com${obj.url}">
+                                    ${obj.name}
+                                </a>`
+                    }).join(",")}
                     </span>
                 </li>
                 <li class="summary_detail release_data">
@@ -313,7 +316,12 @@
                             <li class="summary_detail developer">
                                 <span class="label">Developer:</span>
                                 <span class="data">
-                                <a href="https://www.metacritic.com${data.developerURL}" class="button">${data.developer}</a>
+                                ${data.developer.map(obj => {
+                                    return `
+                                            <a href="https://www.metacritic.com${obj.url}" class="button">
+                                                ${obj.name}
+                                            </a>`
+                                }).join(",")}
                             </span>
                             </li>
                             <li class="summary_detail product_genre">

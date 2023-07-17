@@ -517,13 +517,22 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
             if (!summary) {
                 summary = $(".summary_detail.product_summary .data").text().trim()
             }
-            let $publisher = $(".summary_detail.publisher .data a")
-            let publisher = $publisher.text().trim()
-            let publisherURL = $publisher.attr("href")
+            let publisher = Array.from($(".summary_detail.publisher .data a")).map(x => {
+                let $x = $(x)
+                return {
+                    name: $x.text().trim(),
+                    url: $x.attr("href"),
+                }
+            })
 
-            let $developer = $(".summary_detail.developer .data .button")
-            let developer = $developer.text().trim()
-            let developerURL = $developer.attr("href")
+            let developer = Array.from($(".summary_detail.developer .data a")).map(x => {
+                let $x = $(x)
+                return {
+                    name: $x.text().trim(),
+                    url: $x.attr("href"),
+                }
+            })
+
             let genres = Array.from($(".summary_detail.product_genre .data")).map(x => $(x).text().trim());
 
             if (!trackedEvents.metacritic[platform]) {
@@ -546,9 +555,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
 
                     summary: summary,
                     publisher: publisher,
-                    publisherURL: publisherURL,
                     developer: developer,
-                    developerURL: developerURL,
                     genres: genres,
 
                     metaScore: toNumberOrUndefined(metaScore),
