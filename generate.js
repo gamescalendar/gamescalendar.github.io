@@ -530,7 +530,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
                 trackedEvents.metacritic[platform] = {}
             }
             trackedEvents.metacritic[platform][game] = {
-                meta: trackedEvents.metacritic[platform][game].meta,
+                meta: trackedEvents.metacritic[platform][game]?.meta,
                 type: "Game",
                 title: title,
                 start: start,
