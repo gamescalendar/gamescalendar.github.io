@@ -21,6 +21,9 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <style>
         html, body {
             margin: 0;
@@ -178,6 +181,125 @@
     </style>
 
     <script>
+        function buildMetacritic(data, meta) {
+            console.log(data)
+            const template = `
+<div class="metacritic">
+    <div class="content_head">
+        <div class="product_title">
+            <a href="https://www.metacritic.com/game/${data.platform}/${data.name}">
+                <h1>${data.title}</h1>
+            </a>
+            <span class="platform">
+                <a href="https://www.metacritic.com/game/${data.platform}">
+                    ${data.platformString}
+                </a>
+            </span>
+        </div>
+        <div class="product_data">
+            <ul class="summary_details">
+                <li class="summary_detail publisher">
+                    <span class="label">Publisher:</span>
+                    <span class="data">
+                        <a href="https://www.metacritic.com${data.publisherURL}">
+                            ${data.publisher}
+                        </a>
+                    </span>
+                </li>
+                <li class="summary_detail release_data">
+                    <span class="label">Release Date:</span>
+                    <span class="data">${data.releaseDate}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content_detail">
+        <div class="product_media large_media">
+            <img class="product_image large_image"
+                 src="${data.imageURL}"
+                 alt="${data.imageAlt}">
+        </div>
+        <div class="summary_wrap">
+            <div class="product_scores">
+                <div class="main_details score_summary metascore_summary">
+                    <div class="metascore_w positive">
+                        <a class="metascore_anchor" href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
+                            <span itemprop="ratingValue">${data.metaScore}</span>
+                        </a>
+                    </div>
+                    <div class="score_detail">
+                        <div class="label">Metascore</div>
+                        <div class="summary">
+                            <p>
+                            <span class="count">
+                                <span class="based">based on</span>
+                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
+                                    <span>${data.metaReviewsCount}</span> Critic Reviews
+                                </a>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="side_details score_summary userscore_summary">
+                    <div class="userscore_w positive">
+                        <a class="metascore_anchor"
+                           href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
+                            ${data.userScore}
+                        </a>
+                    </div>
+
+                    <div class="score_detail">
+                        <div class="label">User Score</div>
+                        <div class="summary">
+                            <p>
+                            <span class="count">
+                                <span class="based">based on</span>
+                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
+                                    <span>${data.userReviewsCount}</span> Ratings
+                                </a>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product_details">
+                <div class="details main_details">
+                    <span class="label">Summary:</span>
+                    <span class="data">
+                        ${data.summary}
+                    </span>
+                </div>
+                <div class="details side_details">
+                    <div class="detail_wrapper">
+                        <ul class="summary_details">
+                            <li class="summary_detail developer">
+                                <span class="label">Developer:</span>
+                                <span class="data">
+                                <a href="https://www.metacritic.com${data.developerURL}" class="button">${data.developer}</a>
+                            </span>
+                            </li>
+                            <li class="summary_detail product_genre">
+                                <span class="label">Genre(s): </span>
+                                <span class="data">${data.genres.join(", ")}</span>
+                            </li>
+                        </ul>
+
+                        <div class="sync_date">
+                            <span class="label">Sync date: </span>
+                            <span class="data">${meta.last_track_date}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+`
+            return template
+        }
+
         function buildTemplate(data, meta) {
             if (!data) {
                 return null;
@@ -252,7 +374,7 @@
 
                         <div class="release_date">
                             <div class="subtitle column">发行日期：</div>
-                            <div class="date">${data.release_date.date ?? data.release_date}</div>
+                            <div class="date">${data.release_date?.date ?? data.release_date}</div>
                         </div>
                         <div class="inner_rule"></div>
 
@@ -294,11 +416,27 @@
             events = await events.json()
 
             // sanitize
-            if (!Array.isArray(events) && events.data) {
-                events = Object.values(events.data)
+            let result = []
+            if (!Array.isArray(events)) {
+                if (events.data) {
+                    for (const appid in events.data) {
+                        events.data[appid].source = "steam";
+                    }
+                    result.push(...Object.values(events.data))
+                }
+                if (events.metacritic) {
+                    for (const platform in events.metacritic) {
+                        for (const name in events.metacritic[platform]) {
+                            events.metacritic[platform][name].source = "metacritic";
+                        }
+                        result.push(...Object.values(events.metacritic[platform]))
+                    }
+                }
+            } else {
+                return events
             }
 
-            return events
+            return result
         }
 
         async function buildEvents() {
@@ -351,7 +489,15 @@
                     let allowHTML = false;
                     let arrow = true;
                     let theme = undefined;
-                    let template = buildTemplate(info.event.extendedProps.app_data, info.event.extendedProps.meta);
+                    let template = ""
+                    switch (info.event.extendedProps.source) {
+                        case "steam":
+                            template = buildTemplate(info.event.extendedProps.app_data, info.event.extendedProps.meta);
+                            break
+                        case "metacritic":
+                            template = buildMetacritic(info.event.extendedProps.app_data, info.event.extendedProps.meta);
+                            break
+                    }
                     if (template) {
                         allowHTML = true;
                         arrow = false;
@@ -451,8 +597,128 @@
     </div>
 </div>
 
+<div class="metacritic" style="display: none">
+    <div class="content_head">
+        <div class="product_title">
+            <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom" class="hover_none">
+                <h1>The Legend of Zelda: Tears of the Kingdom</h1>
+            </a>
+            <span class="platform">
+                <a href="https://www.metacritic.com/game/switch">
+                    Switch
+                </a>
+            </span>
+        </div>
+        <div class="product_data">
+            <ul class="summary_details">
+                <li class="summary_detail publisher">
+                    <span class="label">Publisher:</span>
+                    <span class="data">
+                        <a href="https://www.metacritic.com/company/nintendo">
+                            Nintendo
+                        </a>
+                    </span>
+                </li>
+                <li class="summary_detail release_data">
+                    <span class="label">Release Date:</span>
+                    <span class="data">May 12, 2023</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="content_detail">
+        <div class="product_media large_media">
+            <img class="product_image large_image"
+                 src="https://static.metacritic.com/images/products/games/0/7529054a2e91ed554500f775fb15370b-98.jpg"
+                 alt="The Legend of Zelda: Tears of the Kingdom Image">
+        </div>
+        <div class="summary_wrap">
+            <div class="product_scores">
+                <div class="main_details score_summary metascore_summary">
+                    <div class="metascore_w positive">
+                        <a class="metascore_anchor" href="https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom/critic-reviews">
+                            <span itemprop="ratingValue">96</span>
+                        </a>
+                    </div>
+                    <div class="score_detail">
+                        <div class="label">Metascore</div>
+                        <div class="summary">
+                            <p>
+                            <span class="count">
+                                <span class="based">based on</span>
+                                <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom/critic-reviews">
+                                    <span>141</span> Critic Reviews
+                                </a>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="side_details score_summary userscore_summary">
+                    <div class="userscore_w positive">
+                        <a class="metascore_anchor"
+                           href="https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom/user-reviews">
+                            8.5
+                        </a>
+                    </div>
+
+                    <div class="score_detail">
+                        <div class="label">User Score</div>
+                        <div class="summary">
+                            <p>
+                            <span class="count">
+                                <span class="based">based on</span>
+                                <a href="https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom/user-reviews">
+                                    <span>7727</span> Ratings
+                                </a>
+                            </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product_details">
+                <div class="details main_details">
+                    <span class="label">Summary:</span>
+                    <span class="data">
+                        An epic adventure across the land and
+                        skies of Hyrule awaits in The Legend of Zelda™: Tears of the Kingdom for
+                        Nintendo Switch™. The adventure is yours to create in a world fueled by
+                        your imagination. In this sequel to The Legend of Zelda: Breath of the
+                        Wild, you’ll decide your own path through the sprawling landscapes of
+                        Hyrule and the mysterious islands floating in the vast skies above. Can
+                        you harness the power of Link’s new abilities to fight back against the
+                        malevolent forces that threaten the kingdom?
+                    </span>
+                </div>
+                <div class="details side_details">
+                    <div class="detail_wrapper">
+                        <ul class="summary_details">
+                            <li class="summary_detail developer">
+                                <span class="label">Developer:</span>
+                                <span class="data">
+                                <a href="https://www.metacritic.com/company/nintendo" class="button">Nintendo</a>
+                            </span>
+                            </li>
+                            <li class="summary_detail product_genre">
+                                <span class="label">Genre(s): </span>
+                                <span class="data">Action Adventure, Open-World</span>
+                            </li>
+                        </ul>
+
+                        <div class="sync_date">
+                            <span class="label">Sync date: </span>
+                            <span class="data">2023-07-13</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div id="template" style="display: none">
-    <div class="v6 " style="width: 324px">
+    <div class="v6">
         <div id="wrapper">
             <div class="rightcol">
                 <div class="block game_details own">
