@@ -482,7 +482,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
 
         changed = true
 
-        for (let game of games) {
+        for (let game of targets) {
             let url = `https://www.metacritic.com/game/${platform}/${game}`
             let body = await makeRequest(url) // details 页面有 table，不好解析
             let $ = cheerio.load(body)
@@ -527,6 +527,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
                 trackedEvents.metacritic[platform] = {}
             }
             trackedEvents.metacritic[platform][game] = {
+                meta: trackedEvents.metacritic[platform][game].meta,
                 type: "Game",
                 title: title,
                 start: start,
@@ -557,6 +558,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
             if (trackedEvents.metacritic[platform][game].meta) {
                 trackedEvents.metacritic[platform][game].meta.last_track_date = today
             } else {
+                console.log("index +1")
                 trackedEvents.metacritic[platform][game].meta = {
                     index: trackedEvents.index,
                     platform: platform,
