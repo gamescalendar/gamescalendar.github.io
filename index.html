@@ -166,9 +166,11 @@
         }
 
         .tippy-box[data-theme~='gameview-metacritic'] {
-            width: 640px;
-            max-width: 640px !important;
+            width: 650px;
+            max-width: 650px !important;
             background-color: white;
+
+            box-shadow: 0 2px 5px 1px rgba(64,60,67,.16);
         }
 
         .tippy-box[data-theme~='gameview-metacritic'] .tippy-content {
@@ -473,11 +475,21 @@
             return result
         }
 
+        function patchColorForEvents(events) {
+            events.forEach(event => {
+                if (event.meta?.platform === "switch") {
+                    event.color = "#DC0011"
+                }
+            })
+        }
+
         async function buildEvents() {
             let staticEvents = await fetchEvents("https://gamescalendar.github.io/static.json")
             let dynamicEvents = await fetchEvents("https://gamescalendar.github.io/events.json")
 
-            return staticEvents.concat(dynamicEvents)
+            let events = staticEvents.concat(dynamicEvents)
+            patchColorForEvents(events)
+            return events
         }
 
         function renderCalendar(events) {
