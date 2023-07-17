@@ -37,9 +37,9 @@ const isCI = process.env.CI_ENV == "ci"
 const proxy = process.env.HTTP_PROXY || 'http://127.0.0.1:1080'
 
 async function getAppDataFromAPI(appid) {
+    console.log(`Fetching API for ${appid}`)
     let response;
     if (isCI) {
-        console.log(`Fetching API for ${appid}`)
         response = await fetch(`https://store.steampowered.com/api/appdetails?appids=${appid}`);
     } else {
         const proxyAgent = new HttpsProxyAgent(proxy);
@@ -254,7 +254,7 @@ function getNeedRefreshTargets(newTargets, tracked) {
         let difference = (new Date(today)).getTime() - (new Date(lastTrackDate)).getTime()
         if (difference > 0) {
             let days = difference / (1000 * 3600 * 24);
-            console.log(`${obj.meta} outdated for ${days} days, add to refresh list`)
+            console.log(`${target} outdated for ${days} days, add to refresh list`)
             needRefreshTargets.push({
                 target: target,
                 outdated_days: days,
@@ -290,6 +290,9 @@ async function main(newTargets) {
             let apiData = await getAppDataFromAPI(target);
             let calendarData = transformAPIDataToCalendarData(apiData);
             calendarData.forEach(x => {
+                if (trackedEvents.data[target].meta) {
+                    x.meta = trackedEvents.data[target].meta
+                }
                 if (!x.meta) {
                     x.meta = {
                         index: trackedEvents.index,
@@ -314,7 +317,7 @@ async function main(newTargets) {
 }
 
 (async () => {
-    let list = fs.readFileSync("list.txt", "utf-8").split("\n").map(x => x.trim())
+    let list = fs.readFileSync("list.txt", "utf-8").split("\n").map(x => x.trim()).filter(x => x.length > 0)
     console.log(`Read target list: ${list}`)
     await main(list)
 })();
