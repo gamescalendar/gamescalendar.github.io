@@ -429,8 +429,15 @@ async function main(newTargets) {
     // cleanupBackups()
 }
 
+function getTargets() {
+    let list = fs.readFileSync("list.txt", "utf-8").split("\n")
+        .map(x => x.trim())
+        .filter(x => x.length > 0 && !x.startsWith("//"))
+    console.log(`Read target list: ${list.join("\n")}`)
+
+    return list
+}
+
 (async () => {
-    let list = fs.readFileSync("list.txt", "utf-8").split("\n").map(x => x.trim()).filter(x => x.length > 0)
-    console.log(`Read target list: ${list}`)
-    await main(list)
+    await main(getTargets())
 })();
