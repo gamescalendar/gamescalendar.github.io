@@ -1,5 +1,5 @@
 {
-    "index": 54,
+    "index": 55,
     "data": {
         "22380": {
             "meta": {
@@ -8105,6 +8105,133 @@
                     "count": "(5,061)",
                     "tooltip": "此游戏的 5,061 篇用户评测中有 96% 为好评。"
                 }
+            }
+        },
+        "1992090": {
+            "meta": {
+                "index": 54,
+                "platform": "Steam",
+                "identifier": 1992090,
+                "last_track_date": "2023-07-17"
+            },
+            "type": "Game",
+            "title": "Legend of Mortal Demo",
+            "start": "2022-05-26",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 1992090,
+                "title": "Legend of Mortal Demo",
+                "description": "The game world is set in a turbulent state and the mighty Tang-Man declines. The threats from the old enemies keep coming one after another.As a nobody, will you choose either to leave yourself out of it or to fight for Tang-Man's future and turning the tide? The journey of yours,is unpredictable.",
+                "release_date": {
+                    "coming_soon": false,
+                    "date": "May 26, 2022"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Obb Studio Inc."
+                ],
+                "publishers": [
+                    "Obb Studio Inc."
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 10,
+                        "description": "Game demo"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/en/RPG/",
+                        "name": "RPG"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Choices%20Matter/",
+                        "name": "Choices Matter"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Replay%20Value/",
+                        "name": "Replay Value"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Martial%20Arts/",
+                        "name": "Martial Arts"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Strategy/",
+                        "name": "Strategy"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Multiple%20Endings/",
+                        "name": "Multiple Endings"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Lore-Rich/",
+                        "name": "Lore-Rich"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Singleplayer/",
+                        "name": "Singleplayer"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Narrative/",
+                        "name": "Narrative"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Indie/",
+                        "name": "Indie"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Dating%20Sim/",
+                        "name": "Dating Sim"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Adventure/",
+                        "name": "Adventure"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Drama/",
+                        "name": "Drama"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Funny/",
+                        "name": "Funny"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Action/",
+                        "name": "Action"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Tactical%20RPG/",
+                        "name": "Tactical RPG"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/2D/",
+                        "name": "2D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Retro/",
+                        "name": "Retro"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Atmospheric/",
+                        "name": "Atmospheric"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Sexual%20Content/",
+                        "name": "Sexual Content"
+                    }
+                ]
             }
         },
         "2014380": {
