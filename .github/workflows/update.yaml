@@ -47,7 +47,7 @@ jobs:
           git fetch origin master
           git stash -- events.json
           git checkout release
-          git stash pop
+          git checkout stash@{0} --theirs .
           git checkout master -- static.json override.json index.html float.css
           git status
           if ! git diff --exit-code --cached; then
