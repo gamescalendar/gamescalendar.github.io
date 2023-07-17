@@ -1,5 +1,5 @@
 {
-    "index": 69,
+    "index": 71,
     "data": {
         "22380": {
             "meta": {
@@ -9034,6 +9034,70 @@
                         "Action",
                         "Platformer",
                         "2D"
+                    ],
+                    "metaReviewsCount": 0
+                }
+            }
+        },
+        "pc": {
+            "alan-wake-ii": {
+                "meta": {
+                    "index": 69,
+                    "platform": "pc",
+                    "identifier": "https://www.metacritic.com/game/pc/alan-wake-ii",
+                    "last_track_date": "2023-07-17"
+                },
+                "type": "Game",
+                "title": "Alan Wake II",
+                "start": "2023-10-17",
+                "app_data": {
+                    "imageURL": "https://static.metacritic.com/images/products/games/7/eb1da322a044d4773edffc7fc19bc5dc-98.jpg",
+                    "imageAlt": "Alan Wake II Image",
+                    "platform": "pc",
+                    "name": "alan-wake-ii",
+                    "title": "Alan Wake II",
+                    "platformString": "PC",
+                    "releaseDate": "Oct 17, 2023",
+                    "summary": "Shed some light on what has long been obscured by darkness. After 11 long years, the writer's return is a reality and the dangers lurking in the dark are even more sinister than the Taken roaming Bright Falls.  Alan Wake 2 turns up the level of dread as our very first dive into the survival horror genre, so expect a chilling experience with familiar psychological horror elements.  Be careful out there. Monsters wear many faces.",
+                    "publisher": "Epic Games",
+                    "publisherURL": "/company/epic-games",
+                    "developer": "Remedy Entertainment",
+                    "developerURL": "/company/remedy-entertainment",
+                    "genres": [
+                        "Action Adventure",
+                        "Survival"
+                    ],
+                    "metaReviewsCount": 0
+                }
+            }
+        },
+        "playstation-5": {
+            "marvels-spider-man-2": {
+                "meta": {
+                    "index": 70,
+                    "platform": "playstation-5",
+                    "identifier": "https://www.metacritic.com/game/playstation-5/marvels-spider-man-2",
+                    "last_track_date": "2023-07-17"
+                },
+                "type": "Game",
+                "title": "Marvel's Spider-Man 2",
+                "start": "2023-10-20",
+                "app_data": {
+                    "imageURL": "https://static.metacritic.com/images/products/games/5/cd88061c902cbb26258382c11bb05a87-98.jpg",
+                    "imageAlt": "Marvel's Spider-Man 2 Image",
+                    "platform": "playstation-5",
+                    "name": "marvels-spider-man-2",
+                    "title": "Marvel's Spider-Man 2",
+                    "platformString": "PlayStation 5",
+                    "releaseDate": "Oct 20, 2023",
+                    "summary": "Marvel's Spider-Man 2 is the next game in PlayStation's critically acclaimed Marvel's Spider-Man franchise.\n\nDeveloped for the PlayStation 5 console in collaboration with PlayStation and Marvel Games.",
+                    "publisher": "Sony Interactive Entertainment\n                                                    \n                                                        PlayStation Studios",
+                    "publisherURL": "/company/sony-interactive-entertainment",
+                    "developer": "Insomniac Games",
+                    "developerURL": "/company/insomniac-games",
+                    "genres": [
+                        "Action Adventure",
+                        "Open-World"
                     ],
                     "metaReviewsCount": 0
                 }
