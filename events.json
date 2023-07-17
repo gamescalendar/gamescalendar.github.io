@@ -1,5 +1,5 @@
 {
-    "index": 53,
+    "index": 54,
     "data": {
         "22380": {
             "meta": {
@@ -8266,6 +8266,167 @@
                     "cssClass": "positive",
                     "count": "(203)",
                     "tooltip": "此游戏的 203 篇用户评测中有 88% 为好评。"
+                }
+            }
+        },
+        "2050650": {
+            "meta": {
+                "index": 53,
+                "platform": "Steam",
+                "identifier": 2050650,
+                "last_track_date": "2023-07-17"
+            },
+            "type": "Game",
+            "title": "Resident Evil 4",
+            "start": "2023-03-23",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 2050650,
+                "title": "Resident Evil 4",
+                "description": "Survival is just the beginning. Six years have passed since the biological disaster in Raccoon City. Leon S. Kennedy, one of the survivors, tracks the president's kidnapped daughter to a secluded European village, where there is something terribly wrong with the locals.",
+                "release_date": {
+                    "coming_soon": false,
+                    "date": "Mar 23, 2023"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": true,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "CAPCOM Co., Ltd."
+                ],
+                "publishers": [
+                    "CAPCOM Co., Ltd."
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 22,
+                        "description": "Steam Achievements"
+                    },
+                    {
+                        "id": 28,
+                        "description": "Full controller support"
+                    },
+                    {
+                        "id": 29,
+                        "description": "Steam Trading Cards"
+                    },
+                    {
+                        "id": 23,
+                        "description": "Steam Cloud"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "1",
+                        "description": "Action"
+                    },
+                    {
+                        "id": "25",
+                        "description": "Adventure"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%90%E6%80%96/",
+                        "name": "恐怖"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98%E6%81%90%E6%80%96/",
+                        "name": "生存恐怖"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0%E5%B0%84%E5%87%BB/",
+                        "name": "第三人称射击"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%B5%E5%B0%B8/",
+                        "name": "僵尸"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
+                        "name": "生存"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97/",
+                        "name": "黑暗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8B%9F%E7%9C%9F/",
+                        "name": "拟真"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E5%BD%B1%E5%BC%8F/",
+                        "name": "电影式"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/",
+                        "name": "资源管理"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/3D/",
+                        "name": "3D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BF%83%E7%90%86%E6%81%90%E6%80%96/",
+                        "name": "心理恐怖"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A1%80%E8%85%A5/",
+                        "name": "血腥"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E5%88%B6/",
+                        "name": "重制"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
+                        "name": "第三人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
+                        "name": "动作冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/",
+                        "name": "暴力"
+                    }
+                ],
+                "recentReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(1,472)",
+                    "tooltip": "过去 30 天内的 1,472 篇用户评测中有 97% 为好评。"
+                },
+                "totalReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(53,568)",
+                    "tooltip": "此游戏的 53,568 篇用户评测中有 97% 为好评。"
                 }
             }
         },
