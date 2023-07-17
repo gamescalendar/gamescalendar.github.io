@@ -5,6 +5,8 @@ const fetch = require('node-fetch');
 const {HttpsProxyAgent} = require('https-proxy-agent');
 const cheerio = require('cheerio');
 
+const MAX_COUNT_PER_RUN = 20
+
 function fetch_data(appid) {
 
     https.get({
@@ -375,13 +377,12 @@ function getNeedRefreshTargets(newTargets, tracked) {
         console.log(`skip ${target} because last tracked date is today: ${today}`)
     })
 
-    const MAX_COUNT_PER_DAY = 10
     needRefreshTargets.forEach(x => {
         x.target = parseFloat(x.target)
     })
     return needRefreshTargets.filter(x => !isNaN(x.target)).sort((a, b) => {
         return b.outdated_days - a.outdated_days
-    }).slice(0, MAX_COUNT_PER_DAY).map(x => x.target)
+    }).slice(0, MAX_COUNT_PER_RUN).map(x => x.target)
 }
 
 async function main(newTargets) {
