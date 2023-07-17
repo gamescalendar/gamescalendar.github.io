@@ -3,6 +3,7 @@ const fs = require('fs');
 
 const fetch = require('node-fetch');
 const {HttpsProxyAgent} = require('https-proxy-agent');
+const cheerio = require('cheerio');
 
 function fetch_data(appid) {
 
@@ -36,41 +37,145 @@ function fetch_data(appid) {
 const isCI = process.env.CI_ENV == "ci"
 const proxy = process.env.HTTP_PROXY || 'http://127.0.0.1:1080'
 
-async function getAppDataFromAPI(appid) {
-    console.log(`Fetching API for ${appid}`)
+async function makeRequest(url) {
     let response;
-    if (isCI) {
-        response = await fetch(`https://store.steampowered.com/api/appdetails?appids=${appid}`);
-    } else {
-        const proxyAgent = new HttpsProxyAgent(proxy);
-        response = await fetch(`https://store.steampowered.com/api/appdetails?appids=${appid}`, {agent: proxyAgent});
+
+    let opts = {
+        headers: {
+            cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
+            // cookie: "wants_mature_content=1; sessionid=a8cb216f0ce30895a5872d0e; birthtime=186595201; lastagecheckage=1-0-1976"
+        }
+    };
+
+    try {
+        if (isCI) {
+            response = await fetch(url, opts);
+        } else {
+            console.log(`using proxy ${proxy}`)
+            opts.agent = new HttpsProxyAgent(proxy);
+            response = await fetch(url, opts);
+        }
+        return await response.text();
+    } catch (e) {
+        console.log(`failed to fetch ${url}, error: ${e}`)
+        return null
     }
-    const body = await response.text();
+}
+
+function clearURL(url) {
+    let u = new URL(url)
+    u.search = ""
+    return u.toString()
+}
+
+async function getAppDataFromStorePage(appid) {
+    let page = `https://store.steampowered.com/app/${appid}?l=schinese`
+    console.log(`Fetching Store page for ${appid} from ${page}`)
+
+    const body = await makeRequest(page);
+    if (!body) {
+        return null
+    }
+
+    let data = {}
+
+    let $ = cheerio.load(body);
+    let userReview = $("#userReviews")
+    // let userReview = Array.from(("#userReviews").children())
+    // let recentReview = userReview.filter(x=> {
+    //     let element = $(x)
+    //     return element.is("div") && element.find(".subtitle.column").text().includes("最近评测")
+    // })
+    let recentReview = $(userReview.find(".subtitle.column:not(.all)").parent())
+    if (recentReview.length > 0) {
+        let recentSummary = recentReview.find(".game_review_summary")
+        data.recentReview = {
+            summary: recentSummary.text(),
+            cssClass: recentSummary.attr("class").replace("game_review_summary", "").trim(),
+            count: recentReview.find(".summary").find(".responsive_hidden").text().trim(),
+            tooltip: recentReview.attr("data-tooltip-html"),
+        }
+    }
+
+    let totalReview = $(userReview.find(".subtitle.column.all").parent())
+    if (totalReview.length > 0) {
+        let totalSummary = totalReview.find(".game_review_summary")
+        console.log(totalSummary)
+        data.totalReview = {
+            summary: totalSummary.text(),
+            cssClass: totalSummary.attr("class").replace("game_review_summary", "").trim(),
+            count: totalReview.find(".summary").find(".responsive_hidden").text().trim(),
+            tooltip: totalReview.attr("data-tooltip-html"),
+        }
+    }
+
+    data.tags = Array.from($(".glance_tags.popular_tags").children()).map(x => $(x)).filter(x => {
+        return x.is("a")
+        // && element.css("display") !== "none" // 页面中最开始全部都是 display: none
+    }).map(x => {
+        return {
+            link: clearURL(x.attr("href")),
+            name: x.text().trim(),
+        }
+    })
+
+    return data
+}
+
+async function getAppDataFromAPI(appid) {
+    let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=english`
+    console.log(`Fetching API for ${appid} from ${api}`)
+
+    // https://store.steampowered.com/apphoverpublic/1086940/?l=english&json=1 can get review stats
+    // but still cannot get user-defined tags
+
+    const body = await makeRequest(api);
+    if (!body) {
+        return null
+    }
     // console.log(body);
-    return JSON.parse(body);
+    let data = JSON.parse(body);
+    if (!data[appid] || !data[appid].data) {
+        console.log(`API data for ${appid} error`)
+        return null
+    }
+
+    data = data[appid].data
+    const pageData = await getAppDataFromStorePage(appid)
+    if (pageData != null) {
+        data.tags = pageData.tags
+        data.recentReview = pageData.recentReview
+        data.totalReview = pageData.totalReview
+    }
+
+    return data
 }
 
 function getCalendarData(data) {
     let date = data.release_date.date ?? data.release_date
-    let releaseDate = (new Date(date + " GMT"))
-    let isTBA = releaseDate.toString() === "Invalid Date"
+    let isTBA = data.release_date.coming_soon || !data.release_date.date
+
     let start = date
     if (!isTBA) {
-        start = releaseDate.toISOString().slice(0, 10)
+        let releaseDate = (new Date(date + " GMT"))
+
+        isTBA = releaseDate.toString() === "Invalid Date"
+        if (!isTBA) {
+            start = releaseDate.toISOString().slice(0, 10)
+        }
     }
 
     return {
         meta: data.meta,
         type: "Game",
         title: data.name,
-        isTBA: isTBA,
         start: start,
         app_data: {
             platform: "Steam",
             appid: data.steam_appid,
             title: data.name,
             description: data.short_description,
-            tags: data.genres.map(x => x.description),
+            // tags: data.genres.map(x => x.description),
             release_date: data.release_date,
             language: {
                 zh: {
@@ -84,6 +189,9 @@ function getCalendarData(data) {
             publishers: data.publishers,
             categories: data.categories,
             genres: data.genres,
+            tags: data.tags,
+            recentReview: data.recentReview,
+            totalReview: data.totalReview,
         }
     }
 }
@@ -288,25 +396,27 @@ async function main(newTargets) {
         let today = (new Date()).toISOString().slice(0, 10)
         for (let target of needRefreshTargets) {
             let apiData = await getAppDataFromAPI(target);
-            let calendarData = transformAPIDataToCalendarData(apiData);
-            calendarData.forEach(x => {
-                if (trackedEvents.data[target].meta) {
-                    x.meta = trackedEvents.data[target].meta
-                }
-                if (!x.meta) {
-                    x.meta = {
-                        index: trackedEvents.index,
-                        platform: "Steam",
-                        identifier: target,
-                        last_track_date: today,
-                    };
+            if (apiData == null) {
+                continue
+            }
+            let calendarData = getCalendarData(apiData);
 
-                    trackedEvents.data[target] = x;
-                    trackedEvents.index += 1;
-                } else {
-                    x.meta.last_track_date = today
-                }
-            })
+            if (trackedEvents.data[target] && trackedEvents.data[target].meta) {
+                calendarData.meta = trackedEvents.data[target].meta
+            }
+            if (!calendarData.meta) {
+                calendarData.meta = {
+                    index: trackedEvents.index,
+                    platform: "Steam",
+                    identifier: target,
+                    last_track_date: today,
+                };
+                trackedEvents.index += 1;
+            } else {
+                calendarData.meta.last_track_date = today
+            }
+
+            trackedEvents.data[target] = calendarData;
         }
 
         doPatch(trackedEvents)
