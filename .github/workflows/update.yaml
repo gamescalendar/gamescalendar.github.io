@@ -48,7 +48,7 @@ jobs:
           git stash -- events.json
           git checkout release
           git checkout stash@{0} --theirs events.json
-          git checkout master -- static.json override.json index.html float.css favicon.svg
+          git checkout master -- static.json override.json index.html float.css favicon.svg .gitignore
           git status
           if ! git diff --exit-code --cached; then
             git commit -am "Updating events at $(date)"
