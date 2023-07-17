@@ -156,7 +156,7 @@ async function getAppDataFromAPI(appid) {
 
 function getCalendarData(data) {
     let date = data.release_date.date ?? data.release_date
-    let isTBA = data.release_date.coming_soon || !data.release_date.date
+    let isTBA = data.release_date.coming_soon && !data.release_date.date
 
     let start = date
     if (!isTBA) {
