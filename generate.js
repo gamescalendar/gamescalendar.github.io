@@ -40,6 +40,7 @@ const isCI = process.env.CI_ENV == "ci"
 const proxy = process.env.HTTP_PROXY || 'http://127.0.0.1:1080'
 
 async function makeRequest(url) {
+    console.log(`Requesting ${url}`)
     let response;
 
     let opts = {
@@ -248,27 +249,25 @@ function getSteamAppid(originalTarget) {
 }
 
 function getTrackedEvents() {
-    let tracked = {
-        index: 0,
-        data: {}
-    }
-
     let data = fs.readFileSync('events.json', 'utf8');
     // console.log(`read tracked events ${data}`)
 
-    let obj = JSON.parse(data);
-    if (obj.index && typeof (obj.index) == 'number' && obj.index > tracked.index) {
-        tracked.index = obj.index;
+    let tracked = JSON.parse(data);
+    if (tracked.index === undefined) {
+        tracked.index = 0
     }
-    if (obj.data && typeof (obj.data) == "object") {
-        tracked.data = obj.data;
+    if (!tracked.data) {
+        tracked.data = {}
+    }
+    if (!tracked.metacritic) {
+        tracked.metacritic = {}
     }
 
-    let maxIndex = Math.max(...(Object.values(obj.data).filter(x => (typeof x.meta?.index) == "number").map(x => x.meta.index)))
-    if (tracked.index <= maxIndex) {
-        console.log(`wrong tracked log, fix index from ${tracked.index} to ${maxIndex + 1}`)
-        tracked.index = maxIndex + 1
-    }
+    // let maxIndex = Math.max(...(Object.values(tracked.data).filter(x => (typeof x.meta?.index) == "number").map(x => x.meta.index)))
+    // if (tracked.index <= maxIndex) {
+    //     console.log(`wrong tracked log, fix index from ${tracked.index} to ${maxIndex + 1}`)
+    //     tracked.index = maxIndex + 1
+    // }
     // console.log(`read tracked log ${JSON.stringify(tracked)}`)
     return tracked
 }
@@ -333,6 +332,10 @@ function cleanupBackups() {
 }
 
 function getNeedRefreshTargets(newTargets, tracked) {
+    if (!tracked) {
+        return newTargets
+    }
+
     let today = (new Date()).toISOString().slice(0, 10)
     let needRefreshTargets = []
     newTargets.forEach(target => {
@@ -377,20 +380,19 @@ function getNeedRefreshTargets(newTargets, tracked) {
         console.log(`skip ${target} because last tracked date is today: ${today}`)
     })
 
-    needRefreshTargets.forEach(x => {
-        x.target = parseFloat(x.target)
-    })
-    return needRefreshTargets.filter(x => !isNaN(x.target)).sort((a, b) => {
+    return needRefreshTargets.sort((a, b) => {
         return b.outdated_days - a.outdated_days
     }).slice(0, MAX_COUNT_PER_RUN).map(x => x.target)
 }
 
-async function main(newTargets) {
+async function updateSteamTargets(trackedEvents, newTargets) {
     newTargets = newTargets.map(getSteamAppid).filter(x => x && !isNaN(x))
 
-    let trackedEvents = getTrackedEvents();
-
     let needRefreshTargets = getNeedRefreshTargets(newTargets, trackedEvents.data)
+    needRefreshTargets.forEach(x => {
+        x.target = parseFloat(x.target)
+    })
+    needRefreshTargets = needRefreshTargets.filter(x => !isNaN(x.target))
 
     let changed = needRefreshTargets.length > 0
 
@@ -424,6 +426,139 @@ async function main(newTargets) {
         }
 
         doPatch(trackedEvents)
+    }
+
+    return changed
+}
+
+const MetacriticURL = "https://www.metacritic.com/game/"
+
+function toNumberOrUndefined(str) {
+    let num = parseFloat(str)
+    if (isNaN(num)) {
+        return undefined
+    }
+    return num
+}
+
+async function updateMetacriticTargets(trackedEvents, newTargets) {
+    let today = (new Date()).toISOString().slice(0, 10)
+
+    if (!trackedEvents.metacritic) {
+        trackedEvents.metacritic = {}
+    }
+
+    newTargets = newTargets.map(x => x.toLowerCase()).filter(x => x && x.startsWith(MetacriticURL))
+
+    let platforms = {}
+    newTargets.forEach(target => {
+        let url = target;
+        let arr = target.replace(MetacriticURL, "").split("/");
+        if (arr.length < 2) {
+            console.log(`Metacritic URL ${url} malformed`)
+            return
+        }
+        let platform = arr[0]
+        let game = arr[1].replaceAll("/", "")
+
+        if (!platforms[platform]) {
+            platforms[platform] = {}
+        }
+        platforms[platform][game] = {
+            url: url,
+            platform: platform,
+            game: game,
+        }
+    })
+
+    let changed = false
+    for (const platform of Object.keys(platforms)) {
+        let gamesData = platforms[platform]
+        let games = Object.keys(gamesData)
+        let targets = getNeedRefreshTargets(games, trackedEvents.metacritic[platform])
+        if (targets <= 0) {
+            continue;
+        }
+
+        changed = true
+
+        for (let game of games) {
+            let url = `https://www.metacritic.com/game/${platform}/${game}`
+            let body = await makeRequest(url) // details 页面有 table，不好解析
+            let $ = cheerio.load(body)
+
+            let title = $(".product_title h1").text().trim()
+            let platformString = $(".product_title .platform").text().trim()
+            let startStr = $(".summary_detail.release_data span.data").text().trim();
+            let releaseDate = (new Date(startStr + " GMT"))
+
+            let start = ""
+            let isTBA = releaseDate.toString() === "Invalid Date"
+            if (!isTBA) {
+                start = releaseDate.toISOString().slice(0, 10)
+            }
+
+            let metaScore = $(".summary_wrap .metascore_wrap .metascore_anchor .metascore_w")?.text().trim()
+            let metaReviewsCount = $(".summary_wrap .metascore_wrap .summary .count a span")?.text().trim()
+            let userScore = $(".summary_wrap .userscore_wrap .metascore_anchor .metascore_w")?.text().trim()
+            let userReviewsCount = $(".summary_wrap .userscore_wrap .summary .count a")?.text().trim()
+            if (userReviewsCount) {
+                let arr = userReviewsCount.split(" ")
+                if (arr && arr.length > 0) {
+                    userReviewsCount = arr[0]
+                }
+            }
+
+            let summary = $(".summary_detail.product_summary .data .blurb_expanded").text().trim()
+            let developer = $(".summary_detail.developer .data .button").text().trim()
+            let genres = Array.from($(".summary_detail.product_genre .data")).map(x => $(x).text().trim());
+
+            if (!trackedEvents.metacritic[platform]) {
+                trackedEvents.metacritic[platform] = {}
+            }
+            trackedEvents.metacritic[platform][game] = {
+                type: "Game",
+                title: title,
+                start: start,
+                app_data: {
+                    platform: platformString,
+
+                    summary: summary,
+                    developer: developer,
+                    genres: genres,
+
+                    metaScore: toNumberOrUndefined(metaScore),
+                    metaReviewsCount: toNumberOrUndefined(metaReviewsCount),
+                    userScore: toNumberOrUndefined(userScore),
+                    userReviewsCount: toNumberOrUndefined(userReviewsCount),
+                },
+            }
+
+            if (trackedEvents.metacritic[platform][game].meta) {
+                trackedEvents.metacritic[platform][game].meta.last_track_date = today
+            } else {
+                trackedEvents.metacritic[platform][game].meta = {
+                    index: trackedEvents.index,
+                    platform: platform,
+                    identifier: url,
+                    last_track_date: today,
+                }
+                trackedEvents.index += 1
+            }
+
+        }
+    }
+
+    return changed
+}
+
+async function main(newTargets) {
+    let trackedEvents = getTrackedEvents();
+
+    let changed = await updateSteamTargets(trackedEvents, newTargets) ||
+        await updateMetacriticTargets(trackedEvents, newTargets)
+
+    if (changed) {
         doWrite(trackedEvents)
     }
 
