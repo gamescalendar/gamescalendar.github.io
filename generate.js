@@ -89,23 +89,26 @@ async function getAppDataFromStorePage(appid) {
     let recentReview = $(userReview.find(".subtitle.column:not(.all)").parent())
     if (recentReview.length > 0) {
         let recentSummary = recentReview.find(".game_review_summary")
-        data.recentReview = {
-            summary: recentSummary.text(),
-            cssClass: recentSummary.attr("class").replace("game_review_summary", "").trim(),
-            count: recentReview.find(".summary").find(".responsive_hidden").text().trim(),
-            tooltip: recentReview.attr("data-tooltip-html"),
+        if (recentSummary.length > 0) {
+            data.recentReview = {
+                summary: recentSummary.text(),
+                cssClass: recentSummary.attr("class").replace("game_review_summary", "").trim(),
+                count: recentReview.find(".summary").find(".responsive_hidden").text().trim(),
+                tooltip: recentReview.attr("data-tooltip-html"),
+            }
         }
     }
 
     let totalReview = $(userReview.find(".subtitle.column.all").parent())
     if (totalReview.length > 0) {
         let totalSummary = totalReview.find(".game_review_summary")
-        console.log(totalSummary)
-        data.totalReview = {
-            summary: totalSummary.text(),
-            cssClass: totalSummary.attr("class").replace("game_review_summary", "").trim(),
-            count: totalReview.find(".summary").find(".responsive_hidden").text().trim(),
-            tooltip: totalReview.attr("data-tooltip-html"),
+        if (totalSummary.length > 0) {
+            data.totalReview = {
+                summary: totalSummary.text(),
+                cssClass: totalSummary.attr("class").replace("game_review_summary", "").trim(),
+                count: totalReview.find(".summary").find(".responsive_hidden").text().trim(),
+                tooltip: totalReview.attr("data-tooltip-html"),
+            }
         }
     }
 
