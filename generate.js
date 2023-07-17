@@ -509,8 +509,18 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
                 }
             }
 
+            let img = $(".product_media .product_image img.product_image ")
+            let imageURL = img.attr("src")
+            let imageAlt = img.attr("alt")
+
             let summary = $(".summary_detail.product_summary .data .blurb_expanded").text().trim()
-            let developer = $(".summary_detail.developer .data .button").text().trim()
+            let $publisher = $(".summary_detail.publisher .data a")
+            let publisher = $publisher.text().trim()
+            let publisherURL = $publisher.attr("href")
+
+            let $developer = $(".summary_detail.developer .data .button")
+            let developer = $developer.text().trim()
+            let developerURL = $developer.attr("href")
             let genres = Array.from($(".summary_detail.product_genre .data")).map(x => $(x).text().trim());
 
             if (!trackedEvents.metacritic[platform]) {
@@ -521,10 +531,20 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
                 title: title,
                 start: start,
                 app_data: {
-                    platform: platformString,
+                    imageURL: imageURL,
+                    imageAlt: imageAlt,
+
+                    platform: platform,
+                    name: game,
+                    title: title,
+                    platformString: platformString,
+                    releaseDate: releaseDate,
 
                     summary: summary,
+                    publisher: publisher,
+                    publisherURL: publisherURL,
                     developer: developer,
+                    developerURL: developerURL,
                     genres: genres,
 
                     metaScore: toNumberOrUndefined(metaScore),
