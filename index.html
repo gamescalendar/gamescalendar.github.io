@@ -298,10 +298,7 @@
                 events = Object.values(events.data)
             }
 
-            // build events
-            let result = events.filter(x => !x.isTBA);
-
-            return result
+            return events
         }
 
         async function buildEvents() {
