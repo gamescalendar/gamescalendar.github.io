@@ -10,19 +10,15 @@
             },
             "type": "Game",
             "title": "Cities: Skylines II",
-            "isTBA": false,
-            "start": "2023-10-24",
+            "start": "Oct 24, 2023",
             "app_data": {
                 "platform": "Steam",
                 "appid": 949230,
                 "title": "Cities: Skylines II",
                 "description": "Raise a city from the ground up and transform it into a thriving metropolis with the most realistic city builder ever. Push your creativity and problem-solving to build on a scale you've never experienced. With deep simulation and a living economy, this is world-building without limits.",
-                "tags": [
-                    "Simulation"
-                ],
                 "release_date": {
                     "coming_soon": true,
-                    "date": "24 Oct, 2023"
+                    "date": "Oct 24, 2023"
                 },
                 "language": {
                     "zh": {
@@ -53,6 +49,60 @@
                         "id": "28",
                         "description": "Simulation"
                     }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/",
+                        "name": "模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%8E%E5%B8%82%E8%90%A5%E9%80%A0/",
+                        "name": "城市营造"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BB%BA%E9%80%A0/",
+                        "name": "建造"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
+                        "name": "策略"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
+                        "name": "多人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
+                        "name": "沙盒"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AE%A1%E7%90%86/",
+                        "name": "管理"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BB%8F%E6%B5%8E/",
+                        "name": "经济"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8B%9F%E7%9C%9F/",
+                        "name": "拟真"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E6%A8%A1%E7%BB%84%E5%8C%96/",
+                        "name": "可模组化"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/",
+                        "name": "休闲"
+                    }
                 ]
             }
         },
@@ -65,22 +115,15 @@
             },
             "type": "Game",
             "title": "Baldur's Gate 3",
-            "isTBA": false,
             "start": "2023-08-03",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1086940,
                 "title": "Baldur's Gate 3",
                 "description": "Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons &amp; Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.",
-                "tags": [
-                    "Adventure",
-                    "RPG",
-                    "Strategy",
-                    "Early Access"
-                ],
                 "release_date": {
                     "coming_soon": false,
-                    "date": "6 Oct, 2020"
+                    "date": "Oct 6, 2020"
                 },
                 "language": {
                     "zh": {
@@ -139,7 +182,101 @@
                         "id": "70",
                         "description": "Early Access"
                     }
-                ]
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8A%A2%E5%85%88%E4%BD%93%E9%AA%8C/",
+                        "name": "抢先体验"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%80%89%E6%8B%A9%E5%8F%96%E5%90%91/",
+                        "name": "选择取向"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
+                        "name": "角色自定义"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E8%84%91%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "电脑角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
+                        "name": "奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%88%E4%BD%9C%E6%88%98%E5%BD%B9/",
+                        "name": "合作战役"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%88%B1%E6%83%85/",
+                        "name": "爱情"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%81%8C%E4%B8%9A%E5%AF%BC%E5%90%91/",
+                        "name": "职业导向"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97%E5%A5%87%E5%B9%BB/",
+                        "name": "黑暗奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
+                        "name": "回合制战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%A9%E5%AE%B6%E5%AF%B9%E6%88%98%E7%8E%AF%E5%A2%83/",
+                        "name": "玩家对战环境"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%AE%B0%E5%8F%99/",
+                        "name": "记叙"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
+                        "name": "战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%BD%9C%E8%A1%8C/",
+                        "name": "潜行"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%88%B6%E4%BD%9C/",
+                        "name": "制作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BE%99%E4%B8%8E%E5%9C%B0%E4%B8%8B%E5%9F%8E/",
+                        "name": "龙与地下城"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%89%E8%A7%92%E8%A7%86%E8%A7%92/",
+                        "name": "等角视角"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%A2%E9%98%9F%E5%AF%BC%E5%90%91/",
+                        "name": "团队导向"
+                    }
+                ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(3,594)",
+                    "tooltip": "过去 30 天内的 3,594 篇用户评测中有 94% 为好评。"
+                },
+                "totalReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(59,090)",
+                    "tooltip": "此游戏的 59,090 篇用户评测中有 88% 为好评。"
+                }
             }
         },
         "1244090": {
@@ -151,18 +288,12 @@
             },
             "type": "Game",
             "title": "Sea of Stars",
-            "isTBA": false,
-            "start": "2023-08-29",
+            "start": "Aug 29, 2023",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1244090,
                 "title": "Sea of Stars",
                 "description": "Sea of Stars is a turn-based RPG inspired by the classics. It tells the story of two Children of the Solstice who will combine the powers of the sun and moon to perform Eclipse Magic, the only force capable of fending off the monstrous creations of the evil alchemist known as The Fleshmancer.",
-                "tags": [
-                    "Adventure",
-                    "Indie",
-                    "RPG"
-                ],
                 "release_date": {
                     "coming_soon": true,
                     "date": "Aug 29, 2023"
@@ -204,6 +335,88 @@
                         "id": "3",
                         "description": "RPG"
                     }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+                        "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
+                        "name": "回合制战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "日系角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2D/",
+                        "name": "2D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%8D%E5%8F%A4/",
+                        "name": "复古"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6/",
+                        "name": "回合制"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
+                        "name": "奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%96%9C%E5%89%A7/",
+                        "name": "喜剧"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/",
+                        "name": "欢乐"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%95%85%E4%BA%8B%E6%9E%B6%E6%9E%84%E4%B8%B0%E5%AF%8C%20/",
+                        "name": "故事架构丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
+                        "name": "情感"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
+                        "name": "探索"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BD%A9%E8%89%B2/",
+                        "name": "彩色"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%B3%E6%80%A7%E4%B8%BB%E8%A7%92/",
+                        "name": "女性主角"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/Kickstarter/",
+                        "name": "Kickstarter"
+                    }
                 ]
             }
         },
@@ -216,16 +429,12 @@
             },
             "type": "Game",
             "title": "Cataclismo",
-            "isTBA": true,
             "start": "Coming soon",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1422440,
                 "title": "Cataclismo",
                 "description": "The Cataclismo left us broken. Construct fortresses and defend against waves of Horrors in this mix of tower defense and real-time strategy. Lead an expedition beyond the gates of the last city, and reclaim mist-shrouded ruins as you rebuild humanity—stone by stone.",
-                "tags": [
-                    "Strategy"
-                ],
                 "release_date": {
                     "coming_soon": true,
                     "date": "Coming soon"
@@ -255,6 +464,88 @@
                         "id": "2",
                         "description": "Strategy"
                     }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%BA%E5%9C%B0%E5%BB%BA%E8%AE%BE/",
+                        "name": "基地建设"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E6%88%98%E7%95%A5/",
+                        "name": "即时战略"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A1%94%E9%98%B2/",
+                        "name": "塔防"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97%E5%A5%87%E5%B9%BB/",
+                        "name": "黑暗奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E5%90%AB%E6%9A%82%E5%81%9C/",
+                        "name": "即时含暂停"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
+                        "name": "策略"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%B8%AD%E4%B8%96%E7%BA%AA/",
+                        "name": "中世纪"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B4%9B%E5%A4%AB%E5%85%8B%E6%8B%89%E5%A4%AB%E7%89%B9%E5%BC%8F/",
+                        "name": "洛夫克拉夫特式"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%B6%E7%A9%BA%E6%93%8D%E6%8E%A7/",
+                        "name": "时空操控"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%8D%B3%E6%97%B6%E6%88%98%E7%95%A5/",
+                        "name": "动作即时战略"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%89%8B%E7%BB%98/",
+                        "name": "手绘"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%A3%8E%E6%A0%BC%E5%8C%96/",
+                        "name": "风格化"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/",
+                        "name": "资源管理"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BB%BA%E9%80%A0/",
+                        "name": "建造"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%8E%E5%B8%82%E8%90%A5%E9%80%A0/",
+                        "name": "城市营造"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E6%88%98%E6%9C%AF/",
+                        "name": "即时战术"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/3D/",
+                        "name": "3D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%95%85%E4%BA%8B%E6%9E%B6%E6%9E%84%E4%B8%B0%E5%AF%8C%20/",
+                        "name": "故事架构丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%8E%E6%9C%AB%E6%97%A5/",
+                        "name": "后末日"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    }
                 ]
             }
         },
@@ -267,16 +558,12 @@
             },
             "type": "Game",
             "title": "STARFIELD",
-            "isTBA": false,
-            "start": "2023-09-06",
+            "start": "Sep 6, 2023",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1716740,
                 "title": "STARFIELD",
                 "description": "Starfield is the first new universe in 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
-                "tags": [
-                    "RPG"
-                ],
                 "release_date": {
                     "coming_soon": true,
                     "date": "Sep 6, 2023"
@@ -318,6 +605,88 @@
                         "id": "3",
                         "description": "RPG"
                     }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
+                        "name": "开放世界"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%AA%E7%A9%BA/",
+                        "name": "太空"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
+                        "name": "科幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%AA%E7%A9%BA%E6%A8%A1%E6%8B%9F/",
+                        "name": "太空模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
+                        "name": "动作冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
+                        "name": "探索"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0/",
+                        "name": "第一人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "动作角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
+                        "name": "第三人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
+                        "name": "角色自定义"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E5%BD%B1%E5%BC%8F/",
+                        "name": "电影式"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8B%9F%E7%9C%9F/",
+                        "name": "拟真"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E6%A8%A1%E7%BB%84%E5%8C%96/",
+                        "name": "可模组化"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
+                        "name": "好评原声音轨"
+                    }
                 ]
             }
         },
@@ -330,16 +699,12 @@
             },
             "type": "Game",
             "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
-            "isTBA": false,
-            "start": "2023-08-24",
+            "start": "Aug 24, 2023",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1888160,
                 "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
                 "description": "A new action game based on the concept of the ARMORED CORE series that uses the knowledge gained from FromSoftware's recent action game development.",
-                "tags": [
-                    "Action"
-                ],
                 "release_date": {
                     "coming_soon": true,
                     "date": "Aug 24, 2023"
@@ -390,6 +755,88 @@
                         "id": "1",
                         "description": "Action"
                     }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9C%BA%E7%94%B2/",
+                        "name": "机甲"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/3D/",
+                        "name": "3D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
+                        "name": "第三人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
+                        "name": "角色自定义"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
+                        "name": "战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%8E%E6%9C%AB%E6%97%A5/",
+                        "name": "后末日"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9C%BA%E5%99%A8%E4%BA%BA/",
+                        "name": "机器人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
+                        "name": "多人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9C%AA%E6%9D%A5/",
+                        "name": "未来"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BF%AB%E8%8A%82%E5%A5%8F/",
+                        "name": "快节奏"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
+                        "name": "科幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
+                        "name": "原声音轨"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%BD%A6%E8%BE%86%E4%BD%9C%E6%88%98/",
+                        "name": "车辆作战"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
+                        "name": "类魂系列"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%9B%E4%BA%8B/",
+                        "name": "军事"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%88%E4%BD%9C/",
+                        "name": "合作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
+                        "name": "动作冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9C%A8%E7%BA%BF%E5%90%88%E4%BD%9C/",
+                        "name": "在线合作"
+                    }
                 ]
             }
         },
@@ -402,16 +849,12 @@
             },
             "type": "Game",
             "title": "OCTOPATH TRAVELER II",
-            "isTBA": false,
             "start": "2023-02-24",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1971650,
                 "title": "OCTOPATH TRAVELER II",
                 "description": "This game is a brand-new entry in the OCTOPATH TRAVELER series, the first installment of which was initially released in 2018 and sold over 3 million copies worldwide.",
-                "tags": [
-                    "RPG"
-                ],
                 "release_date": {
                     "coming_soon": false,
                     "date": "Feb 24, 2023"
@@ -458,7 +901,101 @@
                         "id": "3",
                         "description": "RPG"
                     }
-                ]
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6/",
+                        "name": "回合制"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "日系角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%A2%E9%98%9F%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "团队角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2.5D/",
+                        "name": "2.5D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
+                        "name": "开放世界"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%80%89%E6%8B%A9%E5%8F%96%E5%90%91/",
+                        "name": "选择取向"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E7%88%B1/",
+                        "name": "可爱"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
+                        "name": "回合制战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
+                        "name": "策略"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
+                        "name": "动漫"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
+                        "name": "奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/",
+                        "name": "休闲"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%AD%94%E6%B3%95/",
+                        "name": "魔法"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+                        "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
+                        "name": "情感"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    }
+                ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(742)",
+                    "tooltip": "过去 30 天内的 742 篇用户评测中有 94% 为好评。"
+                },
+                "totalReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(5,061)",
+                    "tooltip": "此游戏的 5,061 篇用户评测中有 96% 为好评。"
+                }
             }
         },
         "2254740": {
@@ -470,17 +1007,12 @@
             },
             "type": "Game",
             "title": "Persona 5 Tactica",
-            "isTBA": false,
-            "start": "2023-11-16",
+            "start": "Nov 16, 2023",
             "app_data": {
                 "platform": "Steam",
                 "appid": 2254740,
                 "title": "Persona 5 Tactica",
                 "description": "Join the Phantom Thieves as they lead an uprising of the heart! Assemble an all-star team of heroes in a brand-new story in this thrilling combat adventure set in Persona’s iconic universe.",
-                "tags": [
-                    "RPG",
-                    "Strategy"
-                ],
                 "release_date": {
                     "coming_soon": true,
                     "date": "Nov 16, 2023"
@@ -525,6 +1057,60 @@
                     {
                         "id": "2",
                         "description": "Strategy"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
+                        "name": "策略"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "日系角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "策略角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E6%88%98%E7%95%A5/",
+                        "name": "回合战略"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "战术角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
+                        "name": "动漫"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2D/",
+                        "name": "2D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BD%A9%E8%89%B2/",
+                        "name": "彩色"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF/",
+                        "name": "战术"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BD%91%E6%A0%BC%E5%AF%BC%E5%90%91%E5%8A%A8%E4%BD%9C/",
+                        "name": "网格导向动作"
                     }
                 ]
             }
