@@ -2,6 +2,9 @@
 <html lang='en'>
 <head>
     <meta charset='utf-8'/>
+
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+
     <!--    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/core@6.1.8/index.global.min.js'></script>-->
     <!--    <script src='https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@6.1.8/index.global.min.js'></script>-->
 
@@ -175,10 +178,56 @@
     </style>
 
     <script>
-        function buildTemplate(data) {
+        function buildTemplate(data, meta) {
             if (!data) {
                 return null;
             }
+
+            function buildReviewRow(data) {
+                if (!data.recentReview && !data.totalReview) {
+                    return ""
+                }
+                let recentReview = ""
+                let totalReview = ""
+
+                if (data.recentReview) {
+                    recentReview = `
+                            <div class="user_reviews_summary_row">
+                                <div class="subtitle column">最近评测：</div>
+                                <div class="summary column">
+                                    <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
+                                       title="${data.recentReview.tooltip}">
+                                        <span class="game_review_summary ${data.recentReview.cssClass}">${data.recentReview.summary}</span>
+                                        <span class="game_review_count">${data.recentReview.count}</span>
+                                    </a>
+                                </div>
+                            </div>
+`
+                }
+                if (data.totalReview) {
+                    totalReview = `
+                    <div class="user_reviews_summary_row">
+                                <div class="subtitle column">全部评测：</div>
+                                <div class="summary column">
+                                    <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
+                                       title="${data.totalReview.tooltip}">
+                                        <span class="game_review_summary ${data.totalReview.cssClass}">${data.totalReview.summary}</span>
+                                        <span class="game_review_count">${data.totalReview.count}</span>
+                                    </a>
+                                </div>
+                            </div>
+`
+                }
+                const template = `
+                        <div id="userReviews" class="user_reviews">
+                            ${recentReview}
+                            ${totalReview}
+                        </div>
+                        <div class="inner_rule"></div>
+`
+                return template
+            }
+
             // the template and CSS are come from https://steamdb.keylol.com/customize and https://store.steampowered.com/app/${appid}
             const template = `
     <div class="v6">
@@ -199,13 +248,18 @@
                         </div>
                         <div class="inner_rule"></div>
 
+                        ${buildReviewRow(data)}
+
+                        <div class="release_date">
+                            <div class="subtitle column">发行日期：</div>
+                            <div class="date">${data.release_date.date ?? data.release_date}</div>
+                        </div>
+                        <div class="inner_rule"></div>
+
                         <div class="details_block">
-                            <b>标签: </b>
+                            <b>该产品的热门用户自定义标签：</b>
                             <div class="glance_tag">
-                            ${data.tags.map(tag => `<a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/${tag}/">${tag}</a>`).join("")}
-                            </div>
-                            <div>
-                                <b>发行日期: </b>${data.release_date.date ?? data.release_date}
+                            ${data.tags.map(x => x.name).filter(x => x).slice(0, 7).map(tag => `<a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/${tag}/">${tag}</a>`).join("")}
                             </div>
                         </div>
                         <div class="inner_rule"></div>
@@ -220,6 +274,12 @@
                             </tr>
                             </tbody>
                         </table>
+                        <div class="inner_rule"></div>
+
+                        <div class="release_date">
+                            <div class="subtitle column">数据更新时间：</div>
+                            <div class="date">${meta.last_track_date}</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -294,7 +354,7 @@
                     let allowHTML = false;
                     let arrow = true;
                     let theme = undefined;
-                    let template = buildTemplate(info.event.extendedProps.app_data);
+                    let template = buildTemplate(info.event.extendedProps.app_data, info.event.extendedProps.meta);
                     if (template) {
                         allowHTML = true;
                         arrow = false;
@@ -319,7 +379,7 @@
                         flip: true,
 
                         onTrigger(instance, event) {
-                            mouseIsBottom = event.pageY > $(window).height() * 0.45
+                            let mouseIsBottom = event.pageY > $(window).height() * 0.45
                             let placement = mouseIsBottom ? 'right-end' : 'right-start'
                             if (calendar.view.type == "listYear") {
                                 placement = mouseIsBottom ? "top" : "bottom"
@@ -353,7 +413,9 @@
 
 <div class="ui container">
     <div class="ui menu">
-        <div class="header item">《XGS 严选》日历</div>
+        <div class="header item">
+            《XGS 严选》日历
+        </div>
         <!--        <a class="active item">Link</a>-->
         <!--        <a class="item">Link</a>-->
         <!--        <div class="ui dropdown item">-->
@@ -411,14 +473,47 @@
                         </div>
                         <div class="inner_rule"></div>
 
+                        <div id="userReviews" class="user_reviews">
+                            <div class="user_reviews_summary_row">
+                                <div class="subtitle column">最近评测：</div>
+                                <div class="summary column">
+                                    <a target="_blank" href="https://store.steampowered.com/app/1086940/#app_reviews_hash"
+                                       title="过去 30 天内的 3,576 篇用户评测中有 94% 为好评。">
+                                        <span class="game_review_summary positive">特别好评</span>
+                                        <span class="game_review_count">(3,576)</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="user_reviews_summary_row">
+                                <div class="subtitle column">全部评测：</div>
+                                <div class="summary column">
+                                    <a target="_blank" href="https://store.steampowered.com/app/1086940/#app_reviews_hash"
+                                       title="此游戏的 59,082 篇用户评测中有 88% 为好评。">
+                                        <span class="game_review_summary positive">特别好评</span>
+                                        <span class="game_review_count">(59,082)</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner_rule"></div>
+                        <div class="release_date">
+                            <div class="subtitle column">发行日期：</div>
+                            <div class="date">2020 年 10 月 7 日</div>
+                        </div>
+
                         <div class="details_block">
-                            <b>标签: </b>
+                            <b>该产品的热门用户自定义标签：</b>
                             <div class="glance_tag">
                                 <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/抢先体验/">抢先体验</a>
                                 <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/角色扮演/">角色扮演</a>
                                 <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/选择取向/">选择取向</a>
                                 <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/角色自定义/">角色自定义</a>
                                 <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/剧情丰富/">剧情丰富</a>
+                            </div>
+                            <div class="release_date">
+                                <div class="subtitle column">发行日期:</div>
+                                <div class="date">2020 年 10 月 7 日</div>
                             </div>
                             <div>
                                 <b>发行日期: </b>2020 年 10 月 6 日
@@ -457,6 +552,9 @@
                             </tbody>
                         </table>
                         <div class="inner_rule"></div>
+                        <div>
+                            <b>数据更新时间: </b>2020 年 10 月 6 日
+                        </div>
                     </div>
                 </div>
             </div>

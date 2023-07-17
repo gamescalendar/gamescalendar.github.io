@@ -200,7 +200,7 @@ table.game_language_options {
 }
 
 .game_language_options td {
-    color: #8f98a0;
+    color: #556772;
     font-size: 12px;
     padding: 3px 0;
     text-align: center
@@ -238,34 +238,34 @@ table.game_language_options {
     }
 }
 
-div.v6 {
+.v6 {
     margin: 0;
     padding: 0
 }
 
-div.v6 img {
+.v6 img {
     border: medium none
 }
 
-div.v6 a {
+.v6 a {
     color: #fff;
     text-decoration: none
 }
 
-div.v6 a:focus {
+.v6 a:focus {
     outline: 0 none
 }
 
-div.v6 a:hover {
+.v6 a:hover {
     color: #66c0f4;
     text-decoration: none
 }
 
-div.v6 {
+.v6 {
     height: 100%
 }
 
-div.v6 {
+.v6 {
     background-position: 50% 105px;
     background-repeat: repeat-x;
     color: #c6d4df;
@@ -275,24 +275,24 @@ div.v6 {
     position: relative
 }
 
-div.v6 h2 {
+.v6 h2 {
     color: #67c1f5;
     font-family: "Motiva Sans Light", "Motiva Sans", arial, tahoma, sans-serif;
     font-size: 18px;
     font-weight: 400
 }
 
-div.v6 h2 a {
+.v6 h2 a {
     color: #67c1f5;
     text-decoration: none
 }
 
-div.v6 h2 a:hover {
+.v6 h2 a:hover {
     color: #fff;
     text-decoration: none
 }
 
-div.v6 h3 {
+.v6 h3 {
     color: #fff;
     font-family: "Motiva Sans Regular", "Motiva Sans", arial, tahoma, sans-serif;
     font-size: 22px;
@@ -305,6 +305,47 @@ div.rightcol {
 }
 
 
-div.v6 .app_tag {
+.v6 .app_tag {
     font-size: 11px;
+}
+
+.release_date .subtitle, .user_reviews .subtitle {
+    color: #556772;
+}
+
+.user_reviews_summary_row, .release_date {
+    display: flex;
+    line-height: 16px;
+}
+
+.user_reviews {
+    font-size: 12px;
+}
+
+.game_review_count, .user_reviews_summary_row a, .user_reviews_summary_row a:hover {
+    color: #556772;
+}
+
+.user_reviews .subtitle, .release_date .subtitle {
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-right: 10px;
+    min-width: 94px;
+}
+
+.game_review_summary.positive {
+    color: #66C0F4;
+}
+
+.app_tag:hover {
+    text-decoration: none;
+    background: linear-gradient(135deg, #67c1f5 0%, #417a9b 100%);
+}
+
+div.glance_tag a.app_tag {
+    color: #67c1f5;
+}
+
+div.glance_tag a.app_tag:hover {
+    color: #ffffff;
 }
