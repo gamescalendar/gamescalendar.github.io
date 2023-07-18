@@ -389,16 +389,14 @@ async function updateSteamTargets(trackedEvents, newTargets) {
     newTargets = newTargets.map(getSteamAppid).filter(x => x && !isNaN(x))
 
     let needRefreshTargets = getNeedRefreshTargets(newTargets, trackedEvents.data)
-    needRefreshTargets.forEach(x => {
-        x.target = parseFloat(x.target)
-    })
-    needRefreshTargets = needRefreshTargets.filter(x => !isNaN(x.target))
+
+    console.log(`need to refresh targets: ${needRefreshTargets}`)
+    needRefreshTargets = needRefreshTargets.map(x => parseFloat(x)).filter(x => !isNaN(x))
+    console.log(`filtered need to refresh targets: ${needRefreshTargets}`)
 
     let changed = needRefreshTargets.length > 0
 
     if (changed) {
-        console.log(`filtered need to refresh targets: ${needRefreshTargets}`)
-
         let today = (new Date()).toISOString().slice(0, 10)
         for (let target of needRefreshTargets) {
             let apiData = await getAppDataFromAPI(target);
