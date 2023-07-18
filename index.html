@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
+    <title>Games Calendar 游戏日历</title>
+
     <meta charset='utf-8'/>
 
     <link rel="shortcut icon" href="favicon.svg" type="image/svg">
@@ -205,7 +207,7 @@
                 if (data.metaScore) {
                     metaScore = `
                     <div class="metascore_w positive">
-                        <a class="metascore_anchor" href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
+                        <a class="metascore_anchor" href="https://www.metacritic.com/game/${data.name}/critic-reviews">
                             <span itemprop="ratingValue">${data.metaScore}</span>
                         </a>
                     </div>
@@ -214,8 +216,8 @@
                         <div class="summary">
                             <p>
                             <span class="count">
-                                <span class="based">based on</span>
-                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
+                                <span class="based">Based on</span>
+                                <a href="https://www.metacritic.com/game/${data.name}/critic-reviews">
                                     <span>${data.metaReviewsCount}</span> Critic Reviews
                                 </a>
                             </span>
@@ -228,7 +230,7 @@
                     userScore = `
                     <div class="userscore_w positive">
                         <a class="metascore_anchor"
-                           href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
+                           href="https://www.metacritic.com/game/${data.name}/user-reviews">
                             ${data.userScore}
                         </a>
                     </div>
@@ -238,9 +240,9 @@
                         <div class="summary">
                             <p>
                             <span class="count">
-                                <span class="based">based on</span>
-                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
-                                    <span>${data.userReviewsCount}</span> Ratings
+                                <span class="based">Based on</span>
+                                <a href="https://www.metacritic.com/game/${data.name}/user-reviews">
+                                    <span>${data.userReviewsCount}</span> User Ratings
                                 </a>
                             </span>
                             </p>
@@ -266,13 +268,11 @@
 <div class="metacritic">
     <div class="content_head">
         <div class="product_title">
-            <a href="https://www.metacritic.com/game/${data.platform}/${data.name}">
+            <a href="https://www.metacritic.com/game/${data.name}">
                 <h1>${data.title}</h1>
             </a>
             <span class="platform">
-                <a href="https://www.metacritic.com/game/${data.platform}">
-                    ${data.platformString}
-                </a>
+                ${data.platformString.map(obj => `<a href="https://www.metacritic.com${obj.url}">${obj.name}</a>`).join(",")}
             </span>
         </div>
         <div class="product_data">
@@ -280,12 +280,7 @@
                 <li class="summary_detail publisher">
                     <span class="label">Publisher:</span>
                     <span class="data">
-                    ${data.publisher.map(obj => {
-                        return `
-                                <a href="https://www.metacritic.com${obj.url}">
-                                    ${obj.name}
-                                </a>`
-                    }).join(",")}
+                    ${data.publisher.map(obj => `<a href="https://www.metacritic.com${obj.url}">${obj.name}</a>`).join(",")}
                     </span>
                 </li>
                 <li class="summary_detail release_data">
@@ -316,17 +311,12 @@
                             <li class="summary_detail developer">
                                 <span class="label">Developer:</span>
                                 <span class="data">
-                                ${data.developer.map(obj => {
-                                    return `
-                                            <a href="https://www.metacritic.com${obj.url}" class="button">
-                                                ${obj.name}
-                                            </a>`
-                                }).join(",")}
+                                ${data.developer.map(obj => `<a href="https://www.metacritic.com${obj.url}" class="button">${obj.name}</a>`).join(",")}
                             </span>
                             </li>
                             <li class="summary_detail product_genre">
                                 <span class="label">Genre(s): </span>
-                                <span class="data">${data.genres.join(", ")}</span>
+                                <span class="data">${data.genres.map(obj => `<a href="https://www.metacritic.com${obj.url}" class="button">${obj.name}</a>`).join(", ")}</span>
                             </li>
                         </ul>
 
@@ -344,7 +334,7 @@
             return template
         }
 
-        function buildTemplate(data, meta) {
+        function buildSteam(data, meta) {
             if (!data) {
                 return null;
             }
@@ -422,6 +412,21 @@
                         </div>
                         <div class="inner_rule"></div>
 
+                        <div class="dev_row">
+                            <div class="subtitle column">开发商：</div>
+                            <div class="dev_list">
+                                ${data.developers.filter(x => x).slice(0, 7).map(dev => `<a target="_blank" href="https://store.steampowered.com/search/?developer=${dev}">${dev}</a>`).join(",")}
+                            </div>
+                        </div>
+
+                        <div class="dev_row">
+                            <div class="subtitle column">发行商</div>
+                            <div class="dev_list">
+                                ${data.publishers.filter(x => x).slice(0, 7).map(pub => `<a target="_blank" href="https://store.steampowered.com/search/?publisher=${pub}">${pub}</a>`).join(",")}
+                            </div>
+                        </div>
+                        <div class="inner_rule"></div>
+
                         <div class="details_block">
                             <b>该产品的热门用户自定义标签：</b>
                             <div class="glance_tag">
@@ -487,14 +492,22 @@
             events.forEach(event => {
                 if (event.meta?.platform) {
                     let platform = event.meta.platform.toLowerCase()
-                    if (platform === "switch") {
+                    if (platform.includes("switch") || platform.includes("3ds")) {
                         event.color = "#DC0011"
                     } else if (platform.includes("playstation")) {
                         event.color = "#006FCD"
                     } else if (platform.includes("xbox")) {
                         event.color = "#107c10"
+                    } else if (platform.includes("pc") && event.app_data?.publisher) {
+                        if (Object.values(event.app_data.publisher).some(x => x.name?.toLowerCase().includes("epic games"))) {
+                            event.color = "#333333"
+                        }
                     } else {
-                        event.color = "#1a9fff"
+                        event.color = "#417a9b"
+                    }
+                } else if (event.type.toLowerCase() == "anime") {
+                    if (!event.color) {
+                        event.color = "#FF6699"
                     }
                 }
             })
@@ -513,6 +526,8 @@
             let calendarEl = document.getElementById('calendar');
 
             let calendar = new FullCalendar.Calendar(calendarEl, {
+                aspectRatio: 1,
+                contentHeight: 1000,
                 headerToolbar: {
                     left: 'today prevYear,prev,next,nextYear',
                     center: 'title',
@@ -555,7 +570,7 @@
                     let template = ""
                     switch (info.event.extendedProps.source) {
                         case "steam":
-                            template = buildTemplate(info.event.extendedProps.app_data, info.event.extendedProps.meta);
+                            template = buildSteam(info.event.extendedProps.app_data, info.event.extendedProps.meta);
                             break
                         case "metacritic":
                             template = buildMetacritic(info.event.extendedProps.app_data, info.event.extendedProps.meta);
@@ -620,7 +635,7 @@
 <div class="ui container">
     <div class="ui menu">
         <div class="header item">
-            《XGS 严选》日历
+            《XGS 严选》游戏日历
         </div>
         <!--        <a class="active item">Link</a>-->
         <!--        <a class="item">Link</a>-->

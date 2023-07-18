@@ -309,11 +309,16 @@ div.rightcol {
     font-size: 11px;
 }
 
-.release_date .subtitle, .user_reviews .subtitle {
+.release_date .subtitle, .user_reviews .subtitle, .dev_row .subtitle {
     color: #556772;
+
+    text-transform: uppercase;
+    font-size: 10px;
+    padding-right: 10px;
+    min-width: 94px;
 }
 
-.user_reviews_summary_row, .release_date {
+.user_reviews_summary_row, .release_date, .dev_row {
     display: flex;
     line-height: 16px;
 }
@@ -326,15 +331,16 @@ div.rightcol {
     color: #556772;
 }
 
-.user_reviews .subtitle, .release_date .subtitle {
-    text-transform: uppercase;
-    font-size: 10px;
-    padding-right: 10px;
-    min-width: 94px;
-}
-
 .game_review_summary.positive {
     color: #66C0F4;
+}
+
+.game_review_summary.mixed {
+    color: #B9A074;
+}
+
+.game_review_summary {
+    color: #A34C25;
 }
 
 .app_tag:hover {
@@ -348,6 +354,15 @@ div.glance_tag a.app_tag {
 
 div.glance_tag a.app_tag:hover {
     color: #ffffff;
+}
+
+div.dev_list a {
+    color: #67c1f5;
+}
+
+div.dev_list a:hover {
+    color: #fff;
+    text-decoration: none
 }
 
 .metacritic {
