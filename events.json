@@ -1,5 +1,5 @@
 {
-    "index": 73,
+    "index": 74,
     "data": {
         "22380": {
             "meta": {
@@ -1104,6 +1104,163 @@
                     "cssClass": "positive",
                     "count": "(143,567)",
                     "tooltip": "此游戏的 143,567 篇用户评测中有 95% 为好评。"
+                }
+            }
+        },
+        "482400": {
+            "meta": {
+                "index": 73,
+                "platform": "Steam",
+                "identifier": 482400,
+                "last_track_date": "2023-07-18"
+            },
+            "type": "Game",
+            "title": "System Shock",
+            "start": "2023-05-30",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 482400,
+                "title": "System Shock",
+                "description": "A first-person fight to the death in the depths of space!",
+                "release_date": {
+                    "coming_soon": false,
+                    "date": "May 30, 2023"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Nightdive Studios"
+                ],
+                "publishers": [
+                    "Prime Matter"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 22,
+                        "description": "Steam Achievements"
+                    },
+                    {
+                        "id": 18,
+                        "description": "Partial Controller Support"
+                    },
+                    {
+                        "id": 23,
+                        "description": "Steam Cloud"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "1",
+                        "description": "Action"
+                    },
+                    {
+                        "id": "25",
+                        "description": "Adventure"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%89%E6%B5%B8%E5%BC%8F%E6%A8%A1%E6%8B%9F/",
+                        "name": "沉浸式模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B/",
+                        "name": "赛博朋克"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
+                        "name": "科幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E5%88%B6/",
+                        "name": "重制"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%90%E6%80%96/",
+                        "name": "恐怖"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E5%B0%84%E5%87%BB/",
+                        "name": "第一人称射击"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0/",
+                        "name": "第一人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%AA%E7%A9%BA/",
+                        "name": "太空"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98%E6%81%90%E6%80%96/",
+                        "name": "生存恐怖"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%B0%84%E5%87%BB/",
+                        "name": "射击"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A1%80%E8%85%A5/",
+                        "name": "血腥"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/",
+                        "name": "暴力"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/Kickstarter/",
+                        "name": "Kickstarter"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
+                        "name": "生存"
+                    }
+                ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(1,032)",
+                    "tooltip": "过去 30 天内的 1,032 篇用户评测中有 91% 为好评。"
+                },
+                "totalReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(4,182)",
+                    "tooltip": "此游戏的 4,182 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -6264,7 +6421,7 @@
                 "index": 22,
                 "platform": "Steam",
                 "identifier": 1488200,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Symphony of War: The Nephilim Saga",
@@ -6398,12 +6555,12 @@
                         "name": "单人"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%A2%E9%98%9F%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "团队角色扮演"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
                         "name": "日系角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%A2%E9%98%9F%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "团队角色扮演"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF/",
@@ -6413,14 +6570,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(247)",
-                    "tooltip": "过去 30 天内的 247 篇用户评测中有 93% 为好评。"
+                    "count": "(258)",
+                    "tooltip": "过去 30 天内的 258 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(7,615)",
-                    "tooltip": "此游戏的 7,615 篇用户评测中有 95% 为好评。"
+                    "count": "(7,631)",
+                    "tooltip": "此游戏的 7,631 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -6429,7 +6586,7 @@
                 "index": 47,
                 "platform": "Steam",
                 "identifier": 1527950,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Wartales",
@@ -6586,14 +6743,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(944)",
-                    "tooltip": "过去 30 天内的 944 篇用户评测中有 88% 为好评。"
+                    "count": "(947)",
+                    "tooltip": "过去 30 天内的 947 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(16,714)",
-                    "tooltip": "此游戏的 16,714 篇用户评测中有 90% 为好评。"
+                    "count": "(16,733)",
+                    "tooltip": "此游戏的 16,733 篇用户评测中有 90% 为好评。"
                 }
             }
         },
@@ -6759,7 +6916,7 @@
                 "index": 2,
                 "platform": "Steam",
                 "identifier": 1716740,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "STARFIELD",
@@ -6900,7 +7057,7 @@
                 "index": 34,
                 "platform": "Steam",
                 "identifier": 1718570,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "ASTLIBRA Revision",
@@ -7045,14 +7202,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(884)",
-                    "tooltip": "过去 30 天内的 884 篇用户评测中有 93% 为好评。"
+                    "count": "(886)",
+                    "tooltip": "过去 30 天内的 886 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(16,324)",
-                    "tooltip": "此游戏的 16,324 篇用户评测中有 96% 为好评。"
+                    "count": "(16,369)",
+                    "tooltip": "此游戏的 16,369 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -7061,7 +7218,7 @@
                 "index": 41,
                 "platform": "Steam",
                 "identifier": 1774580,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "STAR WARS Jedi: Survivor™",
@@ -7202,14 +7359,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(2,504)",
-                    "tooltip": "过去 30 天内的 2,504 篇用户评测中有 67% 为好评。"
+                    "count": "(2,530)",
+                    "tooltip": "过去 30 天内的 2,530 篇用户评测中有 67% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(31,378)",
-                    "tooltip": "此游戏的 31,378 篇用户评测中有 63% 为好评。"
+                    "count": "(31,473)",
+                    "tooltip": "此游戏的 31,473 篇用户评测中有 63% 为好评。"
                 }
             }
         },
@@ -7218,7 +7375,7 @@
                 "index": 24,
                 "platform": "Steam",
                 "identifier": 1811600,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Vestaria Saga II: The Sacred Sword of Silvanister",
@@ -7366,7 +7523,7 @@
                 "index": 11,
                 "platform": "Steam",
                 "identifier": 1817230,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Hi-Fi RUSH",
@@ -7511,14 +7668,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(769)",
-                    "tooltip": "过去 30 天内的 769 篇用户评测中有 95% 为好评。"
+                    "count": "(784)",
+                    "tooltip": "过去 30 天内的 784 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(15,157)",
-                    "tooltip": "此游戏的 15,157 篇用户评测中有 97% 为好评。"
+                    "count": "(15,186)",
+                    "tooltip": "此游戏的 15,186 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -7527,7 +7684,7 @@
                 "index": 12,
                 "platform": "Steam",
                 "identifier": 1859910,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Legend of Mortal",
@@ -7669,7 +7826,7 @@
                 "index": 10,
                 "platform": "Steam",
                 "identifier": 1868140,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "DAVE THE DIVER",
@@ -7822,14 +7979,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(24,617)",
-                    "tooltip": "过去 30 天内的 24,617 篇用户评测中有 97% 为好评。"
+                    "count": "(26,067)",
+                    "tooltip": "过去 30 天内的 26,067 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(36,161)",
-                    "tooltip": "此游戏的 36,161 篇用户评测中有 97% 为好评。"
+                    "count": "(37,661)",
+                    "tooltip": "此游戏的 37,661 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -7838,7 +7995,7 @@
                 "index": 13,
                 "platform": "Steam",
                 "identifier": 1880330,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Sanfu",
@@ -7975,7 +8132,7 @@
                 "index": 7,
                 "platform": "Steam",
                 "identifier": 1888160,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
@@ -8125,7 +8282,7 @@
                 "index": 8,
                 "platform": "Steam",
                 "identifier": 1967430,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Ghost Trick: Phantom Detective",
@@ -8242,8 +8399,8 @@
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,173)",
-                    "tooltip": "此游戏的 1,173 篇用户评测中有 99% 为好评。"
+                    "count": "(1,211)",
+                    "tooltip": "此游戏的 1,211 篇用户评测中有 99% 为好评。"
                 }
             }
         },
@@ -8252,7 +8409,7 @@
                 "index": 6,
                 "platform": "Steam",
                 "identifier": 1971650,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "OCTOPATH TRAVELER II",
@@ -8394,14 +8551,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(742)",
-                    "tooltip": "过去 30 天内的 742 篇用户评测中有 94% 为好评。"
+                    "count": "(790)",
+                    "tooltip": "过去 30 天内的 790 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(5,061)",
-                    "tooltip": "此游戏的 5,061 篇用户评测中有 96% 为好评。"
+                    "count": "(5,119)",
+                    "tooltip": "此游戏的 5,119 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -8410,7 +8567,7 @@
                 "index": 54,
                 "platform": "Steam",
                 "identifier": 1992090,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Legend of Mortal Demo",
@@ -8537,7 +8694,7 @@
                 "index": 9,
                 "platform": "Steam",
                 "identifier": 2014380,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "LIVE A LIVE",
@@ -8683,14 +8840,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(26)",
-                    "tooltip": "过去 30 天内的 26 篇用户评测中有 92% 为好评。"
+                    "count": "(28)",
+                    "tooltip": "过去 30 天内的 28 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(203)",
-                    "tooltip": "此游戏的 203 篇用户评测中有 88% 为好评。"
+                    "count": "(205)",
+                    "tooltip": "此游戏的 205 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -8699,7 +8856,7 @@
                 "index": 53,
                 "platform": "Steam",
                 "identifier": 2050650,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Resident Evil 4",
@@ -8844,14 +9001,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,472)",
-                    "tooltip": "过去 30 天内的 1,472 篇用户评测中有 97% 为好评。"
+                    "count": "(1,483)",
+                    "tooltip": "过去 30 天内的 1,483 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(53,568)",
-                    "tooltip": "此游戏的 53,568 篇用户评测中有 97% 为好评。"
+                    "count": "(53,622)",
+                    "tooltip": "此游戏的 53,622 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -8860,7 +9017,7 @@
                 "index": 40,
                 "platform": "Steam",
                 "identifier": 2161470,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Wandering Sword Demo",
@@ -8987,7 +9144,7 @@
                 "index": 4,
                 "platform": "Steam",
                 "identifier": 2254740,
-                "last_track_date": "2023-07-17"
+                "last_track_date": "2023-07-18"
             },
             "type": "Game",
             "title": "Persona 5 Tactica",
