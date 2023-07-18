@@ -280,12 +280,7 @@
                 <li class="summary_detail publisher">
                     <span class="label">Publisher:</span>
                     <span class="data">
-                    ${data.publisher.map(obj => {
-                        return `
-                                <a href="https://www.metacritic.com${obj.url}">
-                                    ${obj.name}
-                                </a>`
-                    }).join(",")}
+                    ${data.publisher.map(obj => `<a href="https://www.metacritic.com${obj.url}">${obj.name}</a>`).join(",")}
                     </span>
                 </li>
                 <li class="summary_detail release_data">
@@ -316,12 +311,7 @@
                             <li class="summary_detail developer">
                                 <span class="label">Developer:</span>
                                 <span class="data">
-                                ${data.developer.map(obj => {
-                                    return `
-                                            <a href="https://www.metacritic.com${obj.url}" class="button">
-                                                ${obj.name}
-                                            </a>`
-                                }).join(",")}
+                                ${data.developer.map(obj => `<a href="https://www.metacritic.com${obj.url}" class="button">${obj.name}</a>`).join(",")}
                             </span>
                             </li>
                             <li class="summary_detail product_genre">
@@ -493,8 +483,12 @@
                         event.color = "#006FCD"
                     } else if (platform.includes("xbox")) {
                         event.color = "#107c10"
+                    } else if (platform.includes("pc") && event.app_data?.publisher) {
+                        if (Object.values(event.app_data.publisher).some(x => x.name?.toLowerCase().includes("epic games"))) {
+                            event.color = "#333333"
+                        }
                     } else {
-                        event.color = "#1a9fff"
+                        event.color = "#417a9b"
                     }
                 }
             })
