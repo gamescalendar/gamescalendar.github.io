@@ -8690,7 +8690,7 @@
                 "index": 9,
                 "platform": "Steam",
                 "identifier": 2014380,
-                "last_track_date": "2023-07-19"
+                "last_track_date": "2023-07-20"
             },
             "type": "Game",
             "title": "LIVE A LIVE",
@@ -8852,7 +8852,7 @@
                 "index": 53,
                 "platform": "Steam",
                 "identifier": 2050650,
-                "last_track_date": "2023-07-19"
+                "last_track_date": "2023-07-20"
             },
             "type": "Game",
             "title": "Resident Evil 4",
@@ -8997,14 +8997,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,441)",
-                    "tooltip": "过去 30 天内的 1,441 篇用户评测中有 97% 为好评。"
+                    "count": "(1,424)",
+                    "tooltip": "过去 30 天内的 1,424 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(53,645)",
-                    "tooltip": "此游戏的 53,645 篇用户评测中有 97% 为好评。"
+                    "count": "(53,676)",
+                    "tooltip": "此游戏的 53,676 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -9552,7 +9552,7 @@
                 "index": 40,
                 "platform": "Steam",
                 "identifier": 2161470,
-                "last_track_date": "2023-07-19"
+                "last_track_date": "2023-07-20"
             },
             "type": "Game",
             "title": "Wandering Sword Demo",
@@ -9679,7 +9679,7 @@
                 "index": 4,
                 "platform": "Steam",
                 "identifier": 2254740,
-                "last_track_date": "2023-07-19"
+                "last_track_date": "2023-07-20"
             },
             "type": "Game",
             "title": "Persona 5 Tactica",
@@ -9769,12 +9769,12 @@
                         "name": "动漫"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/2D/",
-                        "name": "2D"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BD%A9%E8%89%B2/",
                         "name": "彩色"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2D/",
+                        "name": "2D"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF/",
