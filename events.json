@@ -9649,7 +9649,7 @@
                 "index": 77,
                 "platform": "Steam",
                 "identifier": 2142250,
-                "last_track_date": "2023-08-29"
+                "last_track_date": "2023-08-30"
             },
             "type": "Game",
             "title": "Mercenaries Saga 3 -Gray Wolves of War-",
@@ -9791,7 +9791,7 @@
                 "index": 40,
                 "platform": "Steam",
                 "identifier": 2161470,
-                "last_track_date": "2023-08-29"
+                "last_track_date": "2023-08-30"
             },
             "type": "Game",
             "title": "Wandering Sword Demo",
@@ -9918,7 +9918,7 @@
                 "index": 4,
                 "platform": "Steam",
                 "identifier": 2254740,
-                "last_track_date": "2023-08-29"
+                "last_track_date": "2023-08-30"
             },
             "type": "Game",
             "title": "Persona 5 Tactica",
@@ -10035,7 +10035,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2023-08-29"
+                "last_track_date": "2023-08-30"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -10192,7 +10192,7 @@
                 "index": 74,
                 "platform": "Steam",
                 "identifier": 2432430,
-                "last_track_date": "2023-08-29"
+                "last_track_date": "2023-08-30"
             },
             "type": "Game",
             "title": "Symphony of War: The Nephilim Saga - Legends",
@@ -10266,12 +10266,12 @@
                         "name": "冒险"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
-                        "name": "独立"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
                         "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
@@ -10303,10 +10303,10 @@
                     }
                 ],
                 "totalReview": {
-                    "summary": "好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(41)",
-                    "tooltip": "此游戏的 41 篇用户评测中有 97% 为好评。"
+                    "count": "(76)",
+                    "tooltip": "此游戏的 76 篇用户评测中有 93% 为好评。"
                 }
             }
         }
