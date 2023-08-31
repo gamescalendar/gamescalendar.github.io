@@ -9533,7 +9533,7 @@
                 "index": 54,
                 "platform": "Steam",
                 "identifier": 1992090,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Legend of Mortal Demo",
@@ -9660,7 +9660,7 @@
                 "index": 9,
                 "platform": "Steam",
                 "identifier": 2014380,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "LIVE A LIVE",
@@ -9822,7 +9822,7 @@
                 "index": 53,
                 "platform": "Steam",
                 "identifier": 2050650,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Resident Evil 4",
@@ -9967,14 +9967,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,117)",
-                    "tooltip": "过去 30 天内的 1,117 篇用户评测中有 97% 为好评。"
+                    "count": "(1,108)",
+                    "tooltip": "过去 30 天内的 1,108 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(55,166)",
-                    "tooltip": "此游戏的 55,166 篇用户评测中有 97% 为好评。"
+                    "count": "(55,196)",
+                    "tooltip": "此游戏的 55,196 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -9983,7 +9983,7 @@
                 "index": 78,
                 "platform": "Steam",
                 "identifier": 2106560,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Cross Tails",
@@ -10101,12 +10101,6 @@
                         "name": "动漫"
                     }
                 ],
-                "recentReview": {
-                    "summary": "多半好评",
-                    "cssClass": "positive",
-                    "count": "(10)",
-                    "tooltip": "过去 30 天内的 10 篇用户评测中有 70% 为好评。"
-                },
                 "totalReview": {
                     "summary": "好评",
                     "cssClass": "positive",
@@ -10120,7 +10114,7 @@
                 "index": 75,
                 "platform": "Steam",
                 "identifier": 2142230,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Mercenaries Saga -Will of the White Lions-",
@@ -10254,7 +10248,7 @@
                 "index": 76,
                 "platform": "Steam",
                 "identifier": 2142240,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Mercenaries Saga 2 -Order of the Sliver Eagle-",
@@ -10396,7 +10390,7 @@
                 "index": 77,
                 "platform": "Steam",
                 "identifier": 2142250,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Mercenaries Saga 3 -Gray Wolves of War-",
@@ -10538,7 +10532,7 @@
                 "index": 40,
                 "platform": "Steam",
                 "identifier": 2161470,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Wandering Sword Demo",
@@ -10665,7 +10659,7 @@
                 "index": 4,
                 "platform": "Steam",
                 "identifier": 2254740,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Persona 5 Tactica",
@@ -10923,7 +10917,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -11080,7 +11074,7 @@
                 "index": 74,
                 "platform": "Steam",
                 "identifier": 2432430,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Symphony of War: The Nephilim Saga - Legends",
@@ -11097,7 +11091,7 @@
                 "language": {
                     "zh": {
                         "gui": true,
-                        "audio": false,
+                        "audio": true,
                         "subtitle": true
                     }
                 },
@@ -11193,8 +11187,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(76)",
-                    "tooltip": "此游戏的 76 篇用户评测中有 93% 为好评。"
+                    "count": "(85)",
+                    "tooltip": "此游戏的 85 篇用户评测中有 92% 为好评。"
                 }
             }
         }
