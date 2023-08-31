@@ -1,5 +1,5 @@
 {
-    "index": 81,
+    "index": 87,
     "data": {
         "22380": {
             "meta": {
@@ -1107,6 +1107,176 @@
                 }
             }
         },
+        "447530": {
+            "meta": {
+                "index": 81,
+                "platform": "Steam",
+                "identifier": 447530,
+                "last_track_date": "2023-08-31"
+            },
+            "type": "Game",
+            "title": "VA-11 Hall-A: Cyberpunk Bartender Action",
+            "start": "2016-06-21",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 447530,
+                "title": "VA-11 Hall-A: Cyberpunk Bartender Action",
+                "description": "VA-11 HALL-A: Cyberpunk Bartender Action is a booze em' up about waifus, technology, and post-dystopia life.",
+                "release_date": {
+                    "coming_soon": false,
+                    "date": "Jun 21, 2016"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Sukeban Games"
+                ],
+                "publishers": [
+                    "Ysbryd Games",
+                    "PLAYISM"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 22,
+                        "description": "Steam Achievements"
+                    },
+                    {
+                        "id": 29,
+                        "description": "Steam Trading Cards"
+                    },
+                    {
+                        "id": 23,
+                        "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 41,
+                        "description": "Remote Play on Phone"
+                    },
+                    {
+                        "id": 42,
+                        "description": "Remote Play on Tablet"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "25",
+                        "description": "Adventure"
+                    },
+                    {
+                        "id": "23",
+                        "description": "Indie"
+                    },
+                    {
+                        "id": "28",
+                        "description": "Simulation"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B/",
+                        "name": "赛博朋克"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4/",
+                        "name": "视觉小说"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+                        "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%B3%E6%80%A7%E4%B8%BB%E8%A7%92/",
+                        "name": "女性主角"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%8D%E4%B9%8C%E6%89%98%E9%82%A6/",
+                        "name": "反乌托邦"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/LGBTQ%2B/",
+                        "name": "LGBTQ+"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%80%89%E6%8B%A9%E5%8F%96%E5%90%91/",
+                        "name": "选择取向"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8C%87%E5%90%91%E7%82%B9%E5%87%BB/",
+                        "name": "指向点击"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/",
+                        "name": "休闲"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/",
+                        "name": "模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
+                        "name": "动漫"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BD%91%E7%BB%9C%E6%A2%97/",
+                        "name": "网络梗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B6%85%E4%BA%BA%E7%B1%BB%E4%B8%BB%E4%B9%89/",
+                        "name": "超人类主义"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2D/",
+                        "name": "2D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F/",
+                        "name": "生活模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/",
+                        "name": "欢乐"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E7%88%B1/",
+                        "name": "可爱"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
+                        "name": "科幻"
+                    }
+                ],
+                "recentReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(285)",
+                    "tooltip": "过去 30 天内的 285 篇用户评测中有 95% 为好评。"
+                },
+                "totalReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(28,168)",
+                    "tooltip": "此游戏的 28,168 篇用户评测中有 97% 为好评。"
+                }
+            }
+        },
         "482400": {
             "meta": {
                 "index": 73,
@@ -1744,6 +1914,159 @@
                     "cssClass": "positive",
                     "count": "(233,181)",
                     "tooltip": "此游戏的 233,181 篇用户评测中有 87% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
+                }
+            }
+        },
+        "589780": {
+            "meta": {
+                "index": 83,
+                "platform": "Steam",
+                "identifier": 589780,
+                "last_track_date": "2023-08-31"
+            },
+            "type": "Game",
+            "title": "The Red Strings Club",
+            "start": "2018-01-22",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 589780,
+                "title": "The Red Strings Club",
+                "description": "The Red Strings Club is a cyberpunk narrative experience about fate and happiness featuring the extensive use of pottery, bartending and impersonating people on the phone to take down a corporate conspiracy.",
+                "release_date": {
+                    "coming_soon": false,
+                    "date": "Jan 22, 2018"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Deconstructeam"
+                ],
+                "publishers": [
+                    "Devolver Digital"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 22,
+                        "description": "Steam Achievements"
+                    },
+                    {
+                        "id": 29,
+                        "description": "Steam Trading Cards"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "25",
+                        "description": "Adventure"
+                    },
+                    {
+                        "id": "23",
+                        "description": "Indie"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B/",
+                        "name": "赛博朋克"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+                        "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%80%89%E6%8B%A9%E5%8F%96%E5%90%91/",
+                        "name": "选择取向"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
+                        "name": "好评原声音轨"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8C%87%E5%90%91%E7%82%B9%E5%87%BB/",
+                        "name": "指向点击"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
+                        "name": "科幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/LGBTQ%2B/",
+                        "name": "LGBTQ+"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4/",
+                        "name": "视觉小说"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2D/",
+                        "name": "2D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/",
+                        "name": "裸露"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%8D%E4%B9%8C%E6%89%98%E9%82%A6/",
+                        "name": "反乌托邦"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%93%B2%E7%90%86/",
+                        "name": "哲理"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/",
+                        "name": "暴力"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%8D%E5%8F%A4/",
+                        "name": "复古"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%A3%E8%B0%9C/",
+                        "name": "解谜"
+                    }
+                ],
+                "recentReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(227)",
+                    "tooltip": "过去 30 天内的 227 篇用户评测中有 96% 为好评。"
+                },
+                "totalReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(9,294)",
+                    "tooltip": "此游戏的 9,294 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -2745,6 +3068,301 @@
                 }
             }
         },
+        "914210": {
+            "meta": {
+                "index": 84,
+                "platform": "Steam",
+                "identifier": 914210,
+                "last_track_date": "2023-08-31"
+            },
+            "type": "Game",
+            "title": "N1RV Ann-A: Cyberpunk Bartender Action",
+            "start": "",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 914210,
+                "title": "N1RV Ann-A: Cyberpunk Bartender Action",
+                "description": "Mix drinks and change lives at the fabulous resort island bar known as N1RV Ann-A! From the developers of VA-11 Hall-A: Cyberpunk Bartender Action comes a second round of the booze em' up about waifus, technology, and life in the dystopian economic bubble.",
+                "release_date": {
+                    "coming_soon": true,
+                    "date": ""
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Sukeban Games"
+                ],
+                "publishers": [
+                    "Ysbryd Games",
+                    "AGM PLAYISM"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 22,
+                        "description": "Steam Achievements"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "23",
+                        "description": "Indie"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B/",
+                        "name": "赛博朋克"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4/",
+                        "name": "视觉小说"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%B3%E6%80%A7%E4%B8%BB%E8%A7%92/",
+                        "name": "女性主角"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
+                        "name": "动漫"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+                        "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
+                        "name": "好评原声音轨"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2D/",
+                        "name": "2D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%80%89%E6%8B%A9%E5%8F%96%E5%90%91/",
+                        "name": "选择取向"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/",
+                        "name": "模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%8D%E5%8F%A4/",
+                        "name": "复古"
+                    }
+                ]
+            }
+        },
+        "914800": {
+            "meta": {
+                "index": 82,
+                "platform": "Steam",
+                "identifier": 914800,
+                "last_track_date": "2023-08-31"
+            },
+            "type": "Game",
+            "title": "Coffee Talk",
+            "start": "2020-01-29",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 914800,
+                "title": "Coffee Talk",
+                "description": "Coffee Talk is a coffee brewing and heart-to-heart talking simulator about listening to fantasy-inspired modern peoples’ problems, and helping them by serving up a warm drink or two.",
+                "release_date": {
+                    "coming_soon": false,
+                    "date": "Jan 29, 2020"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Toge Productions"
+                ],
+                "publishers": [
+                    "Toge Productions"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 22,
+                        "description": "Steam Achievements"
+                    },
+                    {
+                        "id": 28,
+                        "description": "Full controller support"
+                    },
+                    {
+                        "id": 29,
+                        "description": "Steam Trading Cards"
+                    },
+                    {
+                        "id": 30,
+                        "description": "Steam Workshop"
+                    },
+                    {
+                        "id": 23,
+                        "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 41,
+                        "description": "Remote Play on Phone"
+                    },
+                    {
+                        "id": 42,
+                        "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 43,
+                        "description": "Remote Play on TV"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "25",
+                        "description": "Adventure"
+                    },
+                    {
+                        "id": "4",
+                        "description": "Casual"
+                    },
+                    {
+                        "id": "23",
+                        "description": "Indie"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%AF%B9%E8%AF%9D/",
+                        "name": "对话"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+                        "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%86%E8%A7%89%E5%B0%8F%E8%AF%B4/",
+                        "name": "视觉小说"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%94%BE%E6%9D%BE/",
+                        "name": "放松"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BA%92%E5%8A%A8%E5%B0%8F%E8%AF%B4/",
+                        "name": "互动小说"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/LGBTQ%2B/",
+                        "name": "LGBTQ+"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/",
+                        "name": "休闲"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%80%89%E6%8B%A9%E5%8F%96%E5%90%91/",
+                        "name": "选择取向"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/",
+                        "name": "模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E7%BB%93%E5%B1%80/",
+                        "name": "多结局"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
+                        "name": "情感"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
+                        "name": "动漫"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
+                        "name": "奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%93%B2%E7%90%86/",
+                        "name": "哲理"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%AF%95%E9%AA%8C%E6%80%A7/",
+                        "name": "试验性"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%88%B6%E4%BD%9C/",
+                        "name": "制作"
+                    }
+                ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(164)",
+                    "tooltip": "过去 30 天内的 164 篇用户评测中有 93% 为好评。"
+                },
+                "totalReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(7,673)",
+                    "tooltip": "此游戏的 7,673 篇用户评测中有 95% 为好评。"
+                }
+            }
+        },
         "949230": {
             "meta": {
                 "index": 3,
@@ -3350,7 +3968,7 @@
                 "index": 0,
                 "platform": "Steam",
                 "identifier": 1086940,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Baldur's Gate 3",
@@ -3362,7 +3980,7 @@
                 "description": "Baldur’s Gate 3 is a story-rich, party-based RPG set in the universe of Dungeons &amp; Dragons, where your choices shape a tale of fellowship and betrayal, survival and sacrifice, and the lure of absolute power.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "Aug 3, 2023"
+                    "date": "3 Aug, 2023"
                 },
                 "language": {
                     "zh": {
@@ -3511,14 +4129,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(174,947)",
-                    "tooltip": "过去 30 天内的 174,947 篇用户评测中有 96% 为好评。"
+                    "count": "(177,291)",
+                    "tooltip": "过去 30 天内的 177,291 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(238,858)",
-                    "tooltip": "此游戏的 238,858 篇用户评测中有 95% 为好评。"
+                    "count": "(241,924)",
+                    "tooltip": "此游戏的 241,924 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -3527,7 +4145,7 @@
                 "index": 52,
                 "platform": "Steam",
                 "identifier": 1097350,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Weird West: Definitive Edition",
@@ -3676,8 +4294,8 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(101)",
-                    "tooltip": "过去 30 天内的 101 篇用户评测中有 82% 为好评。"
+                    "count": "(95)",
+                    "tooltip": "过去 30 天内的 95 篇用户评测中有 83% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
@@ -3692,7 +4310,7 @@
                 "index": 31,
                 "platform": "Steam",
                 "identifier": 1150690,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "OMORI",
@@ -3841,14 +4459,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,123)",
-                    "tooltip": "过去 30 天内的 1,123 篇用户评测中有 96% 为好评。"
+                    "count": "(1,094)",
+                    "tooltip": "过去 30 天内的 1,094 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(53,763)",
-                    "tooltip": "此游戏的 53,763 篇用户评测中有 97% 为好评。"
+                    "count": "(53,780)",
+                    "tooltip": "此游戏的 53,780 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -3857,7 +4475,7 @@
                 "index": 46,
                 "platform": "Steam",
                 "identifier": 1161170,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "The Rewinder",
@@ -4002,14 +4620,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(76)",
-                    "tooltip": "过去 30 天内的 76 篇用户评测中有 94% 为好评。"
+                    "count": "(74)",
+                    "tooltip": "过去 30 天内的 74 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(5,454)",
-                    "tooltip": "此游戏的 5,454 篇用户评测中有 96% 为好评。"
+                    "count": "(5,456)",
+                    "tooltip": "此游戏的 5,456 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -4018,7 +4636,7 @@
                 "index": 18,
                 "platform": "Steam",
                 "identifier": 1174180,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Red Dead Redemption 2",
@@ -4187,14 +4805,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(12,069)",
-                    "tooltip": "过去 30 天内的 12,069 篇用户评测中有 93% 为好评。"
+                    "count": "(11,756)",
+                    "tooltip": "过去 30 天内的 11,756 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(407,616)",
-                    "tooltip": "此游戏的 407,616 篇用户评测中有 90% 为好评。"
+                    "count": "(407,855)",
+                    "tooltip": "此游戏的 407,855 篇用户评测中有 90% 为好评。"
                 }
             }
         },
@@ -4203,7 +4821,7 @@
                 "index": 32,
                 "platform": "Steam",
                 "identifier": 1182620,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Impostor Factory",
@@ -4354,16 +4972,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(177)",
-                    "tooltip": "过去 30 天内的 177 篇用户评测中有 94% 为好评。"
+                    "count": "(173)",
+                    "tooltip": "过去 30 天内的 173 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(8,964)",
-                    "tooltip": "此游戏的 8,964 篇用户评测中有 96% 为好评。"
+                    "count": "(8,966)",
+                    "tooltip": "此游戏的 8,966 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -4372,7 +4990,7 @@
                 "index": 50,
                 "platform": "Steam",
                 "identifier": 1201270,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "A Space for the Unbound",
@@ -4535,8 +5153,8 @@
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(2,474)",
-                    "tooltip": "此游戏的 2,474 篇用户评测中有 98% 为好评。"
+                    "count": "(2,476)",
+                    "tooltip": "此游戏的 2,476 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -4545,7 +5163,7 @@
                 "index": 33,
                 "platform": "Steam",
                 "identifier": 1229240,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Chained Echoes",
@@ -4683,14 +5301,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(185)",
-                    "tooltip": "过去 30 天内的 185 篇用户评测中有 88% 为好评。"
+                    "count": "(182)",
+                    "tooltip": "过去 30 天内的 182 篇用户评测中有 87% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(4,068)",
-                    "tooltip": "此游戏的 4,068 篇用户评测中有 91% 为好评。"
+                    "count": "(4,076)",
+                    "tooltip": "此游戏的 4,076 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -4699,7 +5317,7 @@
                 "index": 38,
                 "platform": "Steam",
                 "identifier": 1230140,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "ATRI -My Dear Moments-",
@@ -4825,14 +5443,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(532)",
-                    "tooltip": "过去 30 天内的 532 篇用户评测中有 98% 为好评。"
+                    "count": "(524)",
+                    "tooltip": "过去 30 天内的 524 篇用户评测中有 98% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(12,297)",
-                    "tooltip": "此游戏的 12,297 篇用户评测中有 98% 为好评。"
+                    "count": "(12,305)",
+                    "tooltip": "此游戏的 12,305 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -4841,7 +5459,7 @@
                 "index": 49,
                 "platform": "Steam",
                 "identifier": 1237320,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Sonic Frontiers",
@@ -4986,14 +5604,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(214)",
-                    "tooltip": "过去 30 天内的 214 篇用户评测中有 85% 为好评。"
+                    "count": "(210)",
+                    "tooltip": "过去 30 天内的 210 篇用户评测中有 85% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(14,798)",
-                    "tooltip": "此游戏的 14,798 篇用户评测中有 93% 为好评。"
+                    "count": "(14,801)",
+                    "tooltip": "此游戏的 14,801 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -5002,7 +5620,7 @@
                 "index": 1,
                 "platform": "Steam",
                 "identifier": 1244090,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Sea of Stars",
@@ -5147,8 +5765,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(477)",
-                    "tooltip": "此游戏的 477 篇用户评测中有 92% 为好评。"
+                    "count": "(790)",
+                    "tooltip": "此游戏的 790 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -5157,7 +5775,7 @@
                 "index": 26,
                 "platform": "Steam",
                 "identifier": 1245620,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "ELDEN RING",
@@ -5323,14 +5941,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(7,094)",
-                    "tooltip": "过去 30 天内的 7,094 篇用户评测中有 93% 为好评。"
+                    "count": "(6,999)",
+                    "tooltip": "过去 30 天内的 6,999 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(527,123)",
-                    "tooltip": "此游戏的 527,123 篇用户评测中有 92% 为好评。"
+                    "count": "(527,300)",
+                    "tooltip": "此游戏的 527,300 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -5339,7 +5957,7 @@
                 "index": 51,
                 "platform": "Steam",
                 "identifier": 1252330,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "DEATHLOOP",
@@ -5498,8 +6116,8 @@
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(16,921)",
-                    "tooltip": "此游戏的 16,921 篇用户评测中有 77% 为好评。"
+                    "count": "(16,928)",
+                    "tooltip": "此游戏的 16,928 篇用户评测中有 77% 为好评。"
                 }
             }
         },
@@ -5508,7 +6126,7 @@
                 "index": 44,
                 "platform": "Steam",
                 "identifier": 1282730,
-                "last_track_date": "2023-08-30"
+                "last_track_date": "2023-08-31"
             },
             "type": "Game",
             "title": "Loop Hero",
@@ -5653,14 +6271,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(161)",
-                    "tooltip": "过去 30 天内的 161 篇用户评测中有 90% 为好评。"
+                    "count": "(164)",
+                    "tooltip": "过去 30 天内的 164 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(29,423)",
-                    "tooltip": "此游戏的 29,423 篇用户评测中有 93% 为好评。"
+                    "count": "(29,427)",
+                    "tooltip": "此游戏的 29,427 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -6941,6 +7559,135 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E5%BD%B1%E5%BC%8F/",
                         "name": "电影式"
+                    }
+                ]
+            }
+        },
+        "1663850": {
+            "meta": {
+                "index": 85,
+                "platform": "Steam",
+                "identifier": 1663850,
+                "last_track_date": "2023-08-31"
+            },
+            "type": "Game",
+            "title": "REPLACED",
+            "start": "Coming soon",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 1663850,
+                "title": "REPLACED",
+                "description": "REPLACED is a 2.5D sci-fi retro-futuristic action platformer where you play as R.E.A.C.H. - an artificial intelligence trapped in a human body against its own will. REPLACED combines cinematic platforming, pixel art and free-flow action combat set in an alternative 1980’s.",
+                "release_date": {
+                    "coming_soon": true,
+                    "date": "Coming soon"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Sad Cat Studios"
+                ],
+                "publishers": [
+                    "Coatsink"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 28,
+                        "description": "Full controller support"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "1",
+                        "description": "Action"
+                    },
+                    {
+                        "id": "25",
+                        "description": "Adventure"
+                    },
+                    {
+                        "id": "23",
+                        "description": "Indie"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2D%20%E5%B9%B3%E5%8F%B0/",
+                        "name": "2D 平台"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+                        "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2.5D/",
+                        "name": "2.5D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%B9%B3%E5%8F%B0%E6%B8%B8%E6%88%8F/",
+                        "name": "平台游戏"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B/",
+                        "name": "赛博朋克"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
+                        "name": "动作冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
+                        "name": "科幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/",
+                        "name": "暴力"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/80%20%E5%B9%B4%E4%BB%A3/",
+                        "name": "80 年代"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A1%80%E8%85%A5/",
+                        "name": "血腥"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%8D%E4%B9%8C%E6%89%98%E9%82%A6/",
+                        "name": "反乌托邦"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%8E%E6%9C%AB%E6%97%A5/",
+                        "name": "后末日"
                     }
                 ]
             }
@@ -10026,6 +10773,147 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%BD%91%E6%A0%BC%E5%AF%BC%E5%90%91%E5%8A%A8%E4%BD%9C/",
                         "name": "网格导向动作"
+                    }
+                ]
+            }
+        },
+        "2358720": {
+            "meta": {
+                "index": 86,
+                "platform": "Steam",
+                "identifier": 2358720,
+                "last_track_date": "2023-08-31"
+            },
+            "type": "Game",
+            "title": "Black Myth: Wukong",
+            "start": "2024-01-01",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 2358720,
+                "title": "Black Myth: Wukong",
+                "description": "Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.",
+                "release_date": {
+                    "coming_soon": true,
+                    "date": "2024"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": true,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Game Science"
+                ],
+                "publishers": [
+                    "Game Science"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 28,
+                        "description": "Full controller support"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "1",
+                        "description": "Action"
+                    },
+                    {
+                        "id": "25",
+                        "description": "Adventure"
+                    },
+                    {
+                        "id": "3",
+                        "description": "RPG"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%8B%E7%88%B1%E6%A8%A1%E6%8B%9F/",
+                        "name": "恋爱模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A5%9E%E8%AF%9D/",
+                        "name": "神话"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "动作角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E7%88%B1/",
+                        "name": "可爱"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
+                        "name": "战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97%E5%A5%87%E5%B9%BB/",
+                        "name": "黑暗奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
+                        "name": "类魂系列"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85/",
+                        "name": "剧情"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
+                        "name": "动作冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
+                        "name": "色情内容"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A0%8D%E6%9D%80/",
+                        "name": "砍杀"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/3D/",
+                        "name": "3D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
+                        "name": "奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/",
+                        "name": "休闲"
                     }
                 ]
             }
