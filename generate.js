@@ -295,23 +295,37 @@ function doPatch(events) {
     })
 }
 
+function sanitizeEvents(events) {
+    let changed = false
+
+    // sanity coming soon games
+    let next3Year = new Date()
+    next3Year.setFullYear(next3Year.getFullYear() + 3)
+    next3Year.setMonth(0, 1)
+    next3Year = next3Year.toISOString().slice(0, 10)
+
+    console.log("sanitizing...")
+    Object.keys(events.data).forEach(key => {
+        let event = events.data[key]
+        if (event.app_data && event.app_data.release_date && event.app_data.release_date.coming_soon) {
+            if (events.data[key].start != next3Year) {
+                console.log("sanitize " + event.title + " (" + key + ") to " + next3Year)
+                events.data[key].start = next3Year
+                changed = true
+            }
+        }
+    })
+    console.log("sanitized")
+
+    return changed
+}
+
 function doWrite(events) {
     // backup file
     // let nowFilename = (new Date().toISOString()).replaceAll("-", "_").replaceAll(":", "__")
     // let backupFilename = `events_${nowFilename}.json`
     // console.log(`backup previous data to ${backupFilename}`)
     // fs.renameSync("events.json", backupFilename)
-
-    // sanity coming soon games
-    let next3Year = new Date()
-    next3Year = new Date(next3Year.setFullYear(next3Year.getFullYear() + 3))
-    next3Year = next3Year.toISOString().slice(0, 10)
-
-    events.forEach(event => {
-        if (!event.start && event.app_data && event.app_data.release_date && event.app_data.release_date.coming_soon) {
-            event.start = next3Year
-        }
-    })
 
     // write new file
     let eventsJSON = JSON.stringify(events, null, 4);
@@ -468,7 +482,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
             return
         }
         let platform = arr[0]
-        let game = arr[1].replaceAll("/", "")
+        let game = arr[1]
 
         if (!platforms[platform]) {
             platforms[platform] = {}
@@ -598,6 +612,8 @@ async function main(newTargets) {
 
     let changed = await updateSteamTargets(trackedEvents, newTargets) ||
         await updateMetacriticTargets(trackedEvents, newTargets)
+
+    changed = sanitizeEvents(trackedEvents) || changed
 
     if (changed) {
         doWrite(trackedEvents)
