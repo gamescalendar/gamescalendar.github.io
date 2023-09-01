@@ -295,6 +295,61 @@ function doPatch(events) {
     })
 }
 
+function testQNMonth(str) {
+    str = str.toUpperCase()
+    switch (str) {
+        case "Q1":
+            return 0
+        case "Q2":
+            return 3
+        case "Q3":
+            return 6
+        case "Q4":
+            return 9
+    }
+    return -1
+}
+
+function yearStrToNumber(str) {
+    let n = parseFloat(str)
+    if (isNaN(str) || isNaN(n)) {
+        return -1
+    }
+    return n
+}
+
+function QYearToDate(date) {
+    let arr = date.trim().split(" ").map(x => x.trim()).filter(x => x != "")
+
+    if (arr.length != 2) {
+        return "Invalid Date"
+    }
+    let qMonth1 = testQNMonth(arr[0])
+    let qMonth2 = testQNMonth(arr[1])
+    if (qMonth1 == -1 && qMonth2 == -1) {
+        return "Invalid Date"
+    }
+
+    let d = new Date()
+    if (qMonth1 != -1) {
+        let year = yearStrToNumber(arr[1])
+        if (year == -1) {
+            return "Invalid Date"
+        }
+        d.setFullYear(year)
+        d.setMonth(qMonth1, 1)
+    }
+    if (qMonth2 != -1) {
+        let year = yearStrToNumber(arr[0])
+        if (year == -1) {
+            return "Invalid Date"
+        }
+        d.setFullYear(year)
+        d.setMonth(qMonth2, 1)
+    }
+    return d
+}
+
 function sanitizeEvents(events) {
     let changed = false
 
@@ -307,11 +362,25 @@ function sanitizeEvents(events) {
     console.log("sanitizing...")
     Object.keys(events.data).forEach(key => {
         let event = events.data[key]
-        if (event.app_data && event.app_data.release_date && event.app_data.release_date.coming_soon) {
-            if (events.data[key].start != next3Year) {
-                console.log("sanitize " + event.title + " (" + key + ") to " + next3Year)
-                events.data[key].start = next3Year
-                changed = true
+        let old_start = new Date(event.start)
+        if (old_start.toString() === "Invalid Date") {
+            let qYear = QYearToDate(event.start)
+            if (qYear != "Invalid Date") {
+                events.data[key].start = qYear.toISOString().slice(0, 10)
+                return
+            }
+
+            if (event.app_data && event.app_data.release_date && event.app_data.release_date.coming_soon) {
+                if (event.start != next3Year) {
+                    console.log("sanitize " + event.title + " (" + key + ") to " + next3Year)
+                    events.data[key].start = next3Year
+                    changed = true
+                }
+            }
+        } else {
+            let start_str = old_start.toISOString().slice(0, 10)
+            if (event.start != start_str) {
+                events.data[key].start = start_str
             }
         }
     })
