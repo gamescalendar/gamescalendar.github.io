@@ -302,6 +302,17 @@ function doWrite(events) {
     // console.log(`backup previous data to ${backupFilename}`)
     // fs.renameSync("events.json", backupFilename)
 
+    // sanity coming soon games
+    let next3Year = new Date()
+    next3Year = new Date(next3Year.setFullYear(next3Year.getFullYear() + 3))
+    next3Year = next3Year.toISOString().slice(0, 10)
+
+    events.forEach(event => {
+        if (!event.start && event.app_data && event.app_data.release_date && event.app_data.release_date.coming_soon) {
+            event.start = next3Year
+        }
+    })
+
     // write new file
     let eventsJSON = JSON.stringify(events, null, 4);
     console.log("writing to events.json");
