@@ -492,6 +492,10 @@
                     } else {
                         event.color = "#417a9b"
                     }
+                } else if (event.type.toLowerCase() == "anime") {
+                    if (!event.color) {
+                        event.color = "#FF6699"
+                    }
                 }
             })
         }

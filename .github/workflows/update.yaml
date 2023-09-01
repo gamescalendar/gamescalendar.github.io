@@ -44,7 +44,7 @@ jobs:
           git checkout origin/release -- events.json
           node ./generate.js
 
-      - name: commit changed files
+      - name: add changed files
         run: |
           set -x
           git config --local user.name actions-user
@@ -55,7 +55,19 @@ jobs:
           git checkout stash@{0} --theirs events.json
           git checkout master -- static.json override.json index.html float.css favicon.svg .gitignore
           git status
+
+      - name: commit
+        if: github.event.schedule != "0 */4 * * *"
+        run: |
           if ! git diff --exit-code --cached; then
-            git commit -am "${{ github.event.head_commit.message }} at $(date)"
+            git commit -am "${{ github.event.head_commit.message }} at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
+            git push origin release
+          fi
+
+      - name: commit
+        if: github.event.schedule == "0 */4 * * *"
+        run: |
+          if ! git diff --exit-code --cached; then
+            git commit -am "Daily update at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
             git push origin release
           fi
