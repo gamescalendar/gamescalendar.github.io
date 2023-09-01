@@ -56,6 +56,6 @@ jobs:
           git checkout master -- static.json override.json index.html float.css favicon.svg .gitignore
           git status
           if ! git diff --exit-code --cached; then
-            git commit -am "Updating events at $(date)"
+            git commit -am "${{ github.event.head_commit.message }} at $(date)"
             git push origin release
           fi
