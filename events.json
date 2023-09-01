@@ -1,5 +1,5 @@
 {
-    "index": 131,
+    "index": 135,
     "data": {
         "22380": {
             "meta": {
@@ -18258,7 +18258,7 @@
                     "index": 62,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom",
-                    "last_track_date": "2023-08-31"
+                    "last_track_date": "2023-09-01"
                 },
                 "type": "Game",
                 "title": "The Legend of Zelda: Tears of the Kingdom",
@@ -18291,7 +18291,7 @@
                     "metaScore": 96,
                     "metaReviewsCount": 146,
                     "userScore": 8.1,
-                    "userReviewsCount": 9382
+                    "userReviewsCount": 9412
                 }
             },
             "the-legend-of-zelda-breath-of-the-wild": {
@@ -18299,7 +18299,7 @@
                     "index": 63,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild",
-                    "last_track_date": "2023-08-31"
+                    "last_track_date": "2023-09-01"
                 },
                 "type": "Game",
                 "title": "The Legend of Zelda: Breath of the Wild",
@@ -18332,7 +18332,7 @@
                     "metaScore": 97,
                     "metaReviewsCount": 109,
                     "userScore": 8.7,
-                    "userReviewsCount": 20906
+                    "userReviewsCount": 20909
                 }
             },
             "super-mario-odyssey": {
@@ -18340,7 +18340,7 @@
                     "index": 64,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-odyssey",
-                    "last_track_date": "2023-08-31"
+                    "last_track_date": "2023-09-01"
                 },
                 "type": "Game",
                 "title": "Super Mario Odyssey",
@@ -18382,7 +18382,7 @@
                     "index": 65,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-sparks-of-hope",
-                    "last_track_date": "2023-08-31"
+                    "last_track_date": "2023-09-01"
                 },
                 "type": "Game",
                 "title": "Mario + Rabbids Sparks of Hope",
@@ -18428,7 +18428,7 @@
                     "index": 66,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-kingdom-battle",
-                    "last_track_date": "2023-08-31"
+                    "last_track_date": "2023-09-01"
                 },
                 "type": "Game",
                 "title": "Mario + Rabbids: Kingdom Battle",
@@ -18480,7 +18480,7 @@
                     "index": 67,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/bayonetta-origins-cereza-and-the-lost-demon",
-                    "last_track_date": "2023-08-31"
+                    "last_track_date": "2023-09-01"
                 },
                 "type": "Game",
                 "title": "Bayonetta Origins: Cereza and the Lost Demon",
@@ -18525,7 +18525,7 @@
                     "index": 68,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-bros-wonder",
-                    "last_track_date": "2023-08-31"
+                    "last_track_date": "2023-09-01"
                 },
                 "type": "Game",
                 "title": "Super Mario Bros. Wonder",
@@ -18558,6 +18558,96 @@
                     ],
                     "metaReviewsCount": 0
                 }
+            },
+            "pokemon-scarlet": {
+                "meta": {
+                    "index": 133,
+                    "platform": "switch",
+                    "identifier": "https://www.metacritic.com/game/switch/pokemon-scarlet",
+                    "last_track_date": "2023-09-01"
+                },
+                "type": "Game",
+                "title": "Pokemon Scarlet",
+                "start": "2022-11-18",
+                "app_data": {
+                    "imageURL": "https://static.metacritic.com/images/products/games/0/01f9bb07b979fe4f7ac381ecf6fed139-98.jpg",
+                    "imageAlt": "Pokemon Scarlet Image",
+                    "platform": "switch",
+                    "name": "pokemon-scarlet",
+                    "title": "Pokemon Scarlet",
+                    "platformString": "Switch",
+                    "releaseDate": "Nov 18, 2022",
+                    "summary": "The Pokémon Scarlet and Pokémon Violet games, the newest chapters in the Pokémon series, are coming to Nintendo Switch. With these new titles, the Pokémon series takes a new evolutionary step, allowing you to explore freely in a richly expressed open world.  Various towns blend seamlessly into the wilderness with no borders. You'll be able to see the Pokémon of this region in the skies, in the seas, in the forests, on the streetsall over! You'll be able to experience the true joy of the Pokémon seriesbattling against wild Pokémon in order to catch themnow in an open-world game that players of any age can enjoy. \n\nMeet the First Partner Pokémon\nThe three Pokémon from which you'll be able to choose your first partner are Sprigatito, Fuecoco, and Quaxly. How will you meet these three, and what sorts of Pokémon are they? \n\nSprigatito \nType: Grass \nCategory: Grass Cat Pokémon \nHeight: 1'4\" \nWeight: 9 lbs. \nAbility: Overgrow \nThe capricious, attention-seeking Grass Cat Pokémon. \n\nFuecoco\nType: Fire\nCategory: Fire Croc Pokémon \nHeight: 1'4\" \nWeight: 21.6 lbs. \nAbility: Blaze \nThe laid-back Fire Croc Pokémon that does things at its own pace. \n\nQuaxly\nType: Water \nCategory: Duckling Pokémon \nHeight: 1'8\" \nWeight: 13.4 lbs. \nAbility: Torrent \nThe earnest and tidy Duckling Pokémon. \n\nIntroducing the Main Characters \nAs one of the main characters, you'll set off on your adventure. Your outfit will vary depending on whether you play Pokémon Scarlet or Pokémon Violet. Who knows what kind of story awaits you?",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        },
+                        {
+                            "name": "The Pokemon Company",
+                            "url": "/company/the-pokemon-company"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Game Freak",
+                            "url": "/company/game-freak"
+                        }
+                    ],
+                    "genres": [
+                        "Role-Playing",
+                        "Trainer"
+                    ],
+                    "metaScore": 72,
+                    "metaReviewsCount": 116,
+                    "userScore": 3.4,
+                    "userReviewsCount": 3181
+                }
+            },
+            "pokemon-violet": {
+                "meta": {
+                    "index": 134,
+                    "platform": "switch",
+                    "identifier": "https://www.metacritic.com/game/switch/pokemon-violet",
+                    "last_track_date": "2023-09-01"
+                },
+                "type": "Game",
+                "title": "Pokemon Violet",
+                "start": "2022-11-18",
+                "app_data": {
+                    "imageURL": "https://static.metacritic.com/images/products/games/9/304f4650959b570df9f4bc34ffb11822-98.jpg",
+                    "imageAlt": "Pokemon Violet Image",
+                    "platform": "switch",
+                    "name": "pokemon-violet",
+                    "title": "Pokemon Violet",
+                    "platformString": "Switch",
+                    "releaseDate": "Nov 18, 2022",
+                    "summary": "The Pokémon Scarlet and Pokémon Violet games, the newest chapters in the Pokémon series, are coming to Nintendo Switch. With these new titles, the Pokémon series takes a new evolutionary step, allowing you to explore freely in a richly expressed open world.  Various towns blend seamlessly into the wilderness with no borders. You'll be able to see the Pokémon of this region in the skies, in the seas, in the forests, on the streetsall over! You'll be able to experience the true joy of the Pokémon seriesbattling against wild Pokémon in order to catch themnow in an open-world game that players of any age can enjoy. \n\nMeet the First Partner Pokémon\nThe three Pokémon from which you'll be able to choose your first partner are Sprigatito, Fuecoco, and Quaxly. How will you meet these three, and what sorts of Pokémon are they? \n\nSprigatito \nType: Grass \nCategory: Grass Cat Pokémon \nHeight: 1'4\" \nWeight: 9 lbs. \nAbility: Overgrow \nThe capricious, attention-seeking Grass Cat Pokémon. \n\nFuecoco\nType: Fire\nCategory: Fire Croc Pokémon \nHeight: 1'4\" \nWeight: 21.6 lbs. \nAbility: Blaze \nThe laid-back Fire Croc Pokémon that does things at its own pace. \n\nQuaxly\nType: Water \nCategory: Duckling Pokémon \nHeight: 1'8\" \nWeight: 13.4 lbs. \nAbility: Torrent \nThe earnest and tidy Duckling Pokémon. \n\nIntroducing the Main Characters \nAs one of the main characters, you'll set off on your adventure. Your outfit will vary depending on whether you play Pokémon Scarlet or Pokémon Violet. Who knows what kind of story awaits you?",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": "/company/nintendo"
+                        },
+                        {
+                            "name": "The Pokemon Company",
+                            "url": "/company/the-pokemon-company"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Game Freak",
+                            "url": "/company/game-freak"
+                        }
+                    ],
+                    "genres": [
+                        "Role-Playing",
+                        "Trainer"
+                    ],
+                    "metaScore": 71,
+                    "metaReviewsCount": 116,
+                    "userScore": 4,
+                    "userReviewsCount": 2034
+                }
             }
         },
         "pc": {
@@ -18566,7 +18656,7 @@
                     "index": 69,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/alan-wake-ii",
-                    "last_track_date": "2023-08-31"
+                    "last_track_date": "2023-09-01"
                 },
                 "type": "Game",
                 "title": "Alan Wake II",
@@ -18598,6 +18688,52 @@
                     ],
                     "metaReviewsCount": 0
                 }
+            },
+            "assassins-creed-mirage": {
+                "meta": {
+                    "index": 131,
+                    "platform": "pc",
+                    "identifier": "https://www.metacritic.com/game/pc/assassins-creed-mirage",
+                    "last_track_date": "2023-09-01"
+                },
+                "type": "Game",
+                "title": "Assassin's Creed Mirage",
+                "start": "2023-10-05",
+                "app_data": {
+                    "imageURL": "https://static.metacritic.com/images/products/games/4/643b78b037e354d1980aa4f4475dc6c9-98.jpg",
+                    "imageAlt": "Assassin's Creed Mirage Image",
+                    "platform": "pc",
+                    "name": "assassins-creed-mirage",
+                    "title": "Assassin's Creed Mirage",
+                    "platformString": "PC",
+                    "releaseDate": "Oct  5, 2023",
+                    "summary": "In Assassin's Creed Mirage, you are Basim, a cunning street thief with nightmarish visions seeking answers and justice.Join an ancient organisation and come to understand a new creed - one that will change Basim's fate in ways he never could have imagined.Discover a narrative-driven action-adventure experience that follows the transformation of a defiant young man into a refined Master Assassin with a conflicted destiny. Meet an inspiring cast of characters who will shape Basim's destiny and may be more than what they seem...",
+                    "publisher": [
+                        {
+                            "name": "Ubisoft",
+                            "url": "/company/ubisoft"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Ubisoft",
+                            "url": "/company/ubisoft"
+                        },
+                        {
+                            "name": "Ubisoft Montreal",
+                            "url": "/company/ubisoft-montreal"
+                        },
+                        {
+                            "name": "Ubisoft Bordeaux",
+                            "url": "/company/ubisoft-bordeaux"
+                        }
+                    ],
+                    "genres": [
+                        "Action Adventure",
+                        "Open-World"
+                    ],
+                    "metaReviewsCount": 0
+                }
             }
         },
         "playstation-5": {
@@ -18606,7 +18742,7 @@
                     "index": 70,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/marvels-spider-man-2",
-                    "last_track_date": "2023-08-31"
+                    "last_track_date": "2023-09-01"
                 },
                 "type": "Game",
                 "title": "Marvel's Spider-Man 2",
@@ -18641,6 +18777,55 @@
                         "Open-World"
                     ],
                     "metaReviewsCount": 0
+                }
+            },
+            "demons-souls": {
+                "meta": {
+                    "index": 132,
+                    "platform": "playstation-5",
+                    "identifier": "https://www.metacritic.com/game/playstation-5/demons-souls",
+                    "last_track_date": "2023-09-01"
+                },
+                "type": "Game",
+                "title": "Demon's Souls",
+                "start": "2020-11-11",
+                "app_data": {
+                    "imageURL": "https://static.metacritic.com/images/products/games/7/1aa54a2d35e13b422ee8fcc40c1126fd-98.jpg",
+                    "imageAlt": "Demon's Souls Image",
+                    "platform": "playstation-5",
+                    "name": "demons-souls",
+                    "title": "Demon's Souls",
+                    "platformString": "PlayStation 5",
+                    "releaseDate": "Nov 11, 2020",
+                    "summary": "From PlayStation Studios and Bluepoint Games comes a remake of the PlayStation classic, Demon’s Souls. Entirely rebuilt from the ground up and masterfully enhanced, this remake introduces the horrors of a fog-laden, dark fantasy land to a whole new generation of gamers. Those who’ve faced its trials and tribulations before, can once again challenge the darkness in stunning visual quality and incredible performance. In his quest for power, the 12th King of Boletaria, King Allant channelled the ancient Soul Arts, awakening a demon from the dawn of time itself, The Old One. With the summoning of The Old One, a colorless fog swept across the land, unleashing nightmarish creatures that hungered for human souls. Those whose souls were stripped from them, lost their minds – left only with the desire to attack the sane that remained. Now, Boletaria is cut off from the outside world, and the knights who dare penetrate the deep fog to free the land from its plight, are never seen again. As a lone warrior who has braved the baneful fog, you must face the hardest of challenges to earn the title “Slayer of Demons” and send The Old One back to its slumber.",
+                    "publisher": [
+                        {
+                            "name": "Sony Interactive Entertainment",
+                            "url": "/company/sony-interactive-entertainment"
+                        },
+                        {
+                            "name": "PlayStation Studios",
+                            "url": "/company/playstation-studios"
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "JapanStudio",
+                            "url": "/company/japanstudio"
+                        },
+                        {
+                            "name": "Bluepoint Games",
+                            "url": "/company/bluepoint-games"
+                        }
+                    ],
+                    "genres": [
+                        "Role-Playing",
+                        "Action RPG"
+                    ],
+                    "metaScore": 92,
+                    "metaReviewsCount": 100,
+                    "userScore": 8.1,
+                    "userReviewsCount": 3586
                 }
             }
         }

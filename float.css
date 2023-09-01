@@ -337,6 +337,14 @@ div.rightcol {
     color: #66C0F4;
 }
 
+.game_review_summary.mixed {
+    color: #B9A074;
+}
+
+.game_review_summary {
+    color: #A34C25;
+}
+
 .app_tag:hover {
     text-decoration: none;
     background: linear-gradient(135deg, #67c1f5 0%, #417a9b 100%);
