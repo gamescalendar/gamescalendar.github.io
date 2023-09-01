@@ -57,7 +57,7 @@ jobs:
           git status
 
       - name: commit
-        if: github.event.schedule != "0 */4 * * *"
+        if: ${{ github.event_name != 'schedule' }}
         run: |
           if ! git diff --exit-code --cached; then
             git commit -am "${{ github.event.head_commit.message }} at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
@@ -65,7 +65,7 @@ jobs:
           fi
 
       - name: commit
-        if: github.event.schedule == "0 */4 * * *"
+        if: ${{ github.event_name == 'schedule' }}
         run: |
           if ! git diff --exit-code --cached; then
             git commit -am "Daily update at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
