@@ -336,7 +336,7 @@
             return template
         }
 
-        function buildTemplate(data, meta) {
+        function buildSteam(data, meta) {
             if (!data) {
                 return null;
             }
@@ -551,7 +551,7 @@
                     let template = ""
                     switch (info.event.extendedProps.source) {
                         case "steam":
-                            template = buildTemplate(info.event.extendedProps.app_data, info.event.extendedProps.meta);
+                            template = buildSteam(info.event.extendedProps.app_data, info.event.extendedProps.meta);
                             break
                         case "metacritic":
                             template = buildMetacritic(info.event.extendedProps.app_data, info.event.extendedProps.meta);
