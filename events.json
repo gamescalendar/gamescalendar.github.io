@@ -13949,7 +13949,7 @@
                 "index": 2,
                 "platform": "Steam",
                 "identifier": 1716740,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "Starfield",
@@ -13960,7 +13960,7 @@
                 "title": "Starfield",
                 "description": "Starfield is the first new universe in 25 years from Bethesda Game Studios, the award-winning creators of The Elder Scrolls V: Skyrim and Fallout 4.",
                 "release_date": {
-                    "coming_soon": true,
+                    "coming_soon": false,
                     "date": "Sep 5, 2023"
                 },
                 "language": {
@@ -14031,28 +14031,28 @@
                         "name": "剧情丰富"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
-                        "name": "动作冒险"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0/",
                         "name": "第一人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
+                        "name": "动作冒险"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
                         "name": "第三人称"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%AA%E7%A9%BA%E6%A8%A1%E6%8B%9F/",
-                        "name": "太空模拟"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
+                        "name": "角色自定义"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
                         "name": "冒险"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
-                        "name": "角色自定义"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%AA%E7%A9%BA%E6%A8%A1%E6%8B%9F/",
+                        "name": "太空模拟"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
@@ -14082,7 +14082,13 @@
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
                         "name": "多人"
                     }
-                ]
+                ],
+                "totalReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(17,498)",
+                    "tooltip": "此游戏的 17,498 篇用户评测中有 84% 为好评。"
+                }
             }
         },
         "1718570": {
@@ -14090,7 +14096,7 @@
                 "index": 34,
                 "platform": "Steam",
                 "identifier": 1718570,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "ASTLIBRA Revision",
@@ -14235,14 +14241,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(415)",
-                    "tooltip": "过去 30 天内的 415 篇用户评测中有 94% 为好评。"
+                    "count": "(405)",
+                    "tooltip": "过去 30 天内的 405 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(17,145)",
-                    "tooltip": "此游戏的 17,145 篇用户评测中有 96% 为好评。"
+                    "count": "(17,152)",
+                    "tooltip": "此游戏的 17,152 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -14251,7 +14257,7 @@
                 "index": 41,
                 "platform": "Steam",
                 "identifier": 1774580,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "STAR WARS Jedi: Survivor™",
@@ -14392,14 +14398,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(960)",
-                    "tooltip": "过去 30 天内的 960 篇用户评测中有 68% 为好评。"
+                    "count": "(959)",
+                    "tooltip": "过去 30 天内的 959 篇用户评测中有 69% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(33,191)",
-                    "tooltip": "此游戏的 33,191 篇用户评测中有 63% 为好评。"
+                    "count": "(33,237)",
+                    "tooltip": "此游戏的 33,237 篇用户评测中有 63% 为好评。"
                 }
             }
         },
@@ -14408,7 +14414,7 @@
                 "index": 24,
                 "platform": "Steam",
                 "identifier": 1811600,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "Vestaria Saga II: The Sacred Sword of Silvanister",
@@ -14556,7 +14562,7 @@
                 "index": 11,
                 "platform": "Steam",
                 "identifier": 1817230,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "Hi-Fi RUSH",
@@ -14701,14 +14707,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(552)",
-                    "tooltip": "过去 30 天内的 552 篇用户评测中有 96% 为好评。"
+                    "count": "(533)",
+                    "tooltip": "过去 30 天内的 533 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(15,996)",
-                    "tooltip": "此游戏的 15,996 篇用户评测中有 97% 为好评。"
+                    "count": "(16,006)",
+                    "tooltip": "此游戏的 16,006 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -14717,7 +14723,7 @@
                 "index": 80,
                 "platform": "Steam",
                 "identifier": 1857090,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "Norland",
@@ -14858,7 +14864,7 @@
                 "index": 12,
                 "platform": "Steam",
                 "identifier": 1859910,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "Legend of Mortal",
@@ -15000,7 +15006,7 @@
                 "index": 10,
                 "platform": "Steam",
                 "identifier": 1868140,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "DAVE THE DIVER",
@@ -15153,14 +15159,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(5,519)",
-                    "tooltip": "过去 30 天内的 5,519 篇用户评测中有 96% 为好评。"
+                    "count": "(5,302)",
+                    "tooltip": "过去 30 天内的 5,302 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(51,174)",
-                    "tooltip": "此游戏的 51,174 篇用户评测中有 97% 为好评。"
+                    "count": "(51,258)",
+                    "tooltip": "此游戏的 51,258 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -15169,7 +15175,7 @@
                 "index": 13,
                 "platform": "Steam",
                 "identifier": 1880330,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "Sanfu",
@@ -15231,12 +15237,12 @@
                 ],
                 "tags": [
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "角色扮演"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%82%AC%E7%96%91/",
                         "name": "悬疑"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85/",
@@ -15314,14 +15320,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(1,902)",
-                    "tooltip": "过去 30 天内的 1,902 篇用户评测中有 79% 为好评。"
+                    "count": "(1,697)",
+                    "tooltip": "过去 30 天内的 1,697 篇用户评测中有 79% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(13,094)",
-                    "tooltip": "此游戏的 13,094 篇用户评测中有 81% 为好评。"
+                    "count": "(13,113)",
+                    "tooltip": "此游戏的 13,113 篇用户评测中有 81% 为好评。"
                 }
             }
         },
@@ -15330,7 +15336,7 @@
                 "index": 90,
                 "platform": "Steam",
                 "identifier": 1880360,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "Monster Hunter Rise: Sunbreak",
@@ -15447,8 +15453,8 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(23)",
-                    "tooltip": "过去 30 天内的 23 篇用户评测中有 73% 为好评。"
+                    "count": "(22)",
+                    "tooltip": "过去 30 天内的 22 篇用户评测中有 77% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
@@ -15463,7 +15469,7 @@
                 "index": 7,
                 "platform": "Steam",
                 "identifier": 1888160,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
@@ -15617,8 +15623,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(30,119)",
-                    "tooltip": "此游戏的 30,119 篇用户评测中有 86% 为好评。"
+                    "count": "(30,996)",
+                    "tooltip": "此游戏的 30,996 篇用户评测中有 87% 为好评。"
                 }
             }
         },
@@ -15627,7 +15633,7 @@
                 "index": 8,
                 "platform": "Steam",
                 "identifier": 1967430,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "Ghost Trick: Phantom Detective",
@@ -15744,14 +15750,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(170)",
-                    "tooltip": "过去 30 天内的 170 篇用户评测中有 97% 为好评。"
+                    "count": "(159)",
+                    "tooltip": "过去 30 天内的 159 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,592)",
-                    "tooltip": "此游戏的 1,592 篇用户评测中有 98% 为好评。"
+                    "count": "(1,595)",
+                    "tooltip": "此游戏的 1,595 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -15760,7 +15766,7 @@
                 "index": 6,
                 "platform": "Steam",
                 "identifier": 1971650,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "OCTOPATH TRAVELER II",
@@ -15902,14 +15908,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(361)",
-                    "tooltip": "过去 30 天内的 361 篇用户评测中有 94% 为好评。"
+                    "count": "(356)",
+                    "tooltip": "过去 30 天内的 356 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(5,883)",
-                    "tooltip": "此游戏的 5,883 篇用户评测中有 95% 为好评。"
+                    "count": "(5,895)",
+                    "tooltip": "此游戏的 5,895 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -15918,7 +15924,7 @@
                 "index": 54,
                 "platform": "Steam",
                 "identifier": 1992090,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "Legend of Mortal Demo",
@@ -16045,7 +16051,7 @@
                 "index": 9,
                 "platform": "Steam",
                 "identifier": 2014380,
-                "last_track_date": "2023-09-05"
+                "last_track_date": "2023-09-06"
             },
             "type": "Game",
             "title": "LIVE A LIVE",
@@ -16189,16 +16195,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "褒贬不一",
-                    "cssClass": "mixed",
-                    "count": "(13)",
-                    "tooltip": "过去 30 天内的 13 篇用户评测中有 69% 为好评。"
+                    "summary": "多半好评",
+                    "cssClass": "positive",
+                    "count": "(14)",
+                    "tooltip": "过去 30 天内的 14 篇用户评测中有 71% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(230)",
-                    "tooltip": "此游戏的 230 篇用户评测中有 88% 为好评。"
+                    "count": "(231)",
+                    "tooltip": "此游戏的 231 篇用户评测中有 88% 为好评。"
                 }
             }
         },
