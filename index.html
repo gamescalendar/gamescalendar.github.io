@@ -216,7 +216,7 @@
                         <div class="summary">
                             <p>
                             <span class="count">
-                                <span class="based">based on</span>
+                                <span class="based">Based on</span>
                                 <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
                                     <span>${data.metaReviewsCount}</span> Critic Reviews
                                 </a>
@@ -240,9 +240,9 @@
                         <div class="summary">
                             <p>
                             <span class="count">
-                                <span class="based">based on</span>
+                                <span class="based">Based on</span>
                                 <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
-                                    <span>${data.userReviewsCount}</span> Ratings
+                                    <span>${data.userReviewsCount}</span> User Ratings
                                 </a>
                             </span>
                             </p>
@@ -272,9 +272,7 @@
                 <h1>${data.title}</h1>
             </a>
             <span class="platform">
-                <a href="https://www.metacritic.com/game/${data.platform}">
-                    ${data.platformString}
-                </a>
+                ${data.platformString.map(obj => `<a href="https://www.metacritic.com${obj.url}">${obj.name}</a>`).join(",")}
             </span>
         </div>
         <div class="product_data">
@@ -318,7 +316,7 @@
                             </li>
                             <li class="summary_detail product_genre">
                                 <span class="label">Genre(s): </span>
-                                <span class="data">${data.genres.join(", ")}</span>
+                                <span class="data">${data.genres.map(obj => `<a href="https://www.metacritic.com${obj.url}" class="button">${obj.name}</a>`).join(", ")}</span>
                             </li>
                         </ul>
 

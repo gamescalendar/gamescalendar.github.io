@@ -42,7 +42,7 @@ jobs:
           set -x
           git fetch origin release
           git checkout origin/release -- events.json
-          node ./generate.js
+          node ./generate.js list.txt
 
       - name: add changed files
         run: |

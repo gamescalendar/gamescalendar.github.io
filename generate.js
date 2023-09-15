@@ -77,6 +77,7 @@ async function getAppDataFromStorePage(appid) {
 
     const body = await makeRequest(page);
     if (!body) {
+        console.log(`Failed to fetch store page for ${appid} from ${page}`)
         return null
     }
 
@@ -137,6 +138,7 @@ async function getAppDataFromAPI(appid) {
 
     const body = await makeRequest(api);
     if (!body) {
+        console.log(`Failed to fetch store API for ${appid} from ${api}`)
         return null
     }
     // console.log(body);
@@ -495,6 +497,7 @@ async function updateSteamTargets(trackedEvents, newTargets) {
         for (let target of needRefreshTargets) {
             let apiData = await getAppDataFromAPI(target);
             if (apiData == null) {
+                console.log(`no response of target ${target}`)
                 continue
             }
             let calendarData = getCalendarData(apiData);
@@ -531,6 +534,154 @@ function toNumberOrUndefined(str) {
         return undefined
     }
     return num
+}
+
+async function getMetacriticInfo(platform, game) {
+    // === Scores ===
+    // Main page no longer provides full game description and cover image
+    let url = `https://www.metacritic.com/game/${game}`
+    console.log(`Fetching Metacritic for ${game} from ${url}`)
+    let body = await makeRequest(url) // details 页面有 table，不好解析
+    if (!body) {
+        console.log(`Failed to fetch metacritic page for ${game} from ${url}`)
+        return null
+    }
+
+    let $ = cheerio.load(body)
+
+    let metaScore = $(".c-productScoreInfo_scoreContent:nth(0) .c-siteReviewScore").text().trim()
+    let metaReviewsCount = $(".summary_wrap .metascore_wrap .c-productScoreInfo_reviewsTotal")?.text().trim()
+    if (metaReviewsCount) {
+        metaReviewsCount = metaReviewsCount.toLowerCase()
+            .replace("based on", "")
+            .replace("critic reviews", "").trim()
+    }
+    let userScore = $(".c-productScoreInfo_scoreContent:nth(1) .c-siteReviewScore").text().trim()
+    let userReviewsCount = $(".summary_wrap .userscore_wrap .c-productScoreInfo_reviewsTotal")?.text().trim()
+    if (userReviewsCount) {
+        userReviewsCount = userReviewsCount.toLowerCase()
+            .replace("based on", "")
+            .replace("user ratings", "").trim()
+    }
+
+    // === Details ===
+    // Main page no longer provides full game description and cover image
+    let detailsUrl = `https://www.metacritic.com/game/${game}/details/`
+    console.log(`Fetching Metacritic Details for ${game} from ${detailsUrl}`)
+    let detailsBody = await makeRequest(detailsUrl) // details 页面有 table，不好解析
+    if (!detailsBody) {
+        console.log(`Failed to fetch metacritic page for ${game} from ${detailsUrl}`)
+        return null
+    }
+
+    $ = cheerio.load(detailsBody)
+
+    // title
+    let title = $(".c-productSubpageHeader_back").text().trim()
+
+    // date
+    let startStr = $(".c-gameDetails_ReleaseDate span.g-outer-spacing-left-medium-fluid").text().trim()
+    let releaseDate = (new Date(startStr + " GMT"))
+
+    let start = ""
+    let isTBA = releaseDate.toString() === "Invalid Date"
+    if (!isTBA) {
+        start = releaseDate.toISOString().slice(0, 10)
+    }
+
+    // cover
+    let img = $(".c-productSubpageHeader_image img")
+    let imageURL = img.attr("src")
+    let imageAlt = img.attr("alt")
+
+    // summary
+    const prefix = "Description:"
+    let summary = $(".c-pageProductDetails_description").text().trim()
+    if (summary.startsWith(prefix)) {
+        summary = summary.slice(prefix.length).trim()
+    }
+
+    // platforms
+    let platforms =  Array.from($(".c-gameDetails_Platforms li")).map(x => {
+        let $x = $(x)
+        return {
+            name: $x.text().trim(),
+            url: "",
+        }
+    })
+
+    // publishers
+    let publishers = []
+
+    let pubName = $(".c-gameDetails_Distributor span.g-outer-spacing-left-medium-fluid").text().trim()
+    if (pubName === "") {
+        publishers = Array.from($(".c-gameDetails_Distributor li")).map(x => {
+            let $x = $(x)
+            return {
+                name: $x.text().trim(),
+                url: "",
+            }
+        })
+    } else {
+        publishers.push({
+            name: pubName,
+            url: "",
+        })
+    }
+
+    // devs
+    let developers = []
+
+    let devName = $(".c-gameDetails_Developer span.g-outer-spacing-left-medium-fluid").text().trim()
+    if (devName === "") {
+        developers = Array.from($(".c-gameDetails_Developer li")).map(x => {
+            let $x = $(x)
+            return {
+                name: $x.text().trim(),
+                url: "",
+            }
+        })
+    } else {
+        developers.push({
+            name: devName,
+            url: "",
+        })
+    }
+
+    // genres
+    let genres = Array.from($(".c-genreList a")).map(x => {
+        let $x = $(x)
+        return {
+            name: $x.text().trim(),
+            url: $x.attr("href"),
+        }
+    })
+
+    return {
+        type: "Game",
+        title: title, // done
+        start: start, // done
+        app_data: {
+            imageURL: imageURL, // done
+            imageAlt: imageAlt, // done
+
+            platform: platform,
+            name: game,
+            title: title, // done
+            platformString: platforms, // done
+            releaseDate: startStr, // done
+
+            summary: summary, // done
+            publisher: publishers, // done
+            developer: developers, // done
+            genres: genres, // done
+
+            metaScore: toNumberOrUndefined(metaScore),
+            metaReviewsCount: toNumberOrUndefined(metaReviewsCount),
+            userScore: toNumberOrUndefined(userScore),
+            userReviewsCount: toNumberOrUndefined(userReviewsCount),
+        },
+    }
 }
 
 async function updateMetacriticTargets(trackedEvents, newTargets) {
@@ -575,87 +726,18 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
         changed = true
 
         for (let game of targets) {
-            let url = `https://www.metacritic.com/game/${platform}/${game}`
-            let body = await makeRequest(url) // details 页面有 table，不好解析
-            let $ = cheerio.load(body)
-
-            let title = $(".product_title h1").text().trim()
-            let platformString = $(".product_title .platform").text().trim()
-            let startStr = $(".summary_detail.release_data span.data").text().trim();
-            let releaseDate = (new Date(startStr + " GMT"))
-
-            let start = ""
-            let isTBA = releaseDate.toString() === "Invalid Date"
-            if (!isTBA) {
-                start = releaseDate.toISOString().slice(0, 10)
-            }
-
-            let metaScore = $(".summary_wrap .metascore_wrap .metascore_anchor .metascore_w")?.text().trim()
-            let metaReviewsCount = $(".summary_wrap .metascore_wrap .summary .count a span")?.text().trim()
-            let userScore = $(".summary_wrap .userscore_wrap .metascore_anchor .metascore_w")?.text().trim()
-            let userReviewsCount = $(".summary_wrap .userscore_wrap .summary .count a")?.text().trim()
-            if (userReviewsCount) {
-                let arr = userReviewsCount.split(" ")
-                if (arr && arr.length > 0) {
-                    userReviewsCount = arr[0]
-                }
-            }
-
-            let img = $(".product_media .product_image img.product_image ")
-            let imageURL = img.attr("src")
-            let imageAlt = img.attr("alt")
-
-            let summary = $(".summary_detail.product_summary .data .blurb_expanded").text().trim()
-            if (!summary) {
-                summary = $(".summary_detail.product_summary .data").text().trim()
-            }
-            let publisher = Array.from($(".summary_detail.publisher .data a")).map(x => {
-                let $x = $(x)
-                return {
-                    name: $x.text().trim(),
-                    url: $x.attr("href"),
-                }
-            })
-
-            let developer = Array.from($(".summary_detail.developer .data a")).map(x => {
-                let $x = $(x)
-                return {
-                    name: $x.text().trim(),
-                    url: $x.attr("href"),
-                }
-            })
-
-            let genres = Array.from($(".summary_detail.product_genre .data")).map(x => $(x).text().trim());
-
             if (!trackedEvents.metacritic[platform]) {
                 trackedEvents.metacritic[platform] = {}
             }
-            trackedEvents.metacritic[platform][game] = {
-                meta: trackedEvents.metacritic[platform][game]?.meta,
-                type: "Game",
-                title: title,
-                start: start,
-                app_data: {
-                    imageURL: imageURL,
-                    imageAlt: imageAlt,
 
-                    platform: platform,
-                    name: game,
-                    title: title,
-                    platformString: platformString,
-                    releaseDate: startStr,
-
-                    summary: summary,
-                    publisher: publisher,
-                    developer: developer,
-                    genres: genres,
-
-                    metaScore: toNumberOrUndefined(metaScore),
-                    metaReviewsCount: toNumberOrUndefined(metaReviewsCount),
-                    userScore: toNumberOrUndefined(userScore),
-                    userReviewsCount: toNumberOrUndefined(userReviewsCount),
-                },
+            let app_info = await getMetacriticInfo(platform, game)
+            if (!app_info) {
+                console.log(`failed to get metacritic info of ${game} at ${platform}`)
+                continue
             }
+            app_info.meta = trackedEvents.metacritic[platform][game]?.meta
+
+            trackedEvents.metacritic[platform][game] = app_info
 
             if (trackedEvents.metacritic[platform][game].meta) {
                 trackedEvents.metacritic[platform][game].meta.last_track_date = today
@@ -664,7 +746,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
                 trackedEvents.metacritic[platform][game].meta = {
                     index: trackedEvents.index,
                     platform: platform,
-                    identifier: url,
+                    identifier: `https://www.metacritic.com/game/${game}`,
                     last_track_date: today,
                 }
                 trackedEvents.index += 1
@@ -691,8 +773,8 @@ async function main(newTargets) {
     // cleanupBackups()
 }
 
-function getTargets() {
-    let list = fs.readFileSync("list.txt", "utf-8").split("\n")
+function getTargets(file) {
+    let list = fs.readFileSync(file, "utf-8").split("\n")
         .map(x => x.trim())
         .filter(x => x.length > 0 && !x.startsWith("//"))
     console.log(`Read target list: ${list.join("\n")}`)
@@ -701,5 +783,6 @@ function getTargets() {
 }
 
 (async () => {
-    await main(getTargets())
+    let file = process.argv[2]
+    await main(getTargets(file))
 })();
