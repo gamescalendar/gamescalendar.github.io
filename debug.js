@@ -37,9 +37,23 @@ async function makeRequest(url) {
 
     let $ = cheerio.load(body)
 
-    let meta = $(".c-productScoreInfo_scoreContent:nth(0) .c-siteReviewScore").text().trim()
-    let user = $(".c-productScoreInfo_scoreContent:nth(1) .c-siteReviewScore").text().trim()
+    let metaScore = $(".c-productScoreInfo_scoreContent:nth(0) .c-siteReviewScore").text().trim()
+    let metaReviewsCount = $(".c-productScoreInfo_scoreContent:nth(0) .c-productScoreInfo_reviewsTotal")?.text().trim()
+    if (metaReviewsCount) {
+        metaReviewsCount = metaReviewsCount.toLowerCase()
+            .replace("based on", "")
+            .replace("critic reviews", "").trim().replace(",", "")
+    }
+    let userScore = $(".c-productScoreInfo_scoreContent:nth(1) .c-siteReviewScore").text().trim()
+    let userReviewsCount = $(".c-productScoreInfo_scoreContent:nth(1) .c-productScoreInfo_reviewsTotal")?.text().trim()
+    if (userReviewsCount) {
+        userReviewsCount = userReviewsCount.toLowerCase()
+            .replace("based on", "")
+            .replace("user ratings", "").trim().replace(",", "")
+    }
 
-    console.log(meta)
-    console.log(user)
+    console.log(metaScore)
+    console.log(userScore)
+    console.log(metaReviewsCount)
+    console.log(userReviewsCount)
 })();
