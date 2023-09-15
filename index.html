@@ -412,6 +412,21 @@
                         </div>
                         <div class="inner_rule"></div>
 
+                        <div class="dev_row">
+                            <div class="subtitle column">开发商：</div>
+                            <div class="dev_list">
+                                ${data.developers.filter(x => x).slice(0, 7).map(dev => `<a target="_blank" href="https://store.steampowered.com/search/?developer=${dev}">${dev}</a>`).join(",")}
+                            </div>
+                        </div>
+
+                        <div class="dev_row">
+                            <div class="subtitle column">发行商</div>
+                            <div class="dev_list">
+                                ${data.publishers.filter(x => x).slice(0, 7).map(pub => `<a target="_blank" href="https://store.steampowered.com/search/?publisher=${pub}">${pub}</a>`).join(",")}
+                            </div>
+                        </div>
+                        <div class="inner_rule"></div>
+
                         <div class="details_block">
                             <b>该产品的热门用户自定义标签：</b>
                             <div class="glance_tag">
