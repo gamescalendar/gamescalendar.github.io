@@ -602,7 +602,7 @@ async function getMetacriticInfo(platform, game) {
     }
 
     // platforms
-    let platforms =  Array.from($(".c-gameDetails_Platforms li")).map(x => {
+    let platforms = Array.from($(".c-gameDetails_Platforms li")).map(x => {
         let $x = $(x)
         return {
             name: $x.text().trim(),
@@ -761,8 +761,8 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
 async function main(newTargets) {
     let trackedEvents = getTrackedEvents();
 
-    let changed = await updateSteamTargets(trackedEvents, newTargets) ||
-        await updateMetacriticTargets(trackedEvents, newTargets)
+    let changed = await updateSteamTargets(trackedEvents, newTargets)
+    changed = await updateMetacriticTargets(trackedEvents, newTargets) || changed
 
     changed = sanitizeEvents(trackedEvents) || changed
 
