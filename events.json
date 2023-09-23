@@ -55319,7 +55319,7 @@
                 "index": 136,
                 "platform": "Steam",
                 "identifier": 1844380,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Warhammer Age of Sigmar: Realms of Ruin",
@@ -55373,8 +55373,8 @@
                         "description": "Steam Achievements"
                     },
                     {
-                        "id": 28,
-                        "description": "Full controller support"
+                        "id": 18,
+                        "description": "Partial Controller Support"
                     }
                 ],
                 "genres": [
@@ -55633,7 +55633,7 @@
                 "index": 80,
                 "platform": "Steam",
                 "identifier": 1857090,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Norland",
@@ -55774,7 +55774,7 @@
                 "index": 12,
                 "platform": "Steam",
                 "identifier": 1859910,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Legend of Mortal",
@@ -55916,7 +55916,7 @@
                 "index": 10,
                 "platform": "Steam",
                 "identifier": 1868140,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "DAVE THE DIVER",
@@ -56026,12 +56026,12 @@
                         "name": "农场模拟"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%B4%E5%BA%95/",
-                        "name": "水底"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
                         "name": "探索"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%B4%E5%BA%95/",
+                        "name": "水底"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%88%B6%E4%BD%9C/",
@@ -56069,14 +56069,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(3,644)",
-                    "tooltip": "过去 30 天内的 3,644 篇用户评测中有 96% 为好评。"
+                    "count": "(3,412)",
+                    "tooltip": "过去 30 天内的 3,412 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(52,566)",
-                    "tooltip": "此游戏的 52,566 篇用户评测中有 97% 为好评。"
+                    "count": "(52,821)",
+                    "tooltip": "此游戏的 52,821 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -56240,7 +56240,7 @@
                 "index": 13,
                 "platform": "Steam",
                 "identifier": 1880330,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Sanfu",
@@ -56385,14 +56385,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(729)",
-                    "tooltip": "过去 30 天内的 729 篇用户评测中有 80% 为好评。"
+                    "count": "(632)",
+                    "tooltip": "过去 30 天内的 632 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(13,317)",
-                    "tooltip": "此游戏的 13,317 篇用户评测中有 81% 为好评。"
+                    "count": "(13,343)",
+                    "tooltip": "此游戏的 13,343 篇用户评测中有 81% 为好评。"
                 }
             }
         },
@@ -56401,7 +56401,7 @@
                 "index": 90,
                 "platform": "Steam",
                 "identifier": 1880360,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Monster Hunter Rise: Sunbreak",
@@ -56516,16 +56516,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
-                    "cssClass": "positive",
-                    "count": "(24)",
-                    "tooltip": "过去 30 天内的 24 篇用户评测中有 70% 为好评。"
+                    "summary": "褒贬不一",
+                    "cssClass": "mixed",
+                    "count": "(28)",
+                    "tooltip": "过去 30 天内的 28 篇用户评测中有 64% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(3,846)",
-                    "tooltip": "此游戏的 3,846 篇用户评测中有 64% 为好评。"
+                    "count": "(3,850)",
+                    "tooltip": "此游戏的 3,850 篇用户评测中有 64% 为好评。"
                 }
             }
         },
@@ -56534,7 +56534,7 @@
                 "index": 7,
                 "platform": "Steam",
                 "identifier": 1888160,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
@@ -56609,24 +56609,24 @@
                         "name": "机甲"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
                         "name": "角色自定义"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
                         "name": "第三人称"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9C%BA%E5%99%A8%E4%BA%BA/",
-                        "name": "机器人"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
                         "name": "战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9C%BA%E5%99%A8%E4%BA%BA/",
+                        "name": "机器人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/3D/",
@@ -56688,8 +56688,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(38,382)",
-                    "tooltip": "此游戏的 38,382 篇用户评测中有 88% 为好评。"
+                    "count": "(39,311)",
+                    "tooltip": "此游戏的 39,311 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -56698,7 +56698,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -57566,7 +57566,7 @@
                 "index": 8,
                 "platform": "Steam",
                 "identifier": 1967430,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Ghost Trick: Phantom Detective",
@@ -57689,8 +57689,8 @@
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,635)",
-                    "tooltip": "此游戏的 1,635 篇用户评测中有 98% 为好评。"
+                    "count": "(1,646)",
+                    "tooltip": "此游戏的 1,646 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -57699,7 +57699,7 @@
                 "index": 6,
                 "platform": "Steam",
                 "identifier": 1971650,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "OCTOPATH TRAVELER II",
@@ -57841,14 +57841,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(289)",
-                    "tooltip": "过去 30 天内的 289 篇用户评测中有 91% 为好评。"
+                    "count": "(283)",
+                    "tooltip": "过去 30 天内的 283 篇用户评测中有 91% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(6,028)",
-                    "tooltip": "此游戏的 6,028 篇用户评测中有 95% 为好评。"
+                    "count": "(6,052)",
+                    "tooltip": "此游戏的 6,052 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -58037,7 +58037,7 @@
                 "index": 54,
                 "platform": "Steam",
                 "identifier": 1992090,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Legend of Mortal Demo",
@@ -58329,7 +58329,7 @@
                 "index": 9,
                 "platform": "Steam",
                 "identifier": 2014380,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "LIVE A LIVE",
@@ -58472,11 +58472,17 @@
                         "name": "单人"
                     }
                 ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(11)",
+                    "tooltip": "过去 30 天内的 11 篇用户评测中有 90% 为好评。"
+                },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(235)",
-                    "tooltip": "此游戏的 235 篇用户评测中有 88% 为好评。"
+                    "count": "(237)",
+                    "tooltip": "此游戏的 237 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -58485,7 +58491,7 @@
                 "index": 53,
                 "platform": "Steam",
                 "identifier": 2050650,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Resident Evil 4",
@@ -58607,12 +58613,12 @@
                         "name": "冒险"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A1%80%E8%85%A5/",
-                        "name": "血腥"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E5%88%B6/",
                         "name": "重制"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A1%80%E8%85%A5/",
+                        "name": "血腥"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
@@ -58630,14 +58636,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(2,045)",
-                    "tooltip": "过去 30 天内的 2,045 篇用户评测中有 97% 为好评。"
+                    "count": "(3,192)",
+                    "tooltip": "过去 30 天内的 3,192 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(56,801)",
-                    "tooltip": "此游戏的 56,801 篇用户评测中有 97% 为好评。"
+                    "count": "(58,026)",
+                    "tooltip": "此游戏的 58,026 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -58646,7 +58652,7 @@
                 "index": 118,
                 "platform": "Steam",
                 "identifier": 2054970,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Dragon's Dogma 2",
@@ -58783,7 +58789,7 @@
                 "index": 78,
                 "platform": "Steam",
                 "identifier": 2106560,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Cross Tails",
@@ -58999,7 +59005,7 @@
                 "index": 109,
                 "platform": "Steam",
                 "identifier": 2114740,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Blasphemous 2",
@@ -59144,8 +59150,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(3,465)",
-                    "tooltip": "此游戏的 3,465 篇用户评测中有 93% 为好评。"
+                    "count": "(3,558)",
+                    "tooltip": "此游戏的 3,558 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -59307,7 +59313,7 @@
                 "index": 98,
                 "platform": "Steam",
                 "identifier": 2135150,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Elin",
@@ -59597,7 +59603,7 @@
                 "index": 75,
                 "platform": "Steam",
                 "identifier": 2142230,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Mercenaries Saga -Will of the White Lions-",
@@ -59731,7 +59737,7 @@
                 "index": 76,
                 "platform": "Steam",
                 "identifier": 2142240,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Mercenaries Saga 2 -Order of the Sliver Eagle-",
@@ -59873,7 +59879,7 @@
                 "index": 77,
                 "platform": "Steam",
                 "identifier": 2142250,
-                "last_track_date": "2023-09-20"
+                "last_track_date": "2023-09-23"
             },
             "type": "Game",
             "title": "Mercenaries Saga 3 -Gray Wolves of War-",
