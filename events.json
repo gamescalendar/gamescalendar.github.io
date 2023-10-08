@@ -54642,7 +54642,7 @@
                 "index": 347,
                 "platform": "Steam",
                 "identifier": 1702260,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "DEADCRAFT",
@@ -54799,7 +54799,7 @@
                 "index": 340,
                 "platform": "Steam",
                 "identifier": 1702330,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Rune Factory 5",
@@ -54948,16 +54948,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "褒贬不一",
-                    "cssClass": "mixed",
-                    "count": "(30)",
-                    "tooltip": "过去 30 天内的 30 篇用户评测中有 66% 为好评。"
+                    "summary": "多半好评",
+                    "cssClass": "positive",
+                    "count": "(25)",
+                    "tooltip": "过去 30 天内的 25 篇用户评测中有 72% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(1,211)",
-                    "tooltip": "此游戏的 1,211 篇用户评测中有 79% 为好评。"
+                    "count": "(1,213)",
+                    "tooltip": "此游戏的 1,213 篇用户评测中有 79% 为好评。"
                 }
             }
         },
@@ -54966,7 +54966,7 @@
                 "index": 2,
                 "platform": "Steam",
                 "identifier": 1716740,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Starfield",
@@ -55004,12 +55004,12 @@
                         "description": "Steam Achievements"
                     },
                     {
-                        "id": 29,
-                        "description": "Steam Trading Cards"
+                        "id": 28,
+                        "description": "Full controller support"
                     },
                     {
-                        "id": 18,
-                        "description": "Partial Controller Support"
+                        "id": 29,
+                        "description": "Steam Trading Cards"
                     },
                     {
                         "id": 23,
@@ -55028,12 +55028,12 @@
                         "name": "太空"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "角色扮演"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
                         "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
@@ -55104,11 +55104,17 @@
                         "name": "好评原声音轨"
                     }
                 ],
+                "recentReview": {
+                    "summary": "多半好评",
+                    "cssClass": "positive",
+                    "count": "(39,851)",
+                    "tooltip": "过去 30 天内的 39,851 篇用户评测中有 70% 为好评。"
+                },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(63,574)",
-                    "tooltip": "此游戏的 63,574 篇用户评测中有 74% 为好评。"
+                    "count": "(65,197)",
+                    "tooltip": "此游戏的 65,197 篇用户评测中有 74% 为好评。"
                 }
             }
         },
@@ -55117,7 +55123,7 @@
                 "index": 34,
                 "platform": "Steam",
                 "identifier": 1718570,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "ASTLIBRA Revision",
@@ -55129,7 +55135,7 @@
                 "description": "Confront time and fate in the 2D action RPG, Astlibra Revision. Explore meticulously crafted worlds, fight brutal boss battles, and upgrade your skills to take down enemies lurking around every corner.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "13 Oct, 2022"
+                    "date": "Oct 13, 2022"
                 },
                 "language": {
                     "zh": {
@@ -55262,14 +55268,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(290)",
-                    "tooltip": "过去 30 天内的 290 篇用户评测中有 92% 为好评。"
+                    "count": "(277)",
+                    "tooltip": "过去 30 天内的 277 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(17,408)",
-                    "tooltip": "此游戏的 17,408 篇用户评测中有 96% 为好评。"
+                    "count": "(17,434)",
+                    "tooltip": "此游戏的 17,434 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -55431,7 +55437,7 @@
                 "index": 41,
                 "platform": "Steam",
                 "identifier": 1774580,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "STAR WARS Jedi: Survivor™",
@@ -55572,14 +55578,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(1,505)",
-                    "tooltip": "过去 30 天内的 1,505 篇用户评测中有 66% 为好评。"
+                    "count": "(1,484)",
+                    "tooltip": "过去 30 天内的 1,484 篇用户评测中有 66% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(34,572)",
-                    "tooltip": "此游戏的 34,572 篇用户评测中有 63% 为好评。"
+                    "count": "(34,683)",
+                    "tooltip": "此游戏的 34,683 篇用户评测中有 63% 为好评。"
                 }
             }
         },
@@ -55753,7 +55759,7 @@
                 "index": 24,
                 "platform": "Steam",
                 "identifier": 1811600,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Vestaria Saga II: The Sacred Sword of Silvanister",
@@ -55901,7 +55907,7 @@
                 "index": 11,
                 "platform": "Steam",
                 "identifier": 1817230,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Hi-Fi RUSH",
@@ -56046,14 +56052,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(272)",
-                    "tooltip": "过去 30 天内的 272 篇用户评测中有 95% 为好评。"
+                    "count": "(285)",
+                    "tooltip": "过去 30 天内的 285 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(16,228)",
-                    "tooltip": "此游戏的 16,228 篇用户评测中有 97% 为好评。"
+                    "count": "(16,258)",
+                    "tooltip": "此游戏的 16,258 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -56062,7 +56068,7 @@
                 "index": 136,
                 "platform": "Steam",
                 "identifier": 1844380,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Warhammer Age of Sigmar: Realms of Ruin",
@@ -56376,7 +56382,7 @@
                 "index": 80,
                 "platform": "Steam",
                 "identifier": 1857090,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Norland",
@@ -56517,7 +56523,7 @@
                 "index": 12,
                 "platform": "Steam",
                 "identifier": 1859910,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Legend of Mortal",
@@ -56659,7 +56665,7 @@
                 "index": 10,
                 "platform": "Steam",
                 "identifier": 1868140,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "DAVE THE DIVER",
@@ -56812,14 +56818,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(2,764)",
-                    "tooltip": "过去 30 天内的 2,764 篇用户评测中有 96% 为好评。"
+                    "count": "(2,649)",
+                    "tooltip": "过去 30 天内的 2,649 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(53,657)",
-                    "tooltip": "此游戏的 53,657 篇用户评测中有 97% 为好评。"
+                    "count": "(53,861)",
+                    "tooltip": "此游戏的 53,861 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -56828,7 +56834,7 @@
                 "index": 390,
                 "platform": "Steam",
                 "identifier": 1876890,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Wandering Sword",
@@ -56973,8 +56979,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(7,102)",
-                    "tooltip": "此游戏的 7,102 篇用户评测中有 91% 为好评。"
+                    "count": "(7,785)",
+                    "tooltip": "此游戏的 7,785 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -56983,7 +56989,7 @@
                 "index": 13,
                 "platform": "Steam",
                 "identifier": 1880330,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Sanfu",
@@ -57128,14 +57134,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(422)",
-                    "tooltip": "过去 30 天内的 422 篇用户评测中有 82% 为好评。"
+                    "count": "(381)",
+                    "tooltip": "过去 30 天内的 381 篇用户评测中有 82% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(13,454)",
-                    "tooltip": "此游戏的 13,454 篇用户评测中有 81% 为好评。"
+                    "count": "(13,475)",
+                    "tooltip": "此游戏的 13,475 篇用户评测中有 81% 为好评。"
                 }
             }
         },
@@ -57144,7 +57150,7 @@
                 "index": 90,
                 "platform": "Steam",
                 "identifier": 1880360,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Monster Hunter Rise: Sunbreak",
@@ -57261,14 +57267,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(32)",
-                    "tooltip": "过去 30 天内的 32 篇用户评测中有 62% 为好评。"
+                    "count": "(34)",
+                    "tooltip": "过去 30 天内的 34 篇用户评测中有 64% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(3,856)",
-                    "tooltip": "此游戏的 3,856 篇用户评测中有 64% 为好评。"
+                    "count": "(3,859)",
+                    "tooltip": "此游戏的 3,859 篇用户评测中有 64% 为好评。"
                 }
             }
         },
@@ -57277,7 +57283,7 @@
                 "index": 7,
                 "platform": "Steam",
                 "identifier": 1888160,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
@@ -57404,12 +57410,12 @@
                         "name": "单人"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%BD%A6%E8%BE%86%E4%BD%9C%E6%88%98/",
-                        "name": "车辆作战"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%8B%E7%88%B1%E6%A8%A1%E6%8B%9F/",
                         "name": "恋爱模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%BD%A6%E8%BE%86%E4%BD%9C%E6%88%98/",
+                        "name": "车辆作战"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
@@ -57431,14 +57437,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(13,064)",
-                    "tooltip": "过去 30 天内的 13,064 篇用户评测中有 94% 为好评。"
+                    "count": "(10,399)",
+                    "tooltip": "过去 30 天内的 10,399 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(41,065)",
-                    "tooltip": "此游戏的 41,065 篇用户评测中有 89% 为好评。"
+                    "count": "(41,415)",
+                    "tooltip": "此游戏的 41,415 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -57447,7 +57453,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -57834,7 +57840,7 @@
                 "index": 370,
                 "platform": "Steam",
                 "identifier": 1940340,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Darkest Dungeon® II",
@@ -57983,14 +57989,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(308)",
-                    "tooltip": "过去 30 天内的 308 篇用户评测中有 73% 为好评。"
+                    "count": "(302)",
+                    "tooltip": "过去 30 天内的 302 篇用户评测中有 71% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(10,035)",
-                    "tooltip": "此游戏的 10,035 篇用户评测中有 74% 为好评。"
+                    "count": "(10,064)",
+                    "tooltip": "此游戏的 10,064 篇用户评测中有 74% 为好评。"
                 }
             }
         },
@@ -57999,7 +58005,7 @@
                 "index": 389,
                 "platform": "Steam",
                 "identifier": 1948980,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Hero's Adventure:Road to Passion",
@@ -58152,14 +58158,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(504)",
-                    "tooltip": "过去 30 天内的 504 篇用户评测中有 76% 为好评。"
+                    "count": "(524)",
+                    "tooltip": "过去 30 天内的 524 篇用户评测中有 76% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(8,169)",
-                    "tooltip": "此游戏的 8,169 篇用户评测中有 84% 为好评。"
+                    "count": "(8,228)",
+                    "tooltip": "此游戏的 8,228 篇用户评测中有 84% 为好评。"
                 }
             }
         },
@@ -58168,7 +58174,7 @@
                 "index": 348,
                 "platform": "Steam",
                 "identifier": 1960110,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Silent Hope",
@@ -58313,10 +58319,10 @@
                     }
                 ],
                 "totalReview": {
-                    "summary": "好评",
+                    "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(35)",
-                    "tooltip": "此游戏的 35 篇用户评测中有 82% 为好评。"
+                    "count": "(68)",
+                    "tooltip": "此游戏的 68 篇用户评测中有 76% 为好评。"
                 }
             }
         },
@@ -58325,7 +58331,7 @@
                 "index": 8,
                 "platform": "Steam",
                 "identifier": 1967430,
-                "last_track_date": "2023-10-04"
+                "last_track_date": "2023-10-08"
             },
             "type": "Game",
             "title": "Ghost Trick: Phantom Detective",
@@ -58442,14 +58448,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(97)",
-                    "tooltip": "过去 30 天内的 97 篇用户评测中有 97% 为好评。"
+                    "count": "(91)",
+                    "tooltip": "过去 30 天内的 91 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,675)",
-                    "tooltip": "此游戏的 1,675 篇用户评测中有 98% 为好评。"
+                    "count": "(1,681)",
+                    "tooltip": "此游戏的 1,681 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -63400,13 +63406,13 @@
                     "metaScore": 96,
                     "metaReviewsCount": 152,
                     "userScore": 8.1,
-                    "userReviewsCount": 10346
+                    "userReviewsCount": 10358
                 },
                 "meta": {
                     "index": 62,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "the-legend-of-zelda-breath-of-the-wild": {
@@ -63451,13 +63457,13 @@
                     "metaScore": 97,
                     "metaReviewsCount": 117,
                     "userScore": 8.7,
-                    "userReviewsCount": 21284
+                    "userReviewsCount": 21287
                 },
                 "meta": {
                     "index": 63,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "super-mario-odyssey": {
@@ -63498,13 +63504,13 @@
                     "metaScore": 97,
                     "metaReviewsCount": 123,
                     "userScore": 8.9,
-                    "userReviewsCount": 7783
+                    "userReviewsCount": 7787
                 },
                 "meta": {
                     "index": 64,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-odyssey",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "mario-+-rabbids-sparks-of-hope": {
@@ -63551,7 +63557,7 @@
                     "index": 65,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-sparks-of-hope",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "mario-+-rabbids-kingdom-battle": {
@@ -63592,13 +63598,13 @@
                     "metaScore": 85,
                     "metaReviewsCount": 111,
                     "userScore": 8.3,
-                    "userReviewsCount": 1348
+                    "userReviewsCount": 1349
                 },
                 "meta": {
                     "index": 66,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-kingdom-battle",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "bayonetta-origins-cereza-and-the-lost-demon": {
@@ -63645,7 +63651,7 @@
                     "index": 67,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/bayonetta-origins-cereza-and-the-lost-demon",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "super-mario-bros-wonder": {
@@ -63688,7 +63694,7 @@
                     "index": 68,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-bros-wonder",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "pokemon-scarlet": {
@@ -63735,7 +63741,7 @@
                     "index": 133,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-scarlet",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "pokemon-violet": {
@@ -63775,14 +63781,14 @@
                     ],
                     "metaScore": 71,
                     "metaReviewsCount": 123,
-                    "userScore": 4,
-                    "userReviewsCount": 2084
+                    "userScore": 4.1,
+                    "userReviewsCount": 2085
                 },
                 "meta": {
                     "index": 134,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-violet",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "super-mario-rpg": {
@@ -63825,7 +63831,7 @@
                     "index": 135,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-rpg",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             }
         },
@@ -63878,7 +63884,7 @@
                     "index": 69,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/alan-wake-ii",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "assassins-creed-mirage": {
@@ -63938,14 +63944,14 @@
                     ],
                     "metaScore": 77,
                     "metaReviewsCount": 82,
-                    "userScore": 7.1,
-                    "userReviewsCount": 73
+                    "userScore": 6.9,
+                    "userReviewsCount": 238
                 },
                 "meta": {
                     "index": 131,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/assassins-creed-mirage",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             }
         },
@@ -63990,7 +63996,7 @@
                     "index": 70,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/marvels-spider-man-2",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             },
             "demons-souls": {
@@ -64035,13 +64041,13 @@
                     "metaScore": 92,
                     "metaReviewsCount": 106,
                     "userScore": 8.1,
-                    "userReviewsCount": 3714
+                    "userReviewsCount": 3717
                 },
                 "meta": {
                     "index": 132,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/demons-souls",
-                    "last_track_date": "2023-10-07"
+                    "last_track_date": "2023-10-08"
                 }
             }
         }
