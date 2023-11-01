@@ -1,5 +1,5 @@
 {
-    "index": 413,
+    "index": 415,
     "data": {
         "50": {
             "meta": {
@@ -7990,7 +7990,7 @@
                 "index": 138,
                 "platform": "Steam",
                 "identifier": 230070,
-                "last_track_date": "2023-10-29"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "The Age of Decadence",
@@ -8129,16 +8129,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(16)",
-                    "tooltip": "过去 30 天内的 16 篇用户评测中有 81% 为好评。"
+                    "count": "(17)",
+                    "tooltip": "过去 30 天内的 17 篇用户评测中有 76% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(3,009)",
-                    "tooltip": "此游戏的 3,009 篇用户评测中有 81% 为好评。"
+                    "count": "(3,012)",
+                    "tooltip": "此游戏的 3,012 篇用户评测中有 81% 为好评。"
                 }
             }
         },
@@ -8317,7 +8317,7 @@
                 "index": 289,
                 "platform": "Steam",
                 "identifier": 234650,
-                "last_track_date": "2023-10-29"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Shadowrun Returns",
@@ -8474,14 +8474,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(18)",
-                    "tooltip": "过去 30 天内的 18 篇用户评测中有 94% 为好评。"
+                    "count": "(19)",
+                    "tooltip": "过去 30 天内的 19 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(8,965)",
-                    "tooltip": "此游戏的 8,965 篇用户评测中有 88% 为好评。"
+                    "count": "(8,967)",
+                    "tooltip": "此游戏的 8,967 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -8490,7 +8490,7 @@
                 "index": 237,
                 "platform": "Steam",
                 "identifier": 235600,
-                "last_track_date": "2023-10-29"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Tom Clancy’s Splinter Cell Blacklist",
@@ -8633,8 +8633,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(15,819)",
-                    "tooltip": "此游戏的 15,819 篇用户评测中有 81% 为好评。"
+                    "count": "(15,822)",
+                    "tooltip": "此游戏的 15,822 篇用户评测中有 81% 为好评。"
                 }
             }
         },
@@ -8643,7 +8643,7 @@
                 "index": 104,
                 "platform": "Steam",
                 "identifier": 236430,
-                "last_track_date": "2023-10-29"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "DARK SOULS™ II",
@@ -8801,14 +8801,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(154)",
-                    "tooltip": "过去 30 天内的 154 篇用户评测中有 78% 为好评。"
+                    "count": "(163)",
+                    "tooltip": "过去 30 天内的 163 篇用户评测中有 77% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(28,468)",
-                    "tooltip": "此游戏的 28,468 篇用户评测中有 88% 为好评。"
+                    "count": "(28,491)",
+                    "tooltip": "此游戏的 28,491 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -8817,7 +8817,7 @@
                 "index": 282,
                 "platform": "Steam",
                 "identifier": 236850,
-                "last_track_date": "2023-10-29"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Europa Universalis IV",
@@ -8856,6 +8856,22 @@
                         "description": "Multi-player"
                     },
                     {
+                        "id": 49,
+                        "description": "PvP"
+                    },
+                    {
+                        "id": 36,
+                        "description": "Online PvP"
+                    },
+                    {
+                        "id": 9,
+                        "description": "Co-op"
+                    },
+                    {
+                        "id": 38,
+                        "description": "Online Co-op"
+                    },
+                    {
                         "id": 27,
                         "description": "Cross-Platform Multiplayer"
                     },
@@ -8892,6 +8908,10 @@
                         "name": "大战略"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
+                        "name": "策略"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8E%86%E5%8F%B2/",
                         "name": "历史"
                     },
@@ -8900,85 +8920,81 @@
                         "name": "模拟"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/4X/",
+                        "name": "4X"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%9E%B6%E7%A9%BA%E5%8E%86%E5%8F%B2/",
                         "name": "架空历史"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BB%8F%E6%B5%8E/",
-                        "name": "经济"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%9B%E4%BA%8B/",
-                        "name": "军事"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
-                        "name": "策略"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
-                        "name": "沙盒"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E4%BA%89%E6%B8%B8%E6%88%8F/",
+                        "name": "战争游戏"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%96%E4%BA%A4/",
                         "name": "外交"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%94%BF%E6%B2%BB%E6%80%A7/",
-                        "name": "政治性"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E5%90%AB%E6%9A%82%E5%81%9C/",
-                        "name": "即时含暂停"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E6%A8%A1%E7%BB%84%E5%8C%96/",
-                        "name": "可模组化"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%9B%E4%BA%8B/",
+                        "name": "军事"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E7%8E%A9%E4%BB%B7%E5%80%BC/",
                         "name": "重玩价值"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BB%8F%E6%B5%8E/",
+                        "name": "经济"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
+                        "name": "沙盒"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E5%90%AB%E6%9A%82%E5%81%9C/",
+                        "name": "即时含暂停"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%94%BF%E6%B2%BB%E6%80%A7/",
+                        "name": "政治性"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E6%A8%A1%E7%BB%84%E5%8C%96/",
+                        "name": "可模组化"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%9D%9E%E7%BA%BF%E6%80%A7/",
                         "name": "非线性"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%88%E4%BD%9C/",
+                        "name": "合作"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AE%A1%E7%90%86/",
                         "name": "管理"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
                         "name": "多人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/",
-                        "name": "资源管理"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%95%99%E8%82%B2/",
-                        "name": "教育"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
-                        "name": "好评原声音轨"
                     }
                 ],
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(412)",
-                    "tooltip": "过去 30 天内的 412 篇用户评测中有 88% 为好评。"
+                    "count": "(418)",
+                    "tooltip": "过去 30 天内的 418 篇用户评测中有 89% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(81,814)",
-                    "tooltip": "此游戏的 81,814 篇用户评测中有 86% 为好评。"
+                    "count": "(81,859)",
+                    "tooltip": "此游戏的 81,859 篇用户评测中有 86% 为好评。"
                 }
             }
         },
@@ -8987,7 +9003,7 @@
                 "index": 161,
                 "platform": "Steam",
                 "identifier": 238010,
-                "last_track_date": "2023-10-29"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Deus Ex: Human Revolution - Director's Cut",
@@ -9144,14 +9160,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(103)",
-                    "tooltip": "过去 30 天内的 103 篇用户评测中有 90% 为好评。"
+                    "count": "(104)",
+                    "tooltip": "过去 30 天内的 104 篇用户评测中有 91% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(22,080)",
-                    "tooltip": "此游戏的 22,080 篇用户评测中有 92% 为好评。"
+                    "count": "(22,090)",
+                    "tooltip": "此游戏的 22,090 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -9818,7 +9834,7 @@
                 "index": 291,
                 "platform": "Steam",
                 "identifier": 243970,
-                "last_track_date": "2023-10-29"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Invisible, Inc.",
@@ -9965,16 +9981,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "多半好评",
                     "cssClass": "positive",
                     "count": "(21)",
-                    "tooltip": "过去 30 天内的 21 篇用户评测中有 80% 为好评。"
+                    "tooltip": "过去 30 天内的 21 篇用户评测中有 76% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(4,672)",
-                    "tooltip": "此游戏的 4,672 篇用户评测中有 91% 为好评。"
+                    "count": "(4,674)",
+                    "tooltip": "此游戏的 4,674 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -10340,7 +10356,7 @@
                 "index": 278,
                 "platform": "Steam",
                 "identifier": 255710,
-                "last_track_date": "2023-10-29"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Cities: Skylines",
@@ -10497,14 +10513,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,997)",
-                    "tooltip": "过去 30 天内的 1,997 篇用户评测中有 92% 为好评。"
+                    "count": "(1,918)",
+                    "tooltip": "过去 30 天内的 1,918 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(182,100)",
-                    "tooltip": "此游戏的 182,100 篇用户评测中有 93% 为好评。"
+                    "count": "(182,274)",
+                    "tooltip": "此游戏的 182,274 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -10678,7 +10694,7 @@
                 "index": 144,
                 "platform": "Steam",
                 "identifier": 257350,
-                "last_track_date": "2023-10-29"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Baldur's Gate II: Enhanced Edition",
@@ -10841,8 +10857,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(7,662)",
-                    "tooltip": "此游戏的 7,662 篇用户评测中有 91% 为好评。"
+                    "count": "(7,663)",
+                    "tooltip": "此游戏的 7,663 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -43517,7 +43533,7 @@
                 "index": 32,
                 "platform": "Steam",
                 "identifier": 1182620,
-                "last_track_date": "2023-10-28"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Impostor Factory",
@@ -43670,14 +43686,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(81)",
-                    "tooltip": "过去 30 天内的 81 篇用户评测中有 97% 为好评。"
+                    "count": "(99)",
+                    "tooltip": "过去 30 天内的 99 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(9,111)",
-                    "tooltip": "此游戏的 9,111 篇用户评测中有 96% 为好评。"
+                    "count": "(9,142)",
+                    "tooltip": "此游戏的 9,142 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -43820,7 +43836,7 @@
                 "index": 116,
                 "platform": "Steam",
                 "identifier": 1196590,
-                "last_track_date": "2023-10-28"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Resident Evil Village",
@@ -43961,14 +43977,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(451)",
-                    "tooltip": "过去 30 天内的 451 篇用户评测中有 93% 为好评。"
+                    "count": "(570)",
+                    "tooltip": "过去 30 天内的 570 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(66,325)",
-                    "tooltip": "此游戏的 66,325 篇用户评测中有 95% 为好评。"
+                    "count": "(66,502)",
+                    "tooltip": "此游戏的 66,502 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -43977,7 +43993,7 @@
                 "index": 50,
                 "platform": "Steam",
                 "identifier": 1201270,
-                "last_track_date": "2023-10-28"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "A Space for the Unbound",
@@ -43989,7 +44005,7 @@
                 "description": "A magical adventure about two high school sweethearts set at the end of their school days - and the end of the world. Explore a crumbling town and help friends face their inner demons, which could be the key to stopping reality itself disintegrating. And don’t forget to pet the cats.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "Jan 19, 2023"
+                    "date": "19 Jan, 2023"
                 },
                 "language": {
                     "zh": {
@@ -44132,16 +44148,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(135)",
-                    "tooltip": "过去 30 天内的 135 篇用户评测中有 94% 为好评。"
+                    "count": "(151)",
+                    "tooltip": "过去 30 天内的 151 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(2,682)",
-                    "tooltip": "此游戏的 2,682 篇用户评测中有 98% 为好评。"
+                    "count": "(2,704)",
+                    "tooltip": "此游戏的 2,704 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -48877,7 +48893,7 @@
                 "index": 48,
                 "platform": "Steam",
                 "identifier": 1371720,
-                "last_track_date": "2023-10-28"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Card Shark",
@@ -49026,14 +49042,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(18)",
-                    "tooltip": "过去 30 天内的 18 篇用户评测中有 94% 为好评。"
+                    "count": "(16)",
+                    "tooltip": "过去 30 天内的 16 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,967)",
-                    "tooltip": "此游戏的 1,967 篇用户评测中有 91% 为好评。"
+                    "count": "(1,969)",
+                    "tooltip": "此游戏的 1,969 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -49554,7 +49570,7 @@
                 "index": 5,
                 "platform": "Steam",
                 "identifier": 1422440,
-                "last_track_date": "2023-10-28"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Cataclismo",
@@ -49683,7 +49699,7 @@
                 "index": 30,
                 "platform": "Steam",
                 "identifier": 1436590,
-                "last_track_date": "2023-10-28"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Phoenotopia: Awakening",
@@ -49722,12 +49738,12 @@
                         "description": "Steam Achievements"
                     },
                     {
-                        "id": 28,
-                        "description": "Full controller support"
-                    },
-                    {
                         "id": 29,
                         "description": "Steam Trading Cards"
+                    },
+                    {
+                        "id": 18,
+                        "description": "Partial Controller Support"
                     }
                 ],
                 "genres": [
@@ -49833,14 +49849,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(30)",
-                    "tooltip": "过去 30 天内的 30 篇用户评测中有 76% 为好评。"
+                    "count": "(34)",
+                    "tooltip": "过去 30 天内的 34 篇用户评测中有 70% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,783)",
-                    "tooltip": "此游戏的 1,783 篇用户评测中有 85% 为好评。"
+                    "count": "(1,790)",
+                    "tooltip": "此游戏的 1,790 篇用户评测中有 85% 为好评。"
                 }
             }
         },
@@ -49849,7 +49865,7 @@
                 "index": 16,
                 "platform": "Steam",
                 "identifier": 1446780,
-                "last_track_date": "2023-10-28"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "MONSTER HUNTER RISE",
@@ -50002,14 +50018,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(716)",
-                    "tooltip": "过去 30 天内的 716 篇用户评测中有 89% 为好评。"
+                    "count": "(732)",
+                    "tooltip": "过去 30 天内的 732 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(51,040)",
-                    "tooltip": "此游戏的 51,040 篇用户评测中有 86% 为好评。"
+                    "count": "(51,192)",
+                    "tooltip": "此游戏的 51,192 篇用户评测中有 86% 为好评。"
                 }
             }
         },
@@ -59240,7 +59256,7 @@
                 "index": 9,
                 "platform": "Steam",
                 "identifier": 2014380,
-                "last_track_date": "2023-10-28"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "LIVE A LIVE",
@@ -59386,8 +59402,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(248)",
-                    "tooltip": "此游戏的 248 篇用户评测中有 88% 为好评。"
+                    "count": "(249)",
+                    "tooltip": "此游戏的 249 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -61140,6 +61156,147 @@
                 }
             }
         },
+        "2159210": {
+            "meta": {
+                "index": 414,
+                "platform": "Steam",
+                "identifier": 2159210,
+                "last_track_date": "2023-11-01"
+            },
+            "type": "Game",
+            "title": "Just A To the Moon Series Beach Episode",
+            "start": "2026-01-01",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 2159210,
+                "title": "Just A To the Moon Series Beach Episode",
+                "description": "The Beach Episode™ of To the Moon, Finding Paradise, and Impostor Factory. But something's off.",
+                "release_date": {
+                    "coming_soon": true,
+                    "date": "Coming soon"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Freebird Games"
+                ],
+                "publishers": [
+                    "Freebird Games"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 18,
+                        "description": "Partial Controller Support"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "25",
+                        "description": "Adventure"
+                    },
+                    {
+                        "id": "23",
+                        "description": "Indie"
+                    },
+                    {
+                        "id": "3",
+                        "description": "RPG"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
+                        "name": "情感"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+                        "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "日系角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
+                        "name": "科幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%AE%B0%E5%8F%99/",
+                        "name": "记叙"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BF%AF%E8%A7%86/",
+                        "name": "俯视"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/",
+                        "name": "欢乐"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%99%E4%BA%8B/",
+                        "name": "叙事"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E5%BD%B1%E5%BC%8F/",
+                        "name": "电影式"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8C%87%E5%90%91%E7%82%B9%E5%87%BB/",
+                        "name": "指向点击"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2D/",
+                        "name": "2D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BA%BF%E6%80%A7/",
+                        "name": "线性"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/RPG%20%E5%88%B6%E4%BD%9C%E5%A4%A7%E5%B8%88/",
+                        "name": "RPG 制作大师"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%8B%E7%88%B1%E6%A8%A1%E6%8B%9F/",
+                        "name": "恋爱模拟"
+                    }
+                ]
+            }
+        },
         "2161470": {
             "meta": {
                 "index": 40,
@@ -61437,7 +61594,7 @@
                 "index": 233,
                 "platform": "Steam",
                 "identifier": 2208920,
-                "last_track_date": "2023-10-28"
+                "last_track_date": "2023-11-01"
             },
             "type": "Game",
             "title": "Assassin's Creed Valhalla",
@@ -61582,14 +61739,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(566)",
-                    "tooltip": "过去 30 天内的 566 篇用户评测中有 71% 为好评。"
+                    "count": "(569)",
+                    "tooltip": "过去 30 天内的 569 篇用户评测中有 71% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(12,804)",
-                    "tooltip": "此游戏的 12,804 篇用户评测中有 67% 为好评。"
+                    "count": "(12,882)",
+                    "tooltip": "此游戏的 12,882 篇用户评测中有 67% 为好评。"
                 }
             }
         },
@@ -63551,6 +63708,143 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%B3%E6%80%A7%E4%B8%BB%E8%A7%92/",
                         "name": "女性主角"
+                    }
+                ]
+            }
+        },
+        "2664600": {
+            "meta": {
+                "index": 413,
+                "platform": "Steam",
+                "identifier": 2664600,
+                "last_track_date": "2023-11-01"
+            },
+            "type": "Game",
+            "title": "Last Hour of an Epic TO THE MOON RPG",
+            "start": "2024-01-01",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 2664600,
+                "title": "Last Hour of an Epic TO THE MOON RPG",
+                "description": "You like RPGs, but don't have time to play it all. . . We like RPGs, but don't have time to make it all. . . So here's (only) the LAST HOUR of an EPIC RPG !!",
+                "release_date": {
+                    "coming_soon": true,
+                    "date": "2024"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Freebird Games"
+                ],
+                "publishers": [
+                    "Freebird Games"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "25",
+                        "description": "Adventure"
+                    },
+                    {
+                        "id": "23",
+                        "description": "Indie"
+                    },
+                    {
+                        "id": "3",
+                        "description": "RPG"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "日系角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+                        "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%89%E8%A7%92%E8%A7%86%E8%A7%92/",
+                        "name": "等角视角"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
+                        "name": "奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
+                        "name": "回合制战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97%E5%A5%87%E5%B9%BB/",
+                        "name": "黑暗奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E8%84%91%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "电脑角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/2D/",
+                        "name": "2D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BA%BF%E6%80%A7/",
+                        "name": "线性"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BF%AF%E8%A7%86/",
+                        "name": "俯视"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B0%90%E4%BB%BF/",
+                        "name": "谐仿"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B4%9B%E5%A4%AB%E5%85%8B%E6%8B%89%E5%A4%AB%E7%89%B9%E5%BC%8F/",
+                        "name": "洛夫克拉夫特式"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%8D%E5%8F%A4/",
+                        "name": "复古"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
+                        "name": "科幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%B3%E6%80%A7%E4%B8%BB%E8%A7%92/",
+                        "name": "女性主角"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%B6%E7%A9%BA%E6%97%85%E8%A1%8C/",
+                        "name": "时空旅行"
                     }
                 ]
             }
