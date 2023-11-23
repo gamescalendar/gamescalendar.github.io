@@ -474,8 +474,20 @@ function getNeedRefreshTargets(newTargets, tracked) {
         }
 
         let difference = (new Date(today)).getTime() - (new Date(lastTrackDate)).getTime()
-        if (difference > 0) {
+        let needRefresh = difference > 0
+
+        let recentGamePriority = false
+        let releaseDate = obj.start
+        if (releaseDate) {
+            let released = ((new Date(today)).getTime() - (new Date(releaseDate)).getTime()) > 0
+            recentGamePriority = released && needRefresh
+        }
+
+        if (needRefresh) {
             let days = difference / (1000 * 3600 * 24);
+            if (recentGamePriority) {
+                days = 19999
+            }
             console.log(`${target} outdated for ${days} days, add to refresh list`)
             needRefreshTargets.push({
                 target: target,
