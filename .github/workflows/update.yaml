@@ -43,12 +43,14 @@ jobs:
           git fetch origin release
           git checkout origin/release -- events.json
           node ./generate.js list.txt
+          git status
 
       - name: add changed files
         run: |
           set -x
           git config --local user.name actions-user
           git config --local user.email "actions@github.com"
+          git status
           git fetch origin master
           git stash -- events.json
           git checkout release
