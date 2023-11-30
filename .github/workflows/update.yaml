@@ -52,6 +52,7 @@ jobs:
           git fetch origin master
           git stash -- events.json
           git checkout release
+          git status
           git checkout stash@{0} --theirs events.json
           git checkout master -- static.json override.json index.html float.css favicon.svg .gitignore
           git status
