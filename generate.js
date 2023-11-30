@@ -221,6 +221,8 @@ function transformAPIDataToCalendarData(apiData) {
     return result
 }
 
+const steamAppIdMap = {}
+
 function getSteamAppid(originalTarget) {
     let target = originalTarget
     let appid = parseFloat(target)
@@ -238,6 +240,7 @@ function getSteamAppid(originalTarget) {
         target = target.replace("app/", "")
         let elements = target.split("/")
         if (elements.length >= 1) {
+            steamAppIdMap[elements[0]] = originalTarget
             console.log(`take ${elements[0]} as appid from ${originalTarget}`)
             let appid = parseFloat(elements[0])
             if (appid && !isNaN(appid)) {
@@ -479,8 +482,8 @@ function getNeedRefreshTargets(newTargets, tracked) {
         let recentGamePriority = false
         let releaseDate = obj.start
         if (releaseDate) {
-            let released = ((new Date(today)).getTime() - (new Date(releaseDate)).getTime()) > 0
-            recentGamePriority = ((released / (1000 * 3600 * 24)) < 14) && needRefresh
+            let released = ((new Date(today)).getTime() - (new Date(releaseDate)).getTime())
+            recentGamePriority = released > 0 && ((released / (1000 * 3600 * 24)) < 14) && needRefresh
         }
 
         if (needRefresh) {
@@ -488,7 +491,7 @@ function getNeedRefreshTargets(newTargets, tracked) {
             if (recentGamePriority) {
                 days = 19999
             }
-            console.log(`${target} outdated for ${days} days, add to refresh list`)
+            console.log(`${target} outdated for ${days} days, add to refresh list (${steamAppIdMap[target]}) `)
             needRefreshTargets.push({
                 target: target,
                 outdated_days: days,
