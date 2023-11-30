@@ -480,7 +480,7 @@ function getNeedRefreshTargets(newTargets, tracked) {
         let releaseDate = obj.start
         if (releaseDate) {
             let released = ((new Date(today)).getTime() - (new Date(releaseDate)).getTime()) > 0
-            recentGamePriority = released && needRefresh
+            recentGamePriority = released && (difference / (1000 * 3600 * 24) > 7)
         }
 
         if (needRefresh) {
