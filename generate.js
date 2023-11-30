@@ -480,16 +480,23 @@ function getNeedRefreshTargets(newTargets, tracked) {
         let needRefresh = difference > 0
 
         let recentGamePriority = false
+        let tbaPriority = false
         let releaseDate = obj.start
         if (releaseDate) {
             let released = ((new Date(today)).getTime() - (new Date(releaseDate)).getTime())
             recentGamePriority = released > 0 && ((released / (1000 * 3600 * 24)) < 14) && needRefresh
+            if (released < 0 && ((released / (1000 * 3600 * 24)) < -365)) {
+                tbaPriority = true
+            }
         }
 
         if (needRefresh) {
             let days = difference / (1000 * 3600 * 24);
             if (recentGamePriority) {
                 days = 19999
+            }
+            if (tbaPriority) {
+                days += 7
             }
             console.log(`${target} outdated for ${days} days, add to refresh list (${steamAppIdMap[target]}) `)
             needRefreshTargets.push({
