@@ -165,11 +165,19 @@ function getCalendarData(data) {
 
     let start = date
     if (!isTBA) {
-        let releaseDate = (new Date(date + " GMT"))
+        let year = yearStrToNumber(date) // 2024
+        if (year !== -1) {
+            let d = new Date()
+            d.setFullYear(year)
+            d.setMonth(11, 31)
+            start = d.toISOString().slice(0, 10)
+        } else {
+            let releaseDate = (new Date(date + " GMT"))
 
-        isTBA = releaseDate.toString() === "Invalid Date"
-        if (!isTBA) {
-            start = releaseDate.toISOString().slice(0, 10)
+            isTBA = releaseDate.toString() === "Invalid Date"
+            if (!isTBA) {
+                start = releaseDate.toISOString().slice(0, 10)
+            }
         }
     }
 
@@ -329,7 +337,9 @@ function QYearToDate(date) {
     if (arr.length != 2) {
         return "Invalid Date"
     }
+    // Q1 2024
     let qMonth1 = testQNMonth(arr[0])
+    // 2024 Q1
     let qMonth2 = testQNMonth(arr[1])
     if (qMonth1 == -1 && qMonth2 == -1) {
         return "Invalid Date"
