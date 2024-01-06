@@ -568,7 +568,7 @@ function toNumberOrUndefined(str) {
     return num
 }
 
-async function getMetacriticInfo(platform, game) {
+async function getMetacriticInfo(game, platformOverride) {
     // === Scores ===
     // Main page no longer provides full game description and cover image
     let url = `https://www.metacritic.com/game/${game}`
@@ -689,6 +689,11 @@ async function getMetacriticInfo(platform, game) {
         }
     })
 
+    let platform = platformOverride
+    if (!platform) {
+        platform = platforms.length > 0 ? platforms[0].name : "unknown"
+    }
+
     return {
         type: "Game",
         title: title, // done
@@ -717,6 +722,8 @@ async function getMetacriticInfo(platform, game) {
 }
 
 async function updateMetacriticTargets(trackedEvents, newTargets) {
+    console.log(`Updating metacritic urls`)
+
     let today = (new Date()).toISOString().slice(0, 10)
 
     if (!trackedEvents.metacritic) {
@@ -724,13 +731,21 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
     }
 
     newTargets = newTargets.map(x => x.toLowerCase()).filter(x => x && x.startsWith(MetacriticURL))
-
+    console.log(`New metacritic urls: ${newTargets.join("\n")}`)
     let platforms = {}
+    let newVersionGames = {}
     newTargets.forEach(target => {
         let url = target;
-        let arr = target.replace(MetacriticURL, "").split("/");
+        let arr = target.replace(MetacriticURL, "").split("/").filter(x => x !== "");
+        console.log(arr)
+        if (arr.length === 1) {
+            newVersionGames[arr[0]] = {
+                url: url,
+                game: arr[0],
+            }
+            return
+        }
         if (arr.length < 2) {
-            console.log(`Metacritic URL ${url} malformed`)
             return
         }
         let platform = arr[0]
@@ -762,7 +777,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
                 trackedEvents.metacritic[platform] = {}
             }
 
-            let app_info = await getMetacriticInfo(platform, game)
+            let app_info = await getMetacriticInfo(game, platform)
             if (!app_info) {
                 console.log(`failed to get metacritic info of ${game} at ${platform}`)
                 continue
@@ -784,6 +799,36 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
                 trackedEvents.index += 1
             }
 
+        }
+    }
+
+    for (const game of Object.keys(newVersionGames)) {
+        let app_info = await getMetacriticInfo(game)
+        if (!app_info) {
+            console.log(`failed to get metacritic info of ${game}`)
+            continue
+        }
+        changed = true
+
+        let platform = app_info.app_data.platform
+        if (!trackedEvents.metacritic[platform]) {
+            trackedEvents.metacritic[platform] = {}
+        }
+        app_info.meta = trackedEvents.metacritic[platform][game]?.meta
+
+        trackedEvents.metacritic[platform][game] = app_info
+
+        if (trackedEvents.metacritic[platform][game].meta) {
+            trackedEvents.metacritic[platform][game].meta.last_track_date = today
+        } else {
+            console.log("index +1")
+            trackedEvents.metacritic[platform][game].meta = {
+                index: trackedEvents.index,
+                platform: platform,
+                identifier: `https://www.metacritic.com/game/${game}`,
+                last_track_date: today,
+            }
+            trackedEvents.index += 1
         }
     }
 

@@ -207,7 +207,7 @@
                 if (data.metaScore) {
                     metaScore = `
                     <div class="metascore_w positive">
-                        <a class="metascore_anchor" href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
+                        <a class="metascore_anchor" href="https://www.metacritic.com/game/${data.name}/critic-reviews">
                             <span itemprop="ratingValue">${data.metaScore}</span>
                         </a>
                     </div>
@@ -217,7 +217,7 @@
                             <p>
                             <span class="count">
                                 <span class="based">Based on</span>
-                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/critic-reviews">
+                                <a href="https://www.metacritic.com/game/${data.name}/critic-reviews">
                                     <span>${data.metaReviewsCount}</span> Critic Reviews
                                 </a>
                             </span>
@@ -230,7 +230,7 @@
                     userScore = `
                     <div class="userscore_w positive">
                         <a class="metascore_anchor"
-                           href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
+                           href="https://www.metacritic.com/game/${data.name}/user-reviews">
                             ${data.userScore}
                         </a>
                     </div>
@@ -241,7 +241,7 @@
                             <p>
                             <span class="count">
                                 <span class="based">Based on</span>
-                                <a href="https://www.metacritic.com/game/${data.platform}/${data.name}/user-reviews">
+                                <a href="https://www.metacritic.com/game/${data.name}/user-reviews">
                                     <span>${data.userReviewsCount}</span> User Ratings
                                 </a>
                             </span>
@@ -268,7 +268,7 @@
 <div class="metacritic">
     <div class="content_head">
         <div class="product_title">
-            <a href="https://www.metacritic.com/game/${data.platform}/${data.name}">
+            <a href="https://www.metacritic.com/game/${data.name}">
                 <h1>${data.title}</h1>
             </a>
             <span class="platform">
@@ -492,7 +492,7 @@
             events.forEach(event => {
                 if (event.meta?.platform) {
                     let platform = event.meta.platform.toLowerCase()
-                    if (platform === "switch") {
+                    if (platform.includes("switch")) {
                         event.color = "#DC0011"
                     } else if (platform.includes("playstation")) {
                         event.color = "#006FCD"
