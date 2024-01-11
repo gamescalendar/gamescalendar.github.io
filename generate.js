@@ -312,13 +312,28 @@ function testQNMonth(str) {
     str = str.toUpperCase()
     switch (str) {
         case "Q1":
-            return 0
+            return 0+2
         case "Q2":
-            return 3
+            return 3+2
         case "Q3":
-            return 6
+            return 6+2
         case "Q4":
-            return 9
+            return 9+2
+    }
+    return -1
+}
+
+function testQNDate(str) {
+    str = str.toUpperCase()
+    switch (str) {
+        case "Q1":
+            return 31
+        case "Q2":
+            return 30
+        case "Q3":
+            return 30
+        case "Q4":
+            return 31
     }
     return -1
 }
@@ -352,7 +367,7 @@ function QYearToDate(date) {
             return "Invalid Date"
         }
         d.setFullYear(year)
-        d.setMonth(qMonth1, 1)
+        d.setMonth(qMonth1, testQNDate(arr[0]))
     }
     if (qMonth2 != -1) {
         let year = yearStrToNumber(arr[0])
@@ -360,7 +375,7 @@ function QYearToDate(date) {
             return "Invalid Date"
         }
         d.setFullYear(year)
-        d.setMonth(qMonth2, 1)
+        d.setMonth(qMonth2, testQNDate(arr[1]))
     }
     return d
 }
