@@ -3286,7 +3286,7 @@
                 "index": 290,
                 "platform": "Steam",
                 "identifier": 25990,
-                "last_track_date": "2024-01-07"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Majesty Gold HD",
@@ -3395,8 +3395,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(448)",
-                    "tooltip": "此游戏的 448 篇用户评测中有 93% 为好评。"
+                    "count": "(447)",
+                    "tooltip": "此游戏的 447 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -3570,7 +3570,7 @@
                 "index": 221,
                 "platform": "Steam",
                 "identifier": 33230,
-                "last_track_date": "2024-01-07"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Assassin's Creed 2",
@@ -3699,14 +3699,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(713)",
-                    "tooltip": "过去 30 天内的 713 篇用户评测中有 86% 为好评。"
+                    "count": "(678)",
+                    "tooltip": "过去 30 天内的 678 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(43,302)",
-                    "tooltip": "此游戏的 43,302 篇用户评测中有 89% 为好评。"
+                    "count": "(43,371)",
+                    "tooltip": "此游戏的 43,371 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -69835,7 +69835,7 @@
                 "index": 7,
                 "platform": "Steam",
                 "identifier": 1888160,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
@@ -69946,12 +69946,12 @@
                         "name": "多人"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9C%AA%E6%9D%A5/",
-                        "name": "未来"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
                         "name": "类魂系列"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9C%AA%E6%9D%A5/",
+                        "name": "未来"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%8E%E6%9C%AB%E6%97%A5/",
@@ -69989,14 +69989,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,285)",
-                    "tooltip": "过去 30 天内的 1,285 篇用户评测中有 93% 为好评。"
+                    "count": "(1,235)",
+                    "tooltip": "过去 30 天内的 1,235 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(49,089)",
-                    "tooltip": "此游戏的 49,089 篇用户评测中有 90% 为好评。"
+                    "count": "(49,232)",
+                    "tooltip": "此游戏的 49,232 篇用户评测中有 90% 为好评。"
                 }
             }
         },
@@ -70252,7 +70252,7 @@
                 "index": 179,
                 "platform": "Steam",
                 "identifier": 1937780,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Total War: PHARAOH",
@@ -70384,23 +70384,19 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%BD%91%E7%BB%9C%E6%A2%97/",
                         "name": "网络梗"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
-                        "name": "动漫"
                     }
                 ],
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(246)",
-                    "tooltip": "过去 30 天内的 246 篇用户评测中有 66% 为好评。"
+                    "count": "(254)",
+                    "tooltip": "过去 30 天内的 254 篇用户评测中有 66% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(2,004)",
-                    "tooltip": "此游戏的 2,004 篇用户评测中有 58% 为好评。"
+                    "count": "(2,028)",
+                    "tooltip": "此游戏的 2,028 篇用户评测中有 58% 为好评。"
                 }
             }
         },
@@ -70409,7 +70405,7 @@
                 "index": 209,
                 "platform": "Steam",
                 "identifier": 1938010,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "WILD HEARTS™",
@@ -70421,7 +70417,7 @@
                 "description": "Master ancient tech to hunt down giant beasts. WILD HEARTS™ is a twist on the hunting genre where technology gives you a fighting chance against giant nature-infused beasts. Hunt alone or with friends.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "Feb 16, 2023"
+                    "date": "16 Feb, 2023"
                 },
                 "language": {
                     "zh": {
@@ -70558,14 +70554,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(115)",
-                    "tooltip": "过去 30 天内的 115 篇用户评测中有 55% 为好评。"
+                    "count": "(109)",
+                    "tooltip": "过去 30 天内的 109 篇用户评测中有 57% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(8,937)",
-                    "tooltip": "此游戏的 8,937 篇用户评测中有 48% 为好评。"
+                    "count": "(8,945)",
+                    "tooltip": "此游戏的 8,945 篇用户评测中有 48% 为好评。"
                 }
             }
         },
@@ -70574,7 +70570,7 @@
                 "index": 370,
                 "platform": "Steam",
                 "identifier": 1940340,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Darkest Dungeon® II",
@@ -70723,14 +70719,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(841)",
-                    "tooltip": "过去 30 天内的 841 篇用户评测中有 78% 为好评。"
+                    "count": "(861)",
+                    "tooltip": "过去 30 天内的 861 篇用户评测中有 77% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(12,457)",
-                    "tooltip": "此游戏的 12,457 篇用户评测中有 76% 为好评。"
+                    "count": "(12,538)",
+                    "tooltip": "此游戏的 12,538 篇用户评测中有 76% 为好评。"
                 }
             }
         },
@@ -70739,7 +70735,7 @@
                 "index": 389,
                 "platform": "Steam",
                 "identifier": 1948980,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Hero's Adventure: Road to Passion",
@@ -70892,14 +70888,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(978)",
-                    "tooltip": "过去 30 天内的 978 篇用户评测中有 81% 为好评。"
+                    "count": "(880)",
+                    "tooltip": "过去 30 天内的 880 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(13,158)",
-                    "tooltip": "此游戏的 13,158 篇用户评测中有 83% 为好评。"
+                    "count": "(13,268)",
+                    "tooltip": "此游戏的 13,268 篇用户评测中有 83% 为好评。"
                 }
             }
         },
@@ -71556,7 +71552,7 @@
                 "index": 513,
                 "platform": "Steam",
                 "identifier": 1977170,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Jusant",
@@ -71699,16 +71695,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "好评如潮",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(477)",
-                    "tooltip": "过去 30 天内的 477 篇用户评测中有 95% 为好评。"
+                    "count": "(471)",
+                    "tooltip": "过去 30 天内的 471 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,242)",
-                    "tooltip": "此游戏的 1,242 篇用户评测中有 96% 为好评。"
+                    "count": "(1,310)",
+                    "tooltip": "此游戏的 1,310 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -72144,7 +72140,7 @@
                 "index": 491,
                 "platform": "Steam",
                 "identifier": 2008050,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Right and Down",
@@ -72759,7 +72755,7 @@
                 "index": 486,
                 "platform": "Steam",
                 "identifier": 2056210,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "LONESTAR",
@@ -72916,7 +72912,7 @@
                 "index": 497,
                 "platform": "Steam",
                 "identifier": 2071430,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Roots of Yggdrasil",
@@ -73066,7 +73062,7 @@
                 "index": 502,
                 "platform": "Steam",
                 "identifier": 2072450,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Like a Dragon: Infinite Wealth",
@@ -73120,6 +73116,10 @@
                     {
                         "id": "25",
                         "description": "Adventure"
+                    },
+                    {
+                        "id": "3",
+                        "description": "RPG"
                     }
                 ],
                 "tags": [
@@ -73144,12 +73144,20 @@
                         "name": "动作冒险"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
+                        "name": "回合制战斗"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A1%80%E8%85%A5/",
                         "name": "血腥"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%B8%85%E7%89%88%E5%8A%A8%E4%BD%9C/",
                         "name": "清版动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%96%9C%E5%89%A7/",
+                        "name": "喜剧"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
@@ -73160,32 +73168,32 @@
                         "name": "暴力"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%96%9C%E5%89%A7/",
-                        "name": "喜剧"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
-                        "name": "回合制战斗"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
                         "name": "单人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/",
-                        "name": "欢乐"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%AD%A6%E6%9C%AF/",
                         "name": "武术"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/",
+                        "name": "欢乐"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BD%A9%E8%89%B2/",
                         "name": "彩色"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%A0%8D%E6%9D%80/",
                         "name": "砍杀"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
@@ -73194,14 +73202,6 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6/",
                         "name": "回合制"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
-                        "name": "剧情丰富"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
-                        "name": "好评原声音轨"
                     }
                 ]
             }
@@ -73211,7 +73211,7 @@
                 "index": 484,
                 "platform": "Steam",
                 "identifier": 2081400,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Gal Guardians: Demon Purge",
@@ -73372,14 +73372,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(19)",
-                    "tooltip": "过去 30 天内的 19 篇用户评测中有 73% 为好评。"
+                    "count": "(17)",
+                    "tooltip": "过去 30 天内的 17 篇用户评测中有 76% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(778)",
-                    "tooltip": "此游戏的 778 篇用户评测中有 80% 为好评。"
+                    "count": "(781)",
+                    "tooltip": "此游戏的 781 篇用户评测中有 80% 为好评。"
                 }
             }
         },
@@ -75282,7 +75282,7 @@
                 "index": 503,
                 "platform": "Steam",
                 "identifier": 2161700,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Persona 3 Reload",
@@ -75773,7 +75773,7 @@
                 "index": 498,
                 "platform": "Steam",
                 "identifier": 2198510,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "New Cycle",
@@ -76075,7 +76075,7 @@
                 "index": 492,
                 "platform": "Steam",
                 "identifier": 2228010,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Right and Down and Dice",
@@ -77147,7 +77147,7 @@
                 "index": 496,
                 "platform": "Steam",
                 "identifier": 2276830,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Kingsvein",
@@ -78069,7 +78069,7 @@
                 "index": 506,
                 "platform": "Steam",
                 "identifier": 2386310,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Ultros",
@@ -78642,7 +78642,7 @@
                 "index": 490,
                 "platform": "Steam",
                 "identifier": 2430660,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "MiceGard",
@@ -78677,8 +78677,8 @@
                         "description": "Single-player"
                     },
                     {
-                        "id": 18,
-                        "description": "Partial Controller Support"
+                        "id": 28,
+                        "description": "Full controller support"
                     }
                 ],
                 "genres": [
@@ -79420,7 +79420,7 @@
                 "index": 480,
                 "platform": "Steam",
                 "identifier": 2511500,
-                "last_track_date": "2024-01-06"
+                "last_track_date": "2024-01-11"
             },
             "type": "Game",
             "title": "Dominions 6 - Rise of the Pantokrator",
@@ -81113,7 +81113,9 @@
                             "name": "Metroidvania",
                             "url": "/browse/game/all/metroidvania/"
                         }
-                    ]
+                    ],
+                    "metaScore": 86,
+                    "metaReviewsCount": 61
                 },
                 "meta": {
                     "index": 518,
