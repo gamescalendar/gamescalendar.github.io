@@ -40767,7 +40767,7 @@
                 "index": 84,
                 "platform": "Steam",
                 "identifier": 914210,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "N1RV Ann-A: Cyberpunk Bartender Action",
@@ -44792,7 +44792,7 @@
                 "index": 71,
                 "platform": "Steam",
                 "identifier": 1030300,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Hollow Knight: Silksong",
@@ -57571,7 +57571,7 @@
                 "index": 504,
                 "platform": "Steam",
                 "identifier": 1371980,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "No Rest for the Wicked",
@@ -61183,7 +61183,7 @@
                 "index": 436,
                 "platform": "Steam",
                 "identifier": 1520160,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Chrono Sword",
@@ -62779,7 +62779,7 @@
                 "index": 489,
                 "platform": "Steam",
                 "identifier": 1581950,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Buriedbornes2 - Dungeon RPG -",
@@ -62928,8 +62928,8 @@
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(221)",
-                    "tooltip": "此游戏的 221 篇用户评测中有 64% 为好评。"
+                    "count": "(227)",
+                    "tooltip": "此游戏的 227 篇用户评测中有 64% 为好评。"
                 }
             }
         },
@@ -63067,7 +63067,7 @@
                 "index": 419,
                 "platform": "Steam",
                 "identifier": 1590760,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Metal Slug Tactics",
@@ -64043,19 +64043,19 @@
                 "index": 420,
                 "platform": "Steam",
                 "identifier": 1623730,
-                "last_track_date": "2024-01-15"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Palworld",
-            "start": "2024-01-19",
+            "start": "2024-01-18",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1623730,
                 "title": "Palworld",
                 "description": "Fight, farm, build and work alongside mysterious creatures called &quot;Pals&quot; in this completely new multiplayer, open world survival and crafting game!",
                 "release_date": {
-                    "coming_soon": true,
-                    "date": "Jan 19, 2024"
+                    "coming_soon": false,
+                    "date": "Jan 18, 2024"
                 },
                 "language": {
                     "zh": {
@@ -64129,48 +64129,44 @@
                         "name": "抢先体验"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E7%89%A9%E6%94%B6%E9%9B%86/",
-                        "name": "生物收集"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
                         "name": "开放世界"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E7%94%9F%E5%AD%98%E5%88%B6%E4%BD%9C/",
-                        "name": "开放世界生存制作"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
-                        "name": "多人"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E7%89%A9%E6%94%B6%E9%9B%86/",
+                        "name": "生物收集"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
                         "name": "生存"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
-                        "name": "冒险"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
+                        "name": "多人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E7%94%9F%E5%AD%98%E5%88%B6%E4%BD%9C/",
+                        "name": "开放世界生存制作"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%88%B6%E4%BD%9C/",
                         "name": "制作"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
-                        "name": "沙盒"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%88%E4%BD%9C/",
                         "name": "合作"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
+                        "name": "沙盒"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%88%B7%E5%AE%9D%E5%B0%84%E5%87%BB%E6%B8%B8%E6%88%8F/",
-                        "name": "刷宝射击游戏"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0%E5%B0%84%E5%87%BB/",
@@ -64179,6 +64175,10 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%87%AA%E5%8A%A8%E5%8C%96/",
                         "name": "自动化"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%88%B7%E5%AE%9D%E5%B0%84%E5%87%BB%E6%B8%B8%E6%88%8F/",
+                        "name": "刷宝射击游戏"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
@@ -64204,7 +64204,13 @@
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%A9%E5%AE%B6%E5%AF%B9%E6%88%98%E7%8E%AF%E5%A2%83/",
                         "name": "玩家对战环境"
                     }
-                ]
+                ],
+                "totalReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(6,620)",
+                    "tooltip": "此游戏的 6,620 篇用户评测中有 92% 为好评。"
+                }
             }
         },
         "1627720": {
@@ -64820,7 +64826,7 @@
                 "index": 85,
                 "platform": "Steam",
                 "identifier": 1663850,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "REPLACED",
@@ -65130,7 +65136,7 @@
                 "index": 458,
                 "platform": "Steam",
                 "identifier": 1671210,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "DELTARUNE",
@@ -65634,7 +65640,7 @@
                 "index": 391,
                 "platform": "Steam",
                 "identifier": 1687540,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Showa American Story",
@@ -66425,7 +66431,7 @@
                 "index": 440,
                 "platform": "Steam",
                 "identifier": 1706510,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Songs of Glimmerwick",
@@ -67041,7 +67047,7 @@
                 "index": 501,
                 "platform": "Steam",
                 "identifier": 1747760,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Momodora: Moonlit Farewell",
@@ -67181,13 +67187,17 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
                         "name": "动漫"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
+                        "name": "类魂系列"
                     }
                 ],
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(903)",
-                    "tooltip": "此游戏的 903 篇用户评测中有 90% 为好评。"
+                    "count": "(959)",
+                    "tooltip": "此游戏的 959 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -68298,7 +68308,7 @@
                 "index": 487,
                 "platform": "Steam",
                 "identifier": 1830970,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "The Last Flame",
@@ -68448,8 +68458,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(218)",
-                    "tooltip": "此游戏的 218 篇用户评测中有 94% 为好评。"
+                    "count": "(328)",
+                    "tooltip": "此游戏的 328 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -68949,7 +68959,7 @@
                 "index": 421,
                 "platform": "Steam",
                 "identifier": 1845910,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Dragon Age: Dreadwolf™",
@@ -69062,7 +69072,7 @@
                 "index": 448,
                 "platform": "Steam",
                 "identifier": 1846700,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Witchbrook",
@@ -73683,7 +73693,7 @@
                 "index": 486,
                 "platform": "Steam",
                 "identifier": 2056210,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "LONESTAR",
@@ -73836,8 +73846,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(67)",
-                    "tooltip": "此游戏的 67 篇用户评测中有 95% 为好评。"
+                    "count": "(133)",
+                    "tooltip": "此游戏的 133 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -76707,7 +76717,7 @@
                 "index": 498,
                 "platform": "Steam",
                 "identifier": 2198510,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "New Cycle",
@@ -76719,7 +76729,7 @@
                 "description": "New Cycle is a city building game with focus on survival. After an apocalyptic series of solar flares, human society has been thrown into disarray. Establish a settlement and develop it all the way from humble beginnings to industrial metropolis.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "18 Jan, 2024"
+                    "date": "Jan 18, 2024"
                 },
                 "language": {
                     "zh": {
@@ -76852,8 +76862,8 @@
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(84)",
-                    "tooltip": "此游戏的 84 篇用户评测中有 73% 为好评。"
+                    "count": "(226)",
+                    "tooltip": "此游戏的 226 篇用户评测中有 76% 为好评。"
                 }
             }
         },
@@ -78095,7 +78105,7 @@
                 "index": 496,
                 "platform": "Steam",
                 "identifier": 2276830,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Kingsvein",
@@ -78107,7 +78117,7 @@
                 "description": "Explore and reclaim the infested castle-city of Kingsvein! Ride into its depths on your trusty wyvern, and lead your customizable party of Knights and Mystics in deep tactical combat.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "16 Jan, 2024"
+                    "date": "Jan 16, 2024"
                 },
                 "language": {
                     "zh": {
@@ -78244,8 +78254,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(63)",
-                    "tooltip": "此游戏的 63 篇用户评测中有 95% 为好评。"
+                    "count": "(70)",
+                    "tooltip": "此游戏的 70 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -79733,7 +79743,7 @@
                 "index": 490,
                 "platform": "Steam",
                 "identifier": 2430660,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "MiceGard",
@@ -79839,8 +79849,8 @@
                 "totalReview": {
                     "summary": "好评",
                     "cssClass": "positive",
-                    "count": "(25)",
-                    "tooltip": "此游戏的 25 篇用户评测中有 92% 为好评。"
+                    "count": "(26)",
+                    "tooltip": "此游戏的 26 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -80517,7 +80527,7 @@
                 "index": 480,
                 "platform": "Steam",
                 "identifier": 2511500,
-                "last_track_date": "2024-01-19"
+                "last_track_date": "2024-01-20"
             },
             "type": "Game",
             "title": "Dominions 6 - Rise of the Pantokrator",
@@ -80529,7 +80539,7 @@
                 "description": "In Dominions 6 you take control of a powerful being that rules a nation and aspires to godhood. The type of Pretender Gods can vary from magically powerful arch mages to old dragons or an enormous tree. Dominions is a deep 4x turn based strategy game with a very large variety of spells and units.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "17 Jan, 2024"
+                    "date": "Jan 17, 2024"
                 },
                 "language": {
                     "zh": {
@@ -80665,13 +80675,17 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
                         "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%87%AA%E8%B5%B0%E6%A3%8B/",
+                        "name": "自走棋"
                     }
                 ],
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(194)",
-                    "tooltip": "此游戏的 194 篇用户评测中有 87% 为好评。"
+                    "count": "(241)",
+                    "tooltip": "此游戏的 241 篇用户评测中有 87% 为好评。"
                 }
             }
         },
@@ -81304,13 +81318,13 @@
                     "metaScore": 96,
                     "metaReviewsCount": 154,
                     "userScore": 8.4,
-                    "userReviewsCount": 11719
+                    "userReviewsCount": 11722
                 },
                 "meta": {
                     "index": 62,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "the-legend-of-zelda-breath-of-the-wild": {
@@ -81355,13 +81369,13 @@
                     "metaScore": 97,
                     "metaReviewsCount": 117,
                     "userScore": 8.8,
-                    "userReviewsCount": 22112
+                    "userReviewsCount": 22113
                 },
                 "meta": {
                     "index": 63,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "super-mario-odyssey": {
@@ -81402,13 +81416,13 @@
                     "metaScore": 97,
                     "metaReviewsCount": 123,
                     "userScore": 8.9,
-                    "userReviewsCount": 8285
+                    "userReviewsCount": 8288
                 },
                 "meta": {
                     "index": 64,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-odyssey",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "mario-+-rabbids-sparks-of-hope": {
@@ -81455,7 +81469,7 @@
                     "index": 65,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-sparks-of-hope",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "mario-+-rabbids-kingdom-battle": {
@@ -81502,7 +81516,7 @@
                     "index": 66,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-kingdom-battle",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "bayonetta-origins-cereza-and-the-lost-demon": {
@@ -81549,7 +81563,7 @@
                     "index": 67,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/bayonetta-origins-cereza-and-the-lost-demon",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "super-mario-bros-wonder": {
@@ -81596,7 +81610,7 @@
                     "index": 68,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-bros-wonder",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "pokemon-scarlet": {
@@ -81637,13 +81651,13 @@
                     "metaScore": 72,
                     "metaReviewsCount": 124,
                     "userScore": 3.4,
-                    "userReviewsCount": 3402
+                    "userReviewsCount": 3403
                 },
                 "meta": {
                     "index": 133,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-scarlet",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "pokemon-violet": {
@@ -81684,13 +81698,13 @@
                     "metaScore": 71,
                     "metaReviewsCount": 124,
                     "userScore": 4.1,
-                    "userReviewsCount": 2184
+                    "userReviewsCount": 2185
                 },
                 "meta": {
                     "index": 134,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-violet",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "super-mario-rpg": {
@@ -81737,7 +81751,7 @@
                     "index": 135,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-rpg",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             }
         },
@@ -81788,13 +81802,13 @@
                     "metaScore": 89,
                     "metaReviewsCount": 73,
                     "userScore": 8.8,
-                    "userReviewsCount": 1892
+                    "userReviewsCount": 1896
                 },
                 "meta": {
                     "index": 69,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/alan-wake-ii",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "assassins-creed-mirage": {
@@ -81855,13 +81869,13 @@
                     "metaScore": 76,
                     "metaReviewsCount": 99,
                     "userScore": 7.3,
-                    "userReviewsCount": 1408
+                    "userReviewsCount": 1410
                 },
                 "meta": {
                     "index": 131,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/assassins-creed-mirage",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             }
         },
@@ -81904,13 +81918,13 @@
                     "metaScore": 90,
                     "metaReviewsCount": 149,
                     "userScore": 9,
-                    "userReviewsCount": 7199
+                    "userReviewsCount": 7205
                 },
                 "meta": {
                     "index": 70,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/marvels-spider-man-2",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "demons-souls": {
@@ -81961,7 +81975,7 @@
                     "index": 132,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/demons-souls",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             }
         },
@@ -82018,7 +82032,7 @@
                     "index": 515,
                     "platform": "Nintendo Switch",
                     "identifier": "https://www.metacritic.com/game/unicorn-overlord",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "princess-peach-showtime": {
@@ -82061,7 +82075,7 @@
                     "index": 524,
                     "platform": "Nintendo Switch",
                     "identifier": "https://www.metacritic.com/game/princess-peach-showtime",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             }
         },
@@ -82114,7 +82128,7 @@
                     "index": 516,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/final-fantasy-xvi",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "final-fantasy-vii-rebirth": {
@@ -82157,7 +82171,7 @@
                     "index": 517,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/final-fantasy-vii-rebirth",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             },
             "rise-of-the-ronin": {
@@ -82200,7 +82214,7 @@
                     "index": 519,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/rise-of-the-ronin",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             }
         },
@@ -82261,13 +82275,15 @@
                         }
                     ],
                     "metaScore": 86,
-                    "metaReviewsCount": 71
+                    "metaReviewsCount": 73,
+                    "userScore": 6.3,
+                    "userReviewsCount": 32
                 },
                 "meta": {
                     "index": 518,
                     "platform": "Xbox Series X",
                     "identifier": "https://www.metacritic.com/game/prince-of-persia-the-lost-crown",
-                    "last_track_date": "2024-01-19"
+                    "last_track_date": "2024-01-20"
                 }
             }
         }
