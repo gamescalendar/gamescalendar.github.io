@@ -29300,7 +29300,7 @@
                 "index": 527,
                 "platform": "Steam",
                 "identifier": 553850,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "HELLDIVERS™ 2",
@@ -29374,16 +29374,16 @@
                         "name": "在线合作"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
+                        "name": "多人"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%B0%84%E5%87%BB/",
                         "name": "射击"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
                         "name": "第三人称"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
-                        "name": "多人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%88%E4%BD%9C/",
@@ -29414,15 +29414,19 @@
                         "name": "困难"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
                         "name": "色情内容"
                     }
                 ],
                 "totalReview": {
-                    "summary": "褒贬不一",
-                    "cssClass": "mixed",
-                    "count": "(7,084)",
-                    "tooltip": "此游戏的 7,084 篇用户评测中有 62% 为好评。"
+                    "summary": "多半好评",
+                    "cssClass": "positive",
+                    "count": "(13,290)",
+                    "tooltip": "此游戏的 13,290 篇用户评测中有 72% 为好评。"
                 }
             }
         },
@@ -39941,7 +39945,7 @@
                 "index": 396,
                 "platform": "Steam",
                 "identifier": 881020,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Granblue Fantasy: Relink",
@@ -40019,12 +40023,12 @@
                 ],
                 "tags": [
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
                         "name": "动漫"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
@@ -40091,19 +40095,19 @@
                         "name": "剑术"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%AD%94%E6%B3%95/",
-                        "name": "魔法"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%A9%E5%AE%B6%E5%AF%B9%E6%88%98%E7%8E%AF%E5%A2%83/",
                         "name": "玩家对战环境"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%AD%94%E6%B3%95/",
+                        "name": "魔法"
                     }
                 ],
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(14,025)",
-                    "tooltip": "此游戏的 14,025 篇用户评测中有 87% 为好评。"
+                    "count": "(14,719)",
+                    "tooltip": "此游戏的 14,719 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -40853,7 +40857,7 @@
                 "index": 84,
                 "platform": "Steam",
                 "identifier": 914210,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "N1RV Ann-A: Cyberpunk Bartender Action",
@@ -44878,7 +44882,7 @@
                 "index": 71,
                 "platform": "Steam",
                 "identifier": 1030300,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Hollow Knight: Silksong",
@@ -57667,7 +57671,7 @@
                 "index": 504,
                 "platform": "Steam",
                 "identifier": 1371980,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "No Rest for the Wicked",
@@ -59450,7 +59454,7 @@
                 "index": 208,
                 "platform": "Steam",
                 "identifier": 1448440,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Wo Long: Fallen Dynasty",
@@ -59624,14 +59628,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(222)",
-                    "tooltip": "过去 30 天内的 222 篇用户评测中有 43% 为好评。"
+                    "count": "(221)",
+                    "tooltip": "过去 30 天内的 221 篇用户评测中有 41% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(18,501)",
-                    "tooltip": "此游戏的 18,501 篇用户评测中有 47% 为好评。"
+                    "count": "(18,514)",
+                    "tooltip": "此游戏的 18,514 篇用户评测中有 47% 为好评。"
                 }
             }
         },
@@ -61279,7 +61283,7 @@
                 "index": 436,
                 "platform": "Steam",
                 "identifier": 1520160,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Chrono Sword",
@@ -63322,7 +63326,7 @@
                 "index": 419,
                 "platform": "Steam",
                 "identifier": 1590760,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Metal Slug Tactics",
@@ -65081,7 +65085,7 @@
                 "index": 85,
                 "platform": "Steam",
                 "identifier": 1663850,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "REPLACED",
@@ -65391,7 +65395,7 @@
                 "index": 458,
                 "platform": "Steam",
                 "identifier": 1671210,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "DELTARUNE",
@@ -65895,7 +65899,7 @@
                 "index": 391,
                 "platform": "Steam",
                 "identifier": 1687540,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Showa American Story",
@@ -66686,7 +66690,7 @@
                 "index": 440,
                 "platform": "Steam",
                 "identifier": 1706510,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Songs of Glimmerwick",
@@ -69369,7 +69373,7 @@
                 "index": 421,
                 "platform": "Steam",
                 "identifier": 1845910,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Dragon Age: Dreadwolf™",
@@ -69486,7 +69490,7 @@
                 "index": 448,
                 "platform": "Steam",
                 "identifier": 1846700,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Witchbrook",
@@ -71503,7 +71507,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -76364,7 +76368,7 @@
                 "index": 414,
                 "platform": "Steam",
                 "identifier": 2159210,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Just A To the Moon Series Beach Episode",
@@ -76644,7 +76648,7 @@
                 "index": 503,
                 "platform": "Steam",
                 "identifier": 2161700,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Persona 3 Reload",
@@ -76789,8 +76793,8 @@
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(5,387)",
-                    "tooltip": "此游戏的 5,387 篇用户评测中有 97% 为好评。"
+                    "count": "(5,676)",
+                    "tooltip": "此游戏的 5,676 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -76799,7 +76803,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "EthrA",
@@ -78265,7 +78269,7 @@
                 "index": 422,
                 "platform": "Steam",
                 "identifier": 2246340,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Monster Hunter Wilds",
@@ -80411,7 +80415,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-02-09"
+                "last_track_date": "2024-02-10"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -82045,127 +82049,256 @@
                             "name": "Open-World Action",
                             "url": "/browse/game/all/open---world-action/"
                         }
-                    ]
+                    ],
+                    "metaScore": 96,
+                    "metaReviewsCount": 155,
+                    "userScore": 8.4,
+                    "userReviewsCount": 11850
                 },
                 "meta": {
                     "index": 62,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "the-legend-of-zelda-breath-of-the-wild": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "The Legend of Zelda: Breath of the Wild",
+                "start": "2017-03-03",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/34029d16eb1fbb919240fbb1e2cd12a5a78492ec/catalog/provider/6/3/6-1-844837-13.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "switch",
                     "name": "the-legend-of-zelda-breath-of-the-wild",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": []
+                    "title": "The Legend of Zelda: Breath of the Wild",
+                    "platformString": [
+                        {
+                            "name": "Wii U",
+                            "url": ""
+                        },
+                        {
+                            "name": "Nintendo Switch",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Mar 3, 2017",
+                    "summary": "Ignore everything you know about The Legend of Zelda games. Step into a world of discovery, exploration and adventure in The Legend of Zelda: Breath of the Wild. Travel across fields, through forests and to mountain peaks as you discover what has become of the ruined kingdom of Hyrule in this stunning open-air adventure. Explore the wilds of Hyrule any way you like - Climb up towers and mountain peaks in search of new destinations, then set your own path to get there and plunge into the wilderness. Along the way, you'll battle towering enemies, hunt wild beasts and gather ingredients for the food and elixirs you'll need to sustain you on your journey. More than 100 Shrines of Trials to discover and explore - Shrines dot the landscape, waiting to be discovered in any order you want. Search for them in various ways, and solve a variety of puzzles inside. Work your way through the traps and devices inside to earn special items and other rewards that will help you on your adventure. Be prepared and properly equipped - With an entire world waiting to be explored, you'll need a variety of outfits and gear to reach every corner. You may need to bundle up with warmer clothes or change into something better suited to the desert heat. Some clothing even has special effects that, for example, can make you faster and stealthier. [Nintendo]",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Nintendo",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "Open-World Action",
+                            "url": "/browse/game/all/open---world-action/"
+                        }
+                    ],
+                    "metaScore": 97,
+                    "metaReviewsCount": 117,
+                    "userScore": 8.8,
+                    "userReviewsCount": 22254
                 },
                 "meta": {
                     "index": 63,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "super-mario-odyssey": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Super Mario Odyssey",
+                "start": "2017-10-27",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/261f1623ca79e78ad4804718305015c49c1425a8/catalog/provider/6/3/6-1-856470-13.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "switch",
                     "name": "super-mario-odyssey",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": [],
+                    "title": "Super Mario Odyssey",
+                    "platformString": [
+                        {
+                            "name": "Nintendo Switch",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Oct 27, 2017",
+                    "summary": "New Evolution of Mario Sandbox-Style Gameplay. Mario embarks on a new journey through unknown worlds, running and jumping through huge 3D worlds in the first sandbox-style Mario game since Super Mario 64 and Super Mario Sunshine. Set sail between expansive worlds aboard an airship, and perform all-new actions, such as throwing Mario's cap.",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Nintendo",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "3D Platformer",
+                            "url": "/browse/game/all/3d-platformer/"
+                        }
+                    ],
                     "metaScore": 97,
                     "metaReviewsCount": 123,
                     "userScore": 8.9,
-                    "userReviewsCount": 8356
+                    "userReviewsCount": 8360
                 },
                 "meta": {
                     "index": 64,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-odyssey",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "mario-+-rabbids-sparks-of-hope": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Mario + Rabbids Sparks of Hope",
+                "start": "2022-10-20",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/74f689125c2a3409e18e77a35bea306b37c6da87/catalog/provider/6/3/6-1-803073-13.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "switch",
                     "name": "mario-+-rabbids-sparks-of-hope",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": []
+                    "title": "Mario + Rabbids Sparks of Hope",
+                    "platformString": [
+                        {
+                            "name": "Nintendo Switch",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Oct 20, 2022",
+                    "summary": "Team up with Mario, Luigi, Princess Peach, Rabbid Peach, Rabbid Luigi, and their friends on a galactic journey to defeat a malevolent entity and save your Spark companions. Explore planets throughout the galaxy as you uncover mysterious secrets and compelling quests! * Build your dream team with three heroes from an eclectic roster of nine. * Take down all new bosses, along with some familiar enemies throughout the galaxy. \n* Rescue the adorable Sparks throughout the galaxy, who provide distinct powers that will help you in battle. \n* Unleash your heroes' skills but be strategic as you dash your enemies, team jump on your allies, and hide behind covers.",
+                    "publisher": [
+                        {
+                            "name": "Ubisoft",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Ubisoft Paris",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "Turn-Based Tactics",
+                            "url": "/browse/game/all/turn---based-tactics/"
+                        }
+                    ],
+                    "metaScore": 85,
+                    "metaReviewsCount": 124,
+                    "userScore": 7.5,
+                    "userReviewsCount": 286
                 },
                 "meta": {
                     "index": 65,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-sparks-of-hope",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "mario-+-rabbids-kingdom-battle": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Mario + Rabbids: Kingdom Battle",
+                "start": "2017-08-29",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/c880bffd7433628122d1e03907b7f46adde5ba09/catalog/provider/6/3/6-1-634066-13.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "switch",
                     "name": "mario-+-rabbids-kingdom-battle",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": []
+                    "title": "Mario + Rabbids: Kingdom Battle",
+                    "platformString": [
+                        {
+                            "name": "Nintendo Switch",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Aug 29, 2017",
+                    "summary": "Welcome to the story of an unexpected encounter between Mario and the irreverent Rabbids. To bring order back to a splintered Mushroom Kingdom, Mario, Luigi, Princess Peach, and Yoshi team up with Rabbids heroes in a journey through four different worlds. Outwit unpredictable enemies in dynamic turn-based combat and co-op challenges, and solve puzzles along the way. Discover a feel-good and modern combat adventure designed exclusively for the Nintendo Switch system, playable anywhere, anytime, with anyone. [Ubisoft]",
+                    "publisher": [
+                        {
+                            "name": "Ubisoft",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Ubisoft Paris",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "Turn-Based Tactics",
+                            "url": "/browse/game/all/turn---based-tactics/"
+                        }
+                    ],
+                    "metaScore": 85,
+                    "metaReviewsCount": 111,
+                    "userScore": 8.3,
+                    "userReviewsCount": 1385
                 },
                 "meta": {
                     "index": 66,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-kingdom-battle",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "bayonetta-origins-cereza-and-the-lost-demon": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Bayonetta Origins: Cereza and the Lost Demon",
+                "start": "2023-03-17",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/cfb2c51ed8f7355d6cf635ece521b4a53cbbc351/catalog/provider/6/3/6-1-910084-13.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "switch",
                     "name": "bayonetta-origins-cereza-and-the-lost-demon",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": []
+                    "title": "Bayonetta Origins: Cereza and the Lost Demon",
+                    "platformString": [
+                        {
+                            "name": "Nintendo Switch",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Mar 17, 2023",
+                    "summary": "Turn back the pages of the Umbra Witch’s story to learn where it all began. Take control of Cereza and her first demon Cheshire to fend off faeries and solve puzzles.",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "PlatinumGames",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "Linear Action Adventure",
+                            "url": "/browse/game/all/linear-action-adventure/"
+                        }
+                    ],
+                    "metaScore": 80,
+                    "metaReviewsCount": 103,
+                    "userScore": 8.6,
+                    "userReviewsCount": 123
                 },
                 "meta": {
                     "index": 67,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/bayonetta-origins-cereza-and-the-lost-demon",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "super-mario-bros-wonder": {
@@ -82202,35 +82335,64 @@
                             "name": "2D Platformer",
                             "url": "/browse/game/all/2d-platformer/"
                         }
-                    ]
+                    ],
+                    "metaScore": 92,
+                    "metaReviewsCount": 135,
+                    "userScore": 9.2,
+                    "userReviewsCount": 1809
                 },
                 "meta": {
                     "index": 68,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-bros-wonder",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "pokemon-scarlet": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Pokemon Scarlet",
+                "start": "2022-11-18",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/df3a8440cd852d1ec930f9c54c9d7e045e5f0e0d/catalog/provider/6/3/6-1-905367-13.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "switch",
                     "name": "pokemon-scarlet",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": []
+                    "title": "Pokemon Scarlet",
+                    "platformString": [
+                        {
+                            "name": "Nintendo Switch",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Nov 18, 2022",
+                    "summary": "The Pokémon Scarlet and Pokémon Violet games, the newest chapters in the Pokémon series, are coming to Nintendo Switch. With these new titles, the Pokémon series takes a new evolutionary step, allowing you to explore freely in a richly expressed open world.  Various towns blend seamlessly into the wilderness with no borders. You'll be able to see the Pokémon of this region in the skies, in the seas, in the forests, on the streetsall over! You'll be able to experience the true joy of the Pokémon seriesbattling against wild Pokémon in order to catch themnow in an open-world game that players of any age can enjoy. \n\nMeet the First Partner Pokémon\nThe three Pokémon from which you'll be able to choose your first partner are Sprigatito, Fuecoco, and Quaxly. How will you meet these three, and what sorts of Pokémon are they? \n\nSprigatito \nType: Grass \nCategory: Grass Cat Pokémon \nHeight: 1'4\" \nWeight: 9 lbs. \nAbility: Overgrow \nThe capricious, attention-seeking Grass Cat Pokémon. \n\nFuecoco\nType: Fire\nCategory: Fire Croc Pokémon \nHeight: 1'4\" \nWeight: 21.6 lbs. \nAbility: Blaze \nThe laid-back Fire Croc Pokémon that does things at its own pace. \n\nQuaxly\nType: Water \nCategory: Duckling Pokémon \nHeight: 1'8\" \nWeight: 13.4 lbs. \nAbility: Torrent \nThe earnest and tidy Duckling Pokémon. \n\nIntroducing the Main Characters \nAs one of the main characters, you'll set off on your adventure. Your outfit will vary depending on whether you play Pokémon Scarlet or Pokémon Violet. Who knows what kind of story awaits you?",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Game Freak",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "Trainer RPG",
+                            "url": "/browse/game/all/trainer-rpg/"
+                        }
+                    ],
+                    "metaScore": 72,
+                    "metaReviewsCount": 125,
+                    "userScore": 3.4,
+                    "userReviewsCount": 3430
                 },
                 "meta": {
                     "index": 133,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-scarlet",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "pokemon-violet": {
@@ -82267,133 +82429,288 @@
                             "name": "Trainer RPG",
                             "url": "/browse/game/all/trainer-rpg/"
                         }
-                    ]
+                    ],
+                    "metaScore": 71,
+                    "metaReviewsCount": 125,
+                    "userScore": 4.1,
+                    "userReviewsCount": 2203
                 },
                 "meta": {
                     "index": 134,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-violet",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "super-mario-rpg": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Super Mario RPG",
+                "start": "2023-11-17",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/a661b1adcfc7d6fb098071e83b733754d7716da2/catalog/provider/6/3/6-1-947211-13.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "switch",
                     "name": "super-mario-rpg",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": [],
-                    "metaScore": 8,
-                    "metaReviewsCount": 216
+                    "title": "Super Mario RPG",
+                    "platformString": [
+                        {
+                            "name": "Nintendo Switch",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Nov 17, 2023",
+                    "summary": "Mario, Bowser, and Peach partner up to repair the wish-granting Star Road in this approachable role-playing adventure. Team up with an oddball group of heroes to save Star Road and stop the troublemaking Smithy Gang. This colorful RPG has updated graphics and cinematics that add even more charm to the unexpected alliance between Mario, Bowser, Peach, and original characters Mallow and Geno. Enter (or revisit) this world of eccentric allies and offbeat enemies in an RPG for everyone. Jump through a colorful world and give attacks some extra oomph in battle! Explore the vibrant environments with your party and jump towards your next goal! Run into monsters to enter turn-based battles with your party of three. Press the button at the right time for a satisfying dose of extra damage or helpful guard.",
+                    "publisher": [
+                        {
+                            "name": "Nintendo",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "ArtePiazza",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "JRPG",
+                            "url": "/browse/game/all/jrpg/"
+                        }
+                    ],
+                    "metaScore": 84,
+                    "metaReviewsCount": 118,
+                    "userScore": 8,
+                    "userReviewsCount": 216
                 },
                 "meta": {
                     "index": 135,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-rpg",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             }
         },
         "pc": {
             "alan-wake-ii": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Alan Wake II",
+                "start": "2023-10-27",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/8d38bde8b635594eff7e665236b9af27193e20ea/catalog/provider/7/2/7-1695783109.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "pc",
                     "name": "alan-wake-ii",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": [],
+                    "title": "Alan Wake II",
+                    "platformString": [
+                        {
+                            "name": "PlayStation 5",
+                            "url": ""
+                        },
+                        {
+                            "name": "PC",
+                            "url": ""
+                        },
+                        {
+                            "name": "Xbox Series X",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Oct 27, 2023",
+                    "summary": "Shed some light on what has long been obscured by darkness. After 11 long years, the writer's return is a reality and the dangers lurking in the dark are even more sinister than the Taken roaming Bright Falls.  Alan Wake 2 turns up the level of dread as our very first dive into the survival horror genre, so expect a chilling experience with familiar psychological horror elements.  Be careful out there. Monsters wear many faces.",
+                    "publisher": [
+                        {
+                            "name": "Epic Games",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Remedy Entertainment",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "Survival",
+                            "url": "/browse/game/all/survival/"
+                        }
+                    ],
                     "metaScore": 89,
                     "metaReviewsCount": 74,
                     "userScore": 8.7,
-                    "userReviewsCount": 2024
+                    "userReviewsCount": 2033
                 },
                 "meta": {
                     "index": 69,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/alan-wake-ii",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "assassins-creed-mirage": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Assassin's Creed Mirage",
+                "start": "2023-10-05",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/4a937abcc8ca237219d4f3bccd4ba0a21db654de/catalog/provider/7/2/7-1695416917.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "pc",
                     "name": "assassins-creed-mirage",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": []
+                    "title": "Assassin's Creed Mirage",
+                    "platformString": [
+                        {
+                            "name": "PlayStation 5",
+                            "url": ""
+                        },
+                        {
+                            "name": "Xbox Series X",
+                            "url": ""
+                        },
+                        {
+                            "name": "PC",
+                            "url": ""
+                        },
+                        {
+                            "name": "PlayStation 4",
+                            "url": ""
+                        },
+                        {
+                            "name": "Xbox One",
+                            "url": ""
+                        },
+                        {
+                            "name": "iOS (iPhone/iPad)",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Oct 5, 2023",
+                    "summary": "In Assassin's Creed Mirage, you are Basim, a cunning street thief with nightmarish visions seeking answers and justice.\n\nJoin an ancient organisation and come to understand a new creed - one that will change Basim's fate in ways he never could have imagined.\n\nDiscover a narrative-driven action-adventure experience that follows the transformation of a defiant young man into a refined Master Assassin with a conflicted destiny. Meet an inspiring cast of characters who will shape Basim's destiny and may be more than what they seem...",
+                    "publisher": [
+                        {
+                            "name": "Ubisoft",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Ubisoft Bordeaux",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "Open-World Action",
+                            "url": "/browse/game/all/open---world-action/"
+                        }
+                    ],
+                    "metaScore": 76,
+                    "metaReviewsCount": 99,
+                    "userScore": 7.3,
+                    "userReviewsCount": 1462
                 },
                 "meta": {
                     "index": 131,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/assassins-creed-mirage",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             }
         },
         "playstation-5": {
             "marvels-spider-man-2": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Marvel's Spider-Man 2",
+                "start": "2023-10-20",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/1219f1c9398fd24c58a2279c853e625d8e197b61/catalog/provider/7/2/7-1695949825.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "playstation-5",
                     "name": "marvels-spider-man-2",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": []
+                    "title": "Marvel's Spider-Man 2",
+                    "platformString": [
+                        {
+                            "name": "PlayStation 5",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Oct 20, 2023",
+                    "summary": "Spider-Men, Peter Parker and Miles Morales, return for an exciting new adventure in Marvel’s Spider-Man franchise for PS5. Swing, jump and utilize the new Web Wings to travel across Marvel’s New York, quickly switching between Peter Parker and Miles Morales to experience different stories and epic new powers, as the iconic villain Venom threatens to destroy their lives, their city and the ones they love. The incredible power of the symbiote forces Peter and Miles to face the ultimate test of strength, both inside and outside the mask, as they balance their lives, friendships and their duty to protect those in need. Quickly swap between both Spider-Men as you explore an expanded Marvel’s New York. Fight against a variety of new and iconic villains, including an original take on the monstrous Venom, the ruthless Kraven the Hunter, the volatile Lizard and many more. Explore a larger Marvel’s New York than ever before, featuring two new boroughs – Brooklyn and Queens – as well as locations like Coney Island and more.",
+                    "publisher": [
+                        {
+                            "name": "Sony Interactive Entertainment",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Insomniac Games",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "Open-World Action",
+                            "url": "/browse/game/all/open---world-action/"
+                        }
+                    ],
+                    "metaScore": 90,
+                    "metaReviewsCount": 149,
+                    "userScore": 9,
+                    "userReviewsCount": 7412
                 },
                 "meta": {
                     "index": 70,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/marvels-spider-man-2",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "demons-souls": {
                 "type": "Game",
-                "title": "",
-                "start": "",
+                "title": "Demon's Souls",
+                "start": "2020-11-11",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/6d44d97ee5be6139608c1cf9b1938f9e7a6e0c5c/catalog/provider/6/3/6-1-773856-13.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "playstation-5",
                     "name": "demons-souls",
-                    "title": "",
-                    "platformString": [],
-                    "releaseDate": "",
-                    "summary": "",
-                    "publisher": [],
-                    "developer": [],
-                    "genres": []
+                    "title": "Demon's Souls",
+                    "platformString": [
+                        {
+                            "name": "PlayStation 5",
+                            "url": ""
+                        }
+                    ],
+                    "releaseDate": "Nov 11, 2020",
+                    "summary": "From PlayStation Studios and Bluepoint Games comes a remake of the PlayStation classic, Demon’s Souls. Entirely rebuilt from the ground up and masterfully enhanced, this remake introduces the horrors of a fog-laden, dark fantasy land to a whole new generation of gamers. Those who’ve faced its trials and tribulations before, can once again challenge the darkness in stunning visual quality and incredible performance. In his quest for power, the 12th King of Boletaria, King Allant channelled the ancient Soul Arts, awakening a demon from the dawn of time itself, The Old One. With the summoning of The Old One, a colorless fog swept across the land, unleashing nightmarish creatures that hungered for human souls. Those whose souls were stripped from them, lost their minds – left only with the desire to attack the sane that remained. Now, Boletaria is cut off from the outside world, and the knights who dare penetrate the deep fog to free the land from its plight, are never seen again. As a lone warrior who has braved the baneful fog, you must face the hardest of challenges to earn the title “Slayer of Demons” and send The Old One back to its slumber.",
+                    "publisher": [
+                        {
+                            "name": "Sony Interactive Entertainment",
+                            "url": ""
+                        }
+                    ],
+                    "developer": [
+                        {
+                            "name": "Bluepoint Games",
+                            "url": ""
+                        },
+                        {
+                            "name": "JapanStudio",
+                            "url": ""
+                        }
+                    ],
+                    "genres": [
+                        {
+                            "name": "Action RPG",
+                            "url": "/browse/game/all/action-rpg/"
+                        }
+                    ],
+                    "metaScore": 92,
+                    "metaReviewsCount": 106,
+                    "userScore": 8.1,
+                    "userReviewsCount": 3950
                 },
                 "meta": {
                     "index": 132,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/demons-souls",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             }
         },
@@ -82450,7 +82767,7 @@
                     "index": 515,
                     "platform": "Nintendo Switch",
                     "identifier": "https://www.metacritic.com/game/unicorn-overlord",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "princess-peach-showtime": {
@@ -82493,7 +82810,7 @@
                     "index": 524,
                     "platform": "Nintendo Switch",
                     "identifier": "https://www.metacritic.com/game/princess-peach-showtime",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             }
         },
@@ -82540,13 +82857,13 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8.1,
-                    "userReviewsCount": 10248
+                    "userReviewsCount": 10250
                 },
                 "meta": {
                     "index": 516,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/final-fantasy-xvi",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "final-fantasy-vii-rebirth": {
@@ -82589,7 +82906,7 @@
                     "index": 517,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/final-fantasy-vii-rebirth",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             },
             "rise-of-the-ronin": {
@@ -82632,7 +82949,7 @@
                     "index": 519,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/rise-of-the-ronin",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             }
         },
@@ -82695,13 +83012,13 @@
                     "metaScore": 86,
                     "metaReviewsCount": 81,
                     "userScore": 9,
-                    "userReviewsCount": 477
+                    "userReviewsCount": 478
                 },
                 "meta": {
                     "index": 518,
                     "platform": "Xbox Series X",
                     "identifier": "https://www.metacritic.com/game/prince-of-persia-the-lost-crown",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-10"
                 }
             }
         },
