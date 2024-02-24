@@ -948,7 +948,7 @@
                 "index": 333,
                 "platform": "Steam",
                 "identifier": 400,
-                "last_track_date": "2024-02-20"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Portal",
@@ -1109,14 +1109,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(2,313)",
-                    "tooltip": "过去 30 天内的 2,313 篇用户评测中有 98% 为好评。"
+                    "count": "(2,348)",
+                    "tooltip": "过去 30 天内的 2,348 篇用户评测中有 98% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(129,535)",
-                    "tooltip": "此游戏的 129,535 篇用户评测中有 98% 为好评。"
+                    "count": "(129,868)",
+                    "tooltip": "此游戏的 129,868 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -1125,7 +1125,7 @@
                 "index": 323,
                 "platform": "Steam",
                 "identifier": 420,
-                "last_track_date": "2024-02-20"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Half-Life 2: Episode Two",
@@ -1282,14 +1282,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(506)",
-                    "tooltip": "过去 30 天内的 506 篇用户评测中有 95% 为好评。"
+                    "count": "(497)",
+                    "tooltip": "过去 30 天内的 497 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(31,126)",
-                    "tooltip": "此游戏的 31,126 篇用户评测中有 97% 为好评。"
+                    "count": "(31,181)",
+                    "tooltip": "此游戏的 31,181 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -1298,7 +1298,7 @@
                 "index": 331,
                 "platform": "Steam",
                 "identifier": 500,
-                "last_track_date": "2024-02-20"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Left 4 Dead",
@@ -1475,14 +1475,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(606)",
-                    "tooltip": "过去 30 天内的 606 篇用户评测中有 94% 为好评。"
+                    "count": "(566)",
+                    "tooltip": "过去 30 天内的 566 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(45,226)",
-                    "tooltip": "此游戏的 45,226 篇用户评测中有 96% 为好评。"
+                    "count": "(45,278)",
+                    "tooltip": "此游戏的 45,278 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -1491,7 +1491,7 @@
                 "index": 332,
                 "platform": "Steam",
                 "identifier": 550,
-                "last_track_date": "2024-02-20"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Left 4 Dead 2",
@@ -1503,7 +1503,7 @@
                 "description": "Set in the zombie apocalypse, Left 4 Dead 2 (L4D2) is the highly anticipated sequel to the award-winning Left 4 Dead, the #1 co-op game of 2008. This co-operative action horror FPS takes you and your friends through the cities, swamps and cemeteries of the Deep South, from Savannah to New Orleans across five expansive campaigns.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "16 Nov, 2009"
+                    "date": "Nov 16, 2009"
                 },
                 "language": {
                     "zh": {
@@ -1692,14 +1692,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(8,516)",
-                    "tooltip": "过去 30 天内的 8,516 篇用户评测中有 96% 为好评。"
+                    "count": "(8,325)",
+                    "tooltip": "过去 30 天内的 8,325 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(623,413)",
-                    "tooltip": "此游戏的 623,413 篇用户评测中有 97% 为好评。"
+                    "count": "(624,264)",
+                    "tooltip": "此游戏的 624,264 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -1708,7 +1708,7 @@
                 "index": 334,
                 "platform": "Steam",
                 "identifier": 620,
-                "last_track_date": "2024-02-20"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Portal 2",
@@ -1838,12 +1838,12 @@
                         "name": "解谜"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E8%89%B2%E5%B9%BD%E9%BB%98/",
-                        "name": "黑色幽默"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0/",
                         "name": "第一人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E8%89%B2%E5%B9%BD%E9%BB%98/",
+                        "name": "黑色幽默"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
@@ -1913,14 +1913,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(4,084)",
-                    "tooltip": "过去 30 天内的 4,084 篇用户评测中有 98% 为好评。"
+                    "count": "(3,896)",
+                    "tooltip": "过去 30 天内的 3,896 篇用户评测中有 98% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(315,051)",
-                    "tooltip": "此游戏的 315,051 篇用户评测中有 98% 为好评。"
+                    "count": "(315,443)",
+                    "tooltip": "此游戏的 315,443 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -3715,7 +3715,7 @@
                 "index": 149,
                 "platform": "Steam",
                 "identifier": 38400,
-                "last_track_date": "2024-02-20"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Fallout: A Post Nuclear Role Playing Game",
@@ -3844,14 +3844,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(135)",
-                    "tooltip": "过去 30 天内的 135 篇用户评测中有 93% 为好评。"
+                    "count": "(139)",
+                    "tooltip": "过去 30 天内的 139 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(11,264)",
-                    "tooltip": "此游戏的 11,264 篇用户评测中有 94% 为好评。"
+                    "count": "(11,279)",
+                    "tooltip": "此游戏的 11,279 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -77500,7 +77500,7 @@
                 "index": 503,
                 "platform": "Steam",
                 "identifier": 2161700,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Persona 3 Reload",
@@ -77645,8 +77645,8 @@
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(8,409)",
-                    "tooltip": "此游戏的 8,409 篇用户评测中有 97% 为好评。"
+                    "count": "(9,320)",
+                    "tooltip": "此游戏的 9,320 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -77808,7 +77808,7 @@
                 "index": 107,
                 "platform": "Steam",
                 "identifier": 2186680,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Warhammer 40,000: Rogue Trader",
@@ -77981,14 +77981,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,036)",
-                    "tooltip": "过去 30 天内的 1,036 篇用户评测中有 80% 为好评。"
+                    "count": "(886)",
+                    "tooltip": "过去 30 天内的 886 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(9,546)",
-                    "tooltip": "此游戏的 9,546 篇用户评测中有 75% 为好评。"
+                    "count": "(9,646)",
+                    "tooltip": "此游戏的 9,646 篇用户评测中有 75% 为好评。"
                 }
             }
         },
@@ -78474,7 +78474,7 @@
                 "index": 368,
                 "platform": "Steam",
                 "identifier": 2230650,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "TEVI",
@@ -78630,14 +78630,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(131)",
-                    "tooltip": "过去 30 天内的 131 篇用户评测中有 88% 为好评。"
+                    "count": "(122)",
+                    "tooltip": "过去 30 天内的 122 篇用户评测中有 87% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,195)",
-                    "tooltip": "此游戏的 2,195 篇用户评测中有 89% 为好评。"
+                    "count": "(2,208)",
+                    "tooltip": "此游戏的 2,208 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -78819,7 +78819,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -79401,7 +79401,7 @@
                 "index": 496,
                 "platform": "Steam",
                 "identifier": 2276830,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Kingsvein",
@@ -79550,14 +79550,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(78)",
-                    "tooltip": "过去 30 天内的 78 篇用户评测中有 89% 为好评。"
+                    "count": "(39)",
+                    "tooltip": "过去 30 天内的 39 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(148)",
-                    "tooltip": "此游戏的 148 篇用户评测中有 91% 为好评。"
+                    "count": "(149)",
+                    "tooltip": "此游戏的 149 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -79743,7 +79743,7 @@
                 "index": 474,
                 "platform": "Steam",
                 "identifier": 2305840,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Cat Quest III",
@@ -79885,8 +79885,8 @@
                         "name": "开放世界"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%AD%A9%E7%AB%A5/",
-                        "name": "孩童"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%98%96%E5%AE%B6/",
+                        "name": "阖家"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
@@ -80619,7 +80619,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -80905,7 +80905,7 @@
                 "index": 461,
                 "platform": "Steam",
                 "identifier": 2426530,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Nova Roma",
@@ -81015,8 +81015,8 @@
                         "name": "放松"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%AD%A9%E7%AB%A5/",
-                        "name": "孩童"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%98%96%E5%AE%B6/",
+                        "name": "阖家"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
@@ -81050,7 +81050,7 @@
                 "index": 490,
                 "platform": "Steam",
                 "identifier": 2430660,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "MiceGard",
@@ -81716,7 +81716,7 @@
                 "index": 89,
                 "platform": "Steam",
                 "identifier": 2457220,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Avowed",
@@ -82309,7 +82309,7 @@
                 "index": 529,
                 "platform": "Steam",
                 "identifier": 2646460,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Soulmask",
@@ -82462,7 +82462,7 @@
                 "index": 413,
                 "platform": "Steam",
                 "identifier": 2664600,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "The Last Hour of an Epic TO THE MOON RPG",
@@ -82599,7 +82599,7 @@
                 "index": 528,
                 "platform": "Steam",
                 "identifier": 2696050,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "ヤリモノ",
@@ -82736,11 +82736,11 @@
                 "index": 430,
                 "platform": "Steam",
                 "identifier": 2707930,
-                "last_track_date": "2024-02-19"
+                "last_track_date": "2024-02-24"
             },
             "type": "Game",
             "title": "Palia",
-            "start": "2024-12-31",
+            "start": "2024-03-25",
             "app_data": {
                 "platform": "Steam",
                 "appid": 2707930,
@@ -82748,7 +82748,7 @@
                 "description": "Palia is a vibrant new world made just for you. Craft, cook, fish, and farm with friends as you live the life of your dreams and discover an enchanting adventure filled with colorful characters and a mystery to unravel.",
                 "release_date": {
                     "coming_soon": true,
-                    "date": "2024"
+                    "date": "Mar 25, 2024"
                 },
                 "language": {
                     "zh": {
@@ -82766,12 +82766,12 @@
                 ],
                 "categories": [
                     {
-                        "id": 1,
-                        "description": "Multi-player"
+                        "id": 2,
+                        "description": "Single-player"
                     },
                     {
-                        "id": 20,
-                        "description": "MMO"
+                        "id": 1,
+                        "description": "Multi-player"
                     },
                     {
                         "id": 9,
@@ -82780,6 +82780,10 @@
                     {
                         "id": 38,
                         "description": "Online Co-op"
+                    },
+                    {
+                        "id": 27,
+                        "description": "Cross-Platform Multiplayer"
                     },
                     {
                         "id": 35,
@@ -82854,12 +82858,12 @@
                         "name": "角色自定义"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "动作角色扮演"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
                         "name": "开放世界"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "动作角色扮演"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%89%E6%B5%B8%E5%BC%8F%E6%A8%A1%E6%8B%9F/",
@@ -84354,7 +84358,7 @@
                     "metaScore": 86,
                     "metaReviewsCount": 83,
                     "userScore": 8.6,
-                    "userReviewsCount": 560
+                    "userReviewsCount": 561
                 },
                 "meta": {
                     "index": 518,
