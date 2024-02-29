@@ -1,5 +1,5 @@
 {
-    "index": 545,
+    "index": 546,
     "data": {
         "50": {
             "meta": {
@@ -7162,7 +7162,7 @@
                 "index": 159,
                 "platform": "Steam",
                 "identifier": 211600,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Thief™ Gold",
@@ -7194,6 +7194,10 @@
                     {
                         "id": 2,
                         "description": "Single-player"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -7291,14 +7295,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(44)",
-                    "tooltip": "过去 30 天内的 44 篇用户评测中有 86% 为好评。"
+                    "count": "(42)",
+                    "tooltip": "过去 30 天内的 42 篇用户评测中有 83% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,833)",
-                    "tooltip": "此游戏的 2,833 篇用户评测中有 92% 为好评。"
+                    "count": "(2,835)",
+                    "tooltip": "此游戏的 2,835 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -7307,7 +7311,7 @@
                 "index": 158,
                 "platform": "Steam",
                 "identifier": 211740,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Thief™ II: The Metal Age",
@@ -7339,6 +7343,10 @@
                     {
                         "id": 2,
                         "description": "Single-player"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -7436,14 +7444,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(16)",
-                    "tooltip": "过去 30 天内的 16 篇用户评测中有 87% 为好评。"
+                    "count": "(15)",
+                    "tooltip": "过去 30 天内的 15 篇用户评测中有 80% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,597)",
-                    "tooltip": "此游戏的 1,597 篇用户评测中有 94% 为好评。"
+                    "count": "(1,599)",
+                    "tooltip": "此游戏的 1,599 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -33454,7 +33462,7 @@
                 "index": 19,
                 "platform": "Steam",
                 "identifier": 640820,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Pathfinder: Kingmaker - Enhanced Plus Edition",
@@ -33506,6 +33514,10 @@
                     {
                         "id": 42,
                         "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -33601,16 +33613,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
-                    "cssClass": "positive",
-                    "count": "(115)",
-                    "tooltip": "过去 30 天内的 115 篇用户评测中有 73% 为好评。"
+                    "summary": "褒贬不一",
+                    "cssClass": "mixed",
+                    "count": "(121)",
+                    "tooltip": "过去 30 天内的 121 篇用户评测中有 66% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(25,187)",
-                    "tooltip": "此游戏的 25,187 篇用户评测中有 77% 为好评。"
+                    "count": "(25,206)",
+                    "tooltip": "此游戏的 25,206 篇用户评测中有 77% 为好评。"
                 }
             }
         },
@@ -33619,7 +33631,7 @@
                 "index": 241,
                 "platform": "Steam",
                 "identifier": 641080,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Trials® Rising",
@@ -33744,14 +33756,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(26)",
-                    "tooltip": "过去 30 天内的 26 篇用户评测中有 46% 为好评。"
+                    "count": "(35)",
+                    "tooltip": "过去 30 天内的 35 篇用户评测中有 51% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(2,274)",
-                    "tooltip": "此游戏的 2,274 篇用户评测中有 65% 为好评。"
+                    "count": "(2,286)",
+                    "tooltip": "此游戏的 2,286 篇用户评测中有 65% 为好评。"
                 }
             }
         },
@@ -33760,7 +33772,7 @@
                 "index": 494,
                 "platform": "Steam",
                 "identifier": 643900,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Alvora Tactics",
@@ -33800,6 +33812,10 @@
                     {
                         "id": 18,
                         "description": "Partial Controller Support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -33891,7 +33907,7 @@
                 "index": 240,
                 "platform": "Steam",
                 "identifier": 646910,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "The Crew™ 2",
@@ -34068,14 +34084,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(177)",
-                    "tooltip": "过去 30 天内的 177 篇用户评测中有 75% 为好评。"
+                    "count": "(182)",
+                    "tooltip": "过去 30 天内的 182 篇用户评测中有 76% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(59,346)",
-                    "tooltip": "此游戏的 59,346 篇用户评测中有 83% 为好评。"
+                    "count": "(59,377)",
+                    "tooltip": "此游戏的 59,377 篇用户评测中有 83% 为好评。"
                 }
             }
         },
@@ -34084,7 +34100,7 @@
                 "index": 139,
                 "platform": "Steam",
                 "identifier": 648410,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Colony Ship: A Post-Earth Role Playing Game",
@@ -34124,6 +34140,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -34217,14 +34237,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(70)",
-                    "tooltip": "过去 30 天内的 70 篇用户评测中有 87% 为好评。"
+                    "count": "(81)",
+                    "tooltip": "过去 30 天内的 81 篇用户评测中有 87% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,909)",
-                    "tooltip": "此游戏的 1,909 篇用户评测中有 87% 为好评。"
+                    "count": "(1,928)",
+                    "tooltip": "此游戏的 1,928 篇用户评测中有 87% 为好评。"
                 }
             }
         },
@@ -34233,7 +34253,7 @@
                 "index": 392,
                 "platform": "Steam",
                 "identifier": 668580,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Atomic Heart",
@@ -34282,6 +34302,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -34383,14 +34407,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(686)",
-                    "tooltip": "过去 30 天内的 686 篇用户评测中有 73% 为好评。"
+                    "count": "(707)",
+                    "tooltip": "过去 30 天内的 707 篇用户评测中有 75% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(22,504)",
-                    "tooltip": "此游戏的 22,504 篇用户评测中有 84% 为好评。"
+                    "count": "(22,595)",
+                    "tooltip": "此游戏的 22,595 篇用户评测中有 84% 为好评。"
                 }
             }
         },
@@ -34399,7 +34423,7 @@
                 "index": 268,
                 "platform": "Steam",
                 "identifier": 672630,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Academia : School Simulator",
@@ -34447,6 +34471,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -34548,14 +34576,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(24)",
-                    "tooltip": "过去 30 天内的 24 篇用户评测中有 87% 为好评。"
+                    "count": "(22)",
+                    "tooltip": "过去 30 天内的 22 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,451)",
-                    "tooltip": "此游戏的 2,451 篇用户评测中有 85% 为好评。"
+                    "count": "(2,452)",
+                    "tooltip": "此游戏的 2,452 篇用户评测中有 85% 为好评。"
                 }
             }
         },
@@ -34564,7 +34592,7 @@
                 "index": 269,
                 "platform": "Steam",
                 "identifier": 684450,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Surviving the Aftermath",
@@ -34608,6 +34636,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -34705,14 +34737,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(18)",
-                    "tooltip": "过去 30 天内的 18 篇用户评测中有 66% 为好评。"
+                    "count": "(17)",
+                    "tooltip": "过去 30 天内的 17 篇用户评测中有 58% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(2,653)",
-                    "tooltip": "此游戏的 2,653 篇用户评测中有 72% 为好评。"
+                    "count": "(2,656)",
+                    "tooltip": "此游戏的 2,656 篇用户评测中有 72% 为好评。"
                 }
             }
         },
@@ -34721,7 +34753,7 @@
                 "index": 459,
                 "platform": "Steam",
                 "identifier": 688420,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Bad North: Jotunn Edition",
@@ -34770,6 +34802,10 @@
                     {
                         "id": 43,
                         "description": "Remote Play on TV"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -34788,28 +34824,72 @@
                 ],
                 "tags": [
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E6%88%98%E6%9C%AF/",
-                        "name": "即时战术"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E4%BA%89%E6%B8%B8%E6%88%8F/",
+                        "name": "战争游戏"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BB%B4%E4%BA%AC%E4%BA%BA/",
+                        "name": "维京人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A1%94%E9%98%B2/",
                         "name": "塔防"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E6%88%98%E6%9C%AF/",
+                        "name": "即时战术"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
+                        "name": "生存"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E7%B1%BB%20Rogue/",
+                        "name": "动作类 Rogue"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%9E%81%E7%AE%80%E4%B8%BB%E4%B9%89/",
                         "name": "极简主义"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%87%AA%E8%B5%B0%E6%A3%8B/",
+                        "name": "自走棋"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E4%BA%89/",
+                        "name": "战争"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%A3%8E%E6%A0%BC%E5%8C%96/",
+                        "name": "风格化"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E6%88%98%E7%95%A5/",
+                        "name": "即时战略"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
+                        "name": "战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%20Rogue/",
+                        "name": "类 Rogue"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%BD%BB%E5%BA%A6%20Rogue/",
                         "name": "轻度 Rogue"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%A0%BC%E6%96%97/",
+                        "name": "格斗"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
                         "name": "策略"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E6%88%98%E7%95%A5/",
-                        "name": "即时战略"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%B2%9C%E8%A1%80/",
+                        "name": "鲜血"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E7%88%B1/",
@@ -34820,65 +34900,21 @@
                         "name": "模拟"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E7%B1%BB%20Rogue/",
-                        "name": "动作类 Rogue"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF/",
                         "name": "战术"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%A6%E6%8E%A7/",
-                        "name": "触控"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%A3%8E%E6%A0%BC%E5%8C%96/",
-                        "name": "风格化"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
-                        "name": "困难"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/",
-                        "name": "休闲"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%89%E8%A7%92%E8%A7%86%E8%A7%92/",
-                        "name": "等角视角"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%B8%E4%B9%85%E6%AD%BB%E4%BA%A1/",
-                        "name": "永久死亡"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
-                        "name": "氛围"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%20Rogue/",
-                        "name": "类 Rogue"
                     }
                 ],
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(168)",
-                    "tooltip": "过去 30 天内的 168 篇用户评测中有 97% 为好评。"
+                    "count": "(165)",
+                    "tooltip": "过去 30 天内的 165 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(8,299)",
-                    "tooltip": "此游戏的 8,299 篇用户评测中有 93% 为好评。"
+                    "count": "(8,317)",
+                    "tooltip": "此游戏的 8,317 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -34887,7 +34923,7 @@
                 "index": 362,
                 "platform": "Steam",
                 "identifier": 692850,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Bloodstained: Ritual of the Night",
@@ -34947,6 +34983,10 @@
                     {
                         "id": 43,
                         "description": "Remote Play on TV"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -35048,14 +35088,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(176)",
-                    "tooltip": "过去 30 天内的 176 篇用户评测中有 85% 为好评。"
+                    "count": "(191)",
+                    "tooltip": "过去 30 天内的 191 篇用户评测中有 86% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(26,103)",
-                    "tooltip": "此游戏的 26,103 篇用户评测中有 94% 为好评。"
+                    "count": "(26,127)",
+                    "tooltip": "此游戏的 26,127 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -35064,7 +35104,7 @@
                 "index": 25,
                 "platform": "Steam",
                 "identifier": 694770,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Vestaria Saga I: War of the Scions",
@@ -35101,6 +35141,10 @@
                     {
                         "id": 18,
                         "description": "Partial Controller Support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -35180,7 +35224,7 @@
                 "index": 146,
                 "platform": "Steam",
                 "identifier": 704450,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Neverwinter Nights: Enhanced Edition",
@@ -35244,6 +35288,10 @@
                     {
                         "id": 17,
                         "description": "Includes level editor"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -35337,14 +35385,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(82)",
-                    "tooltip": "过去 30 天内的 82 篇用户评测中有 86% 为好评。"
+                    "count": "(84)",
+                    "tooltip": "过去 30 天内的 84 篇用户评测中有 85% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(6,351)",
-                    "tooltip": "此游戏的 6,351 篇用户评测中有 89% 为好评。"
+                    "count": "(6,360)",
+                    "tooltip": "此游戏的 6,360 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -35353,7 +35401,7 @@
                 "index": 93,
                 "platform": "Steam",
                 "identifier": 718670,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Cultist Simulator",
@@ -35405,6 +35453,10 @@
                     {
                         "id": 42,
                         "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -35506,14 +35558,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(77)",
-                    "tooltip": "过去 30 天内的 77 篇用户评测中有 92% 为好评。"
+                    "count": "(76)",
+                    "tooltip": "过去 30 天内的 76 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(7,649)",
-                    "tooltip": "此游戏的 7,649 篇用户评测中有 82% 为好评。"
+                    "count": "(7,661)",
+                    "tooltip": "此游戏的 7,661 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -35522,7 +35574,7 @@
                 "index": 277,
                 "platform": "Steam",
                 "identifier": 718850,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Age of Wonders: Planetfall",
@@ -35594,6 +35646,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -35685,16 +35741,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "褒贬不一",
-                    "cssClass": "mixed",
-                    "count": "(19)",
-                    "tooltip": "过去 30 天内的 19 篇用户评测中有 63% 为好评。"
+                    "summary": "多半好评",
+                    "cssClass": "positive",
+                    "count": "(16)",
+                    "tooltip": "过去 30 天内的 16 篇用户评测中有 75% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(4,359)",
-                    "tooltip": "此游戏的 4,359 篇用户评测中有 80% 为好评。"
+                    "count": "(4,361)",
+                    "tooltip": "此游戏的 4,361 篇用户评测中有 80% 为好评。"
                 }
             }
         },
@@ -35703,7 +35759,7 @@
                 "index": 376,
                 "platform": "Steam",
                 "identifier": 719040,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Wasteland 3",
@@ -35767,6 +35823,10 @@
                     {
                         "id": 42,
                         "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -35864,14 +35924,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(121)",
-                    "tooltip": "过去 30 天内的 121 篇用户评测中有 86% 为好评。"
+                    "count": "(120)",
+                    "tooltip": "过去 30 天内的 120 篇用户评测中有 86% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(14,697)",
-                    "tooltip": "此游戏的 14,697 篇用户评测中有 84% 为好评。"
+                    "count": "(14,710)",
+                    "tooltip": "此游戏的 14,710 篇用户评测中有 84% 为好评。"
                 }
             }
         },
@@ -35880,7 +35940,7 @@
                 "index": 479,
                 "platform": "Steam",
                 "identifier": 722060,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Dominions 5 - Warriors of the Faith",
@@ -35956,6 +36016,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -36039,7 +36103,7 @@
                 "index": 113,
                 "platform": "Steam",
                 "identifier": 729000,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Wytchwood",
@@ -36095,6 +36159,10 @@
                     {
                         "id": 43,
                         "description": "Remote Play on TV"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -36200,14 +36268,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(71)",
-                    "tooltip": "过去 30 天内的 71 篇用户评测中有 90% 为好评。"
+                    "count": "(78)",
+                    "tooltip": "过去 30 天内的 78 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,569)",
-                    "tooltip": "此游戏的 2,569 篇用户评测中有 93% 为好评。"
+                    "count": "(2,583)",
+                    "tooltip": "此游戏的 2,583 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -36216,7 +36284,7 @@
                 "index": 424,
                 "platform": "Steam",
                 "identifier": 743450,
-                "last_track_date": "2024-02-24"
+                "last_track_date": "2024-02-29"
             },
             "type": "Game",
             "title": "Monster Prom",
@@ -36292,6 +36360,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -36389,14 +36461,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(62)",
-                    "tooltip": "过去 30 天内的 62 篇用户评测中有 91% 为好评。"
+                    "count": "(65)",
+                    "tooltip": "过去 30 天内的 65 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(11,186)",
-                    "tooltip": "此游戏的 11,186 篇用户评测中有 93% 为好评。"
+                    "count": "(11,197)",
+                    "tooltip": "此游戏的 11,197 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -84855,15 +84927,16 @@
         "unknown": {
             "unicorn-overlord": {
                 "type": "Game",
-                "title": "",
+                "title": "Unicorn Overlord",
                 "start": "",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/a6ae06a62ce256d391b8a5a9186ab4ade2f5a3d3/catalog/provider/6/12/6-1-967247-52.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "unknown",
                     "name": "unicorn-overlord",
-                    "title": "",
+                    "title": "Unicorn Overlord",
                     "platformString": [],
                     "releaseDate": "",
-                    "summary": "",
+                    "summary": "From the masterminds that brought 13 Sentinels: Aegis Rim and Odin Sphere, ATLUS x Vanillaware presents the rebirth of tactical fantasy RPG. Fight against fate and embark on a royal adventure to regain your reign alongside trustworthy allies. Unicorn Overlord combines the timeless tactical RPG genre with overworld exploration and innovative battle system for a unique epic fantasy experience in the iconic Vanillaware style.",
                     "publisher": [],
                     "developer": [],
                     "genres": []
@@ -84872,42 +84945,48 @@
                     "index": 532,
                     "platform": "unknown",
                     "identifier": "https://www.metacritic.com/game/unicorn-overlord",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-29"
                 }
             },
             "final-fantasy-xvi": {
                 "type": "Game",
-                "title": "",
+                "title": "Final Fantasy XVI",
                 "start": "",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/71ffb93c6f94e82c3a7498f11c6e83f330a25cfa/catalog/provider/6/3/6-1-945734-13.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "unknown",
                     "name": "final-fantasy-xvi",
-                    "title": "",
+                    "title": "Final Fantasy XVI",
                     "platformString": [],
                     "releaseDate": "",
-                    "summary": "",
+                    "summary": "Introducing FINAL FANTASY XVI Coming to PlayStation 5. An all-new title in the legendary FINAL FANTASY series.  FINAL FANTASY XVI is the newest entry in the FINAL FANTASY series, coming to the PlayStation 5 (PS5) system. FINAL FANTASY XVI is an all-new standalone single player action RPG produced by Naoki Yoshida (FINAL FANTASY XIV, DRAGON QUEST X) and directed by Hiroshi Takai (FINAL FANTASY XIV, THE LAST REMNANT).",
                     "publisher": [],
                     "developer": [],
-                    "genres": []
+                    "genres": [],
+                    "metaScore": 87,
+                    "metaReviewsCount": 149,
+                    "userScore": 8.1,
+                    "userReviewsCount": 10327
                 },
                 "meta": {
                     "index": 533,
                     "platform": "unknown",
                     "identifier": "https://www.metacritic.com/game/final-fantasy-xvi",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-29"
                 }
             },
             "rise-of-the-ronin": {
                 "type": "Game",
-                "title": "",
+                "title": "Rise of the Ronin",
                 "start": "",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/f5db26ea61be23c1b36b809367e4e0f65521af21/catalog/provider/6/12/6-1-989360-58.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "unknown",
                     "name": "rise-of-the-ronin",
-                    "title": "",
+                    "title": "Rise of the Ronin",
                     "platformString": [],
                     "releaseDate": "",
-                    "summary": "",
+                    "summary": "It's darkest before dawn. In Rise of the Ronin you will explore an evolving world as you fight to forge a new era for Japan.\n\nYou are a Ronin, a warrior free from all masters and bonds and as your destiny intertwines with story characters, take part in an immersive combat focused action experience.",
                     "publisher": [],
                     "developer": [],
                     "genres": []
@@ -84916,20 +84995,21 @@
                     "index": 534,
                     "platform": "unknown",
                     "identifier": "https://www.metacritic.com/game/rise-of-the-ronin",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-29"
                 }
             },
             "princess-peach-showtime": {
                 "type": "Game",
-                "title": "",
+                "title": "Princess Peach: Showtime!",
                 "start": "",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/ea72c190b5587d805d68324785d539645cd884c3/catalog/provider/6/12/6-1-967345-58.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "unknown",
                     "name": "princess-peach-showtime",
-                    "title": "",
+                    "title": "Princess Peach: Showtime!",
                     "platformString": [],
                     "releaseDate": "",
-                    "summary": "",
+                    "summary": "Princess Peach will star as the main character in her own new game, which will be available in 2024.",
                     "publisher": [],
                     "developer": [],
                     "genres": []
@@ -84938,29 +85018,59 @@
                     "index": 535,
                     "platform": "unknown",
                     "identifier": "https://www.metacritic.com/game/princess-peach-showtime",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-29"
                 }
             },
             "prince-of-persia-the-lost-crown": {
                 "type": "Game",
-                "title": "",
+                "title": "Prince of Persia: The Lost Crown",
                 "start": "",
                 "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/0fb5853059cfe16c5bafe3a22fe82f919db4142d/catalog/provider/7/2/7-1704832285.jpg?auto=webp&fit=cover&height=72&width=48",
                     "platform": "unknown",
                     "name": "prince-of-persia-the-lost-crown",
-                    "title": "",
+                    "title": "Prince of Persia: The Lost Crown",
                     "platformString": [],
                     "releaseDate": "",
-                    "summary": "",
+                    "summary": "Dash into a stylish and thrilling action-adventure platformer game set in a mythological Persian world where the boundaries of time and space are yours to manipulate. Use your Time Powers, combat and platforming skills to perform deadly combos and defeat time-corrupted enemies and mythological creatures. Acquire and equip new Amulets at shopkeepers to play as you see fit. Discover a cursed Persian-inspired world filled with bigger-than-life landmarks. Explore a variety of highly detailed biomes, each with its own identity, wonders and dangers. Use your wits to solve puzzles, find hidden treasures and complete quests to learn more about this corupted place. Immerse yourself into a Persian mythological fantasy through an intriguing and original story. Cross paths with colorful characters to better unravel the mysteries of Mount Qaf. Enjoy high quality graphics, immersive cinematics and fresh Artistic Direction, along with a unique gameplay fluidity thanks to 60 fps rate on all platforms. [Ubisoft]",
                     "publisher": [],
                     "developer": [],
-                    "genres": []
+                    "genres": [],
+                    "metaScore": 86,
+                    "metaReviewsCount": 83,
+                    "userScore": 8.6,
+                    "userReviewsCount": 569
                 },
                 "meta": {
                     "index": 536,
                     "platform": "unknown",
                     "identifier": "https://www.metacritic.com/game/prince-of-persia-the-lost-crown",
-                    "last_track_date": "2024-02-09"
+                    "last_track_date": "2024-02-29"
+                }
+            },
+            "final-fantasy-vii-rebirth": {
+                "type": "Game",
+                "title": "Final Fantasy VII Rebirth",
+                "start": "",
+                "app_data": {
+                    "imageURL": "https://www.metacritic.com/a/img/resize/ae027c7fd120739c9beffda631c5a3453c32372f/catalog/provider/6/12/6-1-876662-58.jpg?auto=webp&fit=cover&height=72&width=48",
+                    "platform": "unknown",
+                    "name": "final-fantasy-vii-rebirth",
+                    "title": "Final Fantasy VII Rebirth",
+                    "platformString": [],
+                    "releaseDate": "",
+                    "summary": "FINAL FANTASY VII REBIRTH is the  new story in the FINAL FANTASY VII remake project, a reimagining of the iconic original game into three standalone titles by its original creators. In this game, players will enjoy various new elements as the story unfolds, culminating in the party’s journey to “The Forgotten Capital” from the original FINAL FANTASY VII. Cloud and his comrades escape the city of Midgar in pursuit of the fallen hero, Sephiroth. As they travel across the world, they find themselves on a journey that will decide the fate of the planet. In this standalone adventure for fans and newcomers, Cloud and his comrades venture across the planet, their fates unwritten, making each step outside the dystopian city of Midgar fresh and mysterious. [Square Enix]",
+                    "publisher": [],
+                    "developer": [],
+                    "genres": [],
+                    "metaScore": 92,
+                    "metaReviewsCount": 128
+                },
+                "meta": {
+                    "index": 545,
+                    "platform": "unknown",
+                    "identifier": "https://www.metacritic.com/game/final-fantasy-vii-rebirth",
+                    "last_track_date": "2024-02-29"
                 }
             }
         }
