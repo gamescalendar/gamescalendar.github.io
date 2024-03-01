@@ -9629,7 +9629,7 @@
                 "index": 237,
                 "platform": "Steam",
                 "identifier": 235600,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Tom Clancy’s Splinter Cell Blacklist",
@@ -9764,16 +9764,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(109)",
-                    "tooltip": "过去 30 天内的 109 篇用户评测中有 79% 为好评。"
+                    "count": "(122)",
+                    "tooltip": "过去 30 天内的 122 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(16,100)",
-                    "tooltip": "此游戏的 16,100 篇用户评测中有 81% 为好评。"
+                    "count": "(16,125)",
+                    "tooltip": "此游戏的 16,125 篇用户评测中有 81% 为好评。"
                 }
             }
         },
@@ -9782,7 +9782,7 @@
                 "index": 104,
                 "platform": "Steam",
                 "identifier": 236430,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "DARK SOULS™ II",
@@ -9843,6 +9843,10 @@
                     {
                         "id": 43,
                         "description": "Remote Play on TV"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -9940,14 +9944,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(188)",
-                    "tooltip": "过去 30 天内的 188 篇用户评测中有 83% 为好评。"
+                    "count": "(201)",
+                    "tooltip": "过去 30 天内的 201 篇用户评测中有 84% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(29,068)",
-                    "tooltip": "此游戏的 29,068 篇用户评测中有 88% 为好评。"
+                    "count": "(29,096)",
+                    "tooltip": "此游戏的 29,096 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -9956,7 +9960,7 @@
                 "index": 282,
                 "platform": "Steam",
                 "identifier": 236850,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Europa Universalis IV",
@@ -9968,7 +9972,7 @@
                 "description": "Europa Universalis IV gives you control of a nation through four dramatic centuries. Rule your land and dominate the world with unparalleled freedom, depth and historical accuracy. Write a new history of the world and build an empire for the ages.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "13 Aug, 2013"
+                    "date": "Aug 13, 2013"
                 },
                 "language": {
                     "zh": {
@@ -10029,6 +10033,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -10126,14 +10134,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(488)",
-                    "tooltip": "过去 30 天内的 488 篇用户评测中有 86% 为好评。"
+                    "count": "(483)",
+                    "tooltip": "过去 30 天内的 483 篇用户评测中有 85% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(84,158)",
-                    "tooltip": "此游戏的 84,158 篇用户评测中有 86% 为好评。"
+                    "count": "(84,224)",
+                    "tooltip": "此游戏的 84,224 篇用户评测中有 86% 为好评。"
                 }
             }
         },
@@ -10142,7 +10150,7 @@
                 "index": 161,
                 "platform": "Steam",
                 "identifier": 238010,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Deus Ex: Human Revolution - Director's Cut",
@@ -10202,6 +10210,10 @@
                     {
                         "id": 42,
                         "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -10299,14 +10311,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(135)",
-                    "tooltip": "过去 30 天内的 135 篇用户评测中有 91% 为好评。"
+                    "count": "(127)",
+                    "tooltip": "过去 30 天内的 127 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(22,491)",
-                    "tooltip": "此游戏的 22,491 篇用户评测中有 92% 为好评。"
+                    "count": "(22,498)",
+                    "tooltip": "此游戏的 22,498 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -10315,7 +10327,7 @@
                 "index": 273,
                 "platform": "Steam",
                 "identifier": 238370,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Magicka 2",
@@ -10387,6 +10399,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -10399,99 +10415,18 @@
                         "description": "Adventure"
                     }
                 ],
-                "tags": [
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%AD%94%E6%B3%95/",
-                        "name": "魔法"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%88%E4%BD%9C/",
-                        "name": "合作"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
-                        "name": "冒险"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
-                        "name": "多人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%96%9C%E5%89%A7/",
-                        "name": "喜剧"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9C%A8%E7%BA%BF%E5%90%88%E4%BD%9C/",
-                        "name": "在线合作"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/",
-                        "name": "欢乐"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9C%AC%E5%9C%B0%E5%90%88%E4%BD%9C/",
-                        "name": "本地合作"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "角色扮演"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
-                        "name": "氛围"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%A2%E9%98%9F%E5%AF%BC%E5%90%91/",
-                        "name": "团队导向"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%A9%E5%AE%B6%E5%AF%B9%E6%88%98/",
-                        "name": "玩家对战"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
-                        "name": "奇幻"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
-                        "name": "开放世界"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9C%AC%E5%9C%B0%E5%A4%9A%E4%BA%BA/",
-                        "name": "本地多人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A1%80%E8%85%A5/",
-                        "name": "血腥"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BD%91%E7%BB%9C%E6%A2%97/",
-                        "name": "网络梗"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%89%E8%A7%92%E8%A7%86%E8%A7%92/",
-                        "name": "等角视角"
-                    }
-                ],
+                "tags": [],
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(67)",
-                    "tooltip": "过去 30 天内的 67 篇用户评测中有 85% 为好评。"
+                    "count": "(58)",
+                    "tooltip": "过去 30 天内的 58 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(8,362)",
-                    "tooltip": "此游戏的 8,362 篇用户评测中有 82% 为好评。"
+                    "count": "(8,368)",
+                    "tooltip": "此游戏的 8,368 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -10500,7 +10435,7 @@
                 "index": 378,
                 "platform": "Steam",
                 "identifier": 240760,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Wasteland 2: Director's Cut",
@@ -10548,6 +10483,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -10663,7 +10602,7 @@
                 "index": 225,
                 "platform": "Steam",
                 "identifier": 242050,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Assassin’s Creed® IV Black Flag™",
@@ -10715,99 +10654,18 @@
                         "description": "Adventure"
                     }
                 ],
-                "tags": [
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B5%B7%E7%9B%97/",
-                        "name": "海盗"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
-                        "name": "开放世界"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%97%E6%9D%80/",
-                        "name": "暗杀"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
-                        "name": "冒险"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%BD%9C%E8%A1%8C/",
-                        "name": "潜行"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B7%91%E9%85%B7/",
-                        "name": "跑酷"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
-                        "name": "第三人称"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B5%B7%E5%86%9B/",
-                        "name": "海军"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
-                        "name": "多人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8E%86%E5%8F%B2/",
-                        "name": "历史"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
-                        "name": "剧情丰富"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
-                        "name": "探索"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
-                        "name": "动作冒险"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B5%B7%E6%88%98/",
-                        "name": "海战"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
-                        "name": "氛围"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "角色扮演"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%90%E4%BA%BA/",
-                        "name": "成人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "动作角色扮演"
-                    }
-                ],
+                "tags": [],
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(675)",
-                    "tooltip": "过去 30 天内的 675 篇用户评测中有 84% 为好评。"
+                    "count": "(794)",
+                    "tooltip": "过去 30 天内的 794 篇用户评测中有 84% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(55,940)",
-                    "tooltip": "此游戏的 55,940 篇用户评测中有 88% 为好评。"
+                    "count": "(56,114)",
+                    "tooltip": "此游戏的 56,114 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -10816,7 +10674,7 @@
                 "index": 244,
                 "platform": "Steam",
                 "identifier": 243470,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Watch_Dogs™",
@@ -10957,14 +10815,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(489)",
-                    "tooltip": "过去 30 天内的 489 篇用户评测中有 87% 为好评。"
+                    "count": "(528)",
+                    "tooltip": "过去 30 天内的 528 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(36,245)",
-                    "tooltip": "此游戏的 36,245 篇用户评测中有 76% 为好评。"
+                    "count": "(36,334)",
+                    "tooltip": "此游戏的 36,334 篇用户评测中有 76% 为好评。"
                 }
             }
         },
@@ -10973,7 +10831,7 @@
                 "index": 291,
                 "platform": "Steam",
                 "identifier": 243970,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Invisible, Inc.",
@@ -11021,6 +10879,10 @@
                     {
                         "id": 42,
                         "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -11037,99 +10899,18 @@
                         "description": "Strategy"
                     }
                 ],
-                "tags": [
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B/",
-                        "name": "赛博朋克"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
-                        "name": "困难"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%89%E8%A7%92%E8%A7%86%E8%A7%92/",
-                        "name": "等角视角"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%9C%AF/",
-                        "name": "回合制战术"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
-                        "name": "策略"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "战术角色扮演"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%BD%BB%E5%BA%A6%20Rogue/",
-                        "name": "轻度 Rogue"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
-                        "name": "科幻"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%BD%9C%E8%A1%8C/",
-                        "name": "潜行"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF/",
-                        "name": "战术"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%B8%E4%B9%85%E6%AD%BB%E4%BA%A1/",
-                        "name": "永久死亡"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6/",
-                        "name": "回合制"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%20Rogue/",
-                        "name": "类 Rogue"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%B3%E6%80%A7%E4%B8%BB%E8%A7%92/",
-                        "name": "女性主角"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A8%8B%E5%BA%8F%E7%94%9F%E6%88%90/",
-                        "name": "程序生成"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%80%89%E6%8B%A9%E5%8F%96%E5%90%91/",
-                        "name": "选择取向"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E6%88%98%E7%95%A5/",
-                        "name": "回合战略"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
-                        "name": "回合制战斗"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/",
-                        "name": "模拟"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    }
-                ],
+                "tags": [],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(16)",
-                    "tooltip": "过去 30 天内的 16 篇用户评测中有 87% 为好评。"
+                    "count": "(13)",
+                    "tooltip": "过去 30 天内的 13 篇用户评测中有 76% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(4,724)",
-                    "tooltip": "此游戏的 4,724 篇用户评测中有 91% 为好评。"
+                    "count": "(4,726)",
+                    "tooltip": "此游戏的 4,726 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -11138,7 +10919,7 @@
                 "index": 242,
                 "platform": "Steam",
                 "identifier": 245490,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Trials Fusion™",
@@ -11182,6 +10963,10 @@
                     {
                         "id": 18,
                         "description": "Partial Controller Support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -11275,14 +11060,14 @@
                 "recentReview": {
                     "summary": "多半差评",
                     "cssClass": "",
-                    "count": "(13)",
-                    "tooltip": "过去 30 天内的 13 篇用户评测中有 38% 为好评。"
+                    "count": "(14)",
+                    "tooltip": "过去 30 天内的 14 篇用户评测中有 35% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(2,018)",
-                    "tooltip": "此游戏的 2,018 篇用户评测中有 67% 为好评。"
+                    "count": "(2,019)",
+                    "tooltip": "此游戏的 2,019 篇用户评测中有 67% 为好评。"
                 }
             }
         },
@@ -11291,7 +11076,7 @@
                 "index": 385,
                 "platform": "Steam",
                 "identifier": 247080,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Crypt of the NecroDancer",
@@ -11384,6 +11169,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -11485,14 +11274,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(59)",
-                    "tooltip": "过去 30 天内的 59 篇用户评测中有 94% 为好评。"
+                    "count": "(62)",
+                    "tooltip": "过去 30 天内的 62 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(20,905)",
-                    "tooltip": "此游戏的 20,905 篇用户评测中有 95% 为好评。"
+                    "count": "(20,911)",
+                    "tooltip": "此游戏的 20,911 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -11501,7 +11290,7 @@
                 "index": 477,
                 "platform": "Steam",
                 "identifier": 248510,
-                "last_track_date": "2024-02-26"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Dominions 3: The Awakening",
@@ -11541,6 +11330,10 @@
                     {
                         "id": 27,
                         "description": "Cross-Platform Multiplayer"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -69644,7 +69437,7 @@
                 "index": 501,
                 "platform": "Steam",
                 "identifier": 1747760,
-                "last_track_date": "2024-02-25"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Momodora: Moonlit Farewell",
@@ -69656,7 +69449,7 @@
                 "description": "&quot;Momodora: Moonlit Farewell&quot; is the latest installment in the Momodora series. Join Momo, High Priestess of the village of Koho, as she embarks on a divine mission to save her people from imminent destruction at the hands of the demon hordes summoned by a malevolent bellringer.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "Jan 11, 2024"
+                    "date": "11 Jan, 2024"
                 },
                 "language": {
                     "zh": {
@@ -69692,6 +69485,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -69770,16 +69567,16 @@
                         "name": "魔法"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
+                        "name": "色情内容"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
                         "name": "独立"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
                         "name": "动漫"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
-                        "name": "色情内容"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/",
@@ -69793,14 +69590,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(267)",
-                    "tooltip": "过去 30 天内的 267 篇用户评测中有 92% 为好评。"
+                    "count": "(191)",
+                    "tooltip": "过去 30 天内的 191 篇用户评测中有 91% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,436)",
-                    "tooltip": "此游戏的 1,436 篇用户评测中有 92% 为好评。"
+                    "count": "(1,449)",
+                    "tooltip": "此游戏的 1,449 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -71428,7 +71225,7 @@
                 "index": 487,
                 "platform": "Steam",
                 "identifier": 1830970,
-                "last_track_date": "2024-02-25"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "The Last Flame",
@@ -71469,6 +71266,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -71495,97 +71296,21 @@
                 ],
                 "tags": [
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%87%AA%E8%B5%B0%E6%A3%8B/",
-                        "name": "自走棋"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
-                        "name": "策略"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF/",
-                        "name": "战术"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%20Rogue/",
-                        "name": "类 Rogue"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E6%88%98%E7%95%A5/",
-                        "name": "回合战略"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
-                        "name": "冒险"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%85%AD%E8%A7%92%E6%A0%BC%E6%A3%8B%E7%9B%98/",
-                        "name": "六角格棋盘"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "角色扮演"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8A%A2%E5%85%88%E4%BD%93%E9%AA%8C/",
                         "name": "抢先体验"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%9C%AF/",
-                        "name": "回合制战术"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
-                        "name": "独立"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%A2%E9%98%9F%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "团队角色扮演"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
-                        "name": "奇幻"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6/",
-                        "name": "回合制"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AE%A1%E7%90%86/",
-                        "name": "管理"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
-                        "name": "生存"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E7%8E%A9%E4%BB%B7%E5%80%BC/",
-                        "name": "重玩价值"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A8%8B%E5%BA%8F%E7%94%9F%E6%88%90/",
-                        "name": "程序生成"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "策略角色扮演"
                     }
                 ],
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(275)",
-                    "tooltip": "过去 30 天内的 275 篇用户评测中有 85% 为好评。"
+                    "count": "(212)",
+                    "tooltip": "过去 30 天内的 212 篇用户评测中有 83% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(848)",
-                    "tooltip": "此游戏的 848 篇用户评测中有 86% 为好评。"
+                    "count": "(877)",
+                    "tooltip": "此游戏的 877 篇用户评测中有 86% 为好评。"
                 }
             }
         },
@@ -78631,7 +78356,7 @@
                 "index": 194,
                 "platform": "Steam",
                 "identifier": 2138330,
-                "last_track_date": "2024-02-25"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Cyberpunk 2077: Phantom Liberty",
@@ -78683,6 +78408,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -78776,14 +78505,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(519)",
-                    "tooltip": "过去 30 天内的 519 篇用户评测中有 90% 为好评。"
+                    "count": "(514)",
+                    "tooltip": "过去 30 天内的 514 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(13,260)",
-                    "tooltip": "此游戏的 13,260 篇用户评测中有 89% 为好评。"
+                    "count": "(13,328)",
+                    "tooltip": "此游戏的 13,328 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -80786,7 +80515,7 @@
                 "index": 233,
                 "platform": "Steam",
                 "identifier": 2208920,
-                "last_track_date": "2024-02-25"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Assassin's Creed Valhalla",
@@ -80931,14 +80660,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(736)",
-                    "tooltip": "过去 30 天内的 736 篇用户评测中有 69% 为好评。"
+                    "count": "(837)",
+                    "tooltip": "过去 30 天内的 837 篇用户评测中有 69% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(17,699)",
-                    "tooltip": "此游戏的 17,699 篇用户评测中有 71% 为好评。"
+                    "count": "(17,887)",
+                    "tooltip": "此游戏的 17,887 篇用户评测中有 71% 为好评。"
                 }
             }
         },
@@ -80947,7 +80676,7 @@
                 "index": 492,
                 "platform": "Steam",
                 "identifier": 2228010,
-                "last_track_date": "2024-02-25"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Right and Down and Dice",
@@ -80987,6 +80716,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -81081,21 +80814,21 @@
                         "name": "动作"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/",
-                        "name": "欢乐"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(25)",
-                    "tooltip": "过去 30 天内的 25 篇用户评测中有 84% 为好评。"
+                    "count": "(14)",
+                    "tooltip": "过去 30 天内的 14 篇用户评测中有 78% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评",
                     "cssClass": "positive",
-                    "count": "(46)",
-                    "tooltip": "此游戏的 46 篇用户评测中有 91% 为好评。"
+                    "count": "(45)",
+                    "tooltip": "此游戏的 45 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -81280,7 +81013,7 @@
                 "index": 246,
                 "platform": "Steam",
                 "identifier": 2239550,
-                "last_track_date": "2024-02-25"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Watch Dogs®: Legion",
@@ -81437,14 +81170,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(243)",
-                    "tooltip": "过去 30 天内的 243 篇用户评测中有 59% 为好评。"
+                    "count": "(261)",
+                    "tooltip": "过去 30 天内的 261 篇用户评测中有 62% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(6,660)",
-                    "tooltip": "此游戏的 6,660 篇用户评测中有 59% 为好评。"
+                    "count": "(6,710)",
+                    "tooltip": "此游戏的 6,710 篇用户评测中有 59% 为好评。"
                 }
             }
         },
@@ -85422,7 +85155,7 @@
                 "index": 480,
                 "platform": "Steam",
                 "identifier": 2511500,
-                "last_track_date": "2024-02-25"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "Dominions 6 - Rise of the Pantokrator",
@@ -85506,6 +85239,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -85579,14 +85316,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(163)",
-                    "tooltip": "过去 30 天内的 163 篇用户评测中有 90% 为好评。"
+                    "count": "(120)",
+                    "tooltip": "过去 30 天内的 120 篇用户评测中有 89% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(552)",
-                    "tooltip": "此游戏的 552 篇用户评测中有 86% 为好评。"
+                    "count": "(565)",
+                    "tooltip": "此游戏的 565 篇用户评测中有 86% 为好评。"
                 }
             }
         },
@@ -86620,7 +86357,7 @@
                 "index": 463,
                 "platform": "Steam",
                 "identifier": 2739830,
-                "last_track_date": "2024-02-25"
+                "last_track_date": "2024-03-01"
             },
             "type": "Game",
             "title": "King Arthur: Legion IX",
