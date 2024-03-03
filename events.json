@@ -31957,7 +31957,7 @@
                 "index": 92,
                 "platform": "Steam",
                 "identifier": 601150,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Devil May Cry 5",
@@ -32025,6 +32025,10 @@
                     {
                         "id": 61,
                         "description": "HDR available"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -32118,14 +32122,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,312)",
-                    "tooltip": "过去 30 天内的 1,312 篇用户评测中有 95% 为好评。"
+                    "count": "(1,130)",
+                    "tooltip": "过去 30 天内的 1,130 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(78,430)",
-                    "tooltip": "此游戏的 78,430 篇用户评测中有 95% 为好评。"
+                    "count": "(78,607)",
+                    "tooltip": "此游戏的 78,607 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -32299,7 +32303,7 @@
                 "index": 190,
                 "platform": "Steam",
                 "identifier": 601430,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "The Evil Within 2",
@@ -32347,6 +32351,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -32444,14 +32452,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(180)",
-                    "tooltip": "过去 30 天内的 180 篇用户评测中有 90% 为好评。"
+                    "count": "(165)",
+                    "tooltip": "过去 30 天内的 165 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(16,702)",
-                    "tooltip": "此游戏的 16,702 篇用户评测中有 91% 为好评。"
+                    "count": "(16,718)",
+                    "tooltip": "此游戏的 16,718 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -32460,7 +32468,7 @@
                 "index": 296,
                 "platform": "Steam",
                 "identifier": 601840,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Griftlands",
@@ -32508,6 +32516,10 @@
                     {
                         "id": 42,
                         "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -32602,13 +32614,13 @@
                     "summary": "特别好评",
                     "cssClass": "positive",
                     "count": "(51)",
-                    "tooltip": "过去 30 天内的 51 篇用户评测中有 90% 为好评。"
+                    "tooltip": "过去 30 天内的 51 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(12,494)",
-                    "tooltip": "此游戏的 12,494 篇用户评测中有 94% 为好评。"
+                    "count": "(12,502)",
+                    "tooltip": "此游戏的 12,502 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -32834,7 +32846,7 @@
                 "index": 300,
                 "platform": "Steam",
                 "identifier": 607080,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Psychonauts 2",
@@ -32882,6 +32894,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -32979,14 +32995,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(109)",
-                    "tooltip": "过去 30 天内的 109 篇用户评测中有 89% 为好评。"
+                    "count": "(108)",
+                    "tooltip": "过去 30 天内的 108 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(8,876)",
-                    "tooltip": "此游戏的 8,876 篇用户评测中有 96% 为好评。"
+                    "count": "(8,889)",
+                    "tooltip": "此游戏的 8,889 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -32995,7 +33011,7 @@
                 "index": 125,
                 "platform": "Steam",
                 "identifier": 610370,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Desperados III",
@@ -33047,6 +33063,10 @@
                     {
                         "id": 43,
                         "description": "Remote Play on TV"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -33140,14 +33160,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(62)",
-                    "tooltip": "过去 30 天内的 62 篇用户评测中有 96% 为好评。"
+                    "count": "(61)",
+                    "tooltip": "过去 30 天内的 61 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(8,862)",
-                    "tooltip": "此游戏的 8,862 篇用户评测中有 96% 为好评。"
+                    "count": "(8,872)",
+                    "tooltip": "此游戏的 8,872 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -57426,7 +57446,7 @@
                 "index": 198,
                 "platform": "Steam",
                 "identifier": 1295510,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "DRAGON QUEST® XI S: Echoes of an Elusive Age™ - Definitive Edition",
@@ -57478,6 +57498,10 @@
                     {
                         "id": 42,
                         "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -57520,12 +57544,12 @@
                         "name": "3D"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/",
-                        "name": "欢乐"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
                         "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%AC%A2%E4%B9%90/",
+                        "name": "欢乐"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/2D/",
@@ -57575,14 +57599,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(117)",
-                    "tooltip": "过去 30 天内的 117 篇用户评测中有 90% 为好评。"
+                    "count": "(122)",
+                    "tooltip": "过去 30 天内的 122 篇用户评测中有 91% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(6,802)",
-                    "tooltip": "此游戏的 6,802 篇用户评测中有 93% 为好评。"
+                    "count": "(6,819)",
+                    "tooltip": "此游戏的 6,819 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -57591,7 +57615,7 @@
                 "index": 481,
                 "platform": "Steam",
                 "identifier": 1307550,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Craftopia",
@@ -57655,6 +57679,10 @@
                     {
                         "id": 42,
                         "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -57764,8 +57792,8 @@
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(16,347)",
-                    "tooltip": "此游戏的 16,347 篇用户评测中有 79% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
+                    "count": "(16,345)",
+                    "tooltip": "此游戏的 16,345 篇用户评测中有 79% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
                 }
             }
         },
@@ -57931,7 +57959,7 @@
                 "index": 212,
                 "platform": "Steam",
                 "identifier": 1325200,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Nioh 2 – The Complete Edition",
@@ -58003,6 +58031,10 @@
                     {
                         "id": 61,
                         "description": "HDR available"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -58100,14 +58132,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(282)",
-                    "tooltip": "过去 30 天内的 282 篇用户评测中有 87% 为好评。"
+                    "count": "(288)",
+                    "tooltip": "过去 30 天内的 288 篇用户评测中有 87% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(27,701)",
-                    "tooltip": "此游戏的 27,701 篇用户评测中有 88% 为好评。"
+                    "count": "(27,746)",
+                    "tooltip": "此游戏的 27,746 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -58116,7 +58148,7 @@
                 "index": 372,
                 "platform": "Steam",
                 "identifier": 1328670,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Mass Effect™ Legendary Edition",
@@ -58261,14 +58293,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(724)",
-                    "tooltip": "过去 30 天内的 724 篇用户评测中有 88% 为好评。"
+                    "count": "(743)",
+                    "tooltip": "过去 30 天内的 743 篇用户评测中有 89% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(39,938)",
-                    "tooltip": "此游戏的 39,938 篇用户评测中有 91% 为好评。"
+                    "count": "(40,046)",
+                    "tooltip": "此游戏的 40,046 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -58277,7 +58309,7 @@
                 "index": 298,
                 "platform": "Steam",
                 "identifier": 1341820,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "As Dusk Falls",
@@ -58349,6 +58381,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -58442,14 +58478,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(93)",
-                    "tooltip": "过去 30 天内的 93 篇用户评测中有 91% 为好评。"
+                    "count": "(92)",
+                    "tooltip": "过去 30 天内的 92 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,341)",
-                    "tooltip": "此游戏的 2,341 篇用户评测中有 90% 为好评。"
+                    "count": "(2,353)",
+                    "tooltip": "此游戏的 2,353 篇用户评测中有 90% 为好评。"
                 }
             }
         },
@@ -58458,7 +58494,7 @@
                 "index": 361,
                 "platform": "Steam",
                 "identifier": 1352930,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "HAAK",
@@ -58506,6 +58542,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -58607,14 +58647,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(45)",
-                    "tooltip": "过去 30 天内的 45 篇用户评测中有 88% 为好评。"
+                    "count": "(43)",
+                    "tooltip": "过去 30 天内的 43 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,149)",
-                    "tooltip": "此游戏的 2,149 篇用户评测中有 90% 为好评。"
+                    "count": "(2,152)",
+                    "tooltip": "此游戏的 2,152 篇用户评测中有 90% 为好评。"
                 }
             }
         },
@@ -58623,7 +58663,7 @@
                 "index": 207,
                 "platform": "Steam",
                 "identifier": 1358700,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "STRANGER OF PARADISE FINAL FANTASY ORIGIN",
@@ -58684,6 +58724,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -58750,12 +58794,12 @@
                         "name": "奇幻"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%A9%E5%AE%B6%E5%AF%B9%E6%88%98/",
-                        "name": "玩家对战"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
                         "name": "多人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%A9%E5%AE%B6%E5%AF%B9%E6%88%98/",
+                        "name": "玩家对战"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
@@ -58783,16 +58827,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(86)",
-                    "tooltip": "过去 30 天内的 86 篇用户评测中有 79% 为好评。"
+                    "count": "(81)",
+                    "tooltip": "过去 30 天内的 81 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,032)",
-                    "tooltip": "此游戏的 2,032 篇用户评测中有 85% 为好评。"
+                    "count": "(2,038)",
+                    "tooltip": "此游戏的 2,038 篇用户评测中有 85% 为好评。"
                 }
             }
         },
@@ -58801,7 +58845,7 @@
                 "index": 174,
                 "platform": "Steam",
                 "identifier": 1364780,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Street Fighter™ 6",
@@ -58877,6 +58921,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -58974,14 +59022,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(785)",
-                    "tooltip": "过去 30 天内的 785 篇用户评测中有 80% 为好评。"
+                    "count": "(794)",
+                    "tooltip": "过去 30 天内的 794 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(21,963)",
-                    "tooltip": "此游戏的 21,963 篇用户评测中有 86% 为好评。"
+                    "count": "(22,125)",
+                    "tooltip": "此游戏的 22,125 篇用户评测中有 86% 为好评。"
                 }
             }
         },
@@ -58990,7 +59038,7 @@
                 "index": 43,
                 "platform": "Steam",
                 "identifier": 1366540,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Dyson Sphere Program",
@@ -59026,6 +59074,10 @@
                     {
                         "id": 22,
                         "description": "Steam Achievements"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -59131,14 +59183,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(725)",
-                    "tooltip": "过去 30 天内的 725 篇用户评测中有 96% 为好评。"
+                    "count": "(674)",
+                    "tooltip": "过去 30 天内的 674 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(70,276)",
-                    "tooltip": "此游戏的 70,276 篇用户评测中有 97% 为好评。"
+                    "count": "(70,362)",
+                    "tooltip": "此游戏的 70,362 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -59147,7 +59199,7 @@
                 "index": 359,
                 "platform": "Steam",
                 "identifier": 1369630,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "ENDER LILIES: Quietus of the Knights",
@@ -59204,6 +59256,10 @@
                     {
                         "id": 43,
                         "description": "Remote Play on TV"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -59305,14 +59361,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(367)",
-                    "tooltip": "过去 30 天内的 367 篇用户评测中有 91% 为好评。"
+                    "count": "(372)",
+                    "tooltip": "过去 30 天内的 372 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(29,008)",
-                    "tooltip": "此游戏的 29,008 篇用户评测中有 94% 为好评。"
+                    "count": "(29,071)",
+                    "tooltip": "此游戏的 29,071 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -59321,7 +59377,7 @@
                 "index": 48,
                 "platform": "Steam",
                 "identifier": 1371720,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Card Shark",
@@ -59369,6 +59425,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -59470,14 +59530,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(26)",
-                    "tooltip": "过去 30 天内的 26 篇用户评测中有 92% 为好评。"
+                    "count": "(31)",
+                    "tooltip": "过去 30 天内的 31 篇用户评测中有 87% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,145)",
-                    "tooltip": "此游戏的 2,145 篇用户评测中有 91% 为好评。"
+                    "count": "(2,154)",
+                    "tooltip": "此游戏的 2,154 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -59631,7 +59691,7 @@
                 "index": 176,
                 "platform": "Steam",
                 "identifier": 1375400,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Ghosts 'n Goblins Resurrection",
@@ -59695,6 +59755,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -59788,14 +59852,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(11)",
-                    "tooltip": "过去 30 天内的 11 篇用户评测中有 45% 为好评。"
+                    "count": "(19)",
+                    "tooltip": "过去 30 天内的 19 篇用户评测中有 52% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(720)",
-                    "tooltip": "此游戏的 720 篇用户评测中有 79% 为好评。"
+                    "count": "(728)",
+                    "tooltip": "此游戏的 728 篇用户评测中有 79% 为好评。"
                 }
             }
         },
@@ -59804,7 +59868,7 @@
                 "index": 417,
                 "platform": "Steam",
                 "identifier": 1382070,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Viewfinder",
@@ -59844,6 +59908,10 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -59941,14 +60009,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(180)",
-                    "tooltip": "过去 30 天内的 180 篇用户评测中有 96% 为好评。"
+                    "count": "(160)",
+                    "tooltip": "过去 30 天内的 160 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(4,787)",
-                    "tooltip": "此游戏的 4,787 篇用户评测中有 93% 为好评。"
+                    "count": "(4,806)",
+                    "tooltip": "此游戏的 4,806 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -59957,7 +60025,7 @@
                 "index": 267,
                 "platform": "Steam",
                 "identifier": 1385380,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "Across the Obelisk",
@@ -60014,6 +60082,10 @@
                     {
                         "id": 25,
                         "description": "Steam Leaderboards"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -60119,14 +60191,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(105)",
-                    "tooltip": "过去 30 天内的 105 篇用户评测中有 70% 为好评。"
+                    "count": "(101)",
+                    "tooltip": "过去 30 天内的 101 篇用户评测中有 70% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(8,461)",
-                    "tooltip": "此游戏的 8,461 篇用户评测中有 84% 为好评。"
+                    "count": "(8,470)",
+                    "tooltip": "此游戏的 8,470 篇用户评测中有 84% 为好评。"
                 }
             }
         },
@@ -60135,7 +60207,7 @@
                 "index": 343,
                 "platform": "Steam",
                 "identifier": 1392960,
-                "last_track_date": "2024-02-27"
+                "last_track_date": "2024-03-03"
             },
             "type": "Game",
             "title": "STORY OF SEASONS: Pioneers of Olive Town",
@@ -60185,6 +60257,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -60286,14 +60362,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(14)",
-                    "tooltip": "过去 30 天内的 14 篇用户评测中有 71% 为好评。"
+                    "count": "(15)",
+                    "tooltip": "过去 30 天内的 15 篇用户评测中有 73% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,098)",
-                    "tooltip": "此游戏的 1,098 篇用户评测中有 84% 为好评。"
+                    "count": "(1,100)",
+                    "tooltip": "此游戏的 1,100 篇用户评测中有 84% 为好评。"
                 }
             }
         },
@@ -87833,7 +87909,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8.1,
-                    "userReviewsCount": 10344
+                    "userReviewsCount": 10345
                 },
                 "meta": {
                     "index": 533,
@@ -87932,8 +88008,8 @@
                     "genres": [],
                     "metaScore": 92,
                     "metaReviewsCount": 128,
-                    "userScore": 9.4,
-                    "userReviewsCount": 592
+                    "userScore": 8.4,
+                    "userReviewsCount": 785
                 },
                 "meta": {
                     "index": 545,
