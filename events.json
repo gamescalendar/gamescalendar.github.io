@@ -17373,7 +17373,7 @@
                 "index": 288,
                 "platform": "Steam",
                 "identifier": 300550,
-                "last_track_date": "2024-03-27"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Shadowrun: Dragonfall - Director's Cut",
@@ -17535,13 +17535,13 @@
                     "summary": "特别好评",
                     "cssClass": "positive",
                     "count": "(10)",
-                    "tooltip": "过去 30 天内的 10 篇用户评测中有 100% 为好评。"
+                    "tooltip": "过去 30 天内的 10 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(4,963)",
-                    "tooltip": "此游戏的 4,963 篇用户评测中有 89% 为好评。"
+                    "count": "(4,966)",
+                    "tooltip": "此游戏的 4,966 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -17550,7 +17550,7 @@
                 "index": 119,
                 "platform": "Steam",
                 "identifier": 304650,
-                "last_track_date": "2024-03-27"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "SUNLESS SEA",
@@ -17699,14 +17699,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(23)",
-                    "tooltip": "过去 30 天内的 23 篇用户评测中有 86% 为好评。"
+                    "count": "(25)",
+                    "tooltip": "过去 30 天内的 25 篇用户评测中有 84% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(7,133)",
-                    "tooltip": "此游戏的 7,133 篇用户评测中有 83% 为好评。"
+                    "count": "(7,139)",
+                    "tooltip": "此游戏的 7,139 篇用户评测中有 83% 为好评。"
                 }
             }
         },
@@ -17715,7 +17715,7 @@
                 "index": 183,
                 "platform": "Steam",
                 "identifier": 306130,
-                "last_track_date": "2024-03-27"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "The Elder Scrolls® Online",
@@ -17727,7 +17727,7 @@
                 "description": "Join over 22 million players in the award-winning online multiplayer RPG and experience limitless adventure in a persistent Elder Scrolls world. Battle, craft, steal, or explore, and combine different types of equipment and abilities to create your own style of play. No game subscription required.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "May 22, 2017"
+                    "date": "22 May, 2017"
                 },
                 "language": {
                     "zh": {
@@ -17892,14 +17892,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(778)",
-                    "tooltip": "过去 30 天内的 778 篇用户评测中有 80% 为好评。"
+                    "count": "(815)",
+                    "tooltip": "过去 30 天内的 815 篇用户评测中有 80% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(118,742)",
-                    "tooltip": "此游戏的 118,742 篇用户评测中有 83% 为好评。"
+                    "count": "(118,872)",
+                    "tooltip": "此游戏的 118,872 篇用户评测中有 83% 为好评。"
                 }
             }
         },
@@ -17908,7 +17908,7 @@
                 "index": 229,
                 "platform": "Steam",
                 "identifier": 311560,
-                "last_track_date": "2024-03-27"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Assassin’s Creed® Rogue",
@@ -18046,14 +18046,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(181)",
-                    "tooltip": "过去 30 天内的 181 篇用户评测中有 85% 为好评。"
+                    "count": "(165)",
+                    "tooltip": "过去 30 天内的 165 篇用户评测中有 84% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(14,557)",
-                    "tooltip": "此游戏的 14,557 篇用户评测中有 84% 为好评。"
+                    "count": "(14,588)",
+                    "tooltip": "此游戏的 14,588 篇用户评测中有 84% 为好评。"
                 }
             }
         },
@@ -18062,7 +18062,7 @@
                 "index": 297,
                 "platform": "Steam",
                 "identifier": 314160,
-                "last_track_date": "2024-03-27"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Microsoft Flight Simulator X: Steam Edition",
@@ -18176,12 +18176,12 @@
                         "name": "合作"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
-                        "name": "第三人称"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%9B%E4%BA%8B/",
                         "name": "军事"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
+                        "name": "第三人称"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
@@ -18199,14 +18199,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(109)",
-                    "tooltip": "过去 30 天内的 109 篇用户评测中有 84% 为好评。"
+                    "count": "(101)",
+                    "tooltip": "过去 30 天内的 101 篇用户评测中有 84% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(21,385)",
-                    "tooltip": "此游戏的 21,385 篇用户评测中有 85% 为好评。"
+                    "count": "(21,395)",
+                    "tooltip": "此游戏的 21,395 篇用户评测中有 85% 为好评。"
                 }
             }
         },
@@ -18215,7 +18215,7 @@
                 "index": 335,
                 "platform": "Steam",
                 "identifier": 317400,
-                "last_track_date": "2024-03-27"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Portal Stories: Mel",
@@ -18366,16 +18366,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(148)",
-                    "tooltip": "过去 30 天内的 148 篇用户评测中有 94% 为好评。"
+                    "count": "(146)",
+                    "tooltip": "过去 30 天内的 146 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(21,396)",
-                    "tooltip": "此游戏的 21,396 篇用户评测中有 96% 为好评。"
+                    "count": "(21,420)",
+                    "tooltip": "此游戏的 21,420 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -18384,7 +18384,7 @@
                 "index": 509,
                 "platform": "Steam",
                 "identifier": 319630,
-                "last_track_date": "2024-03-27"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Life is Strange - Episode 1",
@@ -18549,14 +18549,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(496)",
-                    "tooltip": "过去 30 天内的 496 篇用户评测中有 95% 为好评。"
+                    "count": "(513)",
+                    "tooltip": "过去 30 天内的 513 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(163,731)",
-                    "tooltip": "此游戏的 163,731 篇用户评测中有 96% 为好评。"
+                    "count": "(163,789)",
+                    "tooltip": "此游戏的 163,789 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -18565,7 +18565,7 @@
                 "index": 145,
                 "platform": "Steam",
                 "identifier": 321800,
-                "last_track_date": "2024-03-27"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Icewind Dale: Enhanced Edition",
@@ -81525,7 +81525,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "EthrA",
@@ -82846,7 +82846,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -83158,7 +83158,7 @@
                 "index": 422,
                 "platform": "Steam",
                 "identifier": 2246340,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Monster Hunter Wilds",
@@ -85006,7 +85006,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -85296,7 +85296,7 @@
                 "index": 551,
                 "platform": "Steam",
                 "identifier": 2410170,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "The Nameless: Slay Dragon",
@@ -85837,7 +85837,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -85974,7 +85974,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -86115,7 +86115,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -86264,7 +86264,7 @@
                 "index": 562,
                 "platform": "Steam",
                 "identifier": 2454960,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "The Great Villainess: Strategy of Lily",
@@ -86492,7 +86492,7 @@
                 "index": 398,
                 "platform": "Steam",
                 "identifier": 2458830,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Towerborne",
@@ -86674,7 +86674,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -87879,7 +87879,7 @@
                 "index": 472,
                 "platform": "Steam",
                 "identifier": 2719590,
-                "last_track_date": "2024-04-01"
+                "last_track_date": "2024-04-02"
             },
             "type": "Game",
             "title": "Light No Fire",
@@ -89274,7 +89274,7 @@
                     "metaScore": 74,
                     "metaReviewsCount": 92,
                     "userScore": 7.9,
-                    "userReviewsCount": 136
+                    "userReviewsCount": 139
                 },
                 "meta": {
                     "index": 524,
@@ -89327,7 +89327,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8.1,
-                    "userReviewsCount": 10603
+                    "userReviewsCount": 10604
                 },
                 "meta": {
                     "index": 516,
@@ -89374,7 +89374,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 142,
                     "userScore": 9,
-                    "userReviewsCount": 2789
+                    "userReviewsCount": 2793
                 },
                 "meta": {
                     "index": 517,
@@ -89421,7 +89421,7 @@
                     "metaScore": 76,
                     "metaReviewsCount": 112,
                     "userScore": 8.5,
-                    "userReviewsCount": 792
+                    "userReviewsCount": 799
                 },
                 "meta": {
                     "index": 519,
