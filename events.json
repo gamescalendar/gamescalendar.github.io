@@ -41376,7 +41376,7 @@
                 "index": 396,
                 "platform": "Steam",
                 "identifier": 881020,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Granblue Fantasy: Relink",
@@ -41537,14 +41537,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,873)",
-                    "tooltip": "过去 30 天内的 1,873 篇用户评测中有 86% 为好评。"
+                    "count": "(1,286)",
+                    "tooltip": "过去 30 天内的 1,286 篇用户评测中有 89% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(28,906)",
-                    "tooltip": "此游戏的 28,906 篇用户评测中有 89% 为好评。"
+                    "count": "(29,025)",
+                    "tooltip": "此游戏的 29,025 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -49175,7 +49175,7 @@
                 "index": 214,
                 "platform": "Steam",
                 "identifier": 1121560,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Atelier Ryza: Ever Darkness & the Secret Hideout",
@@ -49237,12 +49237,20 @@
                 ],
                 "tags": [
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "角色扮演"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
+                        "name": "探索"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
-                        "name": "动漫"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%94%B6%E9%9B%86%E9%A9%AC%E6%8B%89%E6%9D%BE/",
+                        "name": "收集马拉松"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%88%B6%E4%BD%9C/",
+                        "name": "制作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6/",
+                        "name": "回合制"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
@@ -49253,12 +49261,48 @@
                         "name": "女性主角"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E7%88%B1/",
                         "name": "可爱"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%88%B6%E4%BD%9C/",
-                        "name": "制作"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
+                        "name": "回合制战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/",
+                        "name": "休闲"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/",
+                        "name": "模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
+                        "name": "动漫"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
+                        "name": "奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
+                        "name": "情感"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
@@ -49269,65 +49313,21 @@
                         "name": "色情内容"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
-                        "name": "冒险"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
-                        "name": "奇幻"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
                         "name": "好评原声音轨"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6/",
-                        "name": "回合制"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
-                        "name": "开放世界"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
-                        "name": "回合制战斗"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
-                        "name": "剧情丰富"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
-                        "name": "探索"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
-                        "name": "角色自定义"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%90%E4%BA%BA/",
-                        "name": "成人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/",
-                        "name": "裸露"
                     }
                 ],
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(44)",
-                    "tooltip": "过去 30 天内的 44 篇用户评测中有 84% 为好评。"
+                    "count": "(39)",
+                    "tooltip": "过去 30 天内的 39 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(6,553)",
-                    "tooltip": "此游戏的 6,553 篇用户评测中有 87% 为好评。"
+                    "count": "(6,557)",
+                    "tooltip": "此游戏的 6,557 篇用户评测中有 87% 为好评。"
                 }
             }
         },
@@ -49336,7 +49336,7 @@
                 "index": 564,
                 "platform": "Steam",
                 "identifier": 1122050,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Gensokyo Night Festival",
@@ -49481,16 +49481,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半差评",
+                    "summary": "特别差评",
                     "cssClass": "",
                     "count": "(11)",
-                    "tooltip": "过去 30 天内的 11 篇用户评测中有 27% 为好评。"
+                    "tooltip": "过去 30 天内的 11 篇用户评测中有 9% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(4,075)",
-                    "tooltip": "此游戏的 4,075 篇用户评测中有 83% 为好评。"
+                    "count": "(4,076)",
+                    "tooltip": "此游戏的 4,076 篇用户评测中有 83% 为好评。"
                 }
             }
         },
@@ -49499,7 +49499,7 @@
                 "index": 262,
                 "platform": "Steam",
                 "identifier": 1124300,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "HUMANKIND™",
@@ -49656,14 +49656,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(116)",
-                    "tooltip": "过去 30 天内的 116 篇用户评测中有 65% 为好评。"
+                    "count": "(99)",
+                    "tooltip": "过去 30 天内的 99 篇用户评测中有 62% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(19,315)",
-                    "tooltip": "此游戏的 19,315 篇用户评测中有 66% 为好评。"
+                    "count": "(19,326)",
+                    "tooltip": "此游戏的 19,326 篇用户评测中有 66% 为好评。"
                 }
             }
         },
@@ -49672,7 +49672,7 @@
                 "index": 354,
                 "platform": "Steam",
                 "identifier": 1139900,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Ghostrunner",
@@ -49820,14 +49820,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(329)",
-                    "tooltip": "过去 30 天内的 329 篇用户评测中有 88% 为好评。"
+                    "count": "(290)",
+                    "tooltip": "过去 30 天内的 290 篇用户评测中有 86% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(41,990)",
-                    "tooltip": "此游戏的 41,990 篇用户评测中有 91% 为好评。"
+                    "count": "(42,026)",
+                    "tooltip": "此游戏的 42,026 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -49836,7 +49836,7 @@
                 "index": 142,
                 "platform": "Steam",
                 "identifier": 1139940,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "ATOM RPG Trudograd",
@@ -49975,16 +49975,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
-                    "cssClass": "positive",
-                    "count": "(33)",
-                    "tooltip": "过去 30 天内的 33 篇用户评测中有 72% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
+                    "summary": "褒贬不一",
+                    "cssClass": "mixed",
+                    "count": "(42)",
+                    "tooltip": "过去 30 天内的 42 篇用户评测中有 69% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(3,156)",
-                    "tooltip": "此游戏的 3,156 篇用户评测中有 89% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
+                    "count": "(3,171)",
+                    "tooltip": "此游戏的 3,171 篇用户评测中有 89% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
                 }
             }
         },
@@ -49993,7 +49993,7 @@
                 "index": 426,
                 "platform": "Steam",
                 "identifier": 1141580,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Taiji",
@@ -50138,8 +50138,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(852)",
-                    "tooltip": "此游戏的 852 篇用户评测中有 93% 为好评。"
+                    "count": "(854)",
+                    "tooltip": "此游戏的 854 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -50148,7 +50148,7 @@
                 "index": 456,
                 "platform": "Steam",
                 "identifier": 1143810,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Black Skylands",
@@ -50303,16 +50303,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(34)",
-                    "tooltip": "过去 30 天内的 34 篇用户评测中有 76% 为好评。"
+                    "count": "(25)",
+                    "tooltip": "过去 30 天内的 25 篇用户评测中有 84% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,941)",
-                    "tooltip": "此游戏的 1,941 篇用户评测中有 82% 为好评。"
+                    "count": "(1,944)",
+                    "tooltip": "此游戏的 1,944 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -50321,7 +50321,7 @@
                 "index": 364,
                 "platform": "Steam",
                 "identifier": 1147560,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Skul: The Hero Slayer",
@@ -50474,14 +50474,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(723)",
-                    "tooltip": "过去 30 天内的 723 篇用户评测中有 93% 为好评。"
+                    "count": "(776)",
+                    "tooltip": "过去 30 天内的 776 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(43,786)",
-                    "tooltip": "此游戏的 43,786 篇用户评测中有 93% 为好评。"
+                    "count": "(43,938)",
+                    "tooltip": "此游戏的 43,938 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -50490,7 +50490,7 @@
                 "index": 31,
                 "platform": "Steam",
                 "identifier": 1150690,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "OMORI",
@@ -50628,12 +50628,12 @@
                         "name": "日系角色扮演"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%A3%8E%E6%A0%BC%E5%8C%96/",
-                        "name": "风格化"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E6%BC%AB/",
                         "name": "动漫"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%A3%8E%E6%A0%BC%E5%8C%96/",
+                        "name": "风格化"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
@@ -50643,14 +50643,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,132)",
-                    "tooltip": "过去 30 天内的 1,132 篇用户评测中有 96% 为好评。"
+                    "count": "(1,052)",
+                    "tooltip": "过去 30 天内的 1,052 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(60,755)",
-                    "tooltip": "此游戏的 60,755 篇用户评测中有 97% 为好评。"
+                    "count": "(60,875)",
+                    "tooltip": "此游戏的 60,875 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -50659,7 +50659,7 @@
                 "index": 129,
                 "platform": "Steam",
                 "identifier": 1151640,
-                "last_track_date": "2024-04-17"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Horizon Zero Dawn™ Complete Edition",
@@ -50812,14 +50812,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,748)",
-                    "tooltip": "过去 30 天内的 1,748 篇用户评测中有 89% 为好评。"
+                    "count": "(1,469)",
+                    "tooltip": "过去 30 天内的 1,469 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(85,965)",
-                    "tooltip": "此游戏的 85,965 篇用户评测中有 87% 为好评。"
+                    "count": "(86,150)",
+                    "tooltip": "此游戏的 86,150 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -85864,7 +85864,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-04-22"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -86001,7 +86001,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-04-22"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -86142,7 +86142,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-04-22"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -86291,7 +86291,7 @@
                 "index": 562,
                 "platform": "Steam",
                 "identifier": 2454960,
-                "last_track_date": "2024-04-22"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "The Great Villainess: Strategy of Lily",
@@ -86519,7 +86519,7 @@
                 "index": 398,
                 "platform": "Steam",
                 "identifier": 2458830,
-                "last_track_date": "2024-04-22"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Towerborne",
@@ -86705,7 +86705,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2024-04-22"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -87031,19 +87031,19 @@
                 "index": 557,
                 "platform": "Steam",
                 "identifier": 2593370,
-                "last_track_date": "2024-04-22"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "The Hungry Lamb: Traveling in the Late Ming Dynasty",
-            "start": "2027-01-01",
+            "start": "2024-04-22",
             "app_data": {
                 "platform": "Steam",
                 "appid": 2593370,
                 "title": "The Hungry Lamb: Traveling in the Late Ming Dynasty",
                 "description": "Trek across ancient China in a dark, boundary-pushing visual novel inspired by traditional Chinese art with modern animation. Escort four girls to the prosperous city of Luoyang in a branching narrative with themes of revenge, cannibalism, involuntary servitude, and more on a redemptive journey.",
                 "release_date": {
-                    "coming_soon": true,
-                    "date": "Coming soon"
+                    "coming_soon": false,
+                    "date": "Apr 22, 2024"
                 },
                 "language": {
                     "zh": {
@@ -87072,6 +87072,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -87928,7 +87932,7 @@
                 "index": 472,
                 "platform": "Steam",
                 "identifier": 2719590,
-                "last_track_date": "2024-04-22"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Light No Fire",
@@ -88528,7 +88532,7 @@
                 "index": 567,
                 "platform": "Steam",
                 "identifier": 2868840,
-                "last_track_date": "2024-04-22"
+                "last_track_date": "2024-04-23"
             },
             "type": "Game",
             "title": "Slay the Spire 2",
@@ -89397,7 +89401,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 40,
                     "userScore": 8.3,
-                    "userReviewsCount": 184
+                    "userReviewsCount": 185
                 },
                 "meta": {
                     "index": 515,
@@ -89497,7 +89501,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8.1,
-                    "userReviewsCount": 11028
+                    "userReviewsCount": 11031
                 },
                 "meta": {
                     "index": 516,
@@ -89544,7 +89548,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 147,
                     "userScore": 8.9,
-                    "userReviewsCount": 3159
+                    "userReviewsCount": 3161
                 },
                 "meta": {
                     "index": 517,
@@ -89591,7 +89595,7 @@
                     "metaScore": 76,
                     "metaReviewsCount": 121,
                     "userScore": 8.6,
-                    "userReviewsCount": 1353
+                    "userReviewsCount": 1355
                 },
                 "meta": {
                     "index": 519,
