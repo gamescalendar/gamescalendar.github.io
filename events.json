@@ -6,7 +6,7 @@
                 "index": 328,
                 "platform": "Steam",
                 "identifier": 50,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Half-Life: Opposing Force",
@@ -147,14 +147,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(306)",
-                    "tooltip": "过去 30 天内的 306 篇用户评测中有 93% 为好评。"
+                    "count": "(282)",
+                    "tooltip": "过去 30 天内的 282 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(18,788)",
-                    "tooltip": "此游戏的 18,788 篇用户评测中有 95% 为好评。"
+                    "count": "(18,823)",
+                    "tooltip": "此游戏的 18,823 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -163,7 +163,7 @@
                 "index": 329,
                 "platform": "Steam",
                 "identifier": 70,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Half-Life",
@@ -175,7 +175,7 @@
                 "description": "Named Game of the Year by over 50 publications, Valve's debut title blends action and adventure with award-winning technology to create a frighteningly realistic world where players must think to survive. Also includes an exciting multiplayer mode that allows you to play against friends and enemies around the world.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "Nov 8, 1998"
+                    "date": "8 Nov, 1998"
                 },
                 "language": {
                     "zh": {
@@ -328,14 +328,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(994)",
-                    "tooltip": "过去 30 天内的 994 篇用户评测中有 95% 为好评。"
+                    "count": "(945)",
+                    "tooltip": "过去 30 天内的 945 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(91,324)",
-                    "tooltip": "此游戏的 91,324 篇用户评测中有 96% 为好评。"
+                    "count": "(91,431)",
+                    "tooltip": "此游戏的 91,431 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -344,7 +344,7 @@
                 "index": 327,
                 "platform": "Steam",
                 "identifier": 130,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Half-Life: Blue Shift",
@@ -477,14 +477,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(219)",
-                    "tooltip": "过去 30 天内的 219 篇用户评测中有 93% 为好评。"
+                    "count": "(220)",
+                    "tooltip": "过去 30 天内的 220 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(13,805)",
-                    "tooltip": "此游戏的 13,805 篇用户评测中有 92% 为好评。"
+                    "count": "(13,839)",
+                    "tooltip": "此游戏的 13,839 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -8441,7 +8441,7 @@
                 "index": 401,
                 "platform": "Steam",
                 "identifier": 220200,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Kerbal Space Program",
@@ -8590,14 +8590,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(439)",
-                    "tooltip": "过去 30 天内的 439 篇用户评测中有 96% 为好评。"
+                    "count": "(475)",
+                    "tooltip": "过去 30 天内的 475 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(97,870)",
-                    "tooltip": "此游戏的 97,870 篇用户评测中有 95% 为好评。"
+                    "count": "(97,962)",
+                    "tooltip": "此游戏的 97,962 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -80390,7 +80390,7 @@
                 "index": 194,
                 "platform": "Steam",
                 "identifier": 2138330,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Cyberpunk 2077: Phantom Liberty",
@@ -80468,12 +80468,12 @@
                         "name": "开放世界"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B/",
-                        "name": "赛博朋克"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/",
                         "name": "裸露"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B/",
+                        "name": "赛博朋克"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
@@ -80539,14 +80539,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(382)",
-                    "tooltip": "过去 30 天内的 382 篇用户评测中有 88% 为好评。"
+                    "count": "(355)",
+                    "tooltip": "过去 30 天内的 355 篇用户评测中有 89% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(14,018)",
-                    "tooltip": "此游戏的 14,018 篇用户评测中有 89% 为好评。"
+                    "count": "(14,073)",
+                    "tooltip": "此游戏的 14,073 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -82209,7 +82209,7 @@
                 "index": 548,
                 "platform": "Steam",
                 "identifier": 2184350,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Guild Saga: Vanished Worlds",
@@ -82716,7 +82716,7 @@
                 "index": 233,
                 "platform": "Steam",
                 "identifier": 2208920,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Assassin's Creed Valhalla",
@@ -82786,12 +82786,12 @@
                         "name": "开放世界"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "角色扮演"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
                         "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
@@ -82861,14 +82861,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(574)",
-                    "tooltip": "过去 30 天内的 574 篇用户评测中有 61% 为好评。"
+                    "count": "(519)",
+                    "tooltip": "过去 30 天内的 519 篇用户评测中有 64% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(19,339)",
-                    "tooltip": "此游戏的 19,339 篇用户评测中有 70% 为好评。"
+                    "count": "(19,417)",
+                    "tooltip": "此游戏的 19,417 篇用户评测中有 70% 为好评。"
                 }
             }
         },
@@ -83031,7 +83031,7 @@
                 "index": 492,
                 "platform": "Steam",
                 "identifier": 2228010,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Right and Down and Dice",
@@ -83362,7 +83362,7 @@
                 "index": 246,
                 "platform": "Steam",
                 "identifier": 2239550,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Watch Dogs®: Legion",
@@ -83519,14 +83519,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(140)",
-                    "tooltip": "过去 30 天内的 140 篇用户评测中有 53% 为好评。"
+                    "count": "(133)",
+                    "tooltip": "过去 30 天内的 133 篇用户评测中有 52% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(7,036)",
-                    "tooltip": "此游戏的 7,036 篇用户评测中有 58% 为好评。"
+                    "count": "(7,057)",
+                    "tooltip": "此游戏的 7,057 篇用户评测中有 58% 为好评。"
                 }
             }
         },
@@ -84129,7 +84129,7 @@
                 "index": 549,
                 "platform": "Steam",
                 "identifier": 2273430,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "BlazBlue Entropy Effect",
@@ -84282,14 +84282,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,584)",
-                    "tooltip": "过去 30 天内的 1,584 篇用户评测中有 95% 为好评。"
+                    "count": "(1,227)",
+                    "tooltip": "过去 30 天内的 1,227 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(16,401)",
-                    "tooltip": "此游戏的 16,401 篇用户评测中有 93% 为好评。"
+                    "count": "(16,402)",
+                    "tooltip": "此游戏的 16,402 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -84298,7 +84298,7 @@
                 "index": 496,
                 "platform": "Steam",
                 "identifier": 2276830,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Kingsvein",
@@ -84448,11 +84448,17 @@
                         "name": "非线性"
                     }
                 ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(10)",
+                    "tooltip": "过去 30 天内的 10 篇用户评测中有 100% 为好评。"
+                },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(173)",
-                    "tooltip": "此游戏的 173 篇用户评测中有 91% 为好评。"
+                    "count": "(175)",
+                    "tooltip": "此游戏的 175 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -84634,7 +84640,7 @@
                 "index": 474,
                 "platform": "Steam",
                 "identifier": 2305840,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Cat Quest III",
@@ -84776,8 +84782,8 @@
                         "name": "开放世界"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%98%96%E5%AE%B6/",
-                        "name": "阖家"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%AD%A9%E7%AB%A5/",
+                        "name": "孩童"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
@@ -86136,7 +86142,7 @@
                 "index": 461,
                 "platform": "Steam",
                 "identifier": 2426530,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Nova Roma",
@@ -86210,6 +86216,10 @@
                         "name": "建造"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%9C%E5%9C%BA%E6%A8%A1%E6%8B%9F/",
+                        "name": "农场模拟"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AE%A1%E7%90%86/",
                         "name": "管理"
                     },
@@ -86226,6 +86236,10 @@
                         "name": "经济"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A8%8B%E5%BA%8F%E7%94%9F%E6%88%90/",
+                        "name": "程序生成"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/",
                         "name": "资源管理"
                     },
@@ -86238,6 +86252,10 @@
                         "name": "重玩价值"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E4%BC%91%E9%97%B2/",
                         "name": "休闲"
                     },
@@ -86246,12 +86264,8 @@
                         "name": "放松"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%98%96%E5%AE%B6/",
-                        "name": "阖家"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%AD%A9%E7%AB%A5/",
+                        "name": "孩童"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E5%90%AB%E6%9A%82%E5%81%9C/",
@@ -86264,14 +86278,6 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E7%BB%84/",
                         "name": "模组"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%B0%E4%BB%A3/",
-                        "name": "现代"
                     }
                 ]
             }
@@ -86431,7 +86437,7 @@
                 "index": 490,
                 "platform": "Steam",
                 "identifier": 2430660,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "MiceGard",
@@ -87405,7 +87411,7 @@
                 "index": 89,
                 "platform": "Steam",
                 "identifier": 2457220,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Avowed",
@@ -87463,12 +87469,12 @@
                         "name": "剧情丰富"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
                         "name": "奇幻"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
@@ -87881,7 +87887,7 @@
                 "index": 480,
                 "platform": "Steam",
                 "identifier": 2511500,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Dominions 6 - Rise of the Pantokrator",
@@ -88042,14 +88048,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(54)",
-                    "tooltip": "过去 30 天内的 54 篇用户评测中有 92% 为好评。"
+                    "count": "(57)",
+                    "tooltip": "过去 30 天内的 57 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(695)",
-                    "tooltip": "此游戏的 695 篇用户评测中有 88% 为好评。"
+                    "count": "(710)",
+                    "tooltip": "此游戏的 710 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -88214,7 +88220,7 @@
                 "index": 529,
                 "platform": "Steam",
                 "identifier": 2646460,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Soulmask",
@@ -88532,7 +88538,7 @@
                 "index": 413,
                 "platform": "Steam",
                 "identifier": 2664600,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "The Last Hour of an Epic TO THE MOON RPG",
@@ -88669,7 +88675,7 @@
                 "index": 528,
                 "platform": "Steam",
                 "identifier": 2696050,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "Yarimono",
@@ -89274,7 +89280,7 @@
                 "index": 463,
                 "platform": "Steam",
                 "identifier": 2739830,
-                "last_track_date": "2024-04-30"
+                "last_track_date": "2024-05-06"
             },
             "type": "Game",
             "title": "King Arthur: Legion IX",
@@ -89308,24 +89314,12 @@
                         "description": "Single-player"
                     },
                     {
-                        "id": 1,
-                        "description": "Multi-player"
-                    },
-                    {
-                        "id": 49,
-                        "description": "PvP"
-                    },
-                    {
-                        "id": 36,
-                        "description": "Online PvP"
-                    },
-                    {
                         "id": 22,
                         "description": "Steam Achievements"
                     },
                     {
-                        "id": 28,
-                        "description": "Full controller support"
+                        "id": 18,
+                        "description": "Partial Controller Support"
                     }
                 ],
                 "genres": [
@@ -90617,7 +90611,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 148,
                     "userScore": 9,
-                    "userReviewsCount": 3506
+                    "userReviewsCount": 3511
                 },
                 "meta": {
                     "index": 517,
