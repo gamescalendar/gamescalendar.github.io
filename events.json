@@ -1,5 +1,5 @@
 {
-    "index": 574,
+    "index": 576,
     "data": {
         "50": {
             "meta": {
@@ -29483,7 +29483,7 @@
                 "index": 121,
                 "platform": "Steam",
                 "identifier": 532790,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Vampire: The Masquerade® - Bloodlines™ 2",
@@ -29624,7 +29624,7 @@
                 "index": 322,
                 "platform": "Steam",
                 "identifier": 546560,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Half-Life: Alyx",
@@ -29636,7 +29636,7 @@
                 "description": "Half-Life: Alyx is Valve’s VR return to the Half-Life series. It’s the story of an impossible fight against a vicious alien race known as the Combine, set between the events of Half-Life and Half-Life 2. Playing as Alyx Vance, you are humanity’s only chance for survival.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "23 Mar, 2020"
+                    "date": "Mar 23, 2020"
                 },
                 "language": {
                     "zh": {
@@ -29785,14 +29785,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(563)",
-                    "tooltip": "过去 30 天内的 563 篇用户评测中有 95% 为好评。"
+                    "count": "(528)",
+                    "tooltip": "过去 30 天内的 528 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(77,038)",
-                    "tooltip": "此游戏的 77,038 篇用户评测中有 98% 为好评。"
+                    "count": "(77,113)",
+                    "tooltip": "此游戏的 77,113 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -29801,7 +29801,7 @@
                 "index": 188,
                 "platform": "Steam",
                 "identifier": 548570,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "RAGE 2",
@@ -29947,14 +29947,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(49)",
-                    "tooltip": "过去 30 天内的 49 篇用户评测中有 79% 为好评。"
+                    "count": "(53)",
+                    "tooltip": "过去 30 天内的 53 篇用户评测中有 79% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(13,220)",
-                    "tooltip": "此游戏的 13,220 篇用户评测中有 63% 为好评。"
+                    "count": "(13,227)",
+                    "tooltip": "此游戏的 13,227 篇用户评测中有 63% 为好评。"
                 }
             }
         },
@@ -38646,7 +38646,7 @@
                 "index": 108,
                 "platform": "Steam",
                 "identifier": 774361,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Blasphemous",
@@ -38811,14 +38811,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(759)",
-                    "tooltip": "过去 30 天内的 759 篇用户评测中有 87% 为好评。"
+                    "count": "(782)",
+                    "tooltip": "过去 30 天内的 782 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(33,139)",
-                    "tooltip": "此游戏的 33,139 篇用户评测中有 90% 为好评。"
+                    "count": "(33,288)",
+                    "tooltip": "此游戏的 33,288 篇用户评测中有 90% 为好评。"
                 }
             }
         },
@@ -50496,6 +50496,354 @@
                 }
             }
         },
+        "1145350": {
+            "meta": {
+                "index": 575,
+                "platform": "Steam",
+                "identifier": 1145350,
+                "last_track_date": "2024-05-07"
+            },
+            "type": "Game",
+            "title": "Hades II",
+            "start": "2024-05-07",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 1145350,
+                "title": "Hades II",
+                "description": "Battle beyond the Underworld using dark sorcery to take on the Titan of Time in this bewitching sequel to the award-winning rogue-like dungeon crawler.",
+                "release_date": {
+                    "coming_soon": false,
+                    "date": "7 May, 2024"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Supergiant Games"
+                ],
+                "publishers": [
+                    "Supergiant Games"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 28,
+                        "description": "Full controller support"
+                    },
+                    {
+                        "id": 13,
+                        "description": "Captions available"
+                    },
+                    {
+                        "id": 23,
+                        "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "1",
+                        "description": "Action"
+                    },
+                    {
+                        "id": "23",
+                        "description": "Indie"
+                    },
+                    {
+                        "id": "3",
+                        "description": "RPG"
+                    },
+                    {
+                        "id": "70",
+                        "description": "Early Access"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%20Rogue/",
+                        "name": "类 Rogue"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "动作角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E7%B1%BB%20Rogue/",
+                        "name": "动作类 Rogue"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A0%8D%E6%9D%80/",
+                        "name": "砍杀"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%BF%B7%E5%AE%AB%E6%8E%A2%E7%B4%A2/",
+                        "name": "迷宫探索"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%BD%BB%E5%BA%A6%20Rogue/",
+                        "name": "轻度 Rogue"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A5%9E%E8%AF%9D/",
+                        "name": "神话"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%89%8B%E7%BB%98/",
+                        "name": "手绘"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
+                        "name": "类魂系列"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%89%E8%A7%92%E8%A7%86%E8%A7%92/",
+                        "name": "等角视角"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%B8%E4%B9%85%E6%AD%BB%E4%BA%A1/",
+                        "name": "永久死亡"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8A%A2%E5%85%88%E4%BD%93%E9%AA%8C/",
+                        "name": "抢先体验"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
+                        "name": "困难"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%B3%E6%80%A7%E4%B8%BB%E8%A7%92/",
+                        "name": "女性主角"
+                    }
+                ],
+                "totalReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(2,645)",
+                    "tooltip": "此游戏的 2,645 篇用户评测中有 98% 为好评。"
+                }
+            }
+        },
+        "1145360": {
+            "meta": {
+                "index": 574,
+                "platform": "Steam",
+                "identifier": 1145360,
+                "last_track_date": "2024-05-07"
+            },
+            "type": "Game",
+            "title": "Hades",
+            "start": "2020-09-17",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 1145360,
+                "title": "Hades",
+                "description": "Defy the god of the dead as you hack and slash out of the Underworld in this rogue-like dungeon crawler from the creators of Bastion, Transistor, and Pyre.",
+                "release_date": {
+                    "coming_soon": false,
+                    "date": "Sep 17, 2020"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Supergiant Games"
+                ],
+                "publishers": [
+                    "Supergiant Games"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 22,
+                        "description": "Steam Achievements"
+                    },
+                    {
+                        "id": 28,
+                        "description": "Full controller support"
+                    },
+                    {
+                        "id": 29,
+                        "description": "Steam Trading Cards"
+                    },
+                    {
+                        "id": 13,
+                        "description": "Captions available"
+                    },
+                    {
+                        "id": 23,
+                        "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 41,
+                        "description": "Remote Play on Phone"
+                    },
+                    {
+                        "id": 42,
+                        "description": "Remote Play on Tablet"
+                    },
+                    {
+                        "id": 43,
+                        "description": "Remote Play on TV"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "1",
+                        "description": "Action"
+                    },
+                    {
+                        "id": "23",
+                        "description": "Indie"
+                    },
+                    {
+                        "id": "3",
+                        "description": "RPG"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E7%B1%BB%20Rogue/",
+                        "name": "动作类 Rogue"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%BD%BB%E5%BA%A6%20Rogue/",
+                        "name": "轻度 Rogue"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A0%8D%E6%9D%80/",
+                        "name": "砍杀"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A5%9E%E8%AF%9D/",
+                        "name": "神话"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%20Rogue/",
+                        "name": "类 Rogue"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
+                        "name": "好评原声音轨"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%BF%B7%E5%AE%AB%E6%8E%A2%E7%B4%A2/",
+                        "name": "迷宫探索"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E7%8E%A9%E4%BB%B7%E5%80%BC/",
+                        "name": "重玩价值"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%89%E8%A7%92%E8%A7%86%E8%A7%92/",
+                        "name": "等角视角"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
+                        "name": "困难"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "动作角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%89%8B%E7%BB%98/",
+                        "name": "手绘"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%B8%E4%B9%85%E6%AD%BB%E4%BA%A1/",
+                        "name": "永久死亡"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
+                        "name": "类魂系列"
+                    }
+                ],
+                "recentReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(2,813)",
+                    "tooltip": "过去 30 天内的 2,813 篇用户评测中有 96% 为好评。"
+                },
+                "totalReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(231,628)",
+                    "tooltip": "此游戏的 231,628 篇用户评测中有 98% 为好评。"
+                }
+            }
+        },
         "1147560": {
             "meta": {
                 "index": 364,
@@ -54843,7 +55191,7 @@
                 "index": 520,
                 "platform": "Steam",
                 "identifier": 1214650,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "SOUTH PARK: SNOW DAY!",
@@ -55004,14 +55352,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(590)",
-                    "tooltip": "过去 30 天内的 590 篇用户评测中有 47% 为好评。"
+                    "count": "(306)",
+                    "tooltip": "过去 30 天内的 306 篇用户评测中有 46% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(2,086)",
-                    "tooltip": "此游戏的 2,086 篇用户评测中有 55% 为好评。"
+                    "count": "(2,111)",
+                    "tooltip": "此游戏的 2,111 篇用户评测中有 54% 为好评。"
                 }
             }
         },
@@ -57397,7 +57745,7 @@
                 "index": 544,
                 "platform": "Steam",
                 "identifier": 1268590,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Millennia",
@@ -57409,7 +57757,7 @@
                 "description": "Create your own nation in Millennia, a historical turn-based 4X game that challenges your strategic prowess across 10,000 years of history, from the dawn of humanity to our possible futures.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "Mar 26, 2024"
+                    "date": "26 Mar, 2024"
                 },
                 "language": {
                     "zh": {
@@ -57548,16 +57896,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
-                    "cssClass": "positive",
-                    "count": "(755)",
-                    "tooltip": "过去 30 天内的 755 篇用户评测中有 71% 为好评。"
+                    "summary": "褒贬不一",
+                    "cssClass": "mixed",
+                    "count": "(423)",
+                    "tooltip": "过去 30 天内的 423 篇用户评测中有 69% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(1,973)",
-                    "tooltip": "此游戏的 1,973 篇用户评测中有 67% 为好评。"
+                    "count": "(1,997)",
+                    "tooltip": "此游戏的 1,997 篇用户评测中有 67% 为好评。"
                 }
             }
         },
@@ -60533,7 +60881,7 @@
                 "index": 504,
                 "platform": "Steam",
                 "identifier": 1371980,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "No Rest for the Wicked",
@@ -60611,12 +60959,12 @@
                         "name": "动作"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "动作角色扮演"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
                         "name": "类魂系列"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "动作角色扮演"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
@@ -60682,8 +61030,8 @@
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(18,911)",
-                    "tooltip": "此游戏的 18,911 篇用户评测中有 77% 为好评。"
+                    "count": "(21,148)",
+                    "tooltip": "此游戏的 21,148 篇用户评测中有 78% 为好评。"
                 }
             }
         },
@@ -63033,7 +63381,7 @@
                 "index": 191,
                 "platform": "Steam",
                 "identifier": 1475810,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Ghostwire: Tokyo",
@@ -63115,12 +63463,12 @@
                         "name": "开放世界"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%90%E6%80%96/",
-                        "name": "恐怖"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0/",
                         "name": "第一人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%90%E6%80%96/",
+                        "name": "恐怖"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
@@ -63186,14 +63534,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(101)",
-                    "tooltip": "过去 30 天内的 101 篇用户评测中有 81% 为好评。"
+                    "count": "(90)",
+                    "tooltip": "过去 30 天内的 90 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(9,633)",
-                    "tooltip": "此游戏的 9,633 篇用户评测中有 82% 为好评。"
+                    "count": "(9,646)",
+                    "tooltip": "此游戏的 9,646 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -63202,7 +63550,7 @@
                 "index": 263,
                 "platform": "Steam",
                 "identifier": 1485590,
-                "last_track_date": "2024-05-01"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "ENDLESS™ Dungeon",
@@ -63360,13 +63708,13 @@
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
                     "count": "(29)",
-                    "tooltip": "过去 30 天内的 29 篇用户评测中有 51% 为好评。"
+                    "tooltip": "过去 30 天内的 29 篇用户评测中有 55% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(2,405)",
-                    "tooltip": "此游戏的 2,405 篇用户评测中有 65% 为好评。"
+                    "count": "(2,409)",
+                    "tooltip": "此游戏的 2,409 篇用户评测中有 65% 为好评。"
                 }
             }
         },
@@ -86678,7 +87026,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-05-06"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -86815,7 +87163,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-05-06"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -86956,7 +87304,7 @@
                 "index": 571,
                 "platform": "Steam",
                 "identifier": 2445690,
-                "last_track_date": "2024-05-06"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Lost Castle 2",
@@ -87117,7 +87465,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-05-06"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -87266,7 +87614,7 @@
                 "index": 562,
                 "platform": "Steam",
                 "identifier": 2454960,
-                "last_track_date": "2024-05-06"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "The Great Villainess: Strategy of Lily",
@@ -87494,7 +87842,7 @@
                 "index": 398,
                 "platform": "Steam",
                 "identifier": 2458830,
-                "last_track_date": "2024-05-06"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Towerborne",
@@ -87732,7 +88080,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2024-05-06"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -88995,7 +89343,7 @@
                 "index": 472,
                 "platform": "Steam",
                 "identifier": 2719590,
-                "last_track_date": "2024-05-06"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Light No Fire",
@@ -89589,7 +89937,7 @@
                 "index": 567,
                 "platform": "Steam",
                 "identifier": 2868840,
-                "last_track_date": "2024-05-06"
+                "last_track_date": "2024-05-07"
             },
             "type": "Game",
             "title": "Slay the Spire 2",
@@ -90652,7 +91000,7 @@
                     "metaScore": 76,
                     "metaReviewsCount": 124,
                     "userScore": 8.7,
-                    "userReviewsCount": 1613
+                    "userReviewsCount": 1614
                 },
                 "meta": {
                     "index": 519,
