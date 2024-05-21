@@ -3658,7 +3658,7 @@
                 "index": 221,
                 "platform": "Steam",
                 "identifier": 33230,
-                "last_track_date": "2024-05-15"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Assassin's Creed 2",
@@ -3787,14 +3787,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(508)",
-                    "tooltip": "过去 30 天内的 508 篇用户评测中有 82% 为好评。"
+                    "count": "(496)",
+                    "tooltip": "过去 30 天内的 496 篇用户评测中有 83% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(45,072)",
-                    "tooltip": "此游戏的 45,072 篇用户评测中有 89% 为好评。"
+                    "count": "(45,137)",
+                    "tooltip": "此游戏的 45,137 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -5516,7 +5516,7 @@
                 "index": 446,
                 "platform": "Steam",
                 "identifier": 105600,
-                "last_track_date": "2024-05-15"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Terraria",
@@ -5705,14 +5705,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(9,676)",
-                    "tooltip": "过去 30 天内的 9,676 篇用户评测中有 96% 为好评。"
+                    "count": "(9,159)",
+                    "tooltip": "过去 30 天内的 9,159 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,022,925)",
-                    "tooltip": "此游戏的 1,022,925 篇用户评测中有 97% 为好评。"
+                    "count": "(1,024,251)",
+                    "tooltip": "此游戏的 1,024,251 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -84430,7 +84430,7 @@
                 "index": 422,
                 "platform": "Steam",
                 "identifier": 2246340,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Monster Hunter Wilds",
@@ -84500,12 +84500,12 @@
                         "name": "恋爱模拟"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%BE%99/",
                         "name": "龙"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
@@ -84563,7 +84563,7 @@
                 "index": 4,
                 "platform": "Steam",
                 "identifier": 2254740,
-                "last_track_date": "2024-05-14"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Persona 5 Tactica",
@@ -84698,8 +84698,8 @@
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(1,073)",
-                    "tooltip": "此游戏的 1,073 篇用户评测中有 75% 为好评。"
+                    "count": "(1,078)",
+                    "tooltip": "此游戏的 1,078 篇用户评测中有 75% 为好评。"
                 }
             }
         },
@@ -85040,7 +85040,7 @@
                 "index": 239,
                 "platform": "Steam",
                 "identifier": 2290180,
-                "last_track_date": "2024-05-14"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Riders Republic",
@@ -85197,14 +85197,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(295)",
-                    "tooltip": "过去 30 天内的 295 篇用户评测中有 82% 为好评。"
+                    "count": "(398)",
+                    "tooltip": "过去 30 天内的 398 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(12,560)",
-                    "tooltip": "此游戏的 12,560 篇用户评测中有 84% 为好评。"
+                    "count": "(12,723)",
+                    "tooltip": "此游戏的 12,723 篇用户评测中有 84% 为好评。"
                 }
             }
         },
@@ -85521,19 +85521,19 @@
                 "index": 265,
                 "platform": "Steam",
                 "identifier": 2358660,
-                "last_track_date": "2024-05-14"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Life by You",
-            "start": "2024-06-04",
+            "start": "2027-01-01",
             "app_data": {
                 "platform": "Steam",
                 "appid": 2358660,
                 "title": "Life by You",
-                "description": "Open up a new world of creative possibilities in Life by You - a new life sim created for you AND by you. Launching as a Early Access title on June 4, 2024.",
+                "description": "Open up a new world of creative possibilities in Life by You - a new life sim created for you AND by you.",
                 "release_date": {
                     "coming_soon": true,
-                    "date": "Jun 4, 2024"
+                    "date": "Coming soon"
                 },
                 "language": {
                     "zh": {
@@ -85642,7 +85642,7 @@
                 "index": 86,
                 "platform": "Steam",
                 "identifier": 2358720,
-                "last_track_date": "2024-05-14"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Black Myth: Wukong",
@@ -85764,12 +85764,12 @@
                         "name": "动漫色情"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E5%B0%84%E5%87%BB/",
-                        "name": "第一人称射击"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/",
                         "name": "裸露"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E5%B0%84%E5%87%BB/",
+                        "name": "第一人称射击"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/",
@@ -86282,7 +86282,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -86566,7 +86566,7 @@
                 "index": 551,
                 "platform": "Steam",
                 "identifier": 2410170,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "The Nameless: Slay Dragon",
@@ -87261,7 +87261,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -87398,7 +87398,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -87539,7 +87539,7 @@
                 "index": 571,
                 "platform": "Steam",
                 "identifier": 2445690,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Lost Castle 2",
@@ -87700,7 +87700,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -87849,7 +87849,7 @@
                 "index": 562,
                 "platform": "Steam",
                 "identifier": 2454960,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "The Great Villainess: Strategy of Lily",
@@ -88077,7 +88077,7 @@
                 "index": 398,
                 "platform": "Steam",
                 "identifier": 2458830,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Towerborne",
@@ -88162,7 +88162,7 @@
                 "index": 321,
                 "platform": "Steam",
                 "identifier": 2461850,
-                "last_track_date": "2024-05-14"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Senua’s Saga: Hellblade II",
@@ -88315,7 +88315,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -89586,7 +89586,7 @@
                 "index": 472,
                 "platform": "Steam",
                 "identifier": 2719590,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Light No Fire",
@@ -90020,7 +90020,7 @@
                 "index": 537,
                 "platform": "Steam",
                 "identifier": 2778580,
-                "last_track_date": "2024-05-14"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "ELDEN RING Shadow of the Erdtree",
@@ -90151,16 +90151,16 @@
                         "name": "动作角色扮演"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
+                        "name": "困难"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
                         "name": "单人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%A9%E5%AE%B6%E5%AF%B9%E6%88%98%E7%8E%AF%E5%A2%83/",
                         "name": "玩家对战环境"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
-                        "name": "困难"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
@@ -90194,7 +90194,7 @@
                 "index": 567,
                 "platform": "Steam",
                 "identifier": 2868840,
-                "last_track_date": "2024-05-20"
+                "last_track_date": "2024-05-21"
             },
             "type": "Game",
             "title": "Slay the Spire 2",
