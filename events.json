@@ -1527,7 +1527,7 @@
                 "index": 332,
                 "platform": "Steam",
                 "identifier": 550,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Left 4 Dead 2",
@@ -1732,14 +1732,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(5,747)",
-                    "tooltip": "过去 30 天内的 5,747 篇用户评测中有 95% 为好评。"
+                    "count": "(5,967)",
+                    "tooltip": "过去 30 天内的 5,967 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(645,759)",
-                    "tooltip": "此游戏的 645,759 篇用户评测中有 97% 为好评。"
+                    "count": "(646,670)",
+                    "tooltip": "此游戏的 646,670 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -1748,7 +1748,7 @@
                 "index": 334,
                 "platform": "Steam",
                 "identifier": 620,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Portal 2",
@@ -1957,14 +1957,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(3,005)",
-                    "tooltip": "过去 30 天内的 3,005 篇用户评测中有 96% 为好评。"
+                    "count": "(2,993)",
+                    "tooltip": "过去 30 天内的 2,993 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(325,341)",
-                    "tooltip": "此游戏的 325,341 篇用户评测中有 98% 为好评。"
+                    "count": "(325,739)",
+                    "tooltip": "此游戏的 325,739 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -1973,7 +1973,7 @@
                 "index": 160,
                 "platform": "Steam",
                 "identifier": 6910,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Deus Ex: Game of the Year Edition",
@@ -2110,14 +2110,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(63)",
-                    "tooltip": "过去 30 天内的 63 篇用户评测中有 93% 为好评。"
+                    "count": "(72)",
+                    "tooltip": "过去 30 天内的 72 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(11,986)",
-                    "tooltip": "此游戏的 11,986 篇用户评测中有 94% 为好评。"
+                    "count": "(12,000)",
+                    "tooltip": "此游戏的 12,000 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -2126,7 +2126,7 @@
                 "index": 157,
                 "platform": "Steam",
                 "identifier": 6980,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Thief: Deadly Shadows",
@@ -2275,7 +2275,7 @@
                 "index": 352,
                 "platform": "Steam",
                 "identifier": 8930,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Sid Meier's Civilization® V",
@@ -2426,16 +2426,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "好评如潮",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(337)",
-                    "tooltip": "过去 30 天内的 337 篇用户评测中有 95% 为好评。"
+                    "count": "(369)",
+                    "tooltip": "过去 30 天内的 369 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(120,064)",
-                    "tooltip": "此游戏的 120,064 篇用户评测中有 96% 为好评。"
+                    "count": "(120,127)",
+                    "tooltip": "此游戏的 120,127 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -2444,7 +2444,7 @@
                 "index": 220,
                 "platform": "Steam",
                 "identifier": 15100,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Assassin's Creed™: Director's Cut Edition",
@@ -2534,12 +2534,12 @@
                         "name": "暗杀"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%B8%AD%E4%B8%96%E7%BA%AA/",
-                        "name": "中世纪"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
                         "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%B8%AD%E4%B8%96%E7%BA%AA/",
+                        "name": "中世纪"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%98%B4%E8%B0%8B/",
@@ -2581,14 +2581,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(195)",
-                    "tooltip": "过去 30 天内的 195 篇用户评测中有 70% 为好评。"
+                    "count": "(239)",
+                    "tooltip": "过去 30 天内的 239 篇用户评测中有 73% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(17,600)",
-                    "tooltip": "此游戏的 17,600 篇用户评测中有 82% 为好评。"
+                    "count": "(17,661)",
+                    "tooltip": "此游戏的 17,661 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -2597,7 +2597,7 @@
                 "index": 166,
                 "platform": "Steam",
                 "identifier": 22100,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Mount & Blade",
@@ -2738,8 +2738,8 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(15)",
-                    "tooltip": "过去 30 天内的 15 篇用户评测中有 86% 为好评。"
+                    "count": "(16)",
+                    "tooltip": "过去 30 天内的 16 篇用户评测中有 87% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
@@ -3803,7 +3803,7 @@
                 "index": 149,
                 "platform": "Steam",
                 "identifier": 38400,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Fallout: A Post Nuclear Role Playing Game",
@@ -3936,14 +3936,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(464)",
-                    "tooltip": "过去 30 天内的 464 篇用户评测中有 97% 为好评。"
+                    "count": "(418)",
+                    "tooltip": "过去 30 天内的 418 篇用户评测中有 98% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(12,871)",
-                    "tooltip": "此游戏的 12,871 篇用户评测中有 95% 为好评。"
+                    "count": "(12,915)",
+                    "tooltip": "此游戏的 12,915 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -3952,7 +3952,7 @@
                 "index": 150,
                 "platform": "Steam",
                 "identifier": 38410,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Fallout 2: A Post Nuclear Role Playing Game",
@@ -4046,24 +4046,24 @@
                         "name": "剧情丰富"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%8D%E5%8F%A4/",
-                        "name": "复古"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E8%84%91%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
                         "name": "电脑角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%8D%E5%8F%A4/",
+                        "name": "复古"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
                         "name": "探索"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E8%89%B2%E5%B9%BD%E9%BB%98/",
-                        "name": "黑色幽默"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
                         "name": "好评原声音轨"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E8%89%B2%E5%B9%BD%E9%BB%98/",
+                        "name": "黑色幽默"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E7%8E%A9%E4%BB%B7%E5%80%BC/",
@@ -4085,14 +4085,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(340)",
-                    "tooltip": "过去 30 天内的 340 篇用户评测中有 94% 为好评。"
+                    "count": "(304)",
+                    "tooltip": "过去 30 天内的 304 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(11,179)",
-                    "tooltip": "此游戏的 11,179 篇用户评测中有 94% 为好评。"
+                    "count": "(11,211)",
+                    "tooltip": "此游戏的 11,211 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -4101,7 +4101,7 @@
                 "index": 151,
                 "platform": "Steam",
                 "identifier": 38420,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Fallout Tactics: Brotherhood of Steel",
@@ -4113,7 +4113,7 @@
                 "description": "Tactical Squad-Based Combat comes to the Fallout® Universe! You are the wretched refuse. You may be born from dirt, but we will forge you into steel. You will learn to bend; if not you, will you break. In these dark times, the Brotherhood - your Brotherhood - is all that stands between the rekindled flame of civilization and the howling,...",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "Aug 19, 2009"
+                    "date": "19 Aug, 2009"
                 },
                 "language": {
                     "zh": {
@@ -4236,16 +4236,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(27)",
-                    "tooltip": "过去 30 天内的 27 篇用户评测中有 77% 为好评。"
+                    "count": "(18)",
+                    "tooltip": "过去 30 天内的 18 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(1,931)",
-                    "tooltip": "此游戏的 1,931 篇用户评测中有 79% 为好评。"
+                    "count": "(1,933)",
+                    "tooltip": "此游戏的 1,933 篇用户评测中有 79% 为好评。"
                 }
             }
         },
@@ -4254,7 +4254,7 @@
                 "index": 383,
                 "platform": "Steam",
                 "identifier": 41900,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "The Bard's Tale ARPG: Remastered and Resnarkled",
@@ -4385,7 +4385,7 @@
                 "index": 274,
                 "platform": "Steam",
                 "identifier": 42910,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Magicka",
@@ -4562,14 +4562,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(76)",
-                    "tooltip": "过去 30 天内的 76 篇用户评测中有 51% 为好评。"
+                    "count": "(64)",
+                    "tooltip": "过去 30 天内的 64 篇用户评测中有 53% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(18,124)",
-                    "tooltip": "此游戏的 18,124 篇用户评测中有 86% 为好评。"
+                    "count": "(18,128)",
+                    "tooltip": "此游戏的 18,128 篇用户评测中有 86% 为好评。"
                 }
             }
         },
@@ -4578,7 +4578,7 @@
                 "index": 279,
                 "platform": "Steam",
                 "identifier": 42960,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Victoria II",
@@ -4715,14 +4715,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(107)",
-                    "tooltip": "过去 30 天内的 107 篇用户评测中有 88% 为好评。"
+                    "count": "(106)",
+                    "tooltip": "过去 30 天内的 106 篇用户评测中有 91% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(15,369)",
-                    "tooltip": "此游戏的 15,369 篇用户评测中有 92% 为好评。"
+                    "count": "(15,385)",
+                    "tooltip": "此游戏的 15,385 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -4731,7 +4731,7 @@
                 "index": 122,
                 "platform": "Steam",
                 "identifier": 47810,
-                "last_track_date": "2024-06-11"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Dragon Age: Origins - Ultimate Edition",
@@ -4858,16 +4858,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(247)",
-                    "tooltip": "过去 30 天内的 247 篇用户评测中有 79% 为好评。"
+                    "count": "(294)",
+                    "tooltip": "过去 30 天内的 294 篇用户评测中有 82% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(21,440)",
-                    "tooltip": "此游戏的 21,440 篇用户评测中有 88% 为好评。"
+                    "count": "(21,530)",
+                    "tooltip": "此游戏的 21,530 篇用户评测中有 88% 为好评。"
                 }
             }
         },
@@ -67188,7 +67188,7 @@
                 "index": 419,
                 "platform": "Steam",
                 "identifier": 1590760,
-                "last_track_date": "2024-06-10"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Metal Slug Tactics",
@@ -67833,7 +67833,7 @@
                 "index": 566,
                 "platform": "Steam",
                 "identifier": 1601580,
-                "last_track_date": "2024-06-10"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Frostpunk 2",
@@ -67845,7 +67845,7 @@
                 "description": "Discover a city-survival game set 30 years after an apocalyptic blizzard ravaged Earth, transforming our world into a harsh, icy wasteland. In Frostpunk 2, you must face a new deadly threat that appears on the horizon – human nature and its unsatiated thirst for power.",
                 "release_date": {
                     "coming_soon": true,
-                    "date": "Jul 25, 2024"
+                    "date": "25 Jul, 2024"
                 },
                 "language": {
                     "zh": {
@@ -67931,12 +67931,12 @@
                         "name": "选择取向"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%BA%E5%9C%B0%E5%BB%BA%E8%AE%BE/",
-                        "name": "基地建设"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AE%A1%E7%90%86/",
                         "name": "管理"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%BA%E5%9C%B0%E5%BB%BA%E8%AE%BE/",
+                        "name": "基地建设"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%9B%AA/",
@@ -72199,7 +72199,7 @@
                 "index": 569,
                 "platform": "Steam",
                 "identifier": 1771300,
-                "last_track_date": "2024-06-10"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Kingdom Come: Deliverance II",
@@ -83793,7 +83793,7 @@
                 "index": 572,
                 "platform": "Steam",
                 "identifier": 2215430,
-                "last_track_date": "2024-06-10"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "Ghost of Tsushima DIRECTOR'S CUT",
@@ -83805,7 +83805,7 @@
                 "description": "A storm is coming. Venture into the complete Ghost of Tsushima DIRECTOR’S CUT on PC; forge your own path through this open-world action adventure and uncover its hidden wonders. Brought to you by Sucker Punch Productions, Nixxes Software and PlayStation Studios.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "16 May, 2024"
+                    "date": "May 16, 2024"
                 },
                 "language": {
                     "zh": {
@@ -83916,16 +83916,16 @@
                         "name": "多人"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
-                        "name": "类魂系列"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A1%80%E8%85%A5/",
                         "name": "血腥"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8E%86%E5%8F%B2/",
                         "name": "历史"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
+                        "name": "类魂系列"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/",
@@ -83944,11 +83944,17 @@
                         "name": "探索"
                     }
                 ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(17,499)",
+                    "tooltip": "过去 30 天内的 17,499 篇用户评测中有 91% 为好评。"
+                },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(18,787)",
-                    "tooltip": "此游戏的 18,787 篇用户评测中有 90% 为好评。"
+                    "count": "(20,066)",
+                    "tooltip": "此游戏的 20,066 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -90566,7 +90572,7 @@
                 "index": 463,
                 "platform": "Steam",
                 "identifier": 2739830,
-                "last_track_date": "2024-06-10"
+                "last_track_date": "2024-06-16"
             },
             "type": "Game",
             "title": "King Arthur: Legion IX",
@@ -90709,16 +90715,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "褒贬不一",
-                    "cssClass": "mixed",
-                    "count": "(266)",
-                    "tooltip": "过去 30 天内的 266 篇用户评测中有 68% 为好评。"
+                    "summary": "多半好评",
+                    "cssClass": "positive",
+                    "count": "(118)",
+                    "tooltip": "过去 30 天内的 118 篇用户评测中有 75% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(357)",
-                    "tooltip": "此游戏的 357 篇用户评测中有 70% 为好评。"
+                    "count": "(369)",
+                    "tooltip": "此游戏的 369 篇用户评测中有 70% 为好评。"
                 }
             }
         },
@@ -92033,7 +92039,7 @@
                     "metaScore": 86,
                     "metaReviewsCount": 84,
                     "userScore": 8.5,
-                    "userReviewsCount": 787
+                    "userReviewsCount": 789
                 },
                 "meta": {
                     "index": 518,
