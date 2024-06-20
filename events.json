@@ -42838,7 +42838,7 @@
                 "index": 84,
                 "platform": "Steam",
                 "identifier": 914210,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "N1RV Ann-A: Cyberpunk Bartender Action",
@@ -46937,7 +46937,7 @@
                 "index": 71,
                 "platform": "Steam",
                 "identifier": 1030300,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Hollow Knight: Silksong",
@@ -64912,7 +64912,7 @@
                 "index": 436,
                 "platform": "Steam",
                 "identifier": 1520160,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Chrono Sword",
@@ -68649,7 +68649,7 @@
                 "index": 423,
                 "platform": "Steam",
                 "identifier": 1639080,
-                "last_track_date": "2024-06-18"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Sandwalkers",
@@ -68660,8 +68660,8 @@
                 "title": "Sandwalkers",
                 "description": "Sandwalkers is a roguelike turn-based exploration game. Build your team, traverse varied hostile environments, face countless dangers, and gain knowledge that will help you find and resurrect the Mother Tree Umama.",
                 "release_date": {
-                    "coming_soon": true,
-                    "date": "19 Jun, 2024"
+                    "coming_soon": false,
+                    "date": "Jun 19, 2024"
                 },
                 "language": {
                     "zh": {
@@ -68682,6 +68682,10 @@
                     {
                         "id": 2,
                         "description": "Single-player"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -68779,7 +68783,13 @@
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%96%97/",
                         "name": "回合制战斗"
                     }
-                ]
+                ],
+                "totalReview": {
+                    "summary": "多半好评",
+                    "cssClass": "positive",
+                    "count": "(15)",
+                    "tooltip": "此游戏的 15 篇用户评测中有 73% 为好评。"
+                }
             }
         },
         "1643320": {
@@ -69268,7 +69278,7 @@
                 "index": 85,
                 "platform": "Steam",
                 "identifier": 1663850,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "REPLACED",
@@ -69590,7 +69600,7 @@
                 "index": 458,
                 "platform": "Steam",
                 "identifier": 1671210,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "DELTARUNE",
@@ -70267,7 +70277,7 @@
                 "index": 391,
                 "platform": "Steam",
                 "identifier": 1687540,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Showa American Story",
@@ -71074,7 +71084,7 @@
                 "index": 440,
                 "platform": "Steam",
                 "identifier": 1706510,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Songs of Glimmerwick",
@@ -73347,7 +73357,7 @@
                 "index": 550,
                 "platform": "Steam",
                 "identifier": 1823390,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Escape The Mad Empire",
@@ -74334,7 +74344,7 @@
                 "index": 421,
                 "platform": "Steam",
                 "identifier": 1845910,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Dragon Age™: The Veilguard",
@@ -74459,7 +74469,7 @@
                 "index": 448,
                 "platform": "Steam",
                 "identifier": 1846700,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Witchbrook",
@@ -75059,7 +75069,7 @@
                 "index": 12,
                 "platform": "Steam",
                 "identifier": 1859910,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Legend of Mortal",
@@ -75201,8 +75211,8 @@
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(12,929)",
-                    "tooltip": "此游戏的 12,929 篇用户评测中有 60% 为好评。"
+                    "count": "(13,727)",
+                    "tooltip": "此游戏的 13,727 篇用户评测中有 62% 为好评。"
                 }
             }
         },
@@ -76711,7 +76721,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -82082,7 +82092,7 @@
                 "index": 414,
                 "platform": "Steam",
                 "identifier": 2159210,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Just A To the Moon Series Beach Episode",
@@ -82664,7 +82674,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "EthrA",
@@ -83151,7 +83161,7 @@
                 "index": 580,
                 "platform": "Steam",
                 "identifier": 2193540,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Wizard of Legend 2",
@@ -84461,7 +84471,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -84777,7 +84787,7 @@
                 "index": 422,
                 "platform": "Steam",
                 "identifier": 2246340,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Monster Hunter Wilds",
@@ -84851,12 +84861,12 @@
                         "name": "龙"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
                         "name": "开放世界"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
@@ -85874,7 +85884,7 @@
                 "index": 265,
                 "platform": "Steam",
                 "identifier": 2358660,
-                "last_track_date": "2024-06-19"
+                "last_track_date": "2024-06-20"
             },
             "type": "Game",
             "title": "Life by You",
@@ -91058,13 +91068,13 @@
                     "metaScore": 96,
                     "metaReviewsCount": 156,
                     "userScore": 8.4,
-                    "userReviewsCount": 12549
+                    "userReviewsCount": 12556
                 },
                 "meta": {
                     "index": 62,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "the-legend-of-zelda-breath-of-the-wild": {
@@ -91109,13 +91119,13 @@
                     "metaScore": 97,
                     "metaReviewsCount": 117,
                     "userScore": 8.8,
-                    "userReviewsCount": 22979
+                    "userReviewsCount": 22985
                 },
                 "meta": {
                     "index": 63,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "super-mario-odyssey": {
@@ -91156,13 +91166,13 @@
                     "metaScore": 97,
                     "metaReviewsCount": 123,
                     "userScore": 8.9,
-                    "userReviewsCount": 8773
+                    "userReviewsCount": 8776
                 },
                 "meta": {
                     "index": 64,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-odyssey",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "mario-+-rabbids-sparks-of-hope": {
@@ -91209,7 +91219,7 @@
                     "index": 65,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-sparks-of-hope",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "mario-+-rabbids-kingdom-battle": {
@@ -91256,7 +91266,7 @@
                     "index": 66,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-kingdom-battle",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "bayonetta-origins-cereza-and-the-lost-demon": {
@@ -91303,7 +91313,7 @@
                     "index": 67,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/bayonetta-origins-cereza-and-the-lost-demon",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "super-mario-bros-wonder": {
@@ -91344,13 +91354,13 @@
                     "metaScore": 92,
                     "metaReviewsCount": 135,
                     "userScore": 9.1,
-                    "userReviewsCount": 2271
+                    "userReviewsCount": 2277
                 },
                 "meta": {
                     "index": 68,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-bros-wonder",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "pokemon-scarlet": {
@@ -91391,13 +91401,13 @@
                     "metaScore": 72,
                     "metaReviewsCount": 125,
                     "userScore": 3.5,
-                    "userReviewsCount": 3543
+                    "userReviewsCount": 3544
                 },
                 "meta": {
                     "index": 133,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-scarlet",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "pokemon-violet": {
@@ -91438,13 +91448,13 @@
                     "metaScore": 71,
                     "metaReviewsCount": 125,
                     "userScore": 4.2,
-                    "userReviewsCount": 2302
+                    "userReviewsCount": 2303
                 },
                 "meta": {
                     "index": 134,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-violet",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "super-mario-rpg": {
@@ -91485,13 +91495,13 @@
                     "metaScore": 84,
                     "metaReviewsCount": 118,
                     "userScore": 8.4,
-                    "userReviewsCount": 378
+                    "userReviewsCount": 379
                 },
                 "meta": {
                     "index": 135,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-rpg",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             }
         },
@@ -91542,13 +91552,13 @@
                     "metaScore": 89,
                     "metaReviewsCount": 75,
                     "userScore": 8.6,
-                    "userReviewsCount": 2493
+                    "userReviewsCount": 2496
                 },
                 "meta": {
                     "index": 69,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/alan-wake-ii",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "assassins-creed-mirage": {
@@ -91609,13 +91619,13 @@
                     "metaScore": 76,
                     "metaReviewsCount": 99,
                     "userScore": 7.2,
-                    "userReviewsCount": 1710
+                    "userReviewsCount": 1712
                 },
                 "meta": {
                     "index": 131,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/assassins-creed-mirage",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             }
         },
@@ -91658,13 +91668,13 @@
                     "metaScore": 90,
                     "metaReviewsCount": 150,
                     "userScore": 8.9,
-                    "userReviewsCount": 8084
+                    "userReviewsCount": 8089
                 },
                 "meta": {
                     "index": 70,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/marvels-spider-man-2",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "demons-souls": {
@@ -91709,13 +91719,13 @@
                     "metaScore": 92,
                     "metaReviewsCount": 106,
                     "userScore": 8.1,
-                    "userReviewsCount": 4174
+                    "userReviewsCount": 4175
                 },
                 "meta": {
                     "index": 132,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/demons-souls",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             }
         },
@@ -91770,13 +91780,13 @@
                     "metaScore": 86,
                     "metaReviewsCount": 43,
                     "userScore": 8.3,
-                    "userReviewsCount": 245
+                    "userReviewsCount": 246
                 },
                 "meta": {
                     "index": 515,
                     "platform": "Nintendo Switch",
                     "identifier": "https://www.metacritic.com/game/unicorn-overlord",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "princess-peach-showtime": {
@@ -91823,7 +91833,7 @@
                     "index": 524,
                     "platform": "Nintendo Switch",
                     "identifier": "https://www.metacritic.com/game/princess-peach-showtime",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             }
         },
@@ -91876,7 +91886,7 @@
                     "index": 516,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/final-fantasy-xvi",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "final-fantasy-vii-rebirth": {
@@ -91917,13 +91927,13 @@
                     "metaScore": 92,
                     "metaReviewsCount": 149,
                     "userScore": 9,
-                    "userReviewsCount": 4236
+                    "userReviewsCount": 4238
                 },
                 "meta": {
                     "index": 517,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/final-fantasy-vii-rebirth",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             },
             "rise-of-the-ronin": {
@@ -91964,13 +91974,13 @@
                     "metaScore": 76,
                     "metaReviewsCount": 126,
                     "userScore": 8.8,
-                    "userReviewsCount": 2247
+                    "userReviewsCount": 2270
                 },
                 "meta": {
                     "index": 519,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/rise-of-the-ronin",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             }
         },
@@ -92033,13 +92043,13 @@
                     "metaScore": 86,
                     "metaReviewsCount": 84,
                     "userScore": 8.5,
-                    "userReviewsCount": 790
+                    "userReviewsCount": 791
                 },
                 "meta": {
                     "index": 518,
                     "platform": "Xbox Series X",
                     "identifier": "https://www.metacritic.com/game/prince-of-persia-the-lost-crown",
-                    "last_track_date": "2024-06-19"
+                    "last_track_date": "2024-06-20"
                 }
             }
         },
