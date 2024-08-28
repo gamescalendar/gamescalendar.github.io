@@ -70985,7 +70985,7 @@
                 "index": 391,
                 "platform": "Steam",
                 "identifier": 1687540,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Showa American Story",
@@ -71021,6 +71021,10 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -71792,7 +71796,7 @@
                 "index": 440,
                 "platform": "Steam",
                 "identifier": 1706510,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Songs of Glimmerwick",
@@ -71836,6 +71840,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -72263,7 +72271,7 @@
                 "index": 595,
                 "platform": "Steam",
                 "identifier": 1721060,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Mandragora",
@@ -72300,6 +72308,10 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -72562,7 +72574,7 @@
                 "index": 501,
                 "platform": "Steam",
                 "identifier": 1747760,
-                "last_track_date": "2024-08-20"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Momodora: Moonlit Farewell",
@@ -72696,12 +72708,12 @@
                         "name": "动漫"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
-                        "name": "色情内容"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
                         "name": "独立"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
+                        "name": "色情内容"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/",
@@ -72715,14 +72727,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(76)",
-                    "tooltip": "过去 30 天内的 76 篇用户评测中有 94% 为好评。"
+                    "count": "(66)",
+                    "tooltip": "过去 30 天内的 66 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,992)",
-                    "tooltip": "此游戏的 1,992 篇用户评测中有 91% 为好评。"
+                    "count": "(2,007)",
+                    "tooltip": "此游戏的 2,007 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -73053,11 +73065,11 @@
                 "index": 569,
                 "platform": "Steam",
                 "identifier": 1771300,
-                "last_track_date": "2024-08-20"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Kingdom Come: Deliverance II",
-            "start": "2024-12-31",
+            "start": "2025-02-11",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1771300,
@@ -73065,7 +73077,7 @@
                 "description": "A thrilling story-driven action RPG, with a rich open world, set in 15th century Medieval Europe. Experience the ultimate medieval adventure - through the eyes of young Henry - as you embark on a journey of epic proportions.",
                 "release_date": {
                     "coming_soon": true,
-                    "date": "2024"
+                    "date": "Feb 11, 2025"
                 },
                 "language": {
                     "zh": {
@@ -73093,6 +73105,10 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -73115,24 +73131,24 @@
                         "name": "角色扮演"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
                         "name": "开放世界"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8B%9F%E7%9C%9F/",
                         "name": "拟真"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E4%B8%AD%E4%B8%96%E7%BA%AA/",
                         "name": "中世纪"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
@@ -74513,7 +74529,7 @@
                 "index": 487,
                 "platform": "Steam",
                 "identifier": 1830970,
-                "last_track_date": "2024-08-20"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "The Last Flame",
@@ -74667,14 +74683,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(50)",
-                    "tooltip": "过去 30 天内的 50 篇用户评测中有 86% 为好评。"
+                    "count": "(45)",
+                    "tooltip": "过去 30 天内的 45 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,355)",
-                    "tooltip": "此游戏的 1,355 篇用户评测中有 86% 为好评。"
+                    "count": "(1,365)",
+                    "tooltip": "此游戏的 1,365 篇用户评测中有 86% 为好评。"
                 }
             }
         },
@@ -75379,7 +75395,7 @@
                 "index": 448,
                 "platform": "Steam",
                 "identifier": 1846700,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Witchbrook",
@@ -75435,6 +75451,10 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -77161,7 +77181,7 @@
                 "index": 554,
                 "platform": "Steam",
                 "identifier": 1893810,
-                "last_track_date": "2024-08-20"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Solium Infernum",
@@ -77275,12 +77295,12 @@
                         "name": "选择取向"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BF%83%E7%90%86%E6%81%90%E6%80%96/",
-                        "name": "心理恐怖"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%B6%E9%AD%94/",
                         "name": "恶魔"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BF%83%E7%90%86%E6%81%90%E6%80%96/",
+                        "name": "心理恐怖"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97%E5%A5%87%E5%B9%BB/",
@@ -77320,16 +77340,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(54)",
-                    "tooltip": "过去 30 天内的 54 篇用户评测中有 81% 为好评。"
+                    "count": "(32)",
+                    "tooltip": "过去 30 天内的 32 篇用户评测中有 78% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,082)",
-                    "tooltip": "此游戏的 1,082 篇用户评测中有 87% 为好评。"
+                    "count": "(1,090)",
+                    "tooltip": "此游戏的 1,090 篇用户评测中有 87% 为好评。"
                 }
             }
         },
@@ -77673,7 +77693,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -77713,6 +77733,10 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -80945,7 +80969,7 @@
                 "index": 586,
                 "platform": "Steam",
                 "identifier": 2072980,
-                "last_track_date": "2024-08-20"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "FINAL KNIGHT",
@@ -81001,6 +81025,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -81287,7 +81315,7 @@
                 "index": 583,
                 "platform": "Steam",
                 "identifier": 2086680,
-                "last_track_date": "2024-08-20"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "QubiQuest: Castle Craft",
@@ -81343,6 +81371,10 @@
                     {
                         "id": 17,
                         "description": "Includes level editor"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -81456,7 +81488,7 @@
                 "index": 582,
                 "platform": "Steam",
                 "identifier": 2089600,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Urban Myth Dissolution Center",
@@ -81492,6 +81524,10 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -82620,7 +82656,7 @@
                 "index": 589,
                 "platform": "Steam",
                 "identifier": 2139840,
-                "last_track_date": "2024-08-20"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Skelethrone: The Chronicles of Ericona",
@@ -82759,10 +82795,10 @@
                     }
                 ],
                 "totalReview": {
-                    "summary": "多半好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(82)",
-                    "tooltip": "此游戏的 82 篇用户评测中有 76% 为好评。"
+                    "count": "(93)",
+                    "tooltip": "此游戏的 93 篇用户评测中有 80% 为好评。"
                 }
             }
         },
@@ -83704,7 +83740,7 @@
                 "index": 414,
                 "platform": "Steam",
                 "identifier": 2159210,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Just A To the Moon Series Beach Episode",
@@ -83740,6 +83776,10 @@
                     {
                         "id": 18,
                         "description": "Partial Controller Support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -84290,7 +84330,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "EthrA",
@@ -84338,6 +84378,10 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -84785,7 +84829,7 @@
                 "index": 580,
                 "platform": "Steam",
                 "identifier": 2193540,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Wizard of Legend 2",
@@ -84849,6 +84893,10 @@
                     {
                         "id": 44,
                         "description": "Remote Play Together"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -85421,7 +85469,7 @@
                 "index": 572,
                 "platform": "Steam",
                 "identifier": 2215430,
-                "last_track_date": "2024-08-20"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Ghost of Tsushima DIRECTOR'S CUT",
@@ -85516,12 +85564,12 @@
                         "name": "第三人称"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%BD%9C%E8%A1%8C/",
-                        "name": "潜行"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
                         "name": "战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%BD%9C%E8%A1%8C/",
+                        "name": "潜行"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BF%8D%E8%80%85/",
@@ -85532,12 +85580,12 @@
                         "name": "类魂系列"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
-                        "name": "动作冒险"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
                         "name": "动作角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
+                        "name": "动作冒险"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
@@ -85575,14 +85623,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,899)",
-                    "tooltip": "过去 30 天内的 1,899 篇用户评测中有 94% 为好评。"
+                    "count": "(1,825)",
+                    "tooltip": "过去 30 天内的 1,825 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(25,434)",
-                    "tooltip": "此游戏的 25,434 篇用户评测中有 92% 为好评。"
+                    "count": "(25,877)",
+                    "tooltip": "此游戏的 25,877 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -86095,7 +86143,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-08-27"
+                "last_track_date": "2024-08-28"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -86131,6 +86179,10 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -94802,7 +94854,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8,
-                    "userReviewsCount": 11511
+                    "userReviewsCount": 11512
                 },
                 "meta": {
                     "index": 516,
@@ -94849,7 +94901,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 8.9,
-                    "userReviewsCount": 4939
+                    "userReviewsCount": 4943
                 },
                 "meta": {
                     "index": 517,
