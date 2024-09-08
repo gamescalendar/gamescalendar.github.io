@@ -72250,7 +72250,7 @@
                 "index": 595,
                 "platform": "Steam",
                 "identifier": 1721060,
-                "last_track_date": "2024-09-07"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Mandragora",
@@ -74350,7 +74350,7 @@
                 "index": 442,
                 "platform": "Steam",
                 "identifier": 1826710,
-                "last_track_date": "2024-09-07"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Creature Keeper",
@@ -75200,7 +75200,7 @@
                 "index": 421,
                 "platform": "Steam",
                 "identifier": 1845910,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Dragon Age™: The Veilguard",
@@ -75256,10 +75256,6 @@
                     {
                         "id": 61,
                         "description": "HDR available"
-                    },
-                    {
-                        "id": 62,
-                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -75286,16 +75282,16 @@
                         "name": "单人"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
+                        "name": "角色自定义"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
                         "name": "动作角色扮演"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
                         "name": "奇幻"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
-                        "name": "角色自定义"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
@@ -75314,24 +75310,24 @@
                         "name": "故事架构丰富"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E7%BB%93%E5%B1%80/",
                         "name": "多结局"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E8%84%91%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
                         "name": "电脑角色扮演"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%9C%AF/",
-                        "name": "回合制战术"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
                         "name": "第三人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%9C%AF/",
+                        "name": "回合制战术"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
@@ -75369,7 +75365,7 @@
                 "index": 448,
                 "platform": "Steam",
                 "identifier": 1846700,
-                "last_track_date": "2024-09-07"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Witchbrook",
@@ -75836,7 +75832,7 @@
                 "index": 80,
                 "platform": "Steam",
                 "identifier": 1857090,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Norland",
@@ -75906,12 +75902,12 @@
                         "name": "基地建设"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%8E%E5%B8%82%E8%90%A5%E9%80%A0/",
-                        "name": "城市营造"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%AE%96%E6%B0%91%E6%A8%A1%E6%8B%9F/",
                         "name": "殖民模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%8E%E5%B8%82%E8%90%A5%E9%80%A0/",
+                        "name": "城市营造"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AE%A1%E7%90%86/",
@@ -75977,14 +75973,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(732)",
-                    "tooltip": "过去 30 天内的 732 篇用户评测中有 82% 为好评。"
+                    "count": "(486)",
+                    "tooltip": "过去 30 天内的 486 篇用户评测中有 80% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(3,887)",
-                    "tooltip": "此游戏的 3,887 篇用户评测中有 78% 为好评。"
+                    "count": "(3,966)",
+                    "tooltip": "此游戏的 3,966 篇用户评测中有 78% 为好评。"
                 }
             }
         },
@@ -77663,7 +77659,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2024-09-07"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -77977,7 +77973,7 @@
                 "index": 209,
                 "platform": "Steam",
                 "identifier": 1938010,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "WILD HEARTS™",
@@ -78126,14 +78122,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(61)",
-                    "tooltip": "过去 30 天内的 61 篇用户评测中有 60% 为好评。"
+                    "count": "(56)",
+                    "tooltip": "过去 30 天内的 56 篇用户评测中有 53% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(9,247)",
-                    "tooltip": "此游戏的 9,247 篇用户评测中有 48% 为好评。"
+                    "count": "(9,255)",
+                    "tooltip": "此游戏的 9,255 篇用户评测中有 48% 为好评。"
                 }
             }
         },
@@ -81563,7 +81559,7 @@
                 "index": 78,
                 "platform": "Steam",
                 "identifier": 2106560,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Cross Tails",
@@ -81811,7 +81807,7 @@
                 "index": 543,
                 "platform": "Steam",
                 "identifier": 2109770,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Kingmakers",
@@ -81859,10 +81855,6 @@
                     {
                         "id": 22,
                         "description": "Steam Achievements"
-                    },
-                    {
-                        "id": 62,
-                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -81968,7 +81960,7 @@
                 "index": 109,
                 "platform": "Steam",
                 "identifier": 2114740,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Blasphemous 2",
@@ -81980,7 +81972,7 @@
                 "description": "The Penitent One awakens as Blasphemous 2 joins him once again in an endless struggle against The Miracle. Dive into a perilous new world filled with mysteries and secrets to discover, and tear your way through monstrous foes that stand between you and your quest to end the cycle once and for all. ",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "24 Aug, 2023"
+                    "date": "Aug 24, 2023"
                 },
                 "language": {
                     "zh": {
@@ -82042,12 +82034,12 @@
                         "name": "奇幻"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
-                        "name": "冒险"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E/",
                         "name": "类银河战士恶魔城"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
@@ -82062,12 +82054,12 @@
                         "name": "横向滚屏"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BD%8E%E5%AE%B9%E9%94%99/",
-                        "name": "低容错"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
                         "name": "困难"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E4%BD%8E%E5%AE%B9%E9%94%99/",
+                        "name": "低容错"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
@@ -82117,14 +82109,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(336)",
-                    "tooltip": "过去 30 天内的 336 篇用户评测中有 89% 为好评。"
+                    "count": "(288)",
+                    "tooltip": "过去 30 天内的 288 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(8,450)",
-                    "tooltip": "此游戏的 8,450 篇用户评测中有 92% 为好评。"
+                    "count": "(8,510)",
+                    "tooltip": "此游戏的 8,510 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -82753,7 +82745,7 @@
                 "index": 75,
                 "platform": "Steam",
                 "identifier": 2142230,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Mercenaries Saga 1 -Will of the White Lions-",
@@ -82765,7 +82757,7 @@
                 "description": "Mercenaries Saga 1 is a turn based tactical simulation RPG. It is the first of the series followed by many other solid simulation games: Mercenaries Blaze and Mercenaries Rebirth being the most recent addition to the series.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "11 Oct, 2023"
+                    "date": "Oct 11, 2023"
                 },
                 "language": {
                     "zh": {
@@ -82897,7 +82889,7 @@
                 "index": 76,
                 "platform": "Steam",
                 "identifier": 2142240,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Mercenaries Saga 2 -Order of the Silver Eagle-",
@@ -82909,7 +82901,7 @@
                 "description": "“Mercenaries Saga 2: Order of the Silver Eagle” is a tactical simulation RPG where you fight through 32 stages with Claude, Captain of the Silver Eagles and his team.",
                 "release_date": {
                     "coming_soon": false,
-                    "date": "11 Oct, 2023"
+                    "date": "Oct 11, 2023"
                 },
                 "language": {
                     "zh": {
@@ -83049,7 +83041,7 @@
                 "index": 77,
                 "platform": "Steam",
                 "identifier": 2142250,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Mercenaries Saga 3 -Gray Wolves of War-",
@@ -83529,7 +83521,7 @@
                 "index": 540,
                 "platform": "Steam",
                 "identifier": 2147380,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Silence of the Siren",
@@ -83577,10 +83569,6 @@
                     {
                         "id": 24,
                         "description": "Shared/Split Screen"
-                    },
-                    {
-                        "id": 62,
-                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -84276,7 +84264,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2024-09-07"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "EthrA",
@@ -84771,7 +84759,7 @@
                 "index": 580,
                 "platform": "Steam",
                 "identifier": 2193540,
-                "last_track_date": "2024-09-07"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Wizard of Legend 2",
@@ -84936,7 +84924,7 @@
                 "index": 579,
                 "platform": "Steam",
                 "identifier": 2198150,
-                "last_track_date": "2024-08-31"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Tiny Glade",
@@ -84972,10 +84960,6 @@
                     {
                         "id": 23,
                         "description": "Steam Cloud"
-                    },
-                    {
-                        "id": 62,
-                        "description": "Family Sharing"
                     }
                 ],
                 "genres": [
@@ -85022,12 +85006,12 @@
                         "name": "自然"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%AF%95%E9%AA%8C%E6%80%A7/",
-                        "name": "试验性"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BD%A9%E8%89%B2/",
                         "name": "彩色"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%AF%95%E9%AA%8C%E6%80%A7/",
+                        "name": "试验性"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%B8%A9%E9%A6%A8%E6%83%AC%E6%84%8F/",
@@ -86085,7 +86069,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-09-07"
+                "last_track_date": "2024-09-08"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -94878,7 +94862,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8,
-                    "userReviewsCount": 11576
+                    "userReviewsCount": 11575
                 },
                 "meta": {
                     "index": 516,
@@ -94925,7 +94909,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 8.9,
-                    "userReviewsCount": 5092
+                    "userReviewsCount": 5097
                 },
                 "meta": {
                     "index": 517,
