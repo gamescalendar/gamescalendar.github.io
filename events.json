@@ -84582,7 +84582,7 @@
                 "index": 107,
                 "platform": "Steam",
                 "identifier": 2186680,
-                "last_track_date": "2024-09-02"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Warhammer 40,000: Rogue Trader",
@@ -84676,32 +84676,24 @@
                 ],
                 "tags": [
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E7%BB%93%E5%B1%80/",
-                        "name": "多结局"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%82%AC%E7%96%91/",
-                        "name": "悬疑"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E5%BD%B1%E5%BC%8F/",
+                        "name": "电影式"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%9C%A8%E7%BA%BF%E5%90%88%E4%BD%9C/",
                         "name": "在线合作"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "策略角色扮演"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
+                        "name": "多人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E6%88%98%E7%95%A5/",
                         "name": "回合战略"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E5%BD%B1%E5%BC%8F/",
-                        "name": "电影式"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97/",
-                        "name": "黑暗"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "策略角色扮演"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%94%B6%E9%9B%86%E9%A9%AC%E6%8B%89%E6%9D%BE/",
@@ -84712,61 +84704,69 @@
                         "name": "迷宫探索"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%AA%E7%A9%BA/",
+                        "name": "太空"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
                         "name": "氛围"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%95%85%E4%BA%8B%E6%9E%B6%E6%9E%84%E4%B8%B0%E5%AF%8C%20/",
-                        "name": "故事架构丰富"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E8%84%91%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "电脑角色扮演"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "角色扮演"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
-                        "name": "奇幻"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
-                        "name": "剧情丰富"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E7%BB%93%E5%B1%80/",
+                        "name": "多结局"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
                         "name": "战术角色扮演"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%89%E8%A7%92%E8%A7%86%E8%A7%92/",
-                        "name": "等角视角"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%82%AC%E7%96%91/",
+                        "name": "悬疑"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%88%B1%E6%83%85/",
-                        "name": "爱情"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%A7%91%E5%B9%BB/",
+                        "name": "科幻"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%AA%E7%A9%BA/",
-                        "name": "太空"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF/",
+                        "name": "战术"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E8%89%B2%E5%B9%BD%E9%BB%98/",
+                        "name": "黑色幽默"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
+                        "name": "角色自定义"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%80%89%E6%8B%A9%E5%8F%96%E5%90%91/",
+                        "name": "选择取向"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
+                        "name": "战斗"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
+                        "name": "探索"
                     }
                 ],
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(450)",
-                    "tooltip": "过去 30 天内的 450 篇用户评测中有 85% 为好评。"
+                    "count": "(477)",
+                    "tooltip": "过去 30 天内的 477 篇用户评测中有 85% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(13,207)",
-                    "tooltip": "此游戏的 13,207 篇用户评测中有 78% 为好评。"
+                    "count": "(13,348)",
+                    "tooltip": "此游戏的 13,348 篇用户评测中有 78% 为好评。"
                 }
             }
         },
@@ -84775,7 +84775,7 @@
                 "index": 580,
                 "platform": "Steam",
                 "identifier": 2193540,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Wizard of Legend 2",
@@ -85736,7 +85736,7 @@
                 "index": 368,
                 "platform": "Steam",
                 "identifier": 2230650,
-                "last_track_date": "2024-09-02"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "TEVI",
@@ -85894,16 +85894,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(55)",
-                    "tooltip": "过去 30 天内的 55 篇用户评测中有 81% 为好评。"
+                    "count": "(49)",
+                    "tooltip": "过去 30 天内的 49 篇用户评测中有 77% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,635)",
-                    "tooltip": "此游戏的 2,635 篇用户评测中有 89% 为好评。"
+                    "count": "(2,644)",
+                    "tooltip": "此游戏的 2,644 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -86085,7 +86085,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -86230,7 +86230,7 @@
                 "index": 342,
                 "platform": "Steam",
                 "identifier": 2243710,
-                "last_track_date": "2024-09-02"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Rune Factory 3 Special",
@@ -86382,17 +86382,11 @@
                         "name": "农业"
                     }
                 ],
-                "recentReview": {
-                    "summary": "特别好评",
-                    "cssClass": "positive",
-                    "count": "(10)",
-                    "tooltip": "过去 30 天内的 10 篇用户评测中有 90% 为好评。"
-                },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(426)",
-                    "tooltip": "此游戏的 426 篇用户评测中有 94% 为好评。"
+                    "count": "(428)",
+                    "tooltip": "此游戏的 428 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -86401,7 +86395,7 @@
                 "index": 422,
                 "platform": "Steam",
                 "identifier": 2246340,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Monster Hunter Wilds",
@@ -86534,7 +86528,7 @@
                 "index": 4,
                 "platform": "Steam",
                 "identifier": 2254740,
-                "last_track_date": "2024-09-02"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Persona 5 Tactica",
@@ -86661,16 +86655,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
-                    "cssClass": "positive",
-                    "count": "(18)",
-                    "tooltip": "过去 30 天内的 18 篇用户评测中有 72% 为好评。"
+                    "summary": "褒贬不一",
+                    "cssClass": "mixed",
+                    "count": "(19)",
+                    "tooltip": "过去 30 天内的 19 篇用户评测中有 57% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(1,123)",
-                    "tooltip": "此游戏的 1,123 篇用户评测中有 74% 为好评。"
+                    "count": "(1,127)",
+                    "tooltip": "此游戏的 1,127 篇用户评测中有 74% 为好评。"
                 }
             }
         },
@@ -87160,7 +87154,7 @@
                 "index": 239,
                 "platform": "Steam",
                 "identifier": 2290180,
-                "last_track_date": "2024-09-02"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Riders Republic",
@@ -87317,14 +87311,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(258)",
-                    "tooltip": "过去 30 天内的 258 篇用户评测中有 84% 为好评。"
+                    "count": "(246)",
+                    "tooltip": "过去 30 天内的 246 篇用户评测中有 82% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(14,215)",
-                    "tooltip": "此游戏的 14,215 篇用户评测中有 84% 为好评。"
+                    "count": "(14,272)",
+                    "tooltip": "此游戏的 14,272 篇用户评测中有 84% 为好评。"
                 }
             }
         },
@@ -88259,7 +88253,7 @@
                 "index": 592,
                 "platform": "Steam",
                 "identifier": 2376260,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Mariachi Legends",
@@ -88887,7 +88881,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -89872,7 +89866,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -90009,7 +90003,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -90339,7 +90333,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -90488,7 +90482,7 @@
                 "index": 562,
                 "platform": "Steam",
                 "identifier": 2454960,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "The Great Villainess: Strategy of Lily",
@@ -91207,7 +91201,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -91533,7 +91527,7 @@
                 "index": 577,
                 "platform": "Steam",
                 "identifier": 2532480,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Warhammer 40,000: Mechanicus II",
@@ -92498,7 +92492,7 @@
                 "index": 413,
                 "platform": "Steam",
                 "identifier": 2664600,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "The Last Hour of an Epic TO THE MOON RPG",
@@ -92979,7 +92973,7 @@
                 "index": 472,
                 "platform": "Steam",
                 "identifier": 2719590,
-                "last_track_date": "2024-09-09"
+                "last_track_date": "2024-09-10"
             },
             "type": "Game",
             "title": "Light No Fire",
@@ -94866,7 +94860,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8,
-                    "userReviewsCount": 11607
+                    "userReviewsCount": 11601
                 },
                 "meta": {
                     "index": 516,
@@ -94913,7 +94907,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 8.9,
-                    "userReviewsCount": 5139
+                    "userReviewsCount": 5133
                 },
                 "meta": {
                     "index": 517,
@@ -94960,7 +94954,7 @@
                     "metaScore": 76,
                     "metaReviewsCount": 127,
                     "userScore": 8.9,
-                    "userReviewsCount": 2844
+                    "userReviewsCount": 2838
                 },
                 "meta": {
                     "index": 519,
@@ -95029,7 +95023,7 @@
                     "metaScore": 86,
                     "metaReviewsCount": 84,
                     "userScore": 8.4,
-                    "userReviewsCount": 925
+                    "userReviewsCount": 924
                 },
                 "meta": {
                     "index": 518,
