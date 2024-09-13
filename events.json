@@ -77828,7 +77828,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -81440,7 +81440,7 @@
                 "index": 583,
                 "platform": "Steam",
                 "identifier": 2086680,
-                "last_track_date": "2024-09-05"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "QubiQuest: Castle Craft",
@@ -81609,7 +81609,7 @@
                 "index": 582,
                 "platform": "Steam",
                 "identifier": 2089600,
-                "last_track_date": "2024-09-05"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Urban Myth Dissolution Center",
@@ -82779,7 +82779,7 @@
                 "index": 589,
                 "platform": "Steam",
                 "identifier": 2139840,
-                "last_track_date": "2024-09-05"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Skelethrone: The Chronicles of Ericona",
@@ -82917,11 +82917,17 @@
                         "name": "裸露"
                     }
                 ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(41)",
+                    "tooltip": "过去 30 天内的 41 篇用户评测中有 85% 为好评。"
+                },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(94)",
-                    "tooltip": "此游戏的 94 篇用户评测中有 81% 为好评。"
+                    "count": "(100)",
+                    "tooltip": "此游戏的 100 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -84449,7 +84455,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "EthrA",
@@ -84944,19 +84950,19 @@
                 "index": 580,
                 "platform": "Steam",
                 "identifier": 2193540,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Wizard of Legend 2",
-            "start": "2027-01-01",
+            "start": "2024-10-03",
             "app_data": {
                 "platform": "Steam",
                 "appid": 2193540,
                 "title": "Wizard of Legend 2",
-                "description": "Face perilous magical trials in the fast-paced rogue-lite follow-up to the acclaimed original, featuring up to 4-player co-op and vibrant new 3D visuals. Master new Arcana and elements, experiment with spell combinations, and become the next Wizard of Legend!",
+                "description": "Face perilous magical trials in the fast-paced rogue-lite follow-up to the acclaimed original, featuring co-op and vibrant new 3D visuals. Master new Arcana and elements, experiment with spell combinations, and become the next Wizard of Legend!",
                 "release_date": {
                     "coming_soon": true,
-                    "date": "To be announced"
+                    "date": "Oct 3, 2024"
                 },
                 "language": {
                     "zh": {
@@ -85018,9 +85024,17 @@
                     {
                         "id": "3",
                         "description": "RPG"
+                    },
+                    {
+                        "id": "70",
+                        "description": "Early Access"
                     }
                 ],
                 "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8A%A2%E5%85%88%E4%BD%93%E9%AA%8C/",
+                        "name": "抢先体验"
+                    },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E7%B1%BB%20Rogue/",
                         "name": "动作类 Rogue"
@@ -85096,10 +85110,6 @@
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E7%8E%A9%E4%BB%B7%E5%80%BC/",
                         "name": "重玩价值"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
                     }
                 ]
             }
@@ -85580,7 +85590,7 @@
                 "index": 572,
                 "platform": "Steam",
                 "identifier": 2215430,
-                "last_track_date": "2024-09-05"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Ghost of Tsushima DIRECTOR'S CUT",
@@ -85715,12 +85725,12 @@
                         "name": "血腥"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/",
-                        "name": "暴力"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
                         "name": "探索"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/",
+                        "name": "暴力"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%9C%A8%E7%BA%BF%E5%90%88%E4%BD%9C/",
@@ -85734,14 +85744,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,726)",
-                    "tooltip": "过去 30 天内的 1,726 篇用户评测中有 95% 为好评。"
+                    "count": "(1,582)",
+                    "tooltip": "过去 30 天内的 1,582 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(26,263)",
-                    "tooltip": "此游戏的 26,263 篇用户评测中有 92% 为好评。"
+                    "count": "(26,620)",
+                    "tooltip": "此游戏的 26,620 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -86254,7 +86264,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -86564,7 +86574,7 @@
                 "index": 422,
                 "platform": "Steam",
                 "identifier": 2246340,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Monster Hunter Wilds",
@@ -87828,7 +87838,7 @@
                 "index": 593,
                 "platform": "Steam",
                 "identifier": 2345170,
-                "last_track_date": "2024-09-05"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Rise Again",
@@ -88422,7 +88432,7 @@
                 "index": 592,
                 "platform": "Steam",
                 "identifier": 2376260,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Mariachi Legends",
@@ -89050,7 +89060,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -89493,7 +89503,7 @@
                 "index": 600,
                 "platform": "Steam",
                 "identifier": 2412960,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Breathedge 2",
@@ -90176,7 +90186,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -90313,7 +90323,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -90643,7 +90653,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -90792,7 +90802,7 @@
                 "index": 562,
                 "platform": "Steam",
                 "identifier": 2454960,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "The Great Villainess: Strategy of Lily",
@@ -91521,7 +91531,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2024-09-12"
+                "last_track_date": "2024-09-13"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
