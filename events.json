@@ -89533,7 +89533,7 @@
                 "index": 600,
                 "platform": "Steam",
                 "identifier": 2412960,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Breathedge 2",
@@ -89674,7 +89674,7 @@
                 "index": 461,
                 "platform": "Steam",
                 "identifier": 2426530,
-                "last_track_date": "2024-09-16"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Nova Roma",
@@ -89819,7 +89819,7 @@
                 "index": 570,
                 "platform": "Steam",
                 "identifier": 2428730,
-                "last_track_date": "2024-09-16"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "SWAT Commander: Prologue",
@@ -89864,6 +89864,10 @@
                     {
                         "id": 38,
                         "description": "Online Co-op"
+                    },
+                    {
+                        "id": 22,
+                        "description": "Steam Achievements"
                     },
                     {
                         "id": 28,
@@ -89969,7 +89973,7 @@
                 "index": 490,
                 "platform": "Steam",
                 "identifier": 2430660,
-                "last_track_date": "2024-09-16"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "MiceGard",
@@ -90216,7 +90220,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -90353,7 +90357,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -90683,7 +90687,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -90832,7 +90836,7 @@
                 "index": 562,
                 "platform": "Steam",
                 "identifier": 2454960,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "The Great Villainess: Strategy of Lily",
@@ -90971,7 +90975,7 @@
                 "index": 89,
                 "platform": "Steam",
                 "identifier": 2457220,
-                "last_track_date": "2024-09-16"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Avowed",
@@ -91561,7 +91565,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -91887,7 +91891,7 @@
                 "index": 577,
                 "platform": "Steam",
                 "identifier": 2532480,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Warhammer 40,000: Mechanicus II",
@@ -92206,7 +92210,7 @@
                 "index": 529,
                 "platform": "Steam",
                 "identifier": 2646460,
-                "last_track_date": "2024-09-16"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Soulmask",
@@ -92312,12 +92316,12 @@
                         "name": "抢先体验"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
-                        "name": "多人"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
                         "name": "生存"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
+                        "name": "多人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E7%94%9F%E5%AD%98%E5%88%B6%E4%BD%9C/",
@@ -92328,12 +92332,12 @@
                         "name": "沙盒"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
-                        "name": "开放世界"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BB%BA%E9%80%A0/",
                         "name": "建造"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
+                        "name": "开放世界"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%BA%E5%9C%B0%E5%BB%BA%E8%AE%BE/",
@@ -92391,14 +92395,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(456)",
-                    "tooltip": "过去 30 天内的 456 篇用户评测中有 78% 为好评。"
+                    "count": "(363)",
+                    "tooltip": "过去 30 天内的 363 篇用户评测中有 79% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(8,850)",
-                    "tooltip": "此游戏的 8,850 篇用户评测中有 78% 为好评。"
+                    "count": "(8,922)",
+                    "tooltip": "此游戏的 8,922 篇用户评测中有 78% 为好评。"
                 }
             }
         },
@@ -92848,7 +92852,7 @@
                 "index": 413,
                 "platform": "Steam",
                 "identifier": 2664600,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "The Last Hour of an Epic TO THE MOON RPG",
@@ -93329,7 +93333,7 @@
                 "index": 472,
                 "platform": "Steam",
                 "identifier": 2719590,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Light No Fire",
@@ -93775,7 +93779,7 @@
                 "index": 537,
                 "platform": "Steam",
                 "identifier": 2778580,
-                "last_track_date": "2024-09-16"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "ELDEN RING Shadow of the Erdtree",
@@ -93949,14 +93953,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(1,423)",
-                    "tooltip": "过去 30 天内的 1,423 篇用户评测中有 59% 为好评。"
+                    "count": "(1,061)",
+                    "tooltip": "过去 30 天内的 1,061 篇用户评测中有 60% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(78,313)",
-                    "tooltip": "此游戏的 78,313 篇用户评测中有 70% 为好评。"
+                    "count": "(78,451)",
+                    "tooltip": "此游戏的 78,451 篇用户评测中有 70% 为好评。"
                 }
             }
         },
@@ -93965,7 +93969,7 @@
                 "index": 587,
                 "platform": "Steam",
                 "identifier": 2789020,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Hibernaculum",
@@ -94102,7 +94106,7 @@
                 "index": 567,
                 "platform": "Steam",
                 "identifier": 2868840,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Slay the Spire 2",
@@ -94223,7 +94227,7 @@
                 "index": 585,
                 "platform": "Steam",
                 "identifier": 3005660,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-09-24"
             },
             "type": "Game",
             "title": "Scribe RPG",
@@ -95412,7 +95416,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 8.9,
-                    "userReviewsCount": 4852
+                    "userReviewsCount": 4854
                 },
                 "meta": {
                     "index": 517,
@@ -95459,7 +95463,7 @@
                     "metaScore": 76,
                     "metaReviewsCount": 127,
                     "userScore": 7.9,
-                    "userReviewsCount": 1250
+                    "userReviewsCount": 1251
                 },
                 "meta": {
                     "index": 519,
