@@ -77033,7 +77033,7 @@
                 "index": 90,
                 "platform": "Steam",
                 "identifier": 1880360,
-                "last_track_date": "2024-09-22"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Monster Hunter Rise: Sunbreak",
@@ -77154,14 +77154,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(33)",
-                    "tooltip": "过去 30 天内的 33 篇用户评测中有 66% 为好评。"
+                    "count": "(38)",
+                    "tooltip": "过去 30 天内的 38 篇用户评测中有 55% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(4,404)",
-                    "tooltip": "此游戏的 4,404 篇用户评测中有 61% 为好评。"
+                    "count": "(4,418)",
+                    "tooltip": "此游戏的 4,418 篇用户评测中有 61% 为好评。"
                 }
             }
         },
@@ -77852,7 +77852,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2024-09-29"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -84356,7 +84356,7 @@
                 "index": 573,
                 "platform": "Steam",
                 "identifier": 2172010,
-                "last_track_date": "2024-09-22"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Until Dawn™",
@@ -84390,8 +84390,16 @@
                         "description": "Single-player"
                     },
                     {
+                        "id": 22,
+                        "description": "Steam Achievements"
+                    },
+                    {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 23,
+                        "description": "Steam Cloud"
                     }
                 ],
                 "genres": [
@@ -84454,12 +84462,12 @@
                         "name": "剧情"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
-                        "name": "情感"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%82%AC%E7%96%91/",
                         "name": "悬疑"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
+                        "name": "情感"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E5%BD%B1%E5%BC%8F/",
@@ -84489,7 +84497,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2024-09-29"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "EthrA",
@@ -84642,7 +84650,7 @@
                 "index": 548,
                 "platform": "Steam",
                 "identifier": 2184350,
-                "last_track_date": "2024-09-22"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Guild Saga: Vanished Worlds",
@@ -85481,7 +85489,7 @@
                 "index": 233,
                 "platform": "Steam",
                 "identifier": 2208920,
-                "last_track_date": "2024-09-22"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Assassin's Creed Valhalla",
@@ -85626,14 +85634,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(645)",
-                    "tooltip": "过去 30 天内的 645 篇用户评测中有 63% 为好评。"
+                    "count": "(637)",
+                    "tooltip": "过去 30 天内的 637 篇用户评测中有 61% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(22,964)",
-                    "tooltip": "此游戏的 22,964 篇用户评测中有 69% 为好评。"
+                    "count": "(23,104)",
+                    "tooltip": "此游戏的 23,104 篇用户评测中有 69% 为好评。"
                 }
             }
         },
@@ -85812,7 +85820,7 @@
                 "index": 492,
                 "platform": "Steam",
                 "identifier": 2228010,
-                "last_track_date": "2024-09-22"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Right and Down and Dice",
@@ -86143,7 +86151,7 @@
                 "index": 246,
                 "platform": "Steam",
                 "identifier": 2239550,
-                "last_track_date": "2024-09-22"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Watch Dogs®: Legion",
@@ -86300,14 +86308,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(198)",
-                    "tooltip": "过去 30 天内的 198 篇用户评测中有 48% 为好评。"
+                    "count": "(213)",
+                    "tooltip": "过去 30 天内的 213 篇用户评测中有 51% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(8,291)",
-                    "tooltip": "此游戏的 8,291 篇用户评测中有 57% 为好评。"
+                    "count": "(8,342)",
+                    "tooltip": "此游戏的 8,342 篇用户评测中有 57% 为好评。"
                 }
             }
         },
@@ -86316,7 +86324,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-09-29"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -87095,7 +87103,7 @@
                 "index": 549,
                 "platform": "Steam",
                 "identifier": 2273430,
-                "last_track_date": "2024-09-22"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "BlazBlue Entropy Effect",
@@ -87254,16 +87262,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(324)",
-                    "tooltip": "过去 30 天内的 324 篇用户评测中有 94% 为好评。"
+                    "count": "(379)",
+                    "tooltip": "过去 30 天内的 379 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(19,275)",
-                    "tooltip": "此游戏的 19,275 篇用户评测中有 94% 为好评。"
+                    "count": "(19,425)",
+                    "tooltip": "此游戏的 19,425 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -87272,7 +87280,7 @@
                 "index": 496,
                 "platform": "Steam",
                 "identifier": 2276830,
-                "last_track_date": "2024-09-22"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Kingsvein",
@@ -87608,7 +87616,7 @@
                 "index": 474,
                 "platform": "Steam",
                 "identifier": 2305840,
-                "last_track_date": "2024-09-22"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Cat Quest III",
@@ -87781,14 +87789,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(263)",
-                    "tooltip": "过去 30 天内的 263 篇用户评测中有 93% 为好评。"
+                    "count": "(187)",
+                    "tooltip": "过去 30 天内的 187 篇用户评测中有 91% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,413)",
-                    "tooltip": "此游戏的 1,413 篇用户评测中有 94% 为好评。"
+                    "count": "(1,452)",
+                    "tooltip": "此游戏的 1,452 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -88546,7 +88554,7 @@
                 "index": 592,
                 "platform": "Steam",
                 "identifier": 2376260,
-                "last_track_date": "2024-09-29"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Mariachi Legends",
@@ -89174,7 +89182,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2024-09-29"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -89621,7 +89629,7 @@
                 "index": 600,
                 "platform": "Steam",
                 "identifier": 2412960,
-                "last_track_date": "2024-09-29"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Breathedge 2",
@@ -90308,7 +90316,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-09-29"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -90445,7 +90453,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-09-29"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -90775,7 +90783,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-09-29"
+                "last_track_date": "2024-09-30"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -95924,7 +95932,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8.4,
-                    "userReviewsCount": 8861
+                    "userReviewsCount": 8862
                 },
                 "meta": {
                     "index": 516,
@@ -95971,7 +95979,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 9,
-                    "userReviewsCount": 4763
+                    "userReviewsCount": 4765
                 },
                 "meta": {
                     "index": 517,
@@ -96087,7 +96095,7 @@
                     "metaScore": 86,
                     "metaReviewsCount": 84,
                     "userScore": 8.5,
-                    "userReviewsCount": 942
+                    "userReviewsCount": 943
                 },
                 "meta": {
                     "index": 518,
