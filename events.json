@@ -65332,7 +65332,7 @@
                 "index": 436,
                 "platform": "Steam",
                 "identifier": 1520160,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Chrono Sword",
@@ -65785,7 +65785,7 @@
                 "index": 594,
                 "platform": "Steam",
                 "identifier": 1545080,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Arran: The Book of Heroes",
@@ -70046,7 +70046,7 @@
                 "index": 591,
                 "platform": "Steam",
                 "identifier": 1661330,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "SacriFire",
@@ -70171,7 +70171,7 @@
                 "index": 85,
                 "platform": "Steam",
                 "identifier": 1663850,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "REPLACED",
@@ -70494,7 +70494,7 @@
                 "index": 458,
                 "platform": "Steam",
                 "identifier": 1671210,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "DELTARUNE",
@@ -71006,7 +71006,7 @@
                 "index": 547,
                 "platform": "Steam",
                 "identifier": 1684350,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "The Thaumaturge",
@@ -71153,16 +71153,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(108)",
-                    "tooltip": "过去 30 天内的 108 篇用户评测中有 78% 为好评。"
+                    "count": "(104)",
+                    "tooltip": "过去 30 天内的 104 篇用户评测中有 80% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,911)",
-                    "tooltip": "此游戏的 1,911 篇用户评测中有 80% 为好评。"
+                    "count": "(1,935)",
+                    "tooltip": "此游戏的 1,935 篇用户评测中有 80% 为好评。"
                 }
             }
         },
@@ -71171,7 +71171,7 @@
                 "index": 391,
                 "platform": "Steam",
                 "identifier": 1687540,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Showa American Story",
@@ -71978,7 +71978,7 @@
                 "index": 440,
                 "platform": "Steam",
                 "identifier": 1706510,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Songs of Glimmerwick",
@@ -72449,7 +72449,7 @@
                 "index": 595,
                 "platform": "Steam",
                 "identifier": 1721060,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Mandragora",
@@ -72916,7 +72916,7 @@
                 "index": 538,
                 "platform": "Steam",
                 "identifier": 1756730,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Superstar Strategy",
@@ -74549,7 +74549,7 @@
                 "index": 442,
                 "platform": "Steam",
                 "identifier": 1826710,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Creature Keeper",
@@ -75399,7 +75399,7 @@
                 "index": 421,
                 "platform": "Steam",
                 "identifier": 1845910,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Dragon Age™: The Veilguard",
@@ -75477,6 +75477,14 @@
                         "name": "单人"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/LGBTQ%2B/",
+                        "name": "LGBTQ+"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
+                        "name": "奇幻"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
                         "name": "角色自定义"
                     },
@@ -75485,16 +75493,8 @@
                         "name": "动作角色扮演"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
-                        "name": "奇幻"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
                         "name": "剧情丰富"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/LGBTQ%2B/",
-                        "name": "LGBTQ+"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
@@ -75517,32 +75517,32 @@
                         "name": "动作"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E8%84%91%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "电脑角色扮演"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
                         "name": "第三人称"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BE%99/",
-                        "name": "龙"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%9C%AF/",
-                        "name": "回合制战术"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
-                        "name": "策略"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%88%B1%E6%83%85/",
                         "name": "爱情"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BE%99/",
+                        "name": "龙"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
                         "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%B5%E8%84%91%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "电脑角色扮演"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AD%96%E7%95%A5/",
+                        "name": "策略"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%9E%E5%90%88%E5%88%B6%E6%88%98%E6%9C%AF/",
+                        "name": "回合制战术"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%AD%94%E6%B3%95/",
@@ -75560,7 +75560,7 @@
                 "index": 448,
                 "platform": "Steam",
                 "identifier": 1846700,
-                "last_track_date": "2024-09-30"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Witchbrook",
@@ -76027,7 +76027,7 @@
                 "index": 80,
                 "platform": "Steam",
                 "identifier": 1857090,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Norland",
@@ -76059,6 +76059,10 @@
                     {
                         "id": 2,
                         "description": "Single-player"
+                    },
+                    {
+                        "id": 22,
+                        "description": "Steam Achievements"
                     },
                     {
                         "id": 23,
@@ -76093,72 +76097,72 @@
                         "name": "模拟"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%BA%E5%9C%B0%E5%BB%BA%E8%AE%BE/",
+                        "name": "基地建设"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%8E%E5%B8%82%E8%90%A5%E9%80%A0/",
                         "name": "城市营造"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
-                        "name": "生存"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/",
-                        "name": "资源管理"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%AE%96%E6%B0%91%E6%A8%A1%E6%8B%9F/",
                         "name": "殖民模拟"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9F%BA%E5%9C%B0%E5%BB%BA%E8%AE%BE/",
-                        "name": "基地建设"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%A7%E6%88%98%E7%95%A5/",
+                        "name": "大战略"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AE%A1%E7%90%86/",
                         "name": "管理"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86/",
+                        "name": "资源管理"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BB%BA%E9%80%A0/",
                         "name": "建造"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%A7%E6%88%98%E7%95%A5/",
-                        "name": "大战略"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
-                        "name": "沙盒"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8E%86%E5%8F%B2/",
                         "name": "历史"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
-                        "name": "开放世界"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%8E%E6%9C%AB%E6%97%A5/",
-                        "name": "后末日"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
+                        "name": "沙盒"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E6%A8%A1%E7%BB%84%E5%8C%96/",
                         "name": "可模组化"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
-                        "name": "氛围"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
+                        "name": "生存"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%80%89%E6%8B%A9%E5%8F%96%E5%90%91/",
-                        "name": "选择取向"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
+                        "name": "开放世界"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%94%BF%E6%B2%BB/",
-                        "name": "政治"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E7%8E%A9%E4%BB%B7%E5%80%BC/",
+                        "name": "重玩价值"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%BB%8F%E6%B5%8E/",
+                        "name": "经济"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E5%90%AB%E6%9A%82%E5%81%9C/",
+                        "name": "即时含暂停"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%B3%E6%97%B6%E6%88%98%E7%95%A5/",
+                        "name": "即时战略"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8A%A2%E5%85%88%E4%BD%93%E9%AA%8C/",
@@ -76168,14 +76172,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(275)",
-                    "tooltip": "过去 30 天内的 275 篇用户评测中有 81% 为好评。"
+                    "count": "(327)",
+                    "tooltip": "过去 30 天内的 327 篇用户评测中有 80% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(4,061)",
-                    "tooltip": "此游戏的 4,061 篇用户评测中有 78% 为好评。"
+                    "count": "(4,213)",
+                    "tooltip": "此游戏的 4,213 篇用户评测中有 78% 为好评。"
                 }
             }
         },
@@ -76184,7 +76188,7 @@
                 "index": 12,
                 "platform": "Steam",
                 "identifier": 1859910,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Legend of Mortal",
@@ -76338,14 +76342,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,094)",
-                    "tooltip": "过去 30 天内的 1,094 篇用户评测中有 89% 为好评。"
+                    "count": "(863)",
+                    "tooltip": "过去 30 天内的 863 篇用户评测中有 83% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(24,560)",
-                    "tooltip": "此游戏的 24,560 篇用户评测中有 78% 为好评。"
+                    "count": "(24,723)",
+                    "tooltip": "此游戏的 24,723 篇用户评测中有 77% 为好评。"
                 }
             }
         },
@@ -77164,7 +77168,7 @@
                 "index": 7,
                 "platform": "Steam",
                 "identifier": 1888160,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
@@ -77322,14 +77326,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(530)",
-                    "tooltip": "过去 30 天内的 530 篇用户评测中有 94% 为好评。"
+                    "count": "(470)",
+                    "tooltip": "过去 30 天内的 470 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(55,368)",
-                    "tooltip": "此游戏的 55,368 篇用户评测中有 91% 为好评。"
+                    "count": "(55,445)",
+                    "tooltip": "此游戏的 55,445 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -77515,7 +77519,7 @@
                 "index": 469,
                 "platform": "Steam",
                 "identifier": 1911610,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Windblown",
@@ -77562,8 +77566,8 @@
                         "description": "Online Co-op"
                     },
                     {
-                        "id": 18,
-                        "description": "Partial Controller Support"
+                        "id": 28,
+                        "description": "Full controller support"
                     }
                 ],
                 "genres": [
@@ -77669,7 +77673,7 @@
                 "index": 522,
                 "platform": "Steam",
                 "identifier": 1928980,
-                "last_track_date": "2024-09-23"
+                "last_track_date": "2024-10-01"
             },
             "type": "Game",
             "title": "Nightingale",
@@ -77830,14 +77834,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(648)",
-                    "tooltip": "过去 30 天内的 648 篇用户评测中有 73% 为好评。"
+                    "count": "(814)",
+                    "tooltip": "过去 30 天内的 814 篇用户评测中有 74% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(12,284)",
-                    "tooltip": "此游戏的 12,284 篇用户评测中有 65% 为好评。"
+                    "count": "(12,462)",
+                    "tooltip": "此游戏的 12,462 篇用户评测中有 65% 为好评。"
                 }
             }
         },
@@ -95936,7 +95940,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8.4,
-                    "userReviewsCount": 8864
+                    "userReviewsCount": 8865
                 },
                 "meta": {
                     "index": 516,
@@ -95983,7 +95987,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 9,
-                    "userReviewsCount": 4772
+                    "userReviewsCount": 4773
                 },
                 "meta": {
                     "index": 517,
