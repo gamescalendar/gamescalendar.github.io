@@ -82507,7 +82507,7 @@
                 "index": 98,
                 "platform": "Steam",
                 "identifier": 2135150,
-                "last_track_date": "2024-10-03"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Elin",
@@ -82545,12 +82545,8 @@
                         "description": "Multi-player"
                     },
                     {
-                        "id": 22,
-                        "description": "Steam Achievements"
-                    },
-                    {
-                        "id": 23,
-                        "description": "Steam Cloud"
+                        "id": 30,
+                        "description": "Steam Workshop"
                     }
                 ],
                 "genres": [
@@ -82561,6 +82557,14 @@
                     {
                         "id": "3",
                         "description": "RPG"
+                    },
+                    {
+                        "id": "28",
+                        "description": "Simulation"
+                    },
+                    {
+                        "id": "2",
+                        "description": "Strategy"
                     },
                     {
                         "id": "70",
@@ -82581,12 +82585,12 @@
                         "name": "传统类 Rogue"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
-                        "name": "日系角色扮演"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%20Rogue/",
                         "name": "类 Rogue"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%A5%E7%B3%BB%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
+                        "name": "日系角色扮演"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
@@ -82617,12 +82621,12 @@
                         "name": "迷宫探索"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
-                        "name": "困难"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
                         "name": "探索"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
+                        "name": "困难"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%9D%9E%E7%BA%BF%E6%80%A7/",
@@ -83591,7 +83595,7 @@
                 "index": 355,
                 "platform": "Steam",
                 "identifier": 2144740,
-                "last_track_date": "2024-10-03"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Ghostrunner 2",
@@ -83717,12 +83721,12 @@
                         "name": "后末日"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
-                        "name": "战斗"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
                         "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%96%97/",
+                        "name": "战斗"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%91%A9%E6%89%98%E8%BD%A6/",
@@ -83742,16 +83746,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "褒贬不一",
-                    "cssClass": "mixed",
-                    "count": "(178)",
-                    "tooltip": "过去 30 天内的 178 篇用户评测中有 68% 为好评。"
+                    "summary": "多半好评",
+                    "cssClass": "positive",
+                    "count": "(184)",
+                    "tooltip": "过去 30 天内的 184 篇用户评测中有 70% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(5,526)",
-                    "tooltip": "此游戏的 5,526 篇用户评测中有 82% 为好评。"
+                    "count": "(5,576)",
+                    "tooltip": "此游戏的 5,576 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -83927,7 +83931,7 @@
                 "index": 414,
                 "platform": "Steam",
                 "identifier": 2159210,
-                "last_track_date": "2024-10-03"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Just a To the Moon Series Beach Episode",
@@ -84072,8 +84076,8 @@
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,446)",
-                    "tooltip": "此游戏的 1,446 篇用户评测中有 98% 为好评。"
+                    "count": "(1,590)",
+                    "tooltip": "此游戏的 1,590 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -84545,7 +84549,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "EthrA",
@@ -85388,7 +85392,7 @@
                 "index": 498,
                 "platform": "Steam",
                 "identifier": 2198510,
-                "last_track_date": "2024-10-03"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "New Cycle",
@@ -85541,14 +85545,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(45)",
-                    "tooltip": "过去 30 天内的 45 篇用户评测中有 57% 为好评。"
+                    "count": "(25)",
+                    "tooltip": "过去 30 天内的 25 篇用户评测中有 56% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(1,698)",
-                    "tooltip": "此游戏的 1,698 篇用户评测中有 79% 为好评。"
+                    "count": "(1,703)",
+                    "tooltip": "此游戏的 1,703 篇用户评测中有 79% 为好评。"
                 }
             }
         },
@@ -86396,7 +86400,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -86712,7 +86716,7 @@
                 "index": 422,
                 "platform": "Steam",
                 "identifier": 2246340,
-                "last_track_date": "2024-10-03"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Monster Hunter Wilds",
@@ -88292,7 +88296,7 @@
                 "index": 86,
                 "platform": "Steam",
                 "identifier": 2358720,
-                "last_track_date": "2024-10-03"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Black Myth: Wukong",
@@ -88441,14 +88445,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(155,701)",
-                    "tooltip": "过去 30 天内的 155,701 篇用户评测中有 96% 为好评。"
+                    "count": "(104,297)",
+                    "tooltip": "过去 30 天内的 104,297 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(685,617)",
-                    "tooltip": "此游戏的 685,617 篇用户评测中有 96% 为好评。"
+                    "count": "(697,751)",
+                    "tooltip": "此游戏的 697,751 篇用户评测中有 96% 为好评。"
                 }
             }
         },
@@ -88626,7 +88630,7 @@
                 "index": 592,
                 "platform": "Steam",
                 "identifier": 2376260,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Mariachi Legends",
@@ -89101,7 +89105,7 @@
                 "index": 590,
                 "platform": "Steam",
                 "identifier": 2394650,
-                "last_track_date": "2024-10-03"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Crypt Custodian",
@@ -89244,14 +89248,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(468)",
-                    "tooltip": "过去 30 天内的 468 篇用户评测中有 98% 为好评。"
+                    "count": "(269)",
+                    "tooltip": "过去 30 天内的 269 篇用户评测中有 98% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(806)",
-                    "tooltip": "此游戏的 806 篇用户评测中有 98% 为好评。"
+                    "count": "(839)",
+                    "tooltip": "此游戏的 839 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -89260,7 +89264,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -89713,7 +89717,7 @@
                 "index": 600,
                 "platform": "Steam",
                 "identifier": 2412960,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Breathedge 2",
@@ -90400,7 +90404,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -90537,7 +90541,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -90867,7 +90871,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -91016,7 +91020,7 @@
                 "index": 562,
                 "platform": "Steam",
                 "identifier": 2454960,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "The Great Villainess: Strategy of Lily",
@@ -91745,7 +91749,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -91894,7 +91898,7 @@
                 "index": 603,
                 "platform": "Steam",
                 "identifier": 2489330,
-                "last_track_date": "2024-10-10"
+                "last_track_date": "2024-10-11"
             },
             "type": "Game",
             "title": "Whiskerwood",
@@ -95928,7 +95932,7 @@
                     "metaScore": 86,
                     "metaReviewsCount": 43,
                     "userScore": 8.3,
-                    "userReviewsCount": 341
+                    "userReviewsCount": 342
                 },
                 "meta": {
                     "index": 515,
@@ -96075,7 +96079,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 9,
-                    "userReviewsCount": 4865
+                    "userReviewsCount": 4866
                 },
                 "meta": {
                     "index": 517,
