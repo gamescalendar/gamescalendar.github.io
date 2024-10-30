@@ -77873,7 +77873,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -81155,7 +81155,7 @@
                 "index": 586,
                 "platform": "Steam",
                 "identifier": 2072980,
-                "last_track_date": "2024-10-22"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "FINAL KNIGHT",
@@ -84560,7 +84560,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "EthrA",
@@ -85252,7 +85252,7 @@
                 "index": 579,
                 "platform": "Steam",
                 "identifier": 2198150,
-                "last_track_date": "2024-10-22"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Tiny Glade",
@@ -85382,19 +85382,25 @@
                         "name": "单人"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
-                        "name": "独立"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
                         "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
+                        "name": "独立"
                     }
                 ],
+                "recentReview": {
+                    "summary": "好评如潮",
+                    "cssClass": "positive",
+                    "count": "(3,594)",
+                    "tooltip": "过去 30 天内的 3,594 篇用户评测中有 97% 为好评。"
+                },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(7,963)",
-                    "tooltip": "此游戏的 7,963 篇用户评测中有 97% 为好评。"
+                    "count": "(8,326)",
+                    "tooltip": "此游戏的 8,326 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -86411,7 +86417,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -87049,7 +87055,7 @@
                 "index": 584,
                 "platform": "Steam",
                 "identifier": 2272900,
-                "last_track_date": "2024-10-22"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Mirthwood",
@@ -87127,12 +87133,12 @@
                         "name": "钓鱼"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AE%A1%E7%90%86/",
-                        "name": "管理"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E4%B8%AD%E4%B8%96%E7%BA%AA/",
                         "name": "中世纪"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%AE%A1%E7%90%86/",
+                        "name": "管理"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
@@ -88476,7 +88482,7 @@
                 "index": 253,
                 "platform": "Steam",
                 "identifier": 2369390,
-                "last_track_date": "2024-10-22"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Far Cry® 6",
@@ -88629,14 +88635,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(570)",
-                    "tooltip": "过去 30 天内的 570 篇用户评测中有 68% 为好评。"
+                    "count": "(528)",
+                    "tooltip": "过去 30 天内的 528 篇用户评测中有 69% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(21,222)",
-                    "tooltip": "此游戏的 21,222 篇用户评测中有 71% 为好评。"
+                    "count": "(21,297)",
+                    "tooltip": "此游戏的 21,297 篇用户评测中有 71% 为好评。"
                 }
             }
         },
@@ -88645,7 +88651,7 @@
                 "index": 592,
                 "platform": "Steam",
                 "identifier": 2376260,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Mariachi Legends",
@@ -88790,7 +88796,7 @@
                 "index": 552,
                 "platform": "Steam",
                 "identifier": 2379780,
-                "last_track_date": "2024-10-22"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Balatro",
@@ -88943,14 +88949,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(1,618)",
-                    "tooltip": "过去 30 天内的 1,618 篇用户评测中有 98% 为好评。"
+                    "count": "(1,716)",
+                    "tooltip": "过去 30 天内的 1,716 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(44,399)",
-                    "tooltip": "此游戏的 44,399 篇用户评测中有 97% 为好评。"
+                    "count": "(44,958)",
+                    "tooltip": "此游戏的 44,958 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -89273,7 +89279,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -89430,7 +89436,7 @@
                 "index": 415,
                 "platform": "Steam",
                 "identifier": 2404370,
-                "last_track_date": "2024-10-22"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "YOHANE THE PARHELION -BLAZE in the DEEPBLUE-",
@@ -89547,14 +89553,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(14)",
-                    "tooltip": "过去 30 天内的 14 篇用户评测中有 92% 为好评。"
+                    "count": "(12)",
+                    "tooltip": "过去 30 天内的 12 篇用户评测中有 83% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(743)",
-                    "tooltip": "此游戏的 743 篇用户评测中有 93% 为好评。"
+                    "count": "(745)",
+                    "tooltip": "此游戏的 745 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -89726,7 +89732,7 @@
                 "index": 600,
                 "platform": "Steam",
                 "identifier": 2412960,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Breathedge 2",
@@ -89867,7 +89873,7 @@
                 "index": 461,
                 "platform": "Steam",
                 "identifier": 2426530,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Nova Roma",
@@ -90286,7 +90292,7 @@
                 "index": 74,
                 "platform": "Steam",
                 "identifier": 2432430,
-                "last_track_date": "2024-10-22"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Symphony of War: The Nephilim Saga - Legends",
@@ -90413,7 +90419,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -90550,7 +90556,7 @@
                 "index": 541,
                 "platform": "Steam",
                 "identifier": 2442460,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Citizen Sleeper 2: Starward Vector",
@@ -90880,7 +90886,7 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "Mecha BREAK",
@@ -91029,7 +91035,7 @@
                 "index": 562,
                 "platform": "Steam",
                 "identifier": 2454960,
-                "last_track_date": "2024-10-29"
+                "last_track_date": "2024-10-30"
             },
             "type": "Game",
             "title": "The Great Villainess: Strategy of Lily",
@@ -96053,7 +96059,7 @@
                     "metaScore": 87,
                     "metaReviewsCount": 149,
                     "userScore": 8.4,
-                    "userReviewsCount": 8953
+                    "userReviewsCount": 8954
                 },
                 "meta": {
                     "index": 516,
@@ -96100,7 +96106,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 9,
-                    "userReviewsCount": 5000
+                    "userReviewsCount": 5002
                 },
                 "meta": {
                     "index": 517,
@@ -96216,7 +96222,7 @@
                     "metaScore": 86,
                     "metaReviewsCount": 84,
                     "userScore": 8.5,
-                    "userReviewsCount": 994
+                    "userReviewsCount": 995
                 },
                 "meta": {
                     "index": 518,
