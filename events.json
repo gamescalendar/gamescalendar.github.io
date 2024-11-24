@@ -51550,7 +51550,7 @@
                 "index": 599,
                 "platform": "Steam",
                 "identifier": 1154030,
-                "last_track_date": "2024-11-23"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Titan Quest II",
@@ -52561,7 +52561,7 @@
                 "index": 588,
                 "platform": "Steam",
                 "identifier": 1166890,
-                "last_track_date": "2024-11-23"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Necrofugitive",
@@ -54177,7 +54177,7 @@
                 "index": 18,
                 "platform": "Steam",
                 "identifier": 1174180,
-                "last_track_date": "2024-11-16"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Red Dead Redemption 2",
@@ -54346,14 +54346,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(8,663)",
-                    "tooltip": "过去 30 天内的 8,663 篇用户评测中有 93% 为好评。"
+                    "count": "(8,683)",
+                    "tooltip": "过去 30 天内的 8,683 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(585,183)",
-                    "tooltip": "此游戏的 585,183 篇用户评测中有 91% 为好评。"
+                    "count": "(586,939)",
+                    "tooltip": "此游戏的 586,939 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -54362,7 +54362,7 @@
                 "index": 32,
                 "platform": "Steam",
                 "identifier": 1182620,
-                "last_track_date": "2024-11-16"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Impostor Factory",
@@ -54519,14 +54519,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(108)",
-                    "tooltip": "过去 30 天内的 108 篇用户评测中有 92% 为好评。"
+                    "count": "(103)",
+                    "tooltip": "过去 30 天内的 103 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(10,485)",
-                    "tooltip": "此游戏的 10,485 篇用户评测中有 95% 为好评。"
+                    "count": "(10,500)",
+                    "tooltip": "此游戏的 10,500 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -54535,7 +54535,7 @@
                 "index": 312,
                 "platform": "Steam",
                 "identifier": 1184050,
-                "last_track_date": "2024-11-16"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Gears Tactics",
@@ -54663,10 +54663,10 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
-                    "cssClass": "positive",
-                    "count": "(16)",
-                    "tooltip": "过去 30 天内的 16 篇用户评测中有 75% 为好评。"
+                    "summary": "褒贬不一",
+                    "cssClass": "mixed",
+                    "count": "(13)",
+                    "tooltip": "过去 30 天内的 13 篇用户评测中有 69% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
@@ -54681,7 +54681,7 @@
                 "index": 116,
                 "platform": "Steam",
                 "identifier": 1196590,
-                "last_track_date": "2024-11-16"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Resident Evil Village",
@@ -54828,16 +54828,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "特别好评",
+                    "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(771)",
-                    "tooltip": "过去 30 天内的 771 篇用户评测中有 94% 为好评。"
+                    "count": "(837)",
+                    "tooltip": "过去 30 天内的 837 篇用户评测中有 95% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(76,286)",
-                    "tooltip": "此游戏的 76,286 篇用户评测中有 95% 为好评。"
+                    "count": "(76,472)",
+                    "tooltip": "此游戏的 76,472 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -54846,7 +54846,7 @@
                 "index": 50,
                 "platform": "Steam",
                 "identifier": 1201270,
-                "last_track_date": "2024-11-16"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "A Space for the Unbound",
@@ -54928,12 +54928,12 @@
                         "name": "剧情丰富"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
-                        "name": "情感"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
                         "name": "像素图形"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%83%85%E6%84%9F/",
+                        "name": "情感"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BF%83%E7%90%86/",
@@ -55007,14 +55007,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(62)",
-                    "tooltip": "过去 30 天内的 62 篇用户评测中有 100% 为好评。"
+                    "count": "(84)",
+                    "tooltip": "过去 30 天内的 84 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(4,820)",
-                    "tooltip": "此游戏的 4,820 篇用户评测中有 97% 为好评。"
+                    "count": "(4,854)",
+                    "tooltip": "此游戏的 4,854 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -55023,7 +55023,7 @@
                 "index": 485,
                 "platform": "Steam",
                 "identifier": 1203620,
-                "last_track_date": "2024-11-16"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Enshrouded",
@@ -55161,12 +55161,12 @@
                         "name": "沙盒"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8A%A2%E5%85%88%E4%BD%93%E9%AA%8C/",
-                        "name": "抢先体验"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
                         "name": "角色自定义"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8A%A2%E5%85%88%E4%BD%93%E9%AA%8C/",
+                        "name": "抢先体验"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
@@ -55188,14 +55188,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,877)",
-                    "tooltip": "过去 30 天内的 1,877 篇用户评测中有 82% 为好评。"
+                    "count": "(2,757)",
+                    "tooltip": "过去 30 天内的 2,757 篇用户评测中有 82% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(52,292)",
-                    "tooltip": "此游戏的 52,292 篇用户评测中有 85% 为好评。"
+                    "count": "(53,307)",
+                    "tooltip": "此游戏的 53,307 篇用户评测中有 85% 为好评。"
                 }
             }
         },
@@ -55204,7 +55204,7 @@
                 "index": 360,
                 "platform": "Steam",
                 "identifier": 1203630,
-                "last_track_date": "2024-11-16"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Record of Lodoss War-Deedlit in Wonder Labyrinth-",
@@ -55352,13 +55352,13 @@
                     "summary": "特别好评",
                     "cssClass": "positive",
                     "count": "(32)",
-                    "tooltip": "过去 30 天内的 32 篇用户评测中有 87% 为好评。"
+                    "tooltip": "过去 30 天内的 32 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(6,137)",
-                    "tooltip": "此游戏的 6,137 篇用户评测中有 92% 为好评。"
+                    "count": "(6,145)",
+                    "tooltip": "此游戏的 6,145 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -55367,7 +55367,7 @@
                 "index": 172,
                 "platform": "Steam",
                 "identifier": 1205520,
-                "last_track_date": "2024-11-16"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Pentiment",
@@ -55508,14 +55508,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(102)",
-                    "tooltip": "过去 30 天内的 102 篇用户评测中有 96% 为好评。"
+                    "count": "(108)",
+                    "tooltip": "过去 30 天内的 108 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(6,420)",
-                    "tooltip": "此游戏的 6,420 篇用户评测中有 95% 为好评。"
+                    "count": "(6,457)",
+                    "tooltip": "此游戏的 6,457 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -55524,7 +55524,7 @@
                 "index": 454,
                 "platform": "Steam",
                 "identifier": 1210320,
-                "last_track_date": "2024-11-16"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Potion Craft: Alchemist Simulator",
@@ -55667,16 +55667,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "多半好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(269)",
-                    "tooltip": "过去 30 天内的 269 篇用户评测中有 77% 为好评。"
+                    "count": "(276)",
+                    "tooltip": "过去 30 天内的 276 篇用户评测中有 80% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(27,032)",
-                    "tooltip": "此游戏的 27,032 篇用户评测中有 91% 为好评。"
+                    "count": "(27,094)",
+                    "tooltip": "此游戏的 27,094 篇用户评测中有 90% 为好评。"
                 }
             }
         },
@@ -64486,7 +64486,7 @@
                 "index": 453,
                 "platform": "Steam",
                 "identifier": 1488490,
-                "last_track_date": "2024-11-23"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Nivalis",
@@ -65321,7 +65321,7 @@
                 "index": 436,
                 "platform": "Steam",
                 "identifier": 1520160,
-                "last_track_date": "2024-11-23"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Chrono Sword",
@@ -65780,7 +65780,7 @@
                 "index": 594,
                 "platform": "Steam",
                 "identifier": 1545080,
-                "last_track_date": "2024-11-23"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Arran: The Book of Heroes",
@@ -70071,7 +70071,7 @@
                 "index": 591,
                 "platform": "Steam",
                 "identifier": 1661330,
-                "last_track_date": "2024-11-23"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "SacriFire",
@@ -70196,7 +70196,7 @@
                 "index": 85,
                 "platform": "Steam",
                 "identifier": 1663850,
-                "last_track_date": "2024-11-23"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "REPLACED",
@@ -70523,7 +70523,7 @@
                 "index": 458,
                 "platform": "Steam",
                 "identifier": 1671210,
-                "last_track_date": "2024-11-23"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "DELTARUNE",
@@ -71200,7 +71200,7 @@
                 "index": 391,
                 "platform": "Steam",
                 "identifier": 1687540,
-                "last_track_date": "2024-11-23"
+                "last_track_date": "2024-11-24"
             },
             "type": "Game",
             "title": "Showa American Story",
