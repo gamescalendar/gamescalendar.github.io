@@ -65782,7 +65782,7 @@
                 "index": 594,
                 "platform": "Steam",
                 "identifier": 1545080,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Arran: The Book of Heroes",
@@ -67740,7 +67740,7 @@
                 "index": 419,
                 "platform": "Steam",
                 "identifier": 1590760,
-                "last_track_date": "2024-12-04"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Metal Slug Tactics",
@@ -67891,11 +67891,17 @@
                         "name": "军事"
                     }
                 ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(284)",
+                    "tooltip": "过去 30 天内的 284 篇用户评测中有 82% 为好评。"
+                },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(719)",
-                    "tooltip": "此游戏的 719 篇用户评测中有 77% 为好评。"
+                    "count": "(731)",
+                    "tooltip": "此游戏的 731 篇用户评测中有 77% 为好评。"
                 }
             }
         },
@@ -70085,7 +70091,7 @@
                 "index": 591,
                 "platform": "Steam",
                 "identifier": 1661330,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "SacriFire",
@@ -70210,7 +70216,7 @@
                 "index": 85,
                 "platform": "Steam",
                 "identifier": 1663850,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "REPLACED",
@@ -70537,7 +70543,7 @@
                 "index": 458,
                 "platform": "Steam",
                 "identifier": 1671210,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "DELTARUNE",
@@ -71049,7 +71055,7 @@
                 "index": 547,
                 "platform": "Steam",
                 "identifier": 1684350,
-                "last_track_date": "2024-12-04"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "The Thaumaturge",
@@ -71127,16 +71133,16 @@
                         "name": "回合制战斗"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
+                        "name": "剧情丰富"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%B6%E9%AD%94/",
                         "name": "恶魔"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97/",
                         "name": "黑暗"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%89%A7%E6%83%85%E4%B8%B0%E5%AF%8C/",
-                        "name": "剧情丰富"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A8%E7%90%86/",
@@ -71198,14 +71204,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(258)",
-                    "tooltip": "过去 30 天内的 258 篇用户评测中有 94% 为好评。"
+                    "count": "(270)",
+                    "tooltip": "过去 30 天内的 270 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,295)",
-                    "tooltip": "此游戏的 2,295 篇用户评测中有 82% 为好评。"
+                    "count": "(2,352)",
+                    "tooltip": "此游戏的 2,352 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -71214,7 +71220,7 @@
                 "index": 391,
                 "platform": "Steam",
                 "identifier": 1687540,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Showa American Story",
@@ -72021,7 +72027,7 @@
                 "index": 440,
                 "platform": "Steam",
                 "identifier": 1706510,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Songs of Glimmerwick",
@@ -72959,7 +72965,7 @@
                 "index": 538,
                 "platform": "Steam",
                 "identifier": 1756730,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Superstar Strategy",
@@ -74429,7 +74435,7 @@
                 "index": 550,
                 "platform": "Steam",
                 "identifier": 1823390,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Escape The Mad Empire",
@@ -74586,7 +74592,7 @@
                 "index": 442,
                 "platform": "Steam",
                 "identifier": 1826710,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Creature Keeper",
@@ -75617,7 +75623,7 @@
                 "index": 448,
                 "platform": "Steam",
                 "identifier": 1846700,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Witchbrook",
@@ -76076,7 +76082,7 @@
                 "index": 80,
                 "platform": "Steam",
                 "identifier": 1857090,
-                "last_track_date": "2024-12-04"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Norland",
@@ -76221,14 +76227,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(793)",
-                    "tooltip": "过去 30 天内的 793 篇用户评测中有 87% 为好评。"
+                    "count": "(841)",
+                    "tooltip": "过去 30 天内的 841 篇用户评测中有 87% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(5,355)",
-                    "tooltip": "此游戏的 5,355 篇用户评测中有 80% 为好评。"
+                    "count": "(5,440)",
+                    "tooltip": "此游戏的 5,440 篇用户评测中有 80% 为好评。"
                 }
             }
         },
@@ -76237,7 +76243,7 @@
                 "index": 12,
                 "platform": "Steam",
                 "identifier": 1859910,
-                "last_track_date": "2024-12-04"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Legend of Mortal",
@@ -76372,12 +76378,12 @@
                         "name": "动作"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
-                        "name": "氛围"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
                         "name": "色情内容"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
+                        "name": "氛围"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%98%E6%9C%AF%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
@@ -76391,14 +76397,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(932)",
-                    "tooltip": "过去 30 天内的 932 篇用户评测中有 90% 为好评。"
+                    "count": "(974)",
+                    "tooltip": "过去 30 天内的 974 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(26,153)",
-                    "tooltip": "此游戏的 26,153 篇用户评测中有 77% 为好评。"
+                    "count": "(26,274)",
+                    "tooltip": "此游戏的 26,274 篇用户评测中有 78% 为好评。"
                 }
             }
         },
@@ -77229,7 +77235,7 @@
                 "index": 7,
                 "platform": "Steam",
                 "identifier": 1888160,
-                "last_track_date": "2024-12-04"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "ARMORED CORE™ VI FIRES OF RUBICON™",
@@ -77387,14 +77393,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(696)",
-                    "tooltip": "过去 30 天内的 696 篇用户评测中有 93% 为好评。"
+                    "count": "(661)",
+                    "tooltip": "过去 30 天内的 661 篇用户评测中有 94% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(57,010)",
-                    "tooltip": "此游戏的 57,010 篇用户评测中有 91% 为好评。"
+                    "count": "(57,147)",
+                    "tooltip": "此游戏的 57,147 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -77754,7 +77760,7 @@
                 "index": 522,
                 "platform": "Steam",
                 "identifier": 1928980,
-                "last_track_date": "2024-12-04"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Nightingale",
@@ -77915,14 +77921,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(407)",
-                    "tooltip": "过去 30 天内的 407 篇用户评测中有 84% 为好评。"
+                    "count": "(413)",
+                    "tooltip": "过去 30 天内的 413 篇用户评测中有 83% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(13,186)",
-                    "tooltip": "此游戏的 13,186 篇用户评测中有 66% 为好评。"
+                    "count": "(13,232)",
+                    "tooltip": "此游戏的 13,232 篇用户评测中有 66% 为好评。"
                 }
             }
         },
@@ -77931,7 +77937,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2024-12-11"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -78072,7 +78078,7 @@
                 "index": 179,
                 "platform": "Steam",
                 "identifier": 1937780,
-                "last_track_date": "2024-12-04"
+                "last_track_date": "2024-12-12"
             },
             "type": "Game",
             "title": "Total War: PHARAOH",
@@ -78218,25 +78224,25 @@
                         "name": "色情内容"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/",
-                        "name": "裸露"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%B7%A5%E4%BD%9C%E5%9C%BA%E6%89%80%E4%B8%8D%E5%AE%9C/",
                         "name": "工作场所不宜"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/",
+                        "name": "裸露"
                     }
                 ],
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(46)",
-                    "tooltip": "过去 30 天内的 46 篇用户评测中有 58% 为好评。"
+                    "count": "(51)",
+                    "tooltip": "过去 30 天内的 51 篇用户评测中有 60% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(3,256)",
-                    "tooltip": "此游戏的 3,256 篇用户评测中有 64% 为好评。"
+                    "count": "(3,265)",
+                    "tooltip": "此游戏的 3,265 篇用户评测中有 64% 为好评。"
                 }
             }
         },
@@ -96331,7 +96337,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 8.9,
-                    "userReviewsCount": 5292
+                    "userReviewsCount": 5293
                 },
                 "meta": {
                     "index": 517,
