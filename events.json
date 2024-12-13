@@ -90031,7 +90031,7 @@
                 "index": 461,
                 "platform": "Steam",
                 "identifier": 2426530,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Nova Roma",
@@ -90176,7 +90176,7 @@
                 "index": 570,
                 "platform": "Steam",
                 "identifier": 2428730,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "SWAT Commander: Prologue",
@@ -90330,7 +90330,7 @@
                 "index": 490,
                 "platform": "Steam",
                 "identifier": 2430660,
-                "last_track_date": "2024-12-05"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "MiceGard",
@@ -90438,10 +90438,10 @@
                     }
                 ],
                 "totalReview": {
-                    "summary": "好评",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(49)",
-                    "tooltip": "此游戏的 49 篇用户评测中有 81% 为好评。"
+                    "count": "(51)",
+                    "tooltip": "此游戏的 51 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -90577,7 +90577,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -91068,19 +91068,19 @@
                 "index": 508,
                 "platform": "Steam",
                 "identifier": 2452280,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Mecha BREAK",
-            "start": "2027-01-01",
+            "start": "2025-12-31",
             "app_data": {
                 "platform": "Steam",
                 "appid": 2452280,
                 "title": "Mecha BREAK",
-                "description": "Mecha BREAK is a multiplayer mech game that allows players to choose from diverse mechs, customize appearances, and battle colossal war machines on treacherous terrain. Get ready for the ultimate showdown—blitz, brawl, blaze!",
+                "description": "Squad up in Mecha BREAK, a multiplayer third-person shooter offering players three unique game modes filled with high-octane ground and aerial combat. Choose from diverse classes, customize your appearance, and battle hostile mechs across treacherous terrain. Are you ready for the ultimate showdown?",
                 "release_date": {
                     "coming_soon": true,
-                    "date": "To be announced"
+                    "date": "2025"
                 },
                 "language": {
                     "zh": {
@@ -91356,7 +91356,7 @@
                 "index": 89,
                 "platform": "Steam",
                 "identifier": 2457220,
-                "last_track_date": "2024-12-05"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Avowed",
@@ -91410,10 +91410,6 @@
                         "name": "政治性"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BF%83%E7%90%86%E6%81%90%E6%80%96/",
-                        "name": "心理恐怖"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E6%89%AE%E6%BC%94/",
                         "name": "角色扮演"
                     },
@@ -91422,12 +91418,12 @@
                         "name": "奇幻"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
-                        "name": "单人"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BF%83%E7%90%86%E6%81%90%E6%80%96/",
+                        "name": "心理恐怖"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%94%BF%E6%B2%BB%E6%A8%A1%E6%8B%9F/",
-                        "name": "政治模拟"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0/",
@@ -91450,6 +91446,10 @@
                         "name": "角色自定义"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%94%BF%E6%B2%BB%E6%A8%A1%E6%8B%9F/",
+                        "name": "政治模拟"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
                         "name": "开放世界"
                     },
@@ -91462,12 +91462,12 @@
                         "name": "选择取向"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%B3%E6%80%A7%E4%B8%BB%E8%A7%92/",
-                        "name": "女性主角"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/3D/",
                         "name": "3D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%B3%E6%80%A7%E4%B8%BB%E8%A7%92/",
+                        "name": "女性主角"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%9A%B4%E5%8A%9B/",
@@ -91976,7 +91976,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -92125,7 +92125,7 @@
                 "index": 603,
                 "platform": "Steam",
                 "identifier": 2489330,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Whiskerwood",
@@ -92447,7 +92447,7 @@
                 "index": 577,
                 "platform": "Steam",
                 "identifier": 2532480,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Warhammer 40,000: Mechanicus II",
@@ -92766,7 +92766,7 @@
                 "index": 529,
                 "platform": "Steam",
                 "identifier": 2646460,
-                "last_track_date": "2024-12-05"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Soulmask",
@@ -92884,12 +92884,12 @@
                         "name": "生存"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E7%94%9F%E5%AD%98%E5%88%B6%E4%BD%9C/",
-                        "name": "开放世界生存制作"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
                         "name": "多人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E7%94%9F%E5%AD%98%E5%88%B6%E4%BD%9C/",
+                        "name": "开放世界生存制作"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BB%BA%E9%80%A0/",
@@ -92959,14 +92959,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(983)",
-                    "tooltip": "过去 30 天内的 983 篇用户评测中有 87% 为好评。"
+                    "count": "(1,107)",
+                    "tooltip": "过去 30 天内的 1,107 篇用户评测中有 85% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(10,274)",
-                    "tooltip": "此游戏的 10,274 篇用户评测中有 79% 为好评。"
+                    "count": "(10,438)",
+                    "tooltip": "此游戏的 10,438 篇用户评测中有 79% 为好评。"
                 }
             }
         },
@@ -93432,7 +93432,7 @@
                 "index": 413,
                 "platform": "Steam",
                 "identifier": 2664600,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "The Last Hour of an Epic TO THE MOON RPG",
@@ -93924,7 +93924,7 @@
                 "index": 472,
                 "platform": "Steam",
                 "identifier": 2719590,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Light No Fire",
@@ -94380,7 +94380,7 @@
                 "index": 537,
                 "platform": "Steam",
                 "identifier": 2778580,
-                "last_track_date": "2024-12-05"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "ELDEN RING Shadow of the Erdtree",
@@ -94554,14 +94554,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(612)",
-                    "tooltip": "过去 30 天内的 612 篇用户评测中有 72% 为好评。"
+                    "count": "(657)",
+                    "tooltip": "过去 30 天内的 657 篇用户评测中有 72% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(79,348)",
-                    "tooltip": "此游戏的 79,348 篇用户评测中有 70% 为好评。"
+                    "count": "(79,420)",
+                    "tooltip": "此游戏的 79,420 篇用户评测中有 70% 为好评。"
                 }
             }
         },
@@ -94570,7 +94570,7 @@
                 "index": 587,
                 "platform": "Steam",
                 "identifier": 2789020,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Hibernaculum",
@@ -94872,7 +94872,7 @@
                 "index": 601,
                 "platform": "Steam",
                 "identifier": 2864560,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Rune Factory: Guardians of Azuma",
@@ -95023,7 +95023,7 @@
                 "index": 567,
                 "platform": "Steam",
                 "identifier": 2868840,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Slay the Spire 2",
@@ -95144,7 +95144,7 @@
                 "index": 585,
                 "platform": "Steam",
                 "identifier": 3005660,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Scribe RPG",
@@ -95289,7 +95289,7 @@
                 "index": 598,
                 "platform": "Steam",
                 "identifier": 3092110,
-                "last_track_date": "2024-12-12"
+                "last_track_date": "2024-12-13"
             },
             "type": "Game",
             "title": "Dungeons & Kingdoms",
