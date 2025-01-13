@@ -20267,7 +20267,7 @@
                 "index": 235,
                 "platform": "Steam",
                 "identifier": 359610,
-                "last_track_date": "2025-01-06"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Assassin’s Creed® Chronicles: India",
@@ -20376,14 +20376,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(12)",
-                    "tooltip": "过去 30 天内的 12 篇用户评测中有 50% 为好评。"
+                    "count": "(11)",
+                    "tooltip": "过去 30 天内的 11 篇用户评测中有 54% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(916)",
-                    "tooltip": "此游戏的 916 篇用户评测中有 64% 为好评。"
+                    "count": "(914)",
+                    "tooltip": "此游戏的 914 篇用户评测中有 64% 为好评。"
                 }
             }
         },
@@ -20392,7 +20392,7 @@
                 "index": 337,
                 "platform": "Steam",
                 "identifier": 362890,
-                "last_track_date": "2025-01-06"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Black Mesa",
@@ -20585,14 +20585,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,589)",
-                    "tooltip": "过去 30 天内的 1,589 篇用户评测中有 92% 为好评。"
+                    "count": "(1,522)",
+                    "tooltip": "过去 30 天内的 1,522 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(112,767)",
-                    "tooltip": "此游戏的 112,767 篇用户评测中有 95% 为好评。"
+                    "count": "(113,013)",
+                    "tooltip": "此游戏的 113,013 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -29537,7 +29537,7 @@
                 "index": 121,
                 "platform": "Steam",
                 "identifier": 532790,
-                "last_track_date": "2025-01-06"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Vampire: The Masquerade® - Bloodlines™ 2",
@@ -29855,7 +29855,7 @@
                 "index": 188,
                 "platform": "Steam",
                 "identifier": 548570,
-                "last_track_date": "2025-01-06"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "RAGE 2",
@@ -30001,14 +30001,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(41)",
-                    "tooltip": "过去 30 天内的 41 篇用户评测中有 70% 为好评。"
+                    "count": "(40)",
+                    "tooltip": "过去 30 天内的 40 篇用户评测中有 72% 为好评。"
                 },
                 "totalReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(13,497)",
-                    "tooltip": "此游戏的 13,497 篇用户评测中有 63% 为好评。"
+                    "count": "(13,500)",
+                    "tooltip": "此游戏的 13,500 篇用户评测中有 63% 为好评。"
                 }
             }
         },
@@ -30017,7 +30017,7 @@
                 "index": 251,
                 "platform": "Steam",
                 "identifier": 552520,
-                "last_track_date": "2025-01-06"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Far Cry® 5",
@@ -30085,6 +30085,10 @@
                     {
                         "id": 17,
                         "description": "Includes level editor"
+                    },
+                    {
+                        "id": 61,
+                        "description": "HDR available"
                     }
                 ],
                 "genres": [
@@ -30107,12 +30111,12 @@
                         "name": "开放世界"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
-                        "name": "多人"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%90%88%E4%BD%9C/",
                         "name": "合作"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A4%9A%E4%BA%BA/",
+                        "name": "多人"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%80%E4%BA%BA%E7%A7%B0%E5%B0%84%E5%87%BB/",
@@ -30155,16 +30159,16 @@
                         "name": "冒险"
                     },
                     {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
+                        "name": "生存"
+                    },
+                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/3D/",
                         "name": "3D"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%BD%9C%E8%A1%8C/",
                         "name": "潜行"
-                    },
-                    {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
-                        "name": "生存"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E8%87%AA%E7%84%B6/",
@@ -30182,14 +30186,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,197)",
-                    "tooltip": "过去 30 天内的 2,197 篇用户评测中有 82% 为好评。"
+                    "count": "(2,192)",
+                    "tooltip": "过去 30 天内的 2,192 篇用户评测中有 83% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(150,676)",
-                    "tooltip": "此游戏的 150,676 篇用户评测中有 80% 为好评。"
+                    "count": "(151,162)",
+                    "tooltip": "此游戏的 151,162 篇用户评测中有 80% 为好评。"
                 }
             }
         },
@@ -33982,7 +33986,7 @@
                 "index": 111,
                 "platform": "Steam",
                 "identifier": 632470,
-                "last_track_date": "2025-01-06"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Disco Elysium - The Final Cut",
@@ -34131,14 +34135,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,471)",
-                    "tooltip": "过去 30 天内的 1,471 篇用户评测中有 91% 为好评。"
+                    "count": "(1,602)",
+                    "tooltip": "过去 30 天内的 1,602 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(96,032)",
-                    "tooltip": "此游戏的 96,032 篇用户评测中有 93% 为好评。"
+                    "count": "(96,418)",
+                    "tooltip": "此游戏的 96,418 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -34147,7 +34151,7 @@
                 "index": 271,
                 "platform": "Steam",
                 "identifier": 637090,
-                "last_track_date": "2025-01-06"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "BATTLETECH",
@@ -34316,14 +34320,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(113)",
-                    "tooltip": "过去 30 天内的 113 篇用户评测中有 80% 为好评。"
+                    "count": "(119)",
+                    "tooltip": "过去 30 天内的 119 篇用户评测中有 80% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(21,313)",
-                    "tooltip": "此游戏的 21,313 篇用户评测中有 83% 为好评。"
+                    "count": "(21,336)",
+                    "tooltip": "此游戏的 21,336 篇用户评测中有 83% 为好评。"
                 }
             }
         },
@@ -88944,7 +88948,7 @@
                 "index": 592,
                 "platform": "Steam",
                 "identifier": 2376260,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Mariachi Legends",
@@ -89578,7 +89582,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -90037,7 +90041,7 @@
                 "index": 600,
                 "platform": "Steam",
                 "identifier": 2412960,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Breathedge 2",
@@ -90724,7 +90728,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -92123,7 +92127,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -92594,7 +92598,7 @@
                 "index": 577,
                 "platform": "Steam",
                 "identifier": 2532480,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Warhammer 40,000: Mechanicus II",
@@ -93579,7 +93583,7 @@
                 "index": 413,
                 "platform": "Steam",
                 "identifier": 2664600,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "The Last Hour of an Epic TO THE MOON RPG",
@@ -94071,7 +94075,7 @@
                 "index": 472,
                 "platform": "Steam",
                 "identifier": 2719590,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Light No Fire",
@@ -95019,7 +95023,7 @@
                 "index": 601,
                 "platform": "Steam",
                 "identifier": 2864560,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Rune Factory: Guardians of Azuma",
@@ -95291,7 +95295,7 @@
                 "index": 585,
                 "platform": "Steam",
                 "identifier": 3005660,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Scribe RPG",
@@ -95436,7 +95440,7 @@
                 "index": 598,
                 "platform": "Steam",
                 "identifier": 3092110,
-                "last_track_date": "2025-01-12"
+                "last_track_date": "2025-01-13"
             },
             "type": "Game",
             "title": "Dungeons & Kingdoms",
