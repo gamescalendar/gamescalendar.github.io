@@ -35804,7 +35804,7 @@
                 "index": 459,
                 "platform": "Steam",
                 "identifier": 688420,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Bad North: Jotunn Edition",
@@ -35956,16 +35956,16 @@
                     }
                 ],
                 "recentReview": {
-                    "summary": "好评如潮",
+                    "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(185)",
-                    "tooltip": "过去 30 天内的 185 篇用户评测中有 96% 为好评。"
+                    "count": "(236)",
+                    "tooltip": "过去 30 天内的 236 篇用户评测中有 93% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(9,773)",
-                    "tooltip": "此游戏的 9,773 篇用户评测中有 93% 为好评。"
+                    "count": "(9,874)",
+                    "tooltip": "此游戏的 9,874 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -35974,7 +35974,7 @@
                 "index": 362,
                 "platform": "Steam",
                 "identifier": 692850,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Bloodstained: Ritual of the Night",
@@ -36175,14 +36175,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(144)",
-                    "tooltip": "过去 30 天内的 144 篇用户评测中有 88% 为好评。"
+                    "count": "(138)",
+                    "tooltip": "过去 30 天内的 138 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(27,611)",
-                    "tooltip": "此游戏的 27,611 篇用户评测中有 94% 为好评。"
+                    "count": "(27,642)",
+                    "tooltip": "此游戏的 27,642 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -36191,7 +36191,7 @@
                 "index": 25,
                 "platform": "Steam",
                 "identifier": 694770,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Vestaria Saga I: War of the Scions",
@@ -36305,8 +36305,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(899)",
-                    "tooltip": "此游戏的 899 篇用户评测中有 85% 为好评。"
+                    "count": "(900)",
+                    "tooltip": "此游戏的 900 篇用户评测中有 85% 为好评。"
                 }
             }
         },
@@ -36315,7 +36315,7 @@
                 "index": 146,
                 "platform": "Steam",
                 "identifier": 704450,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Neverwinter Nights: Enhanced Edition",
@@ -36476,14 +36476,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(95)",
-                    "tooltip": "过去 30 天内的 95 篇用户评测中有 85% 为好评。"
+                    "count": "(86)",
+                    "tooltip": "过去 30 天内的 86 篇用户评测中有 86% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(6,852)",
-                    "tooltip": "此游戏的 6,852 篇用户评测中有 89% 为好评。"
+                    "count": "(6,868)",
+                    "tooltip": "此游戏的 6,868 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -36492,7 +36492,7 @@
                 "index": 93,
                 "platform": "Steam",
                 "identifier": 718670,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Cultist Simulator",
@@ -36618,12 +36618,12 @@
                         "name": "管理"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%20Rogue/",
-                        "name": "类 Rogue"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%B4%9B%E5%A4%AB%E5%85%8B%E6%8B%89%E5%A4%AB%E7%89%B9%E5%BC%8F/",
                         "name": "洛夫克拉夫特式"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%20Rogue/",
+                        "name": "类 Rogue"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%9B%B0%E9%9A%BE/",
@@ -36646,11 +36646,17 @@
                         "name": "自选历险体验"
                     }
                 ],
+                "recentReview": {
+                    "summary": "特别好评",
+                    "cssClass": "positive",
+                    "count": "(132)",
+                    "tooltip": "过去 30 天内的 132 篇用户评测中有 80% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
+                },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(8,339)",
-                    "tooltip": "此游戏的 8,339 篇用户评测中有 82% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
+                    "count": "(8,791)",
+                    "tooltip": "此游戏的 8,791 篇用户评测中有 82% 为好评。<br><br>此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的评测分数。"
                 }
             }
         },
@@ -36659,7 +36665,7 @@
                 "index": 277,
                 "platform": "Steam",
                 "identifier": 718850,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Age of Wonders: Planetfall",
@@ -36834,8 +36840,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(4,509)",
-                    "tooltip": "此游戏的 4,509 篇用户评测中有 80% 为好评。"
+                    "count": "(4,511)",
+                    "tooltip": "此游戏的 4,511 篇用户评测中有 80% 为好评。"
                 }
             }
         },
@@ -36844,7 +36850,7 @@
                 "index": 376,
                 "platform": "Steam",
                 "identifier": 719040,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Wasteland 3",
@@ -37009,14 +37015,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(139)",
-                    "tooltip": "过去 30 天内的 139 篇用户评测中有 86% 为好评。"
+                    "count": "(121)",
+                    "tooltip": "过去 30 天内的 121 篇用户评测中有 85% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(15,924)",
-                    "tooltip": "此游戏的 15,924 篇用户评测中有 84% 为好评。"
+                    "count": "(15,947)",
+                    "tooltip": "此游戏的 15,947 篇用户评测中有 84% 为好评。"
                 }
             }
         },
@@ -37025,7 +37031,7 @@
                 "index": 479,
                 "platform": "Steam",
                 "identifier": 722060,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Dominions 5 - Warriors of the Faith",
@@ -37188,7 +37194,7 @@
                 "index": 113,
                 "platform": "Steam",
                 "identifier": 729000,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Wytchwood",
@@ -37353,14 +37359,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(69)",
-                    "tooltip": "过去 30 天内的 69 篇用户评测中有 91% 为好评。"
+                    "count": "(67)",
+                    "tooltip": "过去 30 天内的 67 篇用户评测中有 92% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(3,143)",
-                    "tooltip": "此游戏的 3,143 篇用户评测中有 92% 为好评。"
+                    "count": "(3,159)",
+                    "tooltip": "此游戏的 3,159 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -37369,7 +37375,7 @@
                 "index": 424,
                 "platform": "Steam",
                 "identifier": 743450,
-                "last_track_date": "2025-01-21"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Monster Prom",
@@ -37547,14 +37553,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(70)",
-                    "tooltip": "过去 30 天内的 70 篇用户评测中有 91% 为好评。"
+                    "count": "(57)",
+                    "tooltip": "过去 30 天内的 57 篇用户评测中有 96% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(11,695)",
-                    "tooltip": "此游戏的 11,695 篇用户评测中有 93% 为好评。"
+                    "count": "(11,701)",
+                    "tooltip": "此游戏的 11,701 篇用户评测中有 93% 为好评。"
                 }
             }
         },
@@ -90076,7 +90082,7 @@
                 "index": 600,
                 "platform": "Steam",
                 "identifier": 2412960,
-                "last_track_date": "2025-01-27"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Breathedge 2",
@@ -90763,7 +90769,7 @@
                 "index": 375,
                 "platform": "Steam",
                 "identifier": 2439280,
-                "last_track_date": "2025-01-27"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Clockwork Revolution",
@@ -92170,7 +92176,7 @@
                 "index": 539,
                 "platform": "Steam",
                 "identifier": 2479090,
-                "last_track_date": "2025-01-27"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Prelude Dark Pain",
@@ -92641,7 +92647,7 @@
                 "index": 577,
                 "platform": "Steam",
                 "identifier": 2532480,
-                "last_track_date": "2025-01-27"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Warhammer 40,000: Mechanicus II",
@@ -93626,7 +93632,7 @@
                 "index": 413,
                 "platform": "Steam",
                 "identifier": 2664600,
-                "last_track_date": "2025-01-27"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "The Last Hour of an Epic TO THE MOON RPG",
@@ -94118,7 +94124,7 @@
                 "index": 472,
                 "platform": "Steam",
                 "identifier": 2719590,
-                "last_track_date": "2025-01-27"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Light No Fire",
@@ -94180,12 +94186,12 @@
                         "name": "开放世界"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
-                        "name": "冒险"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E5%AD%98/",
                         "name": "生存"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+                        "name": "冒险"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
@@ -95350,7 +95356,7 @@
                 "index": 585,
                 "platform": "Steam",
                 "identifier": 3005660,
-                "last_track_date": "2025-01-27"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Scribe RPG",
@@ -95495,7 +95501,7 @@
                 "index": 598,
                 "platform": "Steam",
                 "identifier": 3092110,
-                "last_track_date": "2025-01-27"
+                "last_track_date": "2025-01-28"
             },
             "type": "Game",
             "title": "Dungeons & Kingdoms",
@@ -96547,7 +96553,7 @@
                     "metaScore": 92,
                     "metaReviewsCount": 151,
                     "userScore": 8.9,
-                    "userReviewsCount": 5457
+                    "userReviewsCount": 5458
                 },
                 "meta": {
                     "index": 517,
