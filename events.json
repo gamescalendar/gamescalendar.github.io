@@ -42877,7 +42877,7 @@
                 "index": 84,
                 "platform": "Steam",
                 "identifier": 914210,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "N1RV Ann-A: Cyberpunk Bartender Action",
@@ -47012,7 +47012,7 @@
                 "index": 71,
                 "platform": "Steam",
                 "identifier": 1030300,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Hollow Knight: Silksong",
@@ -51616,7 +51616,7 @@
                 "index": 599,
                 "platform": "Steam",
                 "identifier": 1154030,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Titan Quest II",
@@ -52603,7 +52603,7 @@
                 "index": 588,
                 "platform": "Steam",
                 "identifier": 1166890,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Necrofugitive",
@@ -65850,7 +65850,7 @@
                 "index": 594,
                 "platform": "Steam",
                 "identifier": 1545080,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Arran: The Book of Heroes",
@@ -69499,7 +69499,7 @@
                 "index": 423,
                 "platform": "Steam",
                 "identifier": 1639080,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Sandwalkers",
@@ -69633,14 +69633,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(17)",
-                    "tooltip": "过去 30 天内的 17 篇用户评测中有 70% 为好评。"
+                    "count": "(24)",
+                    "tooltip": "过去 30 天内的 24 篇用户评测中有 70% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(254)",
-                    "tooltip": "此游戏的 254 篇用户评测中有 73% 为好评。"
+                    "count": "(261)",
+                    "tooltip": "此游戏的 261 篇用户评测中有 73% 为好评。"
                 }
             }
         },
@@ -70158,11 +70158,11 @@
                 "index": 591,
                 "platform": "Steam",
                 "identifier": 1661330,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "SacriFire",
-            "start": "2028-01-01",
+            "start": "2026-03-31",
             "app_data": {
                 "platform": "Steam",
                 "appid": 1661330,
@@ -70170,13 +70170,13 @@
                 "description": "SacriFire is an upcoming RPG boasting a unique combat system, elaborate pixel art, and music by genre legend Motoi Sakuraba. Ezekiel Ridan, a young priest, struggles to keep his faith as the world he loves is threatened by a war between gods and demons. The adventure begins!",
                 "release_date": {
                     "coming_soon": true,
-                    "date": "To be announced"
+                    "date": "Q1 2026"
                 },
                 "language": {
                     "zh": {
-                        "gui": false,
+                        "gui": true,
                         "audio": false,
-                        "subtitle": false
+                        "subtitle": true
                     }
                 },
                 "owned": false,
@@ -70287,7 +70287,7 @@
                 "index": 85,
                 "platform": "Steam",
                 "identifier": 1663850,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "REPLACED",
@@ -72131,7 +72131,7 @@
                 "index": 440,
                 "platform": "Steam",
                 "identifier": 1706510,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Songs of Glimmerwick",
@@ -75777,7 +75777,7 @@
                 "index": 448,
                 "platform": "Steam",
                 "identifier": 1846700,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Witchbrook",
@@ -78108,7 +78108,7 @@
                 "index": 397,
                 "platform": "Steam",
                 "identifier": 1934570,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "South of Midnight",
@@ -78234,12 +78234,12 @@
                         "name": "战斗"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
-                        "name": "动作"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
                         "name": "冒险"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C/",
+                        "name": "动作"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A7%E5%88%B6%E5%99%A8/",
@@ -78254,15 +78254,15 @@
                         "name": "黑暗奇幻"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%81%B6%E4%BA%BA%E4%B8%BB%E8%A7%92/",
-                        "name": "恶人主角"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
+                        "name": "好评原声音轨"
                     }
                 ],
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(397)",
-                    "tooltip": "此游戏的 397 篇用户评测中有 92% 为好评。"
+                    "count": "(496)",
+                    "tooltip": "此游戏的 496 篇用户评测中有 92% 为好评。"
                 }
             }
         },
@@ -80904,7 +80904,7 @@
                 "index": 486,
                 "platform": "Steam",
                 "identifier": 2056210,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "LONESTAR",
@@ -81065,14 +81065,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(185)",
-                    "tooltip": "过去 30 天内的 185 篇用户评测中有 88% 为好评。"
+                    "count": "(203)",
+                    "tooltip": "过去 30 天内的 203 篇用户评测中有 89% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,439)",
-                    "tooltip": "此游戏的 1,439 篇用户评测中有 91% 为好评。"
+                    "count": "(1,456)",
+                    "tooltip": "此游戏的 1,456 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -81780,7 +81780,7 @@
                 "index": 583,
                 "platform": "Steam",
                 "identifier": 2086680,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Castle Craft",
@@ -84897,7 +84897,7 @@
                 "index": 439,
                 "platform": "Steam",
                 "identifier": 2177510,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "EthrA",
@@ -86786,7 +86786,7 @@
                 "index": 407,
                 "platform": "Steam",
                 "identifier": 2239640,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Earthblade",
@@ -89096,7 +89096,7 @@
                 "index": 592,
                 "platform": "Steam",
                 "identifier": 2376260,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Mariachi Legends",
@@ -89734,7 +89734,7 @@
                 "index": 79,
                 "platform": "Steam",
                 "identifier": 2395770,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "Never Grave: The Witch and The Curse",
@@ -90491,7 +90491,7 @@
                 "index": 570,
                 "platform": "Steam",
                 "identifier": 2428730,
-                "last_track_date": "2025-04-10"
+                "last_track_date": "2025-04-11"
             },
             "type": "Game",
             "title": "SWAT Commander: Prologue",
@@ -90639,10 +90639,10 @@
                     }
                 ],
                 "totalReview": {
-                    "summary": "多半差评",
-                    "cssClass": "",
-                    "count": "(364)",
-                    "tooltip": "此游戏的 364 篇用户评测中有 39% 为好评。"
+                    "summary": "褒贬不一",
+                    "cssClass": "mixed",
+                    "count": "(394)",
+                    "tooltip": "此游戏的 394 篇用户评测中有 40% 为好评。"
                 }
             }
         },
@@ -95921,13 +95921,13 @@
                     "metaScore": 96,
                     "metaReviewsCount": 150,
                     "userScore": 8.8,
-                    "userReviewsCount": 13093
+                    "userReviewsCount": 13099
                 },
                 "meta": {
                     "index": 62,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-tears-of-the-kingdom",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "the-legend-of-zelda-breath-of-the-wild": {
@@ -95967,13 +95967,13 @@
                     "metaScore": 97,
                     "metaReviewsCount": 109,
                     "userScore": 8.9,
-                    "userReviewsCount": 24374
+                    "userReviewsCount": 24380
                 },
                 "meta": {
                     "index": 63,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/the-legend-of-zelda-breath-of-the-wild",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "super-mario-odyssey": {
@@ -96009,13 +96009,13 @@
                     "metaScore": 97,
                     "metaReviewsCount": 114,
                     "userScore": 8.9,
-                    "userReviewsCount": 9894
+                    "userReviewsCount": 9900
                 },
                 "meta": {
                     "index": 64,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-odyssey",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "mario-+-rabbids-sparks-of-hope": {
@@ -96057,7 +96057,7 @@
                     "index": 65,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-sparks-of-hope",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "mario-+-rabbids-kingdom-battle": {
@@ -96099,7 +96099,7 @@
                     "index": 66,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/mario-+-rabbids-kingdom-battle",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "bayonetta-origins-cereza-and-the-lost-demon": {
@@ -96141,7 +96141,7 @@
                     "index": 67,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/bayonetta-origins-cereza-and-the-lost-demon",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "super-mario-bros-wonder": {
@@ -96177,13 +96177,13 @@
                     "metaScore": 92,
                     "metaReviewsCount": 130,
                     "userScore": 9,
-                    "userReviewsCount": 2671
+                    "userReviewsCount": 2674
                 },
                 "meta": {
                     "index": 68,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-bros-wonder",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "pokemon-scarlet": {
@@ -96219,13 +96219,13 @@
                     "metaScore": 72,
                     "metaReviewsCount": 118,
                     "userScore": 3.4,
-                    "userReviewsCount": 3660
+                    "userReviewsCount": 3661
                 },
                 "meta": {
                     "index": 133,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-scarlet",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "pokemon-violet": {
@@ -96267,7 +96267,7 @@
                     "index": 134,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/pokemon-violet",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "super-mario-rpg": {
@@ -96309,7 +96309,7 @@
                     "index": 135,
                     "platform": "switch",
                     "identifier": "https://www.metacritic.com/game/switch/super-mario-rpg",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             }
         },
@@ -96361,7 +96361,7 @@
                     "index": 69,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/alan-wake-ii",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "assassins-creed-mirage": {
@@ -96423,7 +96423,7 @@
                     "index": 131,
                     "platform": "pc",
                     "identifier": "https://www.metacritic.com/game/pc/assassins-creed-mirage",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             }
         },
@@ -96465,13 +96465,13 @@
                     "metaScore": 90,
                     "metaReviewsCount": 144,
                     "userScore": 8.7,
-                    "userReviewsCount": 9317
+                    "userReviewsCount": 9318
                 },
                 "meta": {
                     "index": 70,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/marvels-spider-man-2",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "demons-souls": {
@@ -96511,13 +96511,13 @@
                     "metaScore": 92,
                     "metaReviewsCount": 100,
                     "userScore": 8.4,
-                    "userReviewsCount": 4398
+                    "userReviewsCount": 4399
                 },
                 "meta": {
                     "index": 132,
                     "platform": "playstation-5",
                     "identifier": "https://www.metacritic.com/game/playstation-5/demons-souls",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             }
         },
@@ -96573,7 +96573,7 @@
                     "index": 515,
                     "platform": "Nintendo Switch",
                     "identifier": "https://www.metacritic.com/game/unicorn-overlord",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "princess-peach-showtime": {
@@ -96615,7 +96615,7 @@
                     "index": 524,
                     "platform": "Nintendo Switch",
                     "identifier": "https://www.metacritic.com/game/princess-peach-showtime",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             }
         },
@@ -96663,7 +96663,7 @@
                     "index": 516,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/final-fantasy-xvi",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "final-fantasy-vii-rebirth": {
@@ -96703,13 +96703,13 @@
                     "metaScore": 92,
                     "metaReviewsCount": 145,
                     "userScore": 8.9,
-                    "userReviewsCount": 5673
+                    "userReviewsCount": 5674
                 },
                 "meta": {
                     "index": 517,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/final-fantasy-vii-rebirth",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "rise-of-the-ronin": {
@@ -96755,7 +96755,7 @@
                     "index": 519,
                     "platform": "PlayStation 5",
                     "identifier": "https://www.metacritic.com/game/rise-of-the-ronin",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             },
             "prince-of-persia-the-lost-crown": {
@@ -96890,7 +96890,7 @@
                     "index": 518,
                     "platform": "Xbox Series X",
                     "identifier": "https://www.metacritic.com/game/prince-of-persia-the-lost-crown",
-                    "last_track_date": "2025-04-10"
+                    "last_track_date": "2025-04-11"
                 }
             }
         },
