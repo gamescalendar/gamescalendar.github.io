@@ -1603,7 +1603,7 @@
                 "index": 332,
                 "platform": "Steam",
                 "identifier": 550,
-                "last_track_date": "2025-06-09"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Left 4 Dead 2",
@@ -1675,6 +1675,34 @@
                     {
                         "id": 30,
                         "description": "Steam Workshop"
+                    },
+                    {
+                        "id": 67,
+                        "description": "Camera Comfort"
+                    },
+                    {
+                        "id": 66,
+                        "description": "Color Alternatives"
+                    },
+                    {
+                        "id": 68,
+                        "description": "Custom Volume Controls"
+                    },
+                    {
+                        "id": 78,
+                        "description": "Adjustable Difficulty"
+                    },
+                    {
+                        "id": 74,
+                        "description": "Playable without Timed Input"
+                    },
+                    {
+                        "id": 69,
+                        "description": "Stereo Sound"
+                    },
+                    {
+                        "id": 70,
+                        "description": "Surround Sound"
                     },
                     {
                         "id": 23,
@@ -1812,14 +1840,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(7,971)",
-                    "tooltip": "过去 30 天内的 7,971 篇用户评测中有 97% 为好评。"
+                    "count": "(8,435)",
+                    "tooltip": "过去 30 天内的 8,435 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(736,048)",
-                    "tooltip": "此游戏的 736,048 篇用户评测中有 97% 为好评。"
+                    "count": "(737,297)",
+                    "tooltip": "此游戏的 737,297 篇用户评测中有 97% 为好评。"
                 }
             }
         },
@@ -1828,7 +1856,7 @@
                 "index": 334,
                 "platform": "Steam",
                 "identifier": 620,
-                "last_track_date": "2025-06-09"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Portal 2",
@@ -1904,6 +1932,30 @@
                     {
                         "id": 30,
                         "description": "Steam Workshop"
+                    },
+                    {
+                        "id": 67,
+                        "description": "Camera Comfort"
+                    },
+                    {
+                        "id": 68,
+                        "description": "Custom Volume Controls"
+                    },
+                    {
+                        "id": 74,
+                        "description": "Playable without Timed Input"
+                    },
+                    {
+                        "id": 79,
+                        "description": "Save Anytime"
+                    },
+                    {
+                        "id": 69,
+                        "description": "Stereo Sound"
+                    },
+                    {
+                        "id": 70,
+                        "description": "Surround Sound"
                     },
                     {
                         "id": 23,
@@ -2037,14 +2089,14 @@
                 "recentReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(2,545)",
-                    "tooltip": "过去 30 天内的 2,545 篇用户评测中有 98% 为好评。"
+                    "count": "(2,774)",
+                    "tooltip": "过去 30 天内的 2,774 篇用户评测中有 98% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(360,602)",
-                    "tooltip": "此游戏的 360,602 篇用户评测中有 98% 为好评。"
+                    "count": "(361,043)",
+                    "tooltip": "此游戏的 361,043 篇用户评测中有 98% 为好评。"
                 }
             }
         },
@@ -2053,7 +2105,7 @@
                 "index": 160,
                 "platform": "Steam",
                 "identifier": 6910,
-                "last_track_date": "2025-06-09"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Deus Ex: Game of the Year Edition",
@@ -2167,12 +2219,12 @@
                         "name": "第一人称"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%98%B4%E8%B0%8B/",
-                        "name": "阴谋"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%B0%9B%E5%9B%B4/",
                         "name": "氛围"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%98%B4%E8%B0%8B/",
+                        "name": "阴谋"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E6%A8%A1%E7%BB%84%E5%8C%96/",
@@ -2190,14 +2242,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(70)",
-                    "tooltip": "过去 30 天内的 70 篇用户评测中有 85% 为好评。"
+                    "count": "(73)",
+                    "tooltip": "过去 30 天内的 73 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(12,744)",
-                    "tooltip": "此游戏的 12,744 篇用户评测中有 94% 为好评。"
+                    "count": "(12,758)",
+                    "tooltip": "此游戏的 12,758 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -2206,7 +2258,7 @@
                 "index": 157,
                 "platform": "Steam",
                 "identifier": 6980,
-                "last_track_date": "2025-06-09"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Thief: Deadly Shadows",
@@ -2339,14 +2391,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(11)",
-                    "tooltip": "过去 30 天内的 11 篇用户评测中有 81% 为好评。"
+                    "count": "(10)",
+                    "tooltip": "过去 30 天内的 10 篇用户评测中有 80% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(2,200)",
-                    "tooltip": "此游戏的 2,200 篇用户评测中有 80% 为好评。"
+                    "count": "(2,201)",
+                    "tooltip": "此游戏的 2,201 篇用户评测中有 80% 为好评。"
                 }
             }
         },
@@ -2355,7 +2407,7 @@
                 "index": 352,
                 "platform": "Steam",
                 "identifier": 8930,
-                "last_track_date": "2025-06-09"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Sid Meier's Civilization® V",
@@ -2508,14 +2560,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(489)",
-                    "tooltip": "过去 30 天内的 489 篇用户评测中有 67% 为好评。"
+                    "count": "(571)",
+                    "tooltip": "过去 30 天内的 571 篇用户评测中有 56% 为好评。"
                 },
                 "totalReview": {
                     "summary": "好评如潮",
                     "cssClass": "positive",
-                    "count": "(124,090)",
-                    "tooltip": "此游戏的 124,090 篇用户评测中有 95% 为好评。"
+                    "count": "(124,231)",
+                    "tooltip": "此游戏的 124,231 篇用户评测中有 95% 为好评。"
                 }
             }
         },
@@ -79721,7 +79773,7 @@
                 "index": 6,
                 "platform": "Steam",
                 "identifier": 1971650,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "OCTOPATH TRAVELER II",
@@ -79867,14 +79919,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(153)",
-                    "tooltip": "过去 30 天内的 153 篇用户评测中有 90% 为好评。"
+                    "count": "(135)",
+                    "tooltip": "过去 30 天内的 135 篇用户评测中有 90% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(10,831)",
-                    "tooltip": "此游戏的 10,831 篇用户评测中有 94% 为好评。"
+                    "count": "(10,857)",
+                    "tooltip": "此游戏的 10,857 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -79883,7 +79935,7 @@
                 "index": 180,
                 "platform": "Steam",
                 "identifier": 1971870,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Mortal Kombat 1",
@@ -79956,6 +80008,38 @@
                     {
                         "id": 35,
                         "description": "In-App Purchases"
+                    },
+                    {
+                        "id": 72,
+                        "description": "Chat Speech-to-text"
+                    },
+                    {
+                        "id": 73,
+                        "description": "Chat Text-to-speech"
+                    },
+                    {
+                        "id": 68,
+                        "description": "Custom Volume Controls"
+                    },
+                    {
+                        "id": 75,
+                        "description": "Keyboard Only Option"
+                    },
+                    {
+                        "id": 71,
+                        "description": "Narrated Game Menus"
+                    },
+                    {
+                        "id": 69,
+                        "description": "Stereo Sound"
+                    },
+                    {
+                        "id": 65,
+                        "description": "Subtitle Options"
+                    },
+                    {
+                        "id": 70,
+                        "description": "Surround Sound"
                     },
                     {
                         "id": 23,
@@ -80069,14 +80153,14 @@
                 "recentReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(626)",
-                    "tooltip": "过去 30 天内的 626 篇用户评测中有 73% 为好评。"
+                    "count": "(453)",
+                    "tooltip": "过去 30 天内的 453 篇用户评测中有 72% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(24,444)",
-                    "tooltip": "此游戏的 24,444 篇用户评测中有 71% 为好评。"
+                    "count": "(24,504)",
+                    "tooltip": "此游戏的 24,504 篇用户评测中有 71% 为好评。"
                 }
             }
         },
@@ -80085,7 +80169,7 @@
                 "index": 513,
                 "platform": "Steam",
                 "identifier": 1977170,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Jusant",
@@ -80234,14 +80318,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(68)",
-                    "tooltip": "过去 30 天内的 68 篇用户评测中有 95% 为好评。"
+                    "count": "(69)",
+                    "tooltip": "过去 30 天内的 69 篇用户评测中有 97% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(3,230)",
-                    "tooltip": "此游戏的 3,230 篇用户评测中有 93% 为好评。"
+                    "count": "(3,247)",
+                    "tooltip": "此游戏的 3,247 篇用户评测中有 94% 为好评。"
                 }
             }
         },
@@ -80250,7 +80334,7 @@
                 "index": 54,
                 "platform": "Steam",
                 "identifier": 1992090,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Legend of Mortal Demo",
@@ -80373,14 +80457,14 @@
                 "recentReview": {
                     "summary": "Mostly Positive",
                     "cssClass": "positive",
-                    "count": "(274)",
-                    "tooltip": "71% of the 274 user reviews in the last 30 days are positive."
+                    "count": "(259)",
+                    "tooltip": "71% of the 259 user reviews in the last 30 days are positive."
                 },
                 "totalReview": {
                     "summary": "Mostly Positive",
                     "cssClass": "positive",
-                    "count": "(28,636)",
-                    "tooltip": "71% of the 28,636 user reviews for this game are positive."
+                    "count": "(28,683)",
+                    "tooltip": "71% of the 28,683 user reviews for this game are positive."
                 }
             }
         },
@@ -80389,7 +80473,7 @@
                 "index": 216,
                 "platform": "Steam",
                 "identifier": 1999770,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Atelier Ryza 3: Alchemist of the End & the Secret Key",
@@ -80542,14 +80626,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(20)",
-                    "tooltip": "过去 30 天内的 20 篇用户评测中有 80% 为好评。"
+                    "count": "(17)",
+                    "tooltip": "过去 30 天内的 17 篇用户评测中有 82% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(1,763)",
-                    "tooltip": "此游戏的 1,763 篇用户评测中有 91% 为好评。"
+                    "count": "(1,765)",
+                    "tooltip": "此游戏的 1,765 篇用户评测中有 91% 为好评。"
                 }
             }
         },
@@ -80558,7 +80642,7 @@
                 "index": 507,
                 "platform": "Steam",
                 "identifier": 2000770,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Ballance",
@@ -80660,8 +80744,8 @@
                         "name": "探索"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%AD%A9%E7%AB%A5/",
-                        "name": "孩童"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%98%96%E5%AE%B6/",
+                        "name": "阖家"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E9%87%8D%E5%88%B6/",
@@ -80693,8 +80777,8 @@
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(321)",
-                    "tooltip": "此游戏的 321 篇用户评测中有 83% 为好评。"
+                    "count": "(322)",
+                    "tooltip": "此游戏的 322 篇用户评测中有 83% 为好评。"
                 }
             }
         },
@@ -80703,7 +80787,7 @@
                 "index": 491,
                 "platform": "Steam",
                 "identifier": 2008050,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Right and Down",
@@ -82238,7 +82322,7 @@
                 "index": 583,
                 "platform": "Steam",
                 "identifier": 2086680,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Castle Craft",
@@ -82274,6 +82358,26 @@
                     {
                         "id": 22,
                         "description": "Steam Achievements"
+                    },
+                    {
+                        "id": 68,
+                        "description": "Custom Volume Controls"
+                    },
+                    {
+                        "id": 78,
+                        "description": "Adjustable Difficulty"
+                    },
+                    {
+                        "id": 79,
+                        "description": "Save Anytime"
+                    },
+                    {
+                        "id": 69,
+                        "description": "Stereo Sound"
+                    },
+                    {
+                        "id": 70,
+                        "description": "Surround Sound"
                     },
                     {
                         "id": 23,
@@ -82399,14 +82503,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(53)",
-                    "tooltip": "过去 30 天内的 53 篇用户评测中有 83% 为好评。"
+                    "count": "(35)",
+                    "tooltip": "过去 30 天内的 35 篇用户评测中有 85% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(221)",
-                    "tooltip": "此游戏的 221 篇用户评测中有 89% 为好评。"
+                    "count": "(228)",
+                    "tooltip": "此游戏的 228 篇用户评测中有 89% 为好评。"
                 }
             }
         },
@@ -88054,7 +88158,7 @@
                 "index": 584,
                 "platform": "Steam",
                 "identifier": 2272900,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Mirthwood",
@@ -88120,12 +88224,12 @@
                         "name": "角色扮演"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
-                        "name": "沙盒"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%9C%E5%9C%BA%E6%A8%A1%E6%8B%9F/",
                         "name": "农场模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
+                        "name": "沙盒"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C%E7%94%9F%E5%AD%98%E5%88%B6%E4%BD%9C/",
@@ -88199,14 +88303,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(25)",
-                    "tooltip": "过去 30 天内的 25 篇用户评测中有 60% 为好评。"
+                    "count": "(37)",
+                    "tooltip": "过去 30 天内的 37 篇用户评测中有 59% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(1,866)",
-                    "tooltip": "此游戏的 1,866 篇用户评测中有 70% 为好评。"
+                    "count": "(1,881)",
+                    "tooltip": "此游戏的 1,881 篇用户评测中有 70% 为好评。"
                 }
             }
         },
@@ -88945,7 +89049,7 @@
                 "index": 523,
                 "platform": "Steam",
                 "identifier": 2316580,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Tales of Kenzera™: ZAU",
@@ -88985,6 +89089,22 @@
                     {
                         "id": 28,
                         "description": "Full controller support"
+                    },
+                    {
+                        "id": 66,
+                        "description": "Color Alternatives"
+                    },
+                    {
+                        "id": 78,
+                        "description": "Adjustable Difficulty"
+                    },
+                    {
+                        "id": 75,
+                        "description": "Keyboard Only Option"
+                    },
+                    {
+                        "id": 69,
+                        "description": "Stereo Sound"
                     },
                     {
                         "id": 23,
@@ -89031,12 +89151,12 @@
                         "name": "氛围"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%B9%B3%E5%8F%B0%E6%B8%B8%E6%88%8F/",
-                        "name": "平台游戏"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E6%8E%A2%E7%B4%A2/",
                         "name": "探索"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%B9%B3%E5%8F%B0%E6%B8%B8%E6%88%8F/",
+                        "name": "平台游戏"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
@@ -89071,16 +89191,16 @@
                         "name": "困难"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
-                        "name": "类魂系列"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97%E5%A5%87%E5%B9%BB/",
+                        "name": "黑暗奇幻"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%BD%E8%AF%84%E5%8E%9F%E5%A3%B0%E9%9F%B3%E8%BD%A8/",
                         "name": "好评原声音轨"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E9%BB%91%E6%9A%97%E5%A5%87%E5%B9%BB/",
-                        "name": "黑暗奇幻"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%B1%BB%E9%AD%82%E7%B3%BB%E5%88%97/",
+                        "name": "类魂系列"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/2D%20%E5%B9%B3%E5%8F%B0/",
@@ -89094,14 +89214,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(20)",
-                    "tooltip": "过去 30 天内的 20 篇用户评测中有 90% 为好评。"
+                    "count": "(17)",
+                    "tooltip": "过去 30 天内的 17 篇用户评测中有 88% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(729)",
-                    "tooltip": "此游戏的 729 篇用户评测中有 82% 为好评。"
+                    "count": "(733)",
+                    "tooltip": "此游戏的 733 篇用户评测中有 82% 为好评。"
                 }
             }
         },
@@ -91293,7 +91413,7 @@
                 "index": 490,
                 "platform": "Steam",
                 "identifier": 2430660,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "MiceGard",
@@ -93844,7 +93964,7 @@
                 "index": 529,
                 "platform": "Steam",
                 "identifier": 2646460,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "Soulmask",
@@ -93970,16 +94090,16 @@
                         "name": "多人"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%A9%E5%AE%B6%E5%AF%B9%E6%88%98/",
-                        "name": "玩家对战"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
+                        "name": "沙盒"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%A9%E7%8C%8E/",
                         "name": "狩猎"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
-                        "name": "沙盒"
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%8E%A9%E5%AE%B6%E5%AF%B9%E6%88%98/",
+                        "name": "玩家对战"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8A%A8%E4%BD%9C%E5%86%92%E9%99%A9/",
@@ -94010,12 +94130,12 @@
                         "name": "探索"
                     },
                     {
-                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8B%9F%E7%9C%9F/",
-                        "name": "拟真"
-                    },
-                    {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E7%AC%AC%E4%B8%89%E4%BA%BA%E7%A7%B0/",
                         "name": "第三人称"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8B%9F%E7%9C%9F/",
+                        "name": "拟真"
                     },
                     {
                         "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
@@ -94037,14 +94157,14 @@
                 "recentReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(282)",
-                    "tooltip": "过去 30 天内的 282 篇用户评测中有 81% 为好评。"
+                    "count": "(358)",
+                    "tooltip": "过去 30 天内的 358 篇用户评测中有 81% 为好评。"
                 },
                 "totalReview": {
                     "summary": "特别好评",
                     "cssClass": "positive",
-                    "count": "(12,274)",
-                    "tooltip": "此游戏的 12,274 篇用户评测中有 80% 为好评。"
+                    "count": "(12,406)",
+                    "tooltip": "此游戏的 12,406 篇用户评测中有 80% 为好评。"
                 }
             }
         },
@@ -95481,7 +95601,7 @@
                 "index": 537,
                 "platform": "Steam",
                 "identifier": 2778580,
-                "last_track_date": "2025-06-08"
+                "last_track_date": "2025-06-15"
             },
             "type": "Game",
             "title": "ELDEN RING Shadow of the Erdtree",
@@ -95655,14 +95775,14 @@
                 "recentReview": {
                     "summary": "褒贬不一",
                     "cssClass": "mixed",
-                    "count": "(361)",
-                    "tooltip": "过去 30 天内的 361 篇用户评测中有 62% 为好评。"
+                    "count": "(407)",
+                    "tooltip": "过去 30 天内的 407 篇用户评测中有 65% 为好评。"
                 },
                 "totalReview": {
                     "summary": "多半好评",
                     "cssClass": "positive",
-                    "count": "(80,712)",
-                    "tooltip": "此游戏的 80,712 篇用户评测中有 71% 为好评。"
+                    "count": "(80,783)",
+                    "tooltip": "此游戏的 80,783 篇用户评测中有 71% 为好评。"
                 }
             }
         },
