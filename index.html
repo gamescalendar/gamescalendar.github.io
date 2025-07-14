@@ -492,7 +492,7 @@
             events.forEach(event => {
                 if (event.meta?.platform) {
                     let platform = event.meta.platform.toLowerCase()
-                    if (platform.includes("switch")) {
+                    if (platform.includes("switch") || platform.includes("3ds")) {
                         event.color = "#DC0011"
                     } else if (platform.includes("playstation")) {
                         event.color = "#006FCD"
