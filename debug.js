@@ -27,7 +27,7 @@ async function makeRequest(url) {
     }
 }
 
-(async () => {
+async function testMetaScore() {
     const url = "https://www.metacritic.com/game/demons-souls"
 
     let body = await makeRequest(url) // details 页面有 table，不好解析
@@ -56,4 +56,23 @@ async function makeRequest(url) {
     console.log(userScore)
     console.log(metaReviewsCount)
     console.log(userReviewsCount)
+}
+
+(async () => {
+
+    let game = "donkey-kong-bananza"
+    let detailsUrl = `https://www.metacritic.com/game/${game}/details/`
+    let detailsBody = await makeRequest(detailsUrl)
+    if (!detailsBody) {
+        console.log(`Failed to fetch metacritic page for ${game} from ${detailsUrl}`)
+        return null
+    }
+
+    $ = cheerio.load(detailsBody)
+    let img = $(".c-cmsImage-loaded")
+    console.log(img)
+    let imageURL = img.attr("src")
+    let imageAlt = img.attr("alt")
+    console.log(imageURL)
+    
 })();

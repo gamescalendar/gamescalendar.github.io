@@ -191,6 +191,7 @@ function getCalendarData(data) {
             appid: data.steam_appid,
             title: data.name,
             description: data.short_description,
+            header_image: data.header_image?.split("?")[0],
             // tags: data.genres.map(x => x.description),
             release_date: data.release_date,
             language: {
