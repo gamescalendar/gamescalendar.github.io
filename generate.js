@@ -684,41 +684,56 @@ async function getMetacriticInfo(game, platformOverride) {
         }
     })
 
+    const elementToUrl = function(element) {
+        let url = ""
+        if (element.attr("href")) {
+            url = element.attr("href")
+        } else {
+            let a = element.find("a")
+            if (a && a.attr("href")) {
+                url = a.attr("href")
+            }
+        }
+        return url
+    }
+
     // publishers
     let publishers = []
 
-    let pubName = $(".c-gameDetails_Distributor span.g-outer-spacing-left-medium-fluid").text().trim()
+    let pubElem = $(".c-gameDetails_Distributor .g-outer-spacing-left-medium-fluid")
+    let pubName = pubElem.text().trim()
     if (pubName === "") {
         publishers = Array.from($(".c-gameDetails_Distributor li")).map(x => {
             let $x = $(x)
             return {
                 name: $x.text().trim(),
-                url: "",
+                url: elementToUrl($x),
             }
         })
     } else {
         publishers.push({
             name: pubName,
-            url: "",
+            url: elementToUrl(pubElem),
         })
     }
 
     // devs
     let developers = []
 
-    let devName = $(".c-gameDetails_Developer span.g-outer-spacing-left-medium-fluid").text().trim()
+    let devElem = $(".c-gameDetails_Developer .g-outer-spacing-left-medium-fluid")
+    let devName = devElem.text().trim()
     if (devName === "") {
         developers = Array.from($(".c-gameDetails_Developer li")).map(x => {
             let $x = $(x)
             return {
                 name: $x.text().trim(),
-                url: "",
+                url: elementToUrl($x),
             }
         })
     } else {
         developers.push({
             name: devName,
-            url: "",
+            url: elementToUrl(devElem),
         })
     }
 

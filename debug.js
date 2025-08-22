@@ -60,7 +60,8 @@ async function testMetaScore() {
 
 (async () => {
 
-    let game = "donkey-kong-bananza"
+    // let game = "donkey-kong-bananza"
+    let game = "death-stranding-2-on-the-beach"
     let detailsUrl = `https://www.metacritic.com/game/${game}/details/`
     let detailsBody = await makeRequest(detailsUrl)
     if (!detailsBody) {
@@ -70,9 +71,65 @@ async function testMetaScore() {
 
     $ = cheerio.load(detailsBody)
     let img = $(".c-cmsImage-loaded")
-    console.log(img)
+    // console.log(img)
     let imageURL = img.attr("src")
     let imageAlt = img.attr("alt")
-    console.log(imageURL)
     
+    const elementToUrl = function(element) {
+        let url = ""
+        if (element.attr("href")) {
+            url = element.attr("href")
+        } else {
+            let a = element.find("a")
+            if (a && a.attr("href")) {
+                url = a.attr("href")
+            }
+        }
+        return url
+    }
+
+    // publishers
+    let publishers = []
+
+    let pubElem = $(".c-gameDetails_Distributor .g-outer-spacing-left-medium-fluid")
+    let pubName = pubElem.text().trim()
+    if (pubName === "") {
+        publishers = Array.from($(".c-gameDetails_Distributor li")).map(x => {
+            let $x = $(x)
+            return {
+                name: $x.text().trim(),
+                url: elementToUrl($x),
+            }
+        })
+    } else {
+            console.log(pubElem)
+        publishers.push({
+            name: pubName,
+            url: elementToUrl(pubElem),
+        })
+    }
+
+    // devs
+    let developers = []
+
+    let devElem = $(".c-gameDetails_Developer .g-outer-spacing-left-medium-fluid")
+    let devName = devElem.text().trim()
+    if (devName === "") {
+        developers = Array.from($(".c-gameDetails_Developer li")).map(x => {
+            let $x = $(x)
+            return {
+                name: $x.text().trim(),
+                url: elementToUrl($x),
+            }
+        })
+    } else {
+        developers.push({
+            name: devName,
+            url: elementToUrl(devElem),
+        })
+    }
+
+
+    console.log(publishers)
+    console.log(developers)
 })();
