@@ -130,7 +130,7 @@ async function getAppDataFromStorePage(appid) {
 }
 
 async function getAppDataFromAPI(appid) {
-    let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=english`
+    let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=schinese`
     console.log(`Fetching API for ${appid} from ${api}`)
 
     // https://store.steampowered.com/apphoverpublic/1086940/?l=english&json=1 can get review stats
@@ -239,7 +239,7 @@ function getSteamAppid(originalTarget) {
     }
     if (typeof target != "string") return null;
 
-    target = target.trim()
+    target = target.trim().split(" ")[0]
     target = target.replace("http://", "")
     target = target.replace("https://", "")
     target = target.replace("store.steampowered.com/", "")
@@ -261,8 +261,8 @@ function getSteamAppid(originalTarget) {
     return null
 }
 
-function getTrackedEvents() {
-    let data = fs.readFileSync('events.json', 'utf8');
+function getTrackedEvents(filename) {
+    let data = fs.readFileSync(filename, 'utf8');
     // console.log(`read tracked events ${data}`)
 
     let tracked = JSON.parse(data);
@@ -419,7 +419,7 @@ function sanitizeEvents(events) {
     return changed
 }
 
-function doWrite(events) {
+function doWrite(events, filename) {
     // backup file
     // let nowFilename = (new Date().toISOString()).replaceAll("-", "_").replaceAll(":", "__")
     // let backupFilename = `events_${nowFilename}.json`
@@ -428,8 +428,8 @@ function doWrite(events) {
 
     // write new file
     let eventsJSON = JSON.stringify(events, null, 4);
-    console.log("writing to events.json");
-    fs.writeFileSync('events.json', eventsJSON, 'utf8');
+    console.log(`writing to ${filename}`);
+    fs.writeFileSync(filename, eventsJSON, 'utf8');
 }
 
 function cleanupBackups() {
@@ -456,6 +456,7 @@ function cleanupBackups() {
 }
 
 function getNeedRefreshTargets(newTargets, tracked) {
+    console.log("Filtering need refresh targets...")
     if (!tracked) {
         return newTargets
     }
@@ -538,12 +539,12 @@ function getNeedRefreshTargets(newTargets, tracked) {
     }).slice(0, MAX_COUNT_PER_RUN).map(x => x.target)
 }
 
-async function updateSteamTargets(trackedEvents, newTargets) {
+async function updateSteamTargets(trackedEvents, newTargets, deletedEvents) {
     newTargets = newTargets.map(getSteamAppid).filter(x => x && !isNaN(x))
 
     let needRefreshTargets = getNeedRefreshTargets(newTargets, trackedEvents.data)
 
-    console.log(`need to refresh targets: ${needRefreshTargets}`)
+    console.log(`need to refresh targets: ${needRefreshTargets.map(x => `${x}(${trackedEvents.data[x]?.title || "untracked yet"})`)}`)
     needRefreshTargets = needRefreshTargets.map(x => parseFloat(x)).filter(x => !isNaN(x))
     console.log(`filtered need to refresh targets: ${needRefreshTargets}`)
 
@@ -555,6 +556,17 @@ async function updateSteamTargets(trackedEvents, newTargets) {
             let apiData = await getAppDataFromAPI(target);
             if (apiData == null) {
                 console.log(`no response of target ${target}`)
+                let lastTrackDate = trackedEvents.data[target].meta?.last_track_date
+                if (lastTrackDate) {
+                    let today = (new Date()).toISOString().slice(0, 10);
+                    let difference = (new Date(today)).getTime() - (new Date(lastTrackDate)).getTime();
+                    let days = difference / (1000 * 3600 * 24);
+                    if (days >= 100) {
+                        console.log(`no response and outdated for ${days} days, deleted.`)
+                        deletedEvents.data[target] = trackedEvents.data[target]
+                        delete(trackedEvents.data[target])
+                    }
+                }
                 continue
             }
             let calendarData = getCalendarData(apiData);
@@ -795,6 +807,7 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
             continue;
         }
 
+        console.log(`${platform}: need to refresh targets: ${targets}`)
         changed = true
 
         for (let game of targets) {
@@ -861,15 +874,17 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
 }
 
 async function main(newTargets) {
-    let trackedEvents = getTrackedEvents();
+    let trackedEvents = getTrackedEvents('events.json');
+    let deletedEvents = getTrackedEvents('deleted.json');
 
-    let changed = await updateSteamTargets(trackedEvents, newTargets)
+    let changed = await updateSteamTargets(trackedEvents, newTargets, deletedEvents)
     changed = await updateMetacriticTargets(trackedEvents, newTargets) || changed
 
     changed = sanitizeEvents(trackedEvents) || changed
 
     if (changed) {
-        doWrite(trackedEvents)
+        doWrite(trackedEvents, 'events.json')
+        doWrite(deletedEvents, 'deleted.json')
     }
 
     // cleanupBackups()
