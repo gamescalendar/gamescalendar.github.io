@@ -385,6 +385,10 @@
             }
 
             // the template and CSS are come from https://steamdb.keylol.com/customize and https://store.steampowered.com/app/${appid}
+            let headerImage = "https://cdn.cloudflare.steamstatic.com/steam/apps/${data.appid}/header.jpg"
+            if (data.header_image) {
+                headerImage = data.header_image
+            }
             const template = `
     <div class="v6">
         <div id="wrapper">
@@ -394,7 +398,7 @@
 
                     <div class="block_header_image block_header_gallery load">
                         <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/">
-                            <img class="game_header_image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/${data.appid}/header.jpg">
+                            <img class="game_header_image" src=${headerImage}>
                         </a>
                     </div>
 
