@@ -474,12 +474,10 @@
                     result.push(...Object.values(events.data))
                 }
                 if (events.metacritic) {
-                    for (const platform in events.metacritic) {
-                        for (const name in events.metacritic[platform]) {
-                            events.metacritic[platform][name].source = "metacritic";
-                        }
-                        result.push(...Object.values(events.metacritic[platform]))
+                    for (const name in events.metacritic) {
+                        events.metacritic[name].source = "metacritic";
                     }
+                    result.push(...Object.values(events.metacritic))
                 }
             } else {
                 return events

@@ -772,79 +772,31 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
     }
 
     newTargets = newTargets.map(x => x.toLowerCase()).filter(x => x && x.startsWith(MetacriticURL))
-    console.log(`New metacritic urls: ${newTargets.join("\n")}`)
-    let platforms = {}
-    let newVersionGames = {}
+    console.log(`Metacritic urls: ${newTargets.join("\n")}`)
+    let mcGames = {}
     newTargets.forEach(target => {
         let url = target;
         let arr = target.replace(MetacriticURL, "").split("/").filter(x => x !== "");
         console.log(arr)
         if (arr.length === 1) {
-            newVersionGames[arr[0]] = {
+            mcGames[arr[0]] = {
                 url: url,
                 game: arr[0],
             }
             return
         }
-        if (arr.length < 2) {
-            return
-        }
-        let platform = arr[0]
-        let game = arr[1]
-
-        if (!platforms[platform]) {
-            platforms[platform] = {}
-        }
-        platforms[platform][game] = {
-            url: url,
-            platform: platform,
-            game: game,
-        }
     })
 
     let changed = false
-    for (const platform of Object.keys(platforms)) {
-        let gamesData = platforms[platform]
-        let games = Object.keys(gamesData)
-        let targets = getNeedRefreshTargets(games, trackedEvents.metacritic[platform])
-        if (targets <= 0) {
-            continue;
-        }
 
-        console.log(`${platform}: need to refresh targets: ${targets}`)
-        changed = true
-
-        for (let game of targets) {
-            if (!trackedEvents.metacritic[platform]) {
-                trackedEvents.metacritic[platform] = {}
-            }
-
-            let app_info = await getMetacriticInfo(game, platform)
-            if (!app_info) {
-                console.log(`failed to get metacritic info of ${game} at ${platform}`)
-                continue
-            }
-            app_info.meta = trackedEvents.metacritic[platform][game]?.meta
-
-            trackedEvents.metacritic[platform][game] = app_info
-
-            if (trackedEvents.metacritic[platform][game].meta) {
-                trackedEvents.metacritic[platform][game].meta.last_track_date = today
-            } else {
-                console.log("index +1")
-                trackedEvents.metacritic[platform][game].meta = {
-                    index: trackedEvents.index,
-                    platform: platform,
-                    identifier: `https://www.metacritic.com/game/${game}`,
-                    last_track_date: today,
-                }
-                trackedEvents.index += 1
-            }
-
-        }
+    let targets = getNeedRefreshTargets(Object.keys(mcGames), trackedEvents.metacritic)
+    if (targets <= 0) {
+        return
     }
 
-    for (const game of Object.keys(newVersionGames)) {
+    console.log(`need to refresh targets: ${targets}`)
+
+    for (const game of targets) {
         let app_info = await getMetacriticInfo(game)
         if (!app_info) {
             console.log(`failed to get metacritic info of ${game}`)
@@ -853,18 +805,15 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
         changed = true
 
         let platform = app_info.app_data.platform
-        if (!trackedEvents.metacritic[platform]) {
-            trackedEvents.metacritic[platform] = {}
-        }
-        app_info.meta = trackedEvents.metacritic[platform][game]?.meta
+        app_info.meta = trackedEvents.metacritic[game]?.meta
 
-        trackedEvents.metacritic[platform][game] = app_info
+        trackedEvents.metacritic[game] = app_info
 
-        if (trackedEvents.metacritic[platform][game].meta) {
-            trackedEvents.metacritic[platform][game].meta.last_track_date = today
+        if (trackedEvents.metacritic[game].meta) {
+            trackedEvents.metacritic[game].meta.last_track_date = today
         } else {
             console.log("index +1")
-            trackedEvents.metacritic[platform][game].meta = {
+            trackedEvents.metacritic[game].meta = {
                 index: trackedEvents.index,
                 platform: platform,
                 identifier: `https://www.metacritic.com/game/${game}`,
