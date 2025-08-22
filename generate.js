@@ -262,7 +262,11 @@ function getSteamAppid(originalTarget) {
 }
 
 function getTrackedEvents(filename) {
-    let data = fs.readFileSync(filename, 'utf8');
+    let data = {}
+
+    if (fs.existsSync(filename)) {
+        data = fs.readFileSync(filename, 'utf8');
+    }
     // console.log(`read tracked events ${data}`)
 
     let tracked = JSON.parse(data);
