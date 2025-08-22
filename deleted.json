@@ -1,1 +1,270 @@
-{}
+{
+    "index": 0,
+    "data": {
+        "2161470": {
+            "meta": {
+                "index": 40,
+                "platform": "Steam",
+                "identifier": 2161470,
+                "last_track_date": "2024-05-20"
+            },
+            "type": "Game",
+            "title": "Wandering Sword Demo",
+            "start": "2023-02-05",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 2161470,
+                "title": "Wandering Sword Demo",
+                "description": "",
+                "release_date": {
+                    "coming_soon": false,
+                    "date": "Feb 5, 2023"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "The Swordman Studio"
+                ],
+                "publishers": [
+                    "The Swordman Studio"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 10,
+                        "description": "Game demo"
+                    },
+                    {
+                        "id": 62,
+                        "description": "Family Sharing"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/en/RPG/",
+                        "name": "RPG"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Martial%20Arts/",
+                        "name": "Martial Arts"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Pixel%20Graphics/",
+                        "name": "Pixel Graphics"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Turn-Based/",
+                        "name": "Turn-Based"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Story%20Rich/",
+                        "name": "Story Rich"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Strategy/",
+                        "name": "Strategy"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Adventure/",
+                        "name": "Adventure"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Open%20World/",
+                        "name": "Open World"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Singleplayer/",
+                        "name": "Singleplayer"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/2.5D/",
+                        "name": "2.5D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Drama/",
+                        "name": "Drama"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Swordplay/",
+                        "name": "Swordplay"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/1990%27s/",
+                        "name": "1990's"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Foreign/",
+                        "name": "Foreign"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Turn-Based%20Combat/",
+                        "name": "Turn-Based Combat"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Tactical/",
+                        "name": "Tactical"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Turn-Based%20Strategy/",
+                        "name": "Turn-Based Strategy"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Turn-Based%20Tactics/",
+                        "name": "Turn-Based Tactics"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Action%20RPG/",
+                        "name": "Action RPG"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/en/Silent%20Protagonist/",
+                        "name": "Silent Protagonist"
+                    }
+                ],
+                "recentReview": {
+                    "summary": "Very Positive",
+                    "cssClass": "positive",
+                    "count": "(691)",
+                    "tooltip": "94% of the 691 user reviews in the last 30 days are positive."
+                },
+                "totalReview": {
+                    "summary": "Very Positive",
+                    "cssClass": "positive",
+                    "count": "(15,047)",
+                    "tooltip": "92% of the 15,047 user reviews for this game are positive."
+                }
+            }
+        },
+        "2358660": {
+            "meta": {
+                "index": 265,
+                "platform": "Steam",
+                "identifier": 2358660,
+                "last_track_date": "2024-06-24"
+            },
+            "type": "Game",
+            "title": "Life by You",
+            "start": "2027-01-01",
+            "app_data": {
+                "platform": "Steam",
+                "appid": 2358660,
+                "title": "Life by You",
+                "description": "Open up a new world of creative possibilities in Life by You - a new life sim created for you AND by you.",
+                "release_date": {
+                    "coming_soon": true,
+                    "date": "Coming soon"
+                },
+                "language": {
+                    "zh": {
+                        "gui": true,
+                        "audio": false,
+                        "subtitle": true
+                    }
+                },
+                "owned": false,
+                "developers": [
+                    "Paradox Tectonic"
+                ],
+                "publishers": [
+                    "Paradox Interactive"
+                ],
+                "categories": [
+                    {
+                        "id": 2,
+                        "description": "Single-player"
+                    },
+                    {
+                        "id": 18,
+                        "description": "Partial Controller Support"
+                    }
+                ],
+                "genres": [
+                    {
+                        "id": "28",
+                        "description": "Simulation"
+                    },
+                    {
+                        "id": "70",
+                        "description": "Early Access"
+                    }
+                ],
+                "tags": [
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%A8%A1%E6%8B%9F/",
+                        "name": "模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E7%94%9F%E6%B4%BB%E6%A8%A1%E6%8B%9F/",
+                        "name": "生活模拟"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A7%92%E8%89%B2%E8%87%AA%E5%AE%9A%E4%B9%89/",
+                        "name": "角色自定义"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
+                        "name": "单人"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%8F%AF%E6%A8%A1%E7%BB%84%E5%8C%96/",
+                        "name": "可模组化"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%8A%A2%E5%85%88%E4%BD%93%E9%AA%8C/",
+                        "name": "抢先体验"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%89%B2%E6%83%85%E5%86%85%E5%AE%B9/",
+                        "name": "色情内容"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%94%BE%E6%9D%BE/",
+                        "name": "放松"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/3D/",
+                        "name": "3D"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E8%A3%B8%E9%9C%B2/",
+                        "name": "裸露"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BC%80%E6%94%BE%E4%B8%96%E7%95%8C/",
+                        "name": "开放世界"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/LGBTQ%2B/",
+                        "name": "LGBTQ+"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%B2%99%E7%9B%92/",
+                        "name": "沙盒"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%B7%A5%E4%BD%9C%E5%9C%BA%E6%89%80%E4%B8%8D%E5%AE%9C/",
+                        "name": "工作场所不宜"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E5%BB%BA%E9%80%A0/",
+                        "name": "建造"
+                    },
+                    {
+                        "link": "https://store.steampowered.com/tags/zh-cn/%E6%88%90%E4%BA%BA/",
+                        "name": "成人"
+                    }
+                ]
+            }
+        }
+    },
+    "metacritic": {}
+}
