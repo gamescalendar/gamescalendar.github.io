@@ -5,7 +5,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "0 */4 * * *"
+    - cron: "0 */6 * * *"
 
 
 concurrency:
@@ -41,7 +41,7 @@ jobs:
         run: |
           set -x
           git fetch origin release
-          git checkout origin/release -- *.json
+          git checkout origin/release -- events.json deleted.json
           node ./generate.js list.txt
           git status
 
@@ -52,14 +52,14 @@ jobs:
           git config --local user.email "actions@github.com"
           git status
           git fetch origin master
-          git stash -- *.json
+          git stash -- events.json deleted.json
           git checkout release
           git status
           git stash show
-          git checkout stash@{0} *.json 
+          git checkout stash@{0} events.json deleted.json
           
           # idk why but git 2.43 will raise an error says `fatal: '--merge', '--ours', or '--theirs' cannot be used when checking out of a tree` 
-          # git checkout stash@{0} --theirs *.json
+          # git checkout stash@{0} --theirs events.json deleted.json
           git checkout master -- static.json override.json index.html float.css favicon.svg .gitignore
           git status
 
