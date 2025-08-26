@@ -40,7 +40,15 @@ export function cnDateStrToDateStr(str) {
     str = str.replaceAll("Z", "")
     str = str.replaceAll(" ", "").replaceAll("日", "")
     str = str.replaceAll("年", "-").replaceAll("月", "-")
-    return new Date(str + "Z").toISOString().slice(0, 10)
+    if (!str) {
+        return ""
+    }
+    let d = new Date(str + "Z") 
+    if (d.toString() === "Invalid Date") {
+        console.log(str)
+        return ""
+    }
+    return d.toISOString().slice(0, 10)
 }
 
 function getTrackedName(tracked, target) {
