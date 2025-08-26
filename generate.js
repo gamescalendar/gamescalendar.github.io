@@ -484,8 +484,8 @@ function getNeedRefreshTargets(newTargets, tracked) {
     let needRefreshTargets = []
 
     for (const target of newTargets) {
-        if (needRefreshTargets.length > MAX_COUNT_PER_RUN + MORE_UNTRACKED_PER_RUN) {
-            console.log(`Untracked apps count > ${MAX_COUNT_PER_RUN + MORE_UNTRACKED_PER_RUN}, break`)
+        if (needRefreshTargets.length > MORE_UNTRACKED_PER_RUN) {
+            console.log(`Untracked apps count > ${MORE_UNTRACKED_PER_RUN}, break`)
             break;
         }
         if (!tracked[target]) {
@@ -500,7 +500,7 @@ function getNeedRefreshTargets(newTargets, tracked) {
 
     let additionalCount = 0
     if (needRefreshTargets.length > 0) {
-        additionalCount = Math.min(needRefreshTargets.length, MAX_COUNT_PER_RUN + MORE_UNTRACKED_PER_RUN)
+        additionalCount = Math.min(needRefreshTargets.length, MORE_UNTRACKED_PER_RUN)
     }
 
     let recentCount = 0
