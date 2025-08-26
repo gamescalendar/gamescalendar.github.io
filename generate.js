@@ -305,7 +305,10 @@ function cnDateStrToDateStr(str) {
         console.log(typeof(str))
         return str
     }
-    return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
+
+    str = str.replaceAll(" ", "").replaceAll("日", "")
+    str = str.replaceAll("年", "-").replaceAll("月", "-")
+    return str + "Z"
 }
 
 function QYearToDate(date) {
@@ -363,19 +366,41 @@ function sanitizeEvents(events) {
                 return
             }
 
-            if (event.app_data && event.app_data.release_date && event.app_data.release_date.coming_soon) {
-                let date = cnDateStrToDateStr(event.app_data.release_date)
+            let releaseDate = event.app_data?.release_date
+            if (releaseDate && releaseDate.coming_soon) {
+                let date = cnDateStrToDateStr(event.app_data.release_date.date)
                 let dateStr = new Date(date).toString()
                 if (dateStr === "Invalid Date" && event.start != next3Year) { // some games have release_date but coming_soon is true
                     console.log("sanitize " + event.title + " (" + key + ") to " + next3Year)
                     events.data[key].start = next3Year
                     changed = true
+                } else {
+                    events.data[key].start = new Date(date).toISOString().slice(0, 10)
+                    console.log("sanitize " + event.title + " (" + key + ") to " + events.data[key].start)
                 }
             }
         } else {
             let start_str = old_start.toISOString().slice(0, 10)
             if (event.start != start_str) {
                 events.data[key].start = start_str
+            }
+            
+            let releaseDate = event.app_data?.release_date
+            // some games have release_date but coming_soon is true
+            if (releaseDate && releaseDate.date && releaseDate.coming_soon) {
+                let date = cnDateStrToDateStr(releaseDate.date)
+                let comingDate = new Date(date)
+                let dateStr = comingDate.toString()
+                let isFuture = new Date().getTime() < comingDate.getTime()
+                if (dateStr !== "Invalid Date" && isFuture) { 
+                    // changed = true
+                    let old = event.start
+                    let newStr = comingDate.toISOString().slice(0, 10)
+                    if (old != newStr) {
+                        events.data[key].start = newStr
+                        console.log(`${start_str} (${old}) -> ${events.data[key].start} (${date}): ${event.title} (${key})`)
+                    }
+                }
             }
         }
     })
