@@ -300,6 +300,11 @@ function yearStrToNumber(str) {
 }
 
 function cnDateStrToDateStr(str) {
+    if (!str.replaceAll) {
+        console.log(str)
+        console.log(typeof(str))
+        return str
+    }
     return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
 }
 
@@ -493,7 +498,15 @@ function getNeedRefreshTargets(newTargets, tracked) {
         let tbaPriority = false
         let releaseDate = obj.start
         if (releaseDate) {
-            let released = ((new Date(today)).getTime() - (new Date(releaseDate)).getTime())
+            let calendarDate = new Date(releaseDate).getTime()
+            if (obj.app_data.release_date && obj.app_data.release_date.date) {
+                let date = new Date(cnDateStrToDateStr(obj.app_data.release_date.date))
+                if (date.toString() != "Invalid Date") {
+                    calendarDate = Math.min(calendarDate, date.getTime())
+                }
+            }
+
+            let released = ((new Date(today)).getTime() - calendarDate)
             let days = Math.abs(released / (1000 * 3600 * 24))
             recentGamePriority = RecentGameDatesRangeLeft <= days && days <= RecentGameDatesRangeRight
             if (released < 0 && ((released / (1000 * 3600 * 24)) < -365)) {
