@@ -50,6 +50,7 @@ export default class Database {
             if (!start) {
                 return start
             }
+            console.log(start)
             return new Date(start).toISOString().slice(0, 10)
         }
         
