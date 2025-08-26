@@ -250,7 +250,7 @@ function getSteamAppid(originalTarget) {
         let elements = target.split("/")
         if (elements.length >= 1) {
             steamAppIdMap[elements[0]] = originalTarget
-            console.log(`take ${elements[0]} as appid from ${originalTarget}`)
+            //console.log(`take ${elements[0]} as appid from ${originalTarget}`)
             let appid = parseFloat(elements[0])
             if (appid && !isNaN(appid)) {
                 return appid
@@ -263,7 +263,7 @@ function getSteamAppid(originalTarget) {
 }
 
 function getTrackedEvents(filename) {
-    let data = {}
+    let data = "{}"
 
     if (fs.existsSync(filename)) {
         data = fs.readFileSync(filename, 'utf8');
@@ -468,7 +468,11 @@ function getNeedRefreshTargets(newTargets, tracked) {
 
     let today = (new Date()).toISOString().slice(0, 10)
     let needRefreshTargets = []
-    newTargets.forEach(target => {
+    for (const target of newTargets) {
+        if (needRefreshTargets.length > MAX_COUNT_PER_RUN) {
+            console.log(`Untracked apps count > ${MAX_COUNT_PER_RUN}, break`)
+            break;
+        }
         if (!tracked[target]) {
             console.log(`${target} not tracked yet, add to refresh list`)
             needRefreshTargets.push({
@@ -476,7 +480,8 @@ function getNeedRefreshTargets(newTargets, tracked) {
                 outdated_days: 9999,
             })
         }
-    });
+    }
+
     Object.keys(tracked).forEach(target => {
         let obj = tracked[target]
         if (!obj.meta) {
@@ -842,9 +847,9 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
     return changed
 }
 
-async function main(newTargets) {
-    let trackedEvents = getTrackedEvents('events.json');
-    let deletedEvents = getTrackedEvents('deleted.json');
+async function main(newTargets, outputEvents, outputDeleted) {
+    let trackedEvents = getTrackedEvents(outputEvents);
+    let deletedEvents = getTrackedEvents(outputDeleted);
 
     let changed = await updateSteamTargets(trackedEvents, newTargets, deletedEvents)
     changed = await updateMetacriticTargets(trackedEvents, newTargets) || changed
@@ -852,8 +857,8 @@ async function main(newTargets) {
     changed = sanitizeEvents(trackedEvents) || changed
 
     if (changed) {
-        doWrite(trackedEvents, 'events.json')
-        doWrite(deletedEvents, 'deleted.json')
+        doWrite(trackedEvents, outputEvents)
+        doWrite(deletedEvents, outputDeleted)
     }
 
     // cleanupBackups()
@@ -863,12 +868,14 @@ function getTargets(file) {
     let list = fs.readFileSync(file, "utf-8").split("\n")
         .map(x => x.trim())
         .filter(x => x.length > 0 && !x.startsWith("//"))
-    console.log(`Read target list: ${list.join("\n")}`)
+    //console.log(`Read target list: ${list.join("\n")}`)
 
     return list
 }
 
 (async () => {
     let file = process.argv[2]
-    await main(getTargets(file))
+    let outputEvents = process.argv[3]
+    let outputDeleted = process.argv[4]
+    await main(getTargets(file), outputEvents, outputDeleted)
 })();
