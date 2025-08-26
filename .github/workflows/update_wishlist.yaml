@@ -39,12 +39,12 @@ jobs:
           git config --local user.email "actions@github.com"
 
           ls
-          git fetch origin master
-          git checkout master -- update_wishlist_list.js
-
-          ls
           git fetch origin release
           git checkout release
+
+          ls
+          git fetch origin master
+          git checkout master -- update_wishlist_list.js
 
           ls
           curl 'https://www.steamwishlistcalculator.com/api/wishlist?steamId=76561198171618942&countryCode=US' > wishlist.json
