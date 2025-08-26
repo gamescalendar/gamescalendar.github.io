@@ -3,7 +3,12 @@ events.json
 test/
 example/
 *.json
+!package.json
+!package-lock.json
+!override.json
+!static.json
 *.txt
+!list.txt
 
 ### Example user template template
 ### Example user template

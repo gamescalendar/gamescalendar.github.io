@@ -1,7 +1,6 @@
 module.exports =  {
   languageOption: "schinese",
-  languageString: "简体中文",
-  audioString: "完全音频",
+  languageString: [ "简体中文", "Chinese" ],
   countryCode: "us",
 
   proxy: "",
@@ -22,12 +21,18 @@ module.exports =  {
     {
       type: "SteamOwned",
       source: "owned.txt",
+      output: "owned.json",
     }
   ],
 
+  recent: {
+    forceUpdate: true,
+    past: -14,
+    future: 30,
+  },
   ratelimit: {
-    init: 1,
-    update: 1,
+    init: 60,
+    update: 20,
   },
   steam: {
 

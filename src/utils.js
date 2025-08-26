@@ -1,5 +1,6 @@
 const fetch = require('node-fetch');
 const {HttpsProxyAgent} = require('https-proxy-agent');
+const config = require('../config.js');
 
 const isCI = process.env.CI_ENV == "ci"
 const proxy = process.env.HTTP_PROXY || 'http://127.0.0.1:1080'
@@ -40,9 +41,18 @@ function cnDateStrToDateStr(str) {
     return str + "Z"
 }
 
+function getTrackedName(tracked, target) {
+    return `${target.toString().padStart(7, ' ')}: ${tracked[target].title}`
+    if (tracked[target]) {
+    } else {
+        return target
+    }
+}
+
 function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
-    const MAX_COUNT_PER_RUN = opts.MAX_COUNT_PER_RUN ?? 20
-    const MORE_UNTRACKED_PER_RUN = opts.MORE_UNTRACKED_PER_RUN ?? 40
+    const MAX_COUNT_PER_RUN = opts?.ratelimit?.update ?? 20
+    const RecentGameDatesRangeLeft = opts?.recent?.past ?? -14
+    const RecentGameDatesRangeRight = opts?.recent?.future ?? 30
 
     console.log("Filtering need refresh targets...")
     if (!tracked) {
@@ -52,32 +62,21 @@ function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
     let today = (new Date()).toISOString().slice(0, 10)
     let needRefreshTargets = []
 
-    for (const target of newTargets) {
-        if (needRefreshTargets.length > MORE_UNTRACKED_PER_RUN) {
-            console.log(`Untracked apps count > ${MORE_UNTRACKED_PER_RUN}, break`)
-            break;
-        }
-        if (!tracked[target]) {
-            needRefreshTargets.push({
-                target: target,
-                outdated_days: 9999,
-                isUntracked: true,
-            })
-        }
-    }
-
-    let additionalCount = 0
-    if (needRefreshTargets.length > 0) {
-        additionalCount = Math.min(needRefreshTargets.length, MORE_UNTRACKED_PER_RUN)
-    }
-
     let recentCount = 0
 
-    let RecentGameDatesRangeLeft = -14
-    let RecentGameDatesRangeRight = 30
     Object.keys(tracked).forEach(target => {
         let obj = tracked[target]
         if (!obj.meta) {
+            console.log(`${getTrackedName(tracked, target)} tracked but no metadata, add to refresh list`)
+            needRefreshTargets.push({
+                target: target,
+                outdated_days: 9999,
+            })
+            return
+        }
+
+        if ((obj.app_data.metaScore && !obj.app_data.metaReviewsCount) || (obj.app_data.userScore && !obj.app_data.userReviewsCount)) {
+            console.log(`${getTrackedName(tracked, target)} tracked but reviews score and count mismatched`)
             needRefreshTargets.push({
                 target: target,
                 outdated_days: 9999,
@@ -87,6 +86,7 @@ function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
 
         let lastTrackDate = obj.meta?.last_track_date
         if (!lastTrackDate) {
+            console.log(`${getTrackedName(tracked, target)} tracked but no last_track_date, add to refresh list`)
             needRefreshTargets.push({
                 target: target,
                 outdated_days: 9999,
@@ -117,15 +117,21 @@ function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
             }
         }
 
+        if (!config.recent.forceUpdate) {
+            recentGamePriority = false
+        }
+
         if (needRefresh || recentGamePriority) {
             let days = difference / (1000 * 3600 * 24);
             if (recentGamePriority) {
                 days = 99999
                 recentCount += 1
+                // console.log(`${getTrackedName(tracked, target)} is a recent game`)
             }
             if (tbaPriority) {
                 days += 7
             }
+            // console.log(`${getTrackedName(tracked, target)} outdated for ${days} days, add to refresh list (${steamAppIdMap[target]}) `)
             needRefreshTargets.push({
                 target: target,
                 outdated_days: days,
@@ -134,9 +140,12 @@ function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
             })
             return
         }
+        // console.log(`skip ${getTrackedName(tracked, target)} because last tracked date is today: ${today}`)
     })
 
-    let maxCount = MAX_COUNT_PER_RUN + additionalCount + recentCount
+    let maxCount = MAX_COUNT_PER_RUN + recentCount
+
+    console.log(`Total ${maxCount}, ${recentCount} additional updates due to recent`)
 
     let limited = needRefreshTargets.sort((a, b) => {
         return b.outdated_days - a.outdated_days
@@ -144,7 +153,16 @@ function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
 
     limited.forEach(x=>{
         if (x.recentGamePriority) {
-            // marker for recent
+            console.log(`Recent release ${tracked[x.target].start}: ${getTrackedName(tracked, x.target)}`)
+        }
+        if (x.tbaPriority) {
+            console.log(`[TBA] ${x.outdated_days.toString().padStart(5, " ")} days ago: ${getTrackedName(tracked, x.target)}`)
+        }
+        if (x.isUntracked) {
+            console.log(`Untracked: ${getTrackedName(tracked, x.target)}`)
+        }
+        if (!x.recentGamePriority && !x.tbaPriority && !x.isUntracked) {
+            console.log(`Last sync: ${x.outdated_days.toString().padStart(5, " ")} days ago: ${getTrackedName(tracked, x.target)}`)
         }
     })
 
