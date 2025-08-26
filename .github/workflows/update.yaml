@@ -41,7 +41,7 @@ jobs:
         run: |
           set -x
           git fetch origin release
-          git checkout origin/release -- events.json deleted.json wishlist.json wishlist_deleted.json
+          git checkout origin/release -- events.json deleted.json wishlist.txt wishlist.json wishlist_deleted.json
           node ./generate.js list.txt events.json deleted.json
           node ./generate.js wishlist.txt wishlist.json wishlist_deleted.json
           git status

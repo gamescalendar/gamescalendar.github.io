@@ -1,4 +1,4 @@
-name: Update Games Calendar
+name: Update Wishlist List
 
 on:
   push:
@@ -34,15 +34,19 @@ jobs:
 
       - name: Update wishlist.txt
         run: |
+          set -x
           git config --local user.name actions-user
           git config --local user.email "actions@github.com"
 
+          ls
           git fetch origin master
           git checkout master -- update_wishlist_list.js
 
+          ls
           git fetch origin release
           git checkout release
 
+          ls
           curl 'https://www.steamwishlistcalculator.com/api/wishlist?steamId=76561198171618942&countryCode=US' > wishlist.json
           node ./update_wishlist_list.js > wishlist.txt
 
