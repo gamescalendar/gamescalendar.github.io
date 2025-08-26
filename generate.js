@@ -41,7 +41,7 @@ const isCI = process.env.CI_ENV == "ci"
 const proxy = process.env.HTTP_PROXY || 'http://127.0.0.1:1080'
 
 async function makeRequest(url) {
-    console.log(`Requesting ${url}`)
+    // console.log(`Requesting ${url}`)
     let response;
 
     let opts = {
@@ -615,15 +615,18 @@ async function updateSteamTargets(trackedEvents, newTargets, deletedEvents) {
             let apiData = await getAppDataFromAPI(target);
             if (apiData == null) {
                 console.log(`no response of target ${target}`)
-                let lastTrackDate = trackedEvents.data[target].meta?.last_track_date
-                if (lastTrackDate) {
-                    let today = (new Date()).toISOString().slice(0, 10);
-                    let difference = (new Date(today)).getTime() - (new Date(lastTrackDate)).getTime();
-                    let days = difference / (1000 * 3600 * 24);
-                    if (days >= 100) {
-                        console.log(`no response and outdated for ${days} days, deleted.`)
-                        deletedEvents.data[target] = trackedEvents.data[target]
-                        delete(trackedEvents.data[target])
+                let trackedData = trackedEvents.data[target]
+                if (trackedData) {
+                    let lastTrackDate = trackedEvents.data[target].meta?.last_track_date
+                    if (lastTrackDate) {
+                        let today = (new Date()).toISOString().slice(0, 10);
+                        let difference = (new Date(today)).getTime() - (new Date(lastTrackDate)).getTime();
+                        let days = difference / (1000 * 3600 * 24);
+                        if (days >= 100) {
+                            console.log(`no response and outdated for ${days} days, deleted.`)
+                            deletedEvents.data[target] = trackedEvents.data[target]
+                            delete(trackedEvents.data[target])
+                        }
                     }
                 }
                 continue
