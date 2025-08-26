@@ -112,7 +112,7 @@ export function getCalendarData(data) {
     let date = data.release_date.date ?? data.release_date
     let isTBA = data.release_date.coming_soon && !data.release_date.date
 
-    let start = new Date(cnDateStrToDateStr(date)).toISOString().slice(0, 10)
+    let start = cnDateStrToDateStr(date)
     if (!isTBA) {
         let year = yearStrToNumber(date) // 2024
         if (year !== -1) {
