@@ -26,8 +26,8 @@ function getTrackedEvents(filename) {
     if (tracked.index === undefined) {
         tracked.index = 0
     }
-    if (!tracked.data) {
-        tracked.data = {}
+    if (!tracked.steam) {
+        tracked.steam = {}
     }
     if (!tracked.metacritic) {
         tracked.metacritic = {}
@@ -42,16 +42,16 @@ function doPatch(events) {
 
     Object.keys(override).forEach(key => {
         let obj = override[key]
-        if (events.data[key]) {
+        if (events.steam[key]) {
             // we should only patch specific fields
             console.log(`Patching ${key}`)
             if (obj.start) {
-                console.log(`Patching ${key}.start from ${events.data[key].start} to ${obj.start}`)
-                events.data[key].start = obj.start
+                console.log(`Patching ${key}.start from ${events.steam[key].start} to ${obj.start}`)
+                events.steam[key].start = obj.start
             }
-            if (obj.app_data.owned !== events.data[key].app_data.owned) {
-                console.log(`Patching ${key}.app_data.owned from ${events.data[key].app_data.owned} to ${obj.app_data.owned}`)
-                events.data[key].app_data.owned = obj.app_data.owned
+            if (obj.app_data.owned !== events.steam[key].app_data.owned) {
+                console.log(`Patching ${key}.app_data.owned from ${events.steam[key].app_data.owned} to ${obj.app_data.owned}`)
+                events.steam[key].app_data.owned = obj.app_data.owned
             }
         } else {
             console.log(`Patch for ${key} isn't tracked yet`)
@@ -133,14 +133,14 @@ function sanitizeEvents(events) {
     next3Year = next3Year.toISOString().slice(0, 10)
 
     console.log("sanitizing...")
-    Object.keys(events.data).forEach(key => {
-        let event = events.data[key]
+    Object.keys(events.steam).forEach(key => {
+        let event = events.steam[key]
         event.start = cnDateStrToDateStr(event.start)
         let old_start = new Date(event.start)
         if (old_start.toString() === "Invalid Date") {
             let qYear = QYearToDate(event.start)
             if (qYear != "Invalid Date") {
-                events.data[key].start = qYear.toISOString().slice(0, 10)
+                events.steam[key].start = qYear.toISOString().slice(0, 10)
                 return
             }
 
@@ -150,17 +150,17 @@ function sanitizeEvents(events) {
                 let dateStr = new Date(date).toString()
                 if (dateStr === "Invalid Date" && event.start != next3Year) { // some games have release_date but coming_soon is true
                     console.log("sanitize " + event.title + " (" + key + ") to " + next3Year)
-                    events.data[key].start = next3Year
+                    events.steam[key].start = next3Year
                     changed = true
                 } else {
-                    events.data[key].start = new Date(date).toISOString().slice(0, 10)
-                    console.log("sanitize " + event.title + " (" + key + ") to " + events.data[key].start)
+                    events.steam[key].start = new Date(date).toISOString().slice(0, 10)
+                    console.log("sanitize " + event.title + " (" + key + ") to " + events.steam[key].start)
                 }
             }
         } else {
             let start_str = old_start.toISOString().slice(0, 10)
             if (event.start != start_str) {
-                events.data[key].start = start_str
+                events.steam[key].start = start_str
             }
             
             let releaseDate = event.app_data?.release_date
@@ -175,8 +175,8 @@ function sanitizeEvents(events) {
                     let old = event.start
                     let newStr = comingDate.toISOString().slice(0, 10)
                     if (old != newStr) {
-                        events.data[key].start = newStr
-                        console.log(`${start_str} (${old}) -> ${events.data[key].start} (${date}): ${event.title} (${key})`)
+                        events.steam[key].start = newStr
+                        console.log(`${start_str} (${old}) -> ${events.steam[key].start} (${date}): ${event.title} (${key})`)
                     }
                 }
             }
@@ -366,9 +366,9 @@ function getNeedRefreshTargets(newTargets, tracked) {
 }
 
 async function updateSteamTargets(trackedEvents, newTargets, deletedEvents) {
-    let needRefreshTargets = getNeedRefreshTargets(newTargets, trackedEvents.data)
+    let needRefreshTargets = getNeedRefreshTargets(newTargets, trackedEvents.steam)
 
-    console.log(`need to refresh targets: ${needRefreshTargets.map(x => `${x}(${trackedEvents.data[x]?.title || "untracked yet"})`)}`)
+    console.log(`need to refresh targets: ${needRefreshTargets.map(x => `${x}(${trackedEvents.steam[x]?.title || "untracked yet"})`)}`)
     needRefreshTargets = needRefreshTargets.map(x => parseFloat(x)).filter(x => !isNaN(x))
     console.log(`filtered need to refresh targets: ${needRefreshTargets}`)
 
@@ -380,17 +380,17 @@ async function updateSteamTargets(trackedEvents, newTargets, deletedEvents) {
             let apiData = await getAppDataFromAPI(target);
             if (apiData == null) {
                 console.log(`no response of target ${target}`)
-                let trackedData = trackedEvents.data[target]
+                let trackedData = trackedEvents.steam[target]
                 if (trackedData) {
-                    let lastTrackDate = trackedEvents.data[target].meta?.last_track_date
+                    let lastTrackDate = trackedEvents.steam[target].meta?.last_track_date
                     if (lastTrackDate) {
                         let today = (new Date()).toISOString().slice(0, 10);
                         let difference = (new Date(today)).getTime() - (new Date(lastTrackDate)).getTime();
                         let days = difference / (1000 * 3600 * 24);
                         if (days >= 100) {
                             console.log(`no response and outdated for ${days} days, deleted.`)
-                            deletedEvents.data[target] = trackedEvents.data[target]
-                            delete(trackedEvents.data[target])
+                            deletedEvents.steam[target] = trackedEvents.steam[target]
+                            delete(trackedEvents.steam[target])
                         }
                     }
                 }
@@ -398,8 +398,8 @@ async function updateSteamTargets(trackedEvents, newTargets, deletedEvents) {
             }
             let calendarData = getCalendarData(apiData);
 
-            if (trackedEvents.data[target] && trackedEvents.data[target].meta) {
-                calendarData.meta = trackedEvents.data[target].meta
+            if (trackedEvents.steam[target] && trackedEvents.steam[target].meta) {
+                calendarData.meta = trackedEvents.steam[target].meta
             }
             if (!calendarData.meta) {
                 calendarData.meta = {
@@ -413,7 +413,7 @@ async function updateSteamTargets(trackedEvents, newTargets, deletedEvents) {
                 calendarData.meta.last_track_date = today
             }
 
-            trackedEvents.data[target] = calendarData;
+            trackedEvents.steam[target] = calendarData;
         }
 
         doPatch(trackedEvents)

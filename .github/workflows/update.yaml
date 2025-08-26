@@ -39,9 +39,8 @@ jobs:
         run: |
           set -x
           git fetch origin release
-          git checkout origin/release -- events.json deleted.json wishlist.txt wishlist.json wishlist_deleted.json
-          node ./generate.js list.txt events.json deleted.json
-          node ./generate.js wishlist.txt wishlist.json wishlist_deleted.json
+          git checkout origin/release -- events.json wishlist.txt wishlist.json owned.txt owned.json
+          node ./run.js
           git status
 
       - name: add changed files
@@ -51,15 +50,15 @@ jobs:
           git config --local user.email "actions@github.com"
           git status
           git fetch origin master
-          git stash -- events.json deleted.json wishlist.json wishlist_deleted.json
+          git stash -- events.json wishlist.txt wishlist.json owned.txt owned.json
           git checkout release
           git status
           git stash show
-          git checkout stash@{0} events.json deleted.json wishlist.json wishlist_deleted.json
+          git checkout stash@{0} events.json wishlist.txt wishlist.json owned.txt owned.json
           
           # idk why but git 2.43 will raise an error says `fatal: '--merge', '--ours', or '--theirs' cannot be used when checking out of a tree` 
-          # git checkout stash@{0} --theirs events.json deleted.json wishlist.json wishlist_deleted.json
-          git checkout master -- static.json override.json index.html float.css favicon.svg .gitignore
+          # git checkout stash@{0} --theirs events.json wishlist.txt wishlist.json owned.txt owned.json
+          git checkout master -- static.json override.json index.html float.css favicon.svg
           git status
 
       - name: commit
