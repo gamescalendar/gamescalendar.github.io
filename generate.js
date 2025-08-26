@@ -1,221 +1,19 @@
-const https = require('https');
 const fs = require('fs');
 
-const fetch = require('node-fetch');
-const {HttpsProxyAgent} = require('https-proxy-agent');
-const cheerio = require('cheerio');
+const { parseFile } = require('./src/parser')
+const { cnDateStrToDateStr } = require('./src/utils')
+
+const {
+    getAppDataFromAPI,
+    getCalendarData,
+} = require("./src/steam")
+
+const {
+    getMetacriticInfo,
+} = require("./src/metacritic")
 
 const MAX_COUNT_PER_RUN = 20
 const MORE_UNTRACKED_PER_RUN = 40
-
-const isCI = process.env.CI_ENV == "ci"
-const proxy = process.env.HTTP_PROXY || 'http://127.0.0.1:1080'
-
-async function makeRequest(url) {
-    // console.log(`Requesting ${url}`)
-    let response;
-
-    let opts = {
-        headers: {
-            cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
-            // cookie: "wants_mature_content=1; sessionid=a8cb216f0ce30895a5872d0e; birthtime=186595201; lastagecheckage=1-0-1976"
-        }
-    };
-
-    try {
-        if (isCI) {
-            response = await fetch(url, opts);
-        } else {
-            console.log(`using proxy ${proxy}`)
-            opts.agent = new HttpsProxyAgent(proxy);
-            response = await fetch(url, opts);
-        }
-        return await response.text();
-    } catch (e) {
-        console.log(`failed to fetch ${url}, error: ${e}`)
-        return null
-    }
-}
-
-function clearURL(url) {
-    let u = new URL(url)
-    u.search = ""
-    return u.toString()
-}
-
-async function getAppDataFromStorePage(appid) {
-    let page = `https://store.steampowered.com/app/${appid}?l=schinese`
-    console.log(`Fetching Store page for ${appid} from ${page}`)
-
-    const body = await makeRequest(page);
-    if (!body) {
-        console.log(`Failed to fetch store page for ${appid} from ${page}`)
-        return null
-    }
-
-    let data = {}
-
-    let $ = cheerio.load(body);
-    let userReview = $("#userReviews")
-    // let userReview = Array.from(("#userReviews").children())
-    // let recentReview = userReview.filter(x=> {
-    //     let element = $(x)
-    //     return element.is("div") && element.find(".subtitle.column").text().includes("最近评测")
-    // })
-    let recentReview = $(userReview.find(".subtitle.column:not(.all)").parent())
-    if (recentReview.length > 0) {
-        let recentSummary = recentReview.find(".game_review_summary")
-        if (recentSummary.length > 0) {
-            data.recentReview = {
-                summary: recentSummary.text(),
-                cssClass: recentSummary.attr("class").replace("game_review_summary", "").trim(),
-                count: recentReview.find(".summary").find(".responsive_hidden").text().trim(),
-                tooltip: recentReview.attr("data-tooltip-html"),
-            }
-        }
-    }
-
-    let totalReview = $(userReview.find(".subtitle.column.all").parent())
-    if (totalReview.length > 0) {
-        let totalSummary = totalReview.find(".game_review_summary")
-        if (totalSummary.length > 0) {
-            data.totalReview = {
-                summary: totalSummary.text(),
-                cssClass: totalSummary.attr("class").replace("game_review_summary", "").trim(),
-                count: totalReview.find(".summary").find(".responsive_hidden").text().trim(),
-                tooltip: totalReview.attr("data-tooltip-html"),
-            }
-        }
-    }
-
-    data.tags = Array.from($(".glance_tags.popular_tags").children()).map(x => $(x)).filter(x => {
-        return x.is("a")
-        // && element.css("display") !== "none" // 页面中最开始全部都是 display: none
-    }).map(x => {
-        return {
-            link: clearURL(x.attr("href")),
-            name: x.text().trim(),
-        }
-    })
-
-    return data
-}
-
-async function getAppDataFromAPI(appid) {
-    let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=schinese`
-    console.log(`Fetching API for ${appid} from ${api}`)
-
-    // https://store.steampowered.com/apphoverpublic/1086940/?l=english&json=1 can get review stats
-    // but still cannot get user-defined tags
-
-    const body = await makeRequest(api);
-    if (!body) {
-        console.log(`Failed to fetch store API for ${appid} from ${api}`)
-        return null
-    }
-    // console.log(body);
-    let data = JSON.parse(body);
-    if (!data[appid] || !data[appid].data) {
-        console.log(`API data for ${appid} error`)
-        return null
-    }
-
-    data = data[appid].data
-    const pageData = await getAppDataFromStorePage(appid)
-    if (pageData != null) {
-        data.tags = pageData.tags
-        data.recentReview = pageData.recentReview
-        data.totalReview = pageData.totalReview
-    }
-
-    return data
-}
-
-function getCalendarData(data) {
-    let date = data.release_date.date ?? data.release_date
-    let isTBA = data.release_date.coming_soon && !data.release_date.date
-
-    let start = cnDateStrToDateStr(date)
-    if (!isTBA) {
-        let year = yearStrToNumber(date) // 2024
-        if (year !== -1) {
-            let d = new Date()
-            d.setFullYear(year)
-            d.setMonth(11, 31)
-            start = d.toISOString().slice(0, 10)
-        } else {
-            let releaseDate = (new Date(date + " GMT"))
-
-            isTBA = releaseDate.toString() === "Invalid Date"
-            if (!isTBA) {
-                start = releaseDate.toISOString().slice(0, 10)
-            }
-        }
-    }
-
-    return {
-        meta: data.meta,
-        type: "Game",
-        title: data.name,
-        start: start,
-        app_data: {
-            platform: "Steam",
-            appid: data.steam_appid,
-            title: data.name,
-            description: data.short_description,
-            header_image: data.header_image?.split("?")[0],
-            // tags: data.genres.map(x => x.description),
-            release_date: data.release_date,
-            language: {
-                zh: {
-                    gui: data.supported_languages.includes("简体中文") || data.supported_languages.includes("Chinese"),
-                    audio: data.supported_languages.includes("简体中文<strong>*</strong>") || data.supported_languages.includes("Chinese<strong>*</strong>"),
-                    subtitle: data.supported_languages.includes("简体中文") || data.supported_languages.includes("Chinese"),
-                }
-            },
-            owned: false,
-            developers: data.developers,
-            publishers: data.publishers,
-            categories: data.categories,
-            genres: data.genres,
-            tags: data.tags,
-            recentReview: data.recentReview,
-            totalReview: data.totalReview,
-        }
-    }
-}
-
-const steamAppIdMap = {}
-
-function getSteamAppid(originalTarget) {
-    let target = originalTarget
-    let appid = parseFloat(target)
-    if (typeof appid == "number" && !isNaN(appid)) {
-        return appid;
-    }
-    if (typeof target != "string") return null;
-
-    target = target.trim().split(" ")[0]
-    target = target.replace("http://", "")
-    target = target.replace("https://", "")
-    target = target.replace("store.steampowered.com/", "")
-    target = target.replace("steamcommunity.com/", "")
-    if (target.startsWith("app/")) {
-        target = target.replace("app/", "")
-        let elements = target.split("/")
-        if (elements.length >= 1) {
-            steamAppIdMap[elements[0]] = originalTarget
-            //console.log(`take ${elements[0]} as appid from ${originalTarget}`)
-            let appid = parseFloat(elements[0])
-            if (appid && !isNaN(appid)) {
-                return appid
-            }
-        }
-    }
-
-    // console.log(`${target} is not a valid steam appid or URL`)
-    return null
-}
 
 function getTrackedEvents(filename) {
     let data = "{}"
@@ -289,26 +87,6 @@ function testQNDate(str) {
             return 31
     }
     return -1
-}
-
-function yearStrToNumber(str) {
-    let n = parseFloat(str)
-    if (isNaN(str) || isNaN(n)) {
-        return -1
-    }
-    return n
-}
-
-function cnDateStrToDateStr(str) {
-    if (!str.replaceAll) {
-        console.log(str)
-        console.log(typeof(str))
-        return str
-    }
-
-    str = str.replaceAll(" ", "").replaceAll("日", "")
-    str = str.replaceAll("年", "-").replaceAll("月", "-")
-    return str + "Z"
 }
 
 function QYearToDate(date) {
@@ -588,8 +366,6 @@ function getNeedRefreshTargets(newTargets, tracked) {
 }
 
 async function updateSteamTargets(trackedEvents, newTargets, deletedEvents) {
-    newTargets = newTargets.map(getSteamAppid).filter(x => x && !isNaN(x))
-
     let needRefreshTargets = getNeedRefreshTargets(newTargets, trackedEvents.data)
 
     console.log(`need to refresh targets: ${needRefreshTargets.map(x => `${x}(${trackedEvents.data[x]?.title || "untracked yet"})`)}`)
@@ -648,182 +424,6 @@ async function updateSteamTargets(trackedEvents, newTargets, deletedEvents) {
 
 const MetacriticURL = "https://www.metacritic.com/game/"
 
-function toNumberOrUndefined(str) {
-    let num = parseFloat(str)
-    if (isNaN(num)) {
-        return undefined
-    }
-    return num
-}
-
-async function getMetacriticInfo(game, platformOverride) {
-    // === Scores ===
-    // Main page no longer provides full game description and cover image
-    let url = `https://www.metacritic.com/game/${game}`
-    console.log(`Fetching Metacritic for ${game} from ${url}`)
-    let body = await makeRequest(url) // details 页面有 table，不好解析
-    if (!body) {
-        console.log(`Failed to fetch metacritic page for ${game} from ${url}`)
-        return null
-    }
-
-    let $ = cheerio.load(body)
-
-    let metaScore = $(".c-productScoreInfo_scoreContent:nth(0) .c-siteReviewScore").text().trim()
-    let metaReviewsCount = $(".c-productScoreInfo_scoreContent:nth(0) .c-productScoreInfo_reviewsTotal")?.text().trim()
-    if (metaReviewsCount) {
-        metaReviewsCount = metaReviewsCount.toLowerCase()
-            .replace("based on", "")
-            .replace("critic reviews", "").trim().replace(",", "")
-    }
-    let userScore = $(".c-productScoreInfo_scoreContent:nth(1) .c-siteReviewScore").text().trim()
-    let userReviewsCount = $(".c-productScoreInfo_scoreContent:nth(1) .c-productScoreInfo_reviewsTotal")?.text().trim()
-    if (userReviewsCount) {
-        userReviewsCount = userReviewsCount.toLowerCase()
-            .replace("based on", "")
-            .replace("user ratings", "").trim().replace(",", "")
-    }
-
-    // === Details ===
-    // Main page no longer provides full game description and cover image
-    let detailsUrl = `https://www.metacritic.com/game/${game}/details/`
-    console.log(`Fetching Metacritic Details for ${game} from ${detailsUrl}`)
-    let detailsBody = await makeRequest(detailsUrl) // details 页面有 table，不好解析
-    if (!detailsBody) {
-        console.log(`Failed to fetch metacritic page for ${game} from ${detailsUrl}`)
-        return null
-    }
-
-    $ = cheerio.load(detailsBody)
-
-    // title
-    let title = $(".c-productSubpageHeader_back").text().trim()
-
-    // date
-    let startStr = $(".c-gameDetails_ReleaseDate span.g-outer-spacing-left-medium-fluid").text().trim()
-    let releaseDate = (new Date(startStr + " GMT"))
-
-    let start = ""
-    let isTBA = releaseDate.toString() === "Invalid Date"
-    if (!isTBA) {
-        start = releaseDate.toISOString().slice(0, 10)
-    }
-
-    // cover
-    let img = $(".c-productSubpageHeader_image img")
-    let imageURL = img.attr("src")
-    let imageAlt = img.attr("alt")
-
-    // summary
-    const prefix = "Description:"
-    let summary = $(".c-pageProductDetails_description").text().trim()
-    if (summary.startsWith(prefix)) {
-        summary = summary.slice(prefix.length).trim()
-    }
-
-    // platforms
-    let platforms = Array.from($(".c-gameDetails_Platforms li")).map(x => {
-        let $x = $(x)
-        return {
-            name: $x.text().trim(),
-            url: "",
-        }
-    })
-
-    const elementToUrl = function(element) {
-        let url = ""
-        if (element.attr("href")) {
-            url = element.attr("href")
-        } else {
-            let a = element.find("a")
-            if (a && a.attr("href")) {
-                url = a.attr("href")
-            }
-        }
-        return url
-    }
-
-    // publishers
-    let publishers = []
-
-    let pubElem = $(".c-gameDetails_Distributor .g-outer-spacing-left-medium-fluid")
-    let pubName = pubElem.text().trim()
-    if (pubName === "") {
-        publishers = Array.from($(".c-gameDetails_Distributor li")).map(x => {
-            let $x = $(x)
-            return {
-                name: $x.text().trim(),
-                url: elementToUrl($x),
-            }
-        })
-    } else {
-        publishers.push({
-            name: pubName,
-            url: elementToUrl(pubElem),
-        })
-    }
-
-    // devs
-    let developers = []
-
-    let devElem = $(".c-gameDetails_Developer .g-outer-spacing-left-medium-fluid")
-    let devName = devElem.text().trim()
-    if (devName === "") {
-        developers = Array.from($(".c-gameDetails_Developer li")).map(x => {
-            let $x = $(x)
-            return {
-                name: $x.text().trim(),
-                url: elementToUrl($x),
-            }
-        })
-    } else {
-        developers.push({
-            name: devName,
-            url: elementToUrl(devElem),
-        })
-    }
-
-    // genres
-    let genres = Array.from($(".c-genreList a")).map(x => {
-        let $x = $(x)
-        return {
-            name: $x.text().trim(),
-            url: $x.attr("href"),
-        }
-    })
-
-    let platform = platformOverride
-    if (!platform) {
-        platform = platforms.length > 0 ? platforms[0].name : "unknown"
-    }
-
-    return {
-        type: "Game",
-        title: title, // done
-        start: start, // done
-        app_data: {
-            imageURL: imageURL, // done
-            imageAlt: imageAlt, // done
-
-            platform: platform,
-            name: game,
-            title: title, // done
-            platformString: platforms, // done
-            releaseDate: startStr, // done
-
-            summary: summary, // done
-            publisher: publishers, // done
-            developer: developers, // done
-            genres: genres, // done
-
-            metaScore: toNumberOrUndefined(metaScore),
-            metaReviewsCount: toNumberOrUndefined(metaReviewsCount),
-            userScore: toNumberOrUndefined(userScore),
-            userReviewsCount: toNumberOrUndefined(userReviewsCount),
-        },
-    }
-}
-
 async function updateMetacriticTargets(trackedEvents, newTargets) {
     console.log(`Updating metacritic urls`)
 
@@ -833,7 +433,6 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
         trackedEvents.metacritic = {}
     }
 
-    newTargets = newTargets.map(x => x.toLowerCase()).filter(x => x && x.startsWith(MetacriticURL))
     console.log(`Metacritic urls: ${newTargets.join("\n")}`)
     let mcGames = {}
     newTargets.forEach(target => {
@@ -888,12 +487,12 @@ async function updateMetacriticTargets(trackedEvents, newTargets) {
     return changed
 }
 
-async function main(newTargets, outputEvents, outputDeleted) {
+async function main(database, outputEvents, outputDeleted) {
     let trackedEvents = getTrackedEvents(outputEvents);
     let deletedEvents = getTrackedEvents(outputDeleted);
 
-    let changed = await updateSteamTargets(trackedEvents, newTargets, deletedEvents)
-    changed = await updateMetacriticTargets(trackedEvents, newTargets) || changed
+    let changed = await updateSteamTargets(trackedEvents, database.steam, deletedEvents)
+    changed = await updateMetacriticTargets(trackedEvents, database.metacritic) || changed
 
     changed = sanitizeEvents(trackedEvents) || changed
 
@@ -905,18 +504,9 @@ async function main(newTargets, outputEvents, outputDeleted) {
     // cleanupBackups()
 }
 
-function getTargets(file) {
-    let list = fs.readFileSync(file, "utf-8").split("\n")
-        .map(x => x.trim())
-        .filter(x => x.length > 0 && !x.startsWith("//"))
-    //console.log(`Read target list: ${list.join("\n")}`)
-
-    return list
-}
-
 (async () => {
     let file = process.argv[2]
     let outputEvents = process.argv[3]
     let outputDeleted = process.argv[4]
-    await main(getTargets(file), outputEvents, outputDeleted)
+    await main(parseFile(file), outputEvents, outputDeleted)
 })();
