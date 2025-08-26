@@ -56,7 +56,7 @@ jobs:
         if: ${{ github.event_name != 'schedule' }}
         run: |
           if ! git diff --exit-code --cached; then
-            git commit -am "Wishlist: ${{ github.event.head_commit.message }} at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
+            git commit -m "Wishlist: ${{ github.event.head_commit.message }} at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
             git push origin release
           fi
 
@@ -64,6 +64,6 @@ jobs:
         if: ${{ github.event_name == 'schedule' }}
         run: |
           if ! git diff --exit-code --cached; then
-            git commit -am "Update wishlist at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
+            git commit -m "Update wishlist at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
             git push origin release
           fi
