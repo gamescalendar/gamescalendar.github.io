@@ -6,6 +6,7 @@ module.exports =  {
 
   proxy: "",
 
+  meta: "meta.json",
   databases: [
     {
       source: "list.txt",
