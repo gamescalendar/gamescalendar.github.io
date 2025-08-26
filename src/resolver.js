@@ -4,6 +4,7 @@ const SteamAPI = steamapi.default || steamapi;
 const config = require('../config.js');
 const { HttpsProxyAgent } = require('https-proxy-agent');
 const { makeRequest } = require('./utils');
+const { getAppDataFromAPI, getCalendarData } = require('./steam');
 
 class Resolver {
     constructor(options = {}) {
@@ -14,6 +15,10 @@ class Resolver {
         this.steamId = null; // 缓存 SteamID
         this.meta = null; // 元数据对象
         this.forceUpdate = options.forceUpdate || false; // 强制更新选项
+
+        this.db = {}
+        this.dbTrackingAppids = {}
+        this.steamData = {}
         
         // 配置代理
         this.proxy = this.getProxyConfig();
@@ -60,7 +65,6 @@ class Resolver {
                     lastWishlistUpdate: null,
                     lastOwnedUpdate: null,
                     steamId: null,
-                    created: new Date().toISOString()
                 };
                 await this.saveMeta();
                 console.log(`New meta file created: ${config.meta}`);
@@ -72,7 +76,6 @@ class Resolver {
                 lastWishlistUpdate: null,
                 lastOwnedUpdate: null,
                 steamId: null,
-                created: new Date().toISOString()
             };
         }
     }
@@ -368,6 +371,7 @@ class Resolver {
                     .filter(id => !isNaN(id));
                 
                 this.wishlist.push(...lines);
+                this.dbTrackingAppids[db.source] = lines
                 console.log(`${db.source}: read ${lines.length} items`)
             }
         }
@@ -459,6 +463,7 @@ class Resolver {
                 lines.forEach(id => {
                     this.owned.set(id.toString(), true);
                 });
+                this.dbTrackingAppids[db.source] = lines
                 console.log(`${db.source}: read ${lines.length} items`)
             }
         }
@@ -520,6 +525,13 @@ class Resolver {
         ]);
         
         console.log(`Resolver initialized: ${this.wishlist.length} wishlist items, ${this.owned.size} owned games`);
+        
+        // 载入数据库
+        await this.loadCalendarData();
+        // 更新日历数据
+        if (this.wishlist.length > 0) {
+            await this.updateCalendarData();
+        }
     }
 
     /**
@@ -528,6 +540,271 @@ class Resolver {
     isOwned(gameId) {
         return this.owned.has(gameId.toString());
     }
+
+    async loadCalendarData() {
+        // 加载所有数据库的输出文件
+        for (const db of config.databases) {
+            if (db.output && fs.existsSync(db.output)) {
+                try {
+                    const content = fs.readFileSync(db.output, 'utf-8');
+                    const data = JSON.parse(content);
+                    
+                    this.db[db.output] = data
+                    // 如果还没有数据，或者这个版本更新，则使用这个版本
+                    if (data.steam && typeof data.steam === 'object') {
+                        Object.keys(data.steam).forEach(appid => {
+                            const appData = data.steam[appid];
+                            
+                            if (!this.steamData[appid] || this.isNewerVersion(appData, this.steamData[appid])) {
+                                this.steamData[appid] = appData;
+                            }
+                        });
+                    }
+                    
+                    console.log(`Loaded existing data from ${db.output}`);
+                } catch (error) {
+                    console.error(`Failed to load data from ${db.output}:`, error.message);
+                }
+            }
+        }
+
+        console.log(`Loaded ${Object.keys(this.steamData).length} unique steam apps from all databases`);
+    }
+
+    /**
+     * 为wishlist中的appid获取详细数据并构建日历数据
+     */
+    async updateCalendarData() {
+        console.log(`Updating calendar data from wishlist`);
+        
+        if (this.wishlist.length === 0) {
+            console.log('Wishlist is empty, skipping calendar data build');
+            return;
+        }
+
+        // 获取需要处理的appid列表
+        const appidsToProcess = this.getAppidsToProcess();
+        
+        if (appidsToProcess.length === 0) {
+            console.log('No appids need to be processed');
+            return;
+        }
+
+        // 输出详细的处理计划
+        console.log(`\n=== 处理计划 ===`);
+        console.log(`总计需要处理 ${appidsToProcess.length} 个appid`);
+        
+        // 按类型分组显示
+        const initializationAppids = appidsToProcess.filter(item => item.type === 'initialization');
+        const updateAppids = appidsToProcess.filter(item => item.type === 'update');
+        
+        if (initializationAppids.length > 0) {
+            console.log(`\n初始化类型 (${initializationAppids.length} 个):`);
+            initializationAppids.forEach(item => {
+                console.log(`  - AppID: ${item.appid} (新游戏)`);
+            });
+        }
+        
+        if (updateAppids.length > 0) {
+            console.log(`\n更新类型 (${updateAppids.length} 个):`);
+            updateAppids.forEach(item => {
+                console.log(`  - AppID: ${item.appid} - "${item.title}" (已有数据，需要更新)`);
+            });
+        }
+        
+        console.log(`\n=== 开始处理 ===`);
+
+        // 并行处理所有appid
+        const processPromises = appidsToProcess.map(async (item) => {
+            const { appid, type: updateType, title: existingTitle } = item;
+            
+            // try {
+                if (updateType === 'initialization') {
+                    console.log(`[初始化] 获取新游戏数据: AppID ${appid}`);
+                } else if (updateType === 'update') {
+                    console.log(`[更新] 更新游戏数据: AppID ${appid} - "${existingTitle}"`);
+                }
+                
+                const appData = await getAppDataFromAPI(appid, this.steam);
+                
+                if (appData) {
+                    const calendarData = getCalendarData(appData);
+                    
+                    // 更新owned状态
+                    if (this.owned.has(appid.toString())) {
+                        calendarData.app_data.owned = true;
+                    }
+
+                    // 更新last_track_date为当前日期
+                    if (calendarData.meta) {
+                        calendarData.meta.last_track_date = this.getCurrentDateString();
+                    }
+
+                    // 添加到steamData
+                    this.steamData[appid] = calendarData;
+                    
+                    if (updateType === 'initialization') {
+                        console.log(`[初始化] 成功: AppID ${appid} - "${appData.name}"`);
+                    } else if (updateType === 'update') {
+                        console.log(`[更新] 成功: AppID ${appid} - "${existingTitle}" -> "${appData.name}"`);
+                    }
+                    
+                    return { success: true, appid, data: calendarData, type: updateType };
+                } else {
+                    console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - 无数据返回`);
+                    return { success: false, appid, error: 'No data returned', type: updateType };
+                }
+            // } catch (error) {
+            //     console.error(`[${updateType === 'initialization' ? '初始化' : '更新'}] 错误: AppID ${appid} - ${error.message}`);
+            //     return { success: false, appid, error: error.message, type: updateType };
+            // }
+        });
+
+        // 等待所有处理完成
+        const results = await Promise.all(processPromises);
+        
+        // 统计成功和失败的数量，按类型分组
+        const successful = results.filter(r => r.success);
+        const failed = results.filter(r => !r.success);
+        
+        const successfulInit = successful.filter(r => r.type === 'initialization');
+        const successfulUpdate = successful.filter(r => r.type === 'update');
+        const failedInit = failed.filter(r => r.type === 'initialization');
+        const failedUpdate = failed.filter(r => r.type === 'update');
+        
+        console.log(`\n=== 处理结果统计 ===`);
+        console.log(`初始化类型: ${successfulInit.length} 成功, ${failedInit.length} 失败`);
+        console.log(`更新类型: ${successfulUpdate.length} 成功, ${failedUpdate.length} 失败`);
+        console.log(`总计: ${successful.length} 成功, ${failed.length} 失败`);
+
+        // 保存更新后的数据到所有配置的输出文件
+        await this.saveCalendarDataToOutputs();
+
+        console.log(`\n=== 处理完成 ===`);
+        console.log(`日历数据构建完成，总计 ${Object.keys(this.steamData || {}).length} 个游戏`);
+        return;
+    }
+
+    /**
+     * 判断appData是否比existingData更新
+     * @param {Object} appData 新的应用数据
+     * @param {Object} existingData 现有的应用数据
+     */
+    isNewerVersion(appData, existingData) {
+        // 如果没有last_track_date，认为新数据更旧或没有同步过，使用旧版数据
+        if (!appData.meta || !appData.meta.last_track_date) {
+            return false;
+        }
+        
+        // 如果现有数据没有last_track_date，认为新数据更新，使用新数据
+        if (!existingData.meta || !existingData.meta.last_track_date) {
+            return true;
+        }
+        
+        // 比较last_track_date，日期越新版本越新
+        const newDate = new Date(appData.meta.last_track_date);
+        const existingDate = new Date(existingData.meta.last_track_date);
+        
+        return newDate > existingDate;
+    }
+
+    /**
+     * 获取需要处理的appid列表
+     */
+    getAppidsToProcess() {
+        let newCount = config.ratelimit.init
+        let updateCount = config.ratelimit.update
+        
+        console.log(`\n=== 速率限制配置 ===`);
+        console.log(`初始化限制: ${newCount} 个新游戏`);
+        console.log(`更新限制: ${updateCount} 个已有游戏`);
+        
+        const existingAppids = new Set(Object.keys(this.steamData || {}));
+        const wishlistAppids = this.wishlist.map(id => id.toString());
+        
+        console.log(`\n=== 数据统计 ===`);
+        console.log(`愿望单总数: ${wishlistAppids.length} 个游戏`);
+        console.log(`本地已有数据: ${existingAppids.size} 个游戏`);
+        console.log(`需要初始化的新游戏: ${wishlistAppids.filter(appid => !existingAppids.has(appid)).length} 个`);
+        console.log(`可以更新的已有游戏: ${wishlistAppids.filter(appid => existingAppids.has(appid)).length} 个`);
+        
+        // 初始化：处理本地存档里没有的appid，限制数量
+        let newAppids = wishlistAppids.filter(appid => !existingAppids.has(appid)).slice(0, newCount);
+        
+        // 更新：根据meta.last_track_date排序，取最老的appid，限制数量
+        let existingAppidsToUpdate = wishlistAppids.filter(appid => existingAppids.has(appid));
+        
+        // 按last_track_date排序，最老的在前
+        const sortedAppids = existingAppidsToUpdate.sort((a, b) => {
+            const aData = this.steamData[a];
+            const bData = this.steamData[b];
+            
+            if (!aData || !aData.meta || !aData.meta.last_track_date) return 1;
+            if (!bData || !bData.meta || !bData.meta.last_track_date) return -1;
+            
+            return new Date(aData.meta.last_track_date) - new Date(bData.meta.last_track_date);
+        }).slice(0, updateCount);
+        
+        // 构建带类型信息的结果数组
+        const resultWithType = [];
+        
+        // 记录初始化类型的appid
+        newAppids.forEach(appid => {
+            resultWithType.push({ appid, type: 'initialization', title: null });
+        });
+
+        // 记录更新类型的appid，并提取现有数据中的标题
+        sortedAppids.forEach(appid => {
+            const existingData = this.steamData[appid];
+            const title = existingData && existingData.title ? existingData.title : 'Unknown';
+            resultWithType.push({ appid, type: 'update', title });
+        });
+        
+        console.log(`\n=== 本次处理计划 ===`);
+        console.log(`将处理初始化类型: ${newAppids.length} 个 (限制: ${newCount})`);
+        console.log(`将处理更新类型: ${sortedAppids.length} 个 (限制: ${updateCount})`);
+        console.log(`总计将处理: ${resultWithType.length} 个游戏`);
+        
+        return resultWithType
+    }
+
+
+
+    /**
+     * 保存日历数据到所有配置的输出文件
+     */
+    async saveCalendarDataToOutputs() {
+        for (const db of config.databases) {
+            if (db.output) {
+                let data = this.db[db.output]
+                let tracking = this.dbTrackingAppids[db.source]
+                if (!tracking) {
+                    continue;
+                }
+                if (!data) {
+                    data = {
+                        index: 0,
+                        steam: {},
+                        metacritic: {},
+                    } 
+                }
+                try {
+                    tracking.forEach(appid => {
+                        if (this.steamData[appid]) {
+                            data.steam[appid] = this.steamData[appid]
+                        }
+                    })
+                    const content = JSON.stringify(data, null, 2);
+                    fs.writeFileSync(db.output, content, 'utf-8');
+                    console.log(`Calendar data saved to ${db.output} (${Object.keys(data.steam || {}).length} steam apps)`);
+                } catch (error) {
+                    console.error(`Failed to save data to ${db.output}:`, error.message);
+                }
+            }
+        }
+    }
+
+
 }
 
 module.exports = Resolver;
