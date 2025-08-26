@@ -163,7 +163,7 @@ function getCalendarData(data) {
     let date = data.release_date.date ?? data.release_date
     let isTBA = data.release_date.coming_soon && !data.release_date.date
 
-    let start = date
+    let start = cnDateStrToDateStr(date)
     if (!isTBA) {
         let year = yearStrToNumber(date) // 2024
         if (year !== -1) {
@@ -351,6 +351,10 @@ function yearStrToNumber(str) {
     return n
 }
 
+function cnDateStrToDateStr(str) {
+    return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
+}
+
 function QYearToDate(date) {
     let arr = date.trim().split(" ").map(x => x.trim()).filter(x => x != "")
 
@@ -397,6 +401,7 @@ function sanitizeEvents(events) {
     console.log("sanitizing...")
     Object.keys(events.data).forEach(key => {
         let event = events.data[key]
+        event.start = cnDateStrToDateStr(event.start)
         let old_start = new Date(event.start)
         if (old_start.toString() === "Invalid Date") {
             let qYear = QYearToDate(event.start)
