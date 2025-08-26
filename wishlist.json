@@ -79136,22 +79136,22 @@
     },
     "1771300": {
       "meta": {
-        "index": 569,
         "platform": "Steam",
-        "identifier": 1771300,
-        "last_track_date": "2025-08-20"
+        "identifier": "1771300",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
-      "title": "Kingdom Come: Deliverance II",
-      "start": "2025-02-04",
+      "title": "天国：拯救2",
+      "start": "2025-2-4Z",
       "app_data": {
         "platform": "Steam",
         "appid": 1771300,
-        "title": "Kingdom Come: Deliverance II",
-        "description": "A thrilling story-driven action RPG, with a rich open world, set in 15th century Medieval Europe. Experience the ultimate medieval adventure - through the eyes of young Henry - as you embark on a journey of epic proportions.",
+        "title": "天国：拯救2",
+        "description": "走进 15 世纪的欧洲，体验丰富多彩的开放世界，畅玩这款精彩的叙事驱动型角色扮演游戏，开启究极中世纪冒险，扮演年轻的亨利，踏上一场史诗级的旅程。",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1771300/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "Feb 4, 2025"
+          "date": "2025 年 2 月 4 日"
         },
         "language": {
           "zh": {
@@ -79170,57 +79170,57 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 29,
-            "description": "Steam Trading Cards"
+            "description": "Steam 集换式卡牌"
           },
           {
             "id": 68,
-            "description": "Custom Volume Controls"
+            "description": "自定义音量控制"
           },
           {
             "id": 74,
-            "description": "Playable without Timed Input"
+            "description": "无需应对快速反应事件"
           },
           {
             "id": 69,
-            "description": "Stereo Sound"
+            "description": "立体声"
           },
           {
             "id": 70,
-            "description": "Surround Sound"
+            "description": "环绕声"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "1",
-            "description": "Action"
+            "description": "动作"
           },
           {
             "id": "25",
-            "description": "Adventure"
+            "description": "冒险"
           },
           {
             "id": "3",
-            "description": "RPG"
+            "description": "角色扮演"
           }
         ],
         "tags": [
@@ -79308,14 +79308,14 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(2,746)",
-          "tooltip": "过去 30 天内的 2,746 篇用户评测中有 90% 为好评。"
+          "count": "(2,732)",
+          "tooltip": "过去 30 天内的 2,732 篇用户评测中有 90% 为好评。"
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(15,107)",
-          "tooltip": "您语言的 15,107 篇用户评测中有 91% 为好评。"
+          "count": "(15,202)",
+          "tooltip": "您语言的 15,202 篇用户评测中有 91% 为好评。"
         }
       }
     },
@@ -79863,22 +79863,22 @@
     },
     "1817800": {
       "meta": {
-        "index": 427,
         "platform": "Steam",
-        "identifier": 1817800,
-        "last_track_date": "2025-08-20"
+        "identifier": "1817800",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
-      "title": "Oddsparks: An Automation Adventure",
-      "start": "2025-05-27",
+      "title": "火花奇遇记：自动化冒险",
+      "start": "2025-5-27Z",
       "app_data": {
         "platform": "Steam",
         "appid": 1817800,
-        "title": "Oddsparks: An Automation Adventure",
-        "description": "Oddsparks is a blend of automation and real-time strategy for both the die-hard fans of the automation genre and the automation-curious. Explore a strange fantasy world, uncover the mysteries of the past, automate your workshops, and go on adventures with your odd &amp; adorable Sparks!",
+        "title": "火花奇遇记：自动化冒险",
+        "description": "《火花奇遇记：自动化冒险》融合了自动化游戏和即时战略游戏的元素，适合自动化游戏的新老玩家。探索古怪的奇幻世界，揭晓古老的秘密，经营自动化工坊，踏上精彩大冒险，与怪怪但萌萌哒火花结伴同行！",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1817800/9ba1eb6ce6608d6b778004c723d9c764532e06b1/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "May 27, 2025"
+          "date": "2025 年 5 月 27 日"
         },
         "language": {
           "zh": {
@@ -79897,93 +79897,93 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 1,
-            "description": "Multi-player"
+            "description": "多人"
           },
           {
             "id": 9,
-            "description": "Co-op"
+            "description": "合作"
           },
           {
             "id": 38,
-            "description": "Online Co-op"
+            "description": "在线合作"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 29,
-            "description": "Steam Trading Cards"
+            "description": "Steam 集换式卡牌"
           },
           {
             "id": 30,
-            "description": "Steam Workshop"
+            "description": "Steam 创意工坊"
           },
           {
             "id": 64,
-            "description": "Adjustable Text Size"
+            "description": "可调整文字大小"
           },
           {
             "id": 67,
-            "description": "Camera Comfort"
+            "description": "视角舒适度"
           },
           {
             "id": 66,
-            "description": "Color Alternatives"
+            "description": "可选颜色"
           },
           {
             "id": 68,
-            "description": "Custom Volume Controls"
+            "description": "自定义音量控制"
           },
           {
             "id": 78,
-            "description": "Adjustable Difficulty"
+            "description": "可调整难度"
           },
           {
             "id": 74,
-            "description": "Playable without Timed Input"
+            "description": "无需应对快速反应事件"
           },
           {
             "id": 79,
-            "description": "Save Anytime"
+            "description": "随时保存"
           },
           {
             "id": 69,
-            "description": "Stereo Sound"
+            "description": "立体声"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "25",
-            "description": "Adventure"
+            "description": "冒险"
           },
           {
             "id": "23",
-            "description": "Indie"
+            "description": "独立"
           },
           {
             "id": "28",
-            "description": "Simulation"
+            "description": "模拟"
           },
           {
             "id": "2",
-            "description": "Strategy"
+            "description": "策略"
           }
         ],
         "tags": [
@@ -80071,14 +80071,14 @@
         "recentReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(69)",
-          "tooltip": "过去 30 天内的 69 篇用户评测中有 72% 为好评。"
+          "count": "(64)",
+          "tooltip": "过去 30 天内的 64 篇用户评测中有 78% 为好评。"
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(1,582)",
-          "tooltip": "此游戏的 1,582 篇用户评测中有 84% 为好评。"
+          "count": "(1,589)",
+          "tooltip": "此游戏的 1,589 篇用户评测中有 84% 为好评。"
         }
       }
     },
@@ -80269,22 +80269,22 @@
     },
     "1823390": {
       "meta": {
-        "index": 550,
         "platform": "Steam",
-        "identifier": 1823390,
-        "last_track_date": "2025-08-20"
+        "identifier": "1823390",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
       "title": "Escape The Mad Empire",
-      "start": "2025-04-22",
+      "start": "2025-4-22Z",
       "app_data": {
         "platform": "Steam",
         "appid": 1823390,
         "title": "Escape The Mad Empire",
-        "description": "Escape the Mad Empire is a party-based, rogue-like dungeon crawler with intense and deeply tactical combat. Overcome the challenges as a band of heroes, and preserve their lives and sanity by managing resources and growing your base. Can you Escape the Mad Empire?",
+        "description": "Escape the Mad Empire是一款围绕团队构造的肉鸽类地牢探索游戏，拥有紧张刺激、深具战略性的主动暂停系统。率领英雄小队攻克种种挑战，管理资源，发展基地，让他们得以幸存并保持理智。奋勇抵抗天灾，否则将陷入疯狂。",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1823390/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "Apr 22, 2025"
+          "date": "2025 年 4 月 22 日"
         },
         "language": {
           "zh": {
@@ -80303,37 +80303,37 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "23",
-            "description": "Indie"
+            "description": "独立"
           },
           {
             "id": "3",
-            "description": "RPG"
+            "description": "角色扮演"
           },
           {
             "id": "2",
-            "description": "Strategy"
+            "description": "策略"
           },
           {
             "id": "70",
-            "description": "Early Access"
+            "description": "抢先体验"
           }
         ],
         "tags": [
@@ -80419,16 +80419,16 @@
           }
         ],
         "recentReview": {
-          "summary": "特别好评",
+          "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(17)",
-          "tooltip": "过去 30 天内的 17 篇用户评测中有 88% 为好评。"
+          "count": "(16)",
+          "tooltip": "过去 30 天内的 16 篇用户评测中有 75% 为好评。"
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(257)",
-          "tooltip": "此游戏的 257 篇用户评测中有 87% 为好评。"
+          "count": "(262)",
+          "tooltip": "此游戏的 262 篇用户评测中有 87% 为好评。"
         }
       }
     },
@@ -83404,22 +83404,22 @@
     },
     "1934570": {
       "meta": {
-        "index": 397,
         "platform": "Steam",
-        "identifier": 1934570,
-        "last_track_date": "2025-08-20"
+        "identifier": "1934570",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
       "title": "South of Midnight",
-      "start": "2025-04-08",
+      "start": "2025-4-8Z",
       "app_data": {
         "platform": "Steam",
         "appid": 1934570,
         "title": "South of Midnight",
-        "description": "South of Midnight is a new action-adventure from Compulsion Games. Explore the mythos and confront mysterious creatures of the Deep South in this modern folktale while learning to weave an ancient power to surmount obstacles and unravel your family’s hidden past.",
+        "description": "《午夜以南》是由 Compulsion Games 倾力打造的一款全新动作冒险游戏。在这个现代版的民间传说中，你将深入探索美国南部的神秘文化，直面那些匪夷所思的生物。你还能学习掌握一种古老的编织之力，它将成为你克服重重难关、揭开家族秘密的钥匙。",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1934570/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "Apr 8, 2025"
+          "date": "2025 年 4 月 8 日"
         },
         "language": {
           "zh": {
@@ -83438,41 +83438,41 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 13,
-            "description": "Captions available"
+            "description": "支持字幕"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 61,
-            "description": "HDR available"
+            "description": "可用 HDR"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "1",
-            "description": "Action"
+            "description": "动作"
           },
           {
             "id": "25",
-            "description": "Adventure"
+            "description": "冒险"
           }
         ],
         "tags": [
@@ -83560,14 +83560,14 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(147)",
-          "tooltip": "过去 30 天内的 147 篇用户评测中有 93% 为好评。"
+          "count": "(156)",
+          "tooltip": "过去 30 天内的 156 篇用户评测中有 93% 为好评。"
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(2,971)",
-          "tooltip": "此游戏的 2,971 篇用户评测中有 94% 为好评。"
+          "count": "(3,004)",
+          "tooltip": "此游戏的 3,004 篇用户评测中有 94% 为好评。"
         }
       }
     },
@@ -83739,22 +83739,22 @@
     },
     "1940340": {
       "meta": {
-        "index": 370,
         "platform": "Steam",
-        "identifier": 1940340,
-        "last_track_date": "2025-08-20"
+        "identifier": "1940340",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
       "title": "Darkest Dungeon® II",
-      "start": "2023-05-08",
+      "start": "2023-5-8Z",
       "app_data": {
         "platform": "Steam",
         "appid": 1940340,
         "title": "Darkest Dungeon® II",
-        "description": "Darkest Dungeon II is a roguelike road trip of the damned. Form a party, equip your stagecoach, and set off across the decaying landscape on a last gasp quest to avert the apocalypse. The greatest dangers you face, however, may come from within...",
+        "description": "《暗黑地牢2》是一场有去无回的类Rogue公路旅行。组建一支队伍，武装你的驿站马车，然后策马横穿日益腐朽的大地，去追寻避免末世浩劫的最后一线希望。但是务必当心：最大的威胁，或许正潜藏在你们之中……",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1940340/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "May 8, 2023"
+          "date": "2023 年 5 月 8 日"
         },
         "language": {
           "zh": {
@@ -83773,45 +83773,45 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 29,
-            "description": "Steam Trading Cards"
+            "description": "Steam 集换式卡牌"
           },
           {
             "id": 30,
-            "description": "Steam Workshop"
+            "description": "Steam 创意工坊"
           },
           {
             "id": 18,
-            "description": "Partial Controller Support"
+            "description": "部分支持控制器"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "23",
-            "description": "Indie"
+            "description": "独立"
           },
           {
             "id": "3",
-            "description": "RPG"
+            "description": "角色扮演"
           },
           {
             "id": "2",
-            "description": "Strategy"
+            "description": "策略"
           }
         ],
         "tags": [
@@ -83897,16 +83897,16 @@
           }
         ],
         "recentReview": {
-          "summary": "褒贬不一",
-          "cssClass": "mixed",
-          "count": "(254)",
-          "tooltip": "过去 30 天内的 254 篇用户评测中有 69% 为好评。"
+          "summary": "多半好评",
+          "cssClass": "positive",
+          "count": "(220)",
+          "tooltip": "过去 30 天内的 220 篇用户评测中有 73% 为好评。"
         },
         "totalReview": {
           "summary": "褒贬不一",
           "cssClass": "mixed",
-          "count": "(4,262)",
-          "tooltip": "您语言的 4,262 篇用户评测中有 65% 为好评。"
+          "count": "(4,267)",
+          "tooltip": "您语言的 4,267 篇用户评测中有 65% 为好评。"
         }
       }
     },
@@ -84100,22 +84100,22 @@
     },
     "1956800": {
       "meta": {
-        "index": 698,
         "platform": "Steam",
-        "identifier": 1956800,
-        "last_track_date": "2025-08-20"
+        "identifier": "1956800",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
-      "title": "Thriving City: Song",
-      "start": "2024-05-29",
+      "title": "满庭芳：宋上繁华",
+      "start": "2024-5-29Z",
       "app_data": {
         "platform": "Steam",
         "appid": 1956800,
-        "title": "Thriving City: Song",
-        "description": "In 960 A.D., the Zhao Song Dynasty was established. As the mayor, you'll need to help the townspeople settle down, cultivate the land and expand. However, when the emperor issues a national mandate, conflicts between factions threaten city development—what strategy will you adopt?",
+        "title": "满庭芳：宋上繁华",
+        "description": "公元960年，赵宋王朝建立，社会百废待兴。作为新上任的知县大人，你将带领百姓开荒建城，振兴百业，打造盛世繁华！ 车水马龙，士农工商，看那酒楼茶坊遍布大街小巷，勾栏瓦舍唱尽人世悲欢。然而歌舞升平背后则是暗藏的危机。面对党阀相争、外敌入侵等重重困境，在时代的洪流中你将如何抉择？",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1956800/header_schinese.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "May 29, 2024"
+          "date": "2024 年 5 月 29 日"
         },
         "language": {
           "zh": {
@@ -84134,45 +84134,45 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 30,
-            "description": "Steam Workshop"
+            "description": "Steam 创意工坊"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "4",
-            "description": "Casual"
+            "description": "休闲"
           },
           {
             "id": "23",
-            "description": "Indie"
+            "description": "独立"
           },
           {
             "id": "28",
-            "description": "Simulation"
+            "description": "模拟"
           },
           {
             "id": "2",
-            "description": "Strategy"
+            "description": "策略"
           }
         ],
         "tags": [
@@ -84260,35 +84260,35 @@
         "recentReview": {
           "summary": "褒贬不一",
           "cssClass": "mixed",
-          "count": "(63)",
-          "tooltip": "过去 30 天内的 63 篇用户评测中有 69% 为好评。"
+          "count": "(59)",
+          "tooltip": "过去 30 天内的 59 篇用户评测中有 66% 为好评。"
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(2,556)",
-          "tooltip": "您语言的 2,556 篇用户评测中有 80% 为好评。"
+          "count": "(2,565)",
+          "tooltip": "您语言的 2,565 篇用户评测中有 80% 为好评。"
         }
       }
     },
     "1960110": {
       "meta": {
-        "index": 348,
         "platform": "Steam",
-        "identifier": 1960110,
-        "last_track_date": "2025-08-20"
+        "identifier": "1960110",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
-      "title": "Silent Hope",
-      "start": "2023-10-03",
+      "title": "FREDERICA（芙蕾德利卡）",
+      "start": "2023-10-3Z",
       "app_data": {
         "platform": "Steam",
         "appid": 1960110,
-        "title": "Silent Hope",
-        "description": "Explore, fight, and produce items to grow stronger as seven distinct heroes in this silent world. Guided by the Princess, you'll delve into the Abyss and learn the mysteries of the King and his now-ruined kingdom. In a world without words, what hope is there for humanity?",
+        "title": "FREDERICA（芙蕾德利卡）",
+        "description": "在言语被夺走的世界中，7位战士将出发寻找在深渊某处的国王。 打倒魔物获得道具后，再返回据点强化装备吧！每次挑战迷宫，7人都会愈来愈强。 究竟国王为何要剥夺人们的言语呢？而在深渊等待着玩家的会是希望，还是绝望呢？",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1960110/header_schinese.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "Oct 3, 2023"
+          "date": "2023 年 10 月 3 日"
         },
         "language": {
           "zh": {
@@ -84309,37 +84309,37 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 29,
-            "description": "Steam Trading Cards"
+            "description": "Steam 集换式卡牌"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "1",
-            "description": "Action"
+            "description": "动作"
           },
           {
             "id": "3",
-            "description": "RPG"
+            "description": "角色扮演"
           }
         ],
         "tags": [
@@ -84427,29 +84427,29 @@
         "totalReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(229)",
-          "tooltip": "此游戏的 229 篇用户评测中有 70% 为好评。"
+          "count": "(228)",
+          "tooltip": "此游戏的 228 篇用户评测中有 71% 为好评。"
         }
       }
     },
     "1967430": {
       "meta": {
-        "index": 8,
         "platform": "Steam",
-        "identifier": 1967430,
-        "last_track_date": "2025-08-20"
+        "identifier": "1967430",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
       "title": "Ghost Trick: Phantom Detective",
-      "start": "2023-06-29",
+      "start": "2023-6-29Z",
       "app_data": {
         "platform": "Steam",
         "appid": 1967430,
         "title": "Ghost Trick: Phantom Detective",
-        "description": "Ghost Trick: Phantom Detective, the classic puzzle-solving mystery adventure directed by Ace Attorney creator Shu Takumi, is back! This long-awaited HD remaster features upgraded visuals and sound and new gallery content.",
+        "description": "经典的解谜神秘冒险名作回来了！ 《逆转裁判》系列作者巧　舟所制作的《Ghost Trick: Phantom Detective》，将推出期待已久的高清重制版。 由负责《大逆转裁判》BGM的人气作曲家北川保昌对原版乐曲进行的同期编曲外，还有插画集和BGM集等新追加内容！",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1967430/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "Jun 29, 2023"
+          "date": "2023 年 6 月 29 日"
         },
         "language": {
           "zh": {
@@ -84468,37 +84468,37 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 29,
-            "description": "Steam Trading Cards"
+            "description": "Steam 集换式卡牌"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "1",
-            "description": "Action"
+            "description": "动作"
           },
           {
             "id": "25",
-            "description": "Adventure"
+            "description": "冒险"
           }
         ],
         "tags": [
@@ -84578,14 +84578,14 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(82)",
-          "tooltip": "过去 30 天内的 82 篇用户评测中有 97% 为好评。"
+          "count": "(97)",
+          "tooltip": "过去 30 天内的 97 篇用户评测中有 96% 为好评。"
         },
         "totalReview": {
           "summary": "好评如潮",
           "cssClass": "positive",
-          "count": "(2,405)",
-          "tooltip": "您语言的 2,405 篇用户评测中有 97% 为好评。"
+          "count": "(2,421)",
+          "tooltip": "您语言的 2,421 篇用户评测中有 97% 为好评。"
         }
       }
     },
@@ -84990,22 +84990,22 @@
     },
     "1984270": {
       "meta": {
-        "index": 606,
         "platform": "Steam",
-        "identifier": 1984270,
-        "last_track_date": "2025-08-20"
+        "identifier": "1984270",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
-      "title": "Digimon Story Time Stranger",
-      "start": "2025-10-02",
+      "title": "数码宝贝物语 时空异客",
+      "start": "2025-10-2Z",
       "app_data": {
         "platform": "Steam",
         "appid": 1984270,
-        "title": "Digimon Story Time Stranger",
-        "description": "The latest in the Digimon Story series is finally here! In this RPG, unravel a mystery that spans across the human world and the Digital World, collecting and raising a wide variety of Digimon to save the world.",
+        "title": "数码宝贝物语 时空异客",
+        "description": "《数码宝贝物语》系列最新作品终于登场。本作是一款角色扮演游戏，您可以在追查世界毁灭谜团的过程中，一面享受横跨人类世界与异世界的冒险，以及搜集培育种类丰富的数码宝贝。",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1984270/7b6269705cba30391c332241dafe4d215b2bf2cd/header_schinese.jpg",
         "release_date": {
           "coming_soon": true,
-          "date": "Oct 2, 2025"
+          "date": "2025 年 10 月 2 日"
         },
         "language": {
           "zh": {
@@ -85024,29 +85024,29 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "3",
-            "description": "RPG"
+            "description": "角色扮演"
           }
         ],
         "tags": [
@@ -85083,12 +85083,12 @@
             "name": "可爱"
           },
           {
-            "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
-            "name": "像素图形"
-          },
-          {
             "link": "https://store.steampowered.com/tags/zh-cn/%E6%97%B6%E7%A9%BA%E6%97%85%E8%A1%8C/",
             "name": "时空旅行"
+          },
+          {
+            "link": "https://store.steampowered.com/tags/zh-cn/%E5%83%8F%E7%B4%A0%E5%9B%BE%E5%BD%A2/",
+            "name": "像素图形"
           },
           {
             "link": "https://store.steampowered.com/tags/zh-cn/%E5%A5%87%E5%B9%BB/",
@@ -86468,22 +86468,22 @@
     },
     "2072450": {
       "meta": {
-        "index": 502,
         "platform": "Steam",
-        "identifier": 2072450,
-        "last_track_date": "2025-08-20"
+        "identifier": "2072450",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
-      "title": "Like a Dragon: Infinite Wealth",
-      "start": "2024-01-25",
+      "title": "人中之龙８",
+      "start": "2024-1-25Z",
       "app_data": {
         "platform": "Steam",
         "appid": 2072450,
-        "title": "Like a Dragon: Infinite Wealth",
-        "description": "Two larger-than-life heroes, Ichiban Kasuga and Kazuma Kiryu are brought together by the hand of fate, or perhaps something more sinister… Live it up in Japan and explore all that Hawaii has to offer in an RPG adventure so big it spans the Pacific.",
+        "title": "人中之龙８",
+        "description": "从“人生低谷”东山再起的男人——春日一番，以及面临“人生最后”之战的男人——桐生一马。 由两位主角演绎的超大作RPG，系列至高的感人故事 。 战斗进化为更具策略性的“动态指令RPG战斗”。 故事的舞台发生在异国他乡的“夏威夷”，为系列首度。 玩转各色夏威夷独特的娱乐场所吧！",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2072450/header_schinese.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "Jan 25, 2024"
+          "date": "2024 年 1 月 25 日"
         },
         "language": {
           "zh": {
@@ -86502,41 +86502,41 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 29,
-            "description": "Steam Trading Cards"
+            "description": "Steam 集换式卡牌"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "1",
-            "description": "Action"
+            "description": "动作"
           },
           {
             "id": "25",
-            "description": "Adventure"
+            "description": "冒险"
           },
           {
             "id": "3",
-            "description": "RPG"
+            "description": "角色扮演"
           }
         ],
         "tags": [
@@ -86624,35 +86624,35 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(203)",
-          "tooltip": "过去 30 天内的 203 篇用户评测中有 88% 为好评。"
+          "count": "(195)",
+          "tooltip": "过去 30 天内的 195 篇用户评测中有 87% 为好评。"
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(3,313)",
-          "tooltip": "您语言的 3,313 篇用户评测中有 87% 为好评。"
+          "count": "(3,320)",
+          "tooltip": "您语言的 3,320 篇用户评测中有 87% 为好评。"
         }
       }
     },
     "2072980": {
       "meta": {
-        "index": 586,
         "platform": "Steam",
-        "identifier": 2072980,
-        "last_track_date": "2025-08-20"
+        "identifier": "2072980",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
-      "title": "Final Knight",
-      "start": "2025-01-12",
+      "title": "地下城骑士团",
+      "start": "2025-1-12Z",
       "app_data": {
         "platform": "Steam",
         "appid": 2072980,
-        "title": "Final Knight",
-        "description": "Build a D&amp;D-style party and switch between tank, DPS, and healer roles in real time. Combine class, mastery, and gear to unleash massive damage and repel invading giant monsters.",
+        "title": "地下城骑士团",
+        "description": "《地下城骑士团》是一款以 D&amp;D 为基础的队伍战略型横向卷轴动作游戏。组合职业来组建队伍，并可随时切换角色进行战斗。用嘲讽固定敌人，用火球将其全部消灭。斩击巨龙的双腿使其倒地，再以后跳击碎致命弱点。",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2072980/header_schinese.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "Jan 12, 2025"
+          "date": "2025 年 1 月 12 日"
         },
         "language": {
           "zh": {
@@ -86671,57 +86671,57 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 1,
-            "description": "Multi-player"
+            "description": "多人"
           },
           {
             "id": 9,
-            "description": "Co-op"
+            "description": "合作"
           },
           {
             "id": 39,
-            "description": "Shared/Split Screen Co-op"
+            "description": "同屏/分屏合作"
           },
           {
             "id": 24,
-            "description": "Shared/Split Screen"
+            "description": "同屏/分屏"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 44,
-            "description": "Remote Play Together"
+            "description": "远程同乐"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "1",
-            "description": "Action"
+            "description": "动作"
           },
           {
             "id": "3",
-            "description": "RPG"
+            "description": "角色扮演"
           },
           {
             "id": "70",
-            "description": "Early Access"
+            "description": "抢先体验"
           }
         ],
         "tags": [
@@ -86809,8 +86809,8 @@
         "totalReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(150)",
-          "tooltip": "此游戏的 150 篇用户评测中有 79% 为好评。"
+          "count": "(151)",
+          "tooltip": "此游戏的 151 篇用户评测中有 79% 为好评。"
         }
       }
     },
@@ -87515,22 +87515,22 @@
     },
     "2097570": {
       "meta": {
-        "index": 641,
         "platform": "Steam",
-        "identifier": 2097570,
-        "last_track_date": "2025-08-20"
+        "identifier": "2097570",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
-      "title": "StarVaders",
-      "start": "2025-04-30",
+      "title": "星之侵略者",
+      "start": "2025-4-30Z",
       "app_data": {
         "platform": "Steam",
         "appid": 2097570,
-        "title": "StarVaders",
-        "description": "Pilot a powerful mech to fight off the alien invasion in this ULTIMATE fusion of deckbuilding and grid-based tactics. Discover game-breaking combos, rewind time to alter your fate, and protect the future of humanity in this endlessly replayable roguelike.",
+        "title": "星之侵略者",
+        "description": "本作的灵感来源于《杀戮尖塔》、《陷阵之志》等超棒肉鸽卡牌游戏。运用机甲、驾驶员、卡组、神器、地形、怪物属性等不同元素相结合，带来深度有趣的卡牌游戏体验。如果您喜欢《杀戮尖塔》、《陷阵之志》等卡牌游戏，相信您不会失望。",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2097570/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "30 Apr, 2025"
+          "date": "2025 年 4 月 30 日"
         },
         "language": {
           "zh": {
@@ -87550,69 +87550,69 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 67,
-            "description": "Camera Comfort"
+            "description": "视角舒适度"
           },
           {
             "id": 66,
-            "description": "Color Alternatives"
+            "description": "可选颜色"
           },
           {
             "id": 68,
-            "description": "Custom Volume Controls"
+            "description": "自定义音量控制"
           },
           {
             "id": 78,
-            "description": "Adjustable Difficulty"
+            "description": "可调整难度"
           },
           {
             "id": 75,
-            "description": "Keyboard Only Option"
+            "description": "可以仅用键盘"
           },
           {
             "id": 76,
-            "description": "Mouse Only Option"
+            "description": "可以仅用鼠标"
           },
           {
             "id": 74,
-            "description": "Playable without Timed Input"
+            "description": "无需应对快速反应事件"
           },
           {
             "id": 79,
-            "description": "Save Anytime"
+            "description": "随时保存"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "25",
-            "description": "Adventure"
+            "description": "冒险"
           },
           {
             "id": "23",
-            "description": "Indie"
+            "description": "独立"
           },
           {
             "id": "2",
-            "description": "Strategy"
+            "description": "策略"
           }
         ],
         "tags": [
@@ -87706,8 +87706,8 @@
         "totalReview": {
           "summary": "好评如潮",
           "cssClass": "positive",
-          "count": "(594)",
-          "tooltip": "您语言的 594 篇用户评测中有 95% 为好评。"
+          "count": "(601)",
+          "tooltip": "您语言的 601 篇用户评测中有 95% 为好评。"
         }
       }
     },
@@ -87854,22 +87854,22 @@
     },
     "2103140": {
       "meta": {
-        "index": 615,
         "platform": "Steam",
-        "identifier": 2103140,
-        "last_track_date": "2025-08-20"
+        "identifier": "2103140",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
-      "title": "Magicraft",
-      "start": "2024-11-01",
+      "title": "魔法工艺 Magicraft",
+      "start": "2024-11-1Z",
       "app_data": {
         "platform": "Steam",
         "appid": 2103140,
-        "title": "Magicraft",
-        "description": "&quot;Magicraft&quot; is a Roguelike game that uses a variety of spells to match unimaginable spell effects, and the construction of ultra-high degrees of freedom cannot even be exhausted by developers.",
+        "title": "魔法工艺 Magicraft",
+        "description": "《魔法工艺》是一款俯视角Roguelike法术构筑类游戏，利用各种各样的法术搭配出难以想象的法术效果，超高自由度的构建等着你。",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2103140/aea46491dd64ede9886db2290702f4ebd18f35c7/header_schinese.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "Nov 1, 2024"
+          "date": "2024 年 11 月 1 日"
         },
         "language": {
           "zh": {
@@ -87888,41 +87888,41 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "1",
-            "description": "Action"
+            "description": "动作"
           },
           {
             "id": "25",
-            "description": "Adventure"
+            "description": "冒险"
           },
           {
             "id": "23",
-            "description": "Indie"
+            "description": "独立"
           },
           {
             "id": "3",
-            "description": "RPG"
+            "description": "角色扮演"
           }
         ],
         "tags": [
@@ -87983,12 +87983,12 @@
             "name": "制作"
           },
           {
-            "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
-            "name": "冒险"
-          },
-          {
             "link": "https://store.steampowered.com/tags/zh-cn/%E5%8D%95%E4%BA%BA/",
             "name": "单人"
+          },
+          {
+            "link": "https://store.steampowered.com/tags/zh-cn/%E5%86%92%E9%99%A9/",
+            "name": "冒险"
           },
           {
             "link": "https://store.steampowered.com/tags/zh-cn/%E7%8B%AC%E7%AB%8B/",
@@ -88010,35 +88010,35 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(200)",
-          "tooltip": "过去 30 天内的 200 篇用户评测中有 93% 为好评。"
+          "count": "(202)",
+          "tooltip": "过去 30 天内的 202 篇用户评测中有 93% 为好评。"
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(6,968)",
-          "tooltip": "您语言的 6,968 篇用户评测中有 88% 为好评。"
+          "count": "(6,977)",
+          "tooltip": "您语言的 6,977 篇用户评测中有 88% 为好评。"
         }
       }
     },
     "2106560": {
       "meta": {
-        "index": 78,
         "platform": "Steam",
-        "identifier": 2106560,
-        "last_track_date": "2025-08-20"
+        "identifier": "2106560",
+        "last_track_date": "2025-08-26"
       },
       "type": "Game",
       "title": "Cross Tails",
-      "start": "2023-07-19",
+      "start": "2023-7-19Z",
       "app_data": {
         "platform": "Steam",
         "appid": 2106560,
         "title": "Cross Tails",
-        "description": "What will the tails witness after a crossing tale? A tactical RPG that portrays a fantasy story of a war between the canine and the feline tribes playable from both points of view.",
+        "description": "一款可从两个角度玩的战术RPG游戏",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2106560/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "Jul 19, 2023"
+          "date": "2023 年 7 月 19 日"
         },
         "language": {
           "zh": {
@@ -88057,41 +88057,41 @@
         "categories": [
           {
             "id": 2,
-            "description": "Single-player"
+            "description": "单人"
           },
           {
             "id": 22,
-            "description": "Steam Achievements"
+            "description": "Steam 成就"
           },
           {
             "id": 28,
-            "description": "Full controller support"
+            "description": "完全支持控制器"
           },
           {
             "id": 23,
-            "description": "Steam Cloud"
+            "description": "Steam 云"
           },
           {
             "id": 62,
-            "description": "Family Sharing"
+            "description": "家庭共享"
           }
         ],
         "genres": [
           {
             "id": "25",
-            "description": "Adventure"
+            "description": "冒险"
           },
           {
             "id": "3",
-            "description": "RPG"
+            "description": "角色扮演"
           },
           {
             "id": "28",
-            "description": "Simulation"
+            "description": "模拟"
           },
           {
             "id": "2",
-            "description": "Strategy"
+            "description": "策略"
           }
         ],
         "tags": [
@@ -88151,8 +88151,8 @@
         "totalReview": {
           "summary": "褒贬不一",
           "cssClass": "mixed",
-          "count": "(63)",
-          "tooltip": "此游戏的 63 篇用户评测中有 68% 为好评。"
+          "count": "(64)",
+          "tooltip": "此游戏的 64 篇用户评测中有 68% 为好评。"
         }
       }
     },
