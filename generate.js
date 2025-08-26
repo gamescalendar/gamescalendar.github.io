@@ -454,7 +454,8 @@ function getNeedRefreshTargets(newTargets, tracked) {
 
     let recentCount = 0
 
-    let RecentGameDates = 14
+    let RecentGameDatesRangeLeft = -14
+    let RecentGameDatesRangeRight = 30
     Object.keys(tracked).forEach(target => {
         let obj = tracked[target]
         if (!obj.meta) {
@@ -493,7 +494,8 @@ function getNeedRefreshTargets(newTargets, tracked) {
         let releaseDate = obj.start
         if (releaseDate) {
             let released = ((new Date(today)).getTime() - (new Date(releaseDate)).getTime())
-            recentGamePriority = Math.abs(released / (1000 * 3600 * 24)) < RecentGameDates && needRefresh
+            let days = Math.abs(released / (1000 * 3600 * 24))
+            recentGamePriority = RecentGameDatesRangeLeft <= days && days <= RecentGameDatesRangeRight
             if (released < 0 && ((released / (1000 * 3600 * 24)) < -365)) {
                 tbaPriority = true
             }
