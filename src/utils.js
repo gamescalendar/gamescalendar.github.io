@@ -1,11 +1,12 @@
-const fetch = require('node-fetch');
-const {HttpsProxyAgent} = require('https-proxy-agent');
-const config = require('../config.js');
+import fetch from 'node-fetch';
+import {HttpsProxyAgent} from 'https-proxy-agent';
+
+import config from '../config.js';
 
 const isCI = process.env.CI_ENV == "ci"
 const proxy = process.env.HTTP_PROXY || 'http://127.0.0.1:1080'
 
-async function makeRequest(url, opts = {}) {
+export async function makeRequest(url, opts = {}) {
     let response;
     let options = { ...opts };
 
@@ -24,7 +25,7 @@ async function makeRequest(url, opts = {}) {
     }
 }
 
-function yearStrToNumber(str) {
+export function yearStrToNumber(str) {
     let n = parseFloat(str)
     if (isNaN(str) || isNaN(n)) {
         return -1
@@ -32,7 +33,7 @@ function yearStrToNumber(str) {
     return n
 }
 
-function cnDateStrToDateStr(str) {
+export function cnDateStrToDateStr(str) {
     if (!str?.replaceAll) {
         return str
     }
@@ -49,7 +50,7 @@ function getTrackedName(tracked, target) {
     }
 }
 
-function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
+export function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
     const MAX_COUNT_PER_RUN = opts?.ratelimit?.update ?? 20
     const RecentGameDatesRangeLeft = opts?.recent?.past ?? -14
     const RecentGameDatesRangeRight = opts?.recent?.future ?? 30
@@ -167,11 +168,4 @@ function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
     })
 
     return limited.map(x => x.target)
-}
-
-module.exports = {
-    makeRequest,
-    yearStrToNumber,
-    cnDateStrToDateStr,
-    getNeedRefreshTargets,
 }

@@ -1,6 +1,6 @@
 # Games Calendar
 
-[![Daily Update](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/update.yaml/badge.svg)](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/update.yaml) [![Daily Update: Wishlist](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/update_wishlist.yaml/badge.svg)](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/update_wishlist.yaml)
+[![Daily Update](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/update.yaml/badge.svg)](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/update.yaml)
 
 [![Page Deployment](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/pages/pages-build-deployment)
 

@@ -1,4 +1,4 @@
-module.exports =  {
+export default  {
   languageOption: "schinese",
   languageString: [ "简体中文", "Chinese" ],
   countryCode: "us",

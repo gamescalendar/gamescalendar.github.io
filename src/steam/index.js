@@ -1,7 +1,6 @@
-const fs = require('fs');
-const cheerio = require('cheerio');
-const { makeRequest, yearStrToNumber, cnDateStrToDateStr } = require('../utils');
-const config = require('../../config.js');
+import cheerio from 'cheerio';
+import { makeRequest, yearStrToNumber, cnDateStrToDateStr } from '../utils.js';
+import config from '../../config.js';
 
 function clearURL(url) {
     let u = new URL(url)
@@ -65,7 +64,7 @@ async function getAppDataFromStorePage(appid) {
     return data
 }
 
-async function getAppDataFromAPI(appid, steamapi) {
+export async function getAppDataFromAPI(appid, steamapi) {
     let data
 
     // if (steamapi) {
@@ -109,7 +108,7 @@ async function getAppDataFromAPI(appid, steamapi) {
 }
 
 // apiData to calendarData
-function getCalendarData(data) {
+export function getCalendarData(data) {
     let date = data.release_date.date ?? data.release_date
     let isTBA = data.release_date.coming_soon && !data.release_date.date
 
@@ -163,9 +162,4 @@ function getCalendarData(data) {
             totalReview: data.totalReview,
         }
     }
-}
-
-module.exports = {
-    getAppDataFromAPI,
-    getCalendarData,
 }
