@@ -1,9 +1,9 @@
-const fs = require('fs');
-const { parse } = require('./parser')
-const config = require('../config.js');
-const { getNeedRefreshTargets } = require('./utils.js');
+import * as fs from 'fs';
+import { parse } from './parser.js';
+import config from '../config.js';
+import { getNeedRefreshTargets } from './utils.js';
 
-class Database {
+export default class Database {
     constructor() {
         this.db = {}
 
@@ -214,5 +214,3 @@ class Database {
         return resultWithType
     }
 }
-
-module.exports = Database;

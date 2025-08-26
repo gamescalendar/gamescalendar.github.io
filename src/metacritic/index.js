@@ -22,7 +22,7 @@ function elementToUrl(element) {
     return url
 }
 
-async function getMetacriticInfo(game, platformOverride) {
+export async function getMetacriticInfo(game, platformOverride) {
     // === Scores ===
     // Main page no longer provides full game description and cover image
     let url = `https://www.metacritic.com/game/${game}`
@@ -178,8 +178,4 @@ async function getMetacriticInfo(game, platformOverride) {
             userReviewsCount: toNumberOrUndefined(userReviewsCount),
         },
     }
-}
-
-module.exports = {
-    getMetacriticInfo,
 }

@@ -1,14 +1,13 @@
-const fs = require('fs');
-const steamapi = require('steamapi');
-const SteamAPI = steamapi.default || steamapi;
-const config = require('../config.js');
-const { HttpsProxyAgent } = require('https-proxy-agent');
-const { makeRequest } = require('./utils');
-const { getAppDataFromAPI, getCalendarData } = require('./steam');
+import * as fs from 'fs';
+import SteamAPI from 'steamapi';
+import {HttpsProxyAgent} from 'https-proxy-agent';
 
-const Database = require('./database');
+import config from '../config.js';
+import { makeRequest } from './utils.js';
+import { getAppDataFromAPI, getCalendarData } from './steam/index.js';
+import Database from './database.js';
 
-class Resolver {
+export default class Resolver {
     constructor(options = {}) {
         this.wishlist = [];
         this.owned = new Map(); // 改为 Map 结构提高查询性能
@@ -614,5 +613,3 @@ class Resolver {
         return;
     }
 }
-
-module.exports = Resolver;

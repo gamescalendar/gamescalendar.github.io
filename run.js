@@ -1,5 +1,5 @@
 
-const Resolver = require('./src/resolver');
+import Resolver from './src/resolver.js';
 
 async function main() {
     const resolver = new Resolver();

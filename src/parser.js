@@ -1,4 +1,4 @@
-const fs = require('fs');
+import * as fs from 'fs';
 
 function parseSteam(text) {
     let appid = parseFloat(text)
@@ -32,7 +32,7 @@ function parseSteam(text) {
     // console.log(`${target} is not a valid steam appid or URL`)
 }
 
-const MetacriticURL = "https://www.metacritic.com/game/"
+export const MetacriticURL = "https://www.metacritic.com/game/"
 
 function parseMetacritic(text) {
     if (typeof text === "string") {
@@ -46,11 +46,11 @@ function parseMetacritic(text) {
     }
 }
 
-function parse(target) {
+export function parse(target) {
     return parseSteam(target) || parseMetacritic(target)
 }
 
-function parseFile(file) {
+export function parseFile(file) {
     let arr = fs.readFileSync(file, "utf-8").split("\n")
         .map(x => x.trim())
         .filter(x => x.length > 0 && !x.startsWith("//"))
@@ -72,10 +72,4 @@ function parseFile(file) {
     })
 
     return database
-}
-
-module.exports = {
-    parse,
-    parseFile,
-    MetacriticURL,
 }
