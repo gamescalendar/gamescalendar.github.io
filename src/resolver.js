@@ -23,9 +23,6 @@ export default class Resolver {
         this.proxy = this.getProxyConfig();
         if (this.proxy) {
             console.log(`Using proxy: ${this.proxy}`);
-            // 设置环境变量，让 Steam API 使用代理
-            process.env.HTTP_PROXY = this.proxy;
-            process.env.HTTPS_PROXY = this.proxy;
         }
         
         // 检查是否有 Steam 配置
@@ -35,7 +32,7 @@ export default class Resolver {
         if (apiKey && steamUser) {
             this.steam = new SteamAPI(apiKey, {
                 language: config.languageOption,
-                headers: this.getRequestOptions()
+                headers: this.getRequestOptions(),
             });
             this.hasSteamConfig = true;
             console.log(`Steam user configured: ${steamUser}`);
