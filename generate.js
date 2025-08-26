@@ -8,35 +8,6 @@ const cheerio = require('cheerio');
 const MAX_COUNT_PER_RUN = 20
 const MORE_UNTRACKED_PER_RUN = 40
 
-function fetch_data(appid) {
-
-    https.get({
-        host: "127.0.0.1",
-        port: 1080,
-        path: `https://store.steampowered.com/api/appdetails?appids=${appid}`,
-    }, res => {
-        let data = [];
-        const headerDate = res.headers && res.headers.date ? res.headers.date : 'no response date';
-        console.log('Status Code:', res.statusCode);
-        console.log('Date in Response header:', headerDate);
-
-        res.on('data', chunk => {
-            data.push(chunk);
-        });
-
-        res.on('end', () => {
-            console.log('Response ended: ');
-            const app_data = JSON.parse(Buffer.concat(data).toString());
-
-            console.log(app_data)
-        });
-    }).on('error', err => {
-        console.log('Error: ', err.message);
-    });
-}
-
-// fetch_data(1086940)
-
 const isCI = process.env.CI_ENV == "ci"
 const proxy = process.env.HTTP_PROXY || 'http://127.0.0.1:1080'
 
@@ -214,23 +185,6 @@ function getCalendarData(data) {
     }
 }
 
-function transformAPIDataToCalendarData(apiData) {
-    // apiData = { "appid" = {} }
-    let result = []
-
-    let keys = Object.keys(apiData)
-    for (const key of keys) {
-        // console.log(x[key])
-        let data = apiData[key].data
-        if (!data) {
-            continue
-        }
-        let app_data = getCalendarData(data)
-        result.push(app_data)
-    }
-    return result
-}
-
 const steamAppIdMap = {}
 
 function getSteamAppid(originalTarget) {
@@ -269,7 +223,6 @@ function getTrackedEvents(filename) {
     if (fs.existsSync(filename)) {
         data = fs.readFileSync(filename, 'utf8');
     }
-    // console.log(`read tracked events ${data}`)
 
     let tracked = JSON.parse(data);
     if (tracked.index === undefined) {
@@ -282,12 +235,6 @@ function getTrackedEvents(filename) {
         tracked.metacritic = {}
     }
 
-    // let maxIndex = Math.max(...(Object.values(tracked.data).filter(x => (typeof x.meta?.index) == "number").map(x => x.meta.index)))
-    // if (tracked.index <= maxIndex) {
-    //     console.log(`wrong tracked log, fix index from ${tracked.index} to ${maxIndex + 1}`)
-    //     tracked.index = maxIndex + 1
-    // }
-    // console.log(`read tracked log ${JSON.stringify(tracked)}`)
     return tracked
 }
 
@@ -412,7 +359,9 @@ function sanitizeEvents(events) {
             }
 
             if (event.app_data && event.app_data.release_date && event.app_data.release_date.coming_soon) {
-                if (event.start != next3Year) {
+                let date = cnDateStrToDateStr(event.app_data.release_date)
+                let dateStr = new Date(date).toString()
+                if (dateStr === "Invalid Date" && event.start != next3Year) { // some games have release_date but coming_soon is true
                     console.log("sanitize " + event.title + " (" + key + ") to " + next3Year)
                     events.data[key].start = next3Year
                     changed = true
@@ -550,7 +499,7 @@ function getNeedRefreshTargets(newTargets, tracked) {
             }
         }
 
-        if (needRefresh) {
+        if (needRefresh || recentGamePriority) {
             let days = difference / (1000 * 3600 * 24);
             if (recentGamePriority) {
                 days = 99999
