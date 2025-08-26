@@ -529,6 +529,12 @@
         }
 
         function renderCalendar(events) {
+            let cnDateStrToDateStr = (str) => {
+                return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
+            }
+            events.forEach(x=>{
+                x.start = cnDateStrToDateStr(x.start)
+            })
             let calendarEl = document.getElementById('calendar');
 
             let calendar = new FullCalendar.Calendar(calendarEl, {
