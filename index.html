@@ -516,8 +516,12 @@
         }
 
         async function buildEvents() {
-            let staticEvents = await fetchEvents("https://gamescalendar.github.io/static.json")
-            let dynamicEvents = await fetchEvents("https://gamescalendar.github.io/events.json")
+            const params = new URLSearchParams(window.location.search)
+            const staticFilename = params.get('static') || "static"
+            const eventsFilename = params.get('events') || "events"
+
+            let staticEvents = await fetchEvents(`https://gamescalendar.github.io/${staticFilename}.json`)
+            let dynamicEvents = await fetchEvents(`https://gamescalendar.github.io/${eventsFilename}.json`)
 
             let events = staticEvents.concat(dynamicEvents)
             patchColorForEvents(events)
