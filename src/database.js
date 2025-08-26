@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import { parse } from './parser.js';
 import config from '../config.js';
-import { getNeedRefreshTargets } from './utils.js';
+import { getNeedRefreshTargets, cnDateStrToDateStr } from './utils.js';
 
 export default class Database {
     constructor() {
@@ -42,21 +42,9 @@ export default class Database {
         
         this.db[file] = data
 
-        const fixStart = start => {
-            if (!start) {
-                return start
-            }
-            start = start.replaceAll("Z", "")
-            if (!start) {
-                return start
-            }
-            console.log(start)
-            return new Date(start).toISOString().slice(0, 10)
-        }
-        
         Object.keys(data.steam).forEach(appid => {
             const appData = data.steam[appid];
-            appData.start = fixStart(appData.start)
+            appData.start = cnDateStrToDateStr(appData.start)
             
             // 如果还没有数据，或者这个版本更新，则使用这个版本
             if (!this.steamData[appid] || this.isNewerVersion(appData, this.steamData[appid])) {
@@ -65,7 +53,7 @@ export default class Database {
         });
         Object.keys(data.metacritic).forEach(name => {
             const appData = data.metacritic[name];
-            appData.start = fixStart(appData.start)
+            appData.start = cnDateStrToDateStr(appData.start)
             
             if (!this.metacriticData[name] || this.isNewerVersion(appData, this.metacriticData[name])) {
                 this.metacriticData[name] = appData;
