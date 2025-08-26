@@ -516,8 +516,12 @@
         }
 
         async function buildEvents() {
-            let staticEvents = await fetchEvents("https://gamescalendar.github.io/static.json")
-            let dynamicEvents = await fetchEvents("https://gamescalendar.github.io/events.json")
+            const params = new URLSearchParams(window.location.search)
+            const staticFilename = params.get('static') || "static"
+            const eventsFilename = params.get('events') || "events"
+
+            let staticEvents = await fetchEvents(`https://gamescalendar.github.io/${staticFilename}.json`)
+            let dynamicEvents = await fetchEvents(`https://gamescalendar.github.io/${eventsFilename}.json`)
 
             let events = staticEvents.concat(dynamicEvents)
             patchColorForEvents(events)
@@ -637,7 +641,8 @@
 <div class="ui container">
     <div class="ui menu">
         <div class="header item">
-            《XGS 严选》游戏日历
+            <a class="item" href="https://gamescalendar.github.io/">《XGS 严选》游戏日历</a>
+            <a class="item" href="https://gamescalendar.github.io?events=wishlist">愿望单合集</a>
         </div>
         <!--        <a class="active item">Link</a>-->
         <!--        <a class="item">Link</a>-->
@@ -662,6 +667,7 @@
             <!--                    <button class="ui button">Submit</button>-->
             <!--                </div>-->
             <!--            </div>-->
+            <a class="item" href="https://github.com/gamescalendar/gamescalendar.github.io/">项目地址</a>
             <a class="item" href="https://github.com/gamescalendar/gamescalendar.github.io/edit/master/list.txt">添加记录</a>
             <a class="item" href="https://github.com/gamescalendar/gamescalendar.github.io/issues/new">请求添加记录</a>
         </div>
