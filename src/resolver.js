@@ -6,12 +6,14 @@ const { HttpsProxyAgent } = require('https-proxy-agent');
 const { makeRequest } = require('./utils');
 
 class Resolver {
-    constructor() {
+    constructor(options = {}) {
         this.wishlist = [];
         this.owned = new Map(); // 改为 Map 结构提高查询性能
         this.steam = null;
         this.hasSteamConfig = false;
         this.steamId = null; // 缓存 SteamID
+        this.meta = null; // 元数据对象
+        this.forceUpdate = options.forceUpdate || false; // 强制更新选项
         
         // 配置代理
         this.proxy = this.getProxyConfig();
@@ -41,6 +43,110 @@ class Resolver {
                 console.log('Steam API not configured - missing steam.user');
             }
         }
+    }
+
+    /**
+     * 初始化或加载meta文件
+     */
+    async initializeMeta() {
+        try {
+            if (fs.existsSync(config.meta)) {
+                const metaContent = fs.readFileSync(config.meta, 'utf-8');
+                this.meta = JSON.parse(metaContent);
+                console.log(`Meta file loaded: ${config.meta}`);
+            } else {
+                // 创建新的meta文件
+                this.meta = {
+                    lastWishlistUpdate: null,
+                    lastOwnedUpdate: null,
+                    steamId: null,
+                    created: new Date().toISOString()
+                };
+                await this.saveMeta();
+                console.log(`New meta file created: ${config.meta}`);
+            }
+        } catch (error) {
+            console.error(`Failed to initialize meta file: ${error.message}`);
+            // 如果加载失败，创建默认的meta对象
+            this.meta = {
+                lastWishlistUpdate: null,
+                lastOwnedUpdate: null,
+                steamId: null,
+                created: new Date().toISOString()
+            };
+        }
+    }
+
+    /**
+     * 保存meta文件
+     */
+    async saveMeta() {
+        try {
+            const metaContent = JSON.stringify(this.meta, null, 2);
+            fs.writeFileSync(config.meta, metaContent, 'utf-8');
+        } catch (error) {
+            console.error(`Failed to save meta file: ${error.message}`);
+        }
+    }
+
+    /**
+     * 获取当前UTC日期字符串（YYYY-MM-DD格式）
+     */
+    getCurrentDateString() {
+        const now = new Date();
+        const year = now.getUTCFullYear();
+        const month = String(now.getUTCMonth() + 1).padStart(2, '0');
+        const day = String(now.getUTCDate()).padStart(2, '0');
+        return `${year}-${month}-${day}`;
+    }
+
+    /**
+     * 检查是否需要更新（基于日期和ForceUpdate选项）
+     */
+    shouldUpdate() {
+        if (this.forceUpdate) {
+            console.log('Force update enabled, skipping date check');
+            return true;
+        }
+
+        if (!this.meta) {
+            console.log('No meta data available, proceeding with update');
+            return true;
+        }
+
+        const today = this.getCurrentDateString();
+        const lastWishlistUpdate = this.meta.lastWishlistUpdate || null;
+        const lastOwnedUpdate = this.meta.lastOwnedUpdate || null;
+
+        if (lastWishlistUpdate === today && lastOwnedUpdate === today) {
+            console.log('Both wishlist and owned lists were updated today, skipping update');
+            return false;
+        }
+
+        if (lastWishlistUpdate === today) {
+            console.log('Wishlist was updated today, skipping wishlist update');
+        }
+        if (lastOwnedUpdate === today) {
+            console.log('Owned list was updated today, skipping owned update');
+        }
+
+        return true;
+    }
+
+    /**
+     * 检查SteamID是否需要更新
+     */
+    shouldUpdateSteamId() {
+        if (this.forceUpdate) {
+            return true;
+        }
+
+        if (!this.meta || !this.meta.steamId) {
+            return true;
+        }
+
+        console.log('SteamID already cached in meta, skipping resolution');
+        return false;
     }
 
     /**
@@ -81,6 +187,14 @@ class Resolver {
         if (!this.hasSteamConfig) {
             console.log('Skipping SteamID resolution - Steam API not configured');
             return null;
+        }
+
+        // 检查是否需要更新SteamID
+        if (!this.shouldUpdateSteamId()) {
+            // 从meta中恢复SteamID
+            this.steamId = this.meta.steamId;
+            console.log(`SteamID restored from meta: ${this.steamId}`);
+            return this.steamId;
         }
 
         try {
@@ -141,6 +255,11 @@ class Resolver {
             }
             
             this.steamId = userId;
+            // 保存SteamID到meta文件
+            if (this.meta) {
+                this.meta.steamId = userId;
+                await this.saveMeta();
+            }
             console.log(`SteamID cached: ${this.steamId}`);
             return userId;
         } catch (error) {
@@ -159,10 +278,26 @@ class Resolver {
         const steamWishlistDb = config.databases.find(db => db.type === 'SteamWishlist');
         
         if (steamWishlistDb && this.hasSteamConfig && config.steam?.wishlist) {
+            // 检查是否需要更新
+            if (!this.forceUpdate && this.meta && this.meta.lastWishlistUpdate) {
+                const today = this.getCurrentDateString();
+                const lastUpdate = this.meta.lastWishlistUpdate;
+                if (lastUpdate === today) {
+                    console.log('Wishlist was updated today, skipping API call');
+                    await this.buildWishlistFromLocalFiles();
+                    return this.wishlist;
+                }
+            }
+            
             try {
                 await this.buildWishlistFromThirdPartyAPI();
                 // 保存到文件
                 await this.saveWishlistToFile(steamWishlistDb.source);
+                // 记录更新日期
+                if (this.meta) {
+                    this.meta.lastWishlistUpdate = this.getCurrentDateString();
+                    await this.saveMeta();
+                }
             } catch (error) {
                 console.error('Failed to build wishlist from Steam API, falling back to local files:', error.message);
                 await this.buildWishlistFromLocalFiles();
@@ -256,6 +391,17 @@ class Resolver {
             return this.owned;
         }
         
+        // 检查是否需要更新
+        if (!this.forceUpdate && this.meta && this.meta.lastOwnedUpdate) {
+            const today = this.getCurrentDateString();
+            const lastUpdate = this.meta.lastOwnedUpdate;
+            if (lastUpdate === today) {
+                console.log('Owned list was updated today, skipping API call');
+                await this.buildOwnedFromLocalFiles();
+                return this.owned;
+            }
+        }
+        
         try {
             if (!this.steamId) {
                 throw new Error('SteamID not resolved yet');
@@ -275,6 +421,11 @@ class Resolver {
             const steamOwnedDb = config.databases.find(db => db.type === 'SteamOwned');
             if (steamOwnedDb) {
                 await this.saveOwnedToFile(steamOwnedDb.source);
+                // 记录更新日期
+                if (this.meta) {
+                    this.meta.lastOwnedUpdate = this.getCurrentDateString();
+                    await this.saveMeta();
+                }
             }
         } catch (error) {
             console.error('Failed to build owned list from Steam API, falling back to local files:', error.message);
@@ -356,6 +507,9 @@ class Resolver {
      * 初始化 resolver，构建两个列表
      */
     async initialize() {
+        // 首先初始化meta文件
+        await this.initializeMeta();
+        
         // 首先解析 SteamID
         await this.resolveSteamId();
         
