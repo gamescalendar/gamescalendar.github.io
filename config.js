@@ -25,11 +25,11 @@ module.exports =  {
     }
   ],
 
+  ratelimit: {
+    init: 1,
+    update: 1,
+  },
   steam: {
-    ratelimit: {
-      request: 20,
-      api: 1000,
-    },
 
     // User profile ID (if is number), or username
     // https://steamcommunity.com/id/USER_ID/

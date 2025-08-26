@@ -64,26 +64,33 @@ async function getAppDataFromStorePage(appid) {
     return data
 }
 
-async function getAppDataFromAPI(appid) {
-    let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=schinese`
-    console.log(`Fetching API for ${appid} from ${api}`)
+async function getAppDataFromAPI(appid, steamapi) {
+    let data
 
-    const body = await makeRequest(api, {
-        headers: {
-            cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
+    // if (steamapi) {
+        // steamapi uses camelCase
+        // data = await steamapi.getGameDetails(appid)
+    // } else {
+        let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=schinese`
+        console.log(`Fetching API for ${appid} from ${api}`)
+    
+        const body = await makeRequest(api, {
+            headers: {
+                cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
+            }
+        });
+        if (!body) {
+            console.log(`Failed to fetch store API for ${appid} from ${api}`)
+            return null
         }
-    });
-    if (!body) {
-        console.log(`Failed to fetch store API for ${appid} from ${api}`)
-        return null
-    }
-    let data = JSON.parse(body);
-    if (!data[appid] || !data[appid].data) {
-        console.log(`API data for ${appid} error`)
-        return null
-    }
+        data = JSON.parse(body);
+        if (!data[appid] || !data[appid].data) {
+            console.log(`API data for ${appid} error`)
+            return null
+        }
+        data = data[appid].data
+    // }
 
-    data = data[appid].data
     const pageData = await getAppDataFromStorePage(appid)
     if (pageData != null) {
         data.tags = pageData.tags
@@ -94,6 +101,7 @@ async function getAppDataFromAPI(appid) {
     return data
 }
 
+// apiData to calendarData
 function getCalendarData(data) {
     let date = data.release_date.date ?? data.release_date
     let isTBA = data.release_date.coming_soon && !data.release_date.date
