@@ -389,6 +389,26 @@
             if (data.header_image) {
                 headerImage = data.header_image
             }
+            let devs = ""
+            let pubs = ""
+
+            if (data.developers) {
+                devs = `<div class="dev_row">
+                            <div class="subtitle column">开发商：</div>
+                            <div class="dev_list">
+                                ${data.developers.filter(x => x).slice(0, 7).map(dev => `<a target="_blank" href="https://store.steampowered.com/search/?developer=${dev}">${dev}</a>`).join(",")}
+                            </div>
+                        </div>`
+            }
+            if (data.publishers) {
+                pubs = `<div class="dev_row">
+                            <div class="subtitle column">发行商</div>
+                            <div class="dev_list">
+                                ${data.publishers?.filter(x => x).slice(0, 7).map(pub => `<a target="_blank" href="https://store.steampowered.com/search/?publisher=${pub}">${pub}</a>`).join(",")}
+                            </div>
+                        </div>`
+            }
+
             const template = `
     <div class="v6">
         <div id="wrapper">
@@ -416,19 +436,9 @@
                         </div>
                         <div class="inner_rule"></div>
 
-                        <div class="dev_row">
-                            <div class="subtitle column">开发商：</div>
-                            <div class="dev_list">
-                                ${data.developers.filter(x => x).slice(0, 7).map(dev => `<a target="_blank" href="https://store.steampowered.com/search/?developer=${dev}">${dev}</a>`).join(",")}
-                            </div>
-                        </div>
-
-                        <div class="dev_row">
-                            <div class="subtitle column">发行商</div>
-                            <div class="dev_list">
-                                ${data.publishers.filter(x => x).slice(0, 7).map(pub => `<a target="_blank" href="https://store.steampowered.com/search/?publisher=${pub}">${pub}</a>`).join(",")}
-                            </div>
-                        </div>
+                        ${devs}
+                        ${pubs}
+                        
                         <div class="inner_rule"></div>
 
                         <div class="details_block">
