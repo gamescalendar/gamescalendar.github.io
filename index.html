@@ -481,11 +481,11 @@
             // sanitize
             let result = []
             if (!Array.isArray(events)) {
-                if (events.data) {
-                    for (const appid in events.data) {
-                        events.data[appid].source = "steam";
+                if (events.steam) {
+                    for (const appid in events.steam) {
+                        events.steam[appid].source = "steam";
                     }
-                    result.push(...Object.values(events.data))
+                    result.push(...Object.values(events.steam))
                 }
                 if (events.metacritic) {
                     for (const name in events.metacritic) {
