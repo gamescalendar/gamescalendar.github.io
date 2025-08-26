@@ -389,6 +389,26 @@
             if (data.header_image) {
                 headerImage = data.header_image
             }
+            let devs = ""
+            let pubs = ""
+
+            if (data.developers) {
+                devs = `<div class="dev_row">
+                            <div class="subtitle column">开发商：</div>
+                            <div class="dev_list">
+                                ${data.developers.filter(x => x).slice(0, 7).map(dev => `<a target="_blank" href="https://store.steampowered.com/search/?developer=${dev}">${dev}</a>`).join(",")}
+                            </div>
+                        </div>`
+            }
+            if (data.publishers) {
+                pubs = `<div class="dev_row">
+                            <div class="subtitle column">发行商</div>
+                            <div class="dev_list">
+                                ${data.publishers?.filter(x => x).slice(0, 7).map(pub => `<a target="_blank" href="https://store.steampowered.com/search/?publisher=${pub}">${pub}</a>`).join(",")}
+                            </div>
+                        </div>`
+            }
+
             const template = `
     <div class="v6">
         <div id="wrapper">
@@ -398,7 +418,7 @@
 
                     <div class="block_header_image block_header_gallery load">
                         <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/">
-                            <img class="game_header_image" src=${headerImage}>
+                            <img class="game_header_image" data-src=${headerImage}>
                         </a>
                     </div>
 
@@ -416,19 +436,9 @@
                         </div>
                         <div class="inner_rule"></div>
 
-                        <div class="dev_row">
-                            <div class="subtitle column">开发商：</div>
-                            <div class="dev_list">
-                                ${data.developers.filter(x => x).slice(0, 7).map(dev => `<a target="_blank" href="https://store.steampowered.com/search/?developer=${dev}">${dev}</a>`).join(",")}
-                            </div>
-                        </div>
-
-                        <div class="dev_row">
-                            <div class="subtitle column">发行商</div>
-                            <div class="dev_list">
-                                ${data.publishers.filter(x => x).slice(0, 7).map(pub => `<a target="_blank" href="https://store.steampowered.com/search/?publisher=${pub}">${pub}</a>`).join(",")}
-                            </div>
-                        </div>
+                        ${devs}
+                        ${pubs}
+                        
                         <div class="inner_rule"></div>
 
                         <div class="details_block">
@@ -528,8 +538,43 @@
             return events
         }
 
+        function setUrlParam(key, value, defaultValue) {
+            if (value && value != defaultValue) {
+                const url = new URL(window.location.href);
+                url.searchParams.set(key, value)
+                window.history.pushState(null, '', url.toString());
+            } else {
+                const url = new URL(window.location.href);
+                url.searchParams.delete(key)
+                window.history.pushState(null, '', url.toString());
+            }
+        }
+
         function renderCalendar(events) {
+            let cnDateStrToDateStr = (str) => {
+                return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
+            }
+            events.forEach(x=>{
+                x.start = cnDateStrToDateStr(x.start)
+            })
             let calendarEl = document.getElementById('calendar');
+
+            const params = new URLSearchParams(window.location.search)
+            const calendarView = params.get('view') || "multiMonthYear"
+
+            let date = new Date()
+            let paramYear = params.get('year')
+            if (paramYear) {
+                date.setFullYear(paramYear)
+            }
+            let paramMonth = params.get('month')
+            if (paramMonth) {
+                date.setMonth(paramMonth - 1)
+            }
+            let paramDay = params.get('day')
+            if (paramDay) {
+                date.setDate(paramDay - 1)
+            }
 
             let calendar = new FullCalendar.Calendar(calendarEl, {
                 aspectRatio: 1,
@@ -539,7 +584,7 @@
                     center: 'title',
                     right: 'listYear,dayGridMonth,multiMonthYear,dayGridYear,scrollMonthYear',
                 },
-                initialView: 'multiMonthYear',
+                initialView: calendarView,
                 // multiMonthMaxColumns: 2,
 
                 views: {
@@ -553,7 +598,7 @@
                     }
                 },
 
-                initialDate: new Date().toISOString().slice(0, 10),
+                initialDate: date,
 
                 eventDisplay: "auto",
 
@@ -615,12 +660,43 @@
                                 placement: placement,
                             })
                         },
+                        onShow: function(instance) {
+                            var img = instance.popper.querySelector('img');
+                            if (img && img.dataset) {
+                                img.src = img.dataset.src;
+                            }
+                        },
                     });
 
                     // console.log(tippyInstance)
                 },
 
                 events: events,
+                datesSet: function (dateInfo) {
+                    let viewType = dateInfo.view?.type
+                    setUrlParam('view', viewType, "multiMonthYear")
+                    
+                    const now = new Date()
+                    const thisYear = now.getFullYear()
+                    const thisMonth = now.getMonth() + 1
+
+                    const start = dateInfo.start.valueOf()
+                    const end = dateInfo.end.valueOf()
+                    const requested = new Date((start + end) / 2)
+
+                    const year = requested.getFullYear()
+                    const month = requested.getMonth() + 1
+                    
+                    setUrlParam('year', year, thisYear)
+
+                    if (!viewType.includes("Year")) {
+                        setUrlParam('month', month, thisMonth)
+                        // setUrlParam('day', requested.getDate())
+                    } else {
+                        setUrlParam('month')
+                        setUrlParam('day')
+                    }
+                }
             });
 
             calendar.render();
@@ -640,7 +716,7 @@
 
 <div class="ui container">
     <div class="ui menu">
-        <div class="header item">
+        <div class="header menu">
             <a class="item" href="https://gamescalendar.github.io/">《XGS 严选》游戏日历</a>
             <a class="item" href="https://gamescalendar.github.io?events=wishlist">愿望单合集</a>
         </div>
