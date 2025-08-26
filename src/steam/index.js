@@ -1,0 +1,171 @@
+const fs = require('fs');
+const cheerio = require('cheerio');
+const { makeRequest, yearStrToNumber, cnDateStrToDateStr } = require('../utils');
+const config = require('../../config.js');
+
+function clearURL(url) {
+    let u = new URL(url)
+    u.search = ""
+    return u.toString()
+}
+
+async function getAppDataFromStorePage(appid) {
+    let page = `https://store.steampowered.com/app/${appid}?l=${config.languageOption}`
+    console.log(`Fetching Store page for ${appid} from ${page}`)
+
+    const body = await makeRequest(page, {
+        headers: {
+            cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
+        }
+    });
+    if (!body) {
+        console.log(`Failed to fetch store page for ${appid} from ${page}`)
+        return null
+    }
+
+    let data = {}
+
+    let $ = cheerio.load(body);
+    let userReview = $("#userReviews")
+    let recentReview = $(userReview.find(".subtitle.column:not(.all)").parent())
+    if (recentReview.length > 0) {
+        let recentSummary = recentReview.find(".game_review_summary")
+        if (recentSummary.length > 0) {
+            data.recentReview = {
+                summary: recentSummary.text(),
+                cssClass: recentSummary.attr("class").replace("game_review_summary", "").trim(),
+                count: recentReview.find(".summary").find(".responsive_hidden").text().trim(),
+                tooltip: recentReview.attr("data-tooltip-html"),
+            }
+        }
+    }
+
+    let totalReview = $(userReview.find(".subtitle.column.all").parent())
+    if (totalReview.length > 0) {
+        let totalSummary = totalReview.find(".game_review_summary")
+        if (totalSummary.length > 0) {
+            data.totalReview = {
+                summary: totalSummary.text(),
+                cssClass: totalSummary.attr("class").replace("game_review_summary", "").trim(),
+                count: totalReview.find(".summary").find(".responsive_hidden").text().trim(),
+                tooltip: totalReview.attr("data-tooltip-html"),
+            }
+        }
+    }
+
+    data.tags = Array.from($(".glance_tags.popular_tags").children()).map(x => $(x)).filter(x => {
+        return x.is("a")
+    }).map(x => {
+        return {
+            link: clearURL(x.attr("href")),
+            name: x.text().trim(),
+        }
+    })
+
+    return data
+}
+
+async function getAppDataFromAPI(appid, steamapi) {
+    let data
+
+    // if (steamapi) {
+        // steamapi uses camelCase
+        // data = await steamapi.getGameDetails(appid)
+    // } else {
+        let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=${config.languageOption}`
+        console.log(`Fetching API for ${appid} from ${api}`)
+    
+        const body = await makeRequest(api, {
+            headers: {
+                cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
+            }
+        });
+        if (!body) {
+            console.log(`Failed to fetch store API for ${appid} from ${api}`)
+            return null
+        }
+        data = JSON.parse(body);
+        if (!data[appid] || !data[appid].data) {
+            console.log(`API data for ${appid} error`)
+            return null
+        }
+        data = data[appid].data
+    // }
+
+    const pageData = await getAppDataFromStorePage(appid)
+    if (pageData != null) {
+        data.tags = pageData.tags
+        data.recentReview = pageData.recentReview
+        data.totalReview = pageData.totalReview
+    }
+
+    data.meta = {
+        platform: "Steam",
+        identifier: appid,
+        last_track_date: (new Date()).toISOString().slice(0, 10),
+    }
+
+    return data
+}
+
+// apiData to calendarData
+function getCalendarData(data) {
+    let date = data.release_date.date ?? data.release_date
+    let isTBA = data.release_date.coming_soon && !data.release_date.date
+
+    let start = cnDateStrToDateStr(date)
+    if (!isTBA) {
+        let year = yearStrToNumber(date) // 2024
+        if (year !== -1) {
+            let d = new Date()
+            d.setFullYear(year)
+            d.setMonth(11, 31)
+            start = d.toISOString().slice(0, 10)
+        } else {
+            let releaseDate = (new Date(date + " GMT"))
+
+            isTBA = releaseDate.toString() === "Invalid Date"
+            if (!isTBA) {
+                start = releaseDate.toISOString().slice(0, 10)
+            }
+        }
+    }
+
+    let supportLanguage = config.languageString.some(x => data.supported_languages.includes(x))
+    let supportAudio = config.languageString.some(x => data.supported_languages.includes(x + "<strong>*</strong>"))
+
+    return {
+        meta: data.meta,
+        type: "Game",
+        title: data.name,
+        start: start,
+        app_data: {
+            platform: "Steam",
+            appid: data.steam_appid,
+            title: data.name,
+            description: data.short_description,
+            header_image: data.header_image?.split("?")[0],
+            release_date: data.release_date,
+            language: {
+                zh: {
+                    gui: supportLanguage,
+                    audio: supportAudio,
+                    subtitle: supportLanguage,
+                }
+            },
+            owned: false,
+            developers: data.developers,
+            publishers: data.publishers,
+            categories: data.categories,
+            genres: data.genres,
+            tags: data.tags,
+            recentReview: data.recentReview,
+            totalReview: data.totalReview,
+        }
+    }
+}
+
+module.exports = {
+    getAppDataFromAPI,
+    getCalendarData,
+}
