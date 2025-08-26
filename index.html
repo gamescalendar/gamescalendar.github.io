@@ -398,7 +398,7 @@
 
                     <div class="block_header_image block_header_gallery load">
                         <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/">
-                            <img class="game_header_image" src=${headerImage}>
+                            <img class="game_header_image" data-src=${headerImage}>
                         </a>
                     </div>
 
@@ -528,6 +528,18 @@
             return events
         }
 
+        function setUrlParam(key, value, defaultValue) {
+            if (value && value != defaultValue) {
+                const url = new URL(window.location.href);
+                url.searchParams.set(key, value)
+                window.history.pushState(null, '', url.toString());
+            } else {
+                const url = new URL(window.location.href);
+                url.searchParams.delete(key)
+                window.history.pushState(null, '', url.toString());
+            }
+        }
+
         function renderCalendar(events) {
             let cnDateStrToDateStr = (str) => {
                 return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
@@ -537,6 +549,23 @@
             })
             let calendarEl = document.getElementById('calendar');
 
+            const params = new URLSearchParams(window.location.search)
+            const calendarView = params.get('view') || "multiMonthYear"
+
+            let date = new Date()
+            let paramYear = params.get('year')
+            if (paramYear) {
+                date.setFullYear(paramYear)
+            }
+            let paramMonth = params.get('month')
+            if (paramMonth) {
+                date.setMonth(paramMonth - 1)
+            }
+            let paramDay = params.get('day')
+            if (paramDay) {
+                date.setDate(paramDay - 1)
+            }
+
             let calendar = new FullCalendar.Calendar(calendarEl, {
                 aspectRatio: 1,
                 contentHeight: 1000,
@@ -545,7 +574,7 @@
                     center: 'title',
                     right: 'listYear,dayGridMonth,multiMonthYear,dayGridYear,scrollMonthYear',
                 },
-                initialView: 'multiMonthYear',
+                initialView: calendarView,
                 // multiMonthMaxColumns: 2,
 
                 views: {
@@ -559,7 +588,7 @@
                     }
                 },
 
-                initialDate: new Date().toISOString().slice(0, 10),
+                initialDate: date,
 
                 eventDisplay: "auto",
 
@@ -621,12 +650,43 @@
                                 placement: placement,
                             })
                         },
+                        onShow: function(instance) {
+                            var img = instance.popper.querySelector('img');
+                            if (img && img.dataset) {
+                                img.src = img.dataset.src;
+                            }
+                        },
                     });
 
                     // console.log(tippyInstance)
                 },
 
                 events: events,
+                datesSet: function (dateInfo) {
+                    let viewType = dateInfo.view?.type
+                    setUrlParam('view', viewType, "multiMonthYear")
+                    
+                    const now = new Date()
+                    const thisYear = now.getFullYear()
+                    const thisMonth = now.getMonth() + 1
+
+                    const start = dateInfo.start.valueOf()
+                    const end = dateInfo.end.valueOf()
+                    const requested = new Date((start + end) / 2)
+
+                    const year = requested.getFullYear()
+                    const month = requested.getMonth() + 1
+                    
+                    setUrlParam('year', year, thisYear)
+
+                    if (!viewType.includes("Year")) {
+                        setUrlParam('month', month, thisMonth)
+                        // setUrlParam('day', requested.getDate())
+                    } else {
+                        setUrlParam('month')
+                        setUrlParam('day')
+                    }
+                }
             });
 
             calendar.render();
