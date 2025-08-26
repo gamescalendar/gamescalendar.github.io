@@ -149,6 +149,11 @@ async function getMetacriticInfo(game, platformOverride) {
     })
 
     return {
+        meta: {
+            platform: platform,
+            identifier: url,
+            last_track_date: (new Date()).toISOString().slice(0, 10),
+        },
         type: "Game",
         title: title,
         start: start,

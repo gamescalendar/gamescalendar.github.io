@@ -1,6 +1,7 @@
 const fs = require('fs');
 const cheerio = require('cheerio');
 const { makeRequest, yearStrToNumber, cnDateStrToDateStr } = require('../utils');
+const config = require('../../config.js');
 
 function clearURL(url) {
     let u = new URL(url)
@@ -9,7 +10,7 @@ function clearURL(url) {
 }
 
 async function getAppDataFromStorePage(appid) {
-    let page = `https://store.steampowered.com/app/${appid}?l=schinese`
+    let page = `https://store.steampowered.com/app/${appid}?l=${config.languageOption}`
     console.log(`Fetching Store page for ${appid} from ${page}`)
 
     const body = await makeRequest(page, {
@@ -71,7 +72,7 @@ async function getAppDataFromAPI(appid, steamapi) {
         // steamapi uses camelCase
         // data = await steamapi.getGameDetails(appid)
     // } else {
-        let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=schinese`
+        let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=${config.languageOption}`
         console.log(`Fetching API for ${appid} from ${api}`)
     
         const body = await makeRequest(api, {
@@ -96,6 +97,12 @@ async function getAppDataFromAPI(appid, steamapi) {
         data.tags = pageData.tags
         data.recentReview = pageData.recentReview
         data.totalReview = pageData.totalReview
+    }
+
+    data.meta = {
+        platform: "Steam",
+        identifier: appid,
+        last_track_date: (new Date()).toISOString().slice(0, 10),
     }
 
     return data
@@ -124,6 +131,9 @@ function getCalendarData(data) {
         }
     }
 
+    let supportLanguage = config.languageString.some(x => data.supported_languages.includes(x))
+    let supportAudio = config.languageString.some(x => data.supported_languages.includes(x + "<strong>*</strong>"))
+
     return {
         meta: data.meta,
         type: "Game",
@@ -138,9 +148,9 @@ function getCalendarData(data) {
             release_date: data.release_date,
             language: {
                 zh: {
-                    gui: data.supported_languages.includes("简体中文") || data.supported_languages.includes("Chinese"),
-                    audio: data.supported_languages.includes("简体中文<strong>*</strong>") || data.supported_languages.includes("Chinese<strong>*</strong>"),
-                    subtitle: data.supported_languages.includes("简体中文") || data.supported_languages.includes("Chinese"),
+                    gui: supportLanguage,
+                    audio: supportAudio,
+                    subtitle: supportLanguage,
                 }
             },
             owned: false,

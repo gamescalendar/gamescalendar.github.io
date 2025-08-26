@@ -35,6 +35,7 @@ jobs:
       - name: Update Data
         env:
           CI_ENV: ci
+          STEAM_APIKEY: ${{ secrets.STEAM_APIKEY }}
         run: |
           set -x
           git fetch origin release
