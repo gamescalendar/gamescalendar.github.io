@@ -44,6 +44,9 @@ export default class Database {
         
         Object.keys(data.steam).forEach(appid => {
             const appData = data.steam[appid];
+            if(appData.start) {
+                appData.start = new Date(appData.start).toISOString().slice(0, 10)
+            }
             
             // 如果还没有数据，或者这个版本更新，则使用这个版本
             if (!this.steamData[appid] || this.isNewerVersion(appData, this.steamData[appid])) {
@@ -52,6 +55,9 @@ export default class Database {
         });
         Object.keys(data.metacritic).forEach(name => {
             const appData = data.metacritic[name];
+            if(appData.start) {
+                appData.start = new Date(appData.start).toISOString().slice(0, 10)
+            }
             
             if (!this.metacriticData[name] || this.isNewerVersion(appData, this.metacriticData[name])) {
                 this.metacriticData[name] = appData;
