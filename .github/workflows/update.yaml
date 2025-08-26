@@ -51,6 +51,9 @@ jobs:
           git status
           git fetch origin master
           git stash -- events.json wishlist.txt wishlist.json owned.txt owned.json meta.json
+          git diff
+          git checkout HEAD -- package-lock.json
+          git status
           git checkout release
           git status
           git stash show
