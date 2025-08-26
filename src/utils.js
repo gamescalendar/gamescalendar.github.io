@@ -37,6 +37,7 @@ export function cnDateStrToDateStr(str) {
     if (!str?.replaceAll) {
         return str
     }
+    str = str.replaceAll("Z", "")
     str = str.replaceAll(" ", "").replaceAll("日", "")
     str = str.replaceAll("年", "-").replaceAll("月", "-")
     return str + "Z"
