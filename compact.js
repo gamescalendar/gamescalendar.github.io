@@ -10,7 +10,7 @@ process.on('unhandledRejection', (reason, promise) => {
 
 // Define the regular expression for daily update commit messages
 const DAILY_UPDATE_PATTERN = /^squash! Daily update/;
-const SQUASH_LIMIT = 80; // 设置一次性合并的提交上限
+const SQUASH_LIMIT = 200; // 设置一次性合并的提交上限
 
 /**
  * Finds and squashes the most recent contiguous sequence of "Daily update" commits.
