@@ -69,6 +69,23 @@ const reqOpts = {
         cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
     }
 }
+async function updateStoreData(data, appid) {
+    const pageData = await getAppDataFromStorePage(appid)
+    if (pageData != null) {
+        data.tags = pageData.tags
+        data.recentReview = pageData.recentReview
+        data.totalReview = pageData.totalReview
+    }
+
+    data.meta = {
+        platform: "Steam",
+        identifier: appid,
+        last_track_date: (new Date()).toISOString().slice(0, 10),
+    }
+
+    return data
+}
+
 export async function getAppDataFromAPI(appid, steamapi) {
     let data
 
@@ -90,7 +107,16 @@ export async function getAppDataFromAPI(appid, steamapi) {
         }
         data = JSON.parse(body);
         if (!data[appid] || !data[appid].data) {
-            console.log(`API data for ${appid} error`)
+            console.log(`API data for ${appid} error, fallback to english`)
+
+            if (bodyEn) {
+                const dataEn = JSON.parse(bodyEn);
+                if (dataEn[appid] && dataEn[appid].data) {
+                    data = dataEn[appid].data
+
+                    return updateStoreData(data, appid)
+                }
+            }
             return {
                 meta: {
                     platform: "Steam",
@@ -117,20 +143,7 @@ export async function getAppDataFromAPI(appid, steamapi) {
         }
     // }
 
-    const pageData = await getAppDataFromStorePage(appid)
-    if (pageData != null) {
-        data.tags = pageData.tags
-        data.recentReview = pageData.recentReview
-        data.totalReview = pageData.totalReview
-    }
-
-    data.meta = {
-        platform: "Steam",
-        identifier: appid,
-        last_track_date: (new Date()).toISOString().slice(0, 10),
-    }
-
-    return data
+    return updateStoreData(data, appid)
 }
 
 // apiData to calendarData

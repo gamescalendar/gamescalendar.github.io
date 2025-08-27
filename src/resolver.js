@@ -498,7 +498,7 @@ export default class Resolver {
 
     updateOwnedGames() {
         Array.from(this.owned.keys()).forEach(appid => {
-            if (this.database.steamData[appid]) {
+            if (this.database.steamData[appid] && this.database.steamData[appid].app_data) {
                 this.database.steamData[appid].app_data.owned = true
             }
         })
@@ -580,7 +580,7 @@ export default class Resolver {
                     const calendarData = getCalendarData(appData);
                     
                     // 更新owned状态
-                    if (this.owned.has(appid.toString())) {
+                    if (calendarData.app_data && this.owned.has(appid.toString())) {
                         calendarData.app_data.owned = true;
                     }
 
