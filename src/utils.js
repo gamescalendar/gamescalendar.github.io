@@ -86,7 +86,7 @@ export function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
             return
         }
 
-        if ((obj.app_data.metaScore && !obj.app_data.metaReviewsCount) || (obj.app_data.userScore && !obj.app_data.userReviewsCount)) {
+        if ((obj.app_data?.metaScore && !obj.app_data?.metaReviewsCount) || (obj.app_data?.userScore && !obj.app_data?.userReviewsCount)) {
             console.log(`${getTrackedName(tracked, target)} tracked but reviews score and count mismatched`)
             needRefreshTargets.push({
                 target: target,
