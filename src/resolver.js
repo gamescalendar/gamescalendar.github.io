@@ -521,7 +521,7 @@ export default class Resolver {
                 console.log(`[更新] 更新游戏数据: AppID ${appid} - "${existingTitle}"`);
             }
             
-            const appData = await getAppDataFromAPI(appid, this.steam);
+            let appData = await getAppDataFromAPI(appid, this.steam);
 
             if (appData.meta?.error) {
                 // 下架游戏？也可能是API错误。尝试获取旧数据
