@@ -1,4 +1,5 @@
 {
+  "name": "gamescalendar",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "https-proxy-agent": "^7.0.1",
