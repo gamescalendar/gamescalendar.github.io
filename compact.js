@@ -173,6 +173,7 @@ try {
 
         // 4. Prepare the git rebase command and arguments
         const gitArgs = ['rebase', '-i', '--committer-date-is-author-date', rebaseBase];
+        console.log(`即将执行命令: git ${gitArgs.join(' ')}`);
 
         // 5. Execute the rebase process with our custom Node.js editor and pass the hashes as arguments
         const rebaseProcess = spawn('git', gitArgs, {
