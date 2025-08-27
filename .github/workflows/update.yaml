@@ -65,17 +65,17 @@ jobs:
           git status
 
       - name: commit
-        if: ${{ github.event_name != 'schedule' }}
         run: |
           if ! git diff --exit-code --cached; then
-            git commit -am "${{ github.event.head_commit.message }} at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
-            git push origin release
-          fi
+            last_commit_message="$(git log -1 --pretty=%s)"
 
-      - name: commit
-        if: ${{ github.event_name == 'schedule' }}
-        run: |
-          if ! git diff --exit-code --cached; then
-            git commit -am "Daily update at $(date -u "+%Y-%m-%dT %H:%M:%S%Z")"
-            git push origin release
+            if [[ "$last_commit_message" == "Daily update"* ]]; then
+                git commit --fixup HEAD^
+                git rebase -i --autosquash HEAD~2
+                
+                git push origin release -f
+            else
+              git commit -am "Daily update"
+              git push origin release
+            fi
           fi
