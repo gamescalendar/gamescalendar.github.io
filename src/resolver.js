@@ -632,7 +632,7 @@ export default class Resolver {
         };
 
         // 等待所有处理完成
-        const results = await runWithConcurrency(appidsToProcess, 100, 500);
+        const results = await runWithConcurrency(appidsToProcess, 50, 1000);
         
         // 统计成功和失败的数量，按类型分组
         const successful = results.filter(r => r.success);
