@@ -11,6 +11,7 @@ export async function makeRequest(url, opts = {}) {
     let options = { ...opts };
 
     try {
+        console.log(`Fetching ${url}`)
         if (isCI) {
             response = await fetch(url, options);
         } else {
@@ -177,4 +178,56 @@ export function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
     })
 
     return limited.map(x => x.target)
+}
+
+const quarterMap = {
+'Q1': '03-31',
+'Q2': '06-30',
+'Q3': '09-30',
+'Q4': '12-31'
+};
+export function ResolveDateFromString(inputStr) {
+  let upperStr = inputStr.toUpperCase();
+  let foundYear = null;
+  let foundQuarter = null;
+
+  // 替换季度
+  for (const qKey in quarterMap) {
+    if (upperStr.includes(qKey)) {
+      foundQuarter = qKey;
+      upperStr = upperStr.replaceAll(qKey, "").trim()
+      break;
+    }
+  }
+
+  // 查找年份
+  const yearMatch = upperStr.match(/\d{4}/);
+  if (yearMatch) {
+    foundYear = yearMatch[0];
+  }
+
+  // 季度+年份
+  if (foundYear && foundQuarter) {
+    return `${foundYear}-${quarterMap[foundQuarter]}`;
+  }
+  
+  // 有且仅有年份
+  const yearGroups = upperStr.match(/\d+/g)
+  if (foundYear && yearGroups.length === 1 && yearGroups[0].length === 4) {
+    return `${yearGroups[0]}-12-31`;
+  }
+  
+  // 没有找到年份和季度，尝试解析为标准日期
+  const date = new Date(inputStr);
+  if (!isNaN(date.getTime())) {
+    const yyyy = date.getFullYear();
+    const mm = String(date.getMonth() + 1).padStart(2, '0');
+    const dd = String(date.getDate()).padStart(2, '0');
+    return `${yyyy}-${mm}-${dd}`;
+  }
+  
+  // 其他情况，返回三年后
+  const now = new Date();
+  const futureYear = now.getFullYear() + 3;
+  return `${futureYear}-01-01`;
 }

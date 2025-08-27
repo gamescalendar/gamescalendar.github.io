@@ -1,5 +1,5 @@
 import cheerio from 'cheerio';
-import { makeRequest, yearStrToNumber, cnDateStrToDateStr } from '../utils.js';
+import { makeRequest, yearStrToNumber, cnDateStrToDateStr, ResolveDateFromString } from '../utils.js';
 import config from '../../config.js';
 
 function clearURL(url) {
@@ -64,6 +64,11 @@ async function getAppDataFromStorePage(appid) {
     return data
 }
 
+const reqOpts = {
+    headers: {
+        cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
+    }
+}
 export async function getAppDataFromAPI(appid, steamapi) {
     let data
 
@@ -71,14 +76,14 @@ export async function getAppDataFromAPI(appid, steamapi) {
         // steamapi uses camelCase
         // data = await steamapi.getGameDetails(appid)
     // } else {
-        let api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=${config.languageOption}`
-        console.log(`Fetching API for ${appid} from ${api}`)
-    
-        const body = await makeRequest(api, {
-            headers: {
-                cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
-            }
-        });
+        const api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=${config.languageOption}`
+        const apiEn = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=english`;
+
+        const [body, bodyEn] = await Promise.all([
+            makeRequest(api, reqOpts),
+            makeRequest(apiEn, reqOpts)
+        ]);
+
         if (!body) {
             console.log(`Failed to fetch store API for ${appid} from ${api}`)
             return null
@@ -89,6 +94,20 @@ export async function getAppDataFromAPI(appid, steamapi) {
             return null
         }
         data = data[appid].data
+
+        if (bodyEn) {
+            try {
+                const dataEn = JSON.parse(bodyEn);
+                if (dataEn[appid] && dataEn[appid].data) {
+                    if (dataEn[appid].data.release_date) {
+                        console.log(`${appid}: ${data.release_date?.date} -> ${dataEn[appid].data.release_date?.date}`);
+                        data.release_date.en = dataEn[appid].data.release_date.date
+                    }
+                }
+            } catch (e) {
+                console.log(`Failed to parse English data for ${appid}.`, e);
+            }
+        }
     // }
 
     const pageData = await getAppDataFromStorePage(appid)
@@ -109,10 +128,10 @@ export async function getAppDataFromAPI(appid, steamapi) {
 
 // apiData to calendarData
 export function getCalendarData(data) {
-    let date = data.release_date.date ?? data.release_date
+    let date = data.release_date.en ?? data.release_date.date
     let isTBA = data.release_date.coming_soon && !data.release_date.date
 
-    let start = cnDateStrToDateStr(date)
+    let start = ResolveDateFromString(date)
     if (!isTBA) {
         let year = yearStrToNumber(date) // 2024
         if (year !== -1) {
