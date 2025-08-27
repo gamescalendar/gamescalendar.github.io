@@ -63,23 +63,23 @@ jobs:
 
       - name: commit
         run: |
-          if ! git diff --exit-code --cached; then
-            commit1=$(git log --format="%s" -n 2 | head -n 1)
-            commit2=$(git log --format="%s" -n 2 | tail -n 1)
+          commit1=$(git log --format="%s" -n 2 | head -n 1)
+          commit2=$(git log --format="%s" -n 2 | tail -n 1)
 
-            if [[ "$commit1" == "Daily update"* ]] && [[ "$commit2" == "Daily update"* ]]; then
-              commit_sha1=$(git rev-parse HEAD)
-              commit_sha2=$(git rev-parse HEAD~1)
-              
-              git status
-              GIT_SEQUENCE_EDITOR="echo 'pick ${commit_sha2}
-            fixup $commit_sha1' >" git rebase -i HEAD~2
-
-              git status
-            fi
-
-            git checkout stash@{0} events.json wishlist.txt wishlist.json owned.txt owned.json meta.json
+          if [[ "$commit1" == "Daily update"* ]] && [[ "$commit2" == "Daily update"* ]]; then
+            commit_sha1=$(git rev-parse HEAD)
+            commit_sha2=$(git rev-parse HEAD~1)
             
+            git status
+            GIT_SEQUENCE_EDITOR="echo 'pick ${commit_sha2}
+          fixup $commit_sha1' >" git rebase -i HEAD~2
+
+            git status
+          fi
+
+          git checkout stash@{0} events.json wishlist.txt wishlist.json owned.txt owned.json meta.json
+            
+          if ! git diff --exit-code --cached; then
             # idk why but git 2.43 will raise an error says `fatal: '--merge', '--ours', or '--theirs' cannot be used when checking out of a tree` 
             # git checkout stash@{0} --theirs events.json wishlist.txt wishlist.json owned.txt owned.json meta.json
             git checkout master -- static.json override.json index.html float.css favicon.svg
