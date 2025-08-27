@@ -32,10 +32,12 @@ async function getAppDataFromStorePage(appid) {
         let recentSummary = recentReview.find(".game_review_summary")
         if (recentSummary.length > 0) {
             data.recentReview = {
-                summary: recentSummary.text(),
+                summary: recentSummary.text(), // 过去 30 天内的 2,646 篇用户评测中有 90% 为好评。
                 cssClass: recentSummary.attr("class").replace("game_review_summary", "").trim(),
                 count: recentReview.find(".summary").find(".responsive_hidden").text().trim(),
                 tooltip: recentReview.attr("data-tooltip-html"),
+
+                caption: recentReview.find(".subtitle").text().trim(), // 最近评测：
             }
         }
     }
@@ -45,10 +47,12 @@ async function getAppDataFromStorePage(appid) {
         let totalSummary = totalReview.find(".game_review_summary")
         if (totalSummary.length > 0) {
             data.totalReview = {
-                summary: totalSummary.text(),
-                cssClass: totalSummary.attr("class").replace("game_review_summary", "").trim(),
-                count: totalReview.find(".summary").find(".responsive_hidden").text().trim(),
-                tooltip: totalReview.attr("data-tooltip-html"),
+                summary: totalSummary.text(), // 特别好评
+                cssClass: totalSummary.attr("class").replace("game_review_summary", "").trim(), // positive
+                count: totalReview.find(".summary").find(".responsive_hidden").text().trim(), // (15,209)
+                tooltip: totalReview.attr("data-tooltip-html"), // 您语言的 15,209 篇用户评测中有 91% 为好评。
+
+                caption: totalReview.find(".subtitle").text().trim(), // 简体中文评测：
             }
         }
     }
@@ -61,6 +65,19 @@ async function getAppDataFromStorePage(appid) {
             name: x.text().trim(),
         }
     })
+
+    let appReview = $("#app_reviews_hash")
+    let reviews = $(appReview?.find(".review_language_outliers")?.find(".outlier_totals"))
+    let allLanguageReviews = $(reviews?.find("div:nth-child(1)"))
+    let allLangSummary = allLanguageReviews?.find(".game_review_summary")
+    if (allLanguageReviews && allLanguageReviews.length > 0 && allLangSummary && allLangSummary.length > 0) {
+        data.allLangReview = {
+            summary: allLangSummary.text(),
+            cssClass: allLangSummary.attr("class").replace("game_review_summary", "").trim(),
+            count: allLanguageReviews.find(".review_summary_count").text().trim(), // 83,597
+            tooltip: allLangSummary.attr("data-tooltip-html"), // 此游戏的 83,597 篇用户评测中有 93% 为好评。
+        }
+    }
 
     return data
 }
