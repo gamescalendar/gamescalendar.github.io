@@ -2,21 +2,23 @@ const { execSync, spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
-// 设置在任何命令失败时立即退出脚本
+// Set the script to exit immediately if any command fails
 process.on('unhandledRejection', (reason, promise) => {
     console.error('Unhandled Rejection at:', promise, 'reason:', reason);
     process.exit(1);
 });
 
-const BRANCH = "compact"
-// 定义每日更新提交信息的正则表达式
+// Define the regular expression for daily update commit messages
 const DAILY_UPDATE_PATTERN = /^Daily update at/;
 
 async function runScript() {
     try {
-        // --- 脚本配置和准备 ---
+        // --- Script setup and preparation ---
 
-        // 检查工作区是否干净，避免 rebase 过程中出现意外
+        // 获取命令行参数，第一个参数是目标分支名，如果没有则默认为 'release'
+        const TARGET_BRANCH = process.argv[2] || 'release';
+
+        // Check if the working directory is clean to avoid unexpected issues during rebase
         console.log('正在检查工作区状态...');
         if (execSync('git status --porcelain').toString().trim().length > 0) {
             console.error("错误：工作区不干净，请先提交或暂存你的修改。");
@@ -24,94 +26,153 @@ async function runScript() {
         }
         console.log('工作区干净。');
 
-        // 切换到 release 分支，如果当前不在该分支上
+        // Switch to the target branch if not already on it
         const currentBranch = execSync('git rev-parse --abbrev-ref HEAD').toString().trim();
-        if (currentBranch !== BRANCH) {
-            console.log(`注意：当前分支不是 '${currentBranch}'，正在切换到 '${BRANCH}' 分支...`);
-            execSync(`git checkout ${BRANCH}`);
+        if (currentBranch !== TARGET_BRANCH) {
+            console.log(`注意：当前分支不是 '${currentBranch}'，正在切换到 '${TARGET_BRANCH}' 分支...`);
+            execSync(`git checkout ${TARGET_BRANCH}`);
+        } else {
+            console.log(`已在目标分支 '${TARGET_BRANCH}' 上。`);
         }
 
-        // --- 获取并解析完整的提交历史 ---
+        // --- Fetch and parse the complete commit history ---
 
-        console.log("正在获取完整的提交历史并构建数组...");
-        // 使用一个 git log 命令获取所有提交的哈希和信息
+        console.log(`正在获取 '${TARGET_BRANCH}' 分支的完整提交历史并构建数组...`);
+        // Use a single git log command to get the hash and message for all commits
         const logOutput = execSync('git log --pretty=format:"%H|%s"').toString().trim();
         if (!logOutput) {
             console.log("Git 仓库没有提交记录。");
             return;
         }
         
-        // 将输出的每一行分割成单独的提交对象
+        // Split the output into individual commit objects
         const allCommits = logOutput.split('\n').map(line => {
             const [hash, message] = line.split('|');
             return { hash, message };
         });
 
-        // --- 查找连续的提交序列 ---
-
-        let startCommitIndex = -1;
-        let endCommitIndex = -1;
+        // --- Find the contiguous commit sequence ---
+        
+        let startIndex = -1;
+        let endIndex = -1;
         let foundSequence = false;
-
-        // 从最近的提交开始向后遍历，寻找第一个连续序列
+        
+        // Iterate through all commits to find the first sequence from the newest to oldest commit
         for (let i = 0; i < allCommits.length; i++) {
             const commit = allCommits[i];
             
             if (DAILY_UPDATE_PATTERN.test(commit.message)) {
-                // 如果这是第一个匹配的提交，我们开始一个新序列
-                if (startCommitIndex === -1) {
-                    endCommitIndex = i;
-                    startCommitIndex = i;
-                } else {
-                    // 如果前一个提交也是每日更新，则扩展当前序列
-                    startCommitIndex = i;
+                // If this is a matching commit, it's a potential part of a sequence
+                if (startIndex === -1) {
+                    startIndex = i;
                 }
+                endIndex = i;
             } else {
-                // 如果当前提交不匹配，并且我们已经找到了一个序列
-                if (startCommitIndex !== -1 && endCommitIndex !== startCommitIndex) {
+                // If we encounter a non-matching commit, check if we've found a valid sequence
+                if (startIndex !== -1 && (endIndex - startIndex) >= 1) {
                     foundSequence = true;
                     break;
                 }
-                // 重置索引，准备寻找下一个序列
-                startCommitIndex = -1;
-                endCommitIndex = -1;
+                // Reset indices for the next search
+                startIndex = -1;
+                endIndex = -1;
             }
         }
-        
-        // 确保找到了一个有效的序列（至少两个提交）
-        if (!foundSequence || startCommitIndex === endCommitIndex) {
+
+        // Check for a sequence that extends to the very beginning of the history
+        if (startIndex !== -1 && (endIndex - startIndex) >= 1) {
+            foundSequence = true;
+        }
+
+        // Ensure that a valid sequence was found (at least two commits)
+        if (!foundSequence) {
             console.log("没有找到连续的每日更新提交序列（至少需要两个提交）。");
             return;
         }
-
-        const startCommit = allCommits[startCommitIndex];
-        const endCommit = allCommits[endCommitIndex];
-        const count = endCommitIndex - startCommitIndex + 1;
         
-        // 从提交信息中提取开始和结束日期
-        const startDate = startCommit.message.match(/\d{4}-\d{2}-\d{2}/)[0];
-        const endDate = endCommit.message.match(/\d{4}-\d{2}-\d{2}/)[0];
+        // Correct the indices to be in chronological order
+        const oldestCommitIndex = endIndex;
+        const newestCommitIndex = startIndex;
+        
+        const startCommit = allCommits[oldestCommitIndex];
+        const endCommit = allCommits[newestCommitIndex];
+        const count = newestCommitIndex - oldestCommitIndex + 1;
+        
+        // Extract start and end dates from the commit messages
+        const startDate = startCommit.message.match(/\d{4}-\d{2}-\d{2}/)?.[0] || 'Unknown Date';
+        const endDate = endCommit.message.match(/\d{4}-\d{2}-\d{2}/)?.[0] || 'Unknown Date';
 
         console.log(`找到一个包含 ${count} 个提交的连续序列，从 ${startDate} 到 ${endDate}。`);
+        console.log("将要合并的提交：");
+        // FIX: The loop condition was wrong. 'newestCommitIndex' is smaller than 'oldestCommitIndex'.
+        for (let i = newestCommitIndex; i <= oldestCommitIndex; i++) {
+            const commit = allCommits[i];
+            console.log(`  - ${commit.hash.substring(0, 7)}: ${commit.message}`);
+        }
         console.log("正在将这些提交合并为一个...");
 
-        // 获取 rebase 操作的基准提交哈希
-        // 这是我们要合并的序列中第一个提交的父提交
-        const rebaseBase = (endCommitIndex + 1 < allCommits.length) 
-                           ? allCommits[endCommitIndex + 1].hash 
-                           : 'HEAD~' + count; // fallback if it's the beginning of history
+        // The rebase base is the commit *before* the first commit in the sequence we want to squash.
+        const rebaseBase = (oldestCommitIndex + 1 < allCommits.length) 
+                           ? allCommits[oldestCommitIndex + 1].hash 
+                           : 'HEAD~' + count; 
 
-        // --- 执行自动化的 git rebase ---
+        // --- Execute automated git rebase ---
 
-        // 创建临时文件来自动化 git rebase 的交互式编辑
+        // 1. Create a temporary file to store the hashes of the commits to be squashed (excluding the oldest commit which will be the 'pick').
+        // The rebase todo list is newest to oldest. So we take all but the last commit in our slice.
+        // Fix: Swap the slice indices to correctly get the range of commits.
+        const commitsToSquash = allCommits.slice(newestCommitIndex, oldestCommitIndex).map(c => c.hash);
+        const commitsToSquashFilePath = path.join('/tmp', `commits_to_squash_${Date.now()}`);
+        fs.writeFileSync(commitsToSquashFilePath, commitsToSquash.join('\n'));
+        console.log(`\n--- ${commitsToSquashFilePath} 的内容 (要 squash 的提交哈希) ---`);
+        console.log(fs.readFileSync(commitsToSquashFilePath, 'utf-8'));
+        console.log('--------------------------------------------------\n');
+
+        // 2. Create the GIT_SEQUENCE_EDITOR script using awk.
         const gitSequenceEditorPath = path.join('/tmp', `git_sequence_editor_${Date.now()}`);
+        const awkScript = `
+#!/bin/bash
+# awk script to check for specific hashes and apply 'squash'
+# Reads the list of hashes to squash from the first file ($1)
+# Reads the git rebase todo list from the second file ($2) and processes it.
+# The 'BEGIN {FS=" "}' sets the field separator to space.
+awk '
+BEGIN {
+    FS=" "
+}
+NR==FNR {
+    hashes[$1]=1
+    next
+}
+{
+    if ($1 == "pick" && ($2 in hashes)) {
+        $1 = "squash"
+        print
+    } else {
+        print
+    }
+}
+' "${commitsToSquashFilePath}" "$1" > "$1.tmp" && mv "$1.tmp" "$1"
+`;
+        fs.writeFileSync(gitSequenceEditorPath, awkScript, { mode: 0o755 });
+        console.log(`\n--- ${gitSequenceEditorPath} 的内容 (awk 编辑器脚本) ---`);
+        console.log(fs.readFileSync(gitSequenceEditorPath, 'utf-8'));
+        console.log('--------------------------------------------------\n');
+
+        // 3. Create a temporary commit message file for the rebase.
         const gitEditorPath = path.join('/tmp', `git_editor_${Date.now()}`);
+        const commitMessageContent = `Compacted: Daily update from ${startDate} to ${endDate}`;
+        fs.writeFileSync(gitEditorPath, `#!/bin/bash\necho "${commitMessageContent}" > "$1"`, { mode: 0o755 });
+        console.log(`\n--- ${gitEditorPath} 的内容 (新提交信息) ---`);
+        console.log(fs.readFileSync(gitEditorPath, 'utf-8'));
+        console.log('--------------------------------------------------\n');
 
-        fs.writeFileSync(gitSequenceEditorPath, `#!/bin/bash\nsed -i '2,$s/^pick/squash/' "$1"`, { mode: 0o755 });
-        fs.writeFileSync(gitEditorPath, `#!/bin/bash\necho "Compacted: Daily update from ${startDate} to ${endDate}" > "$1"`, { mode: 0o755 });
+        // 4. Prepare the git rebase command and arguments
+        const gitArgs = ['rebase', '-i', '--committer-date-is-author-date', rebaseBase];
+        console.log(`即将执行命令: git ${gitArgs.join(' ')}`);
 
-        // 使用 spawn 执行 rebase
-        const rebaseProcess = spawn('git', ['rebase', '-i', '--committer-date-is-author-date', rebaseBase], {
+        // 5. Execute the rebase process with our custom editors
+        const rebaseProcess = spawn('git', gitArgs, {
             stdio: 'inherit',
             env: {
                 ...process.env,
@@ -120,9 +181,9 @@ async function runScript() {
             }
         });
 
-        // 等待 rebase 进程完成
+        // 6. Wait for the rebase process to finish and clean up.
         rebaseProcess.on('close', (code) => {
-            // 清理临时文件
+            fs.unlinkSync(commitsToSquashFilePath);
             fs.unlinkSync(gitSequenceEditorPath);
             fs.unlinkSync(gitEditorPath);
             
