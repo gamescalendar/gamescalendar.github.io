@@ -104,7 +104,6 @@ async function runScript() {
 
         console.log(`找到一个包含 ${count} 个提交的连续序列，从 ${startDate} 到 ${endDate}。`);
         console.log("将要合并的提交：");
-        // FIX: The loop condition was wrong. 'newestCommitIndex' is smaller than 'oldestCommitIndex'.
         for (let i = newestCommitIndex; i <= oldestCommitIndex; i++) {
             const commit = allCommits[i];
             console.log(`  - ${commit.hash.substring(0, 7)}: ${commit.message}`);
@@ -118,72 +117,59 @@ async function runScript() {
 
         // --- Execute automated git rebase ---
 
-        // 1. Create a temporary file to store the hashes of the commits to be squashed (excluding the oldest commit which will be the 'pick').
-        // The rebase todo list is newest to oldest. So we take all but the last commit in our slice.
-        // Fix: Swap the slice indices to correctly get the range of commits.
+        // 1. Get the hashes of the commits to be squashed (excluding the oldest commit which will be the 'pick').
         const commitsToSquash = allCommits.slice(newestCommitIndex, oldestCommitIndex).map(c => c.hash);
-        const commitsToSquashFilePath = path.join('/tmp', `commits_to_squash_${Date.now()}`);
-        fs.writeFileSync(commitsToSquashFilePath, commitsToSquash.join('\n'));
-        console.log(`\n--- ${commitsToSquashFilePath} 的内容 (要 squash 的提交哈希) ---`);
-        console.log(fs.readFileSync(commitsToSquashFilePath, 'utf-8'));
-        console.log('--------------------------------------------------\n');
+        
+        // 2. Create the GIT_SEQUENCE_EDITOR script using Node.js to handle the todo list
+        const gitSequenceEditorPath = path.join('/tmp', `git_sequence_editor_${Date.now()}.js`);
+        
+        const editorScriptContent = `#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
 
-        // 2. Create the GIT_SEQUENCE_EDITOR script using awk.
-        const gitSequenceEditorPath = path.join('/tmp', `git_sequence_editor_${Date.now()}`);
-        const awkScript = `
-#!/bin/bash
-# awk script to check for specific hashes and apply 'squash'
-# Reads the list of hashes to squash from the first file ($1)
-# Reads the git rebase todo list from the second file ($2) and processes it.
-# The 'BEGIN {FS=" "}' sets the field separator to space.
-awk '
-BEGIN {
-    FS=" "
+const todoFilePath = process.argv[2];
+const hashesToSquash = process.argv.slice(3);
+
+try {
+    const todoContent = fs.readFileSync(todoFilePath, 'utf-8');
+    const lines = todoContent.split('\\n');
+    
+    const newLines = lines.map(line => {
+        const parts = line.trim().split(' ');
+        if (parts[0] === 'pick' && hashesToSquash.includes(parts[1])) {
+            return \`squash \${parts[1]} \${parts.slice(2).join(' ')}\`;
+        }
+        return line;
+    });
+    
+    fs.writeFileSync(todoFilePath, newLines.join('\\n'));
+} catch (error) {
+    console.error('Error in Git sequence editor:', error.message);
+    process.exit(1);
 }
-NR==FNR {
-    hashes[$1]=1
-    next
-}
-{
-    if ($1 == "pick" && ($2 in hashes)) {
-        $1 = "squash"
-        print
-    } else {
-        print
-    }
-}
-' "${commitsToSquashFilePath}" "$1" > "$1.tmp" && mv "$1.tmp" "$1"
 `;
-        fs.writeFileSync(gitSequenceEditorPath, awkScript, { mode: 0o755 });
-        console.log(`\n--- ${gitSequenceEditorPath} 的内容 (awk 编辑器脚本) ---`);
-        console.log(fs.readFileSync(gitSequenceEditorPath, 'utf-8'));
-        console.log('--------------------------------------------------\n');
+        fs.writeFileSync(gitSequenceEditorPath, editorScriptContent, { mode: 0o755 });
 
         // 3. Create a temporary commit message file for the rebase.
         const gitEditorPath = path.join('/tmp', `git_editor_${Date.now()}`);
         const commitMessageContent = `Compacted: Daily update from ${startDate} to ${endDate}`;
         fs.writeFileSync(gitEditorPath, `#!/bin/bash\necho "${commitMessageContent}" > "$1"`, { mode: 0o755 });
-        console.log(`\n--- ${gitEditorPath} 的内容 (新提交信息) ---`);
-        console.log(fs.readFileSync(gitEditorPath, 'utf-8'));
-        console.log('--------------------------------------------------\n');
 
         // 4. Prepare the git rebase command and arguments
         const gitArgs = ['rebase', '-i', '--committer-date-is-author-date', rebaseBase];
-        console.log(`即将执行命令: git ${gitArgs.join(' ')}`);
-
-        // 5. Execute the rebase process with our custom editors
+        
+        // 5. Execute the rebase process with our custom Node.js editor and pass the hashes as arguments
         const rebaseProcess = spawn('git', gitArgs, {
             stdio: 'inherit',
             env: {
                 ...process.env,
-                GIT_SEQUENCE_EDITOR: gitSequenceEditorPath,
+                GIT_SEQUENCE_EDITOR: `${gitSequenceEditorPath} ${commitsToSquash.join(' ')}`,
                 GIT_EDITOR: gitEditorPath,
             }
         });
 
         // 6. Wait for the rebase process to finish and clean up.
         rebaseProcess.on('close', (code) => {
-            fs.unlinkSync(commitsToSquashFilePath);
             fs.unlinkSync(gitSequenceEditorPath);
             fs.unlinkSync(gitEditorPath);
             
