@@ -499,7 +499,7 @@ export default class Resolver {
     updateOwnedGames() {
         Array.from(this.owned.keys()).forEach(appid => {
             if (this.database.steamData[appid]) {
-                this.database.steamData.app_data.owned = true
+                this.database.steamData[appid].app_data.owned = true
             }
         })
     }
