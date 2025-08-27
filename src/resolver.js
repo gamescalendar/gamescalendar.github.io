@@ -489,8 +489,19 @@ export default class Resolver {
         // 更新日历数据
         if (this.wishlist.length > 0) {
             await this.updateCalendarData();
-            await this.database.save();
         }
+
+        this.updateOwnedGames()
+        
+        await this.database.save();
+    }
+
+    updateOwnedGames() {
+        Array.from(this.owned.keys()).forEach(appid => {
+            if (this.database.steamData[appid]) {
+                this.database.steamData.app_data.owned = true
+            }
+        })
     }
 
     /**
