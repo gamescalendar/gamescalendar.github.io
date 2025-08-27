@@ -66,12 +66,13 @@ jobs:
 
       - name: commit
         run: |
+          set +x
           if ! git diff --exit-code --cached; then
+            set -x
             last_commit_message="$(git log -1 --pretty=%s)"
 
             if [[ "$last_commit_message" == "Daily update"* ]]; then
-                git commit --fixup HEAD^
-                git rebase -i --autosquash HEAD~2
+                git commit --amend --no-edit -s
                 
                 git push origin release -f
             else
