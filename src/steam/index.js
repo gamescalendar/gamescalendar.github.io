@@ -91,7 +91,14 @@ export async function getAppDataFromAPI(appid, steamapi) {
         data = JSON.parse(body);
         if (!data[appid] || !data[appid].data) {
             console.log(`API data for ${appid} error`)
-            return null
+            return {
+                meta: {
+                    platform: "Steam",
+                    identifier: appid,
+                    last_track_date: (new Date()).toISOString().slice(0, 10),
+                    error: true,
+                }
+            }
         }
         data = data[appid].data
 
@@ -128,6 +135,11 @@ export async function getAppDataFromAPI(appid, steamapi) {
 
 // apiData to calendarData
 export function getCalendarData(data) {
+    if (data.meta?.error) {
+        return {
+            meta: data.meta,
+        }
+    }
     let date = data.release_date.en ?? data.release_date.date
     let isTBA = data.release_date.coming_soon && !data.release_date.date
 

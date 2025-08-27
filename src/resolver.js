@@ -566,6 +566,15 @@ export default class Resolver {
                 }
                 
                 const appData = await getAppDataFromAPI(appid, this.steam);
+
+                if (appData.meta?.error) {
+                    // 下架游戏？也可能是API错误。尝试获取旧数据
+                    let meta = appData.meta
+                    if (this.database.steamData[appid]) {
+                        appData = this.database.steamData[appid]
+                        appData.meta = meta
+                    }
+                }
                 
                 if (appData) {
                     const calendarData = getCalendarData(appData);
