@@ -516,6 +516,9 @@
                         }
                     } else {
                         event.color = "#417a9b"
+                        if (event.app_data.owned) {
+                            event.color = "#5c8a00"
+                        }
                     }
                 } else if (event.type.toLowerCase() == "anime") {
                     if (!event.color) {
