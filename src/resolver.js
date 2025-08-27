@@ -511,6 +511,60 @@ export default class Resolver {
         return this.owned.has(gameId.toString());
     }
 
+    async resolveAppidTask(item) {
+        const { appid, type: updateType, title: existingTitle } = item;
+        
+        // try {
+            if (updateType === 'initialization') {
+                console.log(`[初始化] 获取新游戏数据: AppID ${appid}`);
+            } else if (updateType === 'update') {
+                console.log(`[更新] 更新游戏数据: AppID ${appid} - "${existingTitle}"`);
+            }
+            
+            const appData = await getAppDataFromAPI(appid, this.steam);
+
+            if (appData.meta?.error) {
+                // 下架游戏？也可能是API错误。尝试获取旧数据
+                let meta = appData.meta
+                if (this.database.steamData[appid]) {
+                    appData = this.database.steamData[appid]
+                    appData.meta = meta
+                }
+            }
+            
+            if (appData) {
+                const calendarData = getCalendarData(appData);
+                
+                // 更新owned状态
+                if (calendarData.app_data && this.owned.has(appid.toString())) {
+                    calendarData.app_data.owned = true;
+                }
+
+                // 更新last_track_date为当前日期
+                if (calendarData.meta) {
+                    calendarData.meta.last_track_date = this.getCurrentDateString();
+                }
+
+                // 添加到steamData
+                this.database.updateSteam(appid, calendarData)
+                
+                if (updateType === 'initialization') {
+                    console.log(`[初始化] 成功: AppID ${appid} - "${appData.name}"`);
+                } else if (updateType === 'update') {
+                    console.log(`[更新] 成功: AppID ${appid} - "${existingTitle}" -> "${appData.name}"`);
+                }
+                
+                return { success: true, appid, data: calendarData, type: updateType };
+            } else {
+                console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - 无数据返回`);
+                return { success: false, appid, error: 'No data returned', type: updateType };
+            }
+        // } catch (error) {
+        //     console.error(`[${updateType === 'initialization' ? '初始化' : '更新'}] 错误: AppID ${appid} - ${error.message}`);
+        //     return { success: false, appid, error: error.message, type: updateType };
+        // }
+    }
+
     /**
      * 为wishlist中的appid获取详细数据并构建日历数据
      */
@@ -554,63 +608,31 @@ export default class Resolver {
         
         console.log(`\n=== 开始处理 ===`);
 
-        // 并行处理所有appid
-        const processPromises = appidsToProcess.map(async (item) => {
-            const { appid, type: updateType, title: existingTitle } = item;
-            
-            // try {
-                if (updateType === 'initialization') {
-                    console.log(`[初始化] 获取新游戏数据: AppID ${appid}`);
-                } else if (updateType === 'update') {
-                    console.log(`[更新] 更新游戏数据: AppID ${appid} - "${existingTitle}"`);
-                }
-                
-                const appData = await getAppDataFromAPI(appid, this.steam);
+        // 并发执行函数
+        const runWithConcurrency = async (items, concurrency, delay) => {
+            const allResults = [];
+            let currentIndex = 0;
 
-                if (appData.meta?.error) {
-                    // 下架游戏？也可能是API错误。尝试获取旧数据
-                    let meta = appData.meta
-                    if (this.database.steamData[appid]) {
-                        appData = this.database.steamData[appid]
-                        appData.meta = meta
-                    }
-                }
-                
-                if (appData) {
-                    const calendarData = getCalendarData(appData);
-                    
-                    // 更新owned状态
-                    if (calendarData.app_data && this.owned.has(appid.toString())) {
-                        calendarData.app_data.owned = true;
-                    }
+            while (currentIndex < items.length) {
+                const end = Math.min(currentIndex + concurrency, items.length);
+                const promises = items.slice(currentIndex, end).map(async (item) => this.resolveAppidTask(item));
 
-                    // 更新last_track_date为当前日期
-                    if (calendarData.meta) {
-                        calendarData.meta.last_track_date = this.getCurrentDateString();
-                    }
+                const results = await Promise.all(promises);
+                allResults.push(...results);
+                currentIndex = end;
 
-                    // 添加到steamData
-                    this.database.updateSteam(appid, calendarData)
-                    
-                    if (updateType === 'initialization') {
-                        console.log(`[初始化] 成功: AppID ${appid} - "${appData.name}"`);
-                    } else if (updateType === 'update') {
-                        console.log(`[更新] 成功: AppID ${appid} - "${existingTitle}" -> "${appData.name}"`);
-                    }
-                    
-                    return { success: true, appid, data: calendarData, type: updateType };
-                } else {
-                    console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - 无数据返回`);
-                    return { success: false, appid, error: 'No data returned', type: updateType };
+                // 进行延迟
+                if (currentIndex < items.length) {
+                    console.log(`等待 ${delay}ms...`);
+                    await new Promise(resolve => setTimeout(resolve, delay));
                 }
-            // } catch (error) {
-            //     console.error(`[${updateType === 'initialization' ? '初始化' : '更新'}] 错误: AppID ${appid} - ${error.message}`);
-            //     return { success: false, appid, error: error.message, type: updateType };
-            // }
-        });
+            }
+
+            return allResults;
+        };
 
         // 等待所有处理完成
-        const results = await Promise.all(processPromises);
+        const results = await runWithConcurrency(appidsToProcess, 2, 500);
         
         // 统计成功和失败的数量，按类型分组
         const successful = results.filter(r => r.success);

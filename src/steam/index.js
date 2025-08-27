@@ -107,16 +107,17 @@ export async function getAppDataFromAPI(appid, steamapi) {
         }
         data = JSON.parse(body);
         if (!data || !data[appid] || !data[appid].data) {
-            console.log(`API data for ${appid} error, fallback to english`)
-
             if (bodyEn) {
                 const dataEn = JSON.parse(bodyEn);
                 if (dataEn && dataEn[appid] && dataEn[appid].data) {
+                    console.log(`API data for ${appid} error, fallback to english`)
+
                     data = dataEn[appid].data
 
                     return updateStoreData(data, appid)
                 }
             }
+            console.log(`API data for ${appid} error, record failure`)
             return {
                 meta: {
                     platform: "Steam",

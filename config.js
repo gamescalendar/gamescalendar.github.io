@@ -31,8 +31,8 @@ export default  {
     future: 30,
   },
   ratelimit: {
-    init: 60,
-    update: 20,
+    init: 200,
+    update: 30,
   },
   steam: {
 
