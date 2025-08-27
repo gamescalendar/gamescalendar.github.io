@@ -8,15 +8,16 @@ function clearURL(url) {
     return u.toString()
 }
 
+const reqOpts = {
+    headers: {
+        cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
+    }
+}
 async function getAppDataFromStorePage(appid) {
     let page = `https://store.steampowered.com/app/${appid}?l=${config.languageOption}`
     console.log(`Fetching Store page for ${appid} from ${page}`)
 
-    const body = await makeRequest(page, {
-        headers: {
-            cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
-        }
-    });
+    const body = await makeRequest(page, reqOpts);
     if (!body) {
         console.log(`Failed to fetch store page for ${appid} from ${page}`)
         return null
@@ -64,11 +65,6 @@ async function getAppDataFromStorePage(appid) {
     return data
 }
 
-const reqOpts = {
-    headers: {
-        cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
-    }
-}
 async function updateStoreData(data, appid) {
     const pageData = await getAppDataFromStorePage(appid)
     if (pageData != null) {
@@ -108,13 +104,17 @@ export async function getAppDataFromAPI(appid, steamapi) {
         data = JSON.parse(body);
         if (!data || !data[appid] || !data[appid].data) {
             if (bodyEn) {
-                const dataEn = JSON.parse(bodyEn);
-                if (dataEn && dataEn[appid] && dataEn[appid].data) {
-                    console.log(`API data for ${appid} error, fallback to english`)
+                try {
+                    const dataEn = JSON.parse(bodyEn);
+                    if (dataEn && dataEn[appid] && dataEn[appid].data) {
+                        console.log(`API data for ${appid} error, fallback to english`)
 
-                    data = dataEn[appid].data
+                        data = dataEn[appid].data
 
-                    return updateStoreData(data, appid)
+                        return updateStoreData(data, appid)
+                    }
+                } catch (e) {
+                    console.log(`Failed to parse English data for ${appid}.`, e);
                 }
             }
             console.log(`API data for ${appid} error, record failure`)
