@@ -196,8 +196,8 @@ export function getCalendarData(data) {
         }
     }
 
-    let supportLanguage = config.languageString.some(x => data.supported_languages.includes(x))
-    let supportAudio = config.languageString.some(x => data.supported_languages.includes(x + "<strong>*</strong>"))
+    let supportLanguage = config.languageString.some(x => data.supported_languages?.includes(x))
+    let supportAudio = config.languageString.some(x => data.supported_languages?.includes(x + "<strong>*</strong>"))
 
     return {
         meta: data.meta,
