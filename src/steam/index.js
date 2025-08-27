@@ -106,12 +106,12 @@ export async function getAppDataFromAPI(appid, steamapi) {
             return null
         }
         data = JSON.parse(body);
-        if (!data[appid] || !data[appid].data) {
+        if (!data || !data[appid] || !data[appid].data) {
             console.log(`API data for ${appid} error, fallback to english`)
 
             if (bodyEn) {
                 const dataEn = JSON.parse(bodyEn);
-                if (dataEn[appid] && dataEn[appid].data) {
+                if (dataEn && dataEn[appid] && dataEn[appid].data) {
                     data = dataEn[appid].data
 
                     return updateStoreData(data, appid)
@@ -131,7 +131,7 @@ export async function getAppDataFromAPI(appid, steamapi) {
         if (bodyEn) {
             try {
                 const dataEn = JSON.parse(bodyEn);
-                if (dataEn[appid] && dataEn[appid].data) {
+                if (dataEn && dataEn[appid] && dataEn[appid].data) {
                     if (dataEn[appid].data.release_date) {
                         console.log(`${appid}: ${data.release_date?.date} -> ${dataEn[appid].data.release_date?.date}`);
                         data.release_date.en = dataEn[appid].data.release_date.date
