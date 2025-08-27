@@ -167,7 +167,7 @@ try {
         // 3. Create a temporary commit message file for the rebase.
         const gitEditorPath = path.join('/tmp', `git_editor_${Date.now()}`);
         const newCommitMessage = reachedLimit
-            ? `Daily update at ${new Date().toISOString()}`
+            ? `squash! Daily update}`
             : `Compacted: Daily update from ${startDate} to ${endDate}`;
         fs.writeFileSync(gitEditorPath, `#!/bin/bash\necho "${newCommitMessage}" > "$1"`, { mode: 0o755 });
 
