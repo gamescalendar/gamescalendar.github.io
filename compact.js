@@ -125,10 +125,9 @@ async function runScript() {
         
         const editorScriptContent = `#!/usr/bin/env node
 const fs = require('fs');
-const path = require('path');
 
 const todoFilePath = process.argv[2];
-const hashesToSquash = process.argv.slice(3);
+const hashesToSquash = new Set(${JSON.stringify(commitsToSquash)});
 
 try {
     const todoContent = fs.readFileSync(todoFilePath, 'utf-8');
@@ -136,7 +135,7 @@ try {
     
     const newLines = lines.map(line => {
         const parts = line.trim().split(' ');
-        if (parts[0] === 'pick' && hashesToSquash.includes(parts[1])) {
+        if (parts[0] === 'pick' && hashesToSquash.has(parts[1])) {
             return \`squash \${parts[1]} \${parts.slice(2).join(' ')}\`;
         }
         return line;
