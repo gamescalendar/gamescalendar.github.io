@@ -345,11 +345,11 @@
                 }
                 let recentReview = ""
                 let totalReview = ""
-
+                let allLangReview = ""
                 if (data.recentReview) {
                     recentReview = `
                             <div class="user_reviews_summary_row">
-                                <div class="subtitle column">最近评测：</div>
+                                <div class="subtitle column">${data.recentReview.caption ?? "最近评测："}</div>
                                 <div class="summary column">
                                     <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
                                        title="${data.recentReview.tooltip}">
@@ -363,7 +363,7 @@
                 if (data.totalReview) {
                     totalReview = `
                     <div class="user_reviews_summary_row">
-                                <div class="subtitle column">全部评测：</div>
+                                <div class="subtitle column">${data.totalReview.caption ?? "全部评测："}</div>
                                 <div class="summary column">
                                     <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
                                        title="${data.totalReview.tooltip}">
@@ -374,10 +374,25 @@
                             </div>
 `
                 }
+                if (data.allLangReview) {
+                    allLangReview = `
+                    <div class="user_reviews_summary_row">
+                                <div class="subtitle column">总评测：</div>
+                                <div class="summary column">
+                                    <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
+                                       title="${data.allLangReview.tooltip}">
+                                        <span class="game_review_summary ${data.allLangReview.cssClass}">${data.allLangReview.summary}</span>
+                                        <span class="game_review_count">(${data.allLangReview.count})</span>
+                                    </a>
+                                </div>
+                            </div>
+`
+                }
                 const template = `
                         <div id="userReviews" class="user_reviews">
                             ${recentReview}
                             ${totalReview}
+                            ${allLangReview}
                         </div>
                         <div class="inner_rule"></div>
 `
@@ -516,6 +531,9 @@
                         }
                     } else {
                         event.color = "#417a9b"
+                        if (event.app_data?.owned) {
+                            event.color = "#5c8a00"
+                        }
                     }
                 } else if (event.type.toLowerCase() == "anime") {
                     if (!event.color) {
@@ -552,6 +570,9 @@
 
         function renderCalendar(events) {
             let cnDateStrToDateStr = (str) => {
+                if (!str) {
+                    return str;
+                }
                 return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
             }
             events.forEach(x=>{
