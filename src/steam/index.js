@@ -101,7 +101,11 @@ export async function getAppDataFromAPI(appid, steamapi) {
             console.log(`Failed to fetch store API for ${appid} from ${api}`)
             return null
         }
-        data = JSON.parse(body);
+        try {
+            data = JSON.parse(body);
+        } catch(e) {
+            console.log(`Failed to parse ${config.languageOption} data for ${appid}.\n${body}`, e);
+        }
         if (!data || !data[appid] || !data[appid].data) {
             if (bodyEn) {
                 try {
@@ -114,7 +118,7 @@ export async function getAppDataFromAPI(appid, steamapi) {
                         return updateStoreData(data, appid)
                     }
                 } catch (e) {
-                    console.log(`Failed to parse English data for ${appid}.`, e);
+                    console.log(`Failed to parse English data for ${appid}.\n${bodyEn}`, e);
                 }
             }
             console.log(`API data for ${appid} error, record failure`)
