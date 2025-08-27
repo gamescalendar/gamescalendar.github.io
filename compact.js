@@ -100,7 +100,7 @@ async function runOnce() {
         const newestCommitIndex = startIndex;
         
         // Apply the squash limit if the sequence is too long
-        let squashingCount = -(newestCommitIndex - oldestCommitIndex + 1);
+        let squashingCount = oldestCommitIndex-newestCommitIndex+1;
         const reachedLimit = squashingCount > SQUASH_LIMIT;
         if (reachedLimit) {
             // Adjust the number of commits to squash to the limit
@@ -115,7 +115,7 @@ async function runOnce() {
         const startDate = startCommit.authDate || 'Unknown Date';
         const endDate = endCommit.authDate || 'Unknown Date';
 
-        console.log(`找到一个包含 ${squashingCount} 个提交的连续序列，从 ${startDate} 到 ${endDate}。`);
+        console.log(`找到一个包含 ${squashingCount} 个提交的连续序列，从 ${startDate} (${oldestCommitIndex}) 到 ${endDate} (${newestCommitIndex})。`);
         console.log("将要合并的提交：");
         for (let i = newestCommitIndex; i <= effectiveOldestIndex; i++) {
             const commit = allCommits[i];
@@ -167,7 +167,7 @@ try {
         // 3. Create a temporary commit message file for the rebase.
         const gitEditorPath = path.join('/tmp', `git_editor_${Date.now()}`);
         const newCommitMessage = reachedLimit
-            ? `squash! Daily update}`
+            ? `squash! Daily update`
             : `Compacted: Daily update from ${startDate} to ${endDate}`;
         fs.writeFileSync(gitEditorPath, `#!/bin/bash\necho "${newCommitMessage}" > "$1"`, { mode: 0o755 });
 
