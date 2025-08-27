@@ -118,6 +118,7 @@ async function runScript() {
         // --- Execute automated git rebase ---
 
         // 1. Get the hashes of the commits to be squashed (excluding the oldest commit which will be the 'pick').
+        // The rebase todo list is newest to oldest. So we take all but the last commit in our slice.
         const commitsToSquash = allCommits.slice(newestCommitIndex, oldestCommitIndex).map(c => c.hash);
         
         // 2. Create the GIT_SEQUENCE_EDITOR script using Node.js to handle the todo list
@@ -127,7 +128,8 @@ async function runScript() {
 const fs = require('fs');
 
 const todoFilePath = process.argv[2];
-const hashesToSquash = new Set(${JSON.stringify(commitsToSquash)});
+// Fix: We need to use abbreviated hashes for the Set lookup.
+const hashesToSquash = new Set(${JSON.stringify(commitsToSquash.map(hash => hash.substring(0, 7)))});
 
 try {
     const todoContent = fs.readFileSync(todoFilePath, 'utf-8');
