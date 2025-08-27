@@ -147,6 +147,7 @@ try {
     process.exit(1);
 }
 `;
+        console.log(editorScriptContent)
         fs.writeFileSync(gitSequenceEditorPath, editorScriptContent, { mode: 0o755 });
 
         // 3. Create a temporary commit message file for the rebase.
