@@ -88,6 +88,7 @@ async function updateStoreData(data, appid) {
         data.tags = pageData.tags
         data.recentReview = pageData.recentReview
         data.totalReview = pageData.totalReview
+        data.allLangReview = pageData.allLangReview
     }
 
     data.meta = {
@@ -226,6 +227,7 @@ export function getCalendarData(data) {
             tags: data.tags,
             recentReview: data.recentReview,
             totalReview: data.totalReview,
+            allLangReview: data.allLangReview
         }
     }
 }
