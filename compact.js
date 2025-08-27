@@ -163,7 +163,7 @@ try {
             stdio: 'inherit',
             env: {
                 ...process.env,
-                GIT_SEQUENCE_EDITOR: `${gitSequenceEditorPath} ${commitsToSquash.join(' ')}`,
+                GIT_SEQUENCE_EDITOR: `${gitSequenceEditorPath}`,
                 GIT_EDITOR: gitEditorPath,
             }
         });
