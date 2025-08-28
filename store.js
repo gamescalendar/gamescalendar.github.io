@@ -17,7 +17,7 @@ const reqOpts = {
 // https://store.steampowered.com/apphoverpublic/1771300?review_score_preference=1&l=schinese&pagev6=true
 async function getAppDataFromStorePage(appid) {
     let page = `https://store.steampowered.com/app/${appid}?l=${config.languageOption}&review_score_preference=0`
-    console.log(`Fetching Store page for ${appid} from ${page}`)
+    // console.log(`Fetching Store page for ${appid} from ${page}`)
 
     const body = await makeRequest(page, reqOpts);
     if (!body) {

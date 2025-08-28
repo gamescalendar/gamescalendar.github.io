@@ -155,7 +155,7 @@ export async function getAppDataFromAPI(appid, steamapi, opts = {}) {
                 const dataEn = JSON.parse(bodyEn);
                 if (dataEn && dataEn[appid] && dataEn[appid].data) {
                     if (dataEn[appid].data.release_date) {
-                        console.log(`${appid}: ${data.release_date?.date} -> ${dataEn[appid].data.release_date?.date}`);
+                        // console.log(`${appid}: ${data.release_date?.date} -> ${dataEn[appid].data.release_date?.date}`);
                         data.release_date.en = dataEn[appid].data.release_date.date
                     }
                 }
