@@ -567,6 +567,12 @@
                     }
                     result.push(...Object.values(events.metacritic))
                 }
+                if (events.static) {
+                    for (const name in events.static) {
+                        events.static[name].source = "static";
+                    }
+                    result.push(...Object.values(events.static))
+                }
             } else {
                 return events
             }
@@ -595,7 +601,13 @@
             return db
         }
 
-        function patchColorForEvents(events) {
+        function patchEvents(events) {
+            let cnDateStrToDateStr = (str) => {
+                if (!str) {
+                    return str;
+                }
+                return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
+            }
             events.forEach(event => {
                 if (event.meta?.platform) {
                     let platform = event.meta.platform.toLowerCase()
@@ -624,6 +636,8 @@
                         event.color = "#FF6699"
                     }
                 }
+                
+                event.start = cnDateStrToDateStr(event.start)
             })
         }
 
@@ -634,17 +648,26 @@
 
             const promises = [
                 fetchJson(`https://gamescalendar.github.io/database.json`),
-                fetchEvents(`https://gamescalendar.github.io/static.json`),
+                fetchJson(`https://gamescalendar.github.io/static.json`),
             ].concat(options.map(filename => fetchDatabaseSource(`https://gamescalendar.github.io/${filename}`)));
             
             const [db, static, list, wishlist, owned, family] = await Promise.all(promises);
 
-            const events = (await fetchEvents(db)).concat(static)
-            patchColorForEvents(events)
+            let staticDb = {
+                name: "其他",
+                static: static,
+            }
+            list.name = "精选"
+            wishlist.name = "愿望单"
+            owned.name = "已拥有"
+            family.name = "家庭组共享"
+
+            const events = (await fetchEvents(db)).concat(await fetchEvents(staticDb))
+            patchEvents(events)
             return {
                 db: db,
                 events: events,
-                dbs: [static, list, wishlist, owned, family],
+                dbs: [staticDb, list, wishlist, owned, family],
             }
         }
 
@@ -681,6 +704,9 @@
 
         function renderCalendar(events) {
             let calendarEl = document.getElementById('calendar');
+            if (!calendarEl) {
+                return
+            }
 
             const params = new URLSearchParams(window.location.search)
             const calendarView = params.get('view') || "multiMonthYear"
@@ -835,34 +861,143 @@
             return calendar
         }
 
-        function addEvents(calendar, events) {
-            let cnDateStrToDateStr = (str) => {
-                if (!str) {
-                    return str;
-                }
-                return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
-            }
-            events.forEach(x=>{
-                x.start = cnDateStrToDateStr(x.start)
-            })
-
-            calendar.addEventSource(events);
-        }
-
         let calendar;
+        let checklistContainer;
 
         document.addEventListener('DOMContentLoaded', function() {
             calendar = renderCalendar();
-            
+            checklistContainer = document.getElementById('main-checklist-container');
             (async () => {
+                if (!calendar) {
+                    return;
+                }
                 data = await buildEvents();
                 console.log(`Total events: ${data.events.length}, Steam apps: ${Object.keys(data.db.steam).length}, Metacritic games: ${Object.keys(data.db.metacritic).length}`)
 
-                addEvents(calendar, data.events)
+                const params = new URLSearchParams(window.location.search)
+                const selectedDbs = params.get('selected') || "精选"
 
-                document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link))
+                let initialValues = []
+                if (selectedDbs == "all") {
+                    initialValues = data?.dbs?.map(x=>x.name)
+                } else {
+                    initialValues = selectedDbs.split("|")
+                }
+
+                console.log(`Picked databases: ${initialValues}`)
+                initChecklist(data?.dbs?.map(x=>x.name), initialValues);
+
+                document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link));
             })();
         });
+
+        function onChecklistChange(selectedValues) {
+            if (!calendar) {
+                return;
+            }
+            calendar.removeAllEvents();
+
+            if (selectedValues.length == data.dbs.length) {
+                calendar.addEventSource(data.events)
+                setUrlParam("selected", "all")
+                return;
+            }
+
+            const pickedDbs = data.dbs.filter(x => selectedValues?.includes(x.name))
+            if (!pickedDbs) {
+                return;
+            }
+
+            const urlParams = selectedValues.join('|')
+            setUrlParam("selected", urlParams, "精选")
+
+            let events = []
+
+            let steamAppids = {}
+            let mcNames = {}
+
+            pickedDbs.forEach(x => {
+                if (x.static) {
+                    events = events.concat(x.static)
+                }
+                if (x.steam) {
+                    x.steam.forEach(appid => steamAppids[appid] = true)
+                }
+                if (x.metacritic) {
+                    x.metacritic.forEach(name => mcNames[name] = true)
+                }
+            })
+
+            Object.keys(steamAppids).forEach(appid => {
+                if (data.db?.steam[appid]) {
+                    events.push(data.db?.steam[appid])
+                }
+            })
+
+            Object.keys(mcNames).forEach(name => {
+                if (data.db?.metacritic[name]) {
+                    events.push(data.db?.metacritic[name])
+                }
+            })
+
+            calendar.addEventSource(events)
+        }
+        
+        function initChecklist(items, initialValues) {
+            checklistContainer.className = "checklist-container"
+            // 移除标题以外的所有子元素，确保重新初始化时列表清空
+            while (checklistContainer.children.length > 1) {
+                checklistContainer.removeChild(checklistContainer.lastChild);
+            }
+            if (!items) {
+                return;
+            }
+            if (!initialValues) {
+                initialValues = items
+            }
+
+            items.forEach(item => {
+                const isChecked = initialValues?.includes(item);
+                
+                // 创建 <label> 元素作为列表项
+                const listItem = document.createElement('label');
+                listItem.className = 'checklist-item';
+                
+                // 创建隐藏的 <input type="checkbox"> 元素
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = item;
+                checkbox.checked = isChecked;
+                
+                // 绑定变更事件监听器
+                checkbox.addEventListener('change', () => {
+                    const allCheckedValues = Array.from(checklistContainer.querySelectorAll('input:checked'))
+                                                .map(cb => cb.value);
+                    onChecklistChange(allCheckedValues);
+                });
+                
+                // 创建自定义勾选框的 <span> 元素
+                const checkmark = document.createElement('span');
+                checkmark.className = 'checkmark';
+                
+                // 创建列表项的文本 <span> 元素
+                const textSpan = document.createElement('span');
+                textSpan.className = 'checklist-label';
+                textSpan.textContent = item;
+                
+                // 将所有元素添加到 <label> 中
+                listItem.appendChild(checkbox);
+                listItem.appendChild(checkmark);
+                listItem.appendChild(textSpan);
+                
+                // 将完整的列表项添加到容器中
+                checklistContainer.appendChild(listItem);
+            });
+
+            // 首次初始化后触发一次 change 事件，反映初始状态
+            onChecklistChange(initialValues);
+        }
+
     </script>
 </head>
 <body>
@@ -906,6 +1041,11 @@
 <div class="ui container">
     <div class="ui grid">
         <div class="ui sixteen column">
+
+            <div id="main-checklist-container">
+                <!-- 列表项将在这里通过 JavaScript 动态生成 -->
+            </div>
+
             <div id="calendar"></div>
         </div>
     </div>
