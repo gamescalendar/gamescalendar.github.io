@@ -2,15 +2,11 @@ float_bak.css
 events.json
 test/
 example/
-*.json
-!package.json
-!package-lock.json
-!override.json
-!static.json
+package.json
+package-lock.json
 *.txt
-!list.txt
-!family.txt
-!family.json
+
+family_shared.json
 
 ### Example user template template
 ### Example user template
