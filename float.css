@@ -71,22 +71,44 @@ div.rightcol {
     background-color: #262626
 }
 
-.own .block_header_image:before {
-    color: #111;
+.block_header_image .ownership {
     font-size: 10px;
     height: 18px;
     left: 0;
+    /* 高1px显得更居中 */
     line-height: 19px;
     padding: 0 9px 0 18px;
     position: absolute;
     bottom: 20px;
     white-space: nowrap;
-    z-index: 5
+    z-index: 5;
 }
 
-.own .block_header_image:before {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAYAAABi8KSDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUNDNzBFNTUyMUM0MTFFNDk1REVFODRBNUU5RjA2MUYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUNDNzBFNTYyMUM0MTFFNDk1REVFODRBNUU5RjA2MUYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5Q0M3MEU1MzIxQzQxMUU0OTVERUU4NEE1RTlGMDYxRiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5Q0M3MEU1NDIxQzQxMUU0OTVERUU4NEE1RTlGMDYxRiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pv3vUKAAAAAlSURBVHjaYvz//z8DsYARpFhISAivjnfv3jGSp3jUGeQ4AyDAADZHNe2nyOBrAAAAAElFTkSuQmCC) no-repeat scroll 4px 4px #5c8a00;
-    content: "已拥有"
+.block_header_image .own {
+    background: url("data:image/svg+xml,%3Csvg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='8' height='2' fill='%23111111'/%3E%3Crect x='1' y='4' width='8' height='2' fill='%23111111'/%3E%3Crect x='1' y='7' width='8' height='2' fill='%23111111'/%3E%3C/svg%3E%0A") no-repeat 4px 4px #4F95BD;
+    color: #111;
+}
+
+.block_header_image .wishlist {
+    background: url("data:image/svg+xml,%3Csvg width='11' height='10' viewBox='0 0 11 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.31189 0.0504065L6.54671 3.85081H10.5427L7.30988 6.19959L8.5447 10L5.31189 7.65122L2.07907 10L3.31389 6.19959L0.0810761 3.85081H4.07706L5.31189 0.0504065Z' fill='%23111111'/%3E%3C/svg%3E%0A") no-repeat 4px 4px #d3deea;
+    color: #111;
+}
+
+.block_header_image .family {
+    background: linear-gradient(to right, #47bfff 5%, #1a44c2 60%);
+    color: #eee;
+    padding-left: 2px;
+
+    display: flex;
+    align-items: center;
+}
+
+.block_header_image .family .icon {
+    width: 18px;
+    height: 12px;
+}
+.block_header_image .family span {
+    height: 18px;
 }
 
 .block_header_gallery {
@@ -341,6 +363,18 @@ div.rightcol {
 
 .game_review_summary {
     color: #A34C25;
+}
+
+.store_tooltip {
+	background: #c2c2c2;
+	color: #3d3d3f;
+	font-size: 11px;
+	border-radius: 3px;
+	padding: 5px;
+	max-width: 275px;
+	white-space: normal;
+	box-shadow: 0 0 3px #000000;
+	word-wrap: break-word;
 }
 
 .app_tag:hover {

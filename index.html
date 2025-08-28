@@ -179,6 +179,13 @@
             padding: 0;
         }
 
+        .tippy-box[data-theme~='gamereviews'] {
+        }
+
+        .tippy-box[data-theme~='gamereviews'] .tippy-content {
+            padding: 0;
+        }
+
         .long {
             -webkit-box-orient: horizontal;
             box-orient: horizontal;
@@ -352,7 +359,7 @@
                                 <div class="subtitle column">${data.recentReview.caption ?? "最近评测："}</div>
                                 <div class="summary column">
                                     <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
-                                       title="${data.recentReview.tooltip}">
+                                       data-title="${data.recentReview.tooltip}">
                                         <span class="game_review_summary ${data.recentReview.cssClass}">${data.recentReview.summary}</span>
                                         <span class="game_review_count">${data.recentReview.count}</span>
                                     </a>
@@ -366,7 +373,7 @@
                                 <div class="subtitle column">${data.totalReview.caption ?? "全部评测："}</div>
                                 <div class="summary column">
                                     <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
-                                       title="${data.totalReview.tooltip}">
+                                       data-title="${data.totalReview.tooltip}">
                                         <span class="game_review_summary ${data.totalReview.cssClass}">${data.totalReview.summary}</span>
                                         <span class="game_review_count">${data.totalReview.count}</span>
                                     </a>
@@ -380,7 +387,7 @@
                                 <div class="subtitle column">总评测：</div>
                                 <div class="summary column">
                                     <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
-                                       title="${data.allLangReview.tooltip}">
+                                       data-title="${data.allLangReview.tooltip}">
                                         <span class="game_review_summary ${data.allLangReview.cssClass}">${data.allLangReview.summary}</span>
                                         <span class="game_review_count">(${data.allLangReview.count})</span>
                                     </a>
@@ -424,14 +431,34 @@
                         </div>`
             }
 
+            let ownership = ""
+            if (data.owned) {
+                ownership = `
+                        <div class="ownership own">
+                            <span>在库中</span>
+                        </div>`
+            } else if (data.family) {
+                ownership = `
+                        <div class="ownership family">
+                            <img class="icon" src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_familysharing.png">
+                            <span>在家庭共享中</span>
+                        </div>`
+            } else if (data.wishlist) {
+                ownership = `
+                        <div class="ownership wishlist">
+                            <span>在愿望单中</span>
+                        </div>`
+            }
+
             const template = `
     <div class="v6">
         <div id="wrapper">
             <div class="rightcol">
-                <div class="block game_details ${data.owned ? "own" : ""} ">
+                <div class="block game_details">
                     <div class="block_header"><h4 title="${data.title}">${data.title}</h4></div>
 
                     <div class="block_header_image block_header_gallery load">
+                        ${ownership}
                         <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/">
                             <img class="game_header_image" data-src=${headerImage}>
                         </a>
@@ -533,6 +560,10 @@
                         event.color = "#417a9b"
                         if (event.app_data?.owned) {
                             event.color = "#5c8a00"
+                        } else if (event.app_data?.family) {
+                            event.color = "#3690e8"
+                        } else if (event.app_data?.wishlist) {
+                            event.color = "#04679d"
                         }
                     }
                 } else if (event.type.toLowerCase() == "anime") {
@@ -565,6 +596,23 @@
                 const url = new URL(window.location.href);
                 url.searchParams.delete(key)
                 window.history.pushState(null, '', url.toString());
+            }
+        }
+
+        function makeReviewTooltip(link) {
+            let title = link?.querySelector("a")?.getAttribute('data-title')
+            if (title) {
+                return tippy(link, {
+                    content: function() {
+                        let html = `<div class="store_tooltip">${title}</div>`
+                        return html;
+                    }(),
+                    allowHTML: true,
+                    arrow: false,
+                    delay: 0,
+                    theme: 'gamereviews',
+                    interactive: false,
+                });
             }
         }
 
@@ -682,9 +730,19 @@
                             })
                         },
                         onShow: function(instance) {
-                            var img = instance.popper.querySelector('img');
-                            if (img && img.dataset) {
+                            let img = instance.popper.querySelector('img.game_header_image');
+                            if (img?.dataset?.src) {
                                 img.src = img.dataset.src;
+                            }
+
+                            let reviewLinks = instance.popper.querySelectorAll('.user_reviews_summary_row');
+                            if (reviewLinks) {
+                                instance.nestedTippies = Array.from(reviewLinks).map(link => makeReviewTooltip(link)).filter(x=>x);
+                            }
+                        },
+                        onHidden(instance) {
+                            if (instance.reviewLinksTippies) {
+                                instance.reviewLinksTippies.forEach(tippyInstance => tippyInstance.destroy());
                             }
                         },
                     });
@@ -727,7 +785,7 @@
             let events = await buildEvents()
 
             renderCalendar(events)
-
+            document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link))
             // document.addEventListener('DOMContentLoaded', function () {
             // });
         })();
@@ -904,10 +962,14 @@
     <div class="v6">
         <div id="wrapper">
             <div class="rightcol">
-                <div class="block game_details own">
+                <div class="block game_details">
                     <div class="block_header"><h4 title="Baldur's Gate 3">Baldur's Gate 3</h4></div>
 
                     <div class="block_header_image block_header_gallery load">
+                        <div class="ownership family">
+                            <img class="icon" src="https://store.fastly.steamstatic.com/public/images/v6/ico/ico_familysharing.png">
+                            <span>在库中</span>
+                        </div>
                         <a target="_blank" href="https://store.steampowered.com/app/105600/">
                             <img class="game_header_image" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1086940/header.jpg">
                         </a>
@@ -924,7 +986,7 @@
                                 <div class="subtitle column">最近评测：</div>
                                 <div class="summary column">
                                     <a target="_blank" href="https://store.steampowered.com/app/1086940/#app_reviews_hash"
-                                       title="过去 30 天内的 3,576 篇用户评测中有 94% 为好评。">
+                                       data-title="过去 30 天内的 3,576 篇用户评测中有 94% 为好评。">
                                         <span class="game_review_summary positive">特别好评</span>
                                         <span class="game_review_count">(3,576)</span>
                                     </a>
@@ -935,7 +997,7 @@
                                 <div class="subtitle column">全部评测：</div>
                                 <div class="summary column">
                                     <a target="_blank" href="https://store.steampowered.com/app/1086940/#app_reviews_hash"
-                                       title="此游戏的 59,082 篇用户评测中有 88% 为好评。">
+                                       data-title="此游戏的 59,082 篇用户评测中有 88% 为好评。">
                                         <span class="game_review_summary positive">特别好评</span>
                                         <span class="game_review_count">(59,082)</span>
                                     </a>
