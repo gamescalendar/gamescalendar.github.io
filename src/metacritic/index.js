@@ -156,6 +156,7 @@ export async function getMetacriticInfo(game, platformOverride) {
         },
         type: "Game",
         title: title,
+        url: url,
         start: start,
         app_data: {
             imageURL: imageURL,

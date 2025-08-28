@@ -32,13 +32,13 @@ export default  {
   ],
 
   recent: {
-    forceUpdate: true,
+    forceUpdate: false,
     past: -14,
     future: 30,
   },
   ratelimit: {
-    init: 60,
-    update: 20,
+    init: 0,
+    update: 0,
   },
   steam: {
 

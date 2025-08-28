@@ -542,6 +542,27 @@
             return result
         }
 
+        async function fetchDatabaseSource(url) {
+            let events = await fetch(url)
+            events = await events.json()
+
+            const db = {
+                steam: [],
+                metacritic: [],
+            }
+            
+            if (!Array.isArray(events)) {
+                if (events.steam) {
+                    db.steam = events.steam
+                }
+                if (events.metacritic) {
+                    db.metacritic = events.metacritic
+                }
+            }
+
+            return db
+        }
+
         function patchColorForEvents(events) {
             events.forEach(event => {
                 if (event.meta?.platform) {
@@ -579,12 +600,23 @@
             const staticFilename = params.get('static') || "static"
             const eventsFilename = params.get('events') || "events"
 
-            let staticEvents = await fetchEvents(`https://gamescalendar.github.io/${staticFilename}.json`)
-            let dynamicEvents = await fetchEvents(`https://gamescalendar.github.io/${eventsFilename}.json`)
+            const options = [
+                "events.json", "wishlist.json", "owned.json", "family.json",
+            ]
 
-            let events = staticEvents.concat(dynamicEvents)
+            const promises = [
+                fetchEvents(`https://gamescalendar.github.io/database.json`),
+                fetchEvents(`https://gamescalendar.github.io/static.json`),
+            ].concat(options.map(filename => fetchDatabaseSource(`https://gamescalendar.github.io/${filename}`)));
+            
+            const [db, static, list, wishlist, owned, family] = await Promise.all(promises);
+
+            const events = db.concat(static)
             patchColorForEvents(events)
-            return events
+            return {
+                events: events,
+                dbs: [static, list, wishlist, owned, family],
+            }
         }
 
         function setUrlParam(key, value, defaultValue) {
@@ -779,15 +811,16 @@
             });
 
             calendar.render();
+            return calendar
         }
 
+        let data;
+        let calendar;
         (async () => {
-            let events = await buildEvents()
+            data = await buildEvents()
 
-            renderCalendar(events)
+            calendar = renderCalendar(data.events)
             document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link))
-            // document.addEventListener('DOMContentLoaded', function () {
-            // });
         })();
     </script>
 </head>

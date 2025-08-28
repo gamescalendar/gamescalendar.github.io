@@ -2,22 +2,22 @@ import * as fs from 'fs';
 import SteamAPI from 'steamapi';
 import {HttpsProxyAgent} from 'https-proxy-agent';
 
-import config from '../config.js';
 import { makeRequest } from './utils.js';
 import { getAppDataFromAPI, getCalendarData } from './steam/index.js';
 import Database from './database.js';
 
 export default class Resolver {
-    constructor(options = {}) {
+    constructor(config = {}) {
+        this.config = config
         this.wishlist = [];
         this.owned = new Map(); // 改为 Map 结构提高查询性能
         this.steam = null;
         this.hasSteamConfig = false;
         this.steamId = null; // 缓存 SteamID
         this.meta = null; // 元数据对象
-        this.forceUpdate = options.forceUpdate || false; // 强制更新选项
+        this.forceUpdate = config.forceUpdate || false; // 强制更新选项
 
-        this.database = new Database()
+        this.database = new Database(this.config)
         
         // 配置代理
         this.proxy = this.getProxyConfig();
@@ -27,11 +27,11 @@ export default class Resolver {
         
         // 检查是否有 Steam 配置
         const apiKey = process.env.STEAM_APIKEY;
-        const steamUser = config.steam?.user;
+        const steamUser = this.config.steam?.user;
         
         if (apiKey && steamUser) {
             this.steam = new SteamAPI(apiKey, {
-                language: config.languageOption,
+                language: this.config.languageOption,
                 headers: this.getRequestOptions(),
             });
             this.hasSteamConfig = true;
@@ -50,10 +50,10 @@ export default class Resolver {
      * 初始化或加载meta文件
      */
     async initializeMeta() {
-        if (fs.existsSync(config.meta)) {
-            const metaContent = fs.readFileSync(config.meta, 'utf-8');
+        if (fs.existsSync(this.config.meta)) {
+            const metaContent = fs.readFileSync(this.config.meta, 'utf-8');
             this.meta = JSON.parse(metaContent);
-            console.log(`Meta file loaded: ${config.meta}`);
+            console.log(`Meta file loaded: ${this.config.meta}`);
         } else {
             // 创建新的meta文件
             this.meta = {
@@ -62,7 +62,7 @@ export default class Resolver {
                 steamId: null,
             };
             await this.saveMeta();
-            console.log(`New meta file created: ${config.meta}`);
+            console.log(`New meta file created: ${this.config.meta}`);
         }
     }
 
@@ -71,7 +71,7 @@ export default class Resolver {
      */
     async saveMeta() {
         const metaContent = JSON.stringify(this.meta, null, 2);
-        fs.writeFileSync(config.meta, metaContent, 'utf-8');
+        fs.writeFileSync(this.config.meta, metaContent, 'utf-8');
     }
 
     /**
@@ -139,8 +139,8 @@ export default class Resolver {
      */
     getProxyConfig() {
         // 优先从 config.proxy 获取
-        if (config.proxy && typeof config.proxy === 'string' && config.proxy.trim() !== '') {
-            return config.proxy.trim();
+        if (this.config.proxy && typeof this.config.proxy === 'string' && this.config.proxy.trim() !== '') {
+            return this.config.proxy.trim();
         }
         
         // 如果没有配置，尝试从环境变量 HTTP_PROXY 获取
@@ -182,7 +182,7 @@ export default class Resolver {
             return this.steamId;
         }
 
-        const steamUser = config.steam.user;
+        const steamUser = this.config.steam.user;
         let userId;
         
         // 规则1: 如果是完整的 steamcommunity.com 链接，直接解析
@@ -238,9 +238,9 @@ export default class Resolver {
         this.wishlist = [];
         
         // 查找 SteamWishlist 类型的数据库
-        const steamWishlistDb = config.databases.find(db => db.type === 'SteamWishlist');
+        const steamWishlistDb = this.config.databases.find(db => db.type === 'SteamWishlist');
         
-        if (steamWishlistDb && this.hasSteamConfig && config.steam?.wishlist) {
+        if (steamWishlistDb && this.hasSteamConfig && this.config.steam?.wishlist) {
             // 检查是否需要更新
             if (!this.forceUpdate && this.meta && this.meta.lastWishlistUpdate) {
                 const today = this.getCurrentDateString();
@@ -285,7 +285,7 @@ export default class Resolver {
         }
         
         // 构建 API URL
-        const countryCode = config.steam.countryCode || 'US';
+        const countryCode = this.config.steam.countryCode || 'US';
         const apiUrl = `https://www.steamwishlistcalculator.com/api/wishlist?steamId=${this.steamId}&countryCode=${countryCode}`;
         
         console.log(`Fetching wishlist from: ${apiUrl}`);
@@ -316,7 +316,7 @@ export default class Resolver {
     async buildWishlistFromLocalFiles() {
         console.log('Building wishlist from local files...');
         
-        for (const db of config.databases) {
+        for (const db of this.config.databases) {
             if (db.type !== 'SteamWishlist') {
                 // 跳过 SteamWishlist 类型，因为我们要从 API 获取
                 continue;
@@ -344,7 +344,7 @@ export default class Resolver {
     async buildOwned() {
         this.owned.clear();
         
-        if (!config.steam.owned) {
+        if (!this.config.steam.owned) {
             console.log("Skipping owned list build - config.steam.owned disabled")
             return this.owned;
         }
@@ -381,7 +381,7 @@ export default class Resolver {
             console.log(`Built owned list with ${this.owned.size} games`);
             
             // 查找 SteamOwned 类型的数据库并保存
-            const steamOwnedDb = config.databases.find(db => db.type === 'SteamOwned');
+            const steamOwnedDb = this.config.databases.find(db => db.type === 'SteamOwned');
             if (steamOwnedDb) {
                 await this.saveOwnedToFile(steamOwnedDb.source);
                 // 记录更新日期
@@ -405,7 +405,7 @@ export default class Resolver {
     async buildOwnedFromLocalFiles() {
         console.log('Building owned list from local files...');
         
-        for (const db of config.databases) {
+        for (const db of this.config.databases) {
             if (db.type !== 'SteamOwned') {
                 // 跳过非 SteamOwned 类型
                 continue;
@@ -500,7 +500,7 @@ export default class Resolver {
         let owned = []
         let wishlist = []
         let family = []
-        config.databases.forEach(db => {
+        this.config.databases.forEach(db => {
             let key = db.source
             switch(db.type) {
                 case "SteamWishlist": {
@@ -567,7 +567,7 @@ export default class Resolver {
                 console.log(`[更新] 更新游戏数据: AppID ${appid} - "${existingTitle}"`);
             }
             
-            let appData = await getAppDataFromAPI(appid, this.steam);
+            let appData = await getAppDataFromAPI(appid, this.steam, this.config);
 
             if (appData.meta?.error) {
                 // 下架游戏？也可能是API错误。尝试获取旧数据
@@ -579,7 +579,7 @@ export default class Resolver {
             }
             
             if (appData) {
-                const calendarData = getCalendarData(appData);
+                const calendarData = getCalendarData(appData, this.config);
                 
                 // 更新owned状态
                 if (calendarData.app_data && this.owned.has(appid.toString())) {

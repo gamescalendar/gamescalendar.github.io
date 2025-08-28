@@ -1,10 +1,11 @@
 import * as fs from 'fs';
 import { parse } from './parser.js';
-import config from '../config.js';
 import { getNeedRefreshTargets, cnDateStrToDateStr } from './utils.js';
 
 export default class Database {
-    constructor() {
+    constructor(config) {
+        this.config = config
+
         this.db = {}
 
         this.dbTrackingSteam = {}
@@ -23,7 +24,7 @@ export default class Database {
         console.log("Database initialized.\n")
     }
 
-    async loadOutput(file) {
+    async loadDatabase(file) {
         let data
         if (fs.existsSync(file)) {
             const content = fs.readFileSync(file, 'utf-8');
@@ -60,7 +61,29 @@ export default class Database {
             }
         });
 
-        console.log(`Output ${file}: cached ${Object.keys(data.steam).length} Steam items, ${Object.keys(data.metacritic).length} Metacritic items.`);
+        console.log(`Database ${file}: cached ${Object.keys(data.steam).length} Steam items, ${Object.keys(data.metacritic).length} Metacritic items.`);
+    }
+
+    async loadOutput(file) {
+        let data
+        if (fs.existsSync(file)) {
+            const content = fs.readFileSync(file, 'utf-8');
+            data = JSON.parse(content);
+            if (data.data && !data.steam) {
+                data.steam = data.data
+                delete(data.data)
+            }
+        } else {
+            data = {
+                index: 0,
+                steam: [],
+                metacritic: [],
+            }
+        }
+        
+        this.db[file] = data
+
+        console.log(`Source output ${file}: cached ${Object.keys(data.steam).length} Steam items, ${Object.keys(data.metacritic).length} Metacritic items.`);
     }
 
     async loadSource(file) {
@@ -75,7 +98,7 @@ export default class Database {
                 .map(str => parse(str));
 
             steams = lines.filter(x=>x?.steam).map(x=>x.appid)
-            mcs = lines.filter(x=>x?.metacritic).map(x=>x.url)
+            mcs = lines.filter(x=>x?.metacritic).map(x=>x.name)
         }
 
         steams.forEach(key => {
@@ -93,7 +116,10 @@ export default class Database {
 
     // 加载所有数据库的输出文件
     async load() {
-        for (const db of config.databases) {
+        if (this.config.database) {
+            this.loadDatabase(this.config.database);
+        }
+        for (const db of this.config.databases) {
             if (!db.output) {
                 continue;
             }
@@ -120,7 +146,15 @@ export default class Database {
      * 保存日历数据到所有配置的输出文件
      */
     async save() {
-        for (const db of config.databases) {
+        if (this.config.database) {
+            const database = {
+                steam: this.steamData,
+                metacritic: this.metacriticData,
+            }
+            fs.writeFileSync(this.config.database, JSON.stringify(database, null, 4), 'utf-8')
+        }
+
+        for (const db of this.config.databases) {
             if (!db.output) {
                 continue;
             }
@@ -132,16 +166,8 @@ export default class Database {
                 continue;
             }
 
-            trackingSteam.forEach(key => {
-                if (this.steamData[key]) {
-                    data.steam[key] = this.steamData[key]
-                }
-            })
-            trackingMetacritic.forEach(key => {
-                if (this.metacriticData[key]) {
-                    data.metacritic[key] = this.metacriticData[key]
-                }
-            })
+            data.steam = trackingSteam
+            data.metacritic = trackingMetacritic
 
             const content = JSON.stringify(data, null, 2);
             fs.writeFileSync(db.output, content, 'utf-8');
@@ -174,8 +200,8 @@ export default class Database {
     }
 
     getSteamAppIDToProcess() {
-        let newCount = config.ratelimit.init
-        let updateCount = config.ratelimit.update
+        let newCount = this.config.ratelimit.init
+        let updateCount = this.config.ratelimit.update
         
         const cachedAppids = new Set(Object.keys(this.steamData));
         const allTrackingAppids = Object.keys(this.steamTrackingKeys);
@@ -196,7 +222,7 @@ export default class Database {
             
         //     return new Date(aData.meta.last_track_date) - new Date(bData.meta.last_track_date);
         // }).slice(0, updateCount);
-        const sortedAppids = getNeedRefreshTargets(toUpdateAppids, this.steamData, config)
+        const sortedAppids = getNeedRefreshTargets(toUpdateAppids, this.steamData, this.config)
         
         // 构建带类型信息的结果数组
         const resultWithType = [];

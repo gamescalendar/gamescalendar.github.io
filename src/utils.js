@@ -1,8 +1,6 @@
 import fetch from 'node-fetch';
 import {HttpsProxyAgent} from 'https-proxy-agent';
 
-import config from '../config.js';
-
 const isCI = process.env.CI_ENV == "ci"
 const proxy = process.env.HTTP_PROXY || 'http://127.0.0.1:1080'
 
@@ -128,7 +126,7 @@ export function getNeedRefreshTargets(newTargets, tracked, opts = {}) {
             }
         }
 
-        if (!config.recent.forceUpdate) {
+        if (!opts?.recent?.forceUpdate) {
             recentGamePriority = false
         }
 

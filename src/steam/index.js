@@ -1,6 +1,5 @@
 import cheerio from 'cheerio';
 import { makeRequest, yearStrToNumber, cnDateStrToDateStr, ResolveDateFromString } from '../utils.js';
-import config from '../../config.js';
 
 function clearURL(url) {
     let u = new URL(url)
@@ -13,8 +12,8 @@ const reqOpts = {
         cookie: "wants_mature_content=1; birthtime=786211201; lastagecheckage=1-0-1995;"
     }
 }
-async function getAppDataFromStorePage(appid) {
-    let page = `https://store.steampowered.com/app/${appid}?l=${config.languageOption}`
+async function getAppDataFromStorePage(appid, opts = {}) {
+    let page = `https://store.steampowered.com/app/${appid}?l=${opts.languageOption}`
     console.log(`Fetching Store page for ${appid} from ${page}`)
 
     const body = await makeRequest(page, reqOpts);
@@ -82,8 +81,8 @@ async function getAppDataFromStorePage(appid) {
     return data
 }
 
-async function updateStoreData(data, appid) {
-    const pageData = await getAppDataFromStorePage(appid)
+async function updateStoreData(data, appid, opts) {
+    const pageData = await getAppDataFromStorePage(appid, opts)
     if (pageData != null) {
         data.tags = pageData.tags
         data.recentReview = pageData.recentReview
@@ -100,14 +99,14 @@ async function updateStoreData(data, appid) {
     return data
 }
 
-export async function getAppDataFromAPI(appid, steamapi) {
+export async function getAppDataFromAPI(appid, steamapi, opts = {}) {
     let data
 
     // if (steamapi) {
         // steamapi uses camelCase
         // data = await steamapi.getGameDetails(appid)
     // } else {
-        const api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=${config.languageOption}`
+        const api = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=${opts.languageOption}`
         const apiEn = `https://store.steampowered.com/api/appdetails?appids=${appid}&l=english`;
 
         const [body, bodyEn] = await Promise.all([
@@ -122,7 +121,7 @@ export async function getAppDataFromAPI(appid, steamapi) {
         try {
             data = JSON.parse(body);
         } catch(e) {
-            console.log(`Failed to parse ${config.languageOption} data for ${appid}.\n${body}`, e);
+            console.log(`Failed to parse ${opts.languageOption} data for ${appid}.\n${body}`, e);
         }
         if (!data || !data[appid] || !data[appid].data) {
             if (bodyEn) {
@@ -133,7 +132,7 @@ export async function getAppDataFromAPI(appid, steamapi) {
 
                         data = dataEn[appid].data
 
-                        return updateStoreData(data, appid)
+                        return updateStoreData(data, appid, opts)
                     }
                 } catch (e) {
                     console.log(`Failed to parse English data for ${appid}.\n${bodyEn}`, e);
@@ -166,11 +165,11 @@ export async function getAppDataFromAPI(appid, steamapi) {
         }
     // }
 
-    return updateStoreData(data, appid)
+    return updateStoreData(data, appid, opts)
 }
 
 // apiData to calendarData
-export function getCalendarData(data) {
+export function getCalendarData(data, opts = {}) {
     if (data.meta?.error) {
         return {
             meta: data.meta,
@@ -197,8 +196,8 @@ export function getCalendarData(data) {
         }
     }
 
-    let supportLanguage = config.languageString.some(x => data.supported_languages?.includes(x))
-    let supportAudio = config.languageString.some(x => data.supported_languages?.includes(x + "<strong>*</strong>"))
+    let supportLanguage = opts.languageString.some(x => data.supported_languages?.includes(x))
+    let supportAudio = opts.languageString.some(x => data.supported_languages?.includes(x + "<strong>*</strong>"))
 
     return {
         meta: data.meta,

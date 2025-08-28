@@ -38,9 +38,13 @@ function parseMetacritic(text) {
     if (typeof text === "string") {
         let lowered = text.toLowerCase().trim()
         if (lowered.startsWith(MetacriticURL)) {
-            return {
-                url: text,
-                metacritic: true,
+            let game = lowered.replace(MetacriticURL, "").split("/").filter(x => x && x !== "")
+            if (game.length > 0) {
+                return {
+                    url: text,
+                    name: game[0],
+                    metacritic: true,
+                }
             }
         }
     }
