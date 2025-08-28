@@ -22,7 +22,12 @@ export default  {
       type: "SteamOwned",
       source: "owned.txt",
       output: "owned.json",
-    }
+    },
+    {
+      type: "SteamFamily",
+      source: "family.txt",
+      output: "family.json",
+    },
   ],
 
   recent: {

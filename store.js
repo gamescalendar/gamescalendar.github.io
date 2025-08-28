@@ -91,6 +91,7 @@ async function updateStoreData(data, appid) {
         data.tags = pageData.tags
         data.recentReview = pageData.recentReview
         data.totalReview = pageData.totalReview
+        data.allLangReview = pageData.allLangReview
     }
 
     data.meta = {
@@ -172,7 +173,15 @@ export async function getAppDataFromAPI(appid, steamapi) {
 }
 
 
-getAppDataFromStorePage(1771300).then(data => {
+// getAppDataFromStorePage(1771300).then(data => {
+//     // data.tags = undefined
+//     if (data.tags) {
+//         data.tags= undefined
+//     }
+//     console.log(data)
+// });
+
+getAppDataFromStorePage(2661300).then(data => {
     // data.tags = undefined
     if (data.tags) {
         data.tags= undefined

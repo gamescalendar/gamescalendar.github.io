@@ -491,13 +491,59 @@ export default class Resolver {
             await this.updateCalendarData();
         }
 
-        this.updateOwnedGames()
+        this.updateOwnership();
         
         await this.database.save();
     }
 
-    updateOwnedGames() {
-        Array.from(this.owned.keys()).forEach(appid => {
+    updateOwnership() {
+        let owned = []
+        let wishlist = []
+        let family = []
+        config.databases.forEach(db => {
+            let key = db.source
+            switch(db.type) {
+                case "SteamWishlist": {
+                    if (this.database.dbTrackingSteam[key]) {
+                        wishlist = wishlist.concat(this.database.dbTrackingSteam[key])
+                    }
+                    break;
+                }
+
+                case "SteamOwned": {
+                    if (this.database.dbTrackingSteam[key]) {
+                        owned = owned.concat(this.database.dbTrackingSteam[key])
+                    }
+                    break;
+                }
+
+                case "SteamFamily": {
+                    if (this.database.dbTrackingSteam[key]) {
+                        family = family.concat(this.database.dbTrackingSteam[key])
+                    }
+                    break;
+                }
+            }
+        })
+
+        Object.keys(this.database.steamData).forEach(appid => {
+            if (this.database.steamData[appid].app_data) {
+                this.database.steamData[appid].app_data.owned = false
+                this.database.steamData[appid].app_data.wishlist = false
+                this.database.steamData[appid].app_data.family = false
+            }
+        })
+        owned.forEach(appid => {
+            if (this.database.steamData[appid] && this.database.steamData[appid].app_data) {
+                this.database.steamData[appid].app_data.owned = true
+            }
+        })
+        wishlist.forEach(appid => {
+            if (this.database.steamData[appid] && this.database.steamData[appid].app_data) {
+                this.database.steamData[appid].app_data.owned = true
+            }
+        })
+        family.forEach(appid => {
             if (this.database.steamData[appid] && this.database.steamData[appid].app_data) {
                 this.database.steamData[appid].app_data.owned = true
             }
