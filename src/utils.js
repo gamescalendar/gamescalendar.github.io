@@ -44,7 +44,7 @@ export function cnDateStrToDateStr(str) {
     }
     let d = new Date(str + "Z") 
     if (d.toString() === "Invalid Date") {
-        console.log(str)
+        // console.log(str)
         return ""
     }
     return d.toISOString().slice(0, 10)

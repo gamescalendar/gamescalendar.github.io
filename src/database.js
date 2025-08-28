@@ -11,6 +11,7 @@ export default class Database {
         this.dbTrackingSteam = {}
         this.dbTrackingMetacritic = {}
 
+        this.steamMeta = {}
         this.steamData = {}
         this.metacriticData = {}
 
@@ -38,6 +39,7 @@ export default class Database {
                 index: 0,
                 steam: {},
                 metacritic: {},
+                steam_meta: {},
             }
         }
         
@@ -63,10 +65,20 @@ export default class Database {
 
         console.log(`Database ${file}: cached ${Object.keys(data.steam).length} Steam items, ${Object.keys(data.metacritic).length} Metacritic items.`);
         if (data.steam_meta) {
+            Object.keys(data.steam_meta).forEach(type => {
+                if (!this.steamMeta[type]) {
+                    this.steamMeta[type] = {}
+                }
+                Object.keys(data.steam_meta[type]).forEach(key => {
+                    const v = data.steam_meta[type][key]
+                    this.steamMeta[type][key] = v
+                })
+            })
+
             const txt = Object.keys(data.steam_meta).map(key => {
                 return `${Object.keys(data.steam_meta[key]).length} ${key}`
             }).join(", ")
-            console.log(`Steam meta: ${txt}`)
+            console.log(`    Steam meta: ${txt}`)
         }
     }
 
@@ -89,7 +101,7 @@ export default class Database {
         
         this.db[file] = data
 
-        console.log(`Source output ${file}: cached ${Object.keys(data.steam).length} Steam items, ${Object.keys(data.metacritic).length} Metacritic items.`);
+        console.log(`    Source output ${file}: cached ${Object.keys(data.steam).length} Steam items, ${Object.keys(data.metacritic).length} Metacritic items.`);
     }
 
     async loadSource(file) {
@@ -117,7 +129,7 @@ export default class Database {
         this.dbTrackingSteam[file] = steams
         this.dbTrackingMetacritic[file] = mcs
 
-        console.log(`Source ${file}: tracking ${steams.length} Steam items, ${mcs.length} Metacritic items.`)
+        console.log(`    Source ${file}: tracking ${steams.length} Steam items, ${mcs.length} Metacritic items.`)
     }
 
     // 加载所有数据库的输出文件
@@ -224,6 +236,7 @@ export default class Database {
     async save() {
         if (this.config.database) {
             let database = {
+                steam_meta: this.steamMeta,
                 steam: this.steamData,
                 metacritic: this.metacriticData,
             }

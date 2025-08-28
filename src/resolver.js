@@ -594,16 +594,19 @@ export default class Resolver {
                 // 添加到steamData
                 this.database.updateSteam(appid, calendarData)
                 
-                if (updateType === 'initialization') {
+                if (appData.meta?.error) {
+                    console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - 无数据返回，采用旧数据`);
+                } else if (updateType === 'initialization') {
                     console.log(`[初始化] 成功: AppID ${appid} - "${appData.name}"`);
                 } else if (updateType === 'update') {
                     console.log(`[更新] 成功: AppID ${appid} - "${existingTitle}" -> "${appData.name}"`);
                 }
                 
+                let succ = true
                 if (appData.meta?.error) {
-                    console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - 无数据返回，采用旧数据`);
+                    succ = false
                 }
-                return { success: appData.meta?.error ?? true, appid, data: calendarData, type: updateType };
+                return { success: succ, appid, data: calendarData, type: updateType };
             } else {
                 console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - 无数据返回`);
                 return { success: false, appid, error: 'No data returned', type: updateType };
