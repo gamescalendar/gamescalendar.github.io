@@ -30,7 +30,7 @@ jobs:
           node-version: '23'
 
       - name: Install Dependencies
-        run: npm install
+        run: npm ci
 
       - name: Update Data
         env:
@@ -54,9 +54,6 @@ jobs:
           git stash -- events.json wishlist.txt wishlist.json owned.txt owned.json meta.json family.json
           git status
 
-          git checkout HEAD -- package-lock.json
-          git status
-          
           git checkout release
           git status
           git stash show
