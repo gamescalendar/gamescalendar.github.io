@@ -341,7 +341,7 @@
             return template
         }
 
-        function buildSteam(data, meta) {
+        function buildSteam(data, meta, steam_meta) {
             if (!data) {
                 return null;
             }
@@ -450,6 +450,28 @@
                         </div>`
             }
 
+            let tags = data.tags.map(x => {
+                if (x.name && x.link) {
+                    return x;
+                } else if (steam_meta?.tags[x]) {
+                    return {
+                        name: x,
+                        link: steam_meta?.tags[x],
+                    }
+                }
+                console.log(`Missing tag data: ${x}: ${data.title} not in meta`)
+
+                return {
+                    name: x,
+                    link: `https://store.steampowered.com/tags/zh-cn/${x}/`
+                }
+            }).filter(x => x && x.name && x.link).slice(0, 7)
+
+            if (tags.length <= 0) {
+                console.log(`${data.title} has no tags`)
+            }
+            const userTags = tags.map(tag => `<a target="_blank" class="app_tag" href="${tag.link}">${tag.name}</a>`).join("")
+
             const template = `
     <div class="v6">
         <div id="wrapper">
@@ -464,7 +486,7 @@
                         </a>
                     </div>
 
-                    <div style="padding: 8px 16px" class="block_content block_content_inner">
+                    <div class="block_content block_content_inner">
                         <div class="game_description_snippet long">
                             ${data.description}
                         </div>
@@ -486,26 +508,28 @@
                         <div class="details_block">
                             <b>该产品的热门用户自定义标签：</b>
                             <div class="glance_tag">
-                            ${data.tags.map(x => x.name).filter(x => x).slice(0, 7).map(tag => `<a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/${tag}/">${tag}</a>`).join("")}
+                            ${userTags}
                             </div>
                         </div>
                         <div class="inner_rule"></div>
 
-                        <table class="game_language_options">
-                            <tbody>
-                            <tr>
-                                <td>语言支持</td>
-                                <td class="language_${data.language.zh.gui ? "yes" : "no"}">简体中文</td>
-                                <td class="language_${data.language.zh.audio ? "yes" : "no"}">完全音频</td>
-                                <!-- <td class="language_${data.language.zh.subtitle ? "yes" : "no"}">字幕</td> -->
-                            </tr>
-                            </tbody>
-                        </table>
+                        <div class="language_support">
+                            <div class="subtitle column">语言支持：</div>
+
+                            <table class="game_language_options">
+                                <tbody>
+                                <tr>
+                                    <td class="language_${data.language.zh.gui ? "yes" : "no"}">简体中文</td>
+                                    <td class="language_${data.language.zh.audio ? "yes" : "no"}">完全音频</td>
+                                    <!-- <td class="language_${data.language.zh.subtitle ? "yes" : "no"}">字幕</td> -->
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <div class="inner_rule"></div>
 
-                        <div class="release_date">
-                            <div class="subtitle column">数据更新时间：</div>
-                            <div class="date">${meta.last_track_date}</div>
+                        <div class="track_date">
+                            <div class="subtitle column">数据更新时间：${meta.last_track_date}</div>
                         </div>
                     </div>
                 </div>
@@ -516,9 +540,17 @@
             return template;
         }
 
-        async function fetchEvents(url) {
-            let events = await fetch(url)
-            events = await events.json()
+        async function fetchJson(url) {
+            let data = await fetch(url)
+            data = await data.json()
+            return data
+        }
+
+        async function fetchEvents(data) {
+            let events = data
+            if (typeof (data) == "string") {
+                events = await fetchJson(data)
+            }
 
             // sanitize
             let result = []
@@ -535,6 +567,12 @@
                     }
                     result.push(...Object.values(events.metacritic))
                 }
+                if (events.static) {
+                    for (const name in events.static) {
+                        events.static[name].source = "static";
+                    }
+                    result.push(...Object.values(events.static))
+                }
             } else {
                 return events
             }
@@ -542,7 +580,34 @@
             return result
         }
 
-        function patchColorForEvents(events) {
+        async function fetchDatabaseSource(url) {
+            let events = await fetch(url)
+            events = await events.json()
+
+            const db = {
+                steam: [],
+                metacritic: [],
+            }
+            
+            if (!Array.isArray(events)) {
+                if (events.steam) {
+                    db.steam = events.steam
+                }
+                if (events.metacritic) {
+                    db.metacritic = events.metacritic
+                }
+            }
+
+            return db
+        }
+
+        function patchEvents(events) {
+            let cnDateStrToDateStr = (str) => {
+                if (!str) {
+                    return str;
+                }
+                return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
+            }
             events.forEach(event => {
                 if (event.meta?.platform) {
                     let platform = event.meta.platform.toLowerCase()
@@ -571,20 +636,39 @@
                         event.color = "#FF6699"
                     }
                 }
+                
+                event.start = cnDateStrToDateStr(event.start)
             })
         }
 
         async function buildEvents() {
-            const params = new URLSearchParams(window.location.search)
-            const staticFilename = params.get('static') || "static"
-            const eventsFilename = params.get('events') || "events"
+            const options = [
+                "events.json", "wishlist.json", "owned.json", "family.json",
+            ]
 
-            let staticEvents = await fetchEvents(`https://gamescalendar.github.io/${staticFilename}.json`)
-            let dynamicEvents = await fetchEvents(`https://gamescalendar.github.io/${eventsFilename}.json`)
+            const promises = [
+                fetchJson(`https://gamescalendar.github.io/database.json`),
+                fetchJson(`https://gamescalendar.github.io/static.json`),
+            ].concat(options.map(filename => fetchDatabaseSource(`https://gamescalendar.github.io/${filename}`)));
+            
+            const [db, static, list, wishlist, owned, family] = await Promise.all(promises);
 
-            let events = staticEvents.concat(dynamicEvents)
-            patchColorForEvents(events)
-            return events
+            let staticDb = {
+                name: "其他",
+                static: static,
+            }
+            list.name = "精选"
+            wishlist.name = "愿望单"
+            owned.name = "已拥有"
+            family.name = "家庭组共享"
+
+            const events = (await fetchEvents(db)).concat(await fetchEvents(staticDb))
+            patchEvents(events)
+            return {
+                db: db,
+                events: events,
+                dbs: [staticDb, list, wishlist, owned, family],
+            }
         }
 
         function setUrlParam(key, value, defaultValue) {
@@ -616,17 +700,13 @@
             }
         }
 
+        let data;
+
         function renderCalendar(events) {
-            let cnDateStrToDateStr = (str) => {
-                if (!str) {
-                    return str;
-                }
-                return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
-            }
-            events.forEach(x=>{
-                x.start = cnDateStrToDateStr(x.start)
-            })
             let calendarEl = document.getElementById('calendar');
+            if (!calendarEl) {
+                return
+            }
 
             const params = new URLSearchParams(window.location.search)
             const calendarView = params.get('view') || "multiMonthYear"
@@ -646,8 +726,8 @@
             }
 
             let calendar = new FullCalendar.Calendar(calendarEl, {
-                aspectRatio: 1,
-                contentHeight: 1000,
+                aspectRatio: 0.94,
+                contentHeight: 1050,
                 headerToolbar: {
                     left: 'today prevYear,prev,next,nextYear',
                     center: 'title',
@@ -670,6 +750,7 @@
                 initialDate: date,
 
                 eventDisplay: "auto",
+                events: events ?? [],
 
                 eventDidMount: function (info) {
                     // let tooltip = new Tooltip(info.el, {
@@ -690,7 +771,7 @@
                     let template = ""
                     switch (info.event.extendedProps.source) {
                         case "steam":
-                            template = buildSteam(info.event.extendedProps.app_data, info.event.extendedProps.meta);
+                            template = buildSteam(info.event.extendedProps.app_data, info.event.extendedProps.meta, data?.db?.steam_meta);
                             break
                         case "metacritic":
                             template = buildMetacritic(info.event.extendedProps.app_data, info.event.extendedProps.meta);
@@ -735,22 +816,20 @@
                                 img.src = img.dataset.src;
                             }
 
-                            let reviewLinks = instance.popper.querySelectorAll('.user_reviews_summary_row');
-                            if (reviewLinks) {
-                                instance.nestedTippies = Array.from(reviewLinks).map(link => makeReviewTooltip(link)).filter(x=>x);
+                            if (!instance.nestedTippies) {
+                                let reviewLinks = instance.popper.querySelectorAll('.user_reviews_summary_row');
+                                if (reviewLinks) {
+                                    instance.nestedTippies = Array.from(reviewLinks).map(link => makeReviewTooltip(link)).filter(x=>x);
+                                }
                             }
-                        },
-                        onHidden(instance) {
-                            if (instance.reviewLinksTippies) {
-                                instance.reviewLinksTippies.forEach(tippyInstance => tippyInstance.destroy());
-                            }
+                            
+                            // instance.disable();
                         },
                     });
 
                     // console.log(tippyInstance)
                 },
 
-                events: events,
                 datesSet: function (dateInfo) {
                     let viewType = dateInfo.view?.type
                     setUrlParam('view', viewType, "multiMonthYear")
@@ -779,16 +858,173 @@
             });
 
             calendar.render();
+            return calendar
         }
 
-        (async () => {
-            let events = await buildEvents()
+        let calendar;
+        let checklistContainer;
+        const PICK_ALL = "全部"
 
-            renderCalendar(events)
-            document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link))
-            // document.addEventListener('DOMContentLoaded', function () {
-            // });
-        })();
+        document.addEventListener('DOMContentLoaded', function() {
+            calendar = renderCalendar();
+            checklistContainer = document.getElementById('main-checklist-container');
+            (async () => {
+                if (!calendar) {
+                    return;
+                }
+                data = await buildEvents();
+                console.log(`Total events: ${data.events.length}, Steam apps: ${Object.keys(data.db.steam).length}, Metacritic games: ${Object.keys(data.db.metacritic).length}`)
+
+                const params = new URLSearchParams(window.location.search)
+                const selectedDbs = params.get('selected') || "精选"
+
+                let allSelectable = [PICK_ALL].concat(data?.dbs?.map(x=>x.name))
+                let initialValues = selectedDbs.split("|")
+
+                console.log(`Picked databases: ${initialValues}`)
+                initChecklist(allSelectable, initialValues);
+
+                document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link));
+            })();
+        });
+
+        let ChecklistLocked = false;
+        function tryLockChecklist(selectedValues) {
+            const allCheckboxes = checklistContainer.querySelectorAll('input[type="checkbox"]');
+
+            const allSelected = Array.from(allCheckboxes).filter(x => x.value === PICK_ALL)[0]?.checked ?? false;
+            const shouldLock = selectedValues.includes(PICK_ALL) && allSelected;
+
+            const shouldRefreshState = (shouldLock && !ChecklistLocked) || (!shouldLock && ChecklistLocked)
+            // console.log(`Locked? ${ChecklistLocked}; Should Lock? ${shouldLock}; Need refresh? ${shouldRefreshState}`)
+            if (shouldRefreshState) {
+                // 如果是“全部”复选框，禁用或启用其他所有复选框
+                allCheckboxes.forEach(cb => {
+                    if (cb.value !== '全部') {
+                        cb.disabled = shouldLock;
+                        const parentLabel = cb.closest('.checklist-item');
+                        if (parentLabel) {
+                            if (shouldLock) {
+                                parentLabel.classList.add('disabled');
+                            } else {
+                                parentLabel.classList.remove('disabled');
+                            }
+                        }
+                    }
+                });
+            }
+            ChecklistLocked = shouldLock
+        }
+
+        function onChecklistChange(selectedValues) {
+            if (!calendar) {
+                return;
+            }
+            calendar.removeAllEvents();
+
+            const urlParams = selectedValues.join('|')
+            setUrlParam("selected", urlParams, "精选")
+
+            tryLockChecklist(selectedValues)
+
+            if (selectedValues.length == data.dbs.length || selectedValues.includes(PICK_ALL)) {
+                calendar.addEventSource(data.events)
+                return;
+            }
+
+            const pickedDbs = data.dbs.filter(x => selectedValues?.includes(x.name))
+            if (!pickedDbs) {
+                return;
+            }
+            
+            // console.log(`Picked databases: ${selectedValues}`)
+
+            let events = []
+
+            let steamAppids = {}
+            let mcNames = {}
+
+            pickedDbs.forEach(x => {
+                if (x.static) {
+                    events = events.concat(x.static)
+                }
+                if (x.steam) {
+                    x.steam.forEach(appid => steamAppids[appid] = true)
+                }
+                if (x.metacritic) {
+                    x.metacritic.forEach(name => mcNames[name] = true)
+                }
+            })
+
+            Object.keys(steamAppids).forEach(appid => {
+                if (data.db?.steam[appid]) {
+                    events.push(data.db?.steam[appid])
+                }
+            })
+
+            Object.keys(mcNames).forEach(name => {
+                if (data.db?.metacritic[name]) {
+                    events.push(data.db?.metacritic[name])
+                }
+            })
+
+            calendar.addEventSource(events)
+        }
+        
+        function initChecklist(items, initialValues) {
+            checklistContainer.className = "checklist-container"
+            // 移除标题以外的所有子元素，确保重新初始化时列表清空
+            while (checklistContainer.children.length > 1) {
+                checklistContainer.removeChild(checklistContainer.lastChild);
+            }
+            if (!items) {
+                return;
+            }
+            if (!initialValues) {
+                initialValues = items
+            }
+
+            items.forEach(item => {
+                const isChecked = initialValues?.includes(item);
+                
+                // 创建 <label> 元素作为列表项
+                const listItem = document.createElement('label');
+                listItem.className = 'checklist-item';
+                
+                // 创建隐藏的 <input type="checkbox"> 元素
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.value = item;
+                checkbox.checked = isChecked;
+                
+                // 绑定变更事件监听器
+                checkbox.addEventListener('change', (event) => {
+                    const allCheckedValues = Array.from(checklistContainer.querySelectorAll('input:checked')).map(cb => cb.value);
+                    onChecklistChange(allCheckedValues);
+                });
+                
+                // 创建自定义勾选框的 <span> 元素
+                const checkmark = document.createElement('span');
+                checkmark.className = 'checkmark';
+                
+                // 创建列表项的文本 <span> 元素
+                const textSpan = document.createElement('span');
+                textSpan.className = 'checklist-label';
+                textSpan.textContent = item;
+                
+                // 将所有元素添加到 <label> 中
+                listItem.appendChild(checkbox);
+                listItem.appendChild(checkmark);
+                listItem.appendChild(textSpan);
+                
+                // 将完整的列表项添加到容器中
+                checklistContainer.appendChild(listItem);
+            });
+
+            // 首次初始化后触发一次 change 事件，反映初始状态
+            onChecklistChange(initialValues);
+        }
+
     </script>
 </head>
 <body>
@@ -797,7 +1033,6 @@
     <div class="ui menu">
         <div class="header menu">
             <a class="item" href="https://gamescalendar.github.io/">《XGS 严选》游戏日历</a>
-            <a class="item" href="https://gamescalendar.github.io?events=wishlist">愿望单合集</a>
         </div>
         <!--        <a class="active item">Link</a>-->
         <!--        <a class="item">Link</a>-->
@@ -833,6 +1068,11 @@
 <div class="ui container">
     <div class="ui grid">
         <div class="ui sixteen column">
+
+            <div id="main-checklist-container">
+                <!-- 列表项将在这里通过 JavaScript 动态生成 -->
+            </div>
+
             <div id="calendar"></div>
         </div>
     </div>
@@ -1019,13 +1259,6 @@
                                 <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/角色自定义/">角色自定义</a>
                                 <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/剧情丰富/">剧情丰富</a>
                             </div>
-                            <div class="release_date">
-                                <div class="subtitle column">发行日期:</div>
-                                <div class="date">2020 年 10 月 7 日</div>
-                            </div>
-                            <div>
-                                <b>发行日期: </b>2020 年 10 月 6 日
-                            </div>
                         </div>
                         <div class="inner_rule"></div>
 
@@ -1049,16 +1282,20 @@
                         <!--                        </div>-->
                         <div class="inner_rule"></div>
 
-                        <table class="game_language_options">
-                            <tbody>
-                            <tr>
-                                <td>简体中文</td>
-                                <td class="language_yes">界面</td>
-                                <td class="language_no">音频</td>
-                                <td class="language_yes">字幕</td>
-                            </tr>
-                            </tbody>
-                        </table>
+
+                        <div class="language_support">
+                            <div class="subtitle column">语言支持：</div>
+
+                            <table class="game_language_options">
+                                <tbody>
+                                <tr>
+                                    <td class="language_yes">界面</td>
+                                    <td class="language_no">音频</td>
+                                    <td class="language_yes">字幕</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <div class="inner_rule"></div>
                         <div>
                             <b>数据更新时间: </b>2020 年 10 月 6 日
