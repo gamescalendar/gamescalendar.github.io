@@ -628,10 +628,6 @@
         }
 
         async function buildEvents() {
-            const params = new URLSearchParams(window.location.search)
-            const staticFilename = params.get('static') || "static"
-            const eventsFilename = params.get('events') || "events"
-
             const options = [
                 "events.json", "wishlist.json", "owned.json", "family.json",
             ]
@@ -681,16 +677,9 @@
             }
         }
 
-        function renderCalendar(events, db) {
-            let cnDateStrToDateStr = (str) => {
-                if (!str) {
-                    return str;
-                }
-                return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
-            }
-            events.forEach(x=>{
-                x.start = cnDateStrToDateStr(x.start)
-            })
+        let data;
+
+        function renderCalendar(events) {
             let calendarEl = document.getElementById('calendar');
 
             const params = new URLSearchParams(window.location.search)
@@ -735,6 +724,7 @@
                 initialDate: date,
 
                 eventDisplay: "auto",
+                events: events ?? [],
 
                 eventDidMount: function (info) {
                     // let tooltip = new Tooltip(info.el, {
@@ -755,7 +745,7 @@
                     let template = ""
                     switch (info.event.extendedProps.source) {
                         case "steam":
-                            template = buildSteam(info.event.extendedProps.app_data, info.event.extendedProps.meta, db.steam_meta);
+                            template = buildSteam(info.event.extendedProps.app_data, info.event.extendedProps.meta, data?.db?.steam_meta);
                             break
                         case "metacritic":
                             template = buildMetacritic(info.event.extendedProps.app_data, info.event.extendedProps.meta);
@@ -814,7 +804,6 @@
                     // console.log(tippyInstance)
                 },
 
-                events: events,
                 datesSet: function (dateInfo) {
                     let viewType = dateInfo.view?.type
                     setUrlParam('view', viewType, "multiMonthYear")
@@ -846,14 +835,34 @@
             return calendar
         }
 
-        let data;
+        function addEvents(calendar, events) {
+            let cnDateStrToDateStr = (str) => {
+                if (!str) {
+                    return str;
+                }
+                return str.replaceAll(" ", "").replaceAll("年", "-").replaceAll("月", "-").replaceAll("日", "")
+            }
+            events.forEach(x=>{
+                x.start = cnDateStrToDateStr(x.start)
+            })
+
+            calendar.addEventSource(events);
+        }
+
         let calendar;
-        (async () => {
-            data = await buildEvents()
-            console.log(`Total events: ${data.events.length}, Steam apps: ${Object.keys(data.db.steam).length}, Metacritic games: ${Object.keys(data.db.metacritic).length}`)
-            calendar = renderCalendar(data.events, data.db)
-            document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link))
-        })();
+
+        document.addEventListener('DOMContentLoaded', function() {
+            calendar = renderCalendar();
+            
+            (async () => {
+                data = await buildEvents();
+                console.log(`Total events: ${data.events.length}, Steam apps: ${Object.keys(data.db.steam).length}, Metacritic games: ${Object.keys(data.db.metacritic).length}`)
+
+                addEvents(calendar, data.events)
+
+                document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link))
+            })();
+        });
     </script>
 </head>
 <body>
@@ -862,7 +871,6 @@
     <div class="ui menu">
         <div class="header menu">
             <a class="item" href="https://gamescalendar.github.io/">《XGS 严选》游戏日历</a>
-            <a class="item" href="https://gamescalendar.github.io?events=wishlist">愿望单合集</a>
         </div>
         <!--        <a class="active item">Link</a>-->
         <!--        <a class="item">Link</a>-->
