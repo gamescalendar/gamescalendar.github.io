@@ -863,6 +863,7 @@
 
         let calendar;
         let checklistContainer;
+        const PICK_ALL = "全部"
 
         document.addEventListener('DOMContentLoaded', function() {
             calendar = renderCalendar();
@@ -877,19 +878,43 @@
                 const params = new URLSearchParams(window.location.search)
                 const selectedDbs = params.get('selected') || "精选"
 
-                let initialValues = []
-                if (selectedDbs == "all") {
-                    initialValues = data?.dbs?.map(x=>x.name)
-                } else {
-                    initialValues = selectedDbs.split("|")
-                }
+                let allSelectable = [PICK_ALL].concat(data?.dbs?.map(x=>x.name))
+                let initialValues = selectedDbs.split("|")
 
                 console.log(`Picked databases: ${initialValues}`)
-                initChecklist(data?.dbs?.map(x=>x.name), initialValues);
+                initChecklist(allSelectable, initialValues);
 
                 document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link));
             })();
         });
+
+        let ChecklistLocked = false;
+        function tryLockChecklist(selectedValues) {
+            const allCheckboxes = checklistContainer.querySelectorAll('input[type="checkbox"]');
+
+            const allSelected = Array.from(allCheckboxes).filter(x => x.value === PICK_ALL)[0]?.checked ?? false;
+            const shouldLock = selectedValues.includes(PICK_ALL) && allSelected;
+
+            const shouldRefreshState = (shouldLock && !ChecklistLocked) || (!shouldLock && ChecklistLocked)
+            // console.log(`Locked? ${ChecklistLocked}; Should Lock? ${shouldLock}; Need refresh? ${shouldRefreshState}`)
+            if (shouldRefreshState) {
+                // 如果是“全部”复选框，禁用或启用其他所有复选框
+                allCheckboxes.forEach(cb => {
+                    if (cb.value !== '全部') {
+                        cb.disabled = shouldLock;
+                        const parentLabel = cb.closest('.checklist-item');
+                        if (parentLabel) {
+                            if (shouldLock) {
+                                parentLabel.classList.add('disabled');
+                            } else {
+                                parentLabel.classList.remove('disabled');
+                            }
+                        }
+                    }
+                });
+            }
+            ChecklistLocked = shouldLock
+        }
 
         function onChecklistChange(selectedValues) {
             if (!calendar) {
@@ -897,9 +922,13 @@
             }
             calendar.removeAllEvents();
 
-            if (selectedValues.length == data.dbs.length) {
+            const urlParams = selectedValues.join('|')
+            setUrlParam("selected", urlParams, "精选")
+
+            tryLockChecklist(selectedValues)
+
+            if (selectedValues.length == data.dbs.length || selectedValues.includes(PICK_ALL)) {
                 calendar.addEventSource(data.events)
-                setUrlParam("selected", "all")
                 return;
             }
 
@@ -907,9 +936,8 @@
             if (!pickedDbs) {
                 return;
             }
-
-            const urlParams = selectedValues.join('|')
-            setUrlParam("selected", urlParams, "精选")
+            
+            // console.log(`Picked databases: ${selectedValues}`)
 
             let events = []
 
@@ -970,9 +998,8 @@
                 checkbox.checked = isChecked;
                 
                 // 绑定变更事件监听器
-                checkbox.addEventListener('change', () => {
-                    const allCheckedValues = Array.from(checklistContainer.querySelectorAll('input:checked'))
-                                                .map(cb => cb.value);
+                checkbox.addEventListener('change', (event) => {
+                    const allCheckedValues = Array.from(checklistContainer.querySelectorAll('input:checked')).map(cb => cb.value);
                     onChecklistChange(allCheckedValues);
                 });
                 
