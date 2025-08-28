@@ -3,29 +3,53 @@
     The style is not exactly same as original
 */
 
+.language_support {
+    display: flex;
+    align-items: center;
+}
+
+.language_support .subtitle {
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+}
+
 .game_language_options {
     width: 100%
 }
 
 .game_language_options td {
-    width: 25%
-}
-
-.game_language_options td:first-child {
+    width: 25%;
     width: auto;
-    text-align: left
+    text-align: left;
+    margin-right: auto;
 }
 
 .game_language_options tr:last-child {
     border-bottom: none
 }
 
+.game_language_options tr {
+    display: flex;
+}
+
+.game_language_options td {
+    color: #556772;
+    font-size: 12px;
+    padding: 3px 0;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .game_language_options td.language_yes {
-    color: #6c3
+    color: #6c3;
 }
 
 .game_language_options td.language_no {
-    color: #e60
+    color: #e60;
 }
 
 .game_language_options td.language_yes:before, td.language_no:before {
@@ -40,6 +64,21 @@
 
 .game_language_options td.language_no:before {
     content: '☒'
+}
+
+table.game_language_options {
+    border-collapse: collapse
+}
+
+.game_language_options tr {
+    border-bottom: 1px solid #626366
+}
+
+.game_language_options td {
+    color: #556772;
+    font-size: 12px;
+    padding: 3px 0;
+    text-align: center
 }
 
 #game_score {
@@ -130,15 +169,22 @@ div.rightcol {
     transition: opacity .5s
 }
 
+.block_content {
+    padding: 8px 16px;
+    padding-right: 10px;
+}
+
 div.block_header {
     overflow: hidden;
-    white-space: nowrap
+    white-space: nowrap;
+    padding: 5px 16px;
 }
 
 .block_header h4 {
     font-size: 12px;
     font-weight: 700;
-    padding: 5px 16px;
+    line-height: 13px;
+    height: 12px;
     color: #8f98a0;
     font-family: "Motiva Sans", Arial, Helvetica, sans-serif
 }
@@ -211,21 +257,6 @@ div.glance_tag {
 .game_details b {
     color: #61686d;
     font-weight: 400
-}
-
-table.game_language_options {
-    border-collapse: collapse
-}
-
-.game_language_options tr {
-    border-bottom: 1px solid #626366
-}
-
-.game_language_options td {
-    color: #556772;
-    font-size: 12px;
-    padding: 3px 0;
-    text-align: center
 }
 
 .app_tag {
@@ -331,18 +362,22 @@ div.rightcol {
     font-size: 11px;
 }
 
-.release_date .subtitle, .user_reviews .subtitle, .dev_row .subtitle {
+.subtitle {
     color: #556772;
 
     text-transform: uppercase;
     font-size: 10px;
-    padding-right: 10px;
+    padding-right: 5px;
     min-width: 94px;
 }
 
-.user_reviews_summary_row, .release_date, .dev_row {
+.user_reviews_summary_row, .release_date, .dev_row, .track_date {
     display: flex;
     line-height: 16px;
+}
+
+.track_date .subtitle {
+    margin-left: auto;
 }
 
 .user_reviews {
@@ -597,4 +632,96 @@ div.dev_list a:hover {
 
 .product_details .side_details .sync_date {
     margin-top: auto;
+}
+
+
+/* Checklist Container */
+.checklist-container {
+    background-color: #ffffff;
+    padding: 0 12px;
+    
+    border: 1px solid rgba(34, 36, 38, .15);
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    
+    width: 100%;
+    display: flex;
+}
+
+/* Each List Item */
+.checklist-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+/* Hover effect */
+.checklist-item:hover {
+    background-color: #f7fafc;
+}
+
+/* Disabled state */
+.checklist-item.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.checklist-item.disabled:hover {
+    background-color: transparent;
+}
+
+/* Disabled label text color */
+.checklist-item.disabled .checklist-label {
+    color: #718096;
+}
+
+/* Hide the default checkbox */
+.checklist-item input[type="checkbox"] {
+    display: none;
+}
+
+/* Custom Checkmark */
+.checkmark {
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid #cbd5e0;
+    border-radius: 6px;
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* Checked state style */
+.checklist-item input:checked + .checkmark {
+    background-color: #4c51bf;
+    border-color: #4c51bf;
+}
+
+/* Checkmark tick */
+.checkmark::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 12px;
+    border: solid #ffffff;
+    border-width: 0 3px 3px 0;
+    transform: translate(-50%, -60%) rotate(45deg);
+    opacity: 0;
+}
+
+.checklist-item input:checked + .checkmark::after {
+    opacity: 1;
+}
+
+/* Label Text */
+.checklist-label {
+    font-size: 1rem;
+    color: #2d3748;
+    margin-left: 12px;
+    line-height: 1.4;
+    user-select: none;
 }
