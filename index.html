@@ -341,7 +341,7 @@
             return template
         }
 
-        function buildSteam(data, meta) {
+        function buildSteam(data, meta, steam_meta) {
             if (!data) {
                 return null;
             }
@@ -486,7 +486,13 @@
                         <div class="details_block">
                             <b>该产品的热门用户自定义标签：</b>
                             <div class="glance_tag">
-                            ${data.tags.map(x => x.name).filter(x => x).slice(0, 7).map(tag => `<a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/${tag}/">${tag}</a>`).join("")}
+                            ${data.tags.map(x => {
+                                if (x.name && x.link) {
+                                    return x;
+                                } else if (steam_meta) {
+                                    return steam_meta[x]
+                                }
+                            }).filter(x => x.name && x.link).slice(0, 7).map(tag => `<a target="_blank" class="app_tag" href="${tag}.link">${tag.name}</a>`).join("")}
                             </div>
                         </div>
                         <div class="inner_rule"></div>
@@ -614,6 +620,7 @@
             const events = db.concat(static)
             patchColorForEvents(events)
             return {
+                db: db,
                 events: events,
                 dbs: [static, list, wishlist, owned, family],
             }
@@ -648,7 +655,7 @@
             }
         }
 
-        function renderCalendar(events) {
+        function renderCalendar(events, db) {
             let cnDateStrToDateStr = (str) => {
                 if (!str) {
                     return str;
@@ -722,7 +729,7 @@
                     let template = ""
                     switch (info.event.extendedProps.source) {
                         case "steam":
-                            template = buildSteam(info.event.extendedProps.app_data, info.event.extendedProps.meta);
+                            template = buildSteam(info.event.extendedProps.app_data, info.event.extendedProps.meta, db.steam_meta);
                             break
                         case "metacritic":
                             template = buildMetacritic(info.event.extendedProps.app_data, info.event.extendedProps.meta);
@@ -819,7 +826,7 @@
         (async () => {
             data = await buildEvents()
 
-            calendar = renderCalendar(data.events)
+            calendar = renderCalendar(data.events, data.db)
             document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link))
         })();
     </script>

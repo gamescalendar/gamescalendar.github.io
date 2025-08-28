@@ -142,16 +142,93 @@ export default class Database {
         this.metacriticData[name] = data
     }
 
+    packDatabase(database) {
+        console.log("Packing database...")
+        const db = database.steam;
+        const meta = database.steam_meta ?? {
+            categories: {},
+            genres: {},
+            tags: {},
+        }
+        meta.categories = meta.categories ?? {}
+        meta.genres = meta.genres ?? {}
+        meta.tags = meta.tags ?? {}
+        
+        let keys = Object.keys(db)
+        console.log(`Packing ${keys.length} Steam apps...`)
+
+        keys.forEach(appid => {
+            const data = db[appid]?.app_data
+            if (!data) {
+                // console.log(`${appid}: no app_data`)
+                return
+            }
+
+            if (data.categories) {
+                data.categories = data.categories.map(cate => {
+                    if (!cate) {
+                        console.log(data)
+                        process.exit(1)
+                    }
+                    if (cate.id) {
+                        if (!meta.categories[cate.id]) {
+                            meta.categories[cate.id] = cate.description
+                        }
+
+                        return cate.id
+                    } else {
+                        return cate
+                    }
+                })
+            }
+
+            if (data.genres) {
+                data.genres = data.genres.map(genr => {
+                    if (genr.id) {
+                        if (!meta.genres[genr.id]) {
+                            meta.genres[genr.id] = genr.description
+                        }
+
+                        return genr.id
+                    } else {
+                        return genr
+                    }
+                })
+            }
+
+            if (data.tags) {
+                data.tags = data.tags.map(tag => {
+                    if (tag.name) {
+                        if (!meta.tags[tag.name]) {
+                            meta.tags[tag.name] = tag.link
+                        }
+
+                        return tag.name
+                    } else {
+                        return tag
+                    }
+                })
+            }
+        })
+        database.steam_meta = meta;
+
+        console.log(`Packed: ${Object.keys(meta.categories).length} categories, ${Object.keys(meta.genres).length} genres, ${Object.keys(meta.tags).length} tags.`);
+        return database
+    }
+
     /**
      * 保存日历数据到所有配置的输出文件
      */
     async save() {
         if (this.config.database) {
-            const database = {
+            let database = {
                 steam: this.steamData,
                 metacritic: this.metacriticData,
             }
-            fs.writeFileSync(this.config.database, JSON.stringify(database, null, 4), 'utf-8')
+            database = this.packDatabase(database)
+
+            fs.writeFileSync(this.config.database, JSON.stringify(database, null, 2), 'utf-8');
+            console.log(`Database saved to ${this.config.database}: cached ${Object.keys(database.steam).length} Steam items, ${Object.keys(database.metacritic).length} Metacritic items.`);
         }
 
         for (const db of this.config.databases) {
