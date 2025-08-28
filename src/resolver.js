@@ -600,7 +600,10 @@ export default class Resolver {
                     console.log(`[更新] 成功: AppID ${appid} - "${existingTitle}" -> "${appData.name}"`);
                 }
                 
-                return { success: true, appid, data: calendarData, type: updateType };
+                if (appData.meta?.error) {
+                    console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - 无数据返回，采用旧数据`);
+                }
+                return { success: appData.meta?.error ?? true, appid, data: calendarData, type: updateType };
             } else {
                 console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - 无数据返回`);
                 return { success: false, appid, error: 'No data returned', type: updateType };

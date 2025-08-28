@@ -62,6 +62,12 @@ export default class Database {
         });
 
         console.log(`Database ${file}: cached ${Object.keys(data.steam).length} Steam items, ${Object.keys(data.metacritic).length} Metacritic items.`);
+        if (data.steam_meta) {
+            const txt = Object.keys(data.steam_meta).map(key => {
+                return `${Object.keys(data.steam_meta[key]).length} ${key}`
+            }).join(", ")
+            console.log(`Steam meta: ${txt}`)
+        }
     }
 
     async loadOutput(file) {
@@ -166,10 +172,6 @@ export default class Database {
 
             if (data.categories) {
                 data.categories = data.categories.map(cate => {
-                    if (!cate) {
-                        console.log(data)
-                        process.exit(1)
-                    }
                     if (cate.id) {
                         if (!meta.categories[cate.id]) {
                             meta.categories[cate.id] = cate.description

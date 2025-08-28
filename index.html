@@ -450,6 +450,28 @@
                         </div>`
             }
 
+            let tags = data.tags.map(x => {
+                if (x.name && x.link) {
+                    return x;
+                } else if (steam_meta?.tags[x]) {
+                    return {
+                        name: x,
+                        link: steam_meta?.tags[x],
+                    }
+                }
+                console.log(`Missing tag data: ${x}: ${data.title} not in meta`)
+
+                return {
+                    name: x,
+                    link: `https://store.steampowered.com/tags/zh-cn/${x}/`
+                }
+            }).filter(x => x && x.name && x.link).slice(0, 7)
+
+            if (tags.length <= 0) {
+                console.log(data.title, data.tags, steam_meta?.tags)
+            }
+            const userTags = tags.map(tag => `<a target="_blank" class="app_tag" href="${tag.link}">${tag.name}</a>`).join("")
+
             const template = `
     <div class="v6">
         <div id="wrapper">
@@ -486,13 +508,7 @@
                         <div class="details_block">
                             <b>该产品的热门用户自定义标签：</b>
                             <div class="glance_tag">
-                            ${data.tags.map(x => {
-                                if (x.name && x.link) {
-                                    return x;
-                                } else if (steam_meta) {
-                                    return steam_meta[x]
-                                }
-                            }).filter(x => x.name && x.link).slice(0, 7).map(tag => `<a target="_blank" class="app_tag" href="${tag}.link">${tag.name}</a>`).join("")}
+                            ${userTags}
                             </div>
                         </div>
                         <div class="inner_rule"></div>
@@ -522,9 +538,17 @@
             return template;
         }
 
-        async function fetchEvents(url) {
-            let events = await fetch(url)
-            events = await events.json()
+        async function fetchJson(url) {
+            let data = await fetch(url)
+            data = await data.json()
+            return data
+        }
+
+        async function fetchEvents(data) {
+            let events = data
+            if (typeof (data) == "string") {
+                events = await fetchJson(data)
+            }
 
             // sanitize
             let result = []
@@ -611,13 +635,13 @@
             ]
 
             const promises = [
-                fetchEvents(`https://gamescalendar.github.io/database.json`),
+                fetchJson(`https://gamescalendar.github.io/database.json`),
                 fetchEvents(`https://gamescalendar.github.io/static.json`),
             ].concat(options.map(filename => fetchDatabaseSource(`https://gamescalendar.github.io/${filename}`)));
             
             const [db, static, list, wishlist, owned, family] = await Promise.all(promises);
 
-            const events = db.concat(static)
+            const events = (await fetchEvents(db)).concat(static)
             patchColorForEvents(events)
             return {
                 db: db,
