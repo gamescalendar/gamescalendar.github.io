@@ -11,3 +11,4 @@
 404的游戏
 现在好像没有删除逻辑
 2142230 本地更新没有保存last track date
+https://store.steampowered.com/app/2600 锁区

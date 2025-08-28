@@ -264,7 +264,7 @@ export default class Database {
             const content = JSON.stringify(data, null, 2);
             fs.writeFileSync(db.output, content, 'utf-8');
             
-            console.log(`Calendar data saved to ${db.output}: ${Object.keys(data.steam).length}/${trackingSteam.length} Steam apps, ${Object.keys(data.metacritic).length}/${trackingMetacritic.length} Metacritic games.`);
+            console.log(`Calendar data saved to ${db.output}: ${data.steam.filter(x=>this.steamData[x]).length}/${trackingSteam.length} Steam apps, ${data.metacritic.filter(x=>this.metacriticData[x]).length}/${trackingMetacritic.length} Metacritic games.`);
         }
     }
 

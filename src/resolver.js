@@ -650,7 +650,7 @@ export default class Resolver {
         
         if (initializationAppids.length > 0) {
             console.log(`\nInit ${initializationAppids.length} games:`);
-            console.log(`  - AppID: ${initializationAppids.join(", ")}`);
+            console.log(`  - AppID: ${initializationAppids.map(x=>x.appid).join(", ")}`);
         }
         
         if (updateAppids.length > 0) {
