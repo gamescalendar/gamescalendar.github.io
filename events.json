@@ -18000,10 +18000,9 @@
     },
     "288470": {
       "meta": {
-        "index": 303,
         "platform": "Steam",
-        "identifier": 288470,
-        "last_track_date": "2025-08-26"
+        "identifier": "288470",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "Fable Anniversary",
@@ -18016,7 +18015,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/288470/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2014 年 9 月 12 日"
+          "date": "2014 年 9 月 12 日",
+          "en": "Sep 12, 2014"
         },
         "language": {
           "zh": {
@@ -18165,14 +18165,22 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(81)",
-          "tooltip": "过去 30 天内的 81 篇用户评测中有 86% 为好评。"
+          "count": "(74)",
+          "tooltip": "过去 30 天内的 74 篇用户评测中有 87% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "褒贬不一",
           "cssClass": "mixed",
           "count": "(213)",
-          "tooltip": "您语言的 213 篇用户评测中有 69% 为好评。"
+          "tooltip": "您语言的 213 篇用户评测中有 69% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "13,062",
+          "tooltip": "此游戏的 13,062 篇用户评测中有 85% 为好评。"
         },
         "wishlist": true,
         "family": false
@@ -18180,10 +18188,9 @@
     },
     "289070": {
       "meta": {
-        "index": 353,
         "platform": "Steam",
-        "identifier": 289070,
-        "last_track_date": "2025-08-26"
+        "identifier": "289070",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "Sid Meier’s Civilization® VI",
@@ -18196,7 +18203,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2016 年 10 月 20 日"
+          "date": "2016 年 10 月 20 日",
+          "en": "Oct 20, 2016"
         },
         "language": {
           "zh": {
@@ -18373,14 +18381,22 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(1,765)",
-          "tooltip": "过去 30 天内的 1,765 篇用户评测中有 88% 为好评。"
+          "count": "(1,734)",
+          "tooltip": "过去 30 天内的 1,734 篇用户评测中有 88% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(100,757)",
-          "tooltip": "您语言的 100,757 篇用户评测中有 85% 为好评。"
+          "count": "(100,785)",
+          "tooltip": "您语言的 100,785 篇用户评测中有 85% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "262,018",
+          "tooltip": "此游戏的 262,018 篇用户评测中有 85% 为好评。"
         },
         "wishlist": false,
         "family": true
@@ -18388,10 +18404,9 @@
     },
     "289130": {
       "meta": {
-        "index": 260,
         "platform": "Steam",
-        "identifier": 289130,
-        "last_track_date": "2025-08-26"
+        "identifier": "289130",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "无尽帝国",
@@ -18404,7 +18419,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289130/header_schinese.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2014 年 9 月 18 日"
+          "date": "2014 年 9 月 18 日",
+          "en": "Sep 18, 2014"
         },
         "language": {
           "zh": {
@@ -18562,13 +18578,21 @@
           "summary": "褒贬不一",
           "cssClass": "mixed",
           "count": "(27)",
-          "tooltip": "过去 30 天内的 27 篇用户评测中有 66% 为好评。"
+          "tooltip": "过去 30 天内的 27 篇用户评测中有 66% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "褒贬不一",
           "cssClass": "mixed",
           "count": "(1,129)",
-          "tooltip": "您语言的 1,129 篇用户评测中有 64% 为好评。"
+          "tooltip": "您语言的 1,129 篇用户评测中有 64% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "14,200",
+          "tooltip": "此游戏的 14,200 篇用户评测中有 84% 为好评。"
         },
         "wishlist": false,
         "family": true
@@ -18576,10 +18600,9 @@
     },
     "289650": {
       "meta": {
-        "index": 228,
         "platform": "Steam",
-        "identifier": 289650,
-        "last_track_date": "2025-08-26"
+        "identifier": "289650",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "刺客信条：大革命",
@@ -18592,7 +18615,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289650/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2014 年 11 月 11 日"
+          "date": "2014 年 11 月 11 日",
+          "en": "Nov 11, 2014"
         },
         "language": {
           "zh": {
@@ -18757,14 +18781,22 @@
         "recentReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(595)",
-          "tooltip": "过去 30 天内的 595 篇用户评测中有 74% 为好评。"
+          "count": "(593)",
+          "tooltip": "过去 30 天内的 593 篇用户评测中有 74% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(18,818)",
-          "tooltip": "您语言的 18,818 篇用户评测中有 79% 为好评。"
+          "count": "(18,826)",
+          "tooltip": "您语言的 18,826 篇用户评测中有 79% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "多半好评",
+          "cssClass": "positive",
+          "count": "69,754",
+          "tooltip": "此游戏的 69,754 篇用户评测中有 77% 为好评。"
         },
         "wishlist": false,
         "family": false
@@ -18772,10 +18804,9 @@
     },
     "290340": {
       "meta": {
-        "index": 553,
         "platform": "Steam",
-        "identifier": 290340,
-        "last_track_date": "2025-08-26"
+        "identifier": "290340",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "Armello",
@@ -18788,7 +18819,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/290340/header_schinese.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2015 年 9 月 1 日"
+          "date": "2015 年 9 月 1 日",
+          "en": "Sep 1, 2015"
         },
         "language": {
           "zh": {
@@ -18961,14 +18993,22 @@
         "recentReview": {
           "summary": "褒贬不一",
           "cssClass": "mixed",
-          "count": "(19)",
-          "tooltip": "过去 30 天内的 19 篇用户评测中有 68% 为好评。"
+          "count": "(18)",
+          "tooltip": "过去 30 天内的 18 篇用户评测中有 66% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "多半好评",
           "cssClass": "positive",
           "count": "(1,338)",
-          "tooltip": "您语言的 1,338 篇用户评测中有 75% 为好评。"
+          "tooltip": "您语言的 1,338 篇用户评测中有 75% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "10,858",
+          "tooltip": "此游戏的 10,858 篇用户评测中有 82% 为好评。"
         },
         "wishlist": false,
         "family": true
@@ -18976,10 +19016,9 @@
     },
     "291650": {
       "meta": {
-        "index": 14,
         "platform": "Steam",
-        "identifier": 291650,
-        "last_track_date": "2025-08-26"
+        "identifier": "291650",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "Pillars of Eternity",
@@ -18992,7 +19031,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/291650/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2015 年 3 月 26 日"
+          "date": "2015 年 3 月 26 日",
+          "en": "Mar 26, 2015"
         },
         "language": {
           "zh": {
@@ -19129,14 +19169,22 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(69)",
-          "tooltip": "过去 30 天内的 69 篇用户评测中有 86% 为好评。"
+          "count": "(65)",
+          "tooltip": "过去 30 天内的 65 篇用户评测中有 87% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
           "count": "(933)",
-          "tooltip": "您语言的 933 篇用户评测中有 87% 为好评。"
+          "tooltip": "您语言的 933 篇用户评测中有 87% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "16,100",
+          "tooltip": "此游戏的 16,100 篇用户评测中有 87% 为好评。"
         },
         "wishlist": false,
         "family": true
@@ -19144,10 +19192,9 @@
     },
     "297130": {
       "meta": {
-        "index": 393,
         "platform": "Steam",
-        "identifier": 297130,
-        "last_track_date": "2025-08-26"
+        "identifier": "297130",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "Titan Souls",
@@ -19160,7 +19207,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/297130/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2015 年 4 月 14 日"
+          "date": "2015 年 4 月 14 日",
+          "en": "Apr 14, 2015"
         },
         "language": {
           "zh": {
@@ -19297,14 +19345,22 @@
         "recentReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(43)",
-          "tooltip": "过去 30 天内的 43 篇用户评测中有 79% 为好评。"
+          "count": "(44)",
+          "tooltip": "过去 30 天内的 44 篇用户评测中有 77% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
           "count": "(1,267)",
-          "tooltip": "您语言的 1,267 篇用户评测中有 84% 为好评。"
+          "tooltip": "您语言的 1,267 篇用户评测中有 84% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "7,551",
+          "tooltip": "此游戏的 7,551 篇用户评测中有 82% 为好评。"
         },
         "wishlist": false,
         "family": true
@@ -19312,10 +19368,9 @@
     },
     "298110": {
       "meta": {
-        "index": 250,
         "platform": "Steam",
-        "identifier": 298110,
-        "last_track_date": "2025-08-26"
+        "identifier": "298110",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "Far Cry® 4",
@@ -19328,7 +19383,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/298110/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2014 年 11 月 17 日"
+          "date": "2014 年 11 月 17 日",
+          "en": "Nov 17, 2014"
         },
         "language": {
           "zh": {
@@ -19461,14 +19517,22 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(650)",
-          "tooltip": "过去 30 天内的 650 篇用户评测中有 84% 为好评。"
+          "count": "(640)",
+          "tooltip": "过去 30 天内的 640 篇用户评测中有 84% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(6,391)",
-          "tooltip": "您语言的 6,391 篇用户评测中有 80% 为好评。"
+          "count": "(6,392)",
+          "tooltip": "您语言的 6,392 篇用户评测中有 80% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "58,085",
+          "tooltip": "此游戏的 58,085 篇用户评测中有 84% 为好评。"
         },
         "wishlist": true,
         "family": false
@@ -19476,10 +19540,9 @@
     },
     "300550": {
       "meta": {
-        "index": 288,
         "platform": "Steam",
-        "identifier": 300550,
-        "last_track_date": "2025-08-26"
+        "identifier": "300550",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "Shadowrun: Dragonfall - Director's Cut",
@@ -19492,7 +19555,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/300550/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2014 年 9 月 18 日"
+          "date": "2014 年 9 月 18 日",
+          "en": "Sep 18, 2014"
         },
         "language": {
           "zh": {
@@ -19641,13 +19705,21 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(19)",
-          "tooltip": "过去 30 天内的 19 篇用户评测中有 84% 为好评。"
+          "count": "(18)",
+          "tooltip": "过去 30 天内的 18 篇用户评测中有 88% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
           "count": "(5,231)",
+          "tooltip": "此游戏的 5,231 篇用户评测中有 89% 为好评。",
+          "caption": "所有评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "5,231",
           "tooltip": "此游戏的 5,231 篇用户评测中有 89% 为好评。"
         },
         "wishlist": false,
@@ -19656,10 +19728,9 @@
     },
     "304650": {
       "meta": {
-        "index": 119,
         "platform": "Steam",
-        "identifier": 304650,
-        "last_track_date": "2025-08-26"
+        "identifier": "304650",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "SUNLESS SEA",
@@ -19672,7 +19743,8 @@
         "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304650/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2015 年 2 月 6 日"
+          "date": "2015 年 2 月 6 日",
+          "en": "Feb 6, 2015"
         },
         "language": {
           "zh": {
@@ -19809,14 +19881,22 @@
         "recentReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(19)",
-          "tooltip": "过去 30 天内的 19 篇用户评测中有 78% 为好评。"
+          "count": "(17)",
+          "tooltip": "过去 30 天内的 17 篇用户评测中有 76% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
           "count": "(654)",
-          "tooltip": "您语言的 654 篇用户评测中有 87% 为好评。"
+          "tooltip": "您语言的 654 篇用户评测中有 87% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "7,453",
+          "tooltip": "此游戏的 7,453 篇用户评测中有 84% 为好评。"
         },
         "wishlist": false,
         "family": true
@@ -19824,23 +19904,22 @@
     },
     "306130": {
       "meta": {
-        "index": 183,
         "platform": "Steam",
-        "identifier": 306130,
-        "last_track_date": "2025-08-26"
+        "identifier": "306130",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
-      "title": "《上古卷轴®OL》",
+      "title": "The Elder Scrolls® Online",
       "start": "2017-05-22",
       "app_data": {
         "platform": "Steam",
         "appid": 306130,
-        "title": "《上古卷轴®OL》",
-        "description": "每段传说都有它的起点，而在《上古卷轴OL》中， 你将从头开始谱写属于自己的传说。加入数百万玩家的行列， 投身于广阔而生动的《上古卷轴》世界，体验这款在线奇幻角色扮演游戏。",
-        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/306130/bc362fb62c4f2ad548ffebb9bf3a9817fd5701f9/header_schinese.jpg",
+        "title": "The Elder Scrolls® Online",
+        "description": "Every legend starts somewhere and in The Elder Scrolls Online, it starts with you. Join millions of players in an online, fantasy RPG set in a vast living Elder Scrolls world.",
+        "header_image": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/306130/0d72f13b2d3f75385a0c83e2551ba97e1059c6fe/header.jpg",
         "release_date": {
           "coming_soon": false,
-          "date": "2017 年 5 月 22 日"
+          "date": "May 22, 2017"
         },
         "language": {
           "zh": {
@@ -19859,89 +19938,89 @@
         "categories": [
           {
             "id": 1,
-            "description": "多人"
+            "description": "Multi-player"
           },
           {
             "id": 20,
-            "description": "大型多人在线"
+            "description": "MMO"
           },
           {
             "id": 49,
-            "description": "玩家对战"
+            "description": "PvP"
           },
           {
             "id": 36,
-            "description": "线上玩家对战"
+            "description": "Online PvP"
           },
           {
             "id": 9,
-            "description": "合作"
+            "description": "Co-op"
           },
           {
             "id": 38,
-            "description": "在线合作"
+            "description": "Online Co-op"
           },
           {
             "id": 29,
-            "description": "Steam 集换式卡牌"
+            "description": "Steam Trading Cards"
           },
           {
             "id": 13,
-            "description": "支持字幕"
+            "description": "Captions available"
           },
           {
             "id": 35,
-            "description": "应用内购买"
+            "description": "In-App Purchases"
           },
           {
             "id": 67,
-            "description": "视角舒适度"
+            "description": "Camera Comfort"
           },
           {
             "id": 68,
-            "description": "自定义音量控制"
+            "description": "Custom Volume Controls"
           },
           {
             "id": 74,
-            "description": "无需应对快速反应事件"
+            "description": "Playable without Timed Input"
           },
           {
             "id": 69,
-            "description": "立体声"
+            "description": "Stereo Sound"
           },
           {
             "id": 70,
-            "description": "环绕声"
+            "description": "Surround Sound"
           },
           {
             "id": 18,
-            "description": "部分支持控制器"
+            "description": "Partial Controller Support"
           },
           {
             "id": 61,
-            "description": "可用 HDR"
+            "description": "HDR available"
           },
           {
             "id": 62,
-            "description": "家庭共享"
+            "description": "Family Sharing"
           }
         ],
         "genres": [
           {
             "id": "1",
-            "description": "动作"
+            "description": "Action"
           },
           {
             "id": "25",
-            "description": "冒险"
+            "description": "Adventure"
           },
           {
             "id": "29",
-            "description": "大型多人在线"
+            "description": "Massively Multiplayer"
           },
           {
             "id": "3",
-            "description": "角色扮演"
+            "description": "RPG"
           }
         ],
         "tags": [
@@ -20029,14 +20108,22 @@
         "recentReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(591)",
-          "tooltip": "过去 30 天内的 591 篇用户评测中有 74% 为好评。"
+          "count": "(578)",
+          "tooltip": "过去 30 天内的 578 篇用户评测中有 75% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(6,589)",
-          "tooltip": "您语言的 6,589 篇用户评测中有 71% 为好评。"
+          "count": "(6,590)",
+          "tooltip": "您语言的 6,590 篇用户评测中有 71% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "129,315",
+          "tooltip": "此游戏的 129,315 篇用户评测中有 82% 为好评。"
         },
         "wishlist": false,
         "family": true
@@ -20044,14 +20131,13 @@
     },
     "311560": {
       "meta": {
-        "index": 229,
         "platform": "Steam",
-        "identifier": 311560,
-        "last_track_date": "2025-08-26"
+        "identifier": "311560",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "Assassin’s Creed® Rogue",
-      "start": "2015-03-09",
+      "start": "2028-01-01",
       "app_data": {
         "platform": "Steam",
         "appid": 311560,
@@ -20210,14 +20296,22 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(190)",
-          "tooltip": "过去 30 天内的 190 篇用户评测中有 90% 为好评。"
+          "count": "(180)",
+          "tooltip": "过去 30 天内的 180 篇用户评测中有 90% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "(2,801)",
-          "tooltip": "您语言的 2,801 篇用户评测中有 74% 为好评。"
+          "count": "(2,802)",
+          "tooltip": "您语言的 2,802 篇用户评测中有 74% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "17,732",
+          "tooltip": "此游戏的 17,732 篇用户评测中有 85% 为好评。"
         },
         "wishlist": false,
         "family": false
@@ -20225,14 +20319,13 @@
     },
     "314160": {
       "meta": {
-        "index": 297,
         "platform": "Steam",
-        "identifier": 314160,
-        "last_track_date": "2025-08-26"
+        "identifier": "314160",
+        "last_track_date": "2025-08-28"
       },
       "type": "Game",
       "title": "Microsoft Flight Simulator X: Steam Edition",
-      "start": "2014-12-18",
+      "start": "2028-01-01",
       "app_data": {
         "platform": "Steam",
         "appid": 314160,
@@ -20366,14 +20459,22 @@
         "recentReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(63)",
-          "tooltip": "过去 30 天内的 63 篇用户评测中有 85% 为好评。"
+          "count": "(55)",
+          "tooltip": "过去 30 天内的 55 篇用户评测中有 87% 为好评。",
+          "caption": "最近评测："
         },
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
           "count": "(494)",
-          "tooltip": "您语言的 494 篇用户评测中有 85% 为好评。"
+          "tooltip": "您语言的 494 篇用户评测中有 85% 为好评。",
+          "caption": "简体中文评测："
+        },
+        "allLangReview": {
+          "summary": "特别好评",
+          "cssClass": "positive",
+          "count": "22,626",
+          "tooltip": "此游戏的 22,626 篇用户评测中有 86% 为好评。"
         },
         "wishlist": false,
         "family": false
@@ -58502,7 +58603,7 @@
         "release_date": {
           "coming_soon": false,
           "date": "2025 年 8 月 1 日",
-          "en": "Aug 1, 2025"
+          "en": "1 Aug, 2025"
         },
         "language": {
           "zh": {
@@ -91991,8 +92092,8 @@
         "totalReview": {
           "summary": "褒贬不一",
           "cssClass": "mixed",
-          "count": "(181)",
-          "tooltip": "此游戏的 181 篇用户评测中有 66% 为好评。",
+          "count": "(197)",
+          "tooltip": "此游戏的 197 篇用户评测中有 65% 为好评。",
           "caption": "所有评测："
         },
         "wishlist": true,
@@ -93440,8 +93541,8 @@
         "allLangReview": {
           "summary": "褒贬不一",
           "cssClass": "mixed",
-          "count": "13,576",
-          "tooltip": "此游戏的 13,576 篇用户评测中有 69% 为好评。"
+          "count": "13,577",
+          "tooltip": "此游戏的 13,577 篇用户评测中有 69% 为好评。"
         },
         "wishlist": true,
         "family": true
@@ -108160,8 +108261,8 @@
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(289)",
-          "tooltip": "此游戏的 289 篇用户评测中有 89% 为好评。",
+          "count": "(293)",
+          "tooltip": "此游戏的 293 篇用户评测中有 88% 为好评。",
           "caption": "所有评测："
         },
         "wishlist": true,
@@ -110361,7 +110462,7 @@
         "release_date": {
           "coming_soon": true,
           "date": "2025 年 8 月 28 日",
-          "en": "Aug 28, 2025"
+          "en": "28 Aug, 2025"
         },
         "language": {
           "zh": {
@@ -110538,15 +110639,15 @@
         "totalReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "(2,273)",
-          "tooltip": "此游戏的 2,273 篇用户评测中有 80% 为好评。",
+          "count": "(2,296)",
+          "tooltip": "此游戏的 2,296 篇用户评测中有 81% 为好评。",
           "caption": "所有评测："
         },
         "allLangReview": {
           "summary": "特别好评",
           "cssClass": "positive",
-          "count": "2,273",
-          "tooltip": "此游戏的 2,273 篇用户评测中有 80% 为好评。"
+          "count": "2,296",
+          "tooltip": "此游戏的 2,296 篇用户评测中有 81% 为好评。"
         },
         "wishlist": true,
         "family": false
@@ -115679,15 +115780,15 @@
         "totalReview": {
           "summary": "褒贬不一",
           "cssClass": "mixed",
-          "count": "(1,640)",
-          "tooltip": "您语言的 1,640 篇用户评测中有 55% 为好评。",
+          "count": "(1,641)",
+          "tooltip": "您语言的 1,641 篇用户评测中有 55% 为好评。",
           "caption": "简体中文评测："
         },
         "allLangReview": {
           "summary": "多半好评",
           "cssClass": "positive",
-          "count": "11,536",
-          "tooltip": "此游戏的 11,536 篇用户评测中有 79% 为好评。"
+          "count": "11,538",
+          "tooltip": "此游戏的 11,538 篇用户评测中有 79% 为好评。"
         },
         "wishlist": true,
         "family": false
@@ -120477,8 +120578,8 @@
         "totalReview": {
           "summary": "好评如潮",
           "cssClass": "positive",
-          "count": "(1,922)",
-          "tooltip": "此游戏的 1,922 篇用户评测中有 97% 为好评。",
+          "count": "(1,925)",
+          "tooltip": "此游戏的 1,925 篇用户评测中有 97% 为好评。",
           "caption": "所有评测："
         },
         "wishlist": true,
@@ -123254,7 +123355,7 @@
         "release_date": {
           "coming_soon": true,
           "date": "2025 年 9 月 22 日",
-          "en": "Sep 22, 2025"
+          "en": "22 Sep, 2025"
         },
         "language": {
           "zh": {
@@ -123450,7 +123551,7 @@
         "release_date": {
           "coming_soon": true,
           "date": "2025 年 9 月 19 日",
-          "en": "Sep 19, 2025"
+          "en": "19 Sep, 2025"
         },
         "language": {
           "zh": {
