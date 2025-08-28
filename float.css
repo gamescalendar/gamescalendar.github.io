@@ -365,6 +365,18 @@ div.rightcol {
     color: #A34C25;
 }
 
+.store_tooltip {
+	background: #c2c2c2;
+	color: #3d3d3f;
+	font-size: 11px;
+	border-radius: 3px;
+	padding: 5px;
+	max-width: 275px;
+	white-space: normal;
+	box-shadow: 0 0 3px #000000;
+	word-wrap: break-word;
+}
+
 .app_tag:hover {
     text-decoration: none;
     background: linear-gradient(135deg, #67c1f5 0%, #417a9b 100%);

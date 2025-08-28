@@ -179,6 +179,13 @@
             padding: 0;
         }
 
+        .tippy-box[data-theme~='gamereviews'] {
+        }
+
+        .tippy-box[data-theme~='gamereviews'] .tippy-content {
+            padding: 0;
+        }
+
         .long {
             -webkit-box-orient: horizontal;
             box-orient: horizontal;
@@ -351,8 +358,8 @@
                             <div class="user_reviews_summary_row">
                                 <div class="subtitle column">${data.recentReview.caption ?? "最近评测："}</div>
                                 <div class="summary column">
-                                    <a class="review_link" target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
-                                       title="${data.recentReview.tooltip}">
+                                    <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
+                                       data-title="${data.recentReview.tooltip}">
                                         <span class="game_review_summary ${data.recentReview.cssClass}">${data.recentReview.summary}</span>
                                         <span class="game_review_count">${data.recentReview.count}</span>
                                     </a>
@@ -365,8 +372,8 @@
                     <div class="user_reviews_summary_row">
                                 <div class="subtitle column">${data.totalReview.caption ?? "全部评测："}</div>
                                 <div class="summary column">
-                                    <a class="review_link" target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
-                                       title="${data.totalReview.tooltip}">
+                                    <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
+                                       data-title="${data.totalReview.tooltip}">
                                         <span class="game_review_summary ${data.totalReview.cssClass}">${data.totalReview.summary}</span>
                                         <span class="game_review_count">${data.totalReview.count}</span>
                                     </a>
@@ -379,8 +386,8 @@
                     <div class="user_reviews_summary_row">
                                 <div class="subtitle column">总评测：</div>
                                 <div class="summary column">
-                                    <a class="review_link" target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
-                                       title="${data.allLangReview.tooltip}">
+                                    <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
+                                       data-title="${data.allLangReview.tooltip}">
                                         <span class="game_review_summary ${data.allLangReview.cssClass}">${data.allLangReview.summary}</span>
                                         <span class="game_review_count">(${data.allLangReview.count})</span>
                                     </a>
@@ -592,6 +599,23 @@
             }
         }
 
+        function makeReviewTooltip(link) {
+            let title = link?.querySelector("a")?.getAttribute('data-title')
+            if (title) {
+                return tippy(link, {
+                    content: function() {
+                        let html = `<div class="store_tooltip">${title}</div>`
+                        return html;
+                    }(),
+                    allowHTML: true,
+                    arrow: false,
+                    delay: 0,
+                    theme: 'gamereviews',
+                    interactive: false,
+                });
+            }
+        }
+
         function renderCalendar(events) {
             let cnDateStrToDateStr = (str) => {
                 if (!str) {
@@ -711,13 +735,10 @@
                                 img.src = img.dataset.src;
                             }
 
-                            let reviewLinks = instance.popper.querySelectorAll('a.review_link');
+                            let reviewLinks = instance.popper.querySelectorAll('.user_reviews_summary_row');
                             if (reviewLinks) {
-                                instance.reviewLinksTippies = tippy(reviewLinks, {
-                                    delay: 0,
-                                })
+                                instance.nestedTippies = Array.from(reviewLinks).map(link => makeReviewTooltip(link)).filter(x=>x);
                             }
-                            
                         },
                         onHidden(instance) {
                             if (instance.reviewLinksTippies) {
@@ -764,7 +785,7 @@
             let events = await buildEvents()
 
             renderCalendar(events)
-
+            document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link))
             // document.addEventListener('DOMContentLoaded', function () {
             // });
         })();
@@ -965,7 +986,7 @@
                                 <div class="subtitle column">最近评测：</div>
                                 <div class="summary column">
                                     <a target="_blank" href="https://store.steampowered.com/app/1086940/#app_reviews_hash"
-                                       title="过去 30 天内的 3,576 篇用户评测中有 94% 为好评。">
+                                       data-title="过去 30 天内的 3,576 篇用户评测中有 94% 为好评。">
                                         <span class="game_review_summary positive">特别好评</span>
                                         <span class="game_review_count">(3,576)</span>
                                     </a>
@@ -976,7 +997,7 @@
                                 <div class="subtitle column">全部评测：</div>
                                 <div class="summary column">
                                     <a target="_blank" href="https://store.steampowered.com/app/1086940/#app_reviews_hash"
-                                       title="此游戏的 59,082 篇用户评测中有 88% 为好评。">
+                                       data-title="此游戏的 59,082 篇用户评测中有 88% 为好评。">
                                         <span class="game_review_summary positive">特别好评</span>
                                         <span class="game_review_count">(59,082)</span>
                                     </a>
