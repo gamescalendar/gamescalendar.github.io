@@ -540,12 +540,12 @@ export default class Resolver {
         })
         wishlist.forEach(appid => {
             if (this.database.steamData[appid] && this.database.steamData[appid].app_data) {
-                this.database.steamData[appid].app_data.owned = true
+                this.database.steamData[appid].app_data.wishlist = true
             }
         })
         family.forEach(appid => {
             if (this.database.steamData[appid] && this.database.steamData[appid].app_data) {
-                this.database.steamData[appid].app_data.owned = true
+                this.database.steamData[appid].app_data.family = true
             }
         })
     }

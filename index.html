@@ -351,7 +351,7 @@
                             <div class="user_reviews_summary_row">
                                 <div class="subtitle column">${data.recentReview.caption ?? "最近评测："}</div>
                                 <div class="summary column">
-                                    <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
+                                    <a class="review_link" target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
                                        title="${data.recentReview.tooltip}">
                                         <span class="game_review_summary ${data.recentReview.cssClass}">${data.recentReview.summary}</span>
                                         <span class="game_review_count">${data.recentReview.count}</span>
@@ -365,7 +365,7 @@
                     <div class="user_reviews_summary_row">
                                 <div class="subtitle column">${data.totalReview.caption ?? "全部评测："}</div>
                                 <div class="summary column">
-                                    <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
+                                    <a class="review_link" target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
                                        title="${data.totalReview.tooltip}">
                                         <span class="game_review_summary ${data.totalReview.cssClass}">${data.totalReview.summary}</span>
                                         <span class="game_review_count">${data.totalReview.count}</span>
@@ -379,7 +379,7 @@
                     <div class="user_reviews_summary_row">
                                 <div class="subtitle column">总评测：</div>
                                 <div class="summary column">
-                                    <a target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
+                                    <a class="review_link" target="_blank" href="https://store.steampowered.com/app/${data.appid}/#app_reviews_hash"
                                        title="${data.allLangReview.tooltip}">
                                         <span class="game_review_summary ${data.allLangReview.cssClass}">${data.allLangReview.summary}</span>
                                         <span class="game_review_count">(${data.allLangReview.count})</span>
@@ -706,9 +706,22 @@
                             })
                         },
                         onShow: function(instance) {
-                            var img = instance.popper.querySelector('img.game_header_image');
+                            let img = instance.popper.querySelector('img.game_header_image');
                             if (img?.dataset?.src) {
                                 img.src = img.dataset.src;
+                            }
+
+                            let reviewLinks = instance.popper.querySelectorAll('a.review_link');
+                            if (reviewLinks) {
+                                instance.reviewLinksTippies = tippy(reviewLinks, {
+                                    delay: 0,
+                                })
+                            }
+                            
+                        },
+                        onHidden(instance) {
+                            if (instance.reviewLinksTippies) {
+                                instance.reviewLinksTippies.forEach(tippyInstance => tippyInstance.destroy());
                             }
                         },
                     });
