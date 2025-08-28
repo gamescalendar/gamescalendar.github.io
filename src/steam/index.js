@@ -14,7 +14,7 @@ const reqOpts = {
 }
 async function getAppDataFromStorePage(appid, opts = {}) {
     let page = `https://store.steampowered.com/app/${appid}?l=${opts.languageOption}`
-    console.log(`Fetching Store page for ${appid} from ${page}`)
+    // console.log(`Fetching Store page for ${appid} from ${page}`)
 
     const body = await makeRequest(page, reqOpts);
     if (!body) {

@@ -486,7 +486,7 @@
                         </a>
                     </div>
 
-                    <div style="padding: 8px 16px" class="block_content block_content_inner">
+                    <div class="block_content block_content_inner">
                         <div class="game_description_snippet long">
                             ${data.description}
                         </div>
@@ -513,21 +513,23 @@
                         </div>
                         <div class="inner_rule"></div>
 
-                        <table class="game_language_options">
-                            <tbody>
-                            <tr>
-                                <td>语言支持</td>
-                                <td class="language_${data.language.zh.gui ? "yes" : "no"}">简体中文</td>
-                                <td class="language_${data.language.zh.audio ? "yes" : "no"}">完全音频</td>
-                                <!-- <td class="language_${data.language.zh.subtitle ? "yes" : "no"}">字幕</td> -->
-                            </tr>
-                            </tbody>
-                        </table>
+                        <div class="language_support">
+                            <div class="subtitle column">语言支持：</div>
+
+                            <table class="game_language_options">
+                                <tbody>
+                                <tr>
+                                    <td class="language_${data.language.zh.gui ? "yes" : "no"}">简体中文</td>
+                                    <td class="language_${data.language.zh.audio ? "yes" : "no"}">完全音频</td>
+                                    <!-- <td class="language_${data.language.zh.subtitle ? "yes" : "no"}">字幕</td> -->
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <div class="inner_rule"></div>
 
-                        <div class="release_date">
-                            <div class="subtitle column">数据更新时间：</div>
-                            <div class="date">${meta.last_track_date}</div>
+                        <div class="track_date">
+                            <div class="subtitle column">数据更新时间：${meta.last_track_date}</div>
                         </div>
                     </div>
                 </div>
@@ -798,15 +800,14 @@
                                 img.src = img.dataset.src;
                             }
 
-                            let reviewLinks = instance.popper.querySelectorAll('.user_reviews_summary_row');
-                            if (reviewLinks) {
-                                instance.nestedTippies = Array.from(reviewLinks).map(link => makeReviewTooltip(link)).filter(x=>x);
+                            if (!instance.nestedTippies) {
+                                let reviewLinks = instance.popper.querySelectorAll('.user_reviews_summary_row');
+                                if (reviewLinks) {
+                                    instance.nestedTippies = Array.from(reviewLinks).map(link => makeReviewTooltip(link)).filter(x=>x);
+                                }
                             }
-                        },
-                        onHidden(instance) {
-                            if (instance.reviewLinksTippies) {
-                                instance.reviewLinksTippies.forEach(tippyInstance => tippyInstance.destroy());
-                            }
+                            
+                            // instance.disable();
                         },
                     });
 
@@ -849,7 +850,7 @@
         let calendar;
         (async () => {
             data = await buildEvents()
-
+            console.log(`Total events: ${data.events.length}, Steam apps: ${Object.keys(data.db.steam).length}, Metacritic games: ${Object.keys(data.db.metacritic).length}`)
             calendar = renderCalendar(data.events, data.db)
             document.querySelectorAll('.user_reviews_summary_row')?.forEach(link => makeReviewTooltip(link))
         })();
@@ -1083,13 +1084,6 @@
                                 <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/角色自定义/">角色自定义</a>
                                 <a target="_blank" class="app_tag" href="https://store.steampowered.com/tags/zh-cn/剧情丰富/">剧情丰富</a>
                             </div>
-                            <div class="release_date">
-                                <div class="subtitle column">发行日期:</div>
-                                <div class="date">2020 年 10 月 7 日</div>
-                            </div>
-                            <div>
-                                <b>发行日期: </b>2020 年 10 月 6 日
-                            </div>
                         </div>
                         <div class="inner_rule"></div>
 
@@ -1113,16 +1107,20 @@
                         <!--                        </div>-->
                         <div class="inner_rule"></div>
 
-                        <table class="game_language_options">
-                            <tbody>
-                            <tr>
-                                <td>简体中文</td>
-                                <td class="language_yes">界面</td>
-                                <td class="language_no">音频</td>
-                                <td class="language_yes">字幕</td>
-                            </tr>
-                            </tbody>
-                        </table>
+
+                        <div class="language_support">
+                            <div class="subtitle column">语言支持：</div>
+
+                            <table class="game_language_options">
+                                <tbody>
+                                <tr>
+                                    <td class="language_yes">界面</td>
+                                    <td class="language_no">音频</td>
+                                    <td class="language_yes">字幕</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <div class="inner_rule"></div>
                         <div>
                             <b>数据更新时间: </b>2020 年 10 月 6 日

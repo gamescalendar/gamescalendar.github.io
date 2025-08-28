@@ -595,7 +595,11 @@ export default class Resolver {
                 this.database.updateSteam(appid, calendarData)
                 
                 if (appData.meta?.error) {
-                    console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - ${appData.name} - 无数据返回，采用旧数据`);
+                    if (appData.title) {
+                        console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - ${appData.title} - 无数据返回，采用旧数据`);
+                    } else {
+                        console.log(`[${updateType === 'initialization' ? '初始化' : '更新'}] 失败: AppID ${appid} - 无数据返回，记录错误信息`);
+                    }
                 } else if (updateType === 'initialization') {
                     console.log(`[初始化] 成功: AppID ${appid} - "${appData.name}"`);
                 } else if (updateType === 'update') {
