@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import { parse } from './parser.js';
-import { getNeedRefreshTargets, cnDateStrToDateStr } from './utils.js';
+import { getNeedRefreshTargets, cnDateStrToDateStr, ResolveDateFromString } from './utils.js';
 
 export default class Database {
     constructor(config) {
@@ -47,7 +47,19 @@ export default class Database {
 
         Object.keys(data.steam).forEach(appid => {
             const appData = data.steam[appid];
-            appData.start = cnDateStrToDateStr(appData.start)
+            appData.start = appData.start
+
+            if (appData.app_data) {
+                const cnDate = appData?.app_data?.release_date?.date
+                const enDate = appData?.app_data?.release_date?.en
+                if (appData.start && cnDate && !enDate) {
+                    const realDate = ResolveDateFromString(cnDateStrToDateStr(enDate))
+                    if (realDate && appData != realDate) {
+                        console.log(`${appData?.meta?.identifier} (${appData.app_data.title}) from ${appData.start} to ${realDate}`)
+                        appData.start = realDate
+                    }
+                }
+            }
             
             // 如果还没有数据，或者这个版本更新，则使用这个版本
             if (!this.steamData[appid] || this.isNewerVersion(appData, this.steamData[appid])) {
@@ -56,7 +68,6 @@ export default class Database {
         });
         Object.keys(data.metacritic).forEach(name => {
             const appData = data.metacritic[name];
-            appData.start = cnDateStrToDateStr(appData.start)
             
             if (!this.metacriticData[name] || this.isNewerVersion(appData, this.metacriticData[name])) {
                 this.metacriticData[name] = appData;

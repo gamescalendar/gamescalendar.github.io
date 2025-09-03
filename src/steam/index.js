@@ -173,7 +173,7 @@ export function getCalendarData(data, opts = {}) {
     if (data.meta?.error) {
         return data
     }
-    let date = data.release_date.en ?? data.release_date.date
+    let date = data.release_date.en ?? cnDateStrToDateStr(data.release_date.date)
     let isTBA = data.release_date.coming_soon && !data.release_date.date
 
     let start = ResolveDateFromString(date)
