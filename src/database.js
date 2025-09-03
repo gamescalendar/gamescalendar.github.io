@@ -25,6 +25,27 @@ export default class Database {
         console.log("Database initialized.\n")
     }
 
+    fixSteamData(appData) {
+        if (!appData.app_data) {
+            return
+        }
+
+        // fix string
+        appData.app_data.title = appData.app_data.title.trim()
+        appData.app_data.description = appData.app_data.description.trim()
+
+        // fix date withou en date
+        const cnDate = appData?.app_data?.release_date?.date
+        const enDate = appData?.app_data?.release_date?.en
+        if (appData.start && cnDate && !enDate) {
+            const realDate = ResolveDateFromString(cnDateStrToDateStr(cnDate))
+            if (realDate && appData.start != realDate) {
+                console.log(`${appData?.meta?.identifier} (${appData.app_data.title}) from ${appData.start} to ${realDate}`)
+                appData.start = realDate
+            }
+        }
+    }
+
     async loadDatabase(file) {
         let data
         if (fs.existsSync(file)) {
@@ -47,19 +68,7 @@ export default class Database {
 
         Object.keys(data.steam).forEach(appid => {
             const appData = data.steam[appid];
-            appData.start = appData.start
-
-            if (appData.app_data) {
-                const cnDate = appData?.app_data?.release_date?.date
-                const enDate = appData?.app_data?.release_date?.en
-                if (appData.start && cnDate && !enDate) {
-                    const realDate = ResolveDateFromString(cnDateStrToDateStr(cnDate))
-                    if (realDate && appData != realDate) {
-                        console.log(`${appData?.meta?.identifier} (${appData.app_data.title}) from ${appData.start} to ${realDate}`)
-                        appData.start = realDate
-                    }
-                }
-            }
+            this.fixSteamData(appData)
             
             // 如果还没有数据，或者这个版本更新，则使用这个版本
             if (!this.steamData[appid] || this.isNewerVersion(appData, this.steamData[appid])) {
