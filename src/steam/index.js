@@ -205,8 +205,8 @@ export function getCalendarData(data, opts = {}) {
         app_data: {
             platform: "Steam",
             appid: data.steam_appid,
-            title: data.name,
-            description: data.short_description,
+            title: data.name.trim(),
+            description: data.short_description.trim(),
             header_image: data.header_image?.split("?")[0],
             release_date: data.release_date,
             language: {

@@ -1,6 +1,7 @@
 import cheerio from 'cheerio';
 import { makeRequest, yearStrToNumber, cnDateStrToDateStr, ResolveDateFromString } from './src/utils.js';
 import config from './config.js';
+import { getCalendarData } from './src/steam/index.js';
 
 function clearURL(url) {
     let u = new URL(url)
@@ -181,16 +182,57 @@ export async function getAppDataFromAPI(appid, steamapi) {
 //     console.log(data)
 // });
 
-getAppDataFromStorePage(2661300).then(data => {
+const DetailTest = appid => getAppDataFromAPI(appid).then(data => {
+    delete(data.tags)
+    delete(data.ratings)
+    delete(data.achievements)
+    delete(data.movies)
+    delete(data.screenshots)
+    delete(data.categories)
+    delete(data.genres)
+    delete(data.metacritic)
+    delete(data.package_groups)
+    delete(data.price_overview)
+    delete(data.detailed_description)
+    delete(data.about_the_game)
+    delete(data.pc_requirements)
+    console.log(data)
+});
+// DetailTest(242050)
+// DetailTest(368500)
+
+const StoreTest = appid => getAppDataFromStorePage(appid).then(data => {
     // data.tags = undefined
     if (data.tags) {
         data.tags= undefined
     }
     console.log(data)
 });
+// StoreTest(1569580)
+
+const DateTest = appid => getAppDataFromAPI(appid).then(data => {
+    // data.tags = undefined
+    if (data.tags) {
+        data.tags= undefined
+    }
+    data = getCalendarData(data, config)
+    console.log(data.app_data.release_date)
+    console.log(data.start)
+});
+// DateTest(1735700)
+// DateTest(456670)
 
 // METAL GEAR SOLID Δ: SNAKE EATER；需要成人验证
 // getAppDataFromAPI(2417610).then(data => {
 //     data.tags = undefined
 //     console.log(data)
 // });
+getAppDataFromAPI(516030).then(data => {
+    // data.tags = undefined
+    if (data.tags) {
+        data.tags= undefined
+    }
+    data = getCalendarData(data, config)
+    data.app_data.description = data.app_data.description.trim()
+    console.log(data.app_data)
+})
