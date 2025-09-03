@@ -92,7 +92,7 @@ jobs:
 
             git commit -am "Daily update"
             git push origin release -f
-            ls
+            rm -rf ./node_modules
           fi
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -100,9 +100,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: |
-            .
-            !./node_modules
+          path: .
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
