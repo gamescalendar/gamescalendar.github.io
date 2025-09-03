@@ -92,6 +92,7 @@ jobs:
 
             git commit -am "Daily update"
             git push origin release -f
+            ls
           fi
       - name: Setup Pages
         uses: actions/configure-pages@v5
