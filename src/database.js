@@ -53,7 +53,7 @@ export default class Database {
                 const cnDate = appData?.app_data?.release_date?.date
                 const enDate = appData?.app_data?.release_date?.en
                 if (appData.start && cnDate && !enDate) {
-                    const realDate = ResolveDateFromString(cnDateStrToDateStr(enDate))
+                    const realDate = ResolveDateFromString(cnDateStrToDateStr(cnDate))
                     if (realDate && appData != realDate) {
                         console.log(`${appData?.meta?.identifier} (${appData.app_data.title}) from ${appData.start} to ${realDate}`)
                         appData.start = realDate
