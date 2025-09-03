@@ -83,17 +83,21 @@ async function getAppDataFromStorePage(appid, opts = {}) {
 
 async function updateStoreData(data, appid, opts) {
     const pageData = await getAppDataFromStorePage(appid, opts)
+    
+    data.meta = {
+        platform: "Steam",
+        identifier: appid,
+        last_track_date: (new Date()).toISOString().slice(0, 10),
+    }
+
     if (pageData != null) {
         data.tags = pageData.tags
         data.recentReview = pageData.recentReview
         data.totalReview = pageData.totalReview
         data.allLangReview = pageData.allLangReview
-    }
-
-    data.meta = {
-        platform: "Steam",
-        identifier: appid,
-        last_track_date: (new Date()).toISOString().slice(0, 10),
+    } else {
+        data.meta.error = true
+        data.meta.error_reason = "Store failed"
     }
 
     return data
@@ -135,6 +139,7 @@ export async function getAppDataFromAPI(appid, steamapi, opts = {}) {
                         const result = updateStoreData(data, appid, opts)
                         if (result.meta) {
                             result.meta.error = true
+                            result.meta.error_reason = "Fallback to English"
                         }
                         return result
                     }
@@ -149,6 +154,7 @@ export async function getAppDataFromAPI(appid, steamapi, opts = {}) {
                     identifier: appid,
                     last_track_date: (new Date()).toISOString().slice(0, 10),
                     error: true,
+                    error_reason: "API failed"
                 }
             }
         }

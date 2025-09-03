@@ -571,10 +571,12 @@ export default class Resolver {
 
             if (appData.meta?.error) {
                 // 下架游戏？也可能是API错误。尝试获取旧数据
+                console.log(`${appid} error, reason: ${appData.meta?.error_reason}`)
                 let meta = appData.meta
                 if (this.database.steamData[appid]) {
                     appData = this.database.steamData[appid]
                     appData.meta = meta
+                    console.log("Fallback to existed data")
                 }
             }
             
