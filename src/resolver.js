@@ -603,7 +603,11 @@ export default class Resolver {
                 } else if (updateType === 'initialization') {
                     console.log(`[初始化] 成功: AppID ${appid} - "${appData.name}"`);
                 } else if (updateType === 'update') {
-                    console.log(`[更新] 成功: AppID ${appid} - "${existingTitle}" -> "${appData.name}"`);
+                    if (existingTitle != appData.name) {
+                        console.log(`[更新] 成功: AppID ${appid} - "${existingTitle}" -> "${appData.name}"`);
+                    } else {
+                        console.log(`[更新] 成功: AppID ${appid} - "${appData.name}"`);
+                    }
                 }
                 
                 let succ = true
