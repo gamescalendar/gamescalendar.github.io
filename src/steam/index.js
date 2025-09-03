@@ -132,7 +132,11 @@ export async function getAppDataFromAPI(appid, steamapi, opts = {}) {
 
                         data = dataEn[appid].data
 
-                        return updateStoreData(data, appid, opts)
+                        const result = updateStoreData(data, appid, opts)
+                        if (result.meta) {
+                            result.meta.error = true
+                        }
+                        return result
                     }
                 } catch (e) {
                     console.log(`Failed to parse English data for ${appid}.\n${bodyEn}`, e);

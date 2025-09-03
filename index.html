@@ -468,7 +468,7 @@
             }).filter(x => x && x.name && x.link).slice(0, 7)
 
             if (tags.length <= 0) {
-                console.log(data.title, data.tags, steam_meta?.tags)
+                console.log(`${data.title} has no tags`)
             }
             const userTags = tags.map(tag => `<a target="_blank" class="app_tag" href="${tag.link}">${tag.name}</a>`).join("")
 
