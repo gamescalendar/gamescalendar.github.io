@@ -90,7 +90,7 @@ async function updateStoreData(data, appid, opts) {
         last_track_date: (new Date()).toISOString().slice(0, 10),
     }
 
-    if (pageData != null) {
+    if (pageData != null && pageData.tags && pageData.tags.length > 0) {
         data.tags = pageData.tags
         data.recentReview = pageData.recentReview
         data.totalReview = pageData.totalReview
@@ -98,6 +98,7 @@ async function updateStoreData(data, appid, opts) {
     } else {
         data.meta.error = true
         data.meta.error_reason = "Store failed"
+        console.log(pageData)
     }
 
     return data
