@@ -78,6 +78,11 @@ async function getAppDataFromStorePage(appid, opts = {}) {
         }
     }
 
+    if (data.tags.length <= 0) {
+        console.log("No tags found, body:")
+        console.log(body)
+    }
+
     return data
 }
 
@@ -98,7 +103,6 @@ async function updateStoreData(data, appid, opts) {
     } else {
         data.meta.error = true
         data.meta.error_reason = "Store failed"
-        console.log(pageData)
     }
 
     return data
