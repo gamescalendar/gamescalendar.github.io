@@ -79,8 +79,9 @@ async function getAppDataFromStorePage(appid, opts = {}) {
     }
 
     if (data.tags.length <= 0) {
-        console.log("No tags found, body:")
-        console.log(body)
+        // console.log("No tags found, body:")
+        // console.log(body)
+        return null
     }
 
     return data

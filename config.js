@@ -34,11 +34,11 @@ export default  {
   recent: {
     forceUpdate: true,
     past: -14,
-    future: 30,
+    future: 7,
   },
   ratelimit: {
-    init: 40,
-    update: 40,
+    init: 50,
+    update: 30,
   },
   steam: {
 
