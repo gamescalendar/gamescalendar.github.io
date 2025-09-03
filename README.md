@@ -2,8 +2,6 @@
 
 [![Daily Update](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/update.yaml/badge.svg)](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/update.yaml)
 
-[![Page Deployment](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/gamescalendar/gamescalendar.github.io/actions/workflows/pages/pages-build-deployment)
-
 ## 添加记录
 
 往 `list.txt` 内写入即可。一行一条记录，支持 Steam APPID 与 Steam Store 商店页链接。
