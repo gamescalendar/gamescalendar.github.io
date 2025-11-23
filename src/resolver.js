@@ -303,7 +303,7 @@ export default class Resolver {
         // 解析返回的数据，提取 appid
         wishlistData.forEach(item => {
             if (item.storeItem) {
-                item = storeItem.storeItem
+                item = item.storeItem
             }
             if (item.success && item.appid) {
                 this.wishlist.push(parseInt(item.appid));
