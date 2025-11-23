@@ -287,7 +287,7 @@ export default class Resolver {
         // 构建 API URL
         const countryCode = this.config.steam.countryCode || 'US';
         const apiUrl = `https://www.steamwishlistcalculator.com/api/wishlist?steamId=${this.steamId}&countryCode=${countryCode}`;
-        
+
         console.log(`Fetching wishlist from: ${apiUrl}`);
         
         console.log(`Making HTTP request to Steam Wishlist API: ${apiUrl}`);
@@ -302,6 +302,9 @@ export default class Resolver {
         
         // 解析返回的数据，提取 appid
         wishlistData.forEach(item => {
+            if (item.storeItem) {
+                item = storeItem.storeItem
+            }
             if (item.success && item.appid) {
                 this.wishlist.push(parseInt(item.appid));
             }
