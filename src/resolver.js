@@ -255,7 +255,11 @@ export default class Resolver {
             try {
                 await this.buildWishlistFromThirdPartyAPI();
                 // 保存到文件
-                await this.saveWishlistToFile(steamWishlistDb.source);
+                if (this.wishlist.length > 0) {
+                    await this.saveWishlistToFile(steamWishlistDb.source);
+                } else {
+                    throw new Error('Empty wishlist from Steam Wishlist API');
+                }
                 // 记录更新日期
                 if (this.meta) {
                     this.meta.lastWishlistUpdate = this.getCurrentDateString();
@@ -295,7 +299,7 @@ export default class Resolver {
         const response = await makeRequest(apiUrl, requestOptions);
         
         if (!response) {
-            throw new Error('Failed to fetch wishlist from Steam API');
+            throw new Error('Failed to fetch wishlist from Steam Wishlist API');
         }
         
         const wishlistData = JSON.parse(response);
@@ -320,10 +324,10 @@ export default class Resolver {
         console.log('Building wishlist from local files...');
         
         for (const db of this.config.databases) {
-            if (db.type !== 'SteamWishlist') {
-                // 跳过 SteamWishlist 类型，因为我们要从 API 获取
-                continue;
-            }
+            // if (db.type !== 'SteamWishlist') {
+            //     // 跳过 SteamWishlist 类型，因为我们要从 API 获取
+            //     continue;
+            // }
             
             if (fs.existsSync(db.source)) {
                 const content = fs.readFileSync(db.source, 'utf-8');
